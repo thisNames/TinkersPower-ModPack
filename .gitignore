@@ -1,0 +1,36 @@
+# ------------- folders ---------------
+# vscode folders
+/.vscode/*.json
+/.vscode/probe.code-snippets
+
+# lunch folders
+/.hmcl
+/PCL
+
+# mod folders
+/.spark-profiles-export
+/CustomSkinLoader
+/kubejs/probe
+/xaero
+
+# minecraft folders
+/local
+/logs
+/mods
+/saves
+/TinkersPower-natives
+
+# ------------- root files ---------------
+# files
+/observable_announce
+
+# properties files
+/rhino.local.properties
+
+# json files
+/TinkersPower.json
+/usercache.json
+/usernamecache.json
+
+# jar files
+TinkersPower.jar

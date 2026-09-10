@@ -1,0 +1,425 @@
+
+["Modifier Settings"]
+	#饰品修饰系统
+	#Accessory Modifier System
+	#是否启用饰品修饰器系统
+	#Whether to enable the accessory modifier system
+	#注意：如果检测到安装了 Baubles Reforked 模组，此选项默认为 false
+	#Note: If Baubles Reforked mod is detected, this option defaults to false
+	#你仍然可以手动启用此选项，但不建议同时使用两个模组的修饰符系统
+	#You can still enable this option manually, but it's not recommended to use both mods' modifier systems simultaneously
+	modifierEnabled = true
+
+["Anvil Recast Settings"]
+	#全局重铸经验消耗 (0-100)
+	#Global recast experience cost (0-100)
+	#Range: 0 ~ 100
+	recastExpCost = 3
+	#全局重铸材料消耗 (1-64)
+	#Global recast material cost (1-64)
+	#Range: 1 ~ 64
+	recastMaterialCost = 1
+
+["Cloud in a Bottle Settings"]
+	#疾跑跳跃垂直加成 (默认0.5)
+	#Sprint jump vertical boost multiplier (default 0.5)
+	#Range: 0.0 ~ 2.0
+	sprintVertical = 0.5
+	#疾跑跳跃水平加成 (默认0.5)
+	#Sprint jump horizontal boost multiplier (default 0.5)
+	#Range: 0.0 ~ 2.0
+	sprintHorizontal = 0.5
+
+["Totem Settings"]
+	#冷却时间(单位tick, 20tick=1秒)
+	#Cooldown time (in ticks, 20 ticks = 1 second)
+	#Range: 20 ~ 72000
+	cooldown = 6000
+	#启用Curios支持
+	#Enable Curios support
+	enableCurios = true
+
+["Vampiric Glove Settings"]
+	#吸血百分比 (0.0-1.0)
+	#Life steal percentage (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	vampiricPercent = 0.2
+	#单次最大吸血量
+	#Maximum life steal amount per hit
+	#Range: 0.0 ~ 100.0
+	vampiricMax = 6.0
+
+["Gauntlets Settings"]
+	#攻击速度加成倍率 (0.6=+60%)
+	#Attack speed boost multiplier (0.6 = +60%)
+	#Range: 0.0 ~ 2.0
+	attackSpeed = 0.6
+
+["Cross Necklace Settings"]
+	#十字项链相关配置
+	#Cross Necklace Configuration
+	#无敌时间延长倍率 (0.8=延长80%，设为0禁用效果)
+	#Invulnerability time extension multiplier (0.8 = +80%, set to 0 to disable)
+	#Range: 0.0 ~ 5.0
+	crossNecklaceBoost = 0.8
+	#是否仅对玩家生效
+	#Whether the effect only applies to players
+	crossNecklacePlayersOnly = true
+
+["Wrath Pendant Settings"]
+	#愤怒吊坠相关配置
+	#Wrath Pendant Configuration
+	#愤怒吊坠的BUFF等级 (默认3)
+	#Wrath Pendant buff level (default 3)
+	#Range: 1 ~ 10
+	wrathPendantBuffLevel = 3
+	#愤怒吊坠的BUFF持续时间 (单位：tick，20tick=1秒，默认100)
+	#Wrath Pendant buff duration (in ticks, 20 ticks = 1 second, default 100)
+	#Range: 20 ~ 1200
+	wrathPendantBuffDuration = 100
+
+["Tactical Goggles Settings"]
+	#洞察之眼相关配置
+	#Tactical Goggles Configuration
+	#扫描间隔（单位：tick，20tick = 1秒）
+	#Scan interval (in ticks, 20 ticks = 1 second)
+	#Range: 1 ~ 1200
+	scanInterval = 300
+	#标记持续时间（单位：tick）
+	#Mark duration (in ticks)
+	#Range: 1 ~ 600
+	markDuration = 100
+	#水平扫描半径
+	#Horizontal scan radius
+	#Range: 1.0 ~ 32.0
+	scanRadius = 10.0
+	#向上扫描范围
+	#Upward scan range
+	#Range: 1.0 ~ 16.0
+	upRange = 5.0
+	#向下扫描范围
+	#Downward scan range
+	#Range: 1.0 ~ 16.0
+	downRange = 5.0
+	#对标记目标的伤害倍率
+	#Damage multiplier against marked targets
+	#Range: 1.0 ~ 5.0
+	damageMultiplier = 1.5
+
+["Lucky Coin Settings"]
+	#幸运硬币相关配置
+	#Lucky Coin Configuration
+	#伤害加成列表（0.05表示+5%伤害）
+	#Damage bonus list (0.05 means +5% damage)
+	damageBonus = [0.05, 0.1, 0.3]
+	#每个伤害加成对应的触发概率（必须和伤害加成数组长度相同，且概率和必须等于1.0）
+	#Trigger probability for each damage bonus (must match the length of damage bonus array and sum up to 1.0)
+	probability = [0.7, 0.2, 0.1]
+
+["Tha Wizard Settings"]
+	#小巫师饰品相关配置
+	#Tha Wizard Accessory Configuration
+	#药水效果持续时间倍率 (1.5 = 延长50%)
+	#Potion effect duration multiplier (1.5 = +50% duration)
+	#Range: 1.0 ~ 5.0
+	durationMultiplier = 1.5
+
+["Drop Spindle Settings"]
+	#纺锤相关配置
+	#Drop Spindle Configuration
+	#每次攻击时触发修复的概率 (0.25 = 25%)
+	#Chance to trigger repair on attack (0.25 = 25%)
+	#Range: 0.0 ~ 1.0
+	repairChance = 0.25
+	#每次修复的耐久度
+	#Amount of durability repaired per trigger
+	#Range: 1 ~ 64
+	repairAmount = 1
+
+["Dark Egg Settings"]
+	#暗影之卵相关配置
+	#Dark Egg Configuration
+	#技能冷却时间（单位：tick，20tick = 1秒）
+	#Ability cooldown (in ticks, 20 ticks = 1 second)
+	#Range: 200 ~ 6000
+	cooldown = 1200
+	#每次召唤的恼鬼数量
+	#Number of Vexes summoned per use
+	#Range: 1 ~ 10
+	vexCount = 3
+	#恼鬼存活时间（单位：tick）
+	#Vex lifetime duration (in ticks)
+	#Range: 100 ~ 2400
+	vexLifetime = 600
+
+["Ankh Settings"]
+	#List of debuffs that Ankh Charm and Shield protect you from
+	#Ankh Configuration
+	#List of mob effects that are denied by the ankh charm and shield
+	"Ank protection" = ["minecraft:darkness", "minecraft:mining_fatigue", "minecraft:nausea", "minecraft:poison", "minecraft:slowness", "minecraft:weakness", "minecraft:wither", "minecraft:hunger", "minecraft:blindness", "minecraft:levitation"]
+
+["Mossy Ring Settings"]
+	#苔藓戒指相关配置
+	#Mossy Ring Configuration
+	#修复间隔（单位：tick，20tick = 1秒）
+	#Repair interval (in ticks, 20 ticks = 1 second)
+	#Range: 20 ~ 200
+	repairInterval = 60
+	#每次修复的耐久度
+	#Amount of durability repaired per tick
+	#Range: 1 ~ 10
+	repairAmount = 1
+
+["Mossy Belt Settings"]
+	#苔藓腰带相关配置
+	#Mossy Belt Configuration
+	#修复间隔（单位：tick，20tick = 1秒）
+	#Repair interval (in ticks, 20 ticks = 1 second)
+	#Range: 20 ~ 200
+	repairInterval = 60
+	#每次修复的耐久度
+	#Amount of durability repaired per tick
+	#Range: 1 ~ 10
+	repairAmount = 1
+
+["Mad Aura Settings"]
+	#炽光环相关配置
+	#Mad Aura Configuration
+	#技能冷却时间（单位：tick，20tick = 1秒）
+	#Ability cooldown (in ticks, 20 ticks = 1 second)
+	#Range: 200 ~ 2400
+	cooldown = 600
+
+["Dark Dagger Settings"]
+	#暗影匕首相关配置
+	#Dark Dagger Configuration
+	#斩杀阈值（目标剩余生命值百分比，0.2 = 20%）
+	#Execute threshold (target's remaining health percentage, 0.2 = 20%)
+	#Range: 0.05 ~ 0.5
+	executeThreshold = 0.2
+	#斩杀伤害值
+	#Execute damage amount
+	#Range: 1000.0 ~ 9.99999999E8
+	executeDamage = 9.99999999E8
+
+["Blaze Heart Settings"]
+	#烈焰之心相关配置
+	#Blaze Heart Configuration
+	#生命恢复效果持续时间（单位：tick，20tick = 1秒）
+	#Regeneration effect duration (in ticks, 20 ticks = 1 second)
+	#Range: 20 ~ 2400
+	regenerationDuration = 900
+
+["Mob Drop Settings"]
+	#所有概率值为0.0-1.0之间的浮点数，1.0=100%
+	#All probability values are floating-point numbers between 0.0-1.0, where 1.0 = 100%
+	#尸壳掉落禁果概率 (默认2.5%)
+	#Chance for Husks to drop Forbidden Apple (default 2.5%)
+	#Range: 0.0 ~ 1.0
+	huskAppleChance = 0.025
+	#流浪者掉落超频戒指概率 (默认3%)
+	#Chance for Strays to drop Overclock Ring (default 3%)
+	#Range: 0.0 ~ 1.0
+	strayRingChance = 0.03
+	#潜影贝掉落潜影之心概率 (默认10%)
+	#Chance for Shulkers to drop Shulker Heart (default 10%)
+	#Range: 0.0 ~ 1.0
+	shulkerHeartChance = 0.1
+	#洞穴蜘蛛掉落牛黄概率 (默认5%)
+	#Chance for Cave Spiders to drop Bezoar (default 5%)
+	#Range: 0.0 ~ 1.0
+	caveSpiderBezoarChance = 0.05
+	#唤魔者掉落无限图腾概率 (默认10%)
+	#Chance for Evokers to drop Infinite Totem (default 10%)
+	#Range: 0.0 ~ 1.0
+	evokerTotemChance = 0.1
+	#远古守卫掉落维生素概率 (默认100%)
+	#Chance for Elder Guardians to drop Vitamin (default 100%)
+	#Range: 0.0 ~ 1.0
+	elderGuardianVitaminChance = 1.0
+	#末影龙掉落鳞片的概率 (默认100%)
+	#Chance for Ender Dragon to drop Scales (default 100%)
+	#Range: 0.0 ~ 1.0
+	dragonScaleChance = 1.0
+	#鳞片最小掉落数量 (默认3)
+	#Minimum number of Dragon Scales dropped (default 3)
+	#Range: 0 ~ 64
+	dragonScaleMin = 3
+	#鳞片最大掉落数量 (默认6)
+	#Maximum number of Dragon Scales dropped (default 6)
+	#Range: 0 ~ 64
+	dragonScaleMax = 6
+	#黄金头颅饰品触发宝藏袋掉落的概率 (0.0-1.0)
+	#Chance for Golden Skull accessory to trigger treasure bag drops (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	goldenSkullDropChance = 0.05
+	#屠宰镰饰品触发头颅掉落的概率 (0.0-1.0)
+	#Chance for Butcher's Cleaver accessory to trigger head drops (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	butchersCleaverDropChance = 0.1
+	#红宝石之心触发后的冷却时间（以秒为单位）
+	#Ruby Heart cooldown after activation (in seconds)
+	#Range: 1 ~ 3600
+	rubyHeartCooldown = 60
+	#红宝石之心触发所需的生命值阈值（占最大生命值的百分比，0.0-1.0）
+	#Ruby Heart activation health threshold (percentage of max health, 0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	rubyHeartHealthThreshold = 0.3
+	#水晶糖饰品的移动速度倍率（1.0 = 基础速度翻倍）
+	#Rock Candy accessory movement speed multiplier (1.0 = double base speed)
+	#Range: 0.0 ~ 5.0
+	rockCandySpeedMultiplier = 1.0
+	#水晶糖饰品受到的伤害倍率（2.0 = 伤害翻倍）
+	#Rock Candy accessory damage taken multiplier (2.0 = double damage)
+	#Range: 1.0 ~ 5.0
+	rockCandyDamageMultiplier = 2.0
+
+["Treasure Bag Settings"]
+	#宝藏袋相关配置
+	#Treasure Bag Configuration
+	#宝藏袋可能掉落的物品列表
+	#List of possible items from treasure bags
+	#
+	#格式：modid:物品ID,权重
+	#Format: modid:item_id,weight
+	#
+	#示例：minecraft:diamond,10
+	#Example: minecraft:diamond,10
+	#
+	#如果权重相同，物品掉落概率相等
+	#Items will have equal chances if weights are the same
+	possible_items = "bountifulbaubles:minds_eye,10;bountifulbaubles:luck_coin,10;bountifulbaubles:dragon_breath,10;bountifulbaubles:ice_shard,10;bountifulbaubles:tha_spider,10;bountifulbaubles:creepo,10;bountifulbaubles:tha_wizard,10;bountifulbaubles:book_o_enchanting,10;bountifulbaubles:warm_void,10;bountifulbaubles:golden_melon,10;bountifulbaubles:fire_mind,10;bountifulbaubles:drop_spindle,10;bountifulbaubles:dark_egg,10;bountifulbaubles:mossy_ring,10;bountifulbaubles:mossy_belt,10;bountifulbaubles:mad_aura,10;bountifulbaubles:turtle_shell,10;bountifulbaubles:dark_dagger,10;bountifulbaubles:ember,10;bountifulbaubles:wither_nail,10;bountifulbaubles:serpent_tooth,10;bountifulbaubles:blaze_heart,10;bountifulbaubles:starfish,10;bountifulbaubles:golden_skull,10;bountifulbaubles:butchers_cleaver,10;bountifulbaubles:karma,10;bountifulbaubles:oxalis,10;bountifulbaubles:glory_shards,10;bountifulbaubles:ruby_heart,10;bountifulbaubles:rock_candy,10"
+
+["Loot Settings"]
+	#配置格式：物品ID,权重,最小数量,最大数量;多个物品用分号分隔
+	#Format: itemID,weight,minCount,maxCount;multiple items separated by semicolons
+	#沙漠神殿战利品
+	#结构ID: minecraft:chests/desert_pyramid
+	desertPyramidLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,3;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:broken_heart,1,1,2;bountifulbaubles:lucky_horseshoe,1,1,2;bountifulbaubles:bottled_cloud,1,1,2;bountifulbaubles:endless_pearl,1,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#丛林神庙战利品
+	#结构ID: minecraft:chests/jungle_temple
+	jungleTempleLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:curious_amulet,3,1,2;bountifulbaubles:curious_ring,3,1,2;bountifulbaubles:vampiric_glove,1,1,2;bountifulbaubles:gauntlets_dexterity,2,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#废弃矿井战利品
+	#结构ID: minecraft:chests/abandoned_mineshaft
+	abandonedMineshaftLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:sunglasses,3,1,2;bountifulbaubles:curious_crown,3,1,2;bountifulbaubles:auto_torch,3,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#要塞图书馆战利品
+	#结构ID: minecraft:chests/stronghold_library
+	strongholdLibraryLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#林地府邸战利品
+	#结构ID: minecraft:chests/woodland_mansion
+	woodlandMansionLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#村庄教堂战利品
+	#结构ID: minecraft:chests/village/village_temple
+	villageTempleLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#沉船宝箱战利品
+	#结构ID: minecraft:chests/shipwreck_treasure
+	shipwreckTreasureLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#掠夺者前哨站战利品
+	#结构ID: minecraft:chests/pillager_outpost
+	pillagerOutpostLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:black_dragon_scale,3,1,2;bountifulbaubles:phylactery_charm,1,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#埋藏的宝藏战利品
+	#结构ID: minecraft:chests/buried_treasure
+	buriedTreasureLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,6,1,2;bountifulbaubles:wormhole_mirror,1,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#大型海底废墟战利品
+	#结构ID: minecraft:chests/underwater_ruin_big
+	underwaterRuinBigLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,3,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#小型海底废墟战利品
+	#结构ID: minecraft:chests/underwater_ruin_small
+	underwaterRuinSmallLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#雪屋地下室战利品
+	#结构ID: minecraft:chests/igloo_chest
+	iglooChestLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#小型地牢战利品
+	#结构ID: minecraft:chests/simple_dungeon
+	simpleDungeonLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:balloon,3,1,1;bountifulbaubles:cobalt_shield,3,1,1;bountifulbaubles:auto_torch,3,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#要塞走廊战利品
+	#结构ID: minecraft:chests/stronghold_corridor
+	strongholdCorridorLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#恐龙化石战利品
+	#结构ID: minecraft:chests/fossil_dinosaur
+	fossilDinosaurLoot = ""
+	#哺乳动物化石战利品
+	#结构ID: minecraft:chests/fossil_mammal
+	fossilMammalLoot = ""
+	#沉船补给箱战利品
+	#结构ID: minecraft:chests/shipwreck_supply
+	shipwreckSupplyLoot = "bountifulbaubles:potion_wormhole,3,1,2;bountifulbaubles:potion_recall,3,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#林地府邸制图室战利品
+	#结构ID: minecraft:chests/woodland_mansion_cartography
+	woodlandCartographyLoot = "bountifulbaubles:potion_wormhole,3,1,2;bountifulbaubles:potion_recall,3,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#要塞十字路口战利品
+	#结构ID: minecraft:chests/stronghold_crossing
+	strongholdCrossingLoot = "bountifulbaubles:potion_wormhole,3,1,2;bountifulbaubles:potion_recall,3,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#沉船地图箱战利品
+	#结构ID: minecraft:chests/shipwreck_map
+	shipwreckMapLoot = "bountifulbaubles:potion_wormhole,3,1,2;bountifulbaubles:potion_recall,3,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:treasure_bag,2,1,2"
+	#堡垒遗迹宝藏室战利品
+	#结构ID: minecraft:chests/bastion_treasure
+	bastionTreasureLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:amulet_sin_empty,8,1,7;bountifulbaubles:curious_knuckles,2,1,1;bountifulbaubles:treasure_bag,2,1,2"
+	#堡垒遗迹桥梁战利品
+	#结构ID: minecraft:chests/bastion_bridge
+	bastionBridgeLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:amulet_sin_empty,5,1,3;bountifulbaubles:curious_knuckles,2,1,1;bountifulbaubles:treasure_bag,2,1,2"
+	#堡垒遗迹居住区战利品
+	#结构ID: minecraft:chests/bastion_housing
+	bastionHousingLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:amulet_sin_empty,5,1,3;bountifulbaubles:curious_knuckles,2,1,1;bountifulbaubles:treasure_bag,2,1,2"
+	#堡垒遗迹杂项战利品
+	#结构ID: minecraft:chests/bastion_other
+	bastionOtherLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:amulet_sin_empty,5,1,3;bountifulbaubles:curious_knuckles,2,1,1;bountifulbaubles:treasure_bag,2,1,2"
+	#废弃传送门战利品
+	#结构ID: minecraft:chests/ruined_portal
+	ruinedPortalLoot = "bountifulbaubles:potion_wormhole,6,1,2;bountifulbaubles:potion_recall,7,1,2;bountifulbaubles:magic_mirror,2,1,2;bountifulbaubles:broken_black_dragon_scale,2,1,2;bountifulbaubles:spectral_silt,8,1,7;bountifulbaubles:obsidian_skull,3,1,2;bountifulbaubles:auto_torch,3,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#末地城战利品
+	#结构ID: minecraft:chests/end_city_treasure
+	endCityLoot = "bountifulbaubles:wrath_pendant,5,1,3;bountifulbaubles:gluttony_pendant,3,1,2;bountifulbaubles:pride_pendant,3,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#远古城市战利品
+	#结构ID: minecraft:chests/ancient_city
+	ancientCityLoot = "bountifulbaubles:wrath_pendant,5,1,3;bountifulbaubles:gluttony_pendant,3,1,2;bountifulbaubles:pride_pendant,3,1,2;bountifulbaubles:cross_necklace,3,1,2;bountifulbaubles:treasure_bag,2,1,2"
+	#盔甲匠小屋 (盔甲匠)
+	#结构ID: minecraft:chests/village/village_armorer
+	villageArmorerLoot = ""
+	#屠夫商店 (屠夫)
+	#结构ID: minecraft:chests/village/village_butcher
+	villageButcherLoot = ""
+	#制图师小屋 (制图师)
+	#结构ID: minecraft:chests/village/village_cartographer
+	villageCartographerLoot = ""
+	#平原农舍 (农民)
+	#结构ID: minecraft:chests/village/village_plains_house
+	villagePlainsHouseLoot = ""
+	#渔夫小屋 (渔夫)
+	#结构ID: minecraft:chests/village/village_fisher
+	villageFisherLoot = ""
+	#制箭师小屋 (制箭师)
+	#结构ID: minecraft:chests/village/village_fletcher
+	villageFletcherLoot = ""
+	#制革厂 (皮匠)
+	#结构ID: minecraft:chests/village/village_tannery
+	villageTanneryLoot = ""
+	#图书馆 (图书管理员)
+	#结构ID: minecraft:chests/village/village_library
+	villageLibraryLoot = ""
+	#石匠小屋 (石匠)
+	#结构ID: minecraft:chests/village/village_mason
+	villageMasonLoot = ""
+	#牧羊人小屋 (牧羊人)
+	#结构ID: minecraft:chests/village/village_shepherd
+	villageShepherdLoot = ""
+	#工具匠小屋 (工具匠)
+	#结构ID: minecraft:chests/village/village_toolsmith
+	villageToolsmithLoot = ""
+	#武器匠小屋 (武器匠)
+	#结构ID: minecraft:chests/village/village_weaponsmith
+	villageWeaponsmithLoot = ""
+	#沙漠村庄房屋 (失业村民)
+	#结构ID: minecraft:chests/village/village_desert_house
+	villageDesertHouseLoot = ""
+	#雪原村庄房屋
+	#结构ID: minecraft:chests/village/village_snowy_house
+	villageSnowyHouseLoot = ""
+	#热带草原村庄房屋
+	#结构ID: minecraft:chests/village/village_savanna_house
+	villageSavannaHouseLoot = ""
+	#针叶林村庄房屋
+	#结构ID: minecraft:chests/village/village_taiga_house
+	villageTaigaHouseLoot = ""
+

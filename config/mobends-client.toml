@@ -1,0 +1,21 @@
+#Disable spinning animation when swinging for players
+disableSpinSwing = false
+#Allow mobs to do the spinning animation when swinging
+mobsCanSpin = false
+#Disables movement when inside a GUI.
+disableMovementInGui = false
+#Arrow trail does not respect lighting conditions.
+arrowTrailFullBright = false
+#Sword trail does not respect lighting conditions.
+swordTrailFullBright = false
+#Show the trail when swords are swung
+showSwordTrail = true
+#Show the trail when arrows are travelling
+showArrowTrail = true
+#The color of an arrow trail will match the color of its potion effect.
+arrowTrailPotionColor = true
+#Enable the special golden trail effect for Spectral Arrows
+spectralArrowTrailEffect = true
+#Allow the Trident to have a trail
+tridentTrail = true
+

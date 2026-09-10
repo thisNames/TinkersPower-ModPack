@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "animator70",
+      "uniqueId": "d31fdea0-0008-41ea-a2f6-50b6c751ee19"
+    },
+    "time": 1789057187682,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/WqVQlClpej"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "animator70",
+      "uniqueId": "d31fdea0-0008-41ea-a2f6-50b6c751ee19"
+    },
+    "time": 1789057009533,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/5qrtPm4bpf"
+    }
+  }
+]

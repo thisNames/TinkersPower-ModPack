@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匠魂动力</title>
+    <style>
+        span,
+        a {
+            border: 1px solid #b2b2b2;
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+
+        ul.list {
+            list-style: decimal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 清单信息 -->
+    <div class="manifest">
+        <div class="title">
+            <h2>清单信息</h2>
+        </div>
+        <ul class="list">
+            <li>
+                <span>整合包名称</span>
+                <span class="name">TinkersPower</span>
+            </li>
+            <li>
+                <span>整合包版本</span>
+                <span class="version">1.1.4</span>
+            </li>
+            <li>
+                <span>整合包作者</span>
+                <span class="author">animator70@outlook.com</span>
+            </li>
+            <li>
+                <span>游戏版本</span>
+                <span class="mc-version">1.20.1</span>
+            </li>
+            <li>
+                <span>模组加载器</span>
+                <span class="mod-loader primary">forge-47.4.20</span>
+            </li>
+            <li>
+                <span>建议分配内存</span>
+                <span class="recommended-ram">8192</span>
+            </li>
+            <li>
+                <span>清单类型</span>
+                <span class="manifest-type">minecraftModpack</span>
+            </li>
+            <li>
+                <span>清单格式版本</span>
+                <span class="manifest-version">1</span>
+            </li>
+            <li>
+                <span>覆盖目录名称</span>
+                <span class="overrides">overrides</span>
+            </li>
+            <li>
+                <span>文件数量</span>
+                <span class="files">0</span>
+            </li>
+            <li>
+                <span class="manifest-btn">
+                    <button title="manifest.json" type="button">生成清单文件</button>
+                </span>
+            </li>
+            <li>
+                <span class="modlist-btn">
+                    <button title="modlist.html" type="button">生成列表文件</button>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- 导航栏目 -->
+    <div class="nav">
+        <div class="title">
+            <h2>模组分类导航</h2>
+        </div>
+        <ul class="list"></ul>
+    </div>
+    <hr>
+
+    <!-- 优化模组列表 -->
+    <div id="optimize">
+        <div class="title">
+            <h2>优化模组</h2>
+        </div>
+        <!-- 优化模组：书写区开始 -->
+        <ul class="list">
+            <!-- 性能检测、查看、调试模组列表 -->
+            <div id="observer-optimize" class="title">
+                <h3>性能检测、查看、调试</h3>
+            </div>
+            <ul class="list">
+                <li class="item">
+                    <span title="中文名" class="zh-name">火花【通用调试，性能查看】</span>
+                    <span title="英文名" class="name">spark</span>
+                    <span title="ProjectId" class="project-id">361579</span>
+                    <span title="FileId" class="file-id">4738952</span>
+                    <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/spark">CurseForge</a>
+                    <a class="mc100-link" href="https://www.mcmod.cn/class/4073.html">MC百科</a>
+                </li>
+                <li class="item">
+                    <span title="中文名" class="zh-name">可视性能侦测【查看实体 tps】</span>
+                    <span title="英文名" class="name">Observable</span>
+                    <span title="ProjectId" class="project-id">509575</span>
+                    <span title="FileId" class="file-id">5080064</span>
+                    <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/observable">CurseForge</a>
+                    <a class="mc100-link" href="https://www.mcmod.cn/class/4832.html">MC百科</a>
+                </li>
+            </ul>
+            <!-- 启动、加载优化模组列表 -->
+            <div id="launch-optimize" class="title">
+                <h3>启动、加载</h3>
+            </div>
+            <ul class="list">
+                <li class="item">
+                    <span title="中文名" class="zh-name">救救我的答辩网络【禁用模组网络请求，增加游戏启动速度】</span>
+                    <span title="英文名" class="name">Save My Shaky Network</span>
+                    <span title="ProjectId" class="project-id">1129397</span>
+                    <span title="FileId" class="file-id">8399040</span>
+                    <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/smsn">CurseForge</a>
+                    <a class="mc100-link" href="https://www.mcmod.cn/class/15482.html">MC百科</a>
+                </li>
+                <li class="item">
+                    <span title="中文名" class="zh-name">资源包惰性重载【未设置资源，不显示加载页面】</span>
+                    <span title="英文名" class="name">OPack2Reload</span>
+                    <span title="ProjectId" class="project-id">923755</span>
+                    <span title="FileId" class="file-id">4812698</span>
+                    <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/opack2reload">CurseForge</a>
+                    <a class="mc100-link" href="https://www.mcmod.cn/class/12555.html">MC百科</a>
+                </li>
+                <li class="item">
+                    <span title="中文名" class="zh-name">快速重载【加快资源部重载速度】</span>
+                    <span title="英文名" class="name">Quick Pack</span>
+                    <span title="ProjectId" class="project-id">1380888</span>
+                    <span title="FileId" class="file-id">8619188</span>
+                    <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/quick-pack">CurseForge</a>
+                    <a class="mc100-link" href="https://www.mcmod.cn/class/22951.html">MC百科</a>
+                </li>
+            </ul>
+            <!-- 内存优化模组列表 -->
+            <div id="memory-optimize" class="title">
+                <h3>内存</h3>
+            </div>
+            <ul class="list">
+
+            </ul>
+            <!-- 渲染、FPS 优化模组列表 -->
+            <div id="rendefps-optimize" class="title">
+                <h3>渲染、FPS</h3>
+            </div>
+            <ul class="list">
+
+            </ul>
+        </ul>
+        <!-- 优化模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 修复模组列表 -->
+    <div id="fix">
+        <div class="title">
+            <h2>修复模组</h2>
+        </div>
+        <!-- 修复模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">格逝【关闭数据包版本格式检测】</span>
+                <span title="英文名" class="name">Formatless</span>
+                <span title="ProjectId" class="project-id">1385721</span>
+                <span title="FileId" class="file-id">7227429</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/formatless">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/23144.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">关闭实验性警告【关闭实验性警告弹窗】</span>
+                <span title="英文名" class="name">Yeetus Experimentus</span>
+                <span title="ProjectId" class="project-id">635427</span>
+                <span title="FileId" class="file-id">4680832</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/yeetusexperimentus">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/11062.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">属性修复【移除原版数值限制机制】</span>
+                <span title="英文名" class="name">AttributeFix</span>
+                <span title="ProjectId" class="project-id">280510</span>
+                <span title="FileId" class="file-id">7612291</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/attributefix">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2264.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 修复模组：书写区开始 -->
+    </div>
+    <hr>
+
+    <!-- 自定义模组列表 -->
+    <div id="custom">
+        <div class="title">
+            <h2>自定义模组</h2>
+        </div>
+        <!-- 自定义模组：书写区开始 -->
+        <ul class="list">
+            <li class="item disable">
+                <span title="中文名" class="zh-name">物品禁用【禁止玩家使用武器、装备】</span>
+                <span title="英文名" class="name">Item! Prohibited use of items</span>
+                <span title="ProjectId" class="project-id">0</span>
+                <span title="FileId" class="file-id">0</span>
+                <a class="cf-link" href="https://www.curseforge.com/members/animator70/projects">CurseForge</a>
+                <a class="mc100-link" href="https://center.mcmod.cn/1522468/#/home/">MC百科</a>
+            </li>
+        </ul>
+        <!-- 自定义模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 魔改模组列表 -->
+    <div id="magic">
+        <div class="title">
+            <h2>魔改模组</h2>
+        </div>
+        <!-- 魔改模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">KubeJS</span>
+                <span title="英文名" class="name">KubeJS</span>
+                <span title="ProjectId" class="project-id">238086</span>
+                <span title="FileId" class="file-id">8020595</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/kubejs">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2450.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">ProbeJS【仅为 KubeJS 提供类型提示；注意：发布后必须删除】</span>
+                <span title="英文名" class="name">ProbeJS</span>
+                <span title="ProjectId" class="project-id">585406</span>
+                <span title="FileId" class="file-id">5227399</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/probejs">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/6486.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 魔改模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 前置模组列表 -->
+    <div id="library">
+        <div class="title">
+            <h2>前置模组</h2>
+        </div>
+        <!-- 前置模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">地幔</span>
+                <span title="英文名" class="name">Mantle</span>
+                <span title="ProjectId" class="project-id">74924</span>
+                <span title="FileId" class="file-id">7563777</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/mantle">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/329.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Json Things</span>
+                <span title="英文名" class="name">Json Things</span>
+                <span title="ProjectId" class="project-id">541617</span>
+                <span title="FileId" class="file-id">7949740</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/json-things">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/7734.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">L2 Library</span>
+                <span title="英文名" class="name">L2 Library</span>
+                <span title="ProjectId" class="project-id">620203</span>
+                <span title="FileId" class="file-id">6806000</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/l2library">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/7075.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Citadel</span>
+                <span title="英文名" class="name">Citadel</span>
+                <span title="ProjectId" class="project-id">331936</span>
+                <span title="FileId" class="file-id">7476570</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/citadel">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2232.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Curios API</span>
+                <span title="英文名" class="name">Curios API</span>
+                <span title="ProjectId" class="project-id">309927</span>
+                <span title="FileId" class="file-id">6418456</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/curios">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2029.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Architectury API</span>
+                <span title="英文名" class="name">Architectury API</span>
+                <span title="ProjectId" class="project-id">419699</span>
+                <span title="FileId" class="file-id">5137938</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/architectury-api">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3434.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Cloth Config API</span>
+                <span title="英文名" class="name">Cloth Config API</span>
+                <span title="ProjectId" class="project-id">348521</span>
+                <span title="FileId" class="file-id">5729105</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/cloth-config">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2346.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Library Ferret</span>
+                <span title="英文名" class="name">Library Ferret</span>
+                <span title="ProjectId" class="project-id">532727</span>
+                <span title="FileId" class="file-id">4601234</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/library-ferret-forge">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5832.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">TerraBlender</span>
+                <span title="英文名" class="name">TerraBlender</span>
+                <span title="ProjectId" class="project-id">563928</span>
+                <span title="FileId" class="file-id">6290448</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/terrablender">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5489.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">GlitchCore</span>
+                <span title="英文名" class="name">GlitchCore</span>
+                <span title="ProjectId" class="project-id">955399</span>
+                <span title="FileId" class="file-id">5787839</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/glitchcore">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/13531.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Zeta</span>
+                <span title="英文名" class="name">Zeta</span>
+                <span title="ProjectId" class="project-id">968868</span>
+                <span title="FileId" class="file-id">7335229</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/zeta">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/13572.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">GeckoLib</span>
+                <span title="英文名" class="name">GeckoLib</span>
+                <span title="ProjectId" class="project-id">388172</span>
+                <span title="FileId" class="file-id">8285794</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/geckolib">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3232.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Lionfish API</span>
+                <span title="英文名" class="name">Lionfish API</span>
+                <span title="ProjectId" class="project-id">1001614</span>
+                <span title="FileId" class="file-id">8095554</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/lionfish-api">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/14604.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Oh The Trees You'll Grow</span>
+                <span title="英文名" class="name">Oh The Trees You'll Grow</span>
+                <span title="ProjectId" class="project-id">962544</span>
+                <span title="FileId" class="file-id">8282239</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/oh-the-trees-youll-grow">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/15809.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">CorgiLib</span>
+                <span title="英文名" class="name">CorgiLib</span>
+                <span title="ProjectId" class="project-id">693313</span>
+                <span title="FileId" class="file-id">8591767</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/corgilib">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8018.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">犀牛</span>
+                <span title="英文名" class="name">Rhino</span>
+                <span title="ProjectId" class="project-id">416294</span>
+                <span title="FileId" class="file-id">6186971</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/rhino">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3821.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">月光</span>
+                <span title="英文名" class="name">Moonlight Lib</span>
+                <span title="ProjectId" class="project-id">499980</span>
+                <span title="FileId" class="file-id">8261419</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/selene">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4159.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">香膏</span>
+                <span title="英文名" class="name">Balm</span>
+                <span title="ProjectId" class="project-id">531761</span>
+                <span title="FileId" class="file-id">8545415</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/balm">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4485.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">创意核心</span>
+                <span title="英文名" class="name">CreativeCore</span>
+                <span title="ProjectId" class="project-id">257814</span>
+                <span title="FileId" class="file-id">8304882</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/creativecore">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1283.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Pehkui</span>
+                <span title="英文名" class="name">Pehkui</span>
+                <span title="ProjectId" class="project-id">319596</span>
+                <span title="FileId" class="file-id">5393101</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/pehkui">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3204.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Puzzles Lib</span>
+                <span title="英文名" class="name">Puzzles Lib</span>
+                <span title="ProjectId" class="project-id">495476</span>
+                <span title="FileId" class="file-id">6918565</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/puzzles-lib">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4580.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Data Anchor</span>
+                <span title="英文名" class="name">Data Anchor</span>
+                <span title="ProjectId" class="project-id">1203668</span>
+                <span title="FileId" class="file-id">8590535</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/data-anchor">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/20772.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">BaguetteLib</span>
+                <span title="英文名" class="name">BaguetteLib</span>
+                <span title="ProjectId" class="project-id">1264423</span>
+                <span title="FileId" class="file-id">8755289</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/baguettelib">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/19739.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Resourceful Config</span>
+                <span title="英文名" class="name">Resourceful Config</span>
+                <span title="ProjectId" class="project-id">714059</span>
+                <span title="FileId" class="file-id">6231176</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8300.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Resourceful Lib</span>
+                <span title="英文名" class="name">Resourceful Lib</span>
+                <span title="ProjectId" class="project-id">570073</span>
+                <span title="FileId" class="file-id">5659871</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/7647.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">YUNG's API</span>
+                <span title="英文名" class="name">YUNG's API</span>
+                <span title="ProjectId" class="project-id">421850</span>
+                <span title="FileId" class="file-id">5769971</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/yungs-api">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3372.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Obscure API</span>
+                <span title="英文名" class="name">Obscure API</span>
+                <span title="ProjectId" class="project-id">638417</span>
+                <span title="FileId" class="file-id">7171906</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/obscure-api">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8770.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Kotlin for Forge</span>
+                <span title="英文名" class="name">Kotlin for Forge</span>
+                <span title="ProjectId" class="project-id">351264</span>
+                <span title="FileId" class="file-id">7291067</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2890.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 前置模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 核心模组列表 -->
+    <div id="master">
+        <div class="title">
+            <h2>核心模组</h2>
+        </div>
+        <!-- 核心模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">匠魂3</span>
+                <span title="英文名" class="name">Tinkers' Construct 3</span>
+                <span title="ProjectId" class="project-id">74072</span>
+                <span title="FileId" class="file-id">7449219</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-construct">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3725.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力</span>
+                <span title="英文名" class="name">Create</span>
+                <span title="ProjectId" class="project-id">328085</span>
+                <span title="FileId" class="file-id">7178761</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/create">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2021.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">冰火传说</span>
+                <span title="英文名" class="name">Ice and Fire</span>
+                <span title="ProjectId" class="project-id">264231</span>
+                <span title="FileId" class="file-id">5633453</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/770.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">暮色森林</span>
+                <span title="英文名" class="name">The Twilight Forest</span>
+                <span title="ProjectId" class="project-id">227639</span>
+                <span title="FileId" class="file-id">5468648</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/61.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">灾变</span>
+                <span title="英文名" class="name">L_Ender 's Cataclysm</span>
+                <span title="ProjectId" class="project-id">551586</span>
+                <span title="FileId" class="file-id">8246047</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/lendercataclysm">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5214.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Alex 的洞穴</span>
+                <span title="英文名" class="name">Alex's Caves</span>
+                <span title="ProjectId" class="project-id">924854</span>
+                <span title="FileId" class="file-id">5848216</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/alexs-caves">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/12592.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Alex 的生物</span>
+                <span title="英文名" class="name">Alex's Mobs</span>
+                <span title="ProjectId" class="project-id">426558</span>
+                <span title="FileId" class="file-id">5698791</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3318.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">海灵物语</span>
+                <span title="英文名" class="name">Aquamirae</span>
+                <span title="ProjectId" class="project-id">536254</span>
+                <span title="FileId" class="file-id">7985699</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/aquamirae">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5011.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">诡厄巫法</span>
+                <span title="英文名" class="name">Goety</span>
+                <span title="ProjectId" class="project-id">586095</span>
+                <span title="FileId" class="file-id">8750818</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/goety">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/7635.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">墓园</span>
+                <span title="英文名" class="name">The Graveyard</span>
+                <span title="ProjectId" class="project-id">531188</span>
+                <span title="FileId" class="file-id">5114579</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/the-graveyard-forge">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4988.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">傀儡装配</span>
+                <span title="英文名" class="name">Modular Golems</span>
+                <span title="ProjectId" class="project-id">690937</span>
+                <span title="FileId" class="file-id">8500691</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/modulargolems">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8310.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">葡园酒香</span>
+                <span title="英文名" class="name">[Let's Do] Vinery</span>
+                <span title="ProjectId" class="project-id">704465</span>
+                <span title="FileId" class="file-id">6965751</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/lets-do-vinery">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8181.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">锦致装饰</span>
+                <span title="英文名" class="name">Supplementaries</span>
+                <span title="ProjectId" class="project-id">412082</span>
+                <span title="FileId" class="file-id">7884611</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/supplementaries">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3555.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">苦力怕改革</span>
+                <span title="英文名" class="name">Creeper Overhaul</span>
+                <span title="ProjectId" class="project-id">561625</span>
+                <span title="FileId" class="file-id">5125710</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5373.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 核心模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 核心扩展模组列表 -->
+    <div id="master-extension">
+        <div class="title">
+            <h2>扩展模组</h2>
+        </div>
+        <!-- 核心扩展模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">匠魂杂物</span>
+                <span title="英文名" class="name">Tinkers' Things</span>
+                <span title="ProjectId" class="project-id">811436</span>
+                <span title="FileId" class="file-id">7375264</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-things-json">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8978.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">工匠巧思</span>
+                <span title="英文名" class="name">Tinkers' Thinking</span>
+                <span title="ProjectId" class="project-id">850772</span>
+                <span title="FileId" class="file-id">8067373</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-thinking">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/9720.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">工匠创新</span>
+                <span title="英文名" class="name">Tinkers' Innovation</span>
+                <span title="ProjectId" class="project-id">1123609</span>
+                <span title="FileId" class="file-id">6831185</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-innovation">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/14431.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">匠魂武士刀</span>
+                <span title="英文名" class="name">Tinkers' Katanas</span>
+                <span title="ProjectId" class="project-id">884944</span>
+                <span title="FileId" class="file-id">8126996</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-katanas">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/11065.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">工匠创意</span>
+                <span title="英文名" class="name">Tinkers' Craft</span>
+                <span title="ProjectId" class="project-id">648039</span>
+                <span title="FileId" class="file-id">6617441</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-craft">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/7818.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">工匠建筑手杖</span>
+                <span title="英文名" class="name">Builders' Construct</span>
+                <span title="ProjectId" class="project-id">825053</span>
+                <span title="FileId" class="file-id">6549784</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/builders-construct">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/12217.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">工匠村民</span>
+                <span title="英文名" class="name">Tinker Villager</span>
+                <span title="ProjectId" class="project-id">1182486</span>
+                <span title="FileId" class="file-id">6121599</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkervillager">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/15951.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">洞穴工匠</span>
+                <span title="英文名" class="name">Tinker in Caves</span>
+                <span title="ProjectId" class="project-id">1237333</span>
+                <span title="FileId" class="file-id">8392111</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinker-in-caves">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/19241.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">匠心之作</span>
+                <span title="英文名" class="name">Tinkers' Ingenuity</span>
+                <span title="ProjectId" class="project-id">1300480</span>
+                <span title="FileId" class="file-id">8761336</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-ingenuity">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/19705.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">匠魂工具拆解</span>
+                <span title="英文名" class="name">Tool Disassemble</span>
+                <span title="ProjectId" class="project-id">1311915</span>
+                <span title="FileId" class="file-id">6801599</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tool-disassemble">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/20909.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">匠魂战铲</span>
+                <span title="英文名" class="name">Tinkers' Battle Spades</span>
+                <span title="ProjectId" class="project-id">1295229</span>
+                <span title="FileId" class="file-id">7677408</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-battle-spades">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/21011.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">匠魂材料拓展</span>
+                <span title="英文名" class="name">Tinker's Compatibility</span>
+                <span title="ProjectId" class="project-id">1201964</span>
+                <span title="FileId" class="file-id">8399540</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-compatibility">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/21614.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">工匠思索</span>
+                <span title="英文名" class="name">Tinkers' Ponder</span>
+                <span title="ProjectId" class="project-id">1464764</span>
+                <span title="FileId" class="file-id">8615605</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tinkers-ponder">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/24954.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力：甜食</span>
+                <span title="英文名" class="name">Create Confectionery</span>
+                <span title="ProjectId" class="project-id">531834</span>
+                <span title="FileId" class="file-id">8009479</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/create-confectionery">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4871.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力：汽鸣铁道</span>
+                <span title="英文名" class="name">Create: Steam 'n' Rails</span>
+                <span title="ProjectId" class="project-id">688231</span>
+                <span title="FileId" class="file-id">8745475</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8230.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力：柴油动力</span>
+                <span title="英文名" class="name">Create: Diesel Generators</span>
+                <span title="ProjectId" class="project-id">869316</span>
+                <span title="FileId" class="file-id">7932785</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/create-diesel-generators">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/10727.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力：内饰</span>
+                <span title="英文名" class="name">Create: Interiors</span>
+                <span title="ProjectId" class="project-id">906239</span>
+                <span title="FileId" class="file-id">906239</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/interiors">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/11960.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力：职业村民</span>
+                <span title="英文名" class="name">Create: Dynamic Village</span>
+                <span title="ProjectId" class="project-id">919759</span>
+                <span title="FileId" class="file-id">8749941</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/dynamic-village">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/12598.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">机械动力：机素防护</span>
+                <span title="英文名" class="name">Create: Protection Pixel</span>
+                <span title="ProjectId" class="project-id">1023409</span>
+                <span title="FileId" class="file-id">7549820</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/protection-pixel">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/14919.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 核心扩展模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 实用模组列表 -->
+    <div id="small-practical">
+        <div class="title">
+            <h2>实用模组</h2>
+        </div>
+        <!-- 实用模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">传送石碑</span>
+                <span title="英文名" class="name">Waystones</span>
+                <span title="ProjectId" class="project-id">245755</span>
+                <span title="FileId" class="file-id">7682270</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/waystones">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1339.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">夸克</span>
+                <span title="英文名" class="name">Quark</span>
+                <span title="ProjectId" class="project-id">243121</span>
+                <span title="FileId" class="file-id">6427817</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/quark">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/527.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">经验之书</span>
+                <span title="英文名" class="name">Xp Tome</span>
+                <span title="ProjectId" class="project-id">344787</span>
+                <span title="FileId" class="file-id">5465675</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/xp-tome">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2118.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">稀有精英怪</span>
+                <span title="英文名" class="name">AtomicStryker's Infernal Mobs</span>
+                <span title="ProjectId" class="project-id">227875</span>
+                <span title="FileId" class="file-id">7605060</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/atomicstrykers-infernal-mobs">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/380.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">冠军强敌再续</span>
+                <span title="英文名" class="name">Champions Unofficial</span>
+                <span title="ProjectId" class="project-id">1074990</span>
+                <span title="FileId" class="file-id">6923340</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/champions-unofficial">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/15862.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">物品物理掉落</span>
+                <span title="英文名" class="name">ItemPhysic</span>
+                <span title="ProjectId" class="project-id">258587</span>
+                <span title="FileId" class="file-id">8126877</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/itemphysic">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/932.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">月亮事件</span>
+                <span title="英文名" class="name">Enhanced Celestials</span>
+                <span title="ProjectId" class="project-id">438447</span>
+                <span title="FileId" class="file-id">7714235</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/enhanced-celestials">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3452.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">试验假人</span>
+                <span title="英文名" class="name">MmmMmmMmmMmm</span>
+                <span title="ProjectId" class="project-id">225738</span>
+                <span title="FileId" class="file-id">7963208</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1139.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">群系间谍</span>
+                <span title="英文名" class="name">BiomeSpy</span>
+                <span title="ProjectId" class="project-id">1087831</span>
+                <span title="FileId" class="file-id">7139029</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/structure-layout-optimizer">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/23074.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 实用模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 结构模组列表 -->
+    <div id="struct-modify">
+        <div class="title">
+            <h2>结构模组</h2>
+        </div>
+        <!-- 结构模组：书写区开始-->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">超多生物群系</span>
+                <span title="英文名" class="name">Biomes O' Plenty</span>
+                <span title="ProjectId" class="project-id">220318</span>
+                <span title="FileId" class="file-id">6364065</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/108.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">我们走过的生物群系</span>
+                <span title="英文名" class="name">Oh The Biomes We've Gone</span>
+                <span title="ProjectId" class="project-id">1070751</span>
+                <span title="FileId" class="file-id">8255932</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/15810.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">更好的村庄</span>
+                <span title="英文名" class="name">Better Villages</span>
+                <span title="ProjectId" class="project-id">615352</span>
+                <span title="FileId" class="file-id">6563409</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/better-village-forge">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/6569.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">YUNG 的洞穴优化</span>
+                <span title="英文名" class="name">YUNG's Better Caves</span>
+                <span title="ProjectId" class="project-id">340583</span>
+                <span title="FileId" class="file-id">8806070</span>
+                <a class="cf-link" href="340583">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1981.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">YUNG 的矿井优化</span>
+                <span title="英文名" class="name">YUNG's Better Mineshafts</span>
+                <span title="ProjectId" class="project-id">389665</span>
+                <span title="FileId" class="file-id">4769063</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-forge">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2788.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">YUNG 的桥</span>
+                <span title="英文名" class="name">YUNG's Bridges</span>
+                <span title="ProjectId" class="project-id">536660</span>
+                <span title="FileId" class="file-id">4769518</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/yungs-bridges">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5031.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">YUNG 的沼泽小屋优化</span>
+                <span title="英文名" class="name">YUNG's Better Witch Huts</span>
+                <span title="ProjectId" class="project-id">631401</span>
+                <span title="FileId" class="file-id">4769489</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/6618.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">冒险地牢</span>
+                <span title="英文名" class="name">Dungeon Crawl</span>
+                <span title="ProjectId" class="project-id">324973</span>
+                <span title="FileId" class="file-id">6047153</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3105.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 结构模组：书写区结束-->
+    </div>
+    <hr>
+
+    <!-- 生存模组列表 -->
+    <div id="survival">
+        <div class="title">
+            <h2>生存模组</h2>
+        </div>
+        <!-- 生存模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">意志坚定</span>
+                <span title="英文名" class="name">Tough As Nails</span>
+                <span title="ProjectId" class="project-id">246391</span>
+                <span title="FileId" class="file-id">5815863</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tough-as-nails">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/531.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">静谧四季</span>
+                <span title="英文名" class="name">Serene Seasons</span>
+                <span title="ProjectId" class="project-id">291874</span>
+                <span title="FileId" class="file-id">8246702</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/serene-seasons">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1132.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">冷汗</span>
+                <span title="英文名" class="name">Cold Sweat</span>
+                <span title="ProjectId" class="project-id">506194</span>
+                <span title="FileId" class="file-id">8302213</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/cold-sweat">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4383.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">医疗护理</span>
+                <span title="英文名" class="name">First Aid</span>
+                <span title="ProjectId" class="project-id">276837</span>
+                <span title="FileId" class="file-id">5531834</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/first-aid">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/916.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">难度调整</span>
+                <span title="英文名" class="name">Rough Tweaks Revamped</span>
+                <span title="ProjectId" class="project-id">415822</span>
+                <span title="FileId" class="file-id">5002695</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/rough-tweaks-revamped">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/7004.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">玩家救援</span>
+                <span title="英文名" class="name">PlayerRevive</span>
+                <span title="ProjectId" class="project-id">266890</span>
+                <span title="FileId" class="file-id">6048921</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/playerrevive">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1914.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">生活调味料：胡萝卜版</span>
+                <span title="英文名" class="name">Spice of Life: Carrot Edition</span>
+                <span title="ProjectId" class="project-id">277616</span>
+                <span title="FileId" class="file-id">4888575</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1836.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">无树可撸</span>
+                <span title="英文名" class="name">No Tree Punching</span>
+                <span title="ProjectId" class="project-id">289043</span>
+                <span title="FileId" class="file-id">4599927</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/no-tree-punching">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2138.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">舒适用品</span>
+                <span title="英文名" class="name">Comforts</span>
+                <span title="ProjectId" class="project-id">276951</span>
+                <span title="FileId" class="file-id">5503516</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/comforts">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2107.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 生存模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 钓鱼模组列表 -->
+    <div id="fishing">
+        <div class="title">
+            <h2>钓鱼模组</h2>
+        </div>
+
+        <!-- 钓鱼模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">潮汐</span>
+                <span title="英文名" class="name">Tide</span>
+                <span title="ProjectId" class="project-id">884685</span>
+                <span title="FileId" class="file-id">8571673</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tide">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/13540.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">星露谷钓鱼</span>
+                <span title="英文名" class="name">Stardew Fishing</span>
+                <span title="ProjectId" class="project-id">1066037</span>
+                <span title="FileId" class="file-id">8070773</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/stardew-fishing">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/15890.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">更真实的钓鱼</span>
+                <span title="英文名" class="name">Fishing Real</span>
+                <span title="ProjectId" class="project-id">348834</span>
+                <span title="FileId" class="file-id">6475355</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/fishing-real">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2883.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 钓鱼模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 饰品模组列表 -->
+    <div id="accessories">
+        <div class="title">
+            <h2>饰品模组</h2>
+        </div>
+        <!-- 饰品模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">饰品与小玩意：重制版</span>
+                <span title="英文名" class="name">Trinkets and Baubles Reforked</span>
+                <span title="ProjectId" class="project-id">1220248</span>
+                <span title="FileId" class="file-id">6939129</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/trinkets-and-baubles-reforked">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/18938.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">丰富的饰品：重制版</span>
+                <span title="英文名" class="name">BountifulBaubles:Reforked</span>
+                <span title="ProjectId" class="project-id">1204229</span>
+                <span title="FileId" class="file-id">8067229</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/bountifulbaubles-reforked">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/18603.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">奇异饰品</span>
+                <span title="英文名" class="name">Artifacts</span>
+                <span title="ProjectId" class="project-id">312353</span>
+                <span title="FileId" class="file-id">7903806</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/artifacts">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2821.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">虚空图腾</span>
+                <span title="英文名" class="name">Void Totem</span>
+                <span title="ProjectId" class="project-id">449655</span>
+                <span title="FileId" class="file-id">4605319</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/voidtotem">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5295.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">不死图腾插槽</span>
+                <span title="英文名" class="name">Curio of Undying</span>
+                <span title="ProjectId" class="project-id">316873</span>
+                <span title="FileId" class="file-id">5159193</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/charm-of-undying">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2236.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">药水指环</span>
+                <span title="英文名" class="name">Simply Potion Rings</span>
+                <span title="ProjectId" class="project-id">1217574</span>
+                <span title="FileId" class="file-id">8585189</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/simply-potion-rings">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/24913.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 饰品模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 装饰模组列表 -->
+    <div id="decoration">
+        <div class="title">
+            <h2>装饰模组</h2>
+        </div>
+        <!-- 装饰模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">JEI物品管理器</span>
+                <span title="英文名" class="name">Just Enough Items</span>
+                <span title="ProjectId" class="project-id">238222</span>
+                <span title="FileId" class="file-id">8778011</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/jei">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/459.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">JER资源管理器</span>
+                <span title="英文名" class="name">[JER]Just Enough Resources</span>
+                <span title="ProjectId" class="project-id">240630</span>
+                <span title="FileId" class="file-id">5057220</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/855.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">JER集成</span>
+                <span title="英文名" class="name">JER Integration</span>
+                <span title="ProjectId" class="project-id">506948</span>
+                <span title="FileId" class="file-id">5281932</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/jer-integration">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5611.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">JEI匠魂流体管理器</span>
+                <span title="英文名" class="name">TConJEI</span>
+                <span title="ProjectId" class="project-id">974154</span>
+                <span title="FileId" class="file-id">8659381</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/tconjei">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/13747.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">配置界面</span>
+                <span title="英文名" class="name">Configured</span>
+                <span title="ProjectId" class="project-id">457570</span>
+                <span title="FileId" class="file-id">5180900</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/configured">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3651.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">苹果皮</span>
+                <span title="英文名" class="name">AppleSkin</span>
+                <span title="ProjectId" class="project-id">248787</span>
+                <span title="FileId" class="file-id">4770828</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/appleskin">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/744.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">鼠标手势</span>
+                <span title="英文名" class="name">Mouse Tweaks</span>
+                <span title="ProjectId" class="project-id">60089</span>
+                <span title="FileId" class="file-id">5338457</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1162.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">玉</span>
+                <span title="英文名" class="name">Jade </span>
+                <span title="ProjectId" class="project-id">324717</span>
+                <span title="FileId" class="file-id">8479276</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/jade">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/3482.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">玉拓展</span>
+                <span title="英文名" class="name">Jade Addons</span>
+                <span title="ProjectId" class="project-id">583345</span>
+                <span title="FileId" class="file-id">8203724</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/jade-addons">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5837.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">Xaero的世界地图</span>
+                <span title="英文名" class="name">Xaero's World Map</span>
+                <span title="ProjectId" class="project-id">317780</span>
+                <span title="FileId" class="file-id">8698646</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1483.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">键位冲突显示</span>
+                <span title="英文名" class="name">Controlling</span>
+                <span title="ProjectId" class="project-id">250398</span>
+                <span title="FileId" class="file-id">4646682</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/controlling">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1191.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">键位搜索显示</span>
+                <span title="英文名" class="name">Searchables</span>
+                <span title="ProjectId" class="project-id">858542</span>
+                <span title="FileId" class="file-id">5284015</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/searchables">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/11102.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">自定义局域网联机</span>
+                <span title="英文名" class="name">Lan Server Properties</span>
+                <span title="ProjectId" class="project-id">387365</span>
+                <span title="FileId" class="file-id">4776657</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/lan-server-properties">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2754.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">万用皮肤补丁</span>
+                <span title="英文名" class="name">CustomSkinLoader</span>
+                <span title="ProjectId" class="project-id">286924</span>
+                <span title="FileId" class="file-id">8291183</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/customskinloader">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/883.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">钍</span>
+                <span title="英文名" class="name">Embeddium</span>
+                <span title="ProjectId" class="project-id">908741</span>
+                <span title="FileId" class="file-id">5681725</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/embeddium">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/12028.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">着色器</span>
+                <span title="英文名" class="name">Oculus</span>
+                <span title="ProjectId" class="project-id">581495</span>
+                <span title="FileId" class="file-id">6020952</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/oculus">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/5741.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">增强视觉效果</span>
+                <span title="英文名" class="name">EnhancedVisuals</span>
+                <span title="ProjectId" class="project-id">255389</span>
+                <span title="FileId" class="file-id">8676471</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/enhancedvisuals">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2054.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">更好的延迟显示</span>
+                <span title="英文名" class="name">Better Ping Display</span>
+                <span title="ProjectId" class="project-id">292038</span>
+                <span title="FileId" class="file-id">4594106</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/better-ping-display">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2950.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">更好的进度</span>
+                <span title="英文名" class="name">Better Advancements</span>
+                <span title="ProjectId" class="project-id">272515</span>
+                <span title="FileId" class="file-id">8569648</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/better-advancements">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/1530.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">更多弯曲 [现代化移植]</span>
+                <span title="英文名" class="name">Mo' Bends [MODERN PORT]</span>
+                <span title="ProjectId" class="project-id">1438637</span>
+                <span title="FileId" class="file-id">8851246</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/mo-bends-unofficial-modern-port">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/25011.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 装饰模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 音效模组列表 -->
+    <div id="sound">
+        <div class="title">
+            <h2>音效模组</h2>
+        </div>
+        <!-- 音效模组：书写区开始 -->
+        <ul class="list">
+            <li class="item">
+                <span title="中文名" class="zh-name">自然音效</span>
+                <span title="英文名" class="name">AmbientSounds</span>
+                <span title="ProjectId" class="project-id">254284</span>
+                <span title="FileId" class="file-id">8042994</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/ambientsounds">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/2947.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">脚步声Forge版</span>
+                <span title="英文名" class="name">Presence Footsteps (Forge)</span>
+                <span title="ProjectId" class="project-id">433068</span>
+                <span title="FileId" class="file-id">5015286</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/presence-footsteps-forge">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/4819.html">MC百科</a>
+            </li>
+            <li class="item">
+                <span title="中文名" class="zh-name">物理声效重制版</span>
+                <span title="英文名" class="name">Sound Physics Remastered</span>
+                <span title="ProjectId" class="project-id">535489</span>
+                <span title="FileId" class="file-id">6352920</span>
+                <a class="cf-link" href="https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered">CurseForge</a>
+                <a class="mc100-link" href="https://www.mcmod.cn/class/8197.html">MC百科</a>
+            </li>
+        </ul>
+        <!-- 音效模组：书写区结束 -->
+    </div>
+    <hr>
+
+    <!-- 生成脚本 -->
+    <script src="./js/manifest-build.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+
+[wearable_ban]
+	#Item Disable Master Switch.
+	wearableBanEnabled = true
+	#Write the ID of the item here as a blacklist, pay attention to
+	#distinguishing between uppercase and lowercase letters as well
+	#as spaces before and after. Enter the <mod_id> /reload in the game
+	#to refresh the configuration.
+	bannedWearables = []
+

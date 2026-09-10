@@ -1,0 +1,8 @@
+
+[UI]
+
+	[UI."Modifier Cooldowns"]
+		#Modifier cooldowns only display if a modifier is on cooldown
+		modifierCooldownsXOffset = 0
+		modifierCooldownsYOffset = 0
+

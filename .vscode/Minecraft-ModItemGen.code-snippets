@@ -1,0 +1,16 @@
+{
+	"ModLink": {
+		"prefix": "mod-link",
+		"body": [
+			"<li class=\"item\">",
+			"\t<span title=\"中文名\" class=\"zh-name\">$1</span>",
+			"\t<span title=\"英文名\" class=\"name\">$2</span>",
+			"\t<span title=\"ProjectId\" class=\"project-id\">$5</span>",
+			"\t<span title=\"FileId\" class=\"file-id\">$6</span>",
+			"\t<a class=\"cf-link\" href=\"$4\">CurseForge</a>",
+			"\t<a class=\"mc100-link\" href=\"$3\">MC百科</a>",
+			"</li>"
+		],
+		"description": "生成一个包含名称、ID和链接的列表项"
+	}
+}
