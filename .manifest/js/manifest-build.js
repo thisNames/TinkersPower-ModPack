@@ -191,3 +191,7 @@ navList.forEach(el =>
     li.appendChild(a);
     nav.appendChild(li);
 });
+
+
+// 设置标题
+document.title = document.title + "-" + document.querySelector(".mc-version").textContent + "-" + document.querySelector(".version").textContent;
