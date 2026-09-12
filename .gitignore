@@ -20,9 +20,15 @@
 /saves
 /TinkersPower-natives
 
+# node
+/node_modules
+
 # ------------- root files ---------------
 # files
 /observable_announce
+
+# dot files
+/.qmenu_opened.marker
 
 # properties files
 /rhino.local.properties

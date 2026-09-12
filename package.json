@@ -1,0 +1,22 @@
+{
+    "name": "tinkerspower",
+    "version": "1.0.0",
+    "description": "TinkersPower Minecraft ModPack Project.",
+    "main": "index.js",
+    "scripts": {
+        "ban": "node .manifest/scripts/ban_generator.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thisNames/TinkersPower-ModPack.git"
+    },
+    "author": "animator70@outlook.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thisNames/TinkersPower-ModPack/issues"
+    },
+    "homepage": "https://github.com/thisNames/TinkersPower-ModPack#readme",
+    "devDependencies": {
+        "@types/node": "^18.19.130"
+    }
+}
