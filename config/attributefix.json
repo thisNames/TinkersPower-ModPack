@@ -55,17 +55,6 @@
         "value": 100000
       }
     },
-    "stardew_fishing:line_strength": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
-        "value": 2
-      }
-    },
     "cold_sweat:heat_resistance": {
       "enabled": false,
       "min": {
@@ -75,6 +64,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "stardew_fishing:line_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
       }
     },
     "minecraft:generic.luck": {
@@ -99,15 +99,15 @@
         "value": 1000
       }
     },
-    "goety:frost_potency": {
+    "forge:entity_reach": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 2048,
-        "value": 2048
+        "default": 1024,
+        "value": 1024
       }
     },
     "obscure_api:magic_resistance": {
@@ -121,15 +121,15 @@
         "value": 100
       }
     },
-    "forge:entity_reach": {
+    "goety:frost_potency": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": 2048,
+        "value": 2048
       }
     },
     "goety:wild_discount": {
@@ -176,17 +176,6 @@
         "value": 2048
       }
     },
-    "goety:abyss_potency": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "stardew_fishing:golden_chest_bonus": {
       "enabled": false,
       "min": {
@@ -207,6 +196,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "goety:abyss_potency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "minecraft:zombie.spawn_reinforcements": {
@@ -561,6 +561,17 @@
         "value": 1024
       }
     },
+    "block_factorys_bosses:roll_count": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 9,
+        "value": 9
+      }
+    },
     "goety:spell_velocity": {
       "enabled": false,
       "min": {
@@ -572,17 +583,6 @@
         "value": 2048
       }
     },
-    "obscure_api:resilience": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "forge:entity_gravity": {
       "enabled": false,
       "min": {
@@ -592,6 +592,17 @@
       "max": {
         "default": 8,
         "value": 8
+      }
+    },
+    "obscure_api:resilience": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "cold_sweat:base_temperature": {
@@ -660,17 +671,6 @@
         "value": 2048
       }
     },
-    "goety:void_discount": {
-      "enabled": false,
-      "min": {
-        "default": -1,
-        "value": -1
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "obscure_api:magic_damage": {
       "enabled": false,
       "min": {
@@ -680,6 +680,17 @@
       "max": {
         "default": 100000,
         "value": 100000
+      }
+    },
+    "goety:void_discount": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "cold_sweat:cold_dampening": {
@@ -759,17 +770,6 @@
         "value": 1000000
       }
     },
-    "goety:spell_burning": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "cold_sweat:freezing_point": {
       "enabled": false,
       "min": {
@@ -779,6 +779,17 @@
       "max": {
         "default": Infinity,
         "value": Infinity
+      }
+    },
+    "goety:spell_burning": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "forge:swim_speed": {
@@ -825,17 +836,6 @@
         "value": 2048
       }
     },
-    "goety:wild_potency": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "modulargolems:golem_sweep": {
       "enabled": false,
       "min": {
@@ -845,6 +845,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "goety:wild_potency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "tconstruct:generic.bouncy": {
@@ -880,17 +891,6 @@
         "value": 64
       }
     },
-    "goety:spell_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "cataclysm:additional_critical_damage": {
       "enabled": false,
       "min": {
@@ -900,6 +900,17 @@
       "max": {
         "default": 512,
         "value": 512
+      }
+    },
+    "goety:spell_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "l2damagetracker:crit_rate": {

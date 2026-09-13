@@ -37,8 +37,8 @@ for (let i = 0; i < listDirent.length; i++)
     const wearData = JSON.parse(FS.readFileSync(wearJson, "utf-8"));
 
     // 各端脚本存放目录
-    const clientPath = PT.join("kubejs", "client_scriPTs", namespace.name);
-    const ServerPath = PT.join("kubejs", "server_scriPTs", namespace.name);
+    const clientPath = PT.join("kubejs", "client_scripts", namespace.name);
+    const ServerPath = PT.join("kubejs", "server_scripts", namespace.name);
 
     // 变量名称
     const itemVarClient = `${namespace.name}_ban_items_${Date.now()}`;

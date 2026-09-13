@@ -1,0 +1,37 @@
+{
+  "recipes": [
+    {
+      "base_potion": "minecraft:awkward",
+      "ingredient": "minecraft:totem_of_undying",
+      "effects": [
+        {
+          "effect_id": "more_potion_effects:immortal",
+          "duration": 12000,
+          "amplifier": 0
+        }
+      ],
+      "custom_name": "§e不死药水",
+      "custom_color": "FFD700",
+      "custom_base": "custom_immortal"
+    },
+    {
+      "base_potion": "custom_immortal",
+      "ingredient": "minecraft:totem_of_undying",
+      "effects": [
+        {
+          "effect_id": "more_potion_effects:immortal",
+          "duration": 12000,
+          "amplifier": 1
+        },
+        {
+          "effect_id": "minecraft:regeneration",
+          "duration": 200,
+          "amplifier": 2
+        }
+      ],
+      "custom_name": "§e不死药水II",
+      "custom_color": "FFD700",
+      "custom_base": "custom_immortal2"
+    }
+  ]
+}
