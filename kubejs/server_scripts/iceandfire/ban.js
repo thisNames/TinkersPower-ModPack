@@ -1,4 +1,4 @@
-let iceandfire_ban_items_1789293812744_server = [
+let iceandfire_ban_items_server = [
 	"iceandfire:dragonbone_sword",
 	"iceandfire:dragonbone_axe",
 	"iceandfire:dragonbone_pickaxe",
@@ -31,9 +31,9 @@ let iceandfire_ban_items_1789293812744_server = [
 	"iceandfire:dread_queen_sword",
 	"iceandfire:tide_trident_inventory",
 ];
-let iceandfire_ban_wearables_1789293812744_server = [
+let iceandfire_ban_wearables_server = [
 ];
-ServerEvents.recipes(event => event.remove({ output: iceandfire_ban_items_1789293812744_server}));
-ServerEvents.recipes(event => event.remove({ output: iceandfire_ban_wearables_1789293812744_server}));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", iceandfire_ban_items_1789293812744_server));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", iceandfire_ban_wearables_1789293812744_server));
+ServerEvents.recipes(event => event.remove({ output: iceandfire_ban_items_server}));
+ServerEvents.recipes(event => event.remove({ output: iceandfire_ban_wearables_server}));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", iceandfire_ban_items_server));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", iceandfire_ban_wearables_server));

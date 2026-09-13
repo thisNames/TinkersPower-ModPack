@@ -1,4 +1,4 @@
-let twilightforest_ban_items_1789293812750 = [
+let twilightforest_ban_items = [
 	"twilightforest:ironwood_sword",
 	"twilightforest:ironwood_axe",
 	"twilightforest:ironwood_pickaxe",
@@ -17,7 +17,7 @@ let twilightforest_ban_items_1789293812750 = [
 	"twilightforest:knightmetal_pickaxe",
 	"twilightforest:uncrafting_table",
 ];
-let twilightforest_ban_wearables_1789293812750 = [
+let twilightforest_ban_wearables = [
 ];
-ItemEvents.tooltip(event => event.add(twilightforest_ban_items_1789293812750, Text.red("此物品无法使用")));
-ItemEvents.tooltip(event => event.add(twilightforest_ban_wearables_1789293812750, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(twilightforest_ban_items, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(twilightforest_ban_wearables, Text.red("此物品无法使用")));

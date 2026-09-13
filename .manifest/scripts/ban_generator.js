@@ -41,8 +41,8 @@ for (let i = 0; i < listDirent.length; i++)
     const ServerPath = PT.join("kubejs", "server_scripts", namespace.name);
 
     // 变量名称
-    const itemVarClient = `${namespace.name}_ban_items_${Date.now()}`;
-    const wearVarClient = `${namespace.name}_ban_wearables_${Date.now()}`;
+    const itemVarClient = `${namespace.name}_ban_items`;
+    const wearVarClient = `${namespace.name}_ban_wearables`;
     const itemVarServer = itemVarClient + "_server";
     const wearVarServer = wearVarClient + "_server";
 

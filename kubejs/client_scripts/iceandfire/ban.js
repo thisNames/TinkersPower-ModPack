@@ -1,4 +1,4 @@
-let iceandfire_ban_items_1789293812744 = [
+let iceandfire_ban_items = [
 	"iceandfire:dragonbone_sword",
 	"iceandfire:dragonbone_axe",
 	"iceandfire:dragonbone_pickaxe",
@@ -31,7 +31,7 @@ let iceandfire_ban_items_1789293812744 = [
 	"iceandfire:dread_queen_sword",
 	"iceandfire:tide_trident_inventory",
 ];
-let iceandfire_ban_wearables_1789293812744 = [
+let iceandfire_ban_wearables = [
 ];
-ItemEvents.tooltip(event => event.add(iceandfire_ban_items_1789293812744, Text.red("此物品无法使用")));
-ItemEvents.tooltip(event => event.add(iceandfire_ban_wearables_1789293812744, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(iceandfire_ban_items, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(iceandfire_ban_wearables, Text.red("此物品无法使用")));

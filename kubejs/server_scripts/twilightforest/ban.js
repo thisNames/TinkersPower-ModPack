@@ -1,4 +1,4 @@
-let twilightforest_ban_items_1789293812750_server = [
+let twilightforest_ban_items_server = [
 	"twilightforest:ironwood_sword",
 	"twilightforest:ironwood_axe",
 	"twilightforest:ironwood_pickaxe",
@@ -17,9 +17,9 @@ let twilightforest_ban_items_1789293812750_server = [
 	"twilightforest:knightmetal_pickaxe",
 	"twilightforest:uncrafting_table",
 ];
-let twilightforest_ban_wearables_1789293812750_server = [
+let twilightforest_ban_wearables_server = [
 ];
-ServerEvents.recipes(event => event.remove({ output: twilightforest_ban_items_1789293812750_server}));
-ServerEvents.recipes(event => event.remove({ output: twilightforest_ban_wearables_1789293812750_server}));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", twilightforest_ban_items_1789293812750_server));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", twilightforest_ban_wearables_1789293812750_server));
+ServerEvents.recipes(event => event.remove({ output: twilightforest_ban_items_server}));
+ServerEvents.recipes(event => event.remove({ output: twilightforest_ban_wearables_server}));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", twilightforest_ban_items_server));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", twilightforest_ban_wearables_server));

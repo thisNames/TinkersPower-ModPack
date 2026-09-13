@@ -1,4 +1,4 @@
-let minecraft_ban_items_1789293812749_server = [
+let minecraft_ban_items_server = [
 	"minecraft:wooden_sword",
 	"minecraft:wooden_shovel",
 	"minecraft:wooden_pickaxe",
@@ -34,9 +34,9 @@ let minecraft_ban_items_1789293812749_server = [
 	"minecraft:bow",
 	"minecraft:crossbow",
 ];
-let minecraft_ban_wearables_1789293812749_server = [
+let minecraft_ban_wearables_server = [
 ];
-ServerEvents.recipes(event => event.remove({ output: minecraft_ban_items_1789293812749_server}));
-ServerEvents.recipes(event => event.remove({ output: minecraft_ban_wearables_1789293812749_server}));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_items_1789293812749_server));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_wearables_1789293812749_server));
+ServerEvents.recipes(event => event.remove({ output: minecraft_ban_items_server}));
+ServerEvents.recipes(event => event.remove({ output: minecraft_ban_wearables_server}));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_items_server));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_wearables_server));

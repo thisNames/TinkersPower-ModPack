@@ -1,4 +1,4 @@
-let minecraft_ban_items_1789293812749 = [
+let minecraft_ban_items = [
 	"minecraft:wooden_sword",
 	"minecraft:wooden_shovel",
 	"minecraft:wooden_pickaxe",
@@ -34,7 +34,7 @@ let minecraft_ban_items_1789293812749 = [
 	"minecraft:bow",
 	"minecraft:crossbow",
 ];
-let minecraft_ban_wearables_1789293812749 = [
+let minecraft_ban_wearables = [
 ];
-ItemEvents.tooltip(event => event.add(minecraft_ban_items_1789293812749, Text.red("此物品无法使用")));
-ItemEvents.tooltip(event => event.add(minecraft_ban_wearables_1789293812749, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(minecraft_ban_items, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(minecraft_ban_wearables, Text.red("此物品无法使用")));
