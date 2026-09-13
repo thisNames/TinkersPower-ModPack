@@ -1,5 +1,4 @@
 
 [wearable_ban]
-	#Item Disable Master Switch.
-	wearableBanEnabled = true
-
+#Item Disable Master Switch.
+wearableBanEnabled = false

@@ -1,4 +1,4 @@
-let minecraft_ban_items_1789228019852_server = [
+let minecraft_ban_items_1789288014578_server = [
 	"minecraft:wooden_sword",
 	"minecraft:wooden_shovel",
 	"minecraft:wooden_pickaxe",
@@ -35,34 +35,9 @@ let minecraft_ban_items_1789228019852_server = [
 	"minecraft:crossbow",
 	"minecraft:crafting_table",
 ];
-let minecraft_ban_wearables_1789228019852_server = [
-	"minecraft:leather_helmet",
-	"minecraft:chainmail_helmet",
-	"minecraft:iron_helmet",
-	"minecraft:golden_helmet",
-	"minecraft:diamond_helmet",
-	"minecraft:netherite_helmet",
-	"minecraft:leather_chestplate",
-	"minecraft:chainmail_chestplate",
-	"minecraft:iron_chestplate",
-	"minecraft:golden_chestplate",
-	"minecraft:diamond_chestplate",
-	"minecraft:netherite_chestplate",
-	"minecraft:leather_leggings",
-	"minecraft:chainmail_leggings",
-	"minecraft:iron_leggings",
-	"minecraft:golden_leggings",
-	"minecraft:diamond_leggings",
-	"minecraft:netherite_leggings",
-	"minecraft:leather_boots",
-	"minecraft:chainmail_boots",
-	"minecraft:iron_boots",
-	"minecraft:golden_boots",
-	"minecraft:diamond_boots",
-	"minecraft:netherite_boots",
-	"minecraft:turtle_helmet",
+let minecraft_ban_wearables_1789288014578_server = [
 ];
-ServerEvents.recipes(event => event.remove({ output: minecraft_ban_items_1789228019852_server}));
-ServerEvents.recipes(event => event.remove({ output: minecraft_ban_wearables_1789228019852_server}));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_items_1789228019852_server));
-ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_wearables_1789228019852_server));
+ServerEvents.recipes(event => event.remove({ output: minecraft_ban_items_1789288014578_server}));
+ServerEvents.recipes(event => event.remove({ output: minecraft_ban_wearables_1789288014578_server}));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_items_1789288014578_server));
+ServerEvents.tags("item", event => event.add("c:hidden_from_recipe_viewers", minecraft_ban_wearables_1789288014578_server));
