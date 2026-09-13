@@ -24,6 +24,7 @@
 /mods
 /saves
 /TinkersPower-natives
+/crash-reports
 
 # node
 /node_modules
