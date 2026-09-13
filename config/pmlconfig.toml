@@ -1,0 +1,7 @@
+#Activates some tweaks related to a modpack mechanic, by default is set to false
+"RLCraft Tweaks" = false
+#Activates debug to track down damage modification
+debug = false
+#Should this mod modify damage type done when a player attacks(overrides Spartan Weaponry issues)
+"Player Attack type" = true
+
