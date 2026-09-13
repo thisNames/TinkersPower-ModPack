@@ -12,8 +12,11 @@
 /CustomSkinLoader
 /kubejs/probe
 /xaero
-/config/jei/world
 /.mixin.out
+
+# mod config
+/config/jei/world
+/config/spark
 
 # minecraft folders
 /local
