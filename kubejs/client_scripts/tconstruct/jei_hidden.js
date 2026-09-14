@@ -29,7 +29,7 @@ ItemEvents.tooltip(event =>
         "tconstruct:war_pick",
         "tconstruct:melting_pan",
         "tconstruct:swasher",
-        "tconstruct:minotaur_ax1"
+        "tconstruct:minotaur_axe"
     ], Text.blue("匠魂制造"));
 });
 

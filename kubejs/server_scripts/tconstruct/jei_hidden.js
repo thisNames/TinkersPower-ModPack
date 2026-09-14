@@ -29,7 +29,7 @@ ServerEvents.tags("item", event =>
         "tconstruct:war_pick",
         "tconstruct:melting_pan",
         "tconstruct:swasher",
-        "tconstruct:minotaur_ax1"
+        "tconstruct:minotaur_axe"
     ]);
 });
 

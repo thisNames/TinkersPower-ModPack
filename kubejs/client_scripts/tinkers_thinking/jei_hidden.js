@@ -8,6 +8,7 @@ ItemEvents.tooltip(event =>
         "tinkers_thinking:arrow_thrower",
         "tinkers_thinking:cutlass",
         "tinkers_thinking:repeating_crossbow",
-        "tinkers_thinking:amethyst_staff"
+        "tinkers_thinking:amethyst_staff",
+        "tinkers_thinking:quartz_staff"
     ], Text.blue("匠魂制造"))
 });
