@@ -4,7 +4,8 @@
     "description": "TinkersPower Minecraft ModPack Project.",
     "main": "index.js",
     "scripts": {
-        "ban": "node .manifest/scripts/ban_generator.js"
+        "ban": "node .manifest/scripts/ban_generator.js",
+        "overrides": "node .manifest/scripts/overrides_generator.js"
     },
     "repository": {
         "type": "git",
