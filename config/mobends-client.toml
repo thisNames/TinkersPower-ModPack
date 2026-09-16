@@ -18,4 +18,6 @@ arrowTrailPotionColor = true
 spectralArrowTrailEffect = true
 #Allow the Trident to have a trail
 tridentTrail = true
+#Villager, witch, wandering trader and zombie villager robes only bend while sitting.
+bendRobesOnlyWhenSitting = true
 
