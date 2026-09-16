@@ -1,6 +1,6 @@
 
 [general]
-	"Enable 'q' Button" = true
+	"Enable 'q' Button" = false
 	"'q' Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#How many advancements deep you can see in the advancement screen. Vanilla is 2.
@@ -9,7 +9,7 @@
 	#Blocks that Quark should treat as Shulker Boxes.
 	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
 	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
-	"Interpret Shulker Box Like Blocks" = true
+	"Interpret Shulker Box Like Blocks" = false
 	#Set to true if you need to find the class name for a screen that's causing problems
 	"Print Screen Classnames" = false
 	#A list of screens that can accept quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
@@ -24,7 +24,7 @@
 	#This will have various knock-on effects but might make the Weald more common, or appear closer to modded biomes. Who knows?
 	"Terrablender Modify Vanilla Anyway" = false
 	#Set to false to disable the popup message telling you that you can config quark in the q menu
-	"Enable Onboarding" = true
+	"Enable Onboarding" = false
 	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
 	"Chest Button Slot Target" = 27
 	#Set this to false to not generate the Quark Programmer Art resource pack
@@ -52,16 +52,16 @@
 
 [automation]
 	"Chains Connect Blocks" = true
-	Chute = true
-	Crafter = true
-	"Dispensers Place Blocks" = true
+	Chute = false
+	Crafter = false
+	"Dispensers Place Blocks" = false
 	"Ender Watcher" = true
 	"Feeding Trough" = true
 	Gravisand = true
 	"Iron Rod" = true
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
+	"Pistons Move Tile Entities" = false
 	"Redstone Randomizer" = true
 
 	[automation.crafter]
@@ -282,9 +282,9 @@
 		"Enable Pillar" = true
 
 [management]
-	"Automatic Tool Restock" = true
+	"Automatic Tool Restock" = false
 	"Easy Transfering" = true
-	"Expanded Item Interactions" = true
+	"Expanded Item Interactions" = false
 	"Hotbar Changer" = true
 	"Inventory Sorting" = true
 	"Item Sharing" = true
@@ -340,14 +340,14 @@
 [tools]
 	Abacus = true
 	"Ambient Discs" = true
-	"Ancient Tomes" = true
+	"Ancient Tomes" = false
 	"Beacon Redirection" = true
 	"Bottled Cloud" = true
 	"Color Runes" = true
 	"Endermosh Music Disc" = true
 	"Parrot Eggs" = true
 	"Pathfinder Maps" = true
-	Pickarang = true
+	Pickarang = false
 	"Seed Pouch" = true
 	"Skull Pikes" = true
 	"Slime In A Bucket" = true
@@ -512,7 +512,7 @@
 
 [tweaks]
 	"Armed Armor Stands" = true
-	"Automatic Recipe Unlock" = true
+	"Automatic Recipe Unlock" = false
 	"Better Elytra Rocket" = true
 	"Campfires Boost Elytra" = true
 	"Compasses Work Everywhere" = true
@@ -521,15 +521,15 @@
 	"Double Door Opening" = true
 	"Dragon Scales" = true
 	"Dyeable Item Frames" = true
-	Emotes = true
+	Emotes = false
 	"Enhanced Ladders" = true
 	"Glass Shard" = true
-	"Gold Tools Have Fortune" = true
+	"Gold Tools Have Fortune" = false
 	"Grab Chickens" = true
-	"Hoe Harvesting" = true
+	"Hoe Harvesting" = false
 	"Horses Swim" = true
 	"Improved Sponges" = true
-	"Lock Rotation" = true
+	"Lock Rotation" = false
 	"Magma Keeps Concrete Powder" = true
 	"Map Washing" = true
 	"More Banner Layers" = true
@@ -545,14 +545,14 @@
 	"Replace Scaffolding" = true
 	"Safer Creatures" = true
 	"Shulker Packing" = true
-	"Simple Harvest" = true
+	"Simple Harvest" = false
 	"Slabs To Blocks" = true
 	"Slimes To Magma Cubes" = true
 	"Snow Golem Player Heads" = true
 	"Utility Recipes" = true
-	"Vexes Die With Their Masters" = true
+	"Vexes Die With Their Masters" = false
 	"Villagers Follow Emeralds" = true
-	"Zombie Villagers On Normal" = true
+	"Zombie Villagers On Normal" = false
 
 	[tweaks.automatic_recipe_unlock]
 		#A list of recipe names that should NOT be added in by default
@@ -1552,14 +1552,14 @@
 					"Is Blacklist" = false
 
 [client]
-	"Auto Walk Keybind" = true
-	"Back Button Keybind" = true
+	"Auto Walk Keybind" = false
+	"Back Button Keybind" = false
 	"Buckets Show Inhabitants" = true
 	Camera = true
 	"Chest Searching" = true
 	"Elytra Indicator" = true
 	"Greener Grass" = true
-	"Improved Tooltips" = true
+	"Improved Tooltips" = false
 	"Long Range Pick Block" = true
 	"Microcrafting Helper" = true
 	"Soul Candles" = true

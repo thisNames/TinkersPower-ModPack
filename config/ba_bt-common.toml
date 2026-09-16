@@ -6,10 +6,10 @@
 	firstTowerDistance = 30
 	#Length of time in seconds after Golem is defeated before the Land Tower collapses
 	#Range: 5 ~ 60
-	landCollapseTimer = 30
+	landCollapseTimer = 36
 	#Length of time in seconds after Golem is defeated before the Ocean Tower crumbles
 	#Range: 5 ~ 60
-	oceanCollapseTimer = 45
+	oceanCollapseTimer = 50
 	#Length of time in seconds after Golem is defeated before the Core Tower crumbles
 	#Range: 5 ~ 60
 	coreCollapseTimer = 45

@@ -68,7 +68,7 @@
 	#Range: > 0
 	nuke_max_block_explosion_resistance = 1000
 	#Whether some block items are dropped by nuclear explosions. False if all destroyed blocks do not drop items.
-	nuke_spawn_item_drops = true
+	nuke_spawn_item_drops = false
 	#The scale of nuclear bomb destruction. multiply this by 16 to get the radius of a nuclear bomb explosion.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	nuclear_explosion_size_modifier = 3.0
