@@ -1,14 +1,4 @@
 
-#─────────────────────────────────────────────────────────────────────────
-# Anywhere that uses IDs, such as blocks, biomes, dimensions, and structures, also supports:
-# • Tags (e.g. "#minecraft:is_underground")
-# • Comma-separated lists (e.g. "minecraft:desert,#minecraft:is_badlands")
-#     Applies the setting to all listed IDs. Can use tags, regular IDs, and negation interchangeably
-# • Negation (e.g. "!minecraft:jungle_leaves")
-#     Useful with lists/tags. Excludes the listed IDs from the setting
-#     i.e. "#minecraft:leaves,!minecraft:jungle_leaves" (all leaves EXCEPT jungle leaves)
-# Settings with "//v" will list elements vertically. Removing "//v" will list elements in one line
-#─────────────────────────────────────────────────────────────────────────
 [Dimensions]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Applies an offset to the world's temperature across an entire dimension
@@ -418,4 +408,26 @@
 		Autumn = [0.2, 0, -0.2]
 		Winter = [-0.4, -0.6, -0.4]
 		Spring = [-0.2, 0, 0.2]
+
+#─────────────────────────────────────────────────────────────────────────
+# Anywhere that uses IDs, such as blocks, biomes, dimensions, and structures, also supports:
+# • Tags (e.g. "#minecraft:is_underground")
+# • Comma-separated lists (e.g. "minecraft:desert,#minecraft:is_badlands")
+#     Applies the setting to all listed IDs. Can use tags, regular IDs, and negation interchangeably
+# • Negation (e.g. "!minecraft:jungle_leaves")
+#     Useful with lists/tags. Excludes the listed IDs from the setting
+#     i.e. "#minecraft:leaves,!minecraft:jungle_leaves" (all leaves EXCEPT jungle leaves)
+# Settings with "//v" will list elements vertically. Removing "//v" will list elements in one line
+#─────────────────────────────────────────────────────────────────────────
+[General]
+	#─────────────────────────────────────────────────────────────────────────//v
+	# The time of day when the world is at its hottest, in ticks
+	# └── 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight
+	#Range: 0 ~ 24000
+	"Hottest Time" = 6000
+	#─────────────────────────────────────────────────────────────────────────//v
+	# The time of day when the world is at its coldest, in ticks
+	# └── 0 = sunrise, 6000 = noon, 12000 = sunset, 18000 = midnight
+	#Range: 0 ~ 24000
+	"Coldest Time" = 18000
 
