@@ -429,9 +429,6 @@
     "temperature": {
       "enabled": true,
       "opacity": 1.0,
-      "defaultIntensity": 0,
-      "mediumIntensity": 0.2,
-      "maxIntensity": 0.3,
       "fadeFactor": 0.005,
       "freeze": {
         "disabled": false,
@@ -443,13 +440,11 @@
         "opacity": 1.0,
         "animationSpeed": 0
       },
-      "coldestTemperature": -100,
-      "hypotheremiaTemperature": -75,
-      "coldTemperature": -50,
-      "defaultTemperature": 0,
-      "warmTemperature": 50,
-      "hyperthermiaTemperature": 75,
-      "hottestTemperature": 100
+      "icyIntensity": 0.3,
+      "coldIntensity": 0.2,
+      "neutralIntensity": 0,
+      "warmIntensity": 0.2,
+      "hotIntensity": 0.3
     }
   }
 }

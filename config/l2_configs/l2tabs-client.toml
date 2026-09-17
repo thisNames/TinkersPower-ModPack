@@ -11,5 +11,5 @@ attributeLinePerPage = 15
 #Example: menu.tabs.attribute for attribute tab
 #Example: menu.tabs.curios for curios tab
 #Example: pandora.menu.title for pandora tab
-hiddentTabs = []
+hiddentTabs = ["menu.tabs.attribute", "menu.tabs.curios"]
 

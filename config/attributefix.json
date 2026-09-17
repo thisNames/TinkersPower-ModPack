@@ -77,17 +77,6 @@
         "value": 100
       }
     },
-    "cold_sweat:base_temperature": {
-      "enabled": false,
-      "min": {
-        "default": NaN,
-        "value": NaN
-      },
-      "max": {
-        "default": Infinity,
-        "value": Infinity
-      }
-    },
     "modulargolems:golem_jump": {
       "enabled": false,
       "min": {
@@ -97,6 +86,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "cold_sweat:base_temperature": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "obscure_api:regeneration": {
@@ -110,17 +110,6 @@
         "value": 100000
       }
     },
-    "cold_sweat:heat_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "stardew_fishing:line_strength": {
       "enabled": false,
       "min": {
@@ -130,6 +119,17 @@
       "max": {
         "default": 2,
         "value": 2
+      }
+    },
+    "cold_sweat:heat_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "minecraft:generic.luck": {
@@ -682,17 +682,6 @@
         "value": 100
       }
     },
-    "cold_sweat:cold_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "tconstruct:player.mining_speed_multiplier": {
       "enabled": false,
       "min": {
@@ -702,6 +691,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "cold_sweat:cold_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "obscure_api:critical_damage": {

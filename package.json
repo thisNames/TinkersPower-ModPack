@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "ban": "node .manifest/scripts/ban_generator.js",
-        "overrides": "node .manifest/scripts/overrides_generator.js"
+        "overrides": "node .manifest/scripts/overrides_generator.js",
+        "clear_logs": "node .manifest/scripts/clear_logs.js"
     },
     "repository": {
         "type": "git",
