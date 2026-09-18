@@ -1,30 +1,5 @@
 #List of slots to create or modify.
 #See documentation for syntax: https://docs.illusivesoulworks.com/curios/configuration#slot-configuration
 #
-slots = [
-    "id=tide;size=0;order=0",
-    "id=feet;size=1;order=12",
-    "id=player_vanilla;size=0;order=0",
-    "id=hands;size=2;order=7",
-    "id=golem_curios;size=0;order=0",
-    "id=ring;size=2;order=9",
-    "id=belt;size=1;order=11",
-    "id=shipin;size=0;order=0",
-    "id=back;size=1;order=5",
-    "id=necklace;size=1;order=4",
-    "id=bracelet;size=0;order=0",
-    "id=body;size=1;order=6",
-    "id=golem_skin;size=0;order=0",
-    "id=curio;size=0;order=0",
-    "id=tinkers_curio;size=0;order=0",
-    "id=head;size=1;order=2",
-    "id=slots;size=0;order=0",
-    "id=rings;size=0;order=0",
-    "id=charm;size=1;order=3",
-    "id=golem_route;size=0;order=0",
-    "id=waist;size=0;order=0",
-    "id=informational;size=1;order=1",
-    "id=talisman;size=0;order=0",
-    "id=add_slots_tf;size=0;order=0",
-    "id=player;size=0;order=0",
-]
+slots = ["id=tide;size=0;order=0", "id=feet;size=1;order=12", "id=player_vanilla;size=0;order=0", "id=hands;size=2;order=7", "id=golem_curios;size=0;order=0", "id=ring;size=2;order=9", "id=belt;size=1;order=11", "id=shipin;size=0;order=0", "id=back;size=1;order=5", "id=necklace;size=1;order=4", "id=bracelet;size=0;order=0", "id=body;size=1;order=6", "id=golem_skin;size=0;order=0", "id=curio;size=0;order=0", "id=tinkers_curio;size=0;order=0", "id=head;size=1;order=2", "id=slots;size=0;order=0", "id=rings;size=0;order=0", "id=charm;size=1;order=3", "id=golem_route;size=0;order=0", "id=waist;size=0;order=0", "id=informational;size=1;order=1", "id=talisman;size=0;order=0", "id=add_slots_tf;size=0;order=0", "id=player;size=0;order=0"]
+

@@ -8,6 +8,8 @@ ServerEvents.recipes(event =>
     const _cataclysm = id => "cataclysm:" + id;
     const _twilightforest = id => "twilightforest:" + id;
     const _alexscaves = id => "alexscaves:" + id;
+    const _potionrings2 = id => "potionrings2:" + id;
+    const _bfbosses = id => "block_factorys_bosses:" + id;
 
     event.remove({
         output: [
@@ -30,7 +32,15 @@ ServerEvents.recipes(event =>
             _this("goblin_soup"),
             _this("elf_sap"),
             _this("faelis_food"),
-            _this("dragon_gem")
+            _this("dragon_gem"),
+            // transform rings
+            _this("fairies_ring"),
+            _this("dwarves_ring"),
+            _this("titan_ring"),
+            _this("goblins_ring"),
+            _this("elves_ring"),
+            _this("faelis_ring"),
+            _this("dragons_ring")
         ]
     });
 
@@ -135,5 +145,48 @@ ServerEvents.recipes(event =>
         [_alexscaves("tectonic_shard"), _this("dragons_eye_fire"), _alexscaves("tectonic_shard")],
         [_minecraft("dragon_breath"), _this("moon_rose"), _minecraft("dragon_breath")],
         [_twilightforest("hydra_chop"), _twilightforest("fiery_blood"), _twilightforest("hydra_chop")]
+    ]);
+
+    // transform rings
+    event.shaped(_this("fairies_ring"), [
+        [_this("fairy_dew"), _this("glowing_ingot"), _iceandfire("sapphire_gem")],
+        [_this("glowing_ingot"), _potionrings2("potion_ring"), _iceandfire("sapphire_gem")],
+        [_iceandfire("sapphire_gem"), _iceandfire("sapphire_gem"), _alexscaves("azure_neodymium_ingot")]
+    ]);
+
+    event.shaped(_this("dwarves_ring"), [
+        [_alexscaves("scarlet_neodymium_ingot"), _this("glowing_ingot"), _twilightforest("fiery_ingot")],
+        [_this("glowing_ingot"), _potionrings2("potion_ring"), _twilightforest("fiery_ingot")],
+        [_twilightforest("fiery_ingot"), _twilightforest("fiery_ingot"), _this("dwarf_stout")]
+    ]);
+
+    event.shaped(_this("titan_ring"), [
+        [_this("titan_spirit"), _this("glowing_ingot"), _cataclysm("black_steel_ingot")],
+        [_this("glowing_ingot"), _potionrings2("potion_ring"), _cataclysm("witherite_ingot")],
+        [_cataclysm("black_steel_ingot"), _cataclysm("witherite_ingot"), _cataclysm("witherite_ingot")]
+    ]);
+
+    event.shaped(_this("goblins_ring"), [
+        [_this("goblin_soup"), _this("glowing_ingot"), _twilightforest("knightmetal_ingot")],
+        [_this("glowing_ingot"), _potionrings2("potion_ring"), _twilightforest("ironwood_ingot")],
+        [_twilightforest("knightmetal_ingot"), _twilightforest("ironwood_ingot"), _twilightforest("ironwood_ingot")]
+    ]);
+
+    event.shaped(_this("elves_ring"), [
+        [_this("elf_sap"), _this("glowing_ingot"), _cataclysm("essence_of_the_storm")],
+        [_this("glowing_ingot"), _potionrings2("potion_ring"), _cataclysm("cursium_ingot")],
+        [_cataclysm("essence_of_the_storm"), _cataclysm("cursium_ingot"), _twilightforest("seeker_bow")]
+    ]);
+
+    event.shaped(_this("faelis_ring"), [
+        [_this("faelis_food"), _this("glowing_ingot"), _cataclysm("ancient_metal_ingot")],
+        [_this("glowing_ingot"), _potionrings2("potion_ring"), _cataclysm("ancient_metal_ingot")],
+        [_cataclysm("ancient_metal_ingot"), _cataclysm("ancient_metal_ingot"), _this("faelis_claw")]
+    ]);
+
+    event.shaped(_this("dragons_ring"), [
+        [_bfbosses("dragon_skull"), _this("glowing_ingot"), _bfbosses("dragon_bone")],
+        [_this("dragon_gem"), _potionrings2("potion_ring"), _bfbosses("dragon_bone")],
+        [_bfbosses("dragon_bone"), _bfbosses("dragon_bone"), _iceandfire("fire_dragon_heart")]
     ]);
 });
