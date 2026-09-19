@@ -42,7 +42,7 @@ ServerEvents.recipes(event =>
 
     event.shaped(_this("dreadsteel_shield"), [
         [_this("dreadsteel_ingot"), "", _this("dreadsteel_ingot")],
-        [_graveyard("dark_iron_block"), _alexscaves("pure_darkness"), _graveyard("dark_iron_block")],
-        [_graveyard("dark_iron_block"), _this("dreadsteel_ingot"), _this("dreadsteel_ingot")]
+        [_this("dreadsteel_ingot"), _alexscaves("pure_darkness"), _this("dreadsteel_ingot")],
+        [_graveyard("dark_iron_block"), _this("dreadsteel_ingot"), _graveyard("dark_iron_block")]
     ]);
 });

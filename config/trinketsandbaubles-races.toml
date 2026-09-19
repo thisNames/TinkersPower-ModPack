@@ -6,7 +6,7 @@
 	[races.dwarves]
 		#生命值倍率
 		#Range: -10.0 ~ 10.0
-		max_health = -0.3
+		max_health = -0.25
 		#跟随范围倍率
 		#Range: -10.0 ~ 10.0
 		follow_range = 0.0
@@ -21,7 +21,7 @@
 		flying_speed = 0.0
 		#攻击伤害倍率
 		#Range: -10.0 ~ 10.0
-		attack_damage = 0.25
+		attack_damage = 0.2
 		#攻击击退力度
 		#Range: -10.0 ~ 10.0
 		attack_knockback = 0.0
@@ -36,7 +36,7 @@
 		armor_toughness = 0.25
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
-		luck = 1.0
+		luck = 8.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
 		swim_speed = 0.0
@@ -66,40 +66,40 @@
 	[races.dragon]
 		#生命值倍率
 		#Range: -10.0 ~ 10.0
-		max_health = 0.25
+		max_health = 0.4
 		#跟随范围倍率
 		#Range: -10.0 ~ 10.0
 		follow_range = 0.0
 		#击退抗性
 		#Range: -10.0 ~ 1.0
-		knockback_resistance = 0.0
+		knockback_resistance = 0.1
 		#移动速度倍率
 		#Range: -10.0 ~ 10.0
-		movement_speed = 0.0
+		movement_speed = 0.1
 		#飞行速度倍率
 		#Range: -10.0 ~ 10.0
 		flying_speed = 0.0
 		#攻击伤害倍率
 		#Range: -10.0 ~ 10.0
-		attack_damage = 0.5
+		attack_damage = 0.25
 		#攻击击退力度
 		#Range: -10.0 ~ 10.0
 		attack_knockback = 0.0
 		#攻击速度倍率
 		#Range: -10.0 ~ 10.0
-		attack_speed = 0.0
+		attack_speed = 0.15
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
-		armor = 0.0
+		armor = 4.0
 		#护甲韧性加成
 		#Range: -10.0 ~ 50.0
-		armor_toughness = 0.5
+		armor_toughness = 2.0
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
 		luck = 0.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
-		swim_speed = 0.0
+		swim_speed = -0.6
 		#名称标签显示距离倍率
 		#Range: -10.0 ~ 10.0
 		nametag_distance = 0.0
@@ -111,16 +111,16 @@
 		step_height = 0.0
 		#方块交互距离倍率
 		#Range: -10.0 ~ 10.0
-		block_reach = 0.0
+		block_reach = 0.15
 		#实体交互距离倍率
 		#Range: -10.0 ~ 10.0
-		entity_reach = 0.0
+		entity_reach = 0.1
 		#飞行速度倍率
 		#Range: -1.0 ~ 2.0
-		flightSpeed = 0.3
+		flightSpeed = 1.0
 		#魔力值加成
 		#Range: 0.0 ~ 10000.0
-		manaBonus = 300.0
+		manaBonus = 400.0
 		#每秒飞行消耗魔力值
 		#Range: 0.0 ~ 1000.0
 		flightManaCost = 5.0
@@ -132,13 +132,13 @@
 		breathManaCost = 5.0
 		#龙息基础伤害
 		#Range: 0.0 ~ 100.0
-		BreathBaseDamage = 4.0
+		BreathBaseDamage = 5.0
 		#龙息最小伤害
 		#Range: 0.0 ~ 100.0
 		BreathMinDamage = 2.0
 		#龙息伤害衰减率
 		#Range: 0.0 ~ 1.0
-		BreathDecayRate = 0.7
+		BreathDecayRate = 0.6
 		#龙族体型缩放 1 为正常体型
 		#Range: 0.1 ~ 10.0
 		scale = 1.2
@@ -147,7 +147,7 @@
 	[races.elves]
 		#生命值倍率
 		#Range: -10.0 ~ 10.0
-		max_health = 0.0
+		max_health = 0.1
 		#跟随范围倍率
 		#Range: -10.0 ~ 10.0
 		follow_range = 0.0
@@ -171,13 +171,13 @@
 		attack_speed = 0.3
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
-		armor = 0.0
+		armor = 0.2
 		#护甲韧性加成
 		#Range: -10.0 ~ 50.0
-		armor_toughness = 0.0
+		armor_toughness = 0.1
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
-		luck = 0.0
+		luck = 1.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
 		swim_speed = 0.0
@@ -198,16 +198,16 @@
 		entity_reach = 0.0
 		#森林中额外攻击速度加成
 		#Range: -1.0 ~ 10.0
-		forestAttackSpeed = 0.15
+		forestAttackSpeed = 0.25
 		#森林中额外移动速度加成
 		#Range: -1.0 ~ 10.0
-		forestMovementSpeed = 0.15
+		forestMovementSpeed = 0.2
 		#精灵效果魔力值增加量
 		#Range: 0.0 ~ 10000.0
-		manaBonus = 100.0
+		manaBonus = 400.0
 		#潜行时弓箭伤害增加倍率
 		#Range: 1.0 ~ 50.0
-		bowDamageBoost = 1.5
+		bowDamageBoost = 20.0
 		#精灵族体型缩放 1 为正常体型
 		#Range: 0.1 ~ 10.0
 		scale = 1.0
@@ -216,40 +216,40 @@
 	[races.faeles]
 		#生命值倍率
 		#Range: -10.0 ~ 10.0
-		max_health = -0.25
+		max_health = -0.2
 		#跟随范围倍率
 		#Range: -10.0 ~ 10.0
 		follow_range = 0.0
 		#击退抗性
 		#Range: -10.0 ~ 1.0
-		knockback_resistance = 0.0
+		knockback_resistance = -0.1
 		#移动速度倍率
 		#Range: -10.0 ~ 10.0
-		movement_speed = 0.15
+		movement_speed = 0.4
 		#飞行速度倍率
 		#Range: -10.0 ~ 10.0
 		flying_speed = 0.0
 		#攻击伤害倍率
 		#Range: -10.0 ~ 10.0
-		attack_damage = -0.25
+		attack_damage = -0.2
 		#攻击击退力度
 		#Range: -10.0 ~ 10.0
 		attack_knockback = 0.0
 		#攻击速度倍率
 		#Range: -10.0 ~ 10.0
-		attack_speed = 0.15
+		attack_speed = 0.6
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
 		armor = 0.0
 		#护甲韧性加成
 		#Range: -10.0 ~ 50.0
-		armor_toughness = -0.15
+		armor_toughness = -0.2
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
-		luck = 2.0
+		luck = 3.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
-		swim_speed = 0.3
+		swim_speed = 0.4
 		#名称标签显示距离倍率
 		#Range: -10.0 ~ 10.0
 		nametag_distance = 0.0
@@ -267,21 +267,21 @@
 		entity_reach = 0.0
 		#空手伤害增加值
 		#Range: -100.0 ~ 2000.0
-		unarmedDamage = 6.0
+		unarmedDamage = 9.0
 		#每件非皮革护甲的速度惩罚
 		#Range: -1.0 ~ 0.0
-		armorSpeedPenalty = -0.04
+		armorSpeedPenalty = -0.06
 		#魔力值增加量
 		#Range: 0.0 ~ 10000.0
-		manaBonus = 25.0
+		manaBonus = 100.0
 		#跳跃高度修改值
 		#Range: -1.0 ~ 200.0
-		jumpStrength = 0.6
+		jumpStrength = 0.7
 		#猫猫效果是否允许攀爬墙壁
 		fwallClimb = true
 		#猫猫效果爬墙速度（原版梯子速度约为0.11）
 		#Range: 0.05 ~ 0.3
-		climbSpeed = 0.11
+		climbSpeed = 0.12
 		#猫猫效果爬墙时的水平移动阻力
 		#Range: 0.5 ~ 1.0
 		climbHorizontalDrag = 0.7
@@ -293,7 +293,7 @@
 	[races.fairy]
 		#生命值倍率
 		#Range: -10.0 ~ 10.0
-		max_health = -0.6
+		max_health = -0.5
 		#跟随范围倍率
 		#Range: -10.0 ~ 10.0
 		follow_range = 0.0
@@ -302,13 +302,13 @@
 		knockback_resistance = 0.0
 		#移动速度倍率
 		#Range: -10.0 ~ 10.0
-		movement_speed = -0.25
+		movement_speed = 0.7
 		#飞行速度倍率
 		#Range: -10.0 ~ 10.0
 		flying_speed = 0.0
 		#攻击伤害倍率
 		#Range: -10.0 ~ 10.0
-		attack_damage = -0.75
+		attack_damage = -0.6
 		#攻击击退力度
 		#Range: -10.0 ~ 10.0
 		attack_knockback = 0.0
@@ -317,7 +317,7 @@
 		attack_speed = 0.0
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
-		armor = -0.5
+		armor = -0.4
 		#护甲韧性加成
 		#Range: -10.0 ~ 50.0
 		armor_toughness = -0.25
@@ -326,7 +326,7 @@
 		luck = 0.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
-		swim_speed = -0.25
+		swim_speed = -0.2
 		#名称标签显示距离倍率
 		#Range: -10.0 ~ 10.0
 		nametag_distance = 0.0
@@ -338,16 +338,16 @@
 		step_height = -0.35
 		#方块交互距离倍率
 		#Range: -10.0 ~ 10.0
-		block_reach = -0.35
+		block_reach = -0.3
 		#实体交互距离倍率
 		#Range: -10.0 ~ 10.0
 		entity_reach = 0.0
 		#飞行速度倍率
 		#Range: -1.0 ~ 2.0
-		flightSpeed = 0.3
+		flightSpeed = 1.35
 		#魔力值增加量
 		#Range: 0.0 ~ 20000.0
-		manaBonus = 400.0
+		manaBonus = 600.0
 		#跳跃重力修改值
 		#Range: -1.0 ~ 200.0
 		jumpStrength = -0.25
@@ -355,7 +355,7 @@
 		wallClimb = true
 		#仙女效果爬墙速度（原版梯子速度约为0.11）
 		#Range: 0.05 ~ 0.3
-		climbSpeed = 0.11
+		climbSpeed = 0.15
 		#仙女效果爬墙时的水平移动阻力
 		#Range: 0.5 ~ 1.0
 		climbHorizontalDrag = 0.7
@@ -367,7 +367,7 @@
 	[races.goblins]
 		#生命值倍率
 		#Range: -10.0 ~ 10.0
-		max_health = -0.4
+		max_health = -0.35
 		#跟随范围倍率
 		#Range: -10.0 ~ 10.0
 		follow_range = 0.0
@@ -382,13 +382,13 @@
 		flying_speed = 0.0
 		#攻击伤害倍率
 		#Range: -10.0 ~ 10.0
-		attack_damage = -0.5
+		attack_damage = -0.45
 		#攻击击退力度
 		#Range: -10.0 ~ 10.0
 		attack_knockback = 0.0
 		#攻击速度倍率
 		#Range: -10.0 ~ 10.0
-		attack_speed = 0.0
+		attack_speed = 0.2
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
 		armor = 0.0
@@ -397,10 +397,10 @@
 		armor_toughness = 0.0
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
-		luck = 1.0
+		luck = 2.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
-		swim_speed = 0.1
+		swim_speed = 0.15
 		#名称标签显示距离倍率
 		#Range: -10.0 ~ 10.0
 		nametag_distance = 0.0
@@ -421,7 +421,7 @@
 		manaPenalty = -25.0
 		#火焰和爆炸伤害减免比例
 		#Range: 0.0 ~ 1.0
-		damageReduction = 0.75
+		damageReduction = 0.8
 		#哥布林族体型缩放 1 为正常体型
 		#Range: 0.1 ~ 10.0
 		scale = 0.5
@@ -439,31 +439,31 @@
 		knockback_resistance = 1.0
 		#移动速度倍率
 		#Range: -10.0 ~ 10.0
-		movement_speed = 0.0
+		movement_speed = 0.5
 		#飞行速度倍率
 		#Range: -10.0 ~ 10.0
 		flying_speed = 0.0
 		#攻击伤害倍率
 		#Range: -10.0 ~ 10.0
-		attack_damage = 0.5
+		attack_damage = 1.0
 		#攻击击退力度
 		#Range: -10.0 ~ 10.0
-		attack_knockback = 0.0
+		attack_knockback = 0.5
 		#攻击速度倍率
 		#Range: -10.0 ~ 10.0
-		attack_speed = -0.5
+		attack_speed = -0.8
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
-		armor = 0.0
+		armor = 0.6
 		#护甲韧性加成
 		#Range: -10.0 ~ 50.0
-		armor_toughness = 0.0
+		armor_toughness = 1.0
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
 		luck = 0.0
 		#游泳速度倍率
 		#Range: -10.0 ~ 10.0
-		swim_speed = 0.0
+		swim_speed = -0.8
 		#名称标签显示距离倍率
 		#Range: -10.0 ~ 10.0
 		nametag_distance = 0.0
@@ -475,10 +475,10 @@
 		step_height = 1.4
 		#方块交互距离倍率
 		#Range: -10.0 ~ 10.0
-		block_reach = 1.0
+		block_reach = 0.7
 		#实体交互距离倍率
 		#Range: -10.0 ~ 10.0
-		entity_reach = 0.0
+		entity_reach = 0.8
 		#跳跃力量修改值
 		#Range: -1.0 ~ 2.0
 		jumpStrength = 0.75
@@ -487,7 +487,7 @@
 		manaModifier = -50.0
 		#水中下沉速度
 		#Range: 0.0 ~ 1.0
-		waterSinkSpeed = 0.1
+		waterSinkSpeed = 0.6
 		#泰坦族体型缩放 1 为正常体型
 		#Range: 0.1 ~ 10.0
 		scale = 3.0
