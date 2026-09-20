@@ -32,6 +32,9 @@ StartupEvents.registry("item", event =>
 
     // 奥兹丝线
     event.create(_this("flipflop_liner_material"), "basic");
+    
+    // 寒冰粉
+    event.create(_this("freeze_powder"), "basic");
 });
 
 StartupEvents.registry("creative_mode_tab", event =>
@@ -71,6 +74,8 @@ StartupEvents.registry("creative_mode_tab", event =>
         // 降温丝线
         _this("cool_liner_material"),
         // 奥兹丝线
-        _this("flipflop_liner_material")
+        _this("flipflop_liner_material"),
+        // 寒冰粉
+        _this("freeze_powder")
     ]);
 });

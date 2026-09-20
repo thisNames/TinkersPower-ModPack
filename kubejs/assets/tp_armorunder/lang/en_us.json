@@ -22,5 +22,7 @@
     "item.tp_armorunder.cooling_goo": "Cooling Goo",
     "item.tp_armorunder.cool_liner_material": "Cooling Thread",
     
-    "item.tp_armorunder.flipflop_liner_material": "Auto Thread"
+    "item.tp_armorunder.flipflop_liner_material": "Auto Thread",
+
+    "item.tp_armorunder.freeze_powder": "Freeze powder"
 }
