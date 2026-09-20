@@ -23,7 +23,7 @@ StartupEvents.registry("item", event =>
     // 加热凝胶
     event.create(_this("heating_goo"), "basic");
     // 加热丝线
-    event.create(_this("flyweight_thread"), "basic");
+    event.create(_this("warm_liner_material"), "basic");
 
     // 降温凝胶
     event.create(_this("cooling_goo"), "basic");
@@ -65,7 +65,7 @@ StartupEvents.registry("creative_mode_tab", event =>
         // 加热凝胶
         _this("heating_goo"),
         // 加热丝线
-        _this("flyweight_thread"),
+        _this("warm_liner_material"),
         // 降温凝胶
         _this("cooling_goo"),
         // 降温丝线
