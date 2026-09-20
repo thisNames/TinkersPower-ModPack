@@ -55,9 +55,6 @@
     "maid_model": true,
     "player_skin": true
   },
-  "champions": {
-    "enable_affix_compact": true
-  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
