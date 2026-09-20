@@ -1,0 +1,24 @@
+{
+    "item.tp_armorunder:auto_helmet_liner": "Auto Helmet Liner",
+    "item.tp_armorunder:auto_chestplate_liner": "Auto Chestplate Liner",
+    "item.tp_armorunder:auto_leggings_liner": "Auto Leggings Liner",
+    "item.tp_armorunder:auto_boots_liner": "Auto Boots Liner",
+
+    "item.tp_armorunder:beekeeper_helmet_liner": "Beekeeper Helmet Liner",
+    "item.tp_armorunder:beekeeper_chestplate_liner": "Beekeeper Chestplate Liner",
+    "item.tp_armorunder:beekeeper_leggings_liner": "Beekeeper Leggings Liner",
+    "item.tp_armorunder:beekeeper_boots_liner": "Beekeeper Boots Liner",
+
+    "item.tp_armorunder:cool_helmet_liner": "Cool Helmet Liner",
+    "item.tp_armorunder:cool_chestplate_liner": "Cool Chestplate Liner",
+    "item.tp_armorunder:cool_leggings_liner": "Cool Leggings Liner",
+    "item.tp_armorunder:cool_boots_liner": "Cool Boots Liner",
+
+    "item.tp_armorunder.heating_goo": "Heating Goo",
+    "item.tp_armorunder.flyweight_thread": "Heating Thread",
+
+    "item.tp_armorunder.cooling_goo": "Cooling Goo",
+    "item.tp_armorunder.cool_liner_material": "Cooling Thread",
+    
+    "item.tp_armorunder.flipflop_liner_material": "Auto Thread"
+}
