@@ -32,7 +32,7 @@ StartupEvents.registry("item", event =>
 
     // 奥兹丝线
     event.create(_this("flipflop_liner_material"), "basic");
-    
+
     // 寒冰粉
     event.create(_this("freeze_powder"), "basic");
 });

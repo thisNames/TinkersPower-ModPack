@@ -1,7 +1,10 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes(event =>
+{
     const _this = id => "tp_armorunder:" + id;
     const _mc = id => "minecraft:" + id;
     const _ice = id => "iceandfire:" + id;
+    const _tcon = id => "tconstruct:" + id;
+    const _thinking = id => "tinkers_thinking:" + id;
 
     // 烈焰粉
     event.recipes.kubejs.shapeless(_mc("blaze_powder"), [_ice("fire_lily")]);
@@ -12,13 +15,16 @@ ServerEvents.recipes(event => {
     [
         _mc("magma_cream"),
         _mc("blaze_powder"),
-        _ice("fire_dragon_blood")
-    ].forEach(item => {
+        _ice("fire_dragon_blood"),
+        _tcon("ichor_slime_ball"),
+    ].forEach(item =>
+    {
         event.recipes.kubejs.shaped(_this("heating_goo"), [
             [_mc("slime_ball"), _mc("slime_ball"), _mc("slime_ball")],
             [_mc("slime_ball"), item, _mc("slime_ball")],
             [_mc("slime_ball"), _mc("slime_ball"), _mc("slime_ball")]
-        ]).modifyResult((inputs, output) => {
+        ]).modifyResult((inputs, output) =>
+        {
             output.setCount(8);
             return output;
         });
@@ -28,14 +34,17 @@ ServerEvents.recipes(event => {
     // 降温凝胶
     [
         _this("freeze_powder"),
-        _ice("ice_dragon_blood")
-    ].forEach(item => {
+        _ice("ice_dragon_blood"),
+        _thinking("chillslime_cryogel"),
+    ].forEach(item =>
+    {
         event.recipes.kubejs.shaped(_this("cooling_goo"), [
             [_mc("slime_ball"), _mc("slime_ball"), _mc("slime_ball")],
             [_mc("slime_ball"), item, _mc("slime_ball")],
             [_mc("slime_ball"), _mc("slime_ball"), _mc("slime_ball")]
-        ]).modifyResult((inputs, output) => {
-            outputItem.setCount(8);
+        ]).modifyResult((inputs, output) =>
+        {
+            output.setCount(8);
             return output;
         });
     });
@@ -45,21 +54,33 @@ ServerEvents.recipes(event => {
         [_mc("string"), _mc("string"), ""],
         [_mc("string"), _this("heating_goo"), ""],
         ["", "", ""]
-    ]);
+    ]).modifyResult((inputs, output) =>
+    {
+        output.setCount(3);
+        return output;
+    });
 
     // 降温丝线
     event.recipes.kubejs.shaped(_this("cool_liner_material"), [
         [_mc("string"), _mc("string"), ""],
         [_mc("string"), _this("cooling_goo"), ""],
         ["", "", ""]
-    ]);
+    ]).modifyResult((inputs, output) =>
+    {
+        output.setCount(3);
+        return output;
+    });
 
     // 奥兹丝线
     event.recipes.kubejs.shaped(_this("flipflop_liner_material"), [
         [_this("warm_liner_material"), _this("warm_liner_material"), _this("cool_liner_material")],
         [_this("warm_liner_material"), "", _this("cool_liner_material")],
         [_this("warm_liner_material"), _this("cool_liner_material"), _this("cool_liner_material")]
-    ]);
+    ]).modifyResult((inputs, output) =>
+    {
+        output.setCount(4);
+        return output;
+    });
 
     // 奥兹内衬
     // 奥兹内衬头盔
