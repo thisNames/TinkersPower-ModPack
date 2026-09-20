@@ -1,18 +1,20 @@
 {
-    "item.tp_armorunder:auto_helmet_liner": "奥兹内衬头盔",
-    "item.tp_armorunder:auto_chestplate_liner": "奥兹内衬胸甲",
-    "item.tp_armorunder:auto_leggings_liner": "奥兹内衬护腿",
-    "item.tp_armorunder:auto_boots_liner": "奥兹内衬靴子",
+    "item_group.tp_armorunder.items": "内衬",
+    
+    "item.tp_armorunder.auto_helmet_liner": "奥兹内衬头盔",
+    "item.tp_armorunder.auto_chestplate_liner": "奥兹内衬胸甲",
+    "item.tp_armorunder.auto_leggings_liner": "奥兹内衬护腿",
+    "item.tp_armorunder.auto_boots_liner": "奥兹内衬靴子",
 
-    "item.tp_armorunder:beekeeper_helmet_liner": "保温头盔",
-    "item.tp_armorunder:beekeeper_chestplate_liner": "保温胸甲",
-    "item.tp_armorunder:beekeeper_leggings_liner": "保温护腿",
-    "item.tp_armorunder:beekeeper_boots_liner": "保温靴子",
+    "item.tp_armorunder.beekeeper_helmet_liner": "保温头盔",
+    "item.tp_armorunder.beekeeper_chestplate_liner": "保温胸甲",
+    "item.tp_armorunder.beekeeper_leggings_liner": "保温护腿",
+    "item.tp_armorunder.beekeeper_boots_liner": "保温靴子",
 
-    "item.tp_armorunder:cool_helmet_liner": "降温头盔",
-    "item.tp_armorunder:cool_chestplate_liner": "降温胸甲",
-    "item.tp_armorunder:cool_leggings_liner": "降温护腿",
-    "item.tp_armorunder:cool_boots_liner": "降温靴子",
+    "item.tp_armorunder.cool_helmet_liner": "降温头盔",
+    "item.tp_armorunder.cool_chestplate_liner": "降温胸甲",
+    "item.tp_armorunder.cool_leggings_liner": "降温护腿",
+    "item.tp_armorunder.cool_boots_liner": "降温靴子",
 
     "item.tp_armorunder.heating_goo": "加热凝胶",
     "item.tp_armorunder.flyweight_thread": "加热丝线",
