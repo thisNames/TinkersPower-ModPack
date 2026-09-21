@@ -6,7 +6,8 @@
     "scripts": {
         "ban": "node .manifest/scripts/ban_generator.js",
         "overrides": "node .manifest/scripts/overrides_generator.js",
-        "clear_logs": "node .manifest/scripts/clear_logs.js"
+        "clear_logs": "node .manifest/scripts/clear_logs.js",
+        "loot_tables_dir": "node .manifest/scripts/loot_tables_dir.js"
     },
     "repository": {
         "type": "git",
