@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\monastery\monastery_bridges
+loot spawn 0 -60 0 loot dungeons_arise:chests/monastery/monastery_bridges

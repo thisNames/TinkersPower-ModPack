@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\mines_treasure_small
+loot spawn 0 -60 0 loot dungeons_arise:chests/mines_treasure_small

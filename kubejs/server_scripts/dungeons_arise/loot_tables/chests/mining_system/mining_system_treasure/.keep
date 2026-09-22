@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\mining_system\mining_system_treasure
+loot spawn 0 -60 0 loot dungeons_arise:chests/mining_system/mining_system_treasure

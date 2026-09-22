@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\abandoned_temple\abandoned_temple_top
+loot spawn 0 -60 0 loot dungeons_arise:chests/abandoned_temple/abandoned_temple_top

@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\undead_pirate_ship\undead_pirate_ship_supply
+loot spawn 0 -60 0 loot dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_supply

@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\entities\gladiator_loot
+loot spawn 0 -60 0 loot dungeons_arise:entities/gladiator_loot

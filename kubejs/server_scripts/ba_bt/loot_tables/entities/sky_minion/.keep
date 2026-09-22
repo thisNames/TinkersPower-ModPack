@@ -1,1 +1,2 @@
 \ba_bt\loot_tables\entities\sky_minion
+loot spawn 0 -60 0 loot ba_bt:entities/sky_minion

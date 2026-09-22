@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\merchant_campsite\merchant_campsite_tent
+loot spawn 0 -60 0 loot dungeons_arise:chests/merchant_campsite/merchant_campsite_tent

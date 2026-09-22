@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\mechanical_nest\mechanical_nest_supply
+loot spawn 0 -60 0 loot dungeons_arise:chests/mechanical_nest/mechanical_nest_supply

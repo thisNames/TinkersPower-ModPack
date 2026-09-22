@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\infested_temple\infested_temple_room_garden
+loot spawn 0 -60 0 loot dungeons_arise:chests/infested_temple/infested_temple_room_garden

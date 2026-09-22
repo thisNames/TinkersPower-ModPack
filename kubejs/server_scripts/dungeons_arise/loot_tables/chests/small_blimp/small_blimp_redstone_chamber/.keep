@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\small_blimp\small_blimp_redstone_chamber
+loot spawn 0 -60 0 loot dungeons_arise:chests/small_blimp/small_blimp_redstone_chamber

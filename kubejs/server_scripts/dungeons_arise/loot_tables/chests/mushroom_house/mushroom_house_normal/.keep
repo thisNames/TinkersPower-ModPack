@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\mushroom_house\mushroom_house_normal
+loot spawn 0 -60 0 loot dungeons_arise:chests/mushroom_house/mushroom_house_normal

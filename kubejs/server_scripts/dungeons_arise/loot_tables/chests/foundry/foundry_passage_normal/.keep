@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\foundry\foundry_passage_normal
+loot spawn 0 -60 0 loot dungeons_arise:chests/foundry/foundry_passage_normal

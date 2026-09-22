@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\scorched_mines\scorched_mines_housing
+loot spawn 0 -60 0 loot dungeons_arise:chests/scorched_mines/scorched_mines_housing

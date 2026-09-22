@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\keep_kayra\keep_kayra_garden_normal
+loot spawn 0 -60 0 loot dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal

@@ -1,1 +1,2 @@
 \ba_bt\loot_tables\blocks\active_corrite_wall
+loot spawn 0 -60 0 loot ba_bt:blocks/active_corrite_wall

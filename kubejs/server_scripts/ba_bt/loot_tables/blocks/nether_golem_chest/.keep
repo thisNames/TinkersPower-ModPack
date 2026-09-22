@@ -1,1 +1,2 @@
 \ba_bt\loot_tables\blocks\nether_golem_chest
+loot spawn 0 -60 0 loot ba_bt:blocks/nether_golem_chest

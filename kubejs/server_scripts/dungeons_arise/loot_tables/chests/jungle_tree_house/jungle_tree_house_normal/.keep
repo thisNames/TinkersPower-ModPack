@@ -1,1 +1,2 @@
 \dungeons_arise\loot_tables\chests\jungle_tree_house\jungle_tree_house_normal
+loot spawn 0 -60 0 loot dungeons_arise:chests/jungle_tree_house/jungle_tree_house_normal
