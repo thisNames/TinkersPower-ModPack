@@ -7,39 +7,37 @@ const KJS_SER_S = PT.join(process.cwd(), "kubejs/server_scripts");
 const LOOT_NAME = "loot_tables";
 // 是否创建 .keep 文件
 const DOT_KEEP = true;
+// 创建目录后是否删除 json 文件
+const DEL_FOR_JSON = true;
 
 /**
  * 创建战利品目录
  * @param {FS.Dirent} lootDirent 战利品类型
  */
-function createLootFolders(lootDirent)
-{
+function createLootFolders(lootDirent) {
     let count = 0;
 
     const lootDir = PT.join(lootDirent.parentPath, lootDirent.name);
     const loots = FS.readdirSync(lootDir, { withFileTypes: true, encoding: "utf-8" });
 
     // 遍历所有战利品
-    for (let i = 0; i < loots.length; i++)
-    {
+    for (let i = 0; i < loots.length; i++) {
         const loot = loots[i];
 
-        if (loot.isDirectory())
-        {
+        if (loot.isDirectory()) {
             count += createLootFolders(loot);
             continue;
         }
 
-        if (loot.isFile() && PT.extname(loot.name) == ".json")
-        {
+        if (loot.isFile() && PT.extname(loot.name) == ".json") {
             const filename = PT.basename(loot.name, ".json");
             const newPath = PT.join(loot.parentPath, filename);
             const keep = PT.join(newPath, ".keep");
             const namespace = newPath.replace(KJS_SER_S, "");
+            const jsonPath = PT.join(loot.parentPath, loot.name);
 
             // 目录存在跳过
-            if (FS.existsSync(newPath) && FS.statSync(newPath).isDirectory())
-            {
+            if (FS.existsSync(newPath) && FS.statSync(newPath).isDirectory()) {
                 // 创建 .keep 文件
                 if (DOT_KEEP && !FS.existsSync(keep)) FS.writeFileSync(keep, namespace, { encoding: "utf-8", flag: "w" });
 
@@ -51,9 +49,12 @@ function createLootFolders(lootDirent)
 
             // 创建 .keep 文件
             if (DOT_KEEP && !FS.existsSync(keep)) FS.writeFileSync(keep, namespace, { encoding: "utf-8", flag: "w" });
+            // 删除 json 文件
+            if (DEL_FOR_JSON && FS.existsSync(jsonPath) && FS.statSync(jsonPath).isFile()) FS.unlinkSync(jsonPath);
+
 
             // debug
-            console.log(namespace);
+            console.log(namespace, DEL_FOR_JSON ? loot.name : "");
             count++;
         }
     }
@@ -64,8 +65,7 @@ function createLootFolders(lootDirent)
 /**
  * 主函数
  */
-function main()
-{
+function main() {
     // 所有的模组目录
     const listModDirent = FS.readdirSync(KJS_SER_S, { withFileTypes: true, encoding: "utf-8" }).filter(i => i.isDirectory());
 
@@ -74,8 +74,7 @@ function main()
     let lootGlobalModCount = 0;
 
     // 遍历所有模组目录
-    for (let i = 0; i < listModDirent.length; i++)
-    {
+    for (let i = 0; i < listModDirent.length; i++) {
         // 统计战利品数量
         let lootCount = 0;
 
@@ -91,8 +90,7 @@ function main()
         const listLootDirent = FS.readdirSync(lootDir, { withFileTypes: true, encoding: "utf-8" }).filter(i => i.isDirectory());
 
         // 创建目录
-        listLootDirent.forEach(loot =>
-        {
+        listLootDirent.forEach(loot => {
             lootCount += createLootFolders(loot);
             modCount = 1;
         });
