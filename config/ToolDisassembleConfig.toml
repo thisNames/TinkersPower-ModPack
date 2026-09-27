@@ -5,5 +5,5 @@
 	#Tools that can not be Disassembled.
 	toolDisassembleBlacklist = ["tconstruct:plate_shield"]
 	#Blocks that can be used for Disassembling.
-	disassemblingBlockSet = ["minecraft:smooth_stone"]
+	disassemblingBlockSet = ["alexscaves:block_of_azure_neodymium", "alexscaves:block_of_scarlet_neodymium"]
 

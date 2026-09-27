@@ -20,6 +20,11 @@ ServerEvents.tags("item", event =>
     // 脏水
     const poison_chance = p => `toughasnails:poison_chance/${pc_drinks.has(p) ? p : 25}_poison_chance_drinks`;
 
+    // 冷食
+    const cool_food = "toughasnails:cooling_consumed_items";
+    // 热食
+    const hot_food = "toughasnails:heating_consumed_items";
+
     // 饮料
     // 6-5
     [
@@ -66,6 +71,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(18), item);
         event.add(hydration(8), item);
+
+        event.add(hot_food, item);
     });
 
     // 16-6
@@ -79,6 +86,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(16), item);
         event.add(hydration(6), item);
+
+        event.add(hot_food, item);
     });
 
     // 8-2
@@ -92,6 +101,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(8), item);
         event.add(hydration(2), item);
+
+        event.add(hot_food, item);
     });
 
     // 12-8
@@ -106,6 +117,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(12), item);
         event.add(hydration(8), item);
+
+        event.add(hot_food, item);
     });
 
     // 10-4
@@ -121,6 +134,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(10), item);
         event.add(hydration(4), item);
+
+        event.add(hot_food, item);
     });
 
     // 16-8
@@ -133,6 +148,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(16), item);
         event.add(hydration(8), item);
+
+        event.add(hot_food, item);
     });
 
     // 12-10
@@ -143,6 +160,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(12), item);
         event.add(hydration(10), item);
+
+        event.add(cool_food, item);
     });
 
     // 16-10 100
@@ -154,6 +173,8 @@ ServerEvents.tags("item", event =>
         event.add(thirst(16), item);
         event.add(hydration(10), item);
         event.add(poison_chance(100), item);
+
+        event.add(hot_food, item);
     });
 
     // 食物
@@ -165,6 +186,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(1), item);
         event.add(hydration(1), item);
+
+        event.add(hot_food, item);
     });
 
     // 2-2
@@ -180,6 +203,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(2), item);
         event.add(hydration(2), item);
+
+        event.add(hot_food, item);
     });
 
     // 4-4
@@ -191,6 +216,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(4), item);
         event.add(hydration(4), item);
+
+        event.add(hot_food, item);
     });
 
     // 1-1-75
@@ -202,5 +229,7 @@ ServerEvents.tags("item", event =>
         event.add(thirst(1), item);
         event.add(hydration(1), item);
         event.add(poison_chance(75), item);
+
+        event.add(hot_food, item);
     });
 });
