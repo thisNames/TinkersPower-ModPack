@@ -1,0 +1,128 @@
+
+#翅膀渲染微调（全局 COMMON 配置）。修改后重启服务器（或 /reload）生效，玩家重进后同步。
+[general]
+	#全局缩放乘数，会乘到每个翅膀自己的缩放上。默认 1.0。
+	#Range: 0.1 ~ 5.0
+	globalScale = 1.0
+	#翅膀左右偏移（格）。正数向右。默认 0.0。
+	#Range: -2.0 ~ 2.0
+	offsetX = 0.0
+	#翅膀上下偏移（格）。正数向上。默认 0.0。
+	#Range: -2.0 ~ 2.0
+	offsetY = 0.0
+	#翅膀前后偏移（格）。正数离背部更远。默认 0.3。
+	#Range: -1.0 ~ 2.0
+	offsetZ = 0.3
+
+[feathered]
+	#该翅膀的缩放。默认 1.0。
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[dragon]
+	#该翅膀的缩放。默认 1.15。
+	#Range: 0.1 ~ 5.0
+	scale = 1.15
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[mechanical_feathered]
+	#该翅膀的缩放。默认 1.0。
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[mechanical_leather]
+	#该翅膀的缩放。默认 1.15。
+	#Range: 0.1 ~ 5.0
+	scale = 1.15
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[light]
+	#该翅膀的缩放。默认 0.85。
+	#Range: 0.1 ~ 5.0
+	scale = 0.85
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[flandres]
+	#该翅膀的缩放。默认 1.0。
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[discords]
+	#该翅膀的缩放。默认 1.0。
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+
+[zanzas]
+	#该翅膀的缩放。默认 1.0。
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#待机/飞行时翅膀根高度（越大约靠近头部）。默认 0.0。
+	#Range: -10.0 ~ 10.0
+	headDistance = 0.0
+	#潜行时翅膀根高度。默认 -3.0。
+	#Range: -10.0 ~ 10.0
+	crouchHeadDistance = -3.0
+	#左右两半翅膀的间距（越大两翼离得越远）。默认 3.0。
+	#Range: -10.0 ~ 10.0
+	wingSpacing = 3.0
+

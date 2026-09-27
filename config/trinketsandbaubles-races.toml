@@ -439,7 +439,7 @@
 		knockback_resistance = 1.0
 		#移动速度倍率
 		#Range: -10.0 ~ 10.0
-		movement_speed = 0.5
+		movement_speed = 0.4
 		#飞行速度倍率
 		#Range: -10.0 ~ 10.0
 		flying_speed = 0.0
@@ -481,7 +481,7 @@
 		entity_reach = 0.8
 		#跳跃力量修改值
 		#Range: -1.0 ~ 2.0
-		jumpStrength = 0.75
+		jumpStrength = 0.5
 		#魔力值修改量
 		#Range: -10000.0 ~ 10000.0
 		manaModifier = -50.0
