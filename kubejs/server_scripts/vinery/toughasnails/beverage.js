@@ -143,7 +143,6 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(12), item);
         event.add(hydration(10), item);
-        event.add(poison_chance(75), item);
     });
 
     // 16-10 100
