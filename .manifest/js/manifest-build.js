@@ -183,12 +183,17 @@ navList.forEach(el =>
     const name = el.querySelector(".title>h2").textContent.trim();
     const li = document.createElement("li");
     const a = document.createElement("a");
+    const span = document.createElement("span");
 
     // 跳转链接
     a.href = `#${id}`;
     a.textContent = name;
 
+    // id
+    span.textContent = id;
+
     li.appendChild(a);
+    li.appendChild(span);
     nav.appendChild(li);
 });
 

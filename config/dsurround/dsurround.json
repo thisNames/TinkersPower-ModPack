@@ -12,17 +12,17 @@
     "enableSoundPruning": true
   },
   "enhancedSounds": {
-    "enableEnhancedSounds": true,
+    "enableEnhancedSounds": false,
     "backgroundThreadWorkers": 0,
     "enableMonoConversion": true,
     "enableOcclusionProcessing": false,
-    "reverbRays": 32,
-    "reverbBounces": 4,
-    "reverbRayTraceDistance": 256
+    "reverbRays": 16,
+    "reverbBounces": 2,
+    "reverbRayTraceDistance": 128
   },
   "soundOptions": {
     "ambientVolumeScaling": 100,
-    "replaceThunderSounds": true,
+    "replaceThunderSounds": false,
     "allowScarySounds": true,
     "playBiomeMusicWhileCreative": false,
     "displayToastMessagesForMusic": true,
@@ -49,7 +49,7 @@
     "enableBrushStepEffect": true
   },
   "footstepAccents": {
-    "enableAccents": true,
+    "enableAccents": false,
     "enableArmorAccents": true,
     "enableWetSurfaceAccents": true,
     "enableFloorSqueaks": true
