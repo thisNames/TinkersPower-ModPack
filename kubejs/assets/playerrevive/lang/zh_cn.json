@@ -1,0 +1,7 @@
+{
+    "playerrevive.chat.bleeding": "%s 正在流血，可能需要你的帮助！",
+    "playerrevive.gui.label.time_left": "剩余时间：%s",
+    "playerrevive.gui.hold": "不想活了！按住 '%s'，%s 秒放弃！",
+    "playerrevive.revive.item": "你需要 %s",
+    "playerrevive.chat.no_commands": "流血时无法使用指令"
+}
