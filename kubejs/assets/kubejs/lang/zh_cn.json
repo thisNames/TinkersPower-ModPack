@@ -1,0 +1,17 @@
+{
+    "item.kubejs.tooltip.itemprohibiteditems.items": "此物品无法使用！",
+    "item.kubejs.tooltip.itemprohibiteditems.wearables": "此装备无法穿戴！",
+    "item.kubejs.tooltip.curios.accessories": "此饰品已被禁用！",
+    "item.kubejs.tooltip.tconstruct.jei_hiddens": "匠魂制造",
+
+    "item.kubejs.tooltip.alexscaves.green_soylent": "辐射热也算？",
+
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool": "主手持工具拆解器",
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool.1": "将要拆解的工具放入快捷栏任意格（左边靠前）",
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool.2": "对【赤钕、青钕】方块右击",
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool.3": "即可自动拆解快捷栏第一个可拆工具",
+    
+    "item.kubejs.tooltip.tp_armorunder.auto": "自动恒温！（无法使用）",
+    "item.kubejs.tooltip.tp_armorunder.beekeeper": "穿起来热热的！（无法使用）",
+    "item.kubejs.tooltip.tp_armorunder.cool": "穿起来冰冰凉凉！（无法使用）"
+}

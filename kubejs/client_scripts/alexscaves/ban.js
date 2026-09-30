@@ -9,5 +9,5 @@ let alexscaves_ban_items = [
 ];
 let alexscaves_ban_wearables = [
 ];
-ItemEvents.tooltip(event => event.add(alexscaves_ban_items, Text.red("此物品无法使用")));
-ItemEvents.tooltip(event => event.add(alexscaves_ban_wearables, Text.red("此物品无法使用")));
+ItemEvents.tooltip(event => event.add(alexscaves_ban_items, Text.translatable("item.kubejs.tooltip.itemprohibiteditems.items").red()));
+ItemEvents.tooltip(event => event.add(alexscaves_ban_wearables, Text.translatable("item.kubejs.tooltip.itemprohibiteditems.wearables").red()));

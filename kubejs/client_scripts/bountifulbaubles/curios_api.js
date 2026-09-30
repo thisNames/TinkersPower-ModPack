@@ -1,6 +1,6 @@
 ItemEvents.tooltip(event =>
 {
-    const text = Text.red("此饰品无法使用");
+    const text = Text.translatable("item.kubejs.tooltip.curios.accessories").red();
     
     event.add("bountifulbaubles:dark_egg", text); 
     event.add("bountifulbaubles:drop_spindle", text); 

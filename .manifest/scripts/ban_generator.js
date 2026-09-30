@@ -5,7 +5,8 @@ const PT = require("node:path");
 // 全局配置
 const ROOT_PATH = "config/itemprohibiteditems";
 const KJS_SCRIPT = "ban.js";
-const TIP_TEXT = "此物品无法使用";
+const TIP_TEXT = `Text.translatable("item.kubejs.tooltip.itemprohibiteditems.items").red()`;
+const TIP_TEXT2 = `Text.translatable("item.kubejs.tooltip.itemprohibiteditems.wearables").red()`;
 const ITEM_FILENAME = "items.json";
 const WEAR_FILENAME = "wearables.json";
 const S_TIME = Date.now();
@@ -63,8 +64,8 @@ for (let i = 0; i < listDirent.length; i++)
     wearData.forEach(line => FS.writeSync(clientID, `\t"${namespace.name.concat(":", line)}",\r\n`, null, "utf-8"));
     FS.writeSync(clientID, "];\r\n", null, "utf-8");
     // 写入代码
-    FS.writeSync(clientID, `ItemEvents.tooltip(event => event.add(${itemVarClient}, Text.red("${TIP_TEXT}")));\r\n`, null, "utf-8");
-    FS.writeSync(clientID, `ItemEvents.tooltip(event => event.add(${wearVarClient}, Text.red("${TIP_TEXT}")));\r\n`, null, "utf-8");
+    FS.writeSync(clientID, `ItemEvents.tooltip(event => event.add(${itemVarClient}, ${TIP_TEXT}));\r\n`, null, "utf-8");
+    FS.writeSync(clientID, `ItemEvents.tooltip(event => event.add(${wearVarClient}, ${TIP_TEXT2}));\r\n`, null, "utf-8");
 
     // 写入服务端 item
     FS.writeSync(serverID, `let ${itemVarServer} = [\r\n`, null, "utf-8");

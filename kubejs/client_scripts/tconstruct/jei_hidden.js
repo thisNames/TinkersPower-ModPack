@@ -1,6 +1,8 @@
 // 工具
 ItemEvents.tooltip(event =>
 {
+    const text = Text.translatable("item.kubejs.tooltip.tconstruct.jei_hiddens").blue();
+
     event.add([
         // 小型工具
         "tconstruct:sword",
@@ -30,12 +32,14 @@ ItemEvents.tooltip(event =>
         "tconstruct:melting_pan",
         "tconstruct:swasher",
         "tconstruct:minotaur_axe"
-    ], Text.blue("匠魂制造"));
+    ], text);
 });
 
 // 装备
 ItemEvents.tooltip(event =>
-{
+{  
+    const text = Text.translatable("item.kubejs.tooltip.tconstruct.jei_hiddens").yellow();
+
     event.add([
         // 盾牌
         "tconstruct:travelers_shield",
@@ -55,5 +59,5 @@ ItemEvents.tooltip(event =>
         "tconstruct:slime_chestplate",
         "tconstruct:slime_leggings",
         "tconstruct:slime_boots"
-    ], Text.yellow("匠魂制造"));
+    ], text);
 });

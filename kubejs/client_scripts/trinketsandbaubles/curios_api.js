@@ -1,4 +1,6 @@
 ItemEvents.tooltip(event =>
 {
-    event.add("trinketsandbaubles:dragons_eye", Text.red("此饰品无法使用"));
+    const text = Text.translatable("item.kubejs.tooltip.curios.accessories").red();
+        
+    event.add("trinketsandbaubles:dragons_eye", text);
 });
