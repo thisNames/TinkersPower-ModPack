@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.bettercaves-fabric-1_20_1.title": "YUNG 的洞穴优化",
+  "text.autoconfig.bettercaves-fabric-1_20_1.option.general.liquidRegions": "液体区域",
+  "text.autoconfig.bettercaves-fabric-1_20_1.option.general.liquidRegions.liquidRegionSize": "液体区域大小",
+  "text.autoconfig.bettercaves-fabric-1_20_1.option.general.liquidRegions.waterRegionSpawnChance": "水域生成概率",
+  "text.autoconfig.bettercaves-fabric-1_20_1.option.general.liquidRegions.liquidAltitude": "液体高度"
+}
