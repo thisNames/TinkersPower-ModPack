@@ -1,0 +1,17 @@
+{
+  "_comment": "Translation (en_us) by Affehund",
+  "advancements.voidtotem.adventure.totem_of_void_undying.description": "在虚空中坠落时，使用虚空图腾来避免死亡",
+  "advancements.voidtotem.adventure.totem_of_void_undying.title": "超越死亡 2",
+  "item.voidtotem.totem_of_void_undying": "虚空图腾",
+  "text.autoconfig.voidtotem.option.ADD_END_CITY_TREASURE": "加入末地城宝藏",
+  "text.autoconfig.voidtotem.option.BLACKLISTED_DIMENSIONS": "黑名单维度",
+  "text.autoconfig.voidtotem.option.DISPLAY_TOTEM_ON_CHEST": "在胸前显示图腾",
+  "text.autoconfig.voidtotem.option.GIVE_TOTEM_EFFECTS": "给予图腾效果",
+  "text.autoconfig.voidtotem.option.IS_INVERTED_BLACKLIST": "反转黑名单",
+  "text.autoconfig.voidtotem.option.NEEDS_TOTEM": "需要图腾",
+  "text.autoconfig.voidtotem.option.SHOW_TOTEM_TOOLTIP": "显示图腾提示",
+  "text.autoconfig.voidtotem.option.TELEPORT_HEIGHT_OFFSET": "传送高度偏移",
+  "text.autoconfig.voidtotem.option.USE_TOTEM_FROM_INVENTORY": "从物品栏使用图腾",
+  "tooltip.voidtotem.totem_of_void_undying": "放在主手或副手，可防止你在虚空中坠落时死亡。",
+  "trinkets.slot.charm.charm": "护符"
+}
