@@ -50,7 +50,7 @@
 [HealTime]
 	#Use time for the salve item
 	#Range: 0 ~ 72000
-	salveUseTime = 5
+	salveUseTime = 3
 	#Use count for the plaster item
 	#Range: 0 ~ 72000
 	plasterUseTime = 10

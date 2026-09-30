@@ -1,0 +1,15 @@
+{
+  "appliedPacks": [],
+  "enabledEntities": {
+    "mobends-cataclysm:drowned_host": true,
+    "mobends-player": true,
+    "mobends-twilightforest:rising_zombie": false,
+    "mobends-minecraft:zombified_piglin": true,
+    "mobends-twilightforest:lich_minion": true
+  },
+  "vanillaArmorItems": {},
+  "itemUseActions": {},
+  "itemAttackActions": {},
+  "customWeapons": [],
+  "previewSpinMode": "OFF"
+}

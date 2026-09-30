@@ -32,9 +32,9 @@
 	#Banner
 	banner = true
 	#main hand
-	main_hand = false
+	main_hand = true
 	#off hand
-	off_hand = true
+	off_hand = false
 	#quiver
 	quiver = false
 	#Body part attachment to a slot
@@ -76,7 +76,7 @@
 		z_rotationn2 = 0
 		#scale0
 		#Range: > -100
-		scale0 = 10
+		scale0 = 30
 		#Position and rotation settings
 		#x position3
 		#Range: > -2147483648
@@ -86,7 +86,7 @@
 		y_position4 = 32
 		#z position5
 		#Range: > -2147483648
-		z_position5 = 10
+		z_position5 = 18
 		#x rotation3
 		#Range: > -2147483648
 		x_rotation3 = 0
@@ -98,7 +98,7 @@
 		z_rotationn5 = 90
 		#scale1
 		#Range: > -100
-		scale1 = 10
+		scale1 = 30
 		#Position and rotation settings
 		#x position6
 		#Range: > -2147483648

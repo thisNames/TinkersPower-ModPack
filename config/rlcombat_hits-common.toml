@@ -2,5 +2,5 @@
 #武器判定标签
 [combat]
 	#用于判定近战武器的物品标签列表（格式：命名空间:路径）
-	weaponTags = ["minecraft:swords", "minecraft:axes", "minecraft:pickaxes", "minecraft:shovels", "minecraft:hoes", "forge:tools/swords", "forge:tools/axes", "forge:tools/pickaxes", "forge:tools/shovels", "forge:tools/hoes"]
+	weaponTags = ["minecraft:swords", "minecraft:axes", "minecraft:pickaxes", "minecraft:shovels", "minecraft:hoes", "forge:tools/swords", "forge:tools/axes", "forge:tools/pickaxes", "forge:tools/shovels", "forge:tools/hoes", "forge:tools/tridents"]
 
