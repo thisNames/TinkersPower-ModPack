@@ -1,0 +1,6 @@
+{
+    "item.tooldisassemble.disassembling_tool": "工匠拆解器",
+    "item_group.tooldisassemble": "匠魂工具拆解",
+    "info.tooldisassemble.failed": "无法拆解有损工具。",
+    "info.tooldisassemble.failed2": "此物品的力量过于强大，你无法拆解！"
+}

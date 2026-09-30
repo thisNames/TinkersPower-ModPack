@@ -1,0 +1,11 @@
+{
+    "modifier.buildersconstruct.construction": "建筑",
+    "modifier.buildersconstruct.construction.flavor": "建得更大，建得更快",
+    "modifier.buildersconstruct.construction.description": "一次交互即可放置多个方块。",
+    "modifier.buildersconstruct.construction.blocks_placed": "已放置 %d 个方块",
+    "modifier.buildersconstruct.construction.mode": "模式：%s",
+    "modifier.buildersconstruct.construction.mode_switch": "已切换模式至：%s",
+    "modifier.buildersconstruct.angel_builder": "天使建筑",
+    "modifier.buildersconstruct.angel_builder.flavor": "飞行时十分好用",
+    "modifier.buildersconstruct.angel_builder.description": "可以在半空中放置方块。"
+}
