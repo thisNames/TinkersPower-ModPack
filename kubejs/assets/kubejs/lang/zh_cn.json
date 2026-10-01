@@ -13,5 +13,7 @@
     
     "item.kubejs.tooltip.tp_armorunder.auto": "自动恒温！（无法使用）",
     "item.kubejs.tooltip.tp_armorunder.beekeeper": "穿起来热热的！（无法使用）",
-    "item.kubejs.tooltip.tp_armorunder.cool": "穿起来冰冰凉凉！（无法使用）"
+    "item.kubejs.tooltip.tp_armorunder.cool": "穿起来冰冰凉凉！（无法使用）",
+
+    "item.kubejs.tooltip.bountifulbaubles.rock_candy": "▸ 甜到起飞？"
 }
