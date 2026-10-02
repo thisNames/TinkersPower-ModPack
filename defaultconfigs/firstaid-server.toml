@@ -35,16 +35,16 @@
 	["Locational Armor".Armor]
 		#The multiplier for local armor for every armor of slot Head
 		#Range: 1.0 ~ 16.0
-		multiplierHead = 6.0
+		multiplierHead = 2.0
 		#The multiplier for local armor for every armor of slot Chest
 		#Range: 1.0 ~ 16.0
-		multiplierChest = 2.5
+		multiplierChest = 2.0
 		#The multiplier for local armor for every armor of slot Legs
 		#Range: 1.0 ~ 16.0
-		multiplierLegs = 3.0
+		multiplierLegs = 2.0
 		#The multiplier for local armor for every armor of slot Feet
 		#Range: 1.0 ~ 16.0
-		multiplierFeet = 6.0
+		multiplierFeet = 2.0
 		#The static offset applied to any armor piece with a value greater than zero of slot Head
 		#Range: 0.0 ~ 4.0
 		offsetHead = 1.0
@@ -61,16 +61,16 @@
 	["Locational Armor".Toughness]
 		#The multiplier for local armor for every armor of slot Head
 		#Range: 1.0 ~ 16.0
-		multiplierHead = 4.0
+		multiplierHead = 2.0
 		#The multiplier for local armor for every armor of slot Chest
 		#Range: 1.0 ~ 16.0
-		multiplierChest = 3.0
+		multiplierChest = 2.0
 		#The multiplier for local armor for every armor of slot Legs
 		#Range: 1.0 ~ 16.0
-		multiplierLegs = 3.0
+		multiplierLegs = 2.0
 		#The multiplier for local armor for every armor of slot Feet
 		#Range: 1.0 ~ 16.0
-		multiplierFeet = 3.5
+		multiplierFeet = 1.5
 		#The static offset applied to any armor piece with a value greater than zero of slot Head
 		#Range: 0.0 ~ 4.0
 		offsetHead = 0.0
@@ -103,7 +103,7 @@
 		totalsHeals = 2
 		#The time it takes for a single heal to trigger. Total time this item is active = this * totalHeals
 		#Range: 1 ~ 32767
-		secondsPerHeal = 22
+		secondsPerHeal = 10
 		#The time it takes in the GUI to apply the item in milliseconds
 		#Range: 0 ~ 16000
 		applyTime = 3000
@@ -132,7 +132,7 @@
 	#If true, max health is scaled to your hearts, and the config entries get multiplier to match the max health
 	scaleMaxHealth = true
 	#If true, max health will be capped at 6 hearts and absorption at 2 hearts per limb. If false, the health cap will be much higher (64 hearts normal and 16 absorption)
-	capMaxHealth = true
+	capMaxHealth = false
 	#Specifies how the vanilla health is calculated. Affects the vanilla visual health bar, as well as the value other mods get to see when they query the player health.
 	#AVERAGE_ALL simply takes all limbs and calculates the average of it.
 	#AVERAGE_CRITICAL takes all critical limbs and calculates the average of it.
