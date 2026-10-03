@@ -1,161 +1,160 @@
 
-#Server to Client synced configuration settings
+#服务器到客户端同步的配置设置
 ["Damage System"]
-	#Max health of the Head
-	#Range: 2 ~ 12
+	#头部的最大生命值
+	#范围：2 ~ 12
 	maxHealthHead = 12
-	#Max health of the Left Arm
-	#Range: 2 ~ 12
+	#左臂的最大生命值
+	#范围：2 ~ 12
 	maxHealthLeft_Arm = 12
-	#Max health of the Left Leg
-	#Range: 2 ~ 12
+	#左腿的最大生命值
+	#范围：2 ~ 12
 	maxHealthLeft_Leg = 12
-	#Max health of the Left Foot
-	#Range: 2 ~ 12
+	#左脚的最大生命值
+	#范围：2 ~ 12
 	maxHealthLeft_Foot = 12
-	#Max health of the Body
-	#Range: 2 ~ 12
+	#身体的最大生命值
+	#范围：2 ~ 12
 	maxHealthBody = 12
-	#Max health of the Right Arm
-	#Range: 2 ~ 12
+	#右臂的最大生命值
+	#范围：2 ~ 12
 	maxHealthRight_Arm = 12
-	#Max health of the Right Leg
-	#Range: 2 ~ 12
+	#右腿的最大生命值
+	#范围：2 ~ 12
 	maxHealthRight_Leg = 12
-	#Max health of the Right Foot
-	#Range: 2 ~ 12
+	#右脚的最大生命值
+	#范围：2 ~ 12
 	maxHealthRight_Foot = 12
-	#True if the head can cause death if health drops to 0
+	#若头部生命值降至 0 时是否会导致死亡
 	causeDeathHead = true
-	#True if the body can cause death if health drops to 0
+	#若身体生命值降至 0 时是否会导致死亡
 	causeDeathBody = true
 
 ["Locational Armor"]
 
 	["Locational Armor".Armor]
-		#The multiplier for local armor for every armor of slot Head
-		#Range: 1.0 ~ 16.0
+		#头部槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierHead = 2.0
-		#The multiplier for local armor for every armor of slot Chest
-		#Range: 1.0 ~ 16.0
+		#胸甲槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierChest = 2.0
-		#The multiplier for local armor for every armor of slot Legs
-		#Range: 1.0 ~ 16.0
+		#护腿槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierLegs = 2.0
-		#The multiplier for local armor for every armor of slot Feet
-		#Range: 1.0 ~ 16.0
+		#靴子槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierFeet = 2.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Head
-		#Range: 0.0 ~ 4.0
+		#对头部槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetHead = 1.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Chest
-		#Range: 0.0 ~ 4.0
+		#对胸甲槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetChest = 0.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Legs
-		#Range: 0.0 ~ 4.0
+		#对护腿槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetLegs = 0.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Feet
-		#Range: 0.0 ~ 4.0
+		#对靴子槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetFeet = 0.0
 
 	["Locational Armor".Toughness]
-		#The multiplier for local armor for every armor of slot Head
-		#Range: 1.0 ~ 16.0
+		#头部槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierHead = 2.0
-		#The multiplier for local armor for every armor of slot Chest
-		#Range: 1.0 ~ 16.0
+		#胸甲槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierChest = 2.0
-		#The multiplier for local armor for every armor of slot Legs
-		#Range: 1.0 ~ 16.0
+		#护腿槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierLegs = 2.0
-		#The multiplier for local armor for every armor of slot Feet
-		#Range: 1.0 ~ 16.0
+		#靴子槽位每件护甲的局部护甲倍率
+		#范围：1.0 ~ 16.0
 		multiplierFeet = 1.5
-		#The static offset applied to any armor piece with a value greater than zero of slot Head
-		#Range: 0.0 ~ 4.0
+		#对头部槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetHead = 0.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Chest
-		#Range: 0.0 ~ 4.0
+		#对胸甲槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetChest = 0.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Legs
-		#Range: 0.0 ~ 4.0
+		#对护腿槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetLegs = 0.0
-		#The static offset applied to any armor piece with a value greater than zero of slot Feet
-		#Range: 0.0 ~ 4.0
+		#对靴子槽位任何护甲值大于零的护甲部件施加的固定偏移量
+		#范围：0.0 ~ 4.0
 		offsetFeet = 0.0
 
 ["Internal Healing"]
 
 	["Internal Healing".bandage]
-		#The total heals this item does when applied. 1 heal = half a heart
-		#Range: 1 ~ 127
+		#此物品使用时提供的总治疗次数。1 次治疗 = 半颗心
+		#范围：1 ~ 127
 		totalsHeals = 4
-		#The time it takes for a single heal to trigger. Total time this item is active = this * totalHeals
-		#Range: 1 ~ 32767
+		#单次治疗触发所需的时间。此物品的总生效时间 = 该值 × 总治疗次数
+		#范围：1 ~ 32767
 		secondsPerHeal = 10
-		#The time it takes in the GUI to apply the item in milliseconds
-		#Range: 0 ~ 16000
+		#在 GUI 中应用此物品所需的时间（毫秒）
+		#范围：0 ~ 16000
 		applyTime = 2500
 
 	["Internal Healing".plaster]
-		#The total heals this item does when applied. 1 heal = half a heart
-		#Range: 1 ~ 127
+		#此物品使用时提供的总治疗次数。1 次治疗 = 半颗心
+		#范围：1 ~ 127
 		totalsHeals = 2
-		#The time it takes for a single heal to trigger. Total time this item is active = this * totalHeals
-		#Range: 1 ~ 32767
+		#单次治疗触发所需的时间。此物品的总生效时间 = 该值 × 总治疗次数
+		#范围：1 ~ 32767
 		secondsPerHeal = 10
-		#The time it takes in the GUI to apply the item in milliseconds
-		#Range: 0 ~ 16000
+		#在 GUI 中应用此物品所需的时间（毫秒）
+		#范围：0 ~ 16000
 		applyTime = 3000
 
 ["External Healing"]
-	#Allow vanilla's natural regeneration. Requires "allowOtherHealingItems" to be true
-	#**WARNING** This sets the gamerule "naturalRegeneration" for all of your worlds internally, so it persists even if you remove the mod
+	#允许原版的自然生命恢复。需要 "allowOtherHealingItems" 为 true
+	#**警告** 这会在内部为你的所有世界设置游戏规则 "naturalRegeneration"，因此即使移除模组也会持续生效
 	allowNaturalRegeneration = false
-	#If false, healing potions and other healing items will have no effect
+	#若为 false，治疗药水和其他治疗物品将无效
 	allowOtherHealingItems = true
-	#Specifies how much percent of the max health should be restored when sleeping
-	#Range: 0.0 ~ 1.0
+	#指定睡觉时应恢复最大生命值的百分比
+	#范围：0.0 ~ 1.0
 	sleepHealPercentage = 0.88
-	#The value external regen will be multiplied with. Has no effect if "allowOtherHealingItems" is disabled
-	#Range: 0.0 ~ 20.0
+	#外部回复将被乘以此值。若 "allowOtherHealingItems" 被禁用则无效
+	#范围：0.0 ~ 20.0
 	otherRegenMultiplier = 0.75
-	#The value vanilla's natural regeneration will be multiplied with. Has no effect if "allowNaturalRegeneration" is disabled
-	#Range: 0.0 ~ 20.0
+	#原版自然生命恢复将被乘以此值。若 "allowNaturalRegeneration" 被禁用则无效
+	#范围：0.0 ~ 20.0
 	naturalRegenMultiplier = 0.5
-	#Specifies how the vanilla resistance potion effect should reduce damage.
-	#By default, one level of resistance reduces 20% of damage. Changing this value to e.g. 10 will reduce the reduction to 10% damage reduction per level
-	#Range: 1 ~ 40
+	#指定原版抗性药水效果应如何减少伤害。
+	#默认情况下，一级抗性减少 20% 伤害。将此值改为例如 10，则每级减少 10% 伤害
+	#范围：1 ~ 40
 	resistanceReductionPercentPerLevel = 20
 
 [misc]
-	#If true, max health is scaled to your hearts, and the config entries get multiplier to match the max health
+	#若为 true，最大生命值会按你的心数缩放，配置项会乘以系数以匹配最大生命值
 	scaleMaxHealth = true
-	#If true, max health will be capped at 6 hearts and absorption at 2 hearts per limb. If false, the health cap will be much higher (64 hearts normal and 16 absorption)
+	#若为 true，最大生命值上限为 6 颗心，每个肢体伤害吸收上限为 2 颗心。若为 false，生命值上限会高得多（普通 64 颗心，伤害吸收 16 颗心）
 	capMaxHealth = false
-	#Specifies how the vanilla health is calculated. Affects the vanilla visual health bar, as well as the value other mods get to see when they query the player health.
-	#AVERAGE_ALL simply takes all limbs and calculates the average of it.
-	#AVERAGE_CRITICAL takes all critical limbs and calculates the average of it.
-	#MIN_CRITICAl takes the smallest health value of all critical limb.
-	#Does not have any effect if all critical limbs have been disabled.
-	#Allowed Values: AVERAGE_ALL, AVERAGE_CRITICAL, MIN_CRITICAL, CRITICAL_50_PERCENT_OTHER_50_PERCENT
+	#指定原版生命值如何计算。影响原版可视生命条，以及其他模组查询玩家生命值时看到的值。
+	#AVERAGE_ALL：取所有肢体并计算其平均值。
+	#AVERAGE_CRITICAL：取所有关键肢体并计算其平均值。
+	#MIN_CRITICAL：取所有关键肢体中最小的生命值。
+	#若所有关键肢体都已被禁用，则不起作用。
+	#允许的值：AVERAGE_ALL、AVERAGE_CRITICAL、MIN_CRITICAL、CRITICAL_50_PERCENT_OTHER_50_PERCENT
 	vanillaHealthCalculation = "AVERAGE_ALL"
-	#If enabled, the default random damage distribution will be changed to leave critical limbs at 1hp if possible.
-	#When there is too much damage, the damage will still kill the player. Other distributions that defined are not affected by this.
+	#若启用，默认的随机伤害分配将被改为尽可能让关键肢体保留 1 点生命值。
+	#当伤害过大时，伤害仍会杀死玩家。其他已定义的分配方式不受此影响。
 	useFriendlyRandomDistribution = false
-	#If set to LOCAL_ENCHANTMENTS, only the enchantments for the armor for the body part that is currently being damaged is taken into account. The strength of the armor is multiplied by 4 (default value, can be changed by enchantmentMultiplier), so it matches the vanilla default
-	#If set to GLOBAL_ENCHANTMENTS, the enchantments of all armor pieces are taken into account for all body parts that have any kind of armor.
-	#Allowed Values: GLOBAL_ENCHANTMENTS, LOCAL_ENCHANTMENTS
+	#若设为 LOCAL_ENCHANTMENTS，只考虑当前受伤身体部位所穿护甲的附魔。护甲强度会乘以 4（默认值，可通过 enchantmentMultiplier 更改），以匹配原版默认值
+	#若设为 GLOBAL_ENCHANTMENTS，对所有穿戴了任何护甲的身体部位，都考虑所有护甲部件的附魔。
+	#允许的值：GLOBAL_ENCHANTMENTS、LOCAL_ENCHANTMENTS
 	armorEnchantmentMode = "LOCAL_ENCHANTMENTS"
 
 ["Enchantment Handling"]
-	#Specifies the default modifier. This is only used if armorEnchantmentMode is LOCAL_ENCHANTMENTS, as this is used scale up the values to somewhat match what vanilla balances around (as vanilla balances around global enchantments)
-	#Range: 1 ~ 4
+	#指定默认修正系数。仅在 armorEnchantmentMode 为 LOCAL_ENCHANTMENTS 时使用，用于放大数值以大致匹配原版的平衡（因为原版围绕全局附魔平衡）
+	#范围：1 ~ 4
 	enchantmentMultiplier = 4
-	#Specifies the overrides for the the modifier. This is only used if armorEnchantmentMode is LOCAL_ENCHANTMENTS. This can be used to set another multiplier for special enchantments
-	#This list specifies the resource location of the enchantment. Must be fully specified and cannot use wildcard. Example: minecraft:feather_falling. First entry here will be matched to first multiplier, second entry to second multiplier and so on
+	#指定修正系数的覆盖值。仅在 armorEnchantmentMode 为 LOCAL_ENCHANTMENTS 时使用。可用于为特殊附魔设置其他倍率
+	#此列表指定附魔的资源位置。必须完整指定，不能使用通配符。示例：minecraft:feather_falling。此处第一项对应第一个倍率，第二项对应第二个倍率，依此类推
 	resourceLocations = ["minecraft:feather_falling"]
-	#Specifies the overrides for the the modifier. This is only used if armorEnchantmentMode is LOCAL_ENCHANTMENTS. This can be used to set another multiplier for special enchantments
-	#This list specifies the multiplier of the corresponding resource location. See resourceLocations comment. Must be between 1 and 4
+	#指定修正系数的覆盖值。仅在 armorEnchantmentMode 为 LOCAL_ENCHANTMENTS 时使用。可用于为特殊附魔设置其他倍率
+	#此列表指定对应资源位置的倍率。参见 resourceLocations 注释。必须介于 1 和 4 之间
 	overrideMultiplier = [2]
-

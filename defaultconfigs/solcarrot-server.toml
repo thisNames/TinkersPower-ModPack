@@ -1,25 +1,25 @@
 
 [milestones]
-	#Number of hearts you start out with.
-	#Range: 0 ~ 1000
+	#初始拥有的心数。
+	#范围：0 ~ 1000
 	baseHearts = 10
-	#Number of hearts you gain for reaching a new milestone.
-	#Range: 0 ~ 1000
+	#达成新里程碑时获得的心数。
+	#范围：0 ~ 1000
 	heartsPerMilestone = 1
-	#A list of numbers of unique foods you need to eat to unlock each milestone, in ascending order. Naturally, adding more milestones lets you earn more hearts.
+	#按升序排列的、解锁每个里程碑所需食用的不同食物数量列表。自然，添加更多里程碑可让你获得更多心。
 	milestones = [5, 10, 18, 28, 42, 60, 85, 120, 165, 225, 300, 400]
 
 [filtering]
-	#Foods in this list won't affect the player's health nor show up in the food book.
+	#此列表中的食物不会影响玩家生命值，也不会出现在食物手册中。
 	blacklist = []
-	#When this list contains anything, the blacklist is ignored and instead only foods from here count.
+	#当此列表包含任何内容时，黑名单将被忽略，只有此处的食物才计入。
 	whitelist = []
-	#The minimum hunger value foods need to provide in order to count for milestones, in half drumsticks.
-	#Range: 0 ~ 1000
+	#食物要计入里程碑所需提供的最低饥饿值，以半根鸡腿为单位。
+	#范围：0 ~ 1000
 	minimumFoodValue = 1
 
 [miscellaneous]
-	#Whether or not to reset the food list on death, effectively losing all bonus hearts.
+	#死亡时是否重置食物列表，即失去所有奖励心。
 	resetOnDeath = false
-	#If true, eating foods outside of survival mode (e.g. creative/adventure) is not tracked and thus does not contribute towards progression.
+	#若为 true，在生存模式之外（如创造/冒险模式）食用食物不会被记录，因此不计入进度。
 	limitProgressionToSurvival = false

@@ -1,26 +1,26 @@
 
 ["Boss Health"]
-	#Max Health : 1024
-	"Sandworm Health" = 250.0
-	"Yeti Health" = 280.0
-	"Dragon Health" = 350.0
-	"Knight Health" = 320.0
-	"Kraken Health" = 550.0
+	#最大生命值：1024
+	"Sandworm Health" = 280.0
+	"Yeti Health" = 300.0
+	"Dragon Health" = 400.0
+	"Knight Health" = 380.0
+	"Kraken Health" = 570.0
 
 ["Boss Armor"]
-	#Max Armor : 30
-	"Sandworm Armor" = 20.0
-	"Yeti Armor" = 6.0
+	#最大护甲：30
+	"Sandworm Armor" = 24.0
+	"Yeti Armor" = 8.0
 	"Dragon Armor" = 22.0
-	"Knight Armor" = 8.0
-	"Kraken Armor" = 18.0
+	"Knight Armor" = 10.0
+	"Kraken Armor" = 20.0
 
 ["Base Boss Damages"]
-	#Not all damages sources depends on this variable !
+	#并非所有伤害来源都取决于此变量！
 	"Sandworm Damage" = 12.0
 	"Yeti Damage" = 18.0
 	"Dragon Damage" = 15.0
-	"Knight Damage" = 13.0
+	"Knight Damage" = 14.0
 	"Kraken Damage" = 10.0
 
 ["Gameplay Changes"]
@@ -28,4 +28,3 @@
 	"How many roll charges does the player have by default?" = 2
 	"How many ticks does it take for a roll to cooldown? (20 ticks is 1 second)" = 40
 	"How many additional ticks should each roll above 1 take to cooldown? (20 ticks is 1 second)" = 20
-
