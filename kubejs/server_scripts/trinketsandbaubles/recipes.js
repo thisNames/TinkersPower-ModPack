@@ -189,4 +189,7 @@ ServerEvents.recipes(event =>
         [_this("dragon_gem"), _potionrings2("potion_ring"), _bfbosses("dragon_bone")],
         [_bfbosses("dragon_bone"), _bfbosses("dragon_bone"), _iceandfire("fire_dragon_heart")]
     ]);
+
+    // material
+    event.replaceInput({ output: _this("glowing_ingot") }, _minecraft("iron_ingot"), _iceandfire("silver_ingot"))
 });

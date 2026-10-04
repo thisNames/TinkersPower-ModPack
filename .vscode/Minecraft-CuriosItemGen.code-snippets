@@ -1,0 +1,13 @@
+{
+	"CuriosItem": {
+		"prefix": "mod-curios",
+		"body": [
+			"{",
+			"\tid: $1,",
+			"\tlevel: $2,",
+			"\tdis: $3",
+			"},"
+		],
+		"description": "饰品结构"
+	}
+}

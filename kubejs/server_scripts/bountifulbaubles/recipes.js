@@ -6,7 +6,8 @@ ServerEvents.recipes(event =>
 
     event.remove({
         output: [
-            _this("phylactery_charm")
+            _this("phylactery_charm"),
+            _this("obsidian_skull")
         ]
     });
 
@@ -27,5 +28,11 @@ ServerEvents.recipes(event =>
         [_this("potion_wormhole"), _this("potion_wormhole"), _this("potion_wormhole")],
         [_this("potion_wormhole"), _this("magic_mirror"), _this("potion_wormhole")],
         [_this("potion_wormhole"), _this("potion_wormhole"), _this("potion_wormhole")]
+    ]);
+
+    event.shaped(_this("obsidian_skull"), [
+        [_mc("obsidian"), _mc("blaze_powder"), _mc("obsidian")],
+        [Item.of(_mc("potion"), "{Potion:\"minecraft:fire_resistance\"}").weakNBT(), _mc("wither_skeleton_skull"), Item.of(_mc("potion"), "{Potion:\"minecraft:fire_resistance\"}").weakNBT()],
+        [_mc("obsidian"), _mc("blaze_powder"), _mc("obsidian")]
     ]);
 });
