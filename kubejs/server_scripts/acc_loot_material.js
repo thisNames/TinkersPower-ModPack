@@ -52,6 +52,18 @@ const MATERIAL_OPTIONS = [
                 id: "diamond",
                 level:3
             },
+            {
+                id: "blaze_powder",
+                level: 2
+            },
+            {
+                id: "nether_star",
+                level: 1
+            },
+            {
+                id: "ender_pearl",
+                level: 3
+            },
         ]
     },
     {

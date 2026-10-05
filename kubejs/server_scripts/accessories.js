@@ -504,16 +504,6 @@ const CURIOS_OPTIONS = [
                 dis: true
             },
         ]
-    },
-    {
-        namespace: "potionrings2",
-        curios: [
-            {
-                id: "potion_ring",
-                level: 2,
-                dis: false
-            }
-        ]
     }
 ];
 
