@@ -1,0 +1,9 @@
+{
+  "embeddium.conflicting_mod": "Embeddium 检测到已安装的模组中有些可能会导致渲染问题或崩溃。建议卸载它们。请参考以下列表。",
+  "embeddium.conflicting_mod_list": "[{2}]",
+  "embeddium.search_bar_empty": "搜索选项……",
+  "embeddium.options.added_by_mod_string": "由模组添加：%s",
+  "embeddium.options.fullscreen.resolution.tooltip": "控制全屏模式下游戏的分辨率。",
+  "embeddium.options.use_quad_normals_for_lighting.name": "使用精确四边形着色",
+  "embeddium.options.use_quad_normals_for_lighting.tooltip": "启用后，Embeddium 将基于非原版方块面的真实朝向（而非轴对齐方向）对其应用着色。当 Forge 实验性光照管线被禁用时（推荐以获得最佳性能），这可以改善光照质量。\n\n若启用了实验性光照管线，则此选项无效。"
+}
