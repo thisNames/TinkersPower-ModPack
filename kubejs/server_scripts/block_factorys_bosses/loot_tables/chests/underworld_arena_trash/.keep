@@ -1,0 +1,2 @@
+\block_factorys_bosses\loot_tables\chests\underworld_arena_trash
+loot spawn 0 -60 0 loot block_factorys_bosses:chests/underworld_arena_trash
