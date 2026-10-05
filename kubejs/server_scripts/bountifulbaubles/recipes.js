@@ -48,12 +48,6 @@ ServerEvents.recipes(event =>
         ["", _trinke("glowing_gem"), ""]
     ]);
 
-    event.shaped(_this("wrath_pendant"), [
-        ["", _ice("dragonbone"), ""],
-        [_ice("dragonbone"), _this("amulet_sin_empty"), _ice("dragonbone")],
-        ["", _mc("wither_skeleton_skull"), ""]
-    ]);
-
     event.shaped(_this("gluttony_pendant"), [
         ["", _art("plastic_drinking_hat"), ""],
         [_mc("cake"), _this("amulet_sin_empty"), _mc("cake")],
