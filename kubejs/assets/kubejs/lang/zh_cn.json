@@ -15,5 +15,11 @@
     "item.kubejs.tooltip.tp_armorunder.beekeeper": "穿起来热热的！（无法使用）",
     "item.kubejs.tooltip.tp_armorunder.cool": "穿起来冰冰凉凉！（无法使用）",
 
-    "item.kubejs.tooltip.bountifulbaubles.rock_candy": "▸ 甜到起飞？"
+    "item.kubejs.tooltip.bountifulbaubles.rock_candy": "▸ 甜到起飞？",
+
+    "loot.kubejs.tooltip.bountifulbaubles.sunglasses": "监守者的酷墨镜",
+    "loot.kubejs.tooltip.bountifulbaubles.apple": "尸壳的小零食",
+    "loot.kubejs.tooltip.bountifulbaubles.ring_overclocking": "流浪的戒指（崭新）",
+    "loot.kubejs.tooltip.trinketsandbaubles.wither_ring": "枯萎的结婚戒指",
+    "loot.kubejs.tooltip.acs.m1": "末影龙的私房钱"
 }

@@ -1,0 +1,2 @@
+\minecraft\loot_tables\entities\elder_guardian
+loot spawn 0 -60 0 loot minecraft:entities/elder_guardian

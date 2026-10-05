@@ -1,0 +1,2 @@
+\cataclysm\loot_tables\chests\frosted_prison_treasure
+loot spawn 0 -60 0 loot cataclysm:chests/frosted_prison_treasure

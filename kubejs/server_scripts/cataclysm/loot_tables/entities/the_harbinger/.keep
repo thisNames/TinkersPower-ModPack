@@ -1,0 +1,2 @@
+\cataclysm\loot_tables\entities\the_harbinger
+loot spawn 0 -60 0 loot cataclysm:entities/the_harbinger

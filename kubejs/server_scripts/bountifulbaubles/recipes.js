@@ -1,13 +1,19 @@
 ServerEvents.recipes(event =>
 {
     const _this = id => "bountifulbaubles:" + id;
+    const _trinke = id => "trinketsandbaubles:" + id;
+    const _ice = id => "iceandfire:" + id;
     const _quark = id => "quark:" + id;
+    const _art = id => "artifacts:" + id;
     const _mc = id => "minecraft:" + id;
 
     event.remove({
         output: [
             _this("phylactery_charm"),
-            _this("obsidian_skull")
+            _this("obsidian_skull"),
+            _this("pride_pendant"),
+            _this("wrath_pendant"),
+            _this("gluttony_pendant")
         ]
     });
 
@@ -35,4 +41,32 @@ ServerEvents.recipes(event =>
         [Item.of(_mc("potion"), "{Potion:\"minecraft:fire_resistance\"}").weakNBT(), _mc("wither_skeleton_skull"), Item.of(_mc("potion"), "{Potion:\"minecraft:fire_resistance\"}").weakNBT()],
         [_mc("obsidian"), _mc("blaze_powder"), _mc("obsidian")]
     ]);
+
+    event.shaped(_this("pride_pendant"), [
+        ["", _ice("silver_ingot"), ""],
+        [_ice("silver_ingot"), _this("amulet_sin_empty"), _ice("silver_ingot")],
+        ["", _trinke("glowing_gem"), ""]
+    ]);
+
+    event.shaped(_this("wrath_pendant"), [
+        ["", _ice("dragonbone"), ""],
+        [_ice("dragonbone"), _this("amulet_sin_empty"), _ice("dragonbone")],
+        ["", _mc("wither_skeleton_skull"), ""]
+    ]);
+
+    event.shaped(_this("gluttony_pendant"), [
+        ["", _art("plastic_drinking_hat"), ""],
+        [_mc("cake"), _this("amulet_sin_empty"), _mc("cake")],
+        ["", _mc("enchanted_golden_apple"), ""]
+    ]);
+
+    event.shaped(_this("gluttony_pendant"), [
+        ["", _art("novelty_drinking_hat"), ""],
+        [_mc("cake"), _this("amulet_sin_empty"), _mc("cake")],
+        ["", _mc("enchanted_golden_apple"), ""]
+    ]);
+
+    event.replaceInput({ output: _this("ankh_charm") }, _mc("gold_block"), _trinke("glowing_ingot"));
+
+    event.shapeless(_this("spectral_silt"), ["#bountifulbaubles:baubles", _this("disintegration_tablet")]);
 });

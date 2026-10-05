@@ -1,0 +1,2 @@
+\cataclysm\loot_tables\entities\ender_guardian
+loot spawn 0 -60 0 loot cataclysm:entities/ender_guardian

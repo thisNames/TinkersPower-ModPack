@@ -1,0 +1,2 @@
+\cataclysm\loot_tables\chests\acropolis_treasure
+loot spawn 0 -60 0 loot cataclysm:chests/acropolis_treasure

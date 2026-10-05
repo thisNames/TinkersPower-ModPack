@@ -1,0 +1,12 @@
+{
+	"CuriosItem": {
+		"prefix": "mod-material",
+		"body": [
+			"{",
+			"\tid: $1,",
+			"\tlevel: $2",
+			"},"
+		],
+		"description": "饰品结构"
+	}
+}

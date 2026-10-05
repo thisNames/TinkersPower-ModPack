@@ -1,0 +1,2 @@
+\cataclysm\loot_tables\chests\abandoned_treasure
+loot spawn 0 -60 0 loot cataclysm:chests/abandoned_treasure

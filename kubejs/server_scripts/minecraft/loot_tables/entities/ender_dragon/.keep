@@ -1,0 +1,2 @@
+\minecraft\loot_tables\entities\ender_dragon
+loot spawn 0 -60 0 loot minecraft:entities/ender_dragon

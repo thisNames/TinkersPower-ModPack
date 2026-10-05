@@ -1,6 +1,6 @@
 #Set to 0 to disable, higher to set the requirements
 #Range: > 0
-potion_sickness_req = 0
+potion_sickness_req = 16
 #Enable antidote recipe?
 antidote_recipe = true
 #Enable long_antidote recipe?

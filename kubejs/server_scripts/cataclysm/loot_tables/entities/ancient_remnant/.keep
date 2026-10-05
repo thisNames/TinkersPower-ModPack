@@ -1,0 +1,2 @@
+\cataclysm\loot_tables\entities\ancient_remnant
+loot spawn 0 -60 0 loot cataclysm:entities/ancient_remnant

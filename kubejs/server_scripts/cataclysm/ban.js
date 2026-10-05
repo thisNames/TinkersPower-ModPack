@@ -18,8 +18,6 @@ let cataclysm_ban_items_server = [
 	"cataclysm:laser_gatling",
 	"cataclysm:wither_assault_shoulder_weapon",
 	"cataclysm:void_assault_shoulder_weapon",
-	"cataclysm:infernal_forge",
-	"cataclysm:void_forge",
 ];
 let cataclysm_ban_wearables_server = [
 ];
