@@ -1,0 +1,2 @@
+\graveyard\loot_tables\chests\crypt_loot
+loot spawn 0 -60 0 loot graveyard:chests/crypt_loot
