@@ -10,6 +10,8 @@ ServerEvents.tags("item", event =>
     const thirst = n => `toughasnails:thirst/${Math.max(1, Math.min(20, n))}_thirst_drinks`;
     // 湿润度
     const hydration = n => `toughasnails:hydration/${Math.max(1, Math.min(10, n)) * 10}_hydration_drinks`;
+    // 热食
+    const hot_food = "toughasnails:heating_consumed_items";
 
     // 饮料
     // 6-6
@@ -21,5 +23,7 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(6), item);
         event.add(hydration(6), item);
+
+        event.add(hot_food, item);
     });
 });
