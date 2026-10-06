@@ -50,7 +50,7 @@ const MATERIAL_OPTIONS = [
             },
             {
                 id: "diamond",
-                level:3
+                level: 3
             },
             {
                 id: "blaze_powder",
@@ -113,6 +113,19 @@ const MATERIAL_OPTIONS = [
             {
                 id: "broken_black_dragon_scale",
                 level: 1
+            },
+        ]
+    },
+    {
+        namespace: "roughtweaks",
+        material: [
+            {
+                id: "medkit",
+                level: 2
+            },
+            {
+                id: "medkit_enchanted",
+                level: 2
             },
         ]
     }

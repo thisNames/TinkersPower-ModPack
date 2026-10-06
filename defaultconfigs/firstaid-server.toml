@@ -119,7 +119,7 @@
 	sleepHealPercentage = 0.88
 	#外部回复将被乘以此值。若 "allowOtherHealingItems" 被禁用则无效
 	#范围：0.0 ~ 20.0
-	otherRegenMultiplier = 0.75
+	otherRegenMultiplier = 1.25
 	#原版自然生命恢复将被乘以此值。若 "allowNaturalRegeneration" 被禁用则无效
 	#范围：0.0 ~ 20.0
 	naturalRegenMultiplier = 0.5
