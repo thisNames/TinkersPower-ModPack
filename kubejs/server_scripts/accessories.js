@@ -504,6 +504,16 @@ const CURIOS_OPTIONS = [
                 dis: true
             },
         ]
+    },
+    {
+        namespace: "create",
+        curios: [
+            {
+                id: "goggles",
+                level: 3,
+                dis: false
+            },
+        ]
     }
 ];
 
