@@ -298,6 +298,11 @@ const CURIOS_OPTIONS = [
                 level: 3,
                 dis: true
             },
+            {
+                id: "ember",
+                level: 2,
+                dis: true
+            },
         ]
     },
     {

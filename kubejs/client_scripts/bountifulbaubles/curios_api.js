@@ -28,7 +28,7 @@ ItemEvents.tooltip(event =>
     event.add("bountifulbaubles:karma", text);
     event.add("bountifulbaubles:golden_melon", text);
     event.add("bountifulbaubles:dark_dagger", text);
-    event.add("bountifulbaubles:ember", text);
+    // event.add("bountifulbaubles:ember", text);
     event.add("bountifulbaubles:bottled_cloud", text);
     event.add("bountifulbaubles:oxalis", text);
     event.add("bountifulbaubles:luck_coin", text);

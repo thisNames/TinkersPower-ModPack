@@ -130,7 +130,7 @@ const bountifulbaubles_curios = {
         {
             id: "ember",
             remove: ["curio"],
-            add: []
+            add: ["body"]
         },
         {
             id: "bottled_cloud",
@@ -176,7 +176,7 @@ ServerEvents.tags("item", event =>
 
         if (item.add.length > 0)
         {
-            item.add.forEach(c => event.remove(`${bountifulbaubles_curios.tag}:${c}`, `${bountifulbaubles_curios.namespace}:${item.id}`));
+            item.add.forEach(c => event.add(`${bountifulbaubles_curios.tag}:${c}`, `${bountifulbaubles_curios.namespace}:${item.id}`));
         }
     });
 });
