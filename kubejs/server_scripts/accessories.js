@@ -129,6 +129,11 @@ const CURIOS_OPTIONS = [
         namespace: "bountifulbaubles",
         curios: [
             {
+                id: "blaze_heart",
+                level: 2,
+                dis: true
+            },
+            {
                 id: "broken_heart",
                 level: 2,
                 dis: true

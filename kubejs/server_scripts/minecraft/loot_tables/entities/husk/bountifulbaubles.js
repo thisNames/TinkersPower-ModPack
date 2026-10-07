@@ -6,9 +6,9 @@ ServerEvents.entityLootTables(event =>
         {
             pool.killedByPlayer();
 
-            pool.addEmpty(80);
+            pool.addEmpty(88);
             pool.addItem("bountifulbaubles:apple")
-                .weight(20)
+                .weight(12)
                 .count(1)
                 .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.apple"));
         });

@@ -6,9 +6,9 @@ ServerEvents.entityLootTables(event =>
         {
             pool.killedByPlayer();
 
-            pool.addEmpty(70);
+            pool.addEmpty(88);
             pool.addItem("bountifulbaubles:ring_overclocking")
-                .weight(30)
+                .weight(12)
                 .count(1)
                 .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.ring_overclocking"));
         });

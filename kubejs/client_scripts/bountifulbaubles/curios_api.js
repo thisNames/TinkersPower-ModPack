@@ -13,7 +13,7 @@ ItemEvents.tooltip(event =>
     event.add("bountifulbaubles:ruby_heart", text);
     event.add("bountifulbaubles:golden_skull", text);
     event.add("bountifulbaubles:starfish", text);
-    event.add("bountifulbaubles:blaze_heart", text);
+    // event.add("bountifulbaubles:blaze_heart", text);
     event.add("bountifulbaubles:serpent_tooth", text);
     event.add("bountifulbaubles:wither_nail", text);
     event.add("bountifulbaubles:turtle_shell", text);

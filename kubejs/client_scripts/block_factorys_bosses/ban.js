@@ -8,7 +8,6 @@ let block_factorys_bosses_ban_items = [
 	"block_factorys_bosses:kraken_trident",
 	"block_factorys_bosses:ice_gauntlet",
 	"block_factorys_bosses:undying_tentacle",
-	"block_factorys_bosses:sandworm_gauntlet",
 	"block_factorys_bosses:dragon_guard_shield",
 ];
 let block_factorys_bosses_ban_wearables = [

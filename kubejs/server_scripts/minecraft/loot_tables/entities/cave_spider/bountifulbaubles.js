@@ -6,8 +6,8 @@ ServerEvents.entityLootTables(event =>
         {
             pool.killedByPlayer();
 
-            pool.addEmpty(75);
-            pool.addItem("bountifulbaubles:bezoar").weight(25).count(1);
+            pool.addEmpty(88);
+            pool.addItem("bountifulbaubles:bezoar").weight(12).count(1);
         });
     });
 });

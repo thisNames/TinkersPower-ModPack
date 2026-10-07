@@ -60,7 +60,7 @@ const bountifulbaubles_curios = {
         {
             id: "blaze_heart",
             remove: ["curio"],
-            add: []
+            add: ["necklace", "charm", "body"]
         },
         {
             id: "serpent_tooth",
@@ -161,6 +161,81 @@ const bountifulbaubles_curios = {
             id: "curious_crown",
             remove: ["head"],
             add: []
+        },
+        {
+            id: "broken_heart",
+            remove: ["ring"],
+            add: []
+        },
+        {
+            id: "balloon",
+            remove: ["ring", "body", "necklace", "charm"],
+            add: ["curio"]
+        },
+        {
+            id: "apple",
+            remove: ["ring", "necklace", "charm"],
+            add: ["curio"]
+        },
+        {
+            id: "vitamins",
+            remove: ["ring", "necklace", "charm"],
+            add: ["curio"]
+        },
+        {
+            id: "shulker_heart",
+            remove: ["ring"],
+            add: []
+        },
+        {
+            id: "bezoar",
+            remove: ["ring", "necklace", "charm"],
+            add: ["curio"]
+        },
+        {
+            id: "lucky_horseshoe",
+            remove: ["ring", "necklace", "charm"],
+            add: ["feet"]
+        },
+        {
+            id: "horseshoe_balloon",
+            remove: ["ring", "necklace", "charm", "body"],
+            add: ["feet"]
+        },
+        {
+            id: "infinite_totem_of_undying",
+            remove: ["belt", "necklace"],
+            add: ["charm"]
+        },
+        {
+            id: "obsidian_shield",
+            remove: ["belt", "charm"],
+            add: []
+        },
+        {
+            id: "cobalt_shield",
+            remove: ["charm"],
+            add: []
+        },
+        {
+            id: "ankh_shield",
+            remove: ["charm"],
+            add: []
+        },
+        {
+            id: "tha_spider",
+            remove: ["curio"],
+            add: ["head"]
+        },
+        {
+            id: "creepo",
+            remove: ["curio"],
+            add: ["head"]
+        },
+        {
+            id: "tha_wizard",
+            remove: ["curio"],
+            add: ["head"]
         }
     ]
 };

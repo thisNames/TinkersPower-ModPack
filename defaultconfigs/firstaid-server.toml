@@ -47,16 +47,16 @@
 		multiplierFeet = 2.0
 		#对头部槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetHead = 1.0
+		offsetHead = 4.0
 		#对胸甲槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetChest = 0.0
+		offsetChest =4.0
 		#对护腿槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetLegs = 0.0
+		offsetLegs = 2.0
 		#对靴子槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetFeet = 0.0
+		offsetFeet = 2.0
 
 	["Locational Armor".Toughness]
 		#头部槽位每件护甲的局部护甲倍率
@@ -70,43 +70,43 @@
 		multiplierLegs = 2.0
 		#靴子槽位每件护甲的局部护甲倍率
 		#范围：1.0 ~ 16.0
-		multiplierFeet = 1.5
+		multiplierFeet = 2.0
 		#对头部槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetHead = 0.0
+		offsetHead = 4.0
 		#对胸甲槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetChest = 0.0
+		offsetChest = 4.0
 		#对护腿槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetLegs = 0.0
+		offsetLegs = 2.0
 		#对靴子槽位任何护甲值大于零的护甲部件施加的固定偏移量
 		#范围：0.0 ~ 4.0
-		offsetFeet = 0.0
+		offsetFeet = 2.0
 
 ["Internal Healing"]
 
 	["Internal Healing".bandage]
 		#此物品使用时提供的总治疗次数。1 次治疗 = 半颗心
 		#范围：1 ~ 127
-		totalsHeals = 4
+		totalsHeals = 6
 		#单次治疗触发所需的时间。此物品的总生效时间 = 该值 × 总治疗次数
 		#范围：1 ~ 32767
 		secondsPerHeal = 10
 		#在 GUI 中应用此物品所需的时间（毫秒）
 		#范围：0 ~ 16000
-		applyTime = 2500
+		applyTime = 2000
 
 	["Internal Healing".plaster]
 		#此物品使用时提供的总治疗次数。1 次治疗 = 半颗心
 		#范围：1 ~ 127
-		totalsHeals = 2
+		totalsHeals = 3
 		#单次治疗触发所需的时间。此物品的总生效时间 = 该值 × 总治疗次数
 		#范围：1 ~ 32767
-		secondsPerHeal = 10
+		secondsPerHeal = 6
 		#在 GUI 中应用此物品所需的时间（毫秒）
 		#范围：0 ~ 16000
-		applyTime = 3000
+		applyTime = 1000
 
 ["External Healing"]
 	#允许原版的自然生命恢复。需要 "allowOtherHealingItems" 为 true
@@ -119,14 +119,14 @@
 	sleepHealPercentage = 0.88
 	#外部回复将被乘以此值。若 "allowOtherHealingItems" 被禁用则无效
 	#范围：0.0 ~ 20.0
-	otherRegenMultiplier = 1.25
+	otherRegenMultiplier = 1.0
 	#原版自然生命恢复将被乘以此值。若 "allowNaturalRegeneration" 被禁用则无效
 	#范围：0.0 ~ 20.0
 	naturalRegenMultiplier = 0.5
 	#指定原版抗性药水效果应如何减少伤害。
 	#默认情况下，一级抗性减少 20% 伤害。将此值改为例如 10，则每级减少 10% 伤害
 	#范围：1 ~ 40
-	resistanceReductionPercentPerLevel = 20
+	resistanceReductionPercentPerLevel = 30
 
 [misc]
 	#若为 true，最大生命值会按你的心数缩放，配置项会乘以系数以匹配最大生命值
