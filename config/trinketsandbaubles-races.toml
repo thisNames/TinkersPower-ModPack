@@ -90,10 +90,10 @@
 		attack_speed = 0.15
 		#护甲值加成
 		#Range: -10.0 ~ 50.0
-		armor = 4.0
+		armor = 0.4
 		#护甲韧性加成
 		#Range: -10.0 ~ 50.0
-		armor_toughness = 2.0
+		armor_toughness = 0.2
 		#幸运值加成
 		#Range: -10.0 ~ 10.0
 		luck = 0.0

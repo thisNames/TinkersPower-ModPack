@@ -128,6 +128,15 @@ const MATERIAL_OPTIONS = [
                 level: 2
             },
         ]
+    },
+    {
+        namespace: "obscure_api",
+        material: [
+            {
+                id: "vial_of_knowledge",
+                level: 3
+            },
+        ]
     }
 ];
 

@@ -1,11 +1,11 @@
 
 ["Boss Health"]
 	#最大生命值：1024
-	"Sandworm Health" = 280.0
-	"Yeti Health" = 300.0
-	"Dragon Health" = 400.0
-	"Knight Health" = 380.0
-	"Kraken Health" = 570.0
+	"Sandworm Health" = 320.0
+	"Yeti Health" = 360.0
+	"Dragon Health" = 500.0
+	"Knight Health" = 400.0
+	"Kraken Health" = 620.0
 
 ["Boss Armor"]
 	#最大护甲：30

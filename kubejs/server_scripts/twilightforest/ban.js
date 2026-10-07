@@ -16,6 +16,12 @@ let twilightforest_ban_items_server = [
 	"twilightforest:knightmetal_axe",
 	"twilightforest:knightmetal_pickaxe",
 	"twilightforest:uncrafting_table",
+	"twilightforest:keepsake_casket",
+	"twilightforest:candelabra",
+	"twilightforest:brittle_potion_flask",
+	"twilightforest:greater_potion_flask",
+	"twilightforest:cube_of_annihilation",
+	"twilightforest:wrought_iron_fence",
 ];
 let twilightforest_ban_wearables_server = [
 ];

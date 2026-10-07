@@ -106,17 +106,17 @@ nausea_recipe = true
 #Enable long_nausea recipe?
 long_nausea_recipe = true
 #Enable chance recipe?
-chance_recipe = true
+chance_recipe = false
 #Enable strong_chance recipe?
-strong_chance_recipe = true
+strong_chance_recipe = false
 #Enable bless recipe?
-bless_recipe = true
+bless_recipe = false
 #Enable strong_bless recipe?
-strong_bless_recipe = true
+strong_bless_recipe = false
 #Enable curse recipe?
-curse_recipe = true
+curse_recipe = false
 #Enable strong_curse recipe?
-strong_curse_recipe = true
+strong_curse_recipe = false
 #Enable cure recipe?
 cure_recipe = true
 #Enable dispel recipe?
@@ -216,5 +216,5 @@ strong_random_teleport_recipe = true
 #Enable surface_teleport recipe?
 surface_teleport_recipe = true
 #Enable spawn_teleport recipe?
-spawn_teleport_recipe = true
+spawn_teleport_recipe = false
 

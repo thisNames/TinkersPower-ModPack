@@ -15,5 +15,11 @@
     "knightmetal_sword",
     "knightmetal_axe",
     "knightmetal_pickaxe",
-    "uncrafting_table"
+    "uncrafting_table",
+    "keepsake_casket",
+    "candelabra",
+    "brittle_potion_flask",
+    "greater_potion_flask",
+    "cube_of_annihilation",
+    "wrought_iron_fence"
 ]
