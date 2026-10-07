@@ -4,13 +4,13 @@
 	#是否启用饰品修饰系统
 	#注意：如果检测到安装了 Baubles Reforked 模组，此选项默认为 false
 	#你仍然可以手动启用此选项，但不建议同时使用两个模组的修饰符系统
-	enabled = true
+	enabled = false
 
 #铁砧重铸系统配置
 [anvilRecast]
 	#重铸所需经验等级
 	#Range: 1 ~ 100
-	expCost = 3
+	expCost = 1
 	#重铸消耗的材料数量
 	#Range: 1 ~ 64
 	materialCost = 1
@@ -76,7 +76,7 @@
 	#默认值12表示12*12的范围
 	#范围: 1-128
 	#Range: 1 ~ 128
-	render_range = 12
+	render_range = 8
 
 	[dragonsEye.valuable]
 		#贵重矿物组 - 在这里添加要探测的额外贵重矿石
@@ -107,15 +107,15 @@
 [enderCrown]
 	#末影人跟随范围
 	#Range: 8.0 ~ 32.0
-	followRange = 16.0
+	followRange = 8.0
 	#伤害免疫触发概率
 	#Range: 0.0 ~ 1.0
 	immunityChance = 0.02
 	#传送范围
 	#Range: 8.0 ~ 64.0
-	teleportRange = 32.0
+	teleportRange = 16.0
 	#是否启用水伤害
-	waterDamageEnabled = false
+	waterDamageEnabled = true
 
 [faelisClaw]
 	#攻击力增益百分比
@@ -149,7 +149,7 @@
 [poisonStone]
 	#毒石触发中毒效果的概率
 	#Range: 0.0 ~ 1.0
-	chance = 0.2
+	chance = 0.4
 	#中毒效果持续时间(tick)
 	#Range: 20 ~ 40000
 	duration = 60
@@ -182,10 +182,10 @@
 	maxDamageCount = 3
 	#基础伤害减免百分比
 	#Range: 0.0 ~ 1.0
-	damageReduction = 0.2
+	damageReduction = 0.25
 	#爆炸伤害减免系数
 	#Range: 0.0 ~ 1.0
-	explosionReduction = 0.25
+	explosionReduction = 0.3
 	#是否启用伤害护盾效果
 	#需要安装前置模组 First Aid 才能生效
 	#true - 启用
@@ -198,7 +198,7 @@
 	#例如: 0.1 表示 10% 的触发概率
 	#注意：此功能需要安装 First Aid 模组才能正常工作，如果没安装可以忽略此配置
 	#Range: 0.0 ~ 1.0
-	trigger_chance = 0.1
+	trigger_chance = 0.2
 
 [greaterInertiaStone]
 	#击退抗性增加值
@@ -220,7 +220,7 @@
 [witherRing]
 	#凋零效果触发概率
 	#Range: 0.0 ~ 1.0
-	chance = 0.2
+	chance = 0.25
 	#凋零效果持续时间(tick)
 	#Range: 20 ~ 6000
 	duration = 100

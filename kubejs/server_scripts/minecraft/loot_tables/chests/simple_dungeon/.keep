@@ -1,0 +1,2 @@
+\minecraft\loot_tables\chests\simple_dungeon
+loot spawn 0 -60 0 loot minecraft:chests/simple_dungeon
