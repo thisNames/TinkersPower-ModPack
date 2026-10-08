@@ -27,4 +27,10 @@ ItemEvents.modification(event =>
     incArrmor(_this("hazmat_chestplate"), 182, 4, 0.5);
     incArrmor(_this("hazmat_leggings"), 172, 5, 0.5);
     incArrmor(_this("hazmat_boots"), 158, 2, 0.5);
+
+    // 潜水
+    incArrmor(_this("diving_mask"), 102, 2, 0);
+    incArrmor(_this("diving_chestplate"), 128, 6, 0);
+    incArrmor(_this("diving_leggings"), 118, 5, 0);
+    incArrmor(_this("diving_boots"), 110, 2, 0);
 });
