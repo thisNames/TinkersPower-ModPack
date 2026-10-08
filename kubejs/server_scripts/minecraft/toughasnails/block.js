@@ -8,7 +8,10 @@ ServerEvents.tags("block", event =>
 
     // 热
     [
-        _this("torch")
+        _this("torch"),
+        _this("ochre_froglight"),
+        _this("verdant_froglight"),
+        _this("pearlescent_froglight")
     ].forEach(item =>
     {
         event.add(hot_block, item);
@@ -19,7 +22,8 @@ ServerEvents.tags("block", event =>
         _this("ice"),
         _this("snow_block"),
         _this("snow"),
-        _this("soul_torch")
+        _this("soul_torch"),
+        _this("sea_lantern")
     ].forEach(item =>
     {
         event.add(cool_block, item);

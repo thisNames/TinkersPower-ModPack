@@ -4,7 +4,7 @@ ServerEvents.tags("block", event =>
 
     // 外在温度：方块
     const hot_block = "toughasnails:heating_blocks";
-    const cool_block = "toughasnails:cooling_blocks";
+    // const cool_block = "toughasnails:cooling_blocks";
 
     // 热
     [
@@ -14,11 +14,11 @@ ServerEvents.tags("block", event =>
         event.add(hot_block, item);
     });
 
-    // 冷
-    [
+    // // 冷
+    // [
 
-    ].forEach(item =>
-    {
-        event.add(cool_block, item);
-    });
+    // ].forEach(item =>
+    // {
+    //     event.add(cool_block, item);
+    // });
 });

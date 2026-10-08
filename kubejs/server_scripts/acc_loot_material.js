@@ -21,6 +21,10 @@ const MATERIAL_OPTIONS = [
         namespace: "minecraft",
         material: [
             {
+                id: "blaze_rod",
+                level: 3
+            },
+            {
                 id: "iron_ingot",
                 level: 3
             },
@@ -134,6 +138,15 @@ const MATERIAL_OPTIONS = [
         material: [
             {
                 id: "vial_of_knowledge",
+                level: 3
+            },
+        ]
+    },
+    {
+        namespace: "tp_armorunder",
+        material: [
+            {
+                id: "freeze_powder",
                 level: 3
             },
         ]
