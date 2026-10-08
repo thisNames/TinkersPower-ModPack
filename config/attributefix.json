@@ -132,6 +132,17 @@
         "value": 2
       }
     },
+    "quality_forked:magic_resistance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "cold_sweat:heat_resistance": {
       "enabled": false,
       "min": {
@@ -225,6 +236,28 @@
       "min": {
         "default": -Infinity,
         "value": -Infinity
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "quality_forked:jump_height": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 16,
+        "value": 16
+      }
+    },
+    "quality_forked:damage_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 1,
@@ -627,6 +660,17 @@
         "value": 2048
       }
     },
+    "quality_forked:projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "obscure_api:critical_hit": {
       "enabled": false,
       "min": {
@@ -671,6 +715,17 @@
         "value": 1000
       }
     },
+    "quality_forked:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "tconstruct:generic.knockback_multiplier": {
       "enabled": false,
       "min": {
@@ -684,6 +739,17 @@
     },
     "minecraft:generic.flying_speed": {
       "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "quality_forked:dig_speed": {
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0

@@ -1,0 +1,9 @@
+#Item that can be used to reforge any item.
+"Global reforger" = "minecraft:nether_star"
+#List of items that cannot get qualities.
+"Black list" = []
+#List of quality ids that are given by villager trades.
+"Villager quality list" = [4, 5, 6, 7, 8, 9, 10, 11, 35, 36, 37, 38, 39, 40, 41, 46, 47, 48, 49, 50, 51, 52, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 79, 80, 81, 82, 83, 84, 85]
+#Overrides reforging requirements. Format: item_or_tag|material_item
+Override = []
+
