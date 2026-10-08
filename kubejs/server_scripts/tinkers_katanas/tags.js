@@ -4,7 +4,8 @@ ServerEvents.tags("item", event =>
 
     // 剑
     [
-        _this("katana")
+        _this("katana"),
+        _this("fuma_shuriken"),
     ].forEach(item =>
     {
         event.add("minecraft:swords", item);

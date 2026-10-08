@@ -1,0 +1,176 @@
+{
+    "items": [
+        "tconstruct:travelers_chestplate",
+        "tconstruct:plate_chestplate",
+        "tconstruct:slime_chestplate",
+
+        "tinkers_things:laminar_chestplate"
+    ],
+    "item_tags": [],
+    "class": [
+        "ArmorItem"
+    ],
+    "slot": "CHEST",
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.crumbling",
+            "weight": 8,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "value": -1.5,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "value": -1,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                },
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "value": -1,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.cumbersome",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "value": -0.1,
+                    "operation": "multiply_base",
+                    "slot": "CHEST"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "value": -0.1,
+                    "operation": "multiply_base",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.dented",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "value": -1,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.heavy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "value": -0.1,
+                    "operation": "multiply_base",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "normal",
+            "weight": 100
+        },
+        {
+            "name": "quality_equipment.quality.thick",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "value": -0.05,
+                    "operation": "multiply_base",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.tough",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "value": 1,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.protective",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.arcane",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "value": 1,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.solid",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.masterful",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "value": 1,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                },
+                {
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "CHEST"
+                }
+            ]
+        }
+    ]
+}

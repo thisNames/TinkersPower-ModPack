@@ -1,0 +1,176 @@
+{
+    "items": [
+        "tconstruct:travelers_boots",
+        "tconstruct:plate_boots",
+        "tconstruct:slime_boots",
+
+        "tinkers_things:laminar_boots"
+    ],
+    "item_tags": [],
+    "class": [
+        "ArmorItem"
+    ],
+    "slot": "FEET",
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.crumbling",
+            "weight": 8,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": -1.5,
+                    "slot": "FEET"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "FEET"
+                },
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.dented",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.heavy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.normal",
+            "weight": 100
+        },
+        {
+            "name": "quality_equipment.quality.thick",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "FEET"
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.tough",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": 1.0,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.protective",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.arcane",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": 1.0,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.tall",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "forge:step_height_addition",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.speedy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "FEET"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.masterful",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "FEET"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": 1.0,
+                    "slot": "FEET"
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "FEET"
+                },
+                {
+                    "attribute": "forge:step_height_addition",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "FEET"
+                }
+            ]
+        }
+    ]
+}

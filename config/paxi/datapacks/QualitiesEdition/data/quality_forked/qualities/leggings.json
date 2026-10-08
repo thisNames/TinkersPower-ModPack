@@ -1,0 +1,158 @@
+{
+    "items": [
+        "tconstruct:travelers_leggings",
+        "tconstruct:plate_leggings",
+        "tconstruct:slime_leggings",
+
+        "tinkers_things:laminar_leggings"
+    ],
+    "item_tags": [],
+    "class": [
+        "ArmorItem"
+    ],
+    "slot": "LEGS",
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.crumbling",
+            "weight": 8,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": -1.5,
+                    "slot": "LEGS"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": -1,
+                    "slot": "LEGS"
+                },
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": -1,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.dented",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": -1,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.heavy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "normal",
+            "weight": 100
+        },
+        {
+            "name": "quality_equipment.quality.thick",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "LEGS"
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.tough",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": 1,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.protective",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.arcane",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": 1,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.springy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:jump_height",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "LEGS"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.masterful",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "LEGS"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": 1,
+                    "slot": "LEGS"
+                },
+                {
+                    "attribute": "quality_forked:jump_height",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "LEGS"
+                }
+            ]
+        }
+    ]
+}

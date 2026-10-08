@@ -10,11 +10,7 @@ ServerEvents.tags("item", event =>
         "tconstruct:pickadze",
         "tconstruct:mattock",
         "tconstruct:kama",
-        "tconstruct:crossbow",
         "tconstruct:fishing_rod",
-        "tconstruct:arrow",
-        "tconstruct:shuriken",
-        "tconstruct:throwing_axe",
         // 宽型工具
         "tconstruct:cleaver",
         "tconstruct:sledge_hammer",
@@ -22,14 +18,20 @@ ServerEvents.tags("item", event =>
         "tconstruct:broad_axe",
         "tconstruct:excavator",
         "tconstruct:scythe",
-        "tconstruct:longbow",
         "tconstruct:javelin",
         // 远古工具
         "tconstruct:battlesign",
-        "tconstruct:war_pick",
         "tconstruct:melting_pan",
         "tconstruct:swasher",
-        "tconstruct:minotaur_axe"
+        "tconstruct:minotaur_axe",
+        // 远程
+        "tconstruct:crossbow",
+        "tconstruct:shuriken",
+        "tconstruct:throwing_axe",
+        "tconstruct:longbow",
+        "tconstruct:war_pick",
+        // 非武器工具
+        "tconstruct:arrow"
     ]);
 });
 

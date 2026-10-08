@@ -1,0 +1,158 @@
+{
+    "items": [
+        "tconstruct:travelers_helmet",
+        "tconstruct:plate_helmet",
+        "tconstruct:slime_helmet",
+
+        "tinkers_things:laminar_helmet"
+    ],
+    "item_tags": [],
+    "class": [
+        "ArmorItem"
+    ],
+    "slot": "HEAD",
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.crumbling",
+            "weight": 8,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": -1.5,
+                    "slot": "HEAD"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": -1,
+                    "slot": "HEAD"
+                },
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": -1,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.dented",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": -1,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.heavy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.normal",
+            "weight": 100
+        },
+        {
+            "name": "quality_equipment.quality.thick",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "HEAD"
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.tough",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": 1,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.protective",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.arcane",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": 1,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.lucky",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.luck",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "HEAD"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.masterful",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "HEAD"
+                },
+                {
+                    "attribute": "minecraft:generic.armor_toughness",
+                    "operation": "addition",
+                    "value": 1,
+                    "slot": "HEAD"
+                },
+                {
+                    "attribute": "minecraft:generic.luck",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "HEAD"
+                }
+            ]
+        }
+    ]
+}

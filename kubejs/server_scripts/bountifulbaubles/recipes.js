@@ -13,7 +13,8 @@ ServerEvents.recipes(event =>
             _this("obsidian_skull"),
             _this("pride_pendant"),
             _this("wrath_pendant"),
-            _this("gluttony_pendant")
+            _this("gluttony_pendant"),
+            _this("resplendent_token")
         ]
     });
 
@@ -63,4 +64,15 @@ ServerEvents.recipes(event =>
     event.replaceInput({ output: _this("ankh_charm") }, _mc("gold_block"), _trinke("glowing_ingot"));
 
     event.shapeless(_this("spectral_silt"), ["#bountifulbaubles:baubles", _this("disintegration_tablet")]);
+
+    event.recipes.kubejs.shaped(_this("resplendent_token"), [
+        [_this("spectral_silt"), _trinke("glowing_powder"), _this("spectral_silt")],
+        [_trinke("glowing_powder"), _trinke("glowing_ingot"), _trinke("glowing_powder")],
+        [_this("spectral_silt"), _trinke("glowing_powder"), _this("spectral_silt")]
+    ]).modifyResult((inputs, output) =>
+    {
+        output.setCount(2);
+
+        return output;
+    });
 });

@@ -1,0 +1,286 @@
+{
+    "items": [],
+    "item_tags": [
+        "curios:informational",
+        "curios:charm",
+        "curios:back",
+        "curios:hands",
+        "curios:ring",
+        "curios:belt",
+        "curios:head",
+        "curios:body",
+        "curios:necklace",
+        "curios:feet",
+        "curios:talisman"
+    ],
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.horrible",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": -0.05
+                },
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "operation": "multiply_base",
+                    "value": -0.05
+                },
+                {
+                    "attribute": "quality_forked:magic_damage",
+                    "operation": "multiply_base",
+                    "value": -0.05
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.clunky",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.unlucky",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.luck",
+                    "operation": "addition",
+                    "value": -0.2
+                }
+            ]
+        },
+        {
+            "name": "normal",
+            "weight": 100
+        },
+        {
+            "name": "quality_equipment.quality.lucky",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.luck",
+                    "operation": "addition",
+                    "value": 0.2
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.healthy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "addition",
+                    "value": 2.0
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.armored",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:damage_resistance",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.speedy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.springy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:jump_height",
+                    "operation": "addition",
+                    "value": 0.5
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.prospecting",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.flailing",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.shielding",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.focusing",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.aiming",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.strengthening",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.graceful",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.athletic",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "multiply_base",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "quality_forked:jump_height",
+                    "operation": "addition",
+                    "value": 0.5
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.punishing",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                },
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                },
+                {
+                    "attribute": "quality_forked:magic_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.arcane_bauble",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": 1
+                },
+                {
+                    "attribute": "quality_forked:magic_damage",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.undying",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "addition",
+                    "value": 2
+                },
+                {
+                    "attribute": "quality_forked:damage_resistance",
+                    "operation": "multiply_base",
+                    "value": 0.03
+                },
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "operation": "addition",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}

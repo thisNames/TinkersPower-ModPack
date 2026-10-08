@@ -1,0 +1,398 @@
+{
+    "items": [
+        "tcompat:glaive",
+
+        "tconstruct:sword",
+        "tconstruct:dagger",
+        "tconstruct:pickaxe",
+        "tconstruct:hand_axe",
+        "tconstruct:pickadze",
+        "tconstruct:mattock",
+        "tconstruct:kama",
+        "tconstruct:fishing_rod",
+        "tconstruct:cleaver",
+        "tconstruct:sledge_hammer",
+        "tconstruct:vein_hammer",
+        "tconstruct:broad_axe",
+        "tconstruct:excavator",
+        "tconstruct:scythe",
+        "tconstruct:javelin",
+        "tconstruct:battlesign",
+        "tconstruct:melting_pan",
+        "tconstruct:swasher",
+        "tconstruct:minotaur_axe",
+
+        "tinkers_battle_spades:battle_spade",
+
+        "tinkers_katanas:fuma_shuriken",
+        "tinkers_katanas:katana",
+
+        "tinkers_things:shovel",
+        "tinkers_things:halberd",
+        "tinkers_things:blockram",
+
+        "tinkers_thinking:paxel",
+        "tinkers_thinking:knife",
+        "tinkers_thinking:mace",
+        "tinkers_thinking:cutlass"
+    ],
+    "item_tags": [
+        "SwordItem", 
+        "DiggerItem"
+    ],
+    "class": [],
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.worthless",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:entity_reach",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:block_reach",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.broken",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": -0.15,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.bulky",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": -0.15,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.15,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.rusted",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.clumsy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.chipped",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.short",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "forge:entity_reach",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:block_reach",
+                    "operation": "addition",
+                    "value": -1.0,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.normal",
+            "weight": 100
+        },
+        {
+            "name": "quality_equipment.quality.broad",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.thin",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": -0.05,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.pokey",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.05,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": -0.1,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.vicious",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.15,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:entity_reach",
+                    "operation": "addition",
+                    "value": -0.5,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:block_reach",
+                    "operation": "addition",
+                    "value": -0.5,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.long",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "forge:entity_reach",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:block_reach",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.sharp",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.keen",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.graceful",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": 0.15,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.15,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.sweeping",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "forge:entity_reach",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:block_reach",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.2,
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.legendary",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "multiply_base",
+                    "value": 0.15,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "quality_forked:dig_speed",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:entity_reach",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "forge:block_reach",
+                    "operation": "addition",
+                    "value": 0.5,
+                    "slot": "MAINHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "operation": "multiply_base",
+                    "value": 0.1,
+                    "slot": "MAINHAND"
+                }
+            ]
+        }
+    ]
+}

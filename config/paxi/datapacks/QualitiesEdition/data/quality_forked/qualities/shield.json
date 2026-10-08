@@ -1,0 +1,72 @@
+{
+    "items": [
+        "tconstruct:travelers_shield",
+        "tconstruct:plate_shield",
+
+        "tinkers_things:laminar_shield"
+    ],
+    "item_tags": [],
+    "class": [
+        "ShieldItem"
+    ],
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.heavy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "value": -0.1,
+                    "operation": "multiply_base",
+                    "slot": "OFFHAND"
+                }
+            ]
+        },
+        {
+            "name": "normal",
+            "weight": 60
+        },
+        {
+            "name": "quality_equipment.quality.thick",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "OFFHAND"
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "value": -0.05,
+                    "operation": "multiply_base",
+                    "slot": "OFFHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.arcane",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:magic_resistance",
+                    "value": 1,
+                    "operation": "addition",
+                    "slot": "OFFHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.solid",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "value": 0.5,
+                    "operation": "addition",
+                    "slot": "OFFHAND"
+                }
+            ]
+        }
+    ]
+}

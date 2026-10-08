@@ -1,0 +1,75 @@
+{
+    "items": [
+        "tconstruct:crossbow",
+        "tconstruct:shuriken",
+        "tconstruct:throwing_axe",
+        "tconstruct:longbow",
+        "tconstruct:war_pick",
+
+        "tinkers_ingenuity:blowpipe",
+
+        "tinkers_things:shortbow",
+
+        "tinkers_thinking:arrow_thrower",
+        "tinkers_thinking:repeating_crossbow"
+    ],
+    "item_tags": [],
+    "class": [
+        "BowItem",
+        "CrossbowItem"
+    ],
+    "qualities": [
+        {
+            "name": "quality_equipment.quality.cracked",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "value": -0.15,
+                    "operation": "multiply_base",
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "normal",
+            "weight": 50
+        },
+        {
+            "name": "quality_equipment.quality.clumsy",
+            "weight": 10,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "value": -0.05,
+                    "operation": "multiply_base",
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.powerful",
+            "weight": 5,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "value": 0.1,
+                    "operation": "multiply_base",
+                    "slot": "MAINHAND"
+                }
+            ]
+        },
+        {
+            "name": "quality_equipment.quality.legendary_bow",
+            "weight": 2,
+            "attributes": [
+                {
+                    "attribute": "quality_forked:projectile_damage",
+                    "value": 0.15,
+                    "operation": "multiply_base",
+                    "slot": "MAINHAND"
+                }
+            ]
+        }
+    ]
+}
