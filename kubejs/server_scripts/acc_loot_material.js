@@ -58,7 +58,7 @@ const MATERIAL_OPTIONS = [
             },
             {
                 id: "blaze_powder",
-                level: 2
+                level: 3
             },
             {
                 id: "nether_star",
@@ -117,6 +117,14 @@ const MATERIAL_OPTIONS = [
             {
                 id: "broken_black_dragon_scale",
                 level: 1
+            },
+            {
+                id: "potion_wormhole",
+                level: 2
+            },
+            {
+                id: "potion_recall",
+                level: 2
             },
         ]
     },
