@@ -26,15 +26,5 @@ ServerEvents.entityLootTables(event =>
         {
             pool.addItem("minecraft:diamond").weight(1).count([16 - 64]).lootingEnchant(8, 36);
         });
-
-        // 饰品
-        loot.addPool(pool =>
-        {
-            pool.addItem("artifacts:power_glove")
-                .weight(1)
-                .count(1)
-                .enchantRandomly("minecraft:sharpness")
-                .name(Text.translatable("loot.kubejs.tooltip.artifacts.power_glove"));
-        });
     });
 });

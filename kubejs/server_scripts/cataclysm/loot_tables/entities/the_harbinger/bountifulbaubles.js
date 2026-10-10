@@ -1,6 +1,7 @@
 ServerEvents.entityLootTables(event =>
 {
-    event.modifyEntity("cataclysm:ender_guardian", loot =>
+    // 饰品
+    event.modifyEntity("cataclysm:the_harbinger", loot =>
     {
         loot.addPool(pool =>
         {
@@ -10,17 +11,17 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow").getString()
+                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying_vow").getString()
                             })
                         ]
                     }
                 })
             });
 
-            pool.addItem("bountifulbaubles:endless_pearl")
+            pool.addItem("bountifulbaubles:infinite_totem_of_undying")
                 .weight(1)
                 .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl"));
+                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying"));
         });
     });
 });

@@ -1,7 +1,8 @@
 ServerEvents.entityLootTables(event =>
 {
-    event.modifyEntity("cataclysm:ender_guardian", loot =>
+    event.modifyEntity("ba_bt:end_golem", loot =>
     {
+        // 饰品
         loot.addPool(pool =>
         {
             pool.addFunction({
@@ -10,7 +11,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow").getString()
+                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl2_vow").getString()
                             })
                         ]
                     }
@@ -20,7 +21,8 @@ ServerEvents.entityLootTables(event =>
             pool.addItem("bountifulbaubles:endless_pearl")
                 .weight(1)
                 .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl"));
+                .enchantRandomly("minecraft:looting")
+                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl2"));
         });
     });
 });

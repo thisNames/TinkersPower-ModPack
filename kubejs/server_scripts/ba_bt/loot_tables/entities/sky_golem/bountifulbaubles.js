@@ -1,7 +1,8 @@
 ServerEvents.entityLootTables(event =>
 {
-    event.modifyEntity("cataclysm:ender_guardian", loot =>
+    event.modifyEntity("ba_bt:sky_golem", loot =>
     {
+        // 饰品
         loot.addPool(pool =>
         {
             pool.addFunction({
@@ -10,17 +11,17 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow").getString()
+                                text: Text.translatable("loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow").getString()
                             })
                         ]
                     }
                 })
             });
 
-            pool.addItem("bountifulbaubles:endless_pearl")
+            pool.addItem("artifacts:cloud_in_a_bottle")
                 .weight(1)
                 .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl"));
+                .name(Text.translatable("loot.kubejs.tooltip.artifacts.cloud_in_a_bottle"));
         });
     });
 });

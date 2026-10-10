@@ -364,11 +364,6 @@ const CURIOS_OPTIONS = [
                 dis: true
             },
             {
-                id: "cross_necklace",
-                level: 3,
-                dis: true
-            },
-            {
                 id: "panic_necklace",
                 level: 3,
                 dis: true
@@ -395,11 +390,6 @@ const CURIOS_OPTIONS = [
             },
             {
                 id: "cloud_in_a_bottle",
-                level: 3,
-                dis: true
-            },
-            {
-                id: "obsidian_skull",
                 level: 3,
                 dis: true
             },

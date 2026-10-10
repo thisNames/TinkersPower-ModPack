@@ -23,4 +23,29 @@ ServerEvents.entityLootTables(event =>
             pool.rolls = 2;
         });
     });
+
+    // 下界之心
+    event.modifyEntity("cataclysm:the_harbinger", loot =>
+    {
+        loot.addPool(pool =>
+        {
+            pool.addFunction({
+                function: "minecraft:set_nbt",
+                tag: JSON.stringify({
+                    display: {
+                        Lore: [
+                            JSON.stringify({
+                                text: Text.translatable("loot.kubejs.tooltip.minecraft.nether_star_vow").getString()
+                            })
+                        ]
+                    }
+                })
+            });
+
+            pool.addItem("minecraft:nether_star")
+                .weight(1)
+                .count(1)
+                .name(Text.translatable("loot.kubejs.tooltip.minecraft.nether_star"));
+        });
+    });
 });

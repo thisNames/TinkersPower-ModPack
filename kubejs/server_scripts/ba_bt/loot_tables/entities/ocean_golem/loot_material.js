@@ -26,13 +26,30 @@ ServerEvents.entityLootTables(event =>
         {
             pool.addItem("minecraft:diamond").weight(1).count([16 - 64]).lootingEnchant(8, 36);
         });
+    });
 
-        // 饰品
+    // 海洋之心
+    event.modifyEntity("ba_bt:ocean_golem", loot =>
+    {
         loot.addPool(pool =>
         {
+            pool.addFunction({
+                function: "minecraft:set_nbt",
+                tag: JSON.stringify({
+                    display: {
+                        Lore: [
+                            JSON.stringify({
+                                text: Text.translatable("loot.kubejs.tooltip.minecraft.heart_of_the_sea_vow").getString()
+                            })
+                        ]
+                    }
+                })
+            });
+
             pool.addItem("minecraft:heart_of_the_sea")
                 .weight(1)
-                .count(1);
+                .count(1)
+                .name(Text.translatable("loot.kubejs.tooltip.minecraft.heart_of_the_sea"));
         });
     });
 });

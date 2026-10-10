@@ -26,14 +26,5 @@ ServerEvents.entityLootTables(event =>
         {
             pool.addItem("minecraft:diamond").weight(1).count([16 - 64]).lootingEnchant(8, 36);
         });
-
-        // 饰品
-        loot.addPool(pool =>
-        {
-            pool.addItem("artifacts:cloud_in_a_bottle")
-                .weight(1)
-                .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.artifacts.cloud_in_a_bottle"));
-        });
     });
 });

@@ -4,6 +4,19 @@ ServerEvents.entityLootTables(event =>
     {
         loot.addPool(pool =>
         {
+            pool.addFunction({
+                function: "minecraft:set_nbt",
+                tag: JSON.stringify({
+                    display: {
+                        Lore: [
+                            JSON.stringify({
+                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.sunglasses_vow").getString()
+                            })
+                        ]
+                    }
+                })
+            });
+            
             pool.killedByPlayer();
 
             pool.addEmpty(88);

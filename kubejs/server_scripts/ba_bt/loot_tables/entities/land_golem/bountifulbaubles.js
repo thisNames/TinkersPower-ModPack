@@ -1,7 +1,8 @@
 ServerEvents.entityLootTables(event =>
 {
-    event.modifyEntity("cataclysm:ender_guardian", loot =>
+    event.modifyEntity("ba_bt:land_golem", loot =>
     {
+        // 饰品
         loot.addPool(pool =>
         {
             pool.addFunction({
@@ -10,17 +11,18 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow").getString()
+                                text: Text.translatable("loot.kubejs.tooltip.artifacts.power_glove_vow").getString()
                             })
                         ]
                     }
                 })
             });
 
-            pool.addItem("bountifulbaubles:endless_pearl")
+            pool.addItem("artifacts:power_glove")
                 .weight(1)
                 .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl"));
+                .enchantRandomly("minecraft:sharpness")
+                .name(Text.translatable("loot.kubejs.tooltip.artifacts.power_glove"));
         });
     });
 });

@@ -1,6 +1,6 @@
 ServerEvents.entityLootTables(event =>
 {
-    event.modifyEntity("cataclysm:ender_guardian", loot =>
+    event.modifyEntity("block_factorys_bosses:yeti", loot =>
     {
         loot.addPool(pool =>
         {
@@ -10,17 +10,17 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow").getString()
+                                text: Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.teddy_bear_vow").getString()
                             })
                         ]
                     }
                 })
             });
 
-            pool.addItem("bountifulbaubles:endless_pearl")
+            pool.addItem("trinketsandbaubles:teddy_bear")
                 .weight(1)
                 .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl"));
+                .name(Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.teddy_bear"));
         });
     });
 });

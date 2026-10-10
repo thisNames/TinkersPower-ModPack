@@ -11,6 +11,16 @@ const artifacts_curios = {
             id: "onion_ring",
             remove: "slot/hands",
             add: ""
+        },
+        {
+            id: "cross_necklace",
+            remove: "slot/necklace",
+            add: ""
+        },
+        {
+            id: "obsidian_skull",
+            remove: "slot/belt",
+            add: ""
         }
     ]
 };
