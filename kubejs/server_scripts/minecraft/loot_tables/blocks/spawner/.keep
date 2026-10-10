@@ -1,0 +1,2 @@
+\minecraft\loot_tables\blocks\spawner
+loot spawn 0 -60 0 loot minecraft:blocks/spawner
