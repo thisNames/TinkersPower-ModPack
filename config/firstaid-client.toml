@@ -18,7 +18,7 @@
 	#APPEND will add the first aid values at the bottom
 	#NONE will show the old vanilla values. Be advised this is purly visual, interally, the first aid value will always be used
 	#Allowed Values: REPLACE, APPEND, NONE
-	armorTooltipMode = "REPLACE"
+	armorTooltipMode = "NONE"
 	#The offset on the x axis
 	#Range: -32768 ~ 32767
 	xOffset = 5

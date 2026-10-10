@@ -11,7 +11,8 @@
         "curios:body",
         "curios:necklace",
         "curios:feet",
-        "curios:talisman"
+        "curios:talisman",
+        "curios:curio"
     ],
     "qualities": [
         {

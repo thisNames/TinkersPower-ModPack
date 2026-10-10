@@ -26,4 +26,7 @@ ItemEvents.modification(event =>
     
     // 岩壳
     incArrmor(_this("rocky_chestplate"), 112, 5, 0.5);
+    
+    // 蜈蚣
+    incArrmor(_this("centipede_leggings"), 87, 6, 0.5);
 });

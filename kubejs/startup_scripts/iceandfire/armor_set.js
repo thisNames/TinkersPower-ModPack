@@ -25,10 +25,10 @@ ItemEvents.modification(event =>
     };
 
     // 银盔甲
-    incArrmor(_this("armor_silver_metal_helmet"), 64, 4, 2);
-    incArrmor(_this("armor_silver_metal_chestplate"), 64, 6, 2);
-    incArrmor(_this("armor_silver_metal_leggings"), 64, 5, 2);
-    incArrmor(_this("armor_silver_metal_boots"), 64, 3, 2);
+    incArrmor(_this("armor_silver_metal_helmet"), 64, 4, 1);
+    incArrmor(_this("armor_silver_metal_chestplate"), 64, 5, 1);
+    incArrmor(_this("armor_silver_metal_leggings"), 64, 4, 1);
+    incArrmor(_this("armor_silver_metal_boots"), 64, 3, 1);
 
     // 铜盔甲
     incArrmor(_this("armor_copper_metal_helmet"), 46, 1, 0);

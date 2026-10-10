@@ -31,10 +31,10 @@ ItemEvents.modification(event =>
     incArrmor(_this("iron_boots"), 90, 2, 0);
 
     // 金
-    incArrmor(_this("golden_helmet"), 32, 5, 2);
-    incArrmor(_this("golden_chestplate"), 32, 6, 2);
-    incArrmor(_this("golden_leggings"), 32, 4, 2);
-    incArrmor(_this("golden_boots"), 32, 3, 2);
+    incArrmor(_this("golden_helmet"), 32, 4, 1);
+    incArrmor(_this("golden_chestplate"), 32, 5, 1);
+    incArrmor(_this("golden_leggings"), 32, 4, 1);
+    incArrmor(_this("golden_boots"), 32, 3, 1);
 
     // 钻石
     incArrmor(_this("diamond_helmet"), 163, 4, 2);
