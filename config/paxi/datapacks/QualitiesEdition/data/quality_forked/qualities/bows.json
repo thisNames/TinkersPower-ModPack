@@ -31,7 +31,7 @@
         },
         {
             "name": "normal",
-            "weight": 50
+            "weight": 40
         },
         {
             "name": "quality_equipment.quality.clumsy",
@@ -39,7 +39,7 @@
             "attributes": [
                 {
                     "attribute": "quality_forked:projectile_damage",
-                    "value": -0.05,
+                    "value": -0.1,
                     "operation": "multiply_base",
                     "slot": "MAINHAND"
                 }

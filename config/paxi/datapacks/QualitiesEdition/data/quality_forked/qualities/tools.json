@@ -49,19 +49,19 @@
                 {
                     "attribute": "minecraft:generic.attack_damage",
                     "operation": "multiply_base",
-                    "value": -0.1,
+                    "value": -0.15,
                     "slot": "MAINHAND"
                 },
                 {
                     "attribute": "minecraft:generic.attack_speed",
                     "operation": "multiply_base",
-                    "value": -0.1,
+                    "value": -0.15,
                     "slot": "MAINHAND"
                 },
                 {
                     "attribute": "quality_forked:dig_speed",
                     "operation": "multiply_base",
-                    "value": -0.1,
+                    "value": -0.15,
                     "slot": "MAINHAND"
                 },
                 {
@@ -182,7 +182,7 @@
         },
         {
             "name": "quality_equipment.quality.normal",
-            "weight": 100
+            "weight": 80
         },
         {
             "name": "quality_equipment.quality.broad",
@@ -251,7 +251,7 @@
                 {
                     "attribute": "minecraft:generic.attack_damage",
                     "operation": "multiply_base",
-                    "value": 0.15,
+                    "value": 0.2,
                     "slot": "MAINHAND"
                 },
                 {

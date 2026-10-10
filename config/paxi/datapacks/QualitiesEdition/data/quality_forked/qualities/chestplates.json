@@ -80,7 +80,7 @@
         },
         {
             "name": "normal",
-            "weight": 100
+            "weight": 80
         },
         {
             "name": "quality_equipment.quality.thick",
@@ -118,7 +118,7 @@
             "attributes": [
                 {
                     "attribute": "minecraft:generic.armor",
-                    "value": 0.5,
+                    "value": 1,
                     "operation": "addition",
                     "slot": "CHEST"
                 }
@@ -142,7 +142,7 @@
             "attributes": [
                 {
                     "attribute": "minecraft:generic.knockback_resistance",
-                    "value": 0.5,
+                    "value": 1,
                     "operation": "addition",
                     "slot": "CHEST"
                 }
@@ -154,7 +154,7 @@
             "attributes": [
                 {
                     "attribute": "minecraft:generic.armor",
-                    "value": 0.5,
+                    "value": 1.5,
                     "operation": "addition",
                     "slot": "CHEST"
                 },

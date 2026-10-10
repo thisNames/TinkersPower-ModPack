@@ -17,7 +17,7 @@ ServerEvents.chestLootTables(event =>
             pool.addTag("acs:m1", true).weight(15).count([1, 4]);
             pool.addEmpty(85);
 
-            pool.rolls = 2;
+            pool.rolls = 3;
         });
     });
 });

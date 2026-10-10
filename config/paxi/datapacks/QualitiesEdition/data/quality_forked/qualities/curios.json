@@ -21,17 +21,17 @@
                 {
                     "attribute": "minecraft:generic.attack_damage",
                     "operation": "multiply_base",
-                    "value": -0.05
+                    "value": -0.1
                 },
                 {
                     "attribute": "quality_forked:projectile_damage",
                     "operation": "multiply_base",
-                    "value": -0.05
+                    "value": -0.1
                 },
                 {
                     "attribute": "quality_forked:magic_damage",
                     "operation": "multiply_base",
-                    "value": -0.05
+                    "value": -0.1
                 }
             ]
         },
@@ -69,7 +69,7 @@
         },
         {
             "name": "normal",
-            "weight": 100
+            "weight": 80
         },
         {
             "name": "quality_equipment.quality.lucky",
@@ -100,7 +100,7 @@
                 {
                     "attribute": "quality_forked:damage_resistance",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -133,7 +133,7 @@
                 {
                     "attribute": "quality_forked:dig_speed",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -144,7 +144,7 @@
                 {
                     "attribute": "minecraft:generic.attack_speed",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -166,7 +166,7 @@
                 {
                     "attribute": "quality_forked:magic_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -177,7 +177,7 @@
                 {
                     "attribute": "quality_forked:projectile_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -188,7 +188,7 @@
                 {
                     "attribute": "minecraft:generic.attack_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -199,12 +199,12 @@
                 {
                     "attribute": "minecraft:generic.attack_speed",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 },
                 {
                     "attribute": "quality_forked:dig_speed",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -231,17 +231,17 @@
                 {
                     "attribute": "minecraft:generic.attack_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 },
                 {
                     "attribute": "quality_forked:projectile_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 },
                 {
                     "attribute": "quality_forked:magic_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -257,7 +257,7 @@
                 {
                     "attribute": "quality_forked:magic_damage",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 }
             ]
         },
@@ -268,17 +268,17 @@
                 {
                     "attribute": "minecraft:generic.max_health",
                     "operation": "addition",
-                    "value": 2
+                    "value": 3
                 },
                 {
                     "attribute": "quality_forked:damage_resistance",
                     "operation": "multiply_base",
-                    "value": 0.03
+                    "value": 0.05
                 },
                 {
                     "attribute": "quality_forked:magic_resistance",
                     "operation": "addition",
-                    "value": 1
+                    "value": 2
                 }
             ]
         }

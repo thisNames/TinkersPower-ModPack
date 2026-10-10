@@ -13,8 +13,8 @@ ServerEvents.chestLootTables(event =>
 
         loot.addPool(pool =>
         {
-            pool.addItem("quark:diamond_heart").weight(25).count(1);
-            pool.addEmpty(75);
+            pool.addItem("quark:diamond_heart").weight(50).count(1);
+            pool.addEmpty(50);
         });
 
         loot.addPool(pool =>

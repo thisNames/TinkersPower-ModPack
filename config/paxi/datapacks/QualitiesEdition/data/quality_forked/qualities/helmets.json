@@ -62,7 +62,7 @@
         },
         {
             "name": "quality_equipment.quality.normal",
-            "weight": 100
+            "weight": 80
         },
         {
             "name": "quality_equipment.quality.thick",
@@ -101,7 +101,7 @@
                 {
                     "attribute": "minecraft:generic.armor",
                     "operation": "addition",
-                    "value": 0.5,
+                    "value": 1,
                     "slot": "HEAD"
                 }
             ]
@@ -137,7 +137,7 @@
                 {
                     "attribute": "minecraft:generic.armor",
                     "operation": "addition",
-                    "value": 0.5,
+                    "value": 1.5,
                     "slot": "HEAD"
                 },
                 {

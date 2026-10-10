@@ -24,7 +24,7 @@
         },
         {
             "name": "normal",
-            "weight": 60
+            "weight": 50
         },
         {
             "name": "quality_equipment.quality.thick",
@@ -62,7 +62,7 @@
             "attributes": [
                 {
                     "attribute": "minecraft:generic.knockback_resistance",
-                    "value": 0.5,
+                    "value": 1,
                     "operation": "addition",
                     "slot": "OFFHAND"
                 }
