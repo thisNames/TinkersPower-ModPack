@@ -2,7 +2,7 @@
 [Blocks]
 	#Total fermentation time in ticks
 	#Range: > 1
-	totalFermentationTime = 6000
+	totalFermentationTime = 1200
 	#Maximum fluid level in the Fermentation Barrel
 	#Range: 10 ~ 1000
 	maxFluidLevel = 100

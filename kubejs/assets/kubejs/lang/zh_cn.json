@@ -20,6 +20,9 @@
     "item.kubejs.tooltip.bountifulbaubles.rock_candy": "▸ 甜到起飞？",
     "item.kubejs.tooltip.bountifulbaubles.resplendent_token": "▸ 与饰品在重铸台上能够重铸饰品词条",
 
+    "item.kubejs.tooltip.roughtweaks.text": "治愈%s点生命值",
+    "item.kubejs.tooltip.roughtweaks.medkit_enchanted": "附魔医疗包",
+
     "loot.kubejs.tooltip.artifacts.crystal_heart": "科妮莉亚之心",
     "loot.kubejs.tooltip.artifacts.crystal_heart_vow": "即使冰封许久……这颗心依旧火热",
     "loot.kubejs.tooltip.artifacts.power_glove": "大地之力（+999-1000+5）",

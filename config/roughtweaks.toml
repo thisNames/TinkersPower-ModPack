@@ -32,31 +32,31 @@
 [HealAmount]
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
-	salveHealAmount = 2.0
+	salveHealAmount = 1.0
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
-	plasterHealAmount = 2.0
+	plasterHealAmount = 1.0
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
-	bandageHealAmount = 3.0
+	bandageHealAmount = 1.0
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
-	medkitHealAmount = 4.0
+	medkitHealAmount = 2.0
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
-	medkitEnchantedHealAmount = 6.0
+	medkitEnchantedHealAmount = 3.0
 
 #Defines how long it takes for a healing item to get used.
 [HealTime]
 	#Use time for the salve item
 	#Range: 0 ~ 72000
-	salveUseTime = 1
+	salveUseTime = 5
 	#Use count for the plaster item
 	#Range: 0 ~ 72000
-	plasterUseTime = 6
+	plasterUseTime = 10
 	#Use count for the bandage item
 	#Range: 0 ~ 72000
-	bandageUseTime = 12
+	bandageUseTime = 20
 	#Use count for the medkit item
 	#Range: 0 ~ 72000
 	medkitUseTime = 40

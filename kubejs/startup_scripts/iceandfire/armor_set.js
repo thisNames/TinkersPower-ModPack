@@ -7,8 +7,8 @@ ItemEvents.modification(event =>
         event.modify(id, c =>
         {
             c.maxDamage = damage;
-            c.armorProtection = protection;
-            c.armorToughness = toughness;
+            // c.armorProtection = protection;
+            // c.armorToughness = toughness;
         });
     };
 

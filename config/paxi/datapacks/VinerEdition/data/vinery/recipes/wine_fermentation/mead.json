@@ -1,23 +1,25 @@
 {
-  "type": "vinery:wine_fermentation",
-  "juice": {
-    "type": "apple",
-    "amount": 1
-  },
-  "ingredients": [
-    {
-      "item": "minecraft:honey_bottle"
+    "type": "vinery:wine_fermentation",
+    "juice": {
+        "type": "apple",
+        "amount": 25
     },
-    {
-      "item": "minecraft:sugar"
+    "ingredients": [
+        {
+            "item": "minecraft:honey_bottle"
+        },
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:honeycomb"
+        }
+    ],
+    "wine_bottle": {
+        "required": true
+    },
+    "result": {
+        "item": "vinery:mead",
+        "count": 1
     }
-  ],
-  "wine_bottle": {
-    "required": true
-  },
-  "result": {
-    "item": "vinery:mead",
-    "count": 1
-  }
 }
-

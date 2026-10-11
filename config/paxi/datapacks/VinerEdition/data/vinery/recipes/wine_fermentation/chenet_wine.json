@@ -2,7 +2,7 @@
     "type": "vinery:wine_fermentation",
     "juice": {
         "type": "red_jungle",
-        "amount": 12
+        "amount": 25
     },
     "ingredients": [
         {
@@ -10,6 +10,9 @@
         },
         {
             "item": "minecraft:honey_bottle"
+        },
+        {
+            "item": "minecraft:string"
         }
     ],
     "wine_bottle": {

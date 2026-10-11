@@ -1,26 +1,25 @@
 {
-  "type": "vinery:wine_fermentation",
-  "juice": {
-    "type": "white_general",
-    "amount": 25
-  },
-  "ingredients": [
-    {
-      "item": "vinery:apple_wine"
+    "type": "vinery:wine_fermentation",
+    "juice": {
+        "type": "white_general",
+        "amount": 25
     },
-    {
-      "item": "vinery:chenet_wine"
+    "ingredients": [
+        {
+            "item": "vinery:apple_wine"
+        },
+        {
+            "item": "vinery:chenet_wine"
+        },
+        {
+            "item": "vinery:bolvar_wine"
+        }
+    ],
+    "wine_bottle": {
+        "required": true
     },
-    {
-      "item": "vinery:bolvar_wine"
+    "result": {
+        "item": "vinery:jellie_wine",
+        "count": 3
     }
-  ],
-  "wine_bottle": {
-    "required": true
-  },
-  "result": {
-    "item": "vinery:jellie_wine",
-    "count": 1
-  }
 }
-

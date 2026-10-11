@@ -1,20 +1,25 @@
 {
-  "type": "vinery:wine_fermentation",
-  "juice": {
-    "type": "red_jungle",
-    "amount": 10
-  },
-  "ingredients": [
-    {
-      "item": "minecraft:iron_ingot"
+    "type": "vinery:wine_fermentation",
+    "juice": {
+        "type": "red_jungle",
+        "amount": 25
+    },
+    "ingredients": [
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        {
+            "item": "alexscaves:azure_neodymium_ingot"
+        },
+        {
+            "item": "alexscaves:scarlet_neodymium_ingot"
+        }
+    ],
+    "wine_bottle": {
+        "required": true
+    },
+    "result": {
+        "item": "vinery:magnetic_wine",
+        "count": 2
     }
-  ],
-  "wine_bottle": {
-    "required": false
-  },
-  "result": {
-    "item": "vinery:magnetic_wine",
-    "count": 1
-  }
 }
-

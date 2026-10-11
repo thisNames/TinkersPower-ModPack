@@ -1,22 +1,25 @@
 {
-  "type": "vinery:wine_fermentation",
-  "juice": {
-    "type": "red_general",
-    "amount": 8
-  },
-  "ingredients": [
-    {
-      "item": "minecraft:cocoa_beans"
+    "type": "vinery:wine_fermentation",
+    "juice": {
+        "type": "red_general",
+        "amount": 25
     },
-    {
-      "item": "minecraft:sugar"
+    "ingredients": [
+        {
+            "item": "minecraft:cocoa_beans"
+        },
+        {
+            "item": "minecraft:sugar"
+        },
+        {
+            "item": "minecraft:golden_carrot"
+        }
+    ],
+    "wine_bottle": {
+        "required": true
+    },
+    "result": {
+        "item": "vinery:strad_wine",
+        "count": 1
     }
-  ],
-  "wine_bottle": {
-    "required": true
-  },
-  "result": {
-    "item": "vinery:strad_wine",
-    "count": 1
-  }
 }
