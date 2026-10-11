@@ -4,7 +4,19 @@
         "tconstruct:plate_chestplate",
         "tconstruct:slime_chestplate",
 
-        "tinkers_things:laminar_chestplate"
+        "tinkers_things:laminar_chestplate",
+
+        "cataclysm:cursium_chestplate",
+        "cataclysm:ignitium_chestplate",
+        "cataclysm:ignitium_elytra_chestplate",
+
+        "alexscaves:hazmat_chestplate",
+        "alexscaves:cloak_of_darkness",
+        "alexscaves:gingerbread_chestplate",
+
+        "aquamirae:terrible_chestplate",
+        "aquamirae:abyssal_brigantine",
+        "aquamirae:three_bolt_suit"
     ],
     "item_tags": [],
     "class": [
@@ -80,7 +92,7 @@
         },
         {
             "name": "normal",
-            "weight": 80
+            "weight": 15
         },
         {
             "name": "quality_equipment.quality.thick",

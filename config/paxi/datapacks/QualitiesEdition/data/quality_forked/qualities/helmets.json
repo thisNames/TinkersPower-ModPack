@@ -4,7 +4,19 @@
         "tconstruct:plate_helmet",
         "tconstruct:slime_helmet",
 
-        "tinkers_things:laminar_helmet"
+        "tinkers_things:laminar_helmet",
+        
+        "cataclysm:cursium_helmet",
+        "cataclysm:ignitium_helmet",
+
+        "alexscaves:hazmat_mask",
+        "alexscaves:hood_of_darkness",
+        "alexscaves:gingerbread_helmet",
+
+        "aquamirae:terrible_helmet",
+        "aquamirae:abyssal_heaume",
+        "aquamirae:three_bolt_helmet",
+        "aquamirae:abyssal_tiara"
     ],
     "item_tags": [],
     "class": [
@@ -62,7 +74,7 @@
         },
         {
             "name": "quality_equipment.quality.normal",
-            "weight": 80
+            "weight": 15
         },
         {
             "name": "quality_equipment.quality.thick",

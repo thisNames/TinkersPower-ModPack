@@ -194,7 +194,7 @@ ServerEvents.tags("item", event =>
         event.add(thirst(1), item);
         event.add(hydration(1), item);
 
-        event.add(hot_food, item);
+        // event.add(hot_food, item);
     });
 
     // 2-2
@@ -211,7 +211,7 @@ ServerEvents.tags("item", event =>
         event.add(thirst(2), item);
         event.add(hydration(2), item);
 
-        event.add(hot_food, item);
+        // event.add(hot_food, item);
     });
 
     // 4-4
@@ -224,7 +224,7 @@ ServerEvents.tags("item", event =>
         event.add(thirst(4), item);
         event.add(hydration(4), item);
 
-        event.add(hot_food, item);
+        // event.add(hot_food, item);
     });
 
     // 1-1-75
@@ -237,6 +237,6 @@ ServerEvents.tags("item", event =>
         event.add(hydration(1), item);
         event.add(poison_chance(75), item);
 
-        event.add(hot_food, item);
+        // event.add(hot_food, item);
     });
 });

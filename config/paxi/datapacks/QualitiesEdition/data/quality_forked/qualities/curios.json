@@ -70,7 +70,7 @@
         },
         {
             "name": "normal",
-            "weight": 80
+            "weight": 15
         },
         {
             "name": "quality_equipment.quality.lucky",

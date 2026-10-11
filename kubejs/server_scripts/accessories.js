@@ -414,11 +414,6 @@ const CURIOS_OPTIONS = [
                 dis: true
             },
             {
-                id: "chorus_totem",
-                level: 3,
-                dis: true
-            },
-            {
                 id: "digging_claws",
                 level: 3,
                 dis: true
@@ -441,11 +436,6 @@ const CURIOS_OPTIONS = [
             {
                 id: "pocket_piston",
                 level: 3,
-                dis: true
-            },
-            {
-                id: "vampiric_glove",
-                level: 2,
                 dis: true
             },
             {

@@ -21,6 +21,16 @@ const artifacts_curios = {
             id: "obsidian_skull",
             remove: "slot/belt",
             add: ""
+        },
+        {
+            id: "vampiric_glove",
+            remove: "slot/hands",
+            add: ""
+        },
+        {
+            id: "chorus_totem",
+            remove: "slot/belt",
+            add: ""
         }
     ]
 };

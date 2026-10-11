@@ -4,7 +4,17 @@
         "tconstruct:plate_boots",
         "tconstruct:slime_boots",
 
-        "tinkers_things:laminar_boots"
+        "tinkers_things:laminar_boots",
+
+        "cataclysm:cursium_boots",
+        "cataclysm:ignitium_boots",
+
+        "alexscaves:hazmat_boots",
+        "alexscaves:gingerbread_boots",
+
+        "aquamirae:terrible_boots",
+        "aquamirae:abyssal_boots",
+        "aquamirae:three_bolt_boots"
     ],
     "item_tags": [],
     "class": [
@@ -62,7 +72,7 @@
         },
         {
             "name": "quality_equipment.quality.normal",
-            "weight": 80
+            "weight": 15
         },
         {
             "name": "quality_equipment.quality.thick",

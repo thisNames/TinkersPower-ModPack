@@ -6,4 +6,6 @@ ItemEvents.tooltip(event =>
     event.add("artifacts:onion_ring", text);
     event.add("artifacts:cross_necklace", text);
     event.add("artifacts:obsidian_skull", text);
+    event.add("artifacts:vampiric_glove", text);
+    event.add("artifacts:chorus_totem", text);
 });

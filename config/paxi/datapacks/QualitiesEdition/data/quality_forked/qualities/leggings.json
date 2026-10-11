@@ -4,7 +4,17 @@
         "tconstruct:plate_leggings",
         "tconstruct:slime_leggings",
 
-        "tinkers_things:laminar_leggings"
+        "tinkers_things:laminar_leggings",
+
+        "cataclysm:cursium_leggings",
+        "cataclysm:ignitium_leggings",
+
+        "alexscaves:hazmat_leggings",
+        "alexscaves:gingerbread_leggings",
+
+        "aquamirae:terrible_leggings",
+        "aquamirae:abyssal_leggings",
+        "aquamirae:three_bolt_leggings"
     ],
     "item_tags": [],
     "class": [
@@ -62,7 +72,7 @@
         },
         {
             "name": "normal",
-            "weight": 80
+            "weight": 15
         },
         {
             "name": "quality_equipment.quality.thick",
