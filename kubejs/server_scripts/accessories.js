@@ -6,6 +6,26 @@ const CURIOS_DIS_TAG = "acs:dis";
  */
 const CURIOS_OPTIONS = [
     {
+        namespace: "tp_dragon_heart",
+        curios: [
+            {
+                id: "dragons_heart_fire",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "dragons_heart_ice",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "dragons_heart_lightning",
+                level: 1,
+                dis: false
+            },
+        ]
+    },
+    {
         namespace: "trinketsandbaubles",
         curios: [
             {
