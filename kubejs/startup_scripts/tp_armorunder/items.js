@@ -3,39 +3,91 @@ StartupEvents.registry("item", event =>
     const _this = id => "tp_armorunder:" + id;
 
     // 奥兹内衬
-    event.create(_this("auto_helmet_liner"), "basic");
-    event.create(_this("auto_chestplate_liner"), "basic");
-    event.create(_this("auto_leggings_liner"), "basic");
-    event.create(_this("auto_boots_liner"), "basic");
+    event.create(_this("auto_helmet_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("auto_chestplate_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("auto_leggings_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("auto_boots_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
 
     // 保温内衬
-    event.create(_this("beekeeper_helmet_liner"), "basic");
-    event.create(_this("beekeeper_chestplate_liner"), "basic");
-    event.create(_this("beekeeper_leggings_liner"), "basic");
-    event.create(_this("beekeeper_boots_liner"), "basic");
+    event.create(_this("beekeeper_helmet_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("beekeeper_chestplate_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("beekeeper_leggings_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("beekeeper_boots_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
 
     // 降温内衬
-    event.create(_this("cool_helmet_liner"), "basic");
-    event.create(_this("cool_chestplate_liner"), "basic");
-    event.create(_this("cool_leggings_liner"), "basic");
-    event.create(_this("cool_boots_liner"), "basic");
+    event.create(_this("cool_helmet_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("cool_chestplate_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("cool_leggings_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
+
+    event.create(_this("cool_boots_liner"), "basic")
+        .maxStackSize(1)
+        .rarity("common");
 
     // 加热凝胶
-    event.create(_this("heating_goo"), "basic");
+    event.create(_this("heating_goo"), "basic")
+        .maxStackSize(64)
+        .rarity("common");
+
     // 加热丝线
-    event.create(_this("warm_liner_material"), "basic");
+    event.create(_this("warm_liner_material"), "basic")
+        .maxStackSize(64)
+        .rarity("common");
+
 
     // 降温凝胶
-    event.create(_this("cooling_goo"), "basic");
+    event.create(_this("cooling_goo"), "basic")
+        .maxStackSize(64)
+        .rarity("common");
+
     // 降温丝线
-    event.create(_this("cool_liner_material"), "basic");
+    event.create(_this("cool_liner_material"), "basic")
+        .maxStackSize(64)
+        .rarity("common");
 
     // 奥兹丝线
-    event.create(_this("flipflop_liner_material"), "basic");
+    event.create(_this("flipflop_liner_material"), "basic")
+        .maxStackSize(64)
+        .rarity("rare");
+
     // 寒冰粉
-    event.create(_this("freeze_powder"), "basic");
+    event.create(_this("freeze_powder"), "basic")
+        .maxStackSize(64)
+        .rarity("rare");
+        
     // 内衬剪
-    event.create(_this("liner_snips"), "basic");
+    event.create(_this("liner_snips"), "basic")
+    .maxStackSize(1)
+    .rarity("common");
 });
 
 StartupEvents.registry("creative_mode_tab", event =>

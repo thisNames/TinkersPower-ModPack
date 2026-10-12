@@ -86,21 +86,22 @@ ServerEvents.recipes(event =>
         [_this("glowing_ingot"), _minecraft("wither_skeleton_skull"), _this("glowing_ingot")]
     ]);
 
+    // "{DragonAge:75,Stage:5}"
     event.shaped(_this("dragons_eye_ice"), [
         [_this("glow_ring"), _cataclysm("abyss_eye"), _this("glowing_gem")],
-        [_iceandfire("ice_dragon_blood"), Item.of(_iceandfire("dragon_skull_ice"), "{DragonAge:75,Stage:5}").weakNBT(), _iceandfire("ice_dragon_blood")],
+        [_iceandfire("ice_dragon_blood"), Item.of(_iceandfire("dragon_skull_ice"), "{Stage:5}").weakNBT(), _iceandfire("ice_dragon_blood")],
         [_this("glowing_gem"), _iceandfire("ice_dragon_blood"), _this("glowing_gem")]
     ]);
 
     event.shaped(_this("dragons_eye_fire"), [
         [_this("glow_ring"), _cataclysm("flame_eye"), _this("glowing_gem")],
-        [_iceandfire("fire_dragon_blood"), Item.of(_iceandfire("dragon_skull_fire"), "{DragonAge:75,Stage:5}").weakNBT(), _iceandfire("fire_dragon_blood")],
+        [_iceandfire("fire_dragon_blood"), Item.of(_iceandfire("dragon_skull_fire"), "{Stage:5}").weakNBT(), _iceandfire("fire_dragon_blood")],
         [_this("glowing_gem"), _iceandfire("fire_dragon_blood"), _this("glowing_gem")]
     ]);
 
     event.shaped(_this("dragons_eye_lightning"), [
         [_this("glow_ring"), _cataclysm("storm_eye"), _this("glowing_gem")],
-        [_iceandfire("lightning_dragon_blood"), Item.of(_iceandfire("dragon_skull_lightning"), "{DragonAge:75,Stage:5}").weakNBT(), _iceandfire("lightning_dragon_blood")],
+        [_iceandfire("lightning_dragon_blood"), Item.of(_iceandfire("dragon_skull_lightning"), "{Stage:5}").weakNBT(), _iceandfire("lightning_dragon_blood")],
         [_this("glowing_gem"), _iceandfire("lightning_dragon_blood"), _this("glowing_gem")]
     ]);
 

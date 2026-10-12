@@ -3,7 +3,9 @@ StartupEvents.registry("item", event =>
     const _this = id => "tp_toughasnails:" + id;
 
     // 活性炭过滤器
-    event.create(_this("charcoal_filter"), "basic");
+    event.create(_this("charcoal_filter"), "basic")
+    .maxStackSize(64)
+    .rarity("common");
 });
 
 StartupEvents.registry("creative_mode_tab", event =>

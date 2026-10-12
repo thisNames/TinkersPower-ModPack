@@ -556,5 +556,5 @@ ServerEvents.recipes(event =>
         ]
     });
 
-    event.shapeless("bountifulbaubles:spectral_silt", ["#" + CURIOS_DIS_TAG, "bountifulbaubles:disintegration_tablet"])
+    event.shapeless("bountifulbaubles:spectral_silt", ["#" + CURIOS_DIS_TAG, "bountifulbaubles:disintegration_tablet"]);
 });
