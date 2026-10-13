@@ -63,3 +63,6 @@ TinkersPower.jar
 
 # bak
 *.bak
+
+# codebuddy
+/.codebuddy
