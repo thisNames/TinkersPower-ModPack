@@ -1,0 +1,56 @@
+{
+    "display": {
+        "icon": {
+            "item": "tp_dragon_heart:dragons_heart_lightning"
+        },
+        "title": {
+            "translate": "advancements.tp_dragon_heart.dragon_heart_trio.title"
+        },
+        "description": {
+            "translate": "advancements.tp_dragon_heart.dragon_heart_trio.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "tp_dragon_heart:dragon_heart_revived",
+    "criteria": {
+        "has_fire": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "tp_dragon_heart:dragons_heart_fire"
+                        ]
+                    }
+                ]
+            }
+        },
+        "has_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "tp_dragon_heart:dragons_heart_ice"
+                        ]
+                    }
+                ]
+            }
+        },
+        "has_lightning": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "tp_dragon_heart:dragons_heart_lightning"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

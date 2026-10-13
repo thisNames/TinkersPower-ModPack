@@ -19,5 +19,11 @@
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text2": "Powerful currents pierce through groups",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text3": "Attacks all entities except the attacker",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text4": "Grants effect level 2 when also wearing the Lightning Dragon's Eye",
-    "tooltip.tp_dragon_heart.dragons_heart_lightning.text5": "Grants effect level 3 when also wearing Dragonsteel Lightning or Dreadsteel armor"
+    "tooltip.tp_dragon_heart.dragons_heart_lightning.text5": "Grants effect level 3 when also wearing Dragonsteel Lightning or Dreadsteel armor",
+
+    "advancements.tp_dragon_heart.dragon_heart_revived.title": "A Heart Rekindled",
+    "advancements.tp_dragon_heart.dragon_heart_revived.description": "Obtain any of the three Dragon's Hearts and make it beat again",
+
+    "advancements.tp_dragon_heart.dragon_heart_trio.title": "Three Hearts as One",
+    "advancements.tp_dragon_heart.dragon_heart_trio.description": "Collect the Fire, Ice and Lightning Dragon's Hearts"
 }
