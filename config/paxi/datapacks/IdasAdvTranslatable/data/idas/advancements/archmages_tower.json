@@ -5,10 +5,10 @@
             "item": "minecraft:amethyst_block"
         },
         "title": {
-            "translate": "Archmage's Tower"
+            "translate": "advancements.idas.archmages_tower.title"
         },
         "description": {
-            "translate": "Can you conquer this treacherous magical tower?"
+            "translate": "advancements.idas.archmages_tower.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

@@ -5,10 +5,10 @@
             "item": "minecraft:heart_of_the_sea"
         },
         "title": {
-            "translate": "Ruins of the Deep"
+            "translate": "advancements.idas.ruins_of_the_deep.title"
         },
         "description": {
-            "translate": "Do you dare to travel to the depths?"
+            "translate": "advancements.idas.ruins_of_the_deep.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

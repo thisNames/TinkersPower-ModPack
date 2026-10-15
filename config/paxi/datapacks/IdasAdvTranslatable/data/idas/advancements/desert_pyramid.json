@@ -5,10 +5,10 @@
             "item": "minecraft:skeleton_skull"
         },
         "title": {
-            "translate": "The Desert Pyramid"
+            "translate": "advancements.idas.desert_pyramid.title"
         },
         "description": {
-            "translate": "Brush around the pyramid, there may be something to uncover..."
+            "translate": "advancements.idas.desert_pyramid.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

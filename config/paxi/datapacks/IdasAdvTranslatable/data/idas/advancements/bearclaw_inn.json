@@ -5,10 +5,10 @@
             "item": "minecraft:honey_bottle"
         },
         "title": {
-            "translate": "The Bearclaw Inn"
+            "translate": "advancements.idas.bearclaw_inn.title"
         },
         "description": {
-            "translate": "An Inn for a Weary Traveler"
+            "translate": "advancements.idas.bearclaw_inn.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

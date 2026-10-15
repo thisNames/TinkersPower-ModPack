@@ -5,10 +5,10 @@
             "item": "minecraft:spyglass"
         },
         "title": {
-            "translate": "A Sunken Ship"
+            "translate": "advancements.idas.sunken_ship.title"
         },
         "description": {
-            "translate": "A Captain Always Goes Down With Their Ship..."
+            "translate": "advancements.idas.sunken_ship.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

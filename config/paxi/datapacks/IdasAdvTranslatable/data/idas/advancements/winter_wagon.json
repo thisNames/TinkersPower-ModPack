@@ -5,10 +5,10 @@
             "item": "supplementaries:present_red"
         },
         "title": {
-            "translate": "Winter Wagon"
+            "translate": "advancements.idas.winter_wagon.title"
         },
         "description": {
-            "translate": "A Festive Travelling Wagon"
+            "translate": "advancements.idas.winter_wagon.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

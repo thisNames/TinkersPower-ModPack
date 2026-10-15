@@ -5,10 +5,10 @@
             "item": "create:wrench"
         },
         "title": {
-            "translate": "Tinker's Citadel"
+            "translate": "advancements.idas.tinkers_citadel.title"
         },
         "description": {
-            "translate": "A safe haven for Tinker's of all cogs and casings"
+            "translate": "advancements.idas.tinkers_citadel.description"
         },
         "show_toast": true,
         "announce_to_chat": true,

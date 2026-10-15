@@ -5,10 +5,10 @@
             "item": "minecraft:flint_and_steel"
         },
         "title": {
-            "translate": "The Nexus"
+            "translate": "advancements.idas.nexus.title"
         },
         "description": {
-            "translate": "The Gateway to Multiple Realities"
+            "translate": "advancements.idas.nexus.description"
         },
         "show_toast": true,
         "announce_to_chat": true,
