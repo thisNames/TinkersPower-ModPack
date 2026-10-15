@@ -12,6 +12,9 @@ ItemEvents.modification(event =>
         });
     };
 
+    // 木镐
+    incArrmor(_this("wooden_pickaxe"), 3, 0, 0);
+
     // 皮革
     incArrmor(_this("leather_helmet"), 45, 1, 0);
     incArrmor(_this("leather_chestplate"), 65, 2, 0);

@@ -1,0 +1,4 @@
+MoreJSEvents.registerPotionBrewing(event =>
+{
+
+});

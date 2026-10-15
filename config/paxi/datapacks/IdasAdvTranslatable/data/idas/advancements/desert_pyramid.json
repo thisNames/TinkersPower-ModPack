@@ -1,0 +1,44 @@
+{
+    "parent": "idas:idas_root",
+    "display": {
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "title": {
+            "translate": "The Desert Pyramid"
+        },
+        "description": {
+            "translate": "Brush around the pyramid, there may be something to uncover..."
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "frame": "challenge",
+        "hidden": false
+    },
+    "rewards": {
+        "experience": 75
+    },
+    "criteria": {
+        "in_desert_pyramid": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "idas:desert_pyramid"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "in_desert_pyramid"
+        ]
+    ]
+}

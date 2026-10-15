@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_pickaxe"
+        },
+        "title": {
+            "translate": "advancements.kubejs.true_wooden_pickaxe.title"
+        },
+        "description": {
+            "translate": "advancements.kubejs.true_wooden_pickaxe.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "has_wooden_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:wooden_pickaxe"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,9 +1,14 @@
 {
+    "advancements.kubejs.true_wooden_pickaxe.title": "一把真正的木镐！",
+    "advancements.kubejs.true_wooden_pickaxe.description": "只有 3 点耐久的木镐",
+
     "item.kubejs.tooltip.itemprohibiteditems.items": "此物品无法使用！",
     "item.kubejs.tooltip.itemprohibiteditems.wearables": "此装备无法穿戴！",
     "item.kubejs.tooltip.curios.accessories": "此饰品已被禁用！",
     "item.kubejs.tooltip.tconstruct.jei_hiddens": "匠魂制造",
 
+    "item.kubejs.tooltip.minecraft.wooden_pickaxe": "你没看错，这把木镐只有 3 点耐久！",
+    
     "item.kubejs.tooltip.material.rating1": "一级合成材料",
 
     "item.kubejs.tooltip.alexscaves.green_soylent": "辐射热也算？",
