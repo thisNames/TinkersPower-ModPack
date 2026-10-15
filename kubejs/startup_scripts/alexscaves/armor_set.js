@@ -33,4 +33,7 @@ ItemEvents.modification(event =>
     incArrmor(_this("diving_chestplate"), 128, 6, 0);
     incArrmor(_this("diving_leggings"), 118, 5, 0);
     incArrmor(_this("diving_boots"), 110, 2, 0);
+
+    // 原始
+    incArrmor(_this("primordial_pants"), 87, 0, 0);
 });

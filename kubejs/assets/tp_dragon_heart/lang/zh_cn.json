@@ -25,5 +25,21 @@
     "advancements.tp_dragon_heart.dragon_heart_revived.description": "获得任意一颗龙之心，让沉寂的心脏重新跳动",
 
     "advancements.tp_dragon_heart.dragon_heart_trio.title": "三心齐聚",
-    "advancements.tp_dragon_heart.dragon_heart_trio.description": "集齐火、冰、电三颗龙之心"
+    "advancements.tp_dragon_heart.dragon_heart_trio.description": "集齐火、冰、电三颗龙之心",
+
+    "item.minecraft.tipped_arrow.effect.fire_attack": "火龙祝福之箭",
+    "item.minecraft.tipped_arrow.effect.ice_attack": "冰龙恩惠之箭",
+    "item.minecraft.tipped_arrow.effect.lightning_attack": "电龙庇护之箭",
+
+    "item.minecraft.potion.effect.fire_attack": "火龙祝福药水",
+    "item.minecraft.potion.effect.ice_attack": "冰龙恩惠药水",
+    "item.minecraft.potion.effect.lightning_attack": "电龙庇护药水",
+
+    "item.minecraft.splash_potion.effect.fire_attack": "喷溅型火龙祝福药水",
+    "item.minecraft.splash_potion.effect.ice_attack": "喷溅型冰龙恩惠药水",
+    "item.minecraft.splash_potion.effect.lightning_attack": "喷溅型电龙庇护药水",
+
+    "item.minecraft.lingering_potion.effect.fire_attack": "滞留型火龙祝福药水",
+    "item.minecraft.lingering_potion.effect.ice_attack": "滞留型冰龙恩惠药水",
+    "item.minecraft.lingering_potion.effect.lightning_attack": "滞留型电龙庇护药水"
 }

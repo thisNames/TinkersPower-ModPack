@@ -25,5 +25,21 @@
     "advancements.tp_dragon_heart.dragon_heart_revived.description": "Obtain any of the three Dragon's Hearts and make it beat again",
 
     "advancements.tp_dragon_heart.dragon_heart_trio.title": "Three Hearts as One",
-    "advancements.tp_dragon_heart.dragon_heart_trio.description": "Collect the Fire, Ice and Lightning Dragon's Hearts"
+    "advancements.tp_dragon_heart.dragon_heart_trio.description": "Collect the Fire, Ice and Lightning Dragon's Hearts",
+
+    "item.minecraft.tipped_arrow.effect.fire_attack": "Arrow of Fire Dragon Blessing",
+    "item.minecraft.tipped_arrow.effect.ice_attack": "Arrow of Ice Dragon Blessing",
+    "item.minecraft.tipped_arrow.effect.lightning_attack": "Arrow of Lightning Dragon Protection",
+
+    "item.minecraft.potion.effect.fire_attack": "Potion of Fire Dragon Blessing",
+    "item.minecraft.potion.effect.ice_attack": "Potion of Ice Dragon Blessing",
+    "item.minecraft.potion.effect.lightning_attack": "Potion of Lightning Dragon Protection",
+
+    "item.minecraft.splash_potion.effect.fire_attack": "Splash Potion of Fire Dragon Blessing",
+    "item.minecraft.splash_potion.effect.ice_attack": "Splash Potion of Ice Dragon Blessing",
+    "item.minecraft.splash_potion.effect.lightning_attack": "Splash Potion of Lightning Dragon Protection",
+
+    "item.minecraft.lingering_potion.effect.fire_attack": "Lingering Potion of Fire Dragon Blessing",
+    "item.minecraft.lingering_potion.effect.ice_attack": "Lingering Potion of Ice Dragon Blessing",
+    "item.minecraft.lingering_potion.effect.lightning_attack": "Lingering Potion of Lightning Dragon Protection"
 }
