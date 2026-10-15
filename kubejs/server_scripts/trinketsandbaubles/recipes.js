@@ -10,6 +10,7 @@ ServerEvents.recipes(event =>
     const _alexscaves = id => "alexscaves:" + id;
     const _potionrings2 = id => "potionrings2:" + id;
     const _bfbosses = id => "block_factorys_bosses:" + id;
+    const _tingenuity = id => "tinkers_ingenuity:" + id;
 
     event.remove({
         output: [
@@ -40,7 +41,9 @@ ServerEvents.recipes(event =>
             _this("goblins_ring"),
             _this("elves_ring"),
             _this("faelis_ring"),
-            _this("dragons_ring")
+            _this("dragons_ring"),
+            // magic
+            _this("arcing_orb")
         ]
     });
 
@@ -191,6 +194,13 @@ ServerEvents.recipes(event =>
         [_bfbosses("dragon_bone"), _bfbosses("dragon_bone"), _iceandfire("fire_dragon_heart")]
     ]);
 
+    // magic
+    event.shaped(_this("arcing_orb"), [
+        [_minecraft("nether_star"), _this("mana_crystal"), _minecraft("nether_star")],
+        [_this("mana_crystal"), _this("moon_rose"), _this("mana_crystal")],
+        [_minecraft("nether_star"), _this("mana_crystal"), _tingenuity("coloured_glaze_star")]
+    ]);
+
     // material
-    event.replaceInput({ output: _this("glowing_ingot") }, _minecraft("iron_ingot"), _iceandfire("silver_ingot"))
+    event.replaceInput({ output: _this("glowing_ingot") }, _minecraft("iron_ingot"), _iceandfire("silver_ingot"));
 });

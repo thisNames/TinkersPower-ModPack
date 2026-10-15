@@ -1,5 +1,8 @@
 {
     "item_group.tp_accessories.items": "More accessories",
     
-    "item.tp_accessories.magic_ring": "Magic Ring"
+    "item.tp_accessories.magic_ring": "Magic Ring",
+
+    "item.tp_accessories.magic_ring_text1": "Grants the Magic Focus effect",
+    "item.tp_accessories.magic_ring_text2": "Grants +1 level when also wearing Golden Armor"
 }

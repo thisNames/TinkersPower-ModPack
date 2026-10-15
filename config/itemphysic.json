@@ -292,7 +292,8 @@
         "{id:\"item\",item:\"trinketsandbaubles:teddy_bear\"}",
         "{id:\"item\",item:\"trinketsandbaubles:titan_ring\"}",
         "{id:\"item\",item:\"trinketsandbaubles:weightless_stone\"}",
-        "{id:\"item\",item:\"trinketsandbaubles:wither_ring\"}"
+        "{id:\"item\",item:\"trinketsandbaubles:wither_ring\"}",
+        "{id:\"item\",item:\"tp_accessories:magic_ring\"}"
       ],
       "isWhitelist": true
     }

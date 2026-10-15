@@ -2,9 +2,20 @@ const CURIOS_LEVEL_TAG = "acs:l";
 const CURIOS_DIS_TAG = "acs:dis";
 /**
  * 饰品配置
+ * 饰品无法被效果配置：config/itemphysic.json => undestroyableItems
  * @type {Array<{namespace: string, curios: Array<{id: string, level: number, dis: boolean}>}>}
  */
 const CURIOS_OPTIONS = [
+    {
+        namespace: "tp_accessories",
+        curios: [
+            {
+                id: "magic_ring",
+                level: 2,
+                dis: false
+            },
+        ]
+    },
     {
         namespace: "tp_dragon_heart",
         curios: [
@@ -415,7 +426,7 @@ const CURIOS_OPTIONS = [
             },
             {
                 id: "antidote_vessel",
-                level: 3,
+                level: 2,
                 dis: true
             },
             {

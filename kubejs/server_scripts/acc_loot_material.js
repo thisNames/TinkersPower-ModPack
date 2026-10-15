@@ -1,6 +1,7 @@
 const MATERIAL_TAG = "acs:m";
 /**
  * 饰品材料
+  * 材料无法被效果配置：config/itemphysic.json => undestroyableItems
  * @type {Array<{namespace: string, material: Array<{id: string, level: number}>}>}
  */
 const MATERIAL_OPTIONS = [
