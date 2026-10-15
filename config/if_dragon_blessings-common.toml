@@ -18,10 +18,10 @@
 	lightningAttackMaxLevel = 3
 	#中心目标（被击中的实体）受到的闪电伤害。
 	#Range: 0.0 ~ 100.0
-	centerDamage = 5.0
+	centerDamage = 6.0
 	#第一个被链目标受到的基础闪电伤害，后续目标按 chainDamageDecay 逐级递减。
 	#Range: 0.0 ~ 100.0
-	chainDamageBase = 4.0
+	chainDamageBase = 5.0
 	#每个后续被链目标的伤害递减比例（0~1）。例如 0.125 表示每级递减 12.5%，基础伤害越大递减越明显。
 	#Range: 0.0 ~ 1.0
 	chainDamageDecay = 0.125
