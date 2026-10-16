@@ -75,7 +75,7 @@ function holdsItems(entity, handIds)
  * 2. 当前等级与目标等级不一致 → 先移除旧效果再按新等级添加
  * 3. 等级一致但剩余时间不足 refreshBelow 时 → 刷新续时长。
  * @param {Internal.LivingEntity} entity 目标实体
- * @param {string} effectId 状态效果 ID
+ * @param {Internal.MobEffect_} effectId 状态效果 ID
  * @param {number} level 目标等级（amplifier，0 = 一级效果）
  * @param {number} duration 效果时长（tick，20 tick = 1 秒）
  * @param {number} [refreshBelow=100] 剩余时间低于该值（tick）时刷新，默认 100 tick（5 秒）
