@@ -14,7 +14,8 @@ ServerEvents.entityLootTables(event =>
                             })
                         ]
                     }
-                })
+                }),
+                tool_quality: 31
             });
     
             pool.killedByPlayer();

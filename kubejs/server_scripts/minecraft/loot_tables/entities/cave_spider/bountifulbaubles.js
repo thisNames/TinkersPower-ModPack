@@ -13,7 +13,8 @@ ServerEvents.entityLootTables(event =>
                                 text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.bezoar_vow").getString()
                             })
                         ]
-                    }
+                    },
+                    tool_quality: 31
                 })
             });
 

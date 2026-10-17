@@ -14,7 +14,8 @@ ServerEvents.entityLootTables(event =>
                                 text: Text.translatable("loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow").getString()
                             })
                         ]
-                    }
+                    },
+                    tool_quality: 31
                 })
             });
 

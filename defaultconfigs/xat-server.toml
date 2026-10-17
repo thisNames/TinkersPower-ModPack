@@ -1,1748 +1,1748 @@
-#Miscellaneous settings
+#杂项设置
 [misc]
-	#Does Depth Strider Stack with Swim Speed Attributes?
+	#深海漫步(Depth Strider)是否与游泳速度属性叠加？
 	depthStriderStacks = false
-	#Other swim speed enchantments that do not stack with Swim Speed Attributes (enchantment ids)
+	#不与游泳速度属性叠加的其他游泳速度附魔(附魔 ID)
 	nonStackingSwimEnchantments = []
-	#If enabled, the player will be unable to move when transforming from one race to another
+	#若启用，玩家在种族转换时将无法移动
 	preventMovementWhileTransforming = false
-	#Vanilla MC doesn't handle interaction with increased reach properly, this fixes it
+	#原版 MC 无法正确处理增加触及距离后的交互，此项可修复该问题
 	reachInteractionFix = true
-	#Hidden feature, add anything into this list to disable it.
+	#隐藏功能，向此列表添加任意内容即可禁用它。
 	disabledBlessings = []
 
-#Food settings
+#食物设置
 [food]
-	#Register this mod's foods. Requires a game restart to take effect.
+	#注册本模组的食物。需要重启游戏才能生效。
 	enabled = true
-	#Do race foods apply their transformation effect?
+	#种族食物是否施加其变身效果？
 	transformationEffects = true
-	#Are transformation effects kept on death?
+	#变身效果在死亡后是否保留？
 	keepEffectsOnDeath = true
 
-#Per-race settings
+#各物种设置
 [races]
-	#Prompts the player to choose a Race when joining a world for the first time.
+	#玩家首次进入世界时提示选择种族。
 	selectionMenu = false
-	#These are races which are blacklisted from the Race Selection Menu if Enabled
+	#启用后，这些种族将被排除在种族选择菜单之外
 	selectionBlacklist = ["Dragon", "Taurus"]
 
-	#human settings
+	#人类设置
 	[races.human]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 100
 
 		[races.human.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 100
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 100
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.human.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
-	#fairy settings
+	#妖精设置
 	[races.fairy]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:-0.6, Operation:2", "Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:2", "Name:minecraft:generic.attack_damage, Amount:-0.75, Operation:2", "Name:minecraft:generic.armor, Amount:-0.5, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2", "Name:generic.reachDistance, Amount:-0.35, Operation:2", "Name:forge:swim_speed, Amount:-0.25, Operation:2", "Name:xat:jump, Amount:-0.25, Operation:2", "Name:forge:step_height_addition, Amount:-0.35, Operation:0", "Name:xat:fly_speed, Amount:-0.4, Operation:2"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 500
 
 		[races.fairy.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 25
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 25
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.fairy.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.fairy.abilities]
 
 			[races.fairy.abilities.flight]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Mana spent every second while flying; 0 makes flight free
-				#Range: 0.0 ~ 10000.0
+				#飞行时每秒消耗的法力；0 表示飞行免费
+				#范围：0.0 ~ 10000.0
 				cost = 0.0
 
 			[races.fairy.abilities.elytra_flight]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Pressing jump while gliding gives an upward boost
+				#滑翔时按跳跃键可获得向上推力
 				liftEnabled = true
-				#Crashing into a wall while gliding deals damage, like vanilla elytra
+				#滑翔时撞墙会像原版鞘翅一样造成伤害
 				collisionDamage = true
-				#Mana spent every second while gliding; 0 makes gliding free
-				#Range: 0.0 ~ 10000.0
+				#滑翔时每秒消耗的法力；0 表示滑翔免费
+				#范围：0.0 ~ 10000.0
 				cost = 0.0
-				#Mana spent per lift boost
-				#Range: 0.0 ~ 10000.0
+				#每次上推消耗的法力
+				#范围：0.0 ~ 10000.0
 				liftCost = 0.0
-				#Upward velocity added per lift boost
-				#Range: 0.0 ~ 10.0
+				#每次上推增加的向上速度
+				#范围：0.0 ~ 10.0
 				liftStrength = 0.42
 
 			[races.fairy.abilities.climbing]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#true: only the listed blocks are climbable; false: every block except the listed ones
+				#true：仅列出的方块可攀爬；false：除列出的方块外所有方块都可攀爬
 				useWhitelist = true
-				#Block ids, *-wildcards or #tags
+				#方块 ID、*-通配符或 #标签
 				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
 
 			[races.fairy.abilities.mending_bloom]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Effects applied inside the field. Format: modid:effect:duration:amplifier
+				#领域内施加的效果。格式：modid:effect:duration:amplifier
 				effects = ["minecraft:instant_health:60:0"]
-				#Field radius
-				#Range: 0.5 ~ 32.0
+				#领域半径
+				#范围：0.5 ~ 32.0
 				radius = 3.0
-				#Field vertical radius
-				#Range: 0.5 ~ 32.0
+				#领域纵向半径
+				#范围：0.5 ~ 32.0
 				verticalRadius = 2.0
-				#Field duration in ticks
-				#Range: 1 ~ 72000
+				#领域持续时间(刻)
+				#范围：1 ~ 72000
 				duration = 120
-				#Ticks before the field becomes active
-				#Range: 0 ~ 1200
+				#领域生效前的刻数
+				#范围：0 ~ 1200
 				waitTime = 10
-				#Ticks between field pulses
-				#Range: 1 ~ 1200
+				#领域脉冲间隔(刻)
+				#范围：1 ~ 1200
 				pulseInterval = 20
-				#Ticks before the same target can be affected again
-				#Range: 1 ~ 1200
+				#同一目标再次受影响前的刻数
+				#范围：1 ~ 1200
 				reapplicationDelay = 20
-				#Durability restored to dropped items per pulse; 0 disables
-				#Range: 0 ~ 10000
+				#每次脉冲为掉落物修复的耐久；0 禁用
+				#范围：0 ~ 10000
 				itemRepairAmount = 1
-				#Plants grown per pulse; 0 disables
-				#Range: 0 ~ 256
+				#每次脉冲种植的作物数量；0 禁用
+				#范围：0 ~ 256
 				growthAttemptsPerPulse = 4
-				#Maximum casting distance
-				#Range: 1.0 ~ 64.0
+				#最大施法距离
+				#范围：1.0 ~ 64.0
 				castRange = 15.0
-				#Mana cost per second of field duration
-				#Range: 0.0 ~ 10000.0
+				#领域持续每秒消耗的法力
+				#范围：0.0 ~ 10000.0
 				costPerSecond = 20.0
-				#Extra mana cost per configured effect
-				#Range: 0.0 ~ 10000.0
+				#每个配置效果额外消耗的法力
+				#范围：0.0 ~ 10000.0
 				costPerPotionEffect = 5.0
-				#Extra mana cost per effect amplifier level
-				#Range: 0.0 ~ 10000.0
+				#每个效果等级额外消耗的法力
+				#范围：0.0 ~ 10000.0
 				costPerEffectLevel = 5.0
 
-	#dwarf settings
+	#矮人设置
 	[races.dwarf]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:-0.3, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:0.2, Operation:1", "Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_speed, Amount:-0.25, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:0.25, Operation:2"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 100
 
 		[races.dwarf.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 75
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 75
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.dwarf.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.dwarf.abilities]
 
 			[races.dwarf.abilities.skilled_miner]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Ores drop as if mined with Fortune
+				#矿石掉落如同被时运附魔开采
 				fortune = true
-				#Natural fortune stacks with the tool's own Fortune enchantment
+				#自然时运与工具自身的时运附魔叠加
 				fortuneMix = true
-				#Pickaxes can harvest blocks one tier above their normal tier
+				#镐子可开采比其正常等级高一级的方块
 				skilledMiner = true
-				#Mining speed with a suitable pickaxe scales with block hardness, capped for safety
+				#使用合适镐子时，挖掘速度随方块硬度提升(上限以保证安全)
 				staticMining = true
-				#Blocks affected by natural fortune
+				#受自然时运影响的方块
 				fortuneBlocks = ["#minecraft:coal_ores", "#minecraft:lapis_ores", "#minecraft:diamond_ores", "#minecraft:redstone_ores", "#minecraft:emerald_ores", "minecraft:nether_quartz_ore"]
 
 				[races.dwarf.abilities.skilled_miner.experience]
-					#Listed blocks drop extra experience
+					#列出的方块掉落额外经验
 					bonusExp = true
-					#Upper bound (exclusive) of the random extra experience
-					#Range: 0 ~ 1000
+					#随机额外经验的上限(不包含)
+					#范围：0 ~ 1000
 					bonusExpMax = 2
-					#Lower bound of the random extra experience
-					#Range: 0 ~ 1000
+					#随机额外经验的下限
+					#范围：0 ~ 1000
 					bonusExpMin = 0
 					bonusExpBlocks = ["#minecraft:coal_ores", "#minecraft:iron_ores", "#minecraft:gold_ores", "#minecraft:lapis_ores", "#minecraft:redstone_ores", "#minecraft:diamond_ores", "#minecraft:emerald_ores", "minecraft:nether_quartz_ore"]
-					#Listed blocks always drop at least 1 experience
+					#列出的方块始终至少掉落 1 点经验
 					minExp = true
 					minExpBlocks = ["minecraft:stone", "minecraft:end_stone"]
 
-	#titan settings
+	#泰坦设置
 	[races.titan]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:2, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:2", "Name:minecraft:generic.attack_speed, Amount:-0.5, Operation:2", "Name:generic.reachDistance, Amount:1, Operation:1", "Name:xat:jump, Amount:0.75, Operation:1", "Name:forge:step_height_addition, Amount:1.4, Operation:0"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 50
 
 		[races.titan.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 300
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 300
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.titan.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.titan.abilities]
 
 			[races.titan.abilities.heavy]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Trample farmland and break plants underfoot while not sneaking
+				#未潜行时踩踏农田并破坏脚下植物
 				trample = true
 
 			[races.titan.abilities.large_hands]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#When 3x3x3 area mining triggers: SNEAK, STAND, ALWAYS or NEVER
-				#Allowed Values: SNEAK, STAND, ALWAYS, NEVER
+				#3x3x3 范围挖掘触发时机：SNEAK、STAND、ALWAYS 或 NEVER
+				#可选值：SNEAK、STAND、ALWAYS、NEVER
 				miningExtended = "STAND"
-				#Blocks never broken by area mining; ids, *-wildcards or #tags
+				#范围挖掘绝不破坏的方块；ID、*-通配符或 #标签
 				miningExtendedBlacklist = ["dynamictrees:*"]
 
-	#goblin settings
+	#哥布林设置
 	[races.goblin]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:-0.4, Operation:2", "Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.luck, Amount:1, Operation:0", "Name:forge:swim_speed, Amount:0.1, Operation:1"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 75
 
 		[races.goblin.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 50
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 50
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.goblin.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.goblin.abilities]
-			#Explosion damage x (current health / 20), clamped to 1%..100%; fire damage x0.8, lava x0.5
+			#爆炸伤害 ×(当前生命/20)，限制在 1%..100%；火焰伤害 ×0.8，岩浆 ×0.5
 			naturalExplosiveResistance = true
-			#Creepers drop you as their attack target
+			#苦力怕不再将你作为攻击目标
 			friendlyCreepers = true
-			#Creepers you hit ignite immediately
+			#你击中的苦力怕立即点燃
 			creepersExplodeOnContact = true
 
 			[races.goblin.abilities.climbing]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#true: only the listed blocks are climbable; false: every block except the listed ones
+				#true：仅列出的方块可攀爬；false：除列出的方块外所有方块都可攀爬
 				useWhitelist = true
-				#Block ids, *-wildcards or #tags
+				#方块 ID、*-通配符或 #标签
 				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
 
 			[races.goblin.abilities.wolf_rider]
-				#Enable this ability
+				#启用此能力
 				enabled = true
 
-	#elf settings
+	#精灵设置
 	[races.elf]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.movement_speed, Amount:0.1, Operation:1", "Name:minecraft:generic.attack_speed, Amount:0.3, Operation:1"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 200
 
 		[races.elf.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 100
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 100
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.elf.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.elf.abilities]
 
 			[races.elf.abilities.skilled_archer]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Mana cost scale of a sneaking charged shot
-				#Range: 0.0 ~ 10000.0
+				#潜行蓄力射击的法力消耗系数
+				#范围：0.0 ~ 10000.0
 				chargeShotCost = 20.0
-				#A fully drawn, fully mana-charged arrow explodes on impact
+				#完全拉满并充满法力的箭命中时爆炸
 				chargeShotExplodes = true
-				#How bow weight scales arrow damage
-				#Allowed Values: LINEAR, SOFT, KINETIC
+				#弓的重量如何影响箭的伤害
+				#可选值：LINEAR、SOFT、KINETIC
 				scalingMode = "KINETIC"
-				#Ticks to fully draw a bow
-				#Range: 1 ~ 1200
+				#完全拉满弓所需的刻数
+				#范围：1 ~ 1200
 				chargeShotTime = 60
-				#Base damage multiplier of shots
-				#Range: 0.0 ~ 100.0
+				#射击的基础伤害倍率
+				#范围：0.0 ~ 100.0
 				chargeShotDamageMultiplier = 1.5
-				#Lower bound of the damage multiplier
-				#Range: 0.0 ~ 100.0
+				#伤害倍率的下限
+				#范围：0.0 ~ 100.0
 				chargeShotMinDamageMultiplier = 1.0
-				#Extra multiplier when the full mana cost was paid
-				#Range: 0.0 ~ 100.0
+				#支付全部法力消耗时的额外倍率
+				#范围：0.0 ~ 100.0
 				chargeShotManaDamageMultiplier = 1.0
-				#Reference draw weight; bows heavier than this deal more damage
-				#Range: 1.0 ~ 10000.0
+				#参考拉重；重于该值的弓造成更高伤害
+				#范围：1.0 ~ 10000.0
 				defaultWeight = 60.0
-				#Bows that never benefit (* wildcard)
+				#永不受益的弓(* 通配符)
 				bowBlacklist = ["*:*crossbow*"]
-				#Bow draw weights. Format: item;weight (* wildcard). Unlisted bows get no bonus
+				#弓的拉重。格式：item;weight(* 通配符)。未列出的弓无加成
 				bows = ["minecraft:bow;40.0", "spartanweaponry:aluminum_longbow;70.0", "spartanweaponry:bronze_longbow;70.0", "spartanweaponry:constantan_longbow;70.0", "spartanweaponry:copper_longbow;70.0", "spartanweaponry:diamond_longbow;70.0", "spartanweaponry:electrum_longbow;70.0", "spartanweaponry:golden_longbow;70.0", "spartanweaponry:invar_longbow;70.0", "spartanweaponry:iron_longbow;70.0", "spartanweaponry:lead_longbow;70.0", "spartanweaponry:leather_longbow;70.0", "spartanweaponry:netherite_longbow;70.0", "spartanweaponry:nickel_longbow;70.0", "spartanweaponry:platinum_longbow;70.0", "spartanweaponry:silver_longbow;70.0", "spartanweaponry:steel_longbow;70.0", "spartanweaponry:tin_longbow;70.0", "spartanweaponry:wooden_longbow;70.0", "spartanfire_rlc:desert_myrmex_chitin_longbow;70.0", "spartanfire_rlc:desert_myrmex_stinger_longbow;70.0", "spartanfire_rlc:dragon_bone_longbow;70.0", "spartanfire_rlc:fire_dragonsteel_longbow;70.0", "spartanfire_rlc:flamed_dragon_bone_longbow;70.0", "spartanfire_rlc:ice_dragonsteel_longbow;70.0", "spartanfire_rlc:iced_dragon_bone_longbow;70.0", "spartanfire_rlc:jungle_myrmex_chitin_longbow;70.0", "spartanfire_rlc:jungle_myrmex_stinger_longbow;70.0", "spartanfire_rlc:lightning_dragon_bone_longbow;70.0", "spartanfire_rlc:lightning_dragonsteel_longbow;70.0"]
 
-	#faelis settings
+	#猫人(Faelis)设置
 	[races.faelis]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:-0.25, Operation:1", "Name:minecraft:generic.movement_speed, Amount:0.15, Operation:1", "Name:minecraft:generic.attack_damage, Amount:-0.25, Operation:1", "Name:minecraft:generic.attack_speed, Amount:0.15, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:-0.15, Operation:2", "Name:minecraft:generic.luck, Amount:1, Operation:0", "Name:generic.reachDistance, Amount:-0.1, Operation:1", "Name:forge:swim_speed, Amount:0.3, Operation:1", "Name:xat:jump, Amount:0.6, Operation:1", "Name:forge:step_height_addition, Amount:0.6, Operation:0"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 125
 
 		[races.faelis.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 85
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 85
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.faelis.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.faelis.abilities]
-			#Unarmed melee attacks deal bonus damage
+			#空手近战攻击造成额外伤害
 			barehandCombat = true
-			#Bonus damage when both hands count as bare
-			#Range: 0.0 ~ 1000.0
+			#双手均视为空手时的额外伤害
+			#范围：0.0 ~ 1000.0
 			barehandCombatBonus = 3.25
-			#Held items that still count as bare hands, adding their value as damage. Format: item[;hand];value
+			#仍视为空手的持有物品，并将其数值作为伤害。格式：item[;hand];value
 			bareHands = []
-			#Drinking milk grants Invigorated and the milk buffs
+			#喝牛奶获得活力状态及牛奶增益
 			milkBonus = true
-			#Default Invigorated duration in ticks
-			#Range: 1 ~ 72000
+			#默认活力状态持续时间(刻)
+			#范围：1 ~ 72000
 			milkBonusDuration = 600
-			#Items that count as milk. Format: item[;level[;duration]]
+			#视为牛奶的物品。格式：item[;level[;duration]]
 			milk = ["minecraft:milk_bucket"]
-			#Extra effects granted by milk. Format: modid:effect:duration:amplifier
+			#牛奶提供的额外效果。格式：modid:effect:duration:amplifier
 			milkBuffs = ["minecraft:speed:3600:0", "minecraft:strength:3600:0", "minecraft:jump_boost:3600:0"]
-			#Heavy armor slows movement and lowers jump height
+			#重甲会降低移动速度并减少跳跃高度
 			heavyArmorPenalty = true
-			#Invigorated cancels the heavy armor penalty
+			#活力状态可抵消重甲惩罚
 			milkInvigorated = true
-			#Armor weights. Format: item or material[;slot];weight
+			#护甲重量。格式：item 或 material[;slot];weight
 			heavyArmor = ["minecraft:chainmail_helmet;0.01", "minecraft:chainmail_chestplate;0.09", "minecraft:chainmail_leggings;0.075", "minecraft:chainmail_boots;0.025", "iron;head;0.025", "iron;chest;0.15", "iron;legs;0.075", "iron;feet;0.05", "minecraft:golden_helmet;0.04", "minecraft:golden_chestplate;0.2", "minecraft:golden_leggings;0.1", "minecraft:golden_boots;0.06", "diamond;0.075"]
 
 			[races.faelis.abilities.climbing]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#true: only the listed blocks are climbable; false: every block except the listed ones
+				#true：仅列出的方块可攀爬；false：除列出的方块外所有方块都可攀爬
 				useWhitelist = true
-				#Block ids, *-wildcards or #tags
+				#方块 ID、*-通配符或 #标签
 				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
 
 			[races.faelis.abilities.night_vision]
-				#Enable this ability
+				#启用此能力
 				enabled = false
-				#Mana spent every second while active; 0 makes it free
-				#Range: 0.0 ~ 10000.0
+				#激活时每秒消耗的法力；0 表示免费
+				#范围：0.0 ~ 10000.0
 				cost = 0.0
 
-	#dragon settings
+	#龙设置
 	[races.dragon]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.4, Operation:2"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 400
 
 		[races.dragon.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 120
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 120
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.dragon.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.dragon.abilities]
 
 			[races.dragon.abilities.flight]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Mana spent every second while flying; 0 makes flight free
-				#Range: 0.0 ~ 10000.0
+				#飞行时每秒消耗的法力；0 表示飞行免费
+				#范围：0.0 ~ 10000.0
 				cost = 5.0
 
 			[races.dragon.abilities.elytra_flight]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Pressing jump while gliding gives an upward boost
+				#滑翔时按跳跃键可获得向上推力
 				liftEnabled = true
-				#Crashing into a wall while gliding deals damage, like vanilla elytra
+				#滑翔时撞墙会像原版鞘翅一样造成伤害
 				collisionDamage = true
-				#Mana spent every second while gliding; 0 makes gliding free
-				#Range: 0.0 ~ 10000.0
+				#滑翔时每秒消耗的法力；0 表示滑翔免费
+				#范围：0.0 ~ 10000.0
 				cost = 0.0
-				#Mana spent per lift boost
-				#Range: 0.0 ~ 10000.0
+				#每次上推消耗的法力
+				#范围：0.0 ~ 10000.0
 				liftCost = 10.0
-				#Upward velocity added per lift boost
-				#Range: 0.0 ~ 10.0
+				#每次上推增加的向上速度
+				#范围：0.0 ~ 10.0
 				liftStrength = 0.42
 
 			[races.dragon.abilities.night_vision]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Mana spent every second while active; 0 makes it free
-				#Range: 0.0 ~ 10000.0
+				#激活时每秒消耗的法力；0 表示免费
+				#范围：0.0 ~ 10000.0
 				cost = 0.0
 
 			[races.dragon.abilities.greedy_eyes]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Mana spent per scan
-				#Range: 0.0 ~ 10000.0
+				#每次扫描消耗的法力
+				#范围：0.0 ~ 10000.0
 				cost = 0.0
-				#Only highlight the closest target
+				#仅高亮最近的目标
 				closest = true
-				#Ticks between scans
-				#Range: 1 ~ 12000
+				#扫描间隔(刻)
+				#范围：1 ~ 12000
 				frequency = 79
-				#Treasure list. Format: block id, entity id or #block_tag;#RRGGBB
+				#宝藏列表。格式：方块 ID、实体 ID 或 #方块标签;#RRGGBB
 				targets = ["#forge:ores/coal;#464646", "#forge:ores/iron;#FFCC99", "#forge:ores/gold;#FFD700", "#forge:ores/lapis;#26619C", "#forge:ores/redstone;#B02E26", "#forge:ores/diamond;#00E6FF", "#forge:ores/emerald;#00FF4D", "#forge:ores/quartz;#EBEBEB", "minecraft:chest;#FFD700", "minecraft:chest_minecart;#FFD700"]
-				#Vertical scan range in blocks
-				#Range: 0 ~ 32
+				#纵向扫描范围(方块)
+				#范围：0 ~ 32
 				rangeVertical = 6
-				#Horizontal scan range in blocks
-				#Range: 0 ~ 32
+				#横向扫描范围(方块)
+				#范围：0 ~ 32
 				rangeHorizontal = 12
-				#Maximum particles shown per scan when not only showing the closest target
-				#Range: 0 ~ 4096
+				#未仅显示最近目标时，每次扫描显示的最大粒子数
+				#范围：0 ~ 4096
 				particles = 255
-				#When the dragon growl hints at the target direction
-				#Allowed Values: SNEAK, STAND, ALWAYS, NEVER
+				#龙吼提示目标方向的时机
+				#可选值：SNEAK、STAND、ALWAYS、NEVER
 				growlActivation = "SNEAK"
-				#Growl volume in percent
-				#Range: 0 ~ 100
+				#龙吼音量(百分比)
+				#范围：0 ~ 100
 				volume = 100
 
 			[races.dragon.abilities.fire_immunity]
-				#Enable this ability
+				#启用此能力
 				enabled = false
-				#Also grant the matching resistance effect; 0 disables the effect
-				#Range: > 0
+				#同时赋予对应的抗性效果；0 禁用该效果
+				#范围：> 0
 				duration = 3600
 
 			[races.dragon.abilities.breath_dragon]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Breath can set fires, freeze liquids and place snow
+				#吐息可点燃火焰、冻结液体并放置积雪
 				terrain = true
-				#Damage per breath projectile
-				#Range: 0.0 ~ 10000.0
+				#每个吐息弹的伤害
+				#范围：0.0 ~ 10000.0
 				damage = 1.0
-				#Mana spent per breath projectile
-				#Range: 0.0 ~ 10000.0
+				#每个吐息弹消耗的法力
+				#范围：0.0 ~ 10000.0
 				cost = 10.0
-				#Ticks between breath projectiles while holding the key
-				#Range: 0 ~ 200
+				#按住按键时吐息弹发射间隔(刻)
+				#范围：0 ~ 200
 				frequency = 3
-				#Effects applied to targets. Format: modid:effect:duration:amplifier
+				#施加于目标的效果。格式：modid:effect:duration:amplifier
 				effects = []
 
 			[races.dragon.abilities.elements]
 
 				[races.dragon.abilities.elements.fire]
-					#Effects granted while in this elemental form
+					#处于该元素形态时获得的效果
 					effectsToAdd = []
-					#Effects this elemental form is immune to
+					#该元素形态免疫的效果
 					effectsToRemove = ["lycanitesmobs:smouldering"]
-					#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-					#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-					#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+					#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+					#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+					#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 					damageTypesToIgnore = ["*;isFire"]
-					#Attribute modifiers for this elemental form
+					#该元素形态的属性修正
 					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
 
 					[races.dragon.abilities.elements.fire.fire_immunity]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Also grant the matching resistance effect; 0 disables the effect
-						#Range: > 0
+						#同时赋予对应的抗性效果；0 禁用该效果
+						#范围：> 0
 						duration = 3600
 
 					[races.dragon.abilities.elements.fire.breath_fire]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Breath can set fires, freeze liquids and place snow
+						#吐息可点燃火焰、冻结液体并放置积雪
 						terrain = true
-						#Damage per breath projectile
-						#Range: 0.0 ~ 10000.0
+						#每个吐息弹的伤害
+						#范围：0.0 ~ 10000.0
 						damage = 1.0
-						#Mana spent per breath projectile
-						#Range: 0.0 ~ 10000.0
+						#每个吐息弹消耗的法力
+						#范围：0.0 ~ 10000.0
 						cost = 10.0
-						#Ticks between breath projectiles while holding the key
-						#Range: 0 ~ 200
+						#按住按键时吐息弹发射间隔(刻)
+						#范围：0 ~ 200
 						frequency = 3
-						#Effects applied to targets. Format: modid:effect:duration:amplifier
+						#施加于目标的效果。格式：modid:effect:duration:amplifier
 						effects = []
 
-					#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+					#生存模组兼容性(Cold Sweat / Simple Difficulty)
 					[races.dragon.abilities.elements.fire.survival]
-						#Immune to overheating (Cold Sweat)
+						#免疫过热(Cold Sweat)
 						immuneToHeat = true
-						#Immune to freezing (Cold Sweat)
+						#免疫冰冻(Cold Sweat)
 						immuneToCold = false
-						#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+						#免疫脏水引起的口渴效果(Simple Difficulty)
 						immuneToThirst = false
-						#Immune to the Parasites effect from dirty water (Simple Difficulty)
+						#免疫脏水引起的寄生虫效果(Simple Difficulty)
 						immuneToParasites = false
 
 				[races.dragon.abilities.elements.ice]
-					#Effects granted while in this elemental form
+					#处于该元素形态时获得的效果
 					effectsToAdd = []
-					#Effects this elemental form is immune to
+					#该元素形态免疫的效果
 					effectsToRemove = []
-					#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-					#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-					#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+					#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+					#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+					#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 					damageTypesToIgnore = ["*;isIce"]
-					#Attribute modifiers for this elemental form
+					#该元素形态的属性修正
 					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
 
 					[races.dragon.abilities.elements.ice.ice_immunity]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Also grant the matching resistance effect; 0 disables the effect
-						#Range: > 0
+						#同时赋予对应的抗性效果；0 禁用该效果
+						#范围：> 0
 						duration = 3600
 
 					[races.dragon.abilities.elements.ice.frost_walker]
-						#Enable this ability
+						#启用此能力
 						enabled = true
 
 					[races.dragon.abilities.elements.ice.breath_ice]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Breath can set fires, freeze liquids and place snow
+						#吐息可点燃火焰、冻结液体并放置积雪
 						terrain = true
-						#Damage per breath projectile
-						#Range: 0.0 ~ 10000.0
+						#每个吐息弹的伤害
+						#范围：0.0 ~ 10000.0
 						damage = 1.0
-						#Mana spent per breath projectile
-						#Range: 0.0 ~ 10000.0
+						#每个吐息弹消耗的法力
+						#范围：0.0 ~ 10000.0
 						cost = 10.0
-						#Ticks between breath projectiles while holding the key
-						#Range: 0 ~ 200
+						#按住按键时吐息弹发射间隔(刻)
+						#范围：0 ~ 200
 						frequency = 3
-						#Effects applied to targets. Format: modid:effect:duration:amplifier
+						#施加于目标的效果。格式：modid:effect:duration:amplifier
 						effects = ["minecraft:slowness:100:2"]
 
-					#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+					#生存模组兼容性(Cold Sweat / Simple Difficulty)
 					[races.dragon.abilities.elements.ice.survival]
-						#Immune to overheating (Cold Sweat)
+						#免疫过热(Cold Sweat)
 						immuneToHeat = false
-						#Immune to freezing (Cold Sweat)
+						#免疫冰冻(Cold Sweat)
 						immuneToCold = true
-						#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+						#免疫脏水引起的口渴效果(Simple Difficulty)
 						immuneToThirst = false
-						#Immune to the Parasites effect from dirty water (Simple Difficulty)
+						#免疫脏水引起的寄生虫效果(Simple Difficulty)
 						immuneToParasites = false
 
 				[races.dragon.abilities.elements.lightning]
-					#Effects granted while in this elemental form
+					#处于该元素形态时获得的效果
 					effectsToAdd = []
-					#Effects this elemental form is immune to
+					#该元素形态免疫的效果
 					effectsToRemove = ["lycanitesmobs:paralysis"]
-					#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-					#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-					#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+					#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+					#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+					#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 					damageTypesToIgnore = ["*;isLightning"]
-					#Attribute modifiers for this elemental form
+					#该元素形态的属性修正
 					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
 
 					[races.dragon.abilities.elements.lightning.lightning_immunity]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Also grant the matching resistance effect; 0 disables the effect
-						#Range: > 0
+						#同时赋予对应的抗性效果；0 禁用该效果
+						#范围：> 0
 						duration = 3600
 
 					[races.dragon.abilities.elements.lightning.lightning_bolt]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Damage at full charge
-						#Range: 0.0 ~ 10000.0
+						#满蓄力时的伤害
+						#范围：0.0 ~ 10000.0
 						attackDamage = 40.0
-						#Mana spent at full charge
-						#Range: 0.0 ~ 10000.0
+						#满蓄力时消耗的法力
+						#范围：0.0 ~ 10000.0
 						attackCost = 200.0
-						#Ticks needed to reach full charge
-						#Range: 1 ~ 1200
+						#达到满蓄力所需的刻数
+						#范围：1 ~ 1200
 						chargeTime = 20
 
 					[races.dragon.abilities.elements.lightning.breath_lightning]
-						#Enable this ability
+						#启用此能力
 						enabled = true
-						#Breath can set fires, freeze liquids and place snow
+						#吐息可点燃火焰、冻结液体并放置积雪
 						terrain = true
-						#Damage per breath projectile
-						#Range: 0.0 ~ 10000.0
+						#每个吐息弹的伤害
+						#范围：0.0 ~ 10000.0
 						damage = 1.0
-						#Mana spent per breath projectile
-						#Range: 0.0 ~ 10000.0
+						#每个吐息弹消耗的法力
+						#范围：0.0 ~ 10000.0
 						cost = 10.0
-						#Ticks between breath projectiles while holding the key
-						#Range: 0 ~ 200
+						#按住按键时吐息弹发射间隔(刻)
+						#范围：0 ~ 200
 						frequency = 3
-						#Effects applied to targets. Format: modid:effect:duration:amplifier
+						#施加于目标的效果。格式：modid:effect:duration:amplifier
 						effects = ["minecraft:slowness:20:4", "minecraft:weakness:20:1"]
 
-					#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+					#生存模组兼容性(Cold Sweat / Simple Difficulty)
 					[races.dragon.abilities.elements.lightning.survival]
-						#Immune to overheating (Cold Sweat)
+						#免疫过热(Cold Sweat)
 						immuneToHeat = false
-						#Immune to freezing (Cold Sweat)
+						#免疫冰冻(Cold Sweat)
 						immuneToCold = false
-						#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+						#免疫脏水引起的口渴效果(Simple Difficulty)
 						immuneToThirst = false
-						#Immune to the Parasites effect from dirty water (Simple Difficulty)
+						#免疫脏水引起的寄生虫效果(Simple Difficulty)
 						immuneToParasites = false
 
-	#taurus settings
+	#托罗斯(牛头人)设置
 	[races.taurus]
-		#Can this race ride entities at all?
+		#该种族能否骑乘实体？
 		canMount = true
-		#Can this race steer boats?
+		#该种族能否操控船只？
 		canControlBoats = true
-		#Treat the mount list as a whitelist instead of a blacklist
+		#将骑乘列表视为白名单而非黑名单
 		mountWhitelist = false
-		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		#该种族不可骑乘的实体 ID；"modid:*" 可匹配整个模组
 		mountBlacklist = []
-		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		#变身时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects this race is immune to. Same format as effectsToAdd
+		#该种族免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.max_health, Amount:0.5, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:0.5, Operation:0", "Name:minecraft:generic.armor, Amount:0.2, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.3, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.2, Operation:1", "Name:minecraft:generic.movement_speed, Amount:-0.1, Operation:1", "Name:forge:swim_speed, Amount:-0.15, Operation:2"]
-		#Magic affinity; scales this race's mana pool
-		#Range: 0 ~ 10000
+		#魔法亲和度；影响该种族的法力池大小
+		#范围：0 ~ 10000
 		magicAffinity = 100
 
 		[races.taurus.size]
-			#Height as a percentage of the default player height
-			#Range: 1 ~ 1000
+			#高度(占默认玩家身高的百分比)
+			#范围：1 ~ 1000
 			height = 120
-			#Width as a percentage of the default player width
-			#Range: 1 ~ 1000
+			#宽度(占默认玩家宽度的百分比)
+			#范围：1 ~ 1000
 			width = 120
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.taurus.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[races.taurus.abilities]
 
 			[races.taurus.abilities.stampede]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Damage dealt to entities hit at full charge
-				#Range: 0.0 ~ 10000.0
+				#满蓄力时对被击实体的伤害
+				#范围：0.0 ~ 10000.0
 				attackDamage = 10.0
-				#Mana spent for a full charge
-				#Range: 0.0 ~ 10000.0
+				#满蓄力消耗的法力
+				#范围：0.0 ~ 10000.0
 				attackCost = 20.0
-				#Ticks needed to reach full charge
-				#Range: 1 ~ 1200
+				#达到满蓄力所需的刻数
+				#范围：1 ~ 1200
 				chargeTime = 40
-				#Dash velocity at minimum charge
-				#Range: 0.0 ~ 20.0
+				#最小蓄力时的冲刺速度
+				#范围：0.0 ~ 20.0
 				velocityMin = 3.0
-				#Dash velocity at full charge
-				#Range: 0.0 ~ 20.0
+				#满蓄力时的冲刺速度
+				#范围：0.0 ~ 20.0
 				velocityMax = 6.0
 
-#Mana settings
+#法力设置
 [magic]
-	#Enable the mana system; when disabled, abilities never run out of mana
+	#启用法力系统；禁用后能力将不会耗尽法力
 	manaEnabled = true
-	#Ticks between each mana regeneration step
-	#Range: 1 ~ 72000
+	#法力回复每步间隔(刻)
+	#范围：1 ~ 72000
 	manaUpdateTicks = 20
-	#Ticks mana regeneration pauses after spending mana
-	#Range: 0 ~ 72000
+	#消耗法力后法力回复暂停的刻数
+	#范围：0 ~ 72000
 	manaRegenTimeout = 60
-	#Max mana gained per bonus point (Mana Crystal)
-	#Range: 0.0 ~ 10000.0
+	#每个加成点(法力水晶)获得的最大法力
+	#范围：0.0 ~ 10000.0
 	bonusPerPoint = 10.0
-	#Maximum bonus points
-	#Range: 0 ~ 10000
+	#最大加成点数
+	#范围：0 ~ 10000
 	bonusMax = 90
-	#Items that restore mana when consumed. Format: item_id;amount or #tag;amount
-	#Append % to restore a percentage of max mana instead of a flat amount
+	#食用时恢复法力的物品。格式：item_id;amount 或 #tag;amount
+	#附加 % 以恢复最大法力的百分比而非固定数值
 	recovery = ["xat:dwarf_stout;100%", "xat:elf_sap;100%", "xat:faelis_food;100%", "xat:fairy_dew;100%", "xat:goblin_soup;100%", "xat:titan_spirit;100%", "xat:taurus_tea;100%", "xat:dragon_gem;100%", "xat:mana_crystal;100%", "xat:mana_reagent;100%", "xat:mana_candy;50", "minecraft:golden_apple;20", "minecraft:enchanted_golden_apple;50", "botania:mana_cookie;10%"]
 
 	[magic.items]
-		#Using a Mana Crystal on stone may shatter it into a Mana Reagent
+		#在石头上使用法力水晶可能会将其碎裂为法力试剂
 		crystalExplodes = false
-		#Mana Reagent and Restoration Serum inflict poison and weakness
+		#法力试剂与恢复血清会造成中毒和虚弱
 		reagentHarmful = true
 
-#Trinket settings
+#饰品设置
 [items]
 
 	[items.transformation_rings]
-		#Enable the dwarf ring
+		#启用矮人戒指
 		dwarf = true
-		#Enable the elf ring
+		#启用精灵戒指
 		elf = true
-		#Enable the fairy ring
+		#启用妖精戒指
 		fairy = true
-		#Enable the goblin ring
+		#启用哥布林戒指
 		goblin = true
-		#Enable the titan ring
+		#启用泰坦戒指
 		titan = true
-		#Enable the faelis ring
+		#启用猫人戒指
 		faelis = true
-		#Enable the dragon ring
+		#启用龙戒指
 		dragon = true
-		#Enable the taurus ring
+		#启用托罗斯戒指
 		taurus = true
 
 	[items.dragons_eye]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = ["onAttacked:*;isMagic", "onHurt:*;isMagic"]
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.dragons_eye.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.dragons_eye.greedy_eyes]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Mana spent per scan
-			#Range: 0.0 ~ 10000.0
+			#每次扫描消耗的法力
+			#范围：0.0 ~ 10000.0
 			cost = 0.0
-			#Only highlight the closest target
+			#仅高亮最近的目标
 			closest = true
-			#Ticks between scans
-			#Range: 1 ~ 12000
+			#扫描间隔(刻)
+			#范围：1 ~ 12000
 			frequency = 79
-			#Treasure list. Format: block id, entity id or #block_tag;#RRGGBB
+			#宝藏列表。格式：方块 ID、实体 ID 或 #方块标签;#RRGGBB
 			targets = ["#forge:ores/coal;#464646", "#forge:ores/iron;#FFCC99", "#forge:ores/gold;#FFD700", "#forge:ores/lapis;#26619C", "#forge:ores/redstone;#B02E26", "#forge:ores/diamond;#00E6FF", "#forge:ores/emerald;#00FF4D", "#forge:ores/quartz;#EBEBEB", "minecraft:chest;#FFD700", "minecraft:chest_minecart;#FFD700"]
-			#Vertical scan range in blocks
-			#Range: 0 ~ 32
+			#纵向扫描范围(方块)
+			#范围：0 ~ 32
 			rangeVertical = 6
-			#Horizontal scan range in blocks
-			#Range: 0 ~ 32
+			#横向扫描范围(方块)
+			#范围：0 ~ 32
 			rangeHorizontal = 12
-			#Maximum particles shown per scan when not only showing the closest target
-			#Range: 0 ~ 4096
+			#未仅显示最近目标时，每次扫描显示的最大粒子数
+			#范围：0 ~ 4096
 			particles = 255
-			#When the dragon growl hints at the target direction
-			#Allowed Values: SNEAK, STAND, ALWAYS, NEVER
+			#龙吼提示目标方向的时机
+			#可选值：SNEAK、STAND、ALWAYS、NEVER
 			growlActivation = "SNEAK"
-			#Growl volume in percent
-			#Range: 0 ~ 100
+			#龙吼音量(百分比)
+			#范围：0 ~ 100
 			volume = 100
 
 		[items.dragons_eye.night_vision]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Mana spent every second while active; 0 makes it free
-			#Range: 0.0 ~ 10000.0
+			#激活时每秒消耗的法力；0 表示免费
+			#范围：0.0 ~ 10000.0
 			cost = 0.0
 
 		[items.dragons_eye.fire_immunity]
-			#Enable this ability
+			#启用此能力
 			enabled = false
-			#Also grant the matching resistance effect; 0 disables the effect
-			#Range: > 0
+			#同时赋予对应的抗性效果；0 禁用该效果
+			#范围：> 0
 			duration = 3600
 
 		[items.dragons_eye.fire]
-			#Effects granted while in this elemental form
+			#处于该元素形态时获得的效果
 			effectsToAdd = []
-			#Effects this elemental form is immune to
+			#该元素形态免疫的效果
 			effectsToRemove = ["lycanitesmobs:smouldering", "iceandfire:melt"]
-			#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-			#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-			#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+			#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+			#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+			#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 			damageTypesToIgnore = ["*;isFire"]
-			#Attribute modifiers for this elemental form
+			#该元素形态的属性修正
 			attributes = []
 
 			[items.dragons_eye.fire.fire_immunity]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Also grant the matching resistance effect; 0 disables the effect
-				#Range: > 0
+				#同时赋予对应的抗性效果；0 禁用该效果
+				#范围：> 0
 				duration = 3600
 
-			#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+			#生存模组兼容性(Cold Sweat / Simple Difficulty)
 			[items.dragons_eye.fire.survival]
-				#Immune to overheating (Cold Sweat)
+				#免疫过热(Cold Sweat)
 				immuneToHeat = true
-				#Immune to freezing (Cold Sweat)
+				#免疫冰冻(Cold Sweat)
 				immuneToCold = false
-				#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+				#免疫脏水引起的口渴效果(Simple Difficulty)
 				immuneToThirst = false
-				#Immune to the Parasites effect from dirty water (Simple Difficulty)
+				#免疫脏水引起的寄生虫效果(Simple Difficulty)
 				immuneToParasites = false
 
 		[items.dragons_eye.ice]
-			#Effects granted while in this elemental form
+			#处于该元素形态时获得的效果
 			effectsToAdd = []
-			#Effects this elemental form is immune to
+			#该元素形态免疫的效果
 			effectsToRemove = ["iceandfire:frostbite", "iceandfire:frostburn"]
-			#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-			#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-			#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+			#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+			#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+			#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 			damageTypesToIgnore = ["*;isIce"]
-			#Attribute modifiers for this elemental form
+			#该元素形态的属性修正
 			attributes = []
 
 			[items.dragons_eye.ice.ice_immunity]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Also grant the matching resistance effect; 0 disables the effect
-				#Range: > 0
+				#同时赋予对应的抗性效果；0 禁用该效果
+				#范围：> 0
 				duration = 3600
 
 			[items.dragons_eye.ice.frost_walker]
-				#Enable this ability
+				#启用此能力
 				enabled = true
 
-			#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+			#生存模组兼容性(Cold Sweat / Simple Difficulty)
 			[items.dragons_eye.ice.survival]
-				#Immune to overheating (Cold Sweat)
+				#免疫过热(Cold Sweat)
 				immuneToHeat = false
-				#Immune to freezing (Cold Sweat)
+				#免疫冰冻(Cold Sweat)
 				immuneToCold = true
-				#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+				#免疫脏水引起的口渴效果(Simple Difficulty)
 				immuneToThirst = false
-				#Immune to the Parasites effect from dirty water (Simple Difficulty)
+				#免疫脏水引起的寄生虫效果(Simple Difficulty)
 				immuneToParasites = false
 
 		[items.dragons_eye.lightning]
-			#Effects granted while in this elemental form
+			#处于该元素形态时获得的效果
 			effectsToAdd = []
-			#Effects this elemental form is immune to
+			#该元素形态免疫的效果
 			effectsToRemove = ["lycanitesmobs:paralysis", "iceandfire:voltage"]
-			#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-			#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-			#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+			#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+			#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+			#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 			damageTypesToIgnore = ["*;isLightning"]
-			#Attribute modifiers for this elemental form
+			#该元素形态的属性修正
 			attributes = []
 
 			[items.dragons_eye.lightning.lightning_immunity]
-				#Enable this ability
+				#启用此能力
 				enabled = true
-				#Also grant the matching resistance effect; 0 disables the effect
-				#Range: > 0
+				#同时赋予对应的抗性效果；0 禁用该效果
+				#范围：> 0
 				duration = 3600
 
-			#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+			#生存模组兼容性(Cold Sweat / Simple Difficulty)
 			[items.dragons_eye.lightning.survival]
-				#Immune to overheating (Cold Sweat)
+				#免疫过热(Cold Sweat)
 				immuneToHeat = false
-				#Immune to freezing (Cold Sweat)
+				#免疫冰冻(Cold Sweat)
 				immuneToCold = false
-				#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+				#免疫脏水引起的口渴效果(Simple Difficulty)
 				immuneToThirst = false
-				#Immune to the Parasites effect from dirty water (Simple Difficulty)
+				#免疫脏水引起的寄生虫效果(Simple Difficulty)
 				immuneToParasites = false
 
 	[items.ender_tiara]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = ["lycanitesmobs:instability"]
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = ["*;isVoid"]
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.ender_tiara.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = true
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.ender_tiara.ender_queen]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#The auxiliary key opens the ender chest, costing all mana
+			#辅助键打开末影箱，消耗全部法力
 			enderChest = true
-			#Water drains mana, or hurts once mana runs out
+			#水会消耗法力，法力耗尽后转为造成伤害
 			waterHurts = false
-			#1 in N chance to ignore an attack from a living attacker
-			#Range: 0 ~ 10000
+			#有 1/N 的几率忽略来自生物的攻击
+			#范围：0 ~ 10000
 			ignoreChance = 10
-			#1 in N chance to summon an enderman knight when attacked
-			#Range: 0 ~ 10000
+			#受到攻击时有 1/N 的几率召唤末影骑士
+			#范围：0 ~ 10000
 			spawnChance = 10
-			#1 in N chance to teleport away from projectiles
-			#Range: 0 ~ 10000
+			#有 1/N 的几率从抛射物处传送逃离
+			#范围：0 ~ 10000
 			teleportChance = 1
-			#Endermen follow the queen around
+			#末影人会跟随女王
 			endermanFollow = true
-			#Endermen may still fight back against the queen
+			#末影人仍可能反击女王
 			endermanRetaliate = false
-			#Endermen killed by the queen drop experience
+			#被女王击杀的末影人掉落经验
 			endermanDropExp = false
-			#Endermen killed by the queen drop items
+			#被女王击杀的末影人掉落物品
 			endermanDropItems = false
-			#Mobs near the queen or a boss cannot teleport
+			#女王或首领附近的生物无法传送
 			blockTeleportation = false
 
 		[items.ender_tiara.ender_eyes]
-			#Enable this ability
+			#启用此能力
 			enabled = true
 
 	[items.damage_shield]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.damage_shield.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.damage_shield.safe_guard]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Every hit after this many is completely blocked, then the counter resets
-			#Range: 0 ~ 1000
+			#超过此次数后的每次攻击被完全格挡，随后计数器重置
+			#范围：0 ~ 1000
 			maxHits = 3
-			#Hits weaker than this do not count
-			#Range: 0.0 ~ 10000.0
+			#弱于此值的攻击不计入
+			#范围：0.0 ~ 10000.0
 			minDamageToCount = 1.0
-			#Hits weaker than this are never blocked
-			#Range: 0.0 ~ 10000.0
+			#弱于此值的攻击永远不会被格挡
+			#范围：0.0 ~ 10000.0
 			minDamageToTrigger = 1.0
-			#Explosion damage multiplier; 1 disables the reduction
-			#Range: 0.0 ~ 1.0
+			#爆炸伤害倍率；1 表示不减免
+			#范围：0.0 ~ 1.0
 			explosionReducedAmount = 0.25
-			#Effect kept on the wearer
+			#佩戴者保留的效果
 			effect = "minecraft:resistance"
-			#Amplifier of the kept effect (0 = level I)
-			#Range: 0 ~ 255
+			#保留效果的等级(0 = I 级)
+			#范围：0 ~ 255
 			effectLevel = 0
-			#Applying the same effect again stacks one level on top of the kept one
+			#再次施加相同效果会在保留效果上叠加一级
 			effectStacks = true
-			#Highest amplifier reachable by stacking
-			#Range: 0 ~ 255
+			#叠加可达到的最高等级
+			#范围：0 ~ 255
 			effectStackLimit = 3
-			#Volume of the block sound; 0 disables
-			#Range: 0.0 ~ 1.0
+			#格挡音效音量；0 禁用
+			#范围：0.0 ~ 1.0
 			soundVolume = 0.2
-			#Pitch of the block sound
-			#Range: 0.5 ~ 2.0
+			#格挡音效音调
+			#范围：0.5 ~ 2.0
 			soundPitch = 1.0
 
 		[items.damage_shield.hard_head]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#1 in N chance to shrug off a lethal head shot; 0 always
-			#Range: 0 ~ 10000
+			#有 1/N 的几率免疫致命爆头；0 表示总是免疫
+			#范围：0 ~ 10000
 			chance = 100
 
 		[items.damage_shield.clear_vision]
-			#Enable this ability
+			#启用此能力
 			enabled = true
 
 	[items.glow_ring]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.glow_ring.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.glow_ring.night_vision]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Mana spent every second while active; 0 makes it free
-			#Range: 0.0 ~ 10000.0
+			#激活时每秒消耗的法力；0 表示免费
+			#范围：0.0 ~ 10000.0
 			cost = 0.0
 
 	[items.poison_stone]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = ["minecraft:poison", "minecraft:hunger", "lycanitesmobs:plague"]
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = ["*;isPoison"]
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.poison_stone.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.poison_stone.poison_affinity]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Poison damage multiplier against poisoned targets
-			#Range: 0.0 ~ 100.0
+			#对中毒目标造成的毒伤害倍率
+			#范围：0.0 ~ 100.0
 			damageMultiplier = 2.0
-			#1 in N chance to inflict the effect on hit; 0 disables
-			#Range: 0 ~ 10000
+			#命中时有 1/N 的几率施加该效果；0 禁用
+			#范围：0 ~ 10000
 			chance = 5
-			#Duration of the inflicted effect in ticks
-			#Range: 1 ~ 72000
+			#施加效果的持续时间(刻)
+			#范围：1 ~ 72000
 			duration = 40
 
 		[items.poison_stone.poison_immunity]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Also grant the matching resistance effect; 0 disables the effect
-			#Range: > 0
+			#同时赋予对应的抗性效果；0 禁用该效果
+			#范围：> 0
 			duration = 3600
 
 	[items.wither_ring]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = ["minecraft:nausea"]
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.wither_ring.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.wither_ring.dark_affinity]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Heal for the full damage dealt instead of a capped amount
+			#按造成的全部伤害治疗，而非上限数值
 			trueLeech = false
-			#Maximum health leeched per hit when trueLeech is off
-			#Range: 0.0 ~ 1000.0
+			#关闭真实吸取时每次攻击吸取的最大生命值
+			#范围：0.0 ~ 1000.0
 			leechAmount = 2.0
-			#1 in N chance to inflict the effect on hit; 0 disables
-			#Range: 0 ~ 10000
+			#命中时有 1/N 的几率施加该效果；0 禁用
+			#范围：0 ~ 10000
 			chance = 5
-			#Duration of the inflicted effect in ticks
-			#Range: 1 ~ 72000
+			#施加效果的持续时间(刻)
+			#范围：1 ~ 72000
 			duration = 40
 
 		[items.wither_ring.dark_immunity]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Dark damage heals instead of hurting
+			#暗影伤害转为治疗而非伤害
 			healFromDark = true
-			#Portion of dark damage converted into healing
-			#Range: 0.0 ~ 100.0
+			#转化为治疗的暗影伤害比例
+			#范围：0.0 ~ 100.0
 			healMultiplier = 1.0
 
 	[items.polarized_stone]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.polarized_stone.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.polarized_stone.magnetic]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Pick items up instantly instead of pulling them in
+			#立即拾取物品，而非将其拉近
 			pickupInstant = true
-			#Absorb experience orbs instantly instead of pulling them in
+			#立即吸收经验球，而非将其拉近
 			pickupInstantXp = true
-			#Also attract experience orbs
+			#同时吸引经验球
 			pickupXp = true
-			#Mana spent every frequency ticks while active; 0 makes it free
-			#Range: 0.0 ~ 10000.0
+			#激活时每 frequency 刻消耗的法力；0 表示免费
+			#范围：0.0 ~ 10000.0
 			cost = 0.0
-			#Ticks between mana payments
-			#Range: 1 ~ 12000
+			#法力支付间隔(刻)
+			#范围：1 ~ 12000
 			frequency = 20
-			#Pull strength when not picking up instantly
-			#Range: 0.1 ~ 1.0
+			#非立即拾取时的吸引强度
+			#范围：0.1 ~ 1.0
 			force = 0.1
-			#Vertical range in blocks
-			#Range: 0 ~ 32
+			#纵向范围(方块)
+			#范围：0 ~ 32
 			rangeVertical = 6
-			#Horizontal range in blocks
-			#Range: 0 ~ 32
+			#横向范围(方块)
+			#范围：0 ~ 32
 			rangeHorizontal = 12
 
 		[items.polarized_stone.repel]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Mana spent every frequency ticks while active; 0 makes it free
-			#Range: 0.0 ~ 10000.0
+			#激活时每 frequency 刻消耗的法力；0 表示免费
+			#范围：0.0 ~ 10000.0
 			cost = 10.0
-			#Ticks between mana payments
-			#Range: 1 ~ 12000
+			#法力支付间隔(刻)
+			#范围：1 ~ 12000
 			frequency = 20
-			#Push strength
-			#Range: 0.1 ~ 1.0
+			#推力强度
+			#范围：0.1 ~ 1.0
 			force = 0.1
-			#Entity ids that get pushed away; "modid:*" matches a whole mod
+			#被推开的实体 ID；"modid:*" 可匹配整个模组
 			whitelist = ["minecraft:arrow", "minecraft:fireball"]
-			#Vertical range in blocks
-			#Range: 0 ~ 32
+			#纵向范围(方块)
+			#范围：0 ~ 32
 			rangeVertical = 6
-			#Horizontal range in blocks
-			#Range: 0 ~ 32
+			#横向范围(方块)
+			#范围：0 ~ 32
 			rangeHorizontal = 12
 
 	[items.sea_stone]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:forge:swim_speed, Amount:4, Operation:2"]
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.sea_stone.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = true
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = true
 
 		[items.sea_stone.water_affinity]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Air bubbles kept topped up while underwater; 0 disables
-			#Range: 0 ~ 10
+			#水下时保持氧气泡充足；0 禁用
+			#范围：0 ~ 10
 			bubbles = 1
-			#Mine underwater as fast as on land
+			#水下挖掘速度与陆地一样快
 			underwaterMining = true
-			#Use the vanilla Water Breathing effect instead of refilling air
+			#使用原版水下呼吸效果，而非补充氧气
 			vanilla = false
 
 		[items.sea_stone.water_immunity]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Also grant the matching resistance effect; 0 disables the effect
-			#Range: > 0
+			#同时赋予对应的抗性效果；0 禁用该效果
+			#范围：> 0
 			duration = 3600
 
 		[items.sea_stone.skilled_swimmer]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Use the old swimming behaviour: hover in place and follow the look direction
+			#使用旧版游泳行为：原地悬停并跟随视线方向
 			oldTweaks = false
 
 		[items.sea_stone.water_absorption]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Hydration restored each time
-			#Range: 0 ~ 20
+			#每次恢复的水合度
+			#范围：0 ~ 20
 			amount = 1
-			#Ticks between each restore
-			#Range: 1 ~ 72000
+			#每次恢复间隔(刻)
+			#范围：1 ~ 72000
 			frequency = 20
 
 		[items.sea_stone.clear_vision]
-			#Enable this ability
+			#启用此能力
 			enabled = true
 
 	[items.inertia_null_stone]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0"]
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.inertia_null_stone.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.inertia_null_stone.null_kinetic]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Fall / kinetic damage multiplier; 0 negates it completely
-			#Range: 0.0 ~ 10.0
+			#坠落/动能伤害倍率；0 表示完全免疫
+			#范围：0.0 ~ 10.0
 			amount = 0.0
-			#Mana spent each time the ability reduces damage; 0 makes it free
-			#Range: 0.0 ~ 10000.0
+			#每次能力减免伤害时消耗的法力；0 表示免费
+			#范围：0.0 ~ 10000.0
 			cost = 0.0
 
 	[items.greater_inertia_stone]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.knockback_resistance, Amount:0.4, Operation:0", "Name:minecraft:generic.movement_speed, Amount:0.5, Operation:2", "Name:xat:jump, Amount:1, Operation:1", "Name:forge:step_height_addition, Amount:0.6, Operation:0"]
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.greater_inertia_stone.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.greater_inertia_stone.reduce_kinetic]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Fall / kinetic damage multiplier; 0 negates it completely
-			#Range: 0.0 ~ 10.0
+			#坠落/动能伤害倍率；0 表示完全免疫
+			#范围：0.0 ~ 10.0
 			amount = 0.25
-			#Mana spent each time the ability reduces damage; 0 makes it free
-			#Range: 0.0 ~ 10000.0
+			#每次能力减免伤害时消耗的法力；0 表示免费
+			#范围：0.0 ~ 10000.0
 			cost = 0.0
 
 	[items.weightless_stone]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = []
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.weightless_stone.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.weightless_stone.weightless]
-			#Enable this ability
+			#启用此能力
 			enabled = true
 
 	[items.arcing_orb]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = ["xat:paralysis"]
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1"]
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.arcing_orb.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.arcing_orb.dodge]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Mana spent per dodge
-			#Range: 0.0 ~ 10000.0
+			#每次闪避消耗的法力
+			#范围：0.0 ~ 10000.0
 			cost = 30.0
-			#Dodging paralyses nearby entities
+			#闪避时使附近实体瘫痪
 			stuns = true
-			#Horizontal radius of the stun
-			#Range: 0.0 ~ 32.0
+			#瘫痪作用半径(水平)
+			#范围：0.0 ~ 32.0
 			stunRadius = 2.0
-			#Ticks between dodges
-			#Range: 0 ~ 1200
+			#闪避间隔(刻)
+			#范围：0 ~ 1200
 			cooldown = 20
-			#Dodge by holding the dodge key and pressing a direction instead of double tapping
+			#通过按住闪避键并按下方向键来闪避，而非双击
 			keybindMovement = false
 
 		[items.arcing_orb.lightning_bolt]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Damage at full charge
-			#Range: 0.0 ~ 10000.0
+			#满蓄力时的伤害
+			#范围：0.0 ~ 10000.0
 			attackDamage = 40.0
-			#Mana spent at full charge
-			#Range: 0.0 ~ 10000.0
+			#满蓄力时消耗的法力
+			#范围：0.0 ~ 10000.0
 			attackCost = 300.0
-			#Ticks needed to reach full charge
-			#Range: 1 ~ 1200
+			#达到满蓄力所需的刻数
+			#范围：1 ~ 1200
 			chargeTime = 120
 
 	[items.teddy_bear]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = ["lycanitesmobs:fear", "lycanitesmobs:insomnia"]
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.teddy_bear.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.teddy_bear.well_rested]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#Effects granted after a full night's sleep. Format: modid:effect:duration:amplifier
+			#整夜睡眠后获得的效果。格式：modid:effect:duration:amplifier
 			sleepBonuses = ["minecraft:regeneration:300:0", "minecraft:luck:600:0", "minecraft:health_boost:3600:1"]
-			#Grant this many random picks from the list instead of all of them; 0 grants all
-			#Range: 0 ~ 64
+			#从列表中随机选取指定数量而非全部；0 表示全部给予
+			#范围：0 ~ 64
 			randomBonuses = 0
 
 	[items.faelis_claw]
-		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
 		enabled = true
-		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
-		#Effects the wearer is immune to. Same format as effectsToAdd
+		#佩戴者免疫的效果。格式同 effectsToAdd
 		effectsToRemove = ["xat:bleed"]
-		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
-		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
-		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
+		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
-		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = ["Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1"]
 
-		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.faelis_claw.survival]
-			#Immune to overheating (Cold Sweat)
+			#免疫过热(Cold Sweat)
 			immuneToHeat = false
-			#Immune to freezing (Cold Sweat)
+			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
-			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
-			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
 		[items.faelis_claw.vicious_strike]
-			#Enable this ability
+			#启用此能力
 			enabled = true
-			#1 in N chance to cause bleeding; 0 always bleeds
-			#Range: 0 ~ 10000
+			#有 1/N 的几率造成流血；0 表示总是流血
+			#范围：0 ~ 10000
 			chance = 4
-			#Bleed duration in ticks (a third of this for non-Faelis)
-			#Range: 1 ~ 72000
+			#流血持续时间(刻)(非猫人则为该值的三分之一)
+			#范围：1 ~ 72000
 			duration = 300
-			#With Defiled Lands installed, apply its Bleeding effect instead
+			#安装 Defiled Lands 时，改用其流血效果
 			defiledLandsBleed = true
 
-#Block settings
+#方块设置
 [blocks]
 
 	[blocks.moon_rose]
-		#How much magical essence a Moon Rose has
-		#Range: 0 ~ 10000
+		#月华玫瑰拥有的魔法精华数量
+		#范围：0 ~ 10000
 		essence = 10
-		#Ticks spent sneaking near a Moon Rose to absorb one essence
-		#Range: 1 ~ 72000
+		#在月华玫瑰附近潜行吸收一份精华所需的刻数
+		#范围：1 ~ 72000
 		essenceCooldown = 300
 
-#Mod compatibility toggles; each only applies when that mod is installed
+#模组兼容性开关；仅在该模组已安装时生效
 [compat]
-	#First Aid: head-shot protection and per-part Blessing of Life
+	#First Aid：爆头保护及各部位生命祝福
 	firstAid = true
-	#Elenai Dodge 2: its dodges trigger the Arcing Orb dodge effects instead of the double-tap dodge
+	#Elenai Dodge 2：其闪避触发弧光宝珠的闪避效果，而非双击闪避
 	elenaiDodge = false
-	#Talents: the Sidestep skill triggers the Arcing Orb dodge effects instead of the double-tap dodge
+	#Talents：侧步技能触发弧光宝珠的闪避效果，而非双击闪避
 	talents = false
-	#Cold Sweat: heat and cold immunities
+	#Cold Sweat：高温与低温免疫
 	coldSweat = false
-	#Simple Difficulty: thirst and parasite immunities; its Flight effect takes over creative flight
+	#Simple Difficulty：口渴与寄生虫免疫；其飞行效果接管创造模式飞行
 	simpleDifficulty = false
-	#Thirst Was Taken: Water Absorption
+	#Thirst Was Taken：水分吸收
 	thirstWasTaken = false
-	#Enhanced Visuals: clear vision abilities
+	#Enhanced Visuals：清晰视野能力
 	enhancedVisuals = true
-	#Lycanites Mobs: Weightless blocks the Weight effect
+	#Lycanites Mobs：无重石阻挡重量效果
 	lycanitesMobs = false
-	#Defiled Lands: Vicious Strike can use its Bleeding effect
+	#Defiled Lands：凶蛮打击可使用其流血效果
 	defiledLands = false
 

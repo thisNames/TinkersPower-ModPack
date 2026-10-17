@@ -14,7 +14,8 @@ ServerEvents.entityLootTables(event =>
                                 text: Text.translatable("loot.kubejs.tooltip.artifacts.flame_pendant_vow").getString()
                             })
                         ]
-                    }
+                    },
+                    tool_quality: 31
                 })
             });
 

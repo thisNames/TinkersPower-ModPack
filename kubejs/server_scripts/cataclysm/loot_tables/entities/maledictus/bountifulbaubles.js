@@ -13,7 +13,8 @@ ServerEvents.entityLootTables(event =>
                                 text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.gauntlets_dexterity_vow").getString()
                             })
                         ]
-                    }
+                    },
+                    tool_quality: 31
                 })
             });
 

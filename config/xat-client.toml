@@ -33,7 +33,7 @@
 	translatedX = 0.01
 	#Vertical position as a fraction of the screen height
 	#Range: 0.0 ~ 1.0
-	translatedY = 0.94
+	translatedY = 0.95
 	#Position the bar with pixel coordinates instead of screen fractions
 	usePixelPosition = false
 	#Horizontal position in pixels

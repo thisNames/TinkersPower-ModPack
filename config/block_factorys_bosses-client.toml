@@ -27,7 +27,7 @@
 
 [Rolling]
 	"Will the camera rotate when rolling while in first-person view" = false
-	"Will there be a GUI element displaying current roll count" = false
+	"Will there be a GUI element displaying current roll count" = true
 	#GUI anchors are preset locations for the rolling GUI visual to appear. Pick the one that suits you most.
 	#"HOTBAR_RIGHT" : At the immediate right of your hotbar.
 	#"HOTBAR_LEFT" : At the immediate left of your hotbar.
@@ -39,6 +39,6 @@
 	#Allowed Values: HOTBAR_RIGHT, HOTBAR_LEFT, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, SCREEN_CENTER
 	"The GUI anchor will be" = "HOTBAR_RIGHT"
 	#You can also additionally offset the GUI element with the use of the X and Y offset values.
-	"Roll GUI element X offset (Bigger number goes right, negative goes left)" = 0
-	"Roll GUI element Y offset (Bigger number goes down, negative goes up)" = 0
+	"Roll GUI element X offset (Bigger number goes right, negative goes left)" = 3
+	"Roll GUI element Y offset (Bigger number goes down, negative goes up)" = -1
 
