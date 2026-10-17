@@ -1,0 +1,1748 @@
+#Miscellaneous settings
+[misc]
+	#Does Depth Strider Stack with Swim Speed Attributes?
+	depthStriderStacks = false
+	#Other swim speed enchantments that do not stack with Swim Speed Attributes (enchantment ids)
+	nonStackingSwimEnchantments = []
+	#If enabled, the player will be unable to move when transforming from one race to another
+	preventMovementWhileTransforming = false
+	#Vanilla MC doesn't handle interaction with increased reach properly, this fixes it
+	reachInteractionFix = true
+	#Hidden feature, add anything into this list to disable it.
+	disabledBlessings = []
+
+#Food settings
+[food]
+	#Register this mod's foods. Requires a game restart to take effect.
+	enabled = true
+	#Do race foods apply their transformation effect?
+	transformationEffects = true
+	#Are transformation effects kept on death?
+	keepEffectsOnDeath = true
+
+#Per-race settings
+[races]
+	#Prompts the player to choose a Race when joining a world for the first time.
+	selectionMenu = false
+	#These are races which are blacklisted from the Race Selection Menu if Enabled
+	selectionBlacklist = ["Dragon", "Taurus"]
+
+	#human settings
+	[races.human]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 100
+
+		[races.human.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 100
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 100
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.human.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+	#fairy settings
+	[races.fairy]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:-0.6, Operation:2", "Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:2", "Name:minecraft:generic.attack_damage, Amount:-0.75, Operation:2", "Name:minecraft:generic.armor, Amount:-0.5, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2", "Name:generic.reachDistance, Amount:-0.35, Operation:2", "Name:forge:swim_speed, Amount:-0.25, Operation:2", "Name:xat:jump, Amount:-0.25, Operation:2", "Name:forge:step_height_addition, Amount:-0.35, Operation:0", "Name:xat:fly_speed, Amount:-0.4, Operation:2"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 500
+
+		[races.fairy.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 25
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 25
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.fairy.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.fairy.abilities]
+
+			[races.fairy.abilities.flight]
+				#Enable this ability
+				enabled = true
+				#Mana spent every second while flying; 0 makes flight free
+				#Range: 0.0 ~ 10000.0
+				cost = 0.0
+
+			[races.fairy.abilities.elytra_flight]
+				#Enable this ability
+				enabled = true
+				#Pressing jump while gliding gives an upward boost
+				liftEnabled = true
+				#Crashing into a wall while gliding deals damage, like vanilla elytra
+				collisionDamage = true
+				#Mana spent every second while gliding; 0 makes gliding free
+				#Range: 0.0 ~ 10000.0
+				cost = 0.0
+				#Mana spent per lift boost
+				#Range: 0.0 ~ 10000.0
+				liftCost = 0.0
+				#Upward velocity added per lift boost
+				#Range: 0.0 ~ 10.0
+				liftStrength = 0.42
+
+			[races.fairy.abilities.climbing]
+				#Enable this ability
+				enabled = true
+				#true: only the listed blocks are climbable; false: every block except the listed ones
+				useWhitelist = true
+				#Block ids, *-wildcards or #tags
+				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
+
+			[races.fairy.abilities.mending_bloom]
+				#Enable this ability
+				enabled = true
+				#Effects applied inside the field. Format: modid:effect:duration:amplifier
+				effects = ["minecraft:instant_health:60:0"]
+				#Field radius
+				#Range: 0.5 ~ 32.0
+				radius = 3.0
+				#Field vertical radius
+				#Range: 0.5 ~ 32.0
+				verticalRadius = 2.0
+				#Field duration in ticks
+				#Range: 1 ~ 72000
+				duration = 120
+				#Ticks before the field becomes active
+				#Range: 0 ~ 1200
+				waitTime = 10
+				#Ticks between field pulses
+				#Range: 1 ~ 1200
+				pulseInterval = 20
+				#Ticks before the same target can be affected again
+				#Range: 1 ~ 1200
+				reapplicationDelay = 20
+				#Durability restored to dropped items per pulse; 0 disables
+				#Range: 0 ~ 10000
+				itemRepairAmount = 1
+				#Plants grown per pulse; 0 disables
+				#Range: 0 ~ 256
+				growthAttemptsPerPulse = 4
+				#Maximum casting distance
+				#Range: 1.0 ~ 64.0
+				castRange = 15.0
+				#Mana cost per second of field duration
+				#Range: 0.0 ~ 10000.0
+				costPerSecond = 20.0
+				#Extra mana cost per configured effect
+				#Range: 0.0 ~ 10000.0
+				costPerPotionEffect = 5.0
+				#Extra mana cost per effect amplifier level
+				#Range: 0.0 ~ 10000.0
+				costPerEffectLevel = 5.0
+
+	#dwarf settings
+	[races.dwarf]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:-0.3, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:0.2, Operation:1", "Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_speed, Amount:-0.25, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:0.25, Operation:2"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 100
+
+		[races.dwarf.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 75
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 75
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.dwarf.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.dwarf.abilities]
+
+			[races.dwarf.abilities.skilled_miner]
+				#Enable this ability
+				enabled = true
+				#Ores drop as if mined with Fortune
+				fortune = true
+				#Natural fortune stacks with the tool's own Fortune enchantment
+				fortuneMix = true
+				#Pickaxes can harvest blocks one tier above their normal tier
+				skilledMiner = true
+				#Mining speed with a suitable pickaxe scales with block hardness, capped for safety
+				staticMining = true
+				#Blocks affected by natural fortune
+				fortuneBlocks = ["#minecraft:coal_ores", "#minecraft:lapis_ores", "#minecraft:diamond_ores", "#minecraft:redstone_ores", "#minecraft:emerald_ores", "minecraft:nether_quartz_ore"]
+
+				[races.dwarf.abilities.skilled_miner.experience]
+					#Listed blocks drop extra experience
+					bonusExp = true
+					#Upper bound (exclusive) of the random extra experience
+					#Range: 0 ~ 1000
+					bonusExpMax = 2
+					#Lower bound of the random extra experience
+					#Range: 0 ~ 1000
+					bonusExpMin = 0
+					bonusExpBlocks = ["#minecraft:coal_ores", "#minecraft:iron_ores", "#minecraft:gold_ores", "#minecraft:lapis_ores", "#minecraft:redstone_ores", "#minecraft:diamond_ores", "#minecraft:emerald_ores", "minecraft:nether_quartz_ore"]
+					#Listed blocks always drop at least 1 experience
+					minExp = true
+					minExpBlocks = ["minecraft:stone", "minecraft:end_stone"]
+
+	#titan settings
+	[races.titan]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:2, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:2", "Name:minecraft:generic.attack_speed, Amount:-0.5, Operation:2", "Name:generic.reachDistance, Amount:1, Operation:1", "Name:xat:jump, Amount:0.75, Operation:1", "Name:forge:step_height_addition, Amount:1.4, Operation:0"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 50
+
+		[races.titan.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 300
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 300
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.titan.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.titan.abilities]
+
+			[races.titan.abilities.heavy]
+				#Enable this ability
+				enabled = true
+				#Trample farmland and break plants underfoot while not sneaking
+				trample = true
+
+			[races.titan.abilities.large_hands]
+				#Enable this ability
+				enabled = true
+				#When 3x3x3 area mining triggers: SNEAK, STAND, ALWAYS or NEVER
+				#Allowed Values: SNEAK, STAND, ALWAYS, NEVER
+				miningExtended = "STAND"
+				#Blocks never broken by area mining; ids, *-wildcards or #tags
+				miningExtendedBlacklist = ["dynamictrees:*"]
+
+	#goblin settings
+	[races.goblin]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:-0.4, Operation:2", "Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.luck, Amount:1, Operation:0", "Name:forge:swim_speed, Amount:0.1, Operation:1"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 75
+
+		[races.goblin.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 50
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 50
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.goblin.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.goblin.abilities]
+			#Explosion damage x (current health / 20), clamped to 1%..100%; fire damage x0.8, lava x0.5
+			naturalExplosiveResistance = true
+			#Creepers drop you as their attack target
+			friendlyCreepers = true
+			#Creepers you hit ignite immediately
+			creepersExplodeOnContact = true
+
+			[races.goblin.abilities.climbing]
+				#Enable this ability
+				enabled = true
+				#true: only the listed blocks are climbable; false: every block except the listed ones
+				useWhitelist = true
+				#Block ids, *-wildcards or #tags
+				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
+
+			[races.goblin.abilities.wolf_rider]
+				#Enable this ability
+				enabled = true
+
+	#elf settings
+	[races.elf]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.movement_speed, Amount:0.1, Operation:1", "Name:minecraft:generic.attack_speed, Amount:0.3, Operation:1"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 200
+
+		[races.elf.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 100
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 100
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.elf.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.elf.abilities]
+
+			[races.elf.abilities.skilled_archer]
+				#Enable this ability
+				enabled = true
+				#Mana cost scale of a sneaking charged shot
+				#Range: 0.0 ~ 10000.0
+				chargeShotCost = 20.0
+				#A fully drawn, fully mana-charged arrow explodes on impact
+				chargeShotExplodes = true
+				#How bow weight scales arrow damage
+				#Allowed Values: LINEAR, SOFT, KINETIC
+				scalingMode = "KINETIC"
+				#Ticks to fully draw a bow
+				#Range: 1 ~ 1200
+				chargeShotTime = 60
+				#Base damage multiplier of shots
+				#Range: 0.0 ~ 100.0
+				chargeShotDamageMultiplier = 1.5
+				#Lower bound of the damage multiplier
+				#Range: 0.0 ~ 100.0
+				chargeShotMinDamageMultiplier = 1.0
+				#Extra multiplier when the full mana cost was paid
+				#Range: 0.0 ~ 100.0
+				chargeShotManaDamageMultiplier = 1.0
+				#Reference draw weight; bows heavier than this deal more damage
+				#Range: 1.0 ~ 10000.0
+				defaultWeight = 60.0
+				#Bows that never benefit (* wildcard)
+				bowBlacklist = ["*:*crossbow*"]
+				#Bow draw weights. Format: item;weight (* wildcard). Unlisted bows get no bonus
+				bows = ["minecraft:bow;40.0", "spartanweaponry:aluminum_longbow;70.0", "spartanweaponry:bronze_longbow;70.0", "spartanweaponry:constantan_longbow;70.0", "spartanweaponry:copper_longbow;70.0", "spartanweaponry:diamond_longbow;70.0", "spartanweaponry:electrum_longbow;70.0", "spartanweaponry:golden_longbow;70.0", "spartanweaponry:invar_longbow;70.0", "spartanweaponry:iron_longbow;70.0", "spartanweaponry:lead_longbow;70.0", "spartanweaponry:leather_longbow;70.0", "spartanweaponry:netherite_longbow;70.0", "spartanweaponry:nickel_longbow;70.0", "spartanweaponry:platinum_longbow;70.0", "spartanweaponry:silver_longbow;70.0", "spartanweaponry:steel_longbow;70.0", "spartanweaponry:tin_longbow;70.0", "spartanweaponry:wooden_longbow;70.0", "spartanfire_rlc:desert_myrmex_chitin_longbow;70.0", "spartanfire_rlc:desert_myrmex_stinger_longbow;70.0", "spartanfire_rlc:dragon_bone_longbow;70.0", "spartanfire_rlc:fire_dragonsteel_longbow;70.0", "spartanfire_rlc:flamed_dragon_bone_longbow;70.0", "spartanfire_rlc:ice_dragonsteel_longbow;70.0", "spartanfire_rlc:iced_dragon_bone_longbow;70.0", "spartanfire_rlc:jungle_myrmex_chitin_longbow;70.0", "spartanfire_rlc:jungle_myrmex_stinger_longbow;70.0", "spartanfire_rlc:lightning_dragon_bone_longbow;70.0", "spartanfire_rlc:lightning_dragonsteel_longbow;70.0"]
+
+	#faelis settings
+	[races.faelis]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:-0.25, Operation:1", "Name:minecraft:generic.movement_speed, Amount:0.15, Operation:1", "Name:minecraft:generic.attack_damage, Amount:-0.25, Operation:1", "Name:minecraft:generic.attack_speed, Amount:0.15, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:-0.15, Operation:2", "Name:minecraft:generic.luck, Amount:1, Operation:0", "Name:generic.reachDistance, Amount:-0.1, Operation:1", "Name:forge:swim_speed, Amount:0.3, Operation:1", "Name:xat:jump, Amount:0.6, Operation:1", "Name:forge:step_height_addition, Amount:0.6, Operation:0"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 125
+
+		[races.faelis.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 85
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 85
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.faelis.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.faelis.abilities]
+			#Unarmed melee attacks deal bonus damage
+			barehandCombat = true
+			#Bonus damage when both hands count as bare
+			#Range: 0.0 ~ 1000.0
+			barehandCombatBonus = 3.25
+			#Held items that still count as bare hands, adding their value as damage. Format: item[;hand];value
+			bareHands = []
+			#Drinking milk grants Invigorated and the milk buffs
+			milkBonus = true
+			#Default Invigorated duration in ticks
+			#Range: 1 ~ 72000
+			milkBonusDuration = 600
+			#Items that count as milk. Format: item[;level[;duration]]
+			milk = ["minecraft:milk_bucket"]
+			#Extra effects granted by milk. Format: modid:effect:duration:amplifier
+			milkBuffs = ["minecraft:speed:3600:0", "minecraft:strength:3600:0", "minecraft:jump_boost:3600:0"]
+			#Heavy armor slows movement and lowers jump height
+			heavyArmorPenalty = true
+			#Invigorated cancels the heavy armor penalty
+			milkInvigorated = true
+			#Armor weights. Format: item or material[;slot];weight
+			heavyArmor = ["minecraft:chainmail_helmet;0.01", "minecraft:chainmail_chestplate;0.09", "minecraft:chainmail_leggings;0.075", "minecraft:chainmail_boots;0.025", "iron;head;0.025", "iron;chest;0.15", "iron;legs;0.075", "iron;feet;0.05", "minecraft:golden_helmet;0.04", "minecraft:golden_chestplate;0.2", "minecraft:golden_leggings;0.1", "minecraft:golden_boots;0.06", "diamond;0.075"]
+
+			[races.faelis.abilities.climbing]
+				#Enable this ability
+				enabled = true
+				#true: only the listed blocks are climbable; false: every block except the listed ones
+				useWhitelist = true
+				#Block ids, *-wildcards or #tags
+				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
+
+			[races.faelis.abilities.night_vision]
+				#Enable this ability
+				enabled = false
+				#Mana spent every second while active; 0 makes it free
+				#Range: 0.0 ~ 10000.0
+				cost = 0.0
+
+	#dragon settings
+	[races.dragon]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.4, Operation:2"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 400
+
+		[races.dragon.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 120
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 120
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.dragon.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.dragon.abilities]
+
+			[races.dragon.abilities.flight]
+				#Enable this ability
+				enabled = true
+				#Mana spent every second while flying; 0 makes flight free
+				#Range: 0.0 ~ 10000.0
+				cost = 5.0
+
+			[races.dragon.abilities.elytra_flight]
+				#Enable this ability
+				enabled = true
+				#Pressing jump while gliding gives an upward boost
+				liftEnabled = true
+				#Crashing into a wall while gliding deals damage, like vanilla elytra
+				collisionDamage = true
+				#Mana spent every second while gliding; 0 makes gliding free
+				#Range: 0.0 ~ 10000.0
+				cost = 0.0
+				#Mana spent per lift boost
+				#Range: 0.0 ~ 10000.0
+				liftCost = 10.0
+				#Upward velocity added per lift boost
+				#Range: 0.0 ~ 10.0
+				liftStrength = 0.42
+
+			[races.dragon.abilities.night_vision]
+				#Enable this ability
+				enabled = true
+				#Mana spent every second while active; 0 makes it free
+				#Range: 0.0 ~ 10000.0
+				cost = 0.0
+
+			[races.dragon.abilities.greedy_eyes]
+				#Enable this ability
+				enabled = true
+				#Mana spent per scan
+				#Range: 0.0 ~ 10000.0
+				cost = 0.0
+				#Only highlight the closest target
+				closest = true
+				#Ticks between scans
+				#Range: 1 ~ 12000
+				frequency = 79
+				#Treasure list. Format: block id, entity id or #block_tag;#RRGGBB
+				targets = ["#forge:ores/coal;#464646", "#forge:ores/iron;#FFCC99", "#forge:ores/gold;#FFD700", "#forge:ores/lapis;#26619C", "#forge:ores/redstone;#B02E26", "#forge:ores/diamond;#00E6FF", "#forge:ores/emerald;#00FF4D", "#forge:ores/quartz;#EBEBEB", "minecraft:chest;#FFD700", "minecraft:chest_minecart;#FFD700"]
+				#Vertical scan range in blocks
+				#Range: 0 ~ 32
+				rangeVertical = 6
+				#Horizontal scan range in blocks
+				#Range: 0 ~ 32
+				rangeHorizontal = 12
+				#Maximum particles shown per scan when not only showing the closest target
+				#Range: 0 ~ 4096
+				particles = 255
+				#When the dragon growl hints at the target direction
+				#Allowed Values: SNEAK, STAND, ALWAYS, NEVER
+				growlActivation = "SNEAK"
+				#Growl volume in percent
+				#Range: 0 ~ 100
+				volume = 100
+
+			[races.dragon.abilities.fire_immunity]
+				#Enable this ability
+				enabled = false
+				#Also grant the matching resistance effect; 0 disables the effect
+				#Range: > 0
+				duration = 3600
+
+			[races.dragon.abilities.breath_dragon]
+				#Enable this ability
+				enabled = true
+				#Breath can set fires, freeze liquids and place snow
+				terrain = true
+				#Damage per breath projectile
+				#Range: 0.0 ~ 10000.0
+				damage = 1.0
+				#Mana spent per breath projectile
+				#Range: 0.0 ~ 10000.0
+				cost = 10.0
+				#Ticks between breath projectiles while holding the key
+				#Range: 0 ~ 200
+				frequency = 3
+				#Effects applied to targets. Format: modid:effect:duration:amplifier
+				effects = []
+
+			[races.dragon.abilities.elements]
+
+				[races.dragon.abilities.elements.fire]
+					#Effects granted while in this elemental form
+					effectsToAdd = []
+					#Effects this elemental form is immune to
+					effectsToRemove = ["lycanitesmobs:smouldering"]
+					#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+					#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+					#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+					damageTypesToIgnore = ["*;isFire"]
+					#Attribute modifiers for this elemental form
+					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
+
+					[races.dragon.abilities.elements.fire.fire_immunity]
+						#Enable this ability
+						enabled = true
+						#Also grant the matching resistance effect; 0 disables the effect
+						#Range: > 0
+						duration = 3600
+
+					[races.dragon.abilities.elements.fire.breath_fire]
+						#Enable this ability
+						enabled = true
+						#Breath can set fires, freeze liquids and place snow
+						terrain = true
+						#Damage per breath projectile
+						#Range: 0.0 ~ 10000.0
+						damage = 1.0
+						#Mana spent per breath projectile
+						#Range: 0.0 ~ 10000.0
+						cost = 10.0
+						#Ticks between breath projectiles while holding the key
+						#Range: 0 ~ 200
+						frequency = 3
+						#Effects applied to targets. Format: modid:effect:duration:amplifier
+						effects = []
+
+					#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+					[races.dragon.abilities.elements.fire.survival]
+						#Immune to overheating (Cold Sweat)
+						immuneToHeat = true
+						#Immune to freezing (Cold Sweat)
+						immuneToCold = false
+						#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+						immuneToThirst = false
+						#Immune to the Parasites effect from dirty water (Simple Difficulty)
+						immuneToParasites = false
+
+				[races.dragon.abilities.elements.ice]
+					#Effects granted while in this elemental form
+					effectsToAdd = []
+					#Effects this elemental form is immune to
+					effectsToRemove = []
+					#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+					#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+					#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+					damageTypesToIgnore = ["*;isIce"]
+					#Attribute modifiers for this elemental form
+					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
+
+					[races.dragon.abilities.elements.ice.ice_immunity]
+						#Enable this ability
+						enabled = true
+						#Also grant the matching resistance effect; 0 disables the effect
+						#Range: > 0
+						duration = 3600
+
+					[races.dragon.abilities.elements.ice.frost_walker]
+						#Enable this ability
+						enabled = true
+
+					[races.dragon.abilities.elements.ice.breath_ice]
+						#Enable this ability
+						enabled = true
+						#Breath can set fires, freeze liquids and place snow
+						terrain = true
+						#Damage per breath projectile
+						#Range: 0.0 ~ 10000.0
+						damage = 1.0
+						#Mana spent per breath projectile
+						#Range: 0.0 ~ 10000.0
+						cost = 10.0
+						#Ticks between breath projectiles while holding the key
+						#Range: 0 ~ 200
+						frequency = 3
+						#Effects applied to targets. Format: modid:effect:duration:amplifier
+						effects = ["minecraft:slowness:100:2"]
+
+					#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+					[races.dragon.abilities.elements.ice.survival]
+						#Immune to overheating (Cold Sweat)
+						immuneToHeat = false
+						#Immune to freezing (Cold Sweat)
+						immuneToCold = true
+						#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+						immuneToThirst = false
+						#Immune to the Parasites effect from dirty water (Simple Difficulty)
+						immuneToParasites = false
+
+				[races.dragon.abilities.elements.lightning]
+					#Effects granted while in this elemental form
+					effectsToAdd = []
+					#Effects this elemental form is immune to
+					effectsToRemove = ["lycanitesmobs:paralysis"]
+					#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+					#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+					#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+					damageTypesToIgnore = ["*;isLightning"]
+					#Attribute modifiers for this elemental form
+					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
+
+					[races.dragon.abilities.elements.lightning.lightning_immunity]
+						#Enable this ability
+						enabled = true
+						#Also grant the matching resistance effect; 0 disables the effect
+						#Range: > 0
+						duration = 3600
+
+					[races.dragon.abilities.elements.lightning.lightning_bolt]
+						#Enable this ability
+						enabled = true
+						#Damage at full charge
+						#Range: 0.0 ~ 10000.0
+						attackDamage = 40.0
+						#Mana spent at full charge
+						#Range: 0.0 ~ 10000.0
+						attackCost = 200.0
+						#Ticks needed to reach full charge
+						#Range: 1 ~ 1200
+						chargeTime = 20
+
+					[races.dragon.abilities.elements.lightning.breath_lightning]
+						#Enable this ability
+						enabled = true
+						#Breath can set fires, freeze liquids and place snow
+						terrain = true
+						#Damage per breath projectile
+						#Range: 0.0 ~ 10000.0
+						damage = 1.0
+						#Mana spent per breath projectile
+						#Range: 0.0 ~ 10000.0
+						cost = 10.0
+						#Ticks between breath projectiles while holding the key
+						#Range: 0 ~ 200
+						frequency = 3
+						#Effects applied to targets. Format: modid:effect:duration:amplifier
+						effects = ["minecraft:slowness:20:4", "minecraft:weakness:20:1"]
+
+					#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+					[races.dragon.abilities.elements.lightning.survival]
+						#Immune to overheating (Cold Sweat)
+						immuneToHeat = false
+						#Immune to freezing (Cold Sweat)
+						immuneToCold = false
+						#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+						immuneToThirst = false
+						#Immune to the Parasites effect from dirty water (Simple Difficulty)
+						immuneToParasites = false
+
+	#taurus settings
+	[races.taurus]
+		#Can this race ride entities at all?
+		canMount = true
+		#Can this race steer boats?
+		canControlBoats = true
+		#Treat the mount list as a whitelist instead of a blacklist
+		mountWhitelist = false
+		#Entity ids this race may not ride; "modid:*" matches a whole mod
+		mountBlacklist = []
+		#Effects granted while transformed. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects this race is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while transformed. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.max_health, Amount:0.5, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:0.5, Operation:0", "Name:minecraft:generic.armor, Amount:0.2, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.3, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.2, Operation:1", "Name:minecraft:generic.movement_speed, Amount:-0.1, Operation:1", "Name:forge:swim_speed, Amount:-0.15, Operation:2"]
+		#Magic affinity; scales this race's mana pool
+		#Range: 0 ~ 10000
+		magicAffinity = 100
+
+		[races.taurus.size]
+			#Height as a percentage of the default player height
+			#Range: 1 ~ 1000
+			height = 120
+			#Width as a percentage of the default player width
+			#Range: 1 ~ 1000
+			width = 120
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[races.taurus.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[races.taurus.abilities]
+
+			[races.taurus.abilities.stampede]
+				#Enable this ability
+				enabled = true
+				#Damage dealt to entities hit at full charge
+				#Range: 0.0 ~ 10000.0
+				attackDamage = 10.0
+				#Mana spent for a full charge
+				#Range: 0.0 ~ 10000.0
+				attackCost = 20.0
+				#Ticks needed to reach full charge
+				#Range: 1 ~ 1200
+				chargeTime = 40
+				#Dash velocity at minimum charge
+				#Range: 0.0 ~ 20.0
+				velocityMin = 3.0
+				#Dash velocity at full charge
+				#Range: 0.0 ~ 20.0
+				velocityMax = 6.0
+
+#Mana settings
+[magic]
+	#Enable the mana system; when disabled, abilities never run out of mana
+	manaEnabled = true
+	#Ticks between each mana regeneration step
+	#Range: 1 ~ 72000
+	manaUpdateTicks = 20
+	#Ticks mana regeneration pauses after spending mana
+	#Range: 0 ~ 72000
+	manaRegenTimeout = 60
+	#Max mana gained per bonus point (Mana Crystal)
+	#Range: 0.0 ~ 10000.0
+	bonusPerPoint = 10.0
+	#Maximum bonus points
+	#Range: 0 ~ 10000
+	bonusMax = 90
+	#Items that restore mana when consumed. Format: item_id;amount or #tag;amount
+	#Append % to restore a percentage of max mana instead of a flat amount
+	recovery = ["xat:dwarf_stout;100%", "xat:elf_sap;100%", "xat:faelis_food;100%", "xat:fairy_dew;100%", "xat:goblin_soup;100%", "xat:titan_spirit;100%", "xat:taurus_tea;100%", "xat:dragon_gem;100%", "xat:mana_crystal;100%", "xat:mana_reagent;100%", "xat:mana_candy;50", "minecraft:golden_apple;20", "minecraft:enchanted_golden_apple;50", "botania:mana_cookie;10%"]
+
+	[magic.items]
+		#Using a Mana Crystal on stone may shatter it into a Mana Reagent
+		crystalExplodes = false
+		#Mana Reagent and Restoration Serum inflict poison and weakness
+		reagentHarmful = true
+
+#Trinket settings
+[items]
+
+	[items.transformation_rings]
+		#Enable the dwarf ring
+		dwarf = true
+		#Enable the elf ring
+		elf = true
+		#Enable the fairy ring
+		fairy = true
+		#Enable the goblin ring
+		goblin = true
+		#Enable the titan ring
+		titan = true
+		#Enable the faelis ring
+		faelis = true
+		#Enable the dragon ring
+		dragon = true
+		#Enable the taurus ring
+		taurus = true
+
+	[items.dragons_eye]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = ["onAttacked:*;isMagic", "onHurt:*;isMagic"]
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.dragons_eye.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.dragons_eye.greedy_eyes]
+			#Enable this ability
+			enabled = true
+			#Mana spent per scan
+			#Range: 0.0 ~ 10000.0
+			cost = 0.0
+			#Only highlight the closest target
+			closest = true
+			#Ticks between scans
+			#Range: 1 ~ 12000
+			frequency = 79
+			#Treasure list. Format: block id, entity id or #block_tag;#RRGGBB
+			targets = ["#forge:ores/coal;#464646", "#forge:ores/iron;#FFCC99", "#forge:ores/gold;#FFD700", "#forge:ores/lapis;#26619C", "#forge:ores/redstone;#B02E26", "#forge:ores/diamond;#00E6FF", "#forge:ores/emerald;#00FF4D", "#forge:ores/quartz;#EBEBEB", "minecraft:chest;#FFD700", "minecraft:chest_minecart;#FFD700"]
+			#Vertical scan range in blocks
+			#Range: 0 ~ 32
+			rangeVertical = 6
+			#Horizontal scan range in blocks
+			#Range: 0 ~ 32
+			rangeHorizontal = 12
+			#Maximum particles shown per scan when not only showing the closest target
+			#Range: 0 ~ 4096
+			particles = 255
+			#When the dragon growl hints at the target direction
+			#Allowed Values: SNEAK, STAND, ALWAYS, NEVER
+			growlActivation = "SNEAK"
+			#Growl volume in percent
+			#Range: 0 ~ 100
+			volume = 100
+
+		[items.dragons_eye.night_vision]
+			#Enable this ability
+			enabled = true
+			#Mana spent every second while active; 0 makes it free
+			#Range: 0.0 ~ 10000.0
+			cost = 0.0
+
+		[items.dragons_eye.fire_immunity]
+			#Enable this ability
+			enabled = false
+			#Also grant the matching resistance effect; 0 disables the effect
+			#Range: > 0
+			duration = 3600
+
+		[items.dragons_eye.fire]
+			#Effects granted while in this elemental form
+			effectsToAdd = []
+			#Effects this elemental form is immune to
+			effectsToRemove = ["lycanitesmobs:smouldering", "iceandfire:melt"]
+			#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+			#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+			#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+			damageTypesToIgnore = ["*;isFire"]
+			#Attribute modifiers for this elemental form
+			attributes = []
+
+			[items.dragons_eye.fire.fire_immunity]
+				#Enable this ability
+				enabled = true
+				#Also grant the matching resistance effect; 0 disables the effect
+				#Range: > 0
+				duration = 3600
+
+			#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+			[items.dragons_eye.fire.survival]
+				#Immune to overheating (Cold Sweat)
+				immuneToHeat = true
+				#Immune to freezing (Cold Sweat)
+				immuneToCold = false
+				#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+				immuneToThirst = false
+				#Immune to the Parasites effect from dirty water (Simple Difficulty)
+				immuneToParasites = false
+
+		[items.dragons_eye.ice]
+			#Effects granted while in this elemental form
+			effectsToAdd = []
+			#Effects this elemental form is immune to
+			effectsToRemove = ["iceandfire:frostbite", "iceandfire:frostburn"]
+			#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+			#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+			#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+			damageTypesToIgnore = ["*;isIce"]
+			#Attribute modifiers for this elemental form
+			attributes = []
+
+			[items.dragons_eye.ice.ice_immunity]
+				#Enable this ability
+				enabled = true
+				#Also grant the matching resistance effect; 0 disables the effect
+				#Range: > 0
+				duration = 3600
+
+			[items.dragons_eye.ice.frost_walker]
+				#Enable this ability
+				enabled = true
+
+			#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+			[items.dragons_eye.ice.survival]
+				#Immune to overheating (Cold Sweat)
+				immuneToHeat = false
+				#Immune to freezing (Cold Sweat)
+				immuneToCold = true
+				#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+				immuneToThirst = false
+				#Immune to the Parasites effect from dirty water (Simple Difficulty)
+				immuneToParasites = false
+
+		[items.dragons_eye.lightning]
+			#Effects granted while in this elemental form
+			effectsToAdd = []
+			#Effects this elemental form is immune to
+			effectsToRemove = ["lycanitesmobs:paralysis", "iceandfire:voltage"]
+			#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+			#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+			#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+			damageTypesToIgnore = ["*;isLightning"]
+			#Attribute modifiers for this elemental form
+			attributes = []
+
+			[items.dragons_eye.lightning.lightning_immunity]
+				#Enable this ability
+				enabled = true
+				#Also grant the matching resistance effect; 0 disables the effect
+				#Range: > 0
+				duration = 3600
+
+			#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+			[items.dragons_eye.lightning.survival]
+				#Immune to overheating (Cold Sweat)
+				immuneToHeat = false
+				#Immune to freezing (Cold Sweat)
+				immuneToCold = false
+				#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+				immuneToThirst = false
+				#Immune to the Parasites effect from dirty water (Simple Difficulty)
+				immuneToParasites = false
+
+	[items.ender_tiara]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = ["lycanitesmobs:instability"]
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = ["*;isVoid"]
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.ender_tiara.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = true
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.ender_tiara.ender_queen]
+			#Enable this ability
+			enabled = true
+			#The auxiliary key opens the ender chest, costing all mana
+			enderChest = true
+			#Water drains mana, or hurts once mana runs out
+			waterHurts = false
+			#1 in N chance to ignore an attack from a living attacker
+			#Range: 0 ~ 10000
+			ignoreChance = 10
+			#1 in N chance to summon an enderman knight when attacked
+			#Range: 0 ~ 10000
+			spawnChance = 10
+			#1 in N chance to teleport away from projectiles
+			#Range: 0 ~ 10000
+			teleportChance = 1
+			#Endermen follow the queen around
+			endermanFollow = true
+			#Endermen may still fight back against the queen
+			endermanRetaliate = false
+			#Endermen killed by the queen drop experience
+			endermanDropExp = false
+			#Endermen killed by the queen drop items
+			endermanDropItems = false
+			#Mobs near the queen or a boss cannot teleport
+			blockTeleportation = false
+
+		[items.ender_tiara.ender_eyes]
+			#Enable this ability
+			enabled = true
+
+	[items.damage_shield]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.damage_shield.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.damage_shield.safe_guard]
+			#Enable this ability
+			enabled = true
+			#Every hit after this many is completely blocked, then the counter resets
+			#Range: 0 ~ 1000
+			maxHits = 3
+			#Hits weaker than this do not count
+			#Range: 0.0 ~ 10000.0
+			minDamageToCount = 1.0
+			#Hits weaker than this are never blocked
+			#Range: 0.0 ~ 10000.0
+			minDamageToTrigger = 1.0
+			#Explosion damage multiplier; 1 disables the reduction
+			#Range: 0.0 ~ 1.0
+			explosionReducedAmount = 0.25
+			#Effect kept on the wearer
+			effect = "minecraft:resistance"
+			#Amplifier of the kept effect (0 = level I)
+			#Range: 0 ~ 255
+			effectLevel = 0
+			#Applying the same effect again stacks one level on top of the kept one
+			effectStacks = true
+			#Highest amplifier reachable by stacking
+			#Range: 0 ~ 255
+			effectStackLimit = 3
+			#Volume of the block sound; 0 disables
+			#Range: 0.0 ~ 1.0
+			soundVolume = 0.2
+			#Pitch of the block sound
+			#Range: 0.5 ~ 2.0
+			soundPitch = 1.0
+
+		[items.damage_shield.hard_head]
+			#Enable this ability
+			enabled = true
+			#1 in N chance to shrug off a lethal head shot; 0 always
+			#Range: 0 ~ 10000
+			chance = 100
+
+		[items.damage_shield.clear_vision]
+			#Enable this ability
+			enabled = true
+
+	[items.glow_ring]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.glow_ring.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.glow_ring.night_vision]
+			#Enable this ability
+			enabled = true
+			#Mana spent every second while active; 0 makes it free
+			#Range: 0.0 ~ 10000.0
+			cost = 0.0
+
+	[items.poison_stone]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = ["minecraft:poison", "minecraft:hunger", "lycanitesmobs:plague"]
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = ["*;isPoison"]
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.poison_stone.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.poison_stone.poison_affinity]
+			#Enable this ability
+			enabled = true
+			#Poison damage multiplier against poisoned targets
+			#Range: 0.0 ~ 100.0
+			damageMultiplier = 2.0
+			#1 in N chance to inflict the effect on hit; 0 disables
+			#Range: 0 ~ 10000
+			chance = 5
+			#Duration of the inflicted effect in ticks
+			#Range: 1 ~ 72000
+			duration = 40
+
+		[items.poison_stone.poison_immunity]
+			#Enable this ability
+			enabled = true
+			#Also grant the matching resistance effect; 0 disables the effect
+			#Range: > 0
+			duration = 3600
+
+	[items.wither_ring]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = ["minecraft:nausea"]
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.wither_ring.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.wither_ring.dark_affinity]
+			#Enable this ability
+			enabled = true
+			#Heal for the full damage dealt instead of a capped amount
+			trueLeech = false
+			#Maximum health leeched per hit when trueLeech is off
+			#Range: 0.0 ~ 1000.0
+			leechAmount = 2.0
+			#1 in N chance to inflict the effect on hit; 0 disables
+			#Range: 0 ~ 10000
+			chance = 5
+			#Duration of the inflicted effect in ticks
+			#Range: 1 ~ 72000
+			duration = 40
+
+		[items.wither_ring.dark_immunity]
+			#Enable this ability
+			enabled = true
+			#Dark damage heals instead of hurting
+			healFromDark = true
+			#Portion of dark damage converted into healing
+			#Range: 0.0 ~ 100.0
+			healMultiplier = 1.0
+
+	[items.polarized_stone]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.polarized_stone.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.polarized_stone.magnetic]
+			#Enable this ability
+			enabled = true
+			#Pick items up instantly instead of pulling them in
+			pickupInstant = true
+			#Absorb experience orbs instantly instead of pulling them in
+			pickupInstantXp = true
+			#Also attract experience orbs
+			pickupXp = true
+			#Mana spent every frequency ticks while active; 0 makes it free
+			#Range: 0.0 ~ 10000.0
+			cost = 0.0
+			#Ticks between mana payments
+			#Range: 1 ~ 12000
+			frequency = 20
+			#Pull strength when not picking up instantly
+			#Range: 0.1 ~ 1.0
+			force = 0.1
+			#Vertical range in blocks
+			#Range: 0 ~ 32
+			rangeVertical = 6
+			#Horizontal range in blocks
+			#Range: 0 ~ 32
+			rangeHorizontal = 12
+
+		[items.polarized_stone.repel]
+			#Enable this ability
+			enabled = true
+			#Mana spent every frequency ticks while active; 0 makes it free
+			#Range: 0.0 ~ 10000.0
+			cost = 10.0
+			#Ticks between mana payments
+			#Range: 1 ~ 12000
+			frequency = 20
+			#Push strength
+			#Range: 0.1 ~ 1.0
+			force = 0.1
+			#Entity ids that get pushed away; "modid:*" matches a whole mod
+			whitelist = ["minecraft:arrow", "minecraft:fireball"]
+			#Vertical range in blocks
+			#Range: 0 ~ 32
+			rangeVertical = 6
+			#Horizontal range in blocks
+			#Range: 0 ~ 32
+			rangeHorizontal = 12
+
+	[items.sea_stone]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:forge:swim_speed, Amount:4, Operation:2"]
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.sea_stone.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = true
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = true
+
+		[items.sea_stone.water_affinity]
+			#Enable this ability
+			enabled = true
+			#Air bubbles kept topped up while underwater; 0 disables
+			#Range: 0 ~ 10
+			bubbles = 1
+			#Mine underwater as fast as on land
+			underwaterMining = true
+			#Use the vanilla Water Breathing effect instead of refilling air
+			vanilla = false
+
+		[items.sea_stone.water_immunity]
+			#Enable this ability
+			enabled = true
+			#Also grant the matching resistance effect; 0 disables the effect
+			#Range: > 0
+			duration = 3600
+
+		[items.sea_stone.skilled_swimmer]
+			#Enable this ability
+			enabled = true
+			#Use the old swimming behaviour: hover in place and follow the look direction
+			oldTweaks = false
+
+		[items.sea_stone.water_absorption]
+			#Enable this ability
+			enabled = true
+			#Hydration restored each time
+			#Range: 0 ~ 20
+			amount = 1
+			#Ticks between each restore
+			#Range: 1 ~ 72000
+			frequency = 20
+
+		[items.sea_stone.clear_vision]
+			#Enable this ability
+			enabled = true
+
+	[items.inertia_null_stone]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0"]
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.inertia_null_stone.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.inertia_null_stone.null_kinetic]
+			#Enable this ability
+			enabled = true
+			#Fall / kinetic damage multiplier; 0 negates it completely
+			#Range: 0.0 ~ 10.0
+			amount = 0.0
+			#Mana spent each time the ability reduces damage; 0 makes it free
+			#Range: 0.0 ~ 10000.0
+			cost = 0.0
+
+	[items.greater_inertia_stone]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.knockback_resistance, Amount:0.4, Operation:0", "Name:minecraft:generic.movement_speed, Amount:0.5, Operation:2", "Name:xat:jump, Amount:1, Operation:1", "Name:forge:step_height_addition, Amount:0.6, Operation:0"]
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.greater_inertia_stone.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.greater_inertia_stone.reduce_kinetic]
+			#Enable this ability
+			enabled = true
+			#Fall / kinetic damage multiplier; 0 negates it completely
+			#Range: 0.0 ~ 10.0
+			amount = 0.25
+			#Mana spent each time the ability reduces damage; 0 makes it free
+			#Range: 0.0 ~ 10000.0
+			cost = 0.0
+
+	[items.weightless_stone]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = []
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.weightless_stone.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.weightless_stone.weightless]
+			#Enable this ability
+			enabled = true
+
+	[items.arcing_orb]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = ["xat:paralysis"]
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1"]
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.arcing_orb.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.arcing_orb.dodge]
+			#Enable this ability
+			enabled = true
+			#Mana spent per dodge
+			#Range: 0.0 ~ 10000.0
+			cost = 30.0
+			#Dodging paralyses nearby entities
+			stuns = true
+			#Horizontal radius of the stun
+			#Range: 0.0 ~ 32.0
+			stunRadius = 2.0
+			#Ticks between dodges
+			#Range: 0 ~ 1200
+			cooldown = 20
+			#Dodge by holding the dodge key and pressing a direction instead of double tapping
+			keybindMovement = false
+
+		[items.arcing_orb.lightning_bolt]
+			#Enable this ability
+			enabled = true
+			#Damage at full charge
+			#Range: 0.0 ~ 10000.0
+			attackDamage = 40.0
+			#Mana spent at full charge
+			#Range: 0.0 ~ 10000.0
+			attackCost = 300.0
+			#Ticks needed to reach full charge
+			#Range: 1 ~ 1200
+			chargeTime = 120
+
+	[items.teddy_bear]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = ["lycanitesmobs:fear", "lycanitesmobs:insomnia"]
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = []
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.teddy_bear.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.teddy_bear.well_rested]
+			#Enable this ability
+			enabled = true
+			#Effects granted after a full night's sleep. Format: modid:effect:duration:amplifier
+			sleepBonuses = ["minecraft:regeneration:300:0", "minecraft:luck:600:0", "minecraft:health_boost:3600:1"]
+			#Grant this many random picks from the list instead of all of them; 0 grants all
+			#Range: 0 ~ 64
+			randomBonuses = 0
+
+	[items.faelis_claw]
+		#Enable this item. Disabled items stay registered but do nothing and cannot be worn
+		enabled = true
+		#Effects granted while worn. Format: [modid:]effect[:duration[:amplifier]]
+		effectsToAdd = []
+		#Effects the wearer is immune to. Same format as effectsToAdd
+		effectsToRemove = ["xat:bleed"]
+		#Damage rules. Format: [onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
+		#type: * / legacy id (inFire, mob) / registry id / #tag; category: isFire, isMagic, isIce, isPoison...; multiplier defaults to 0 (immune)
+		#Example: onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
+		damageTypesToIgnore = []
+		#Attribute modifiers applied while worn. Format: Name:attribute, Amount:value, Operation:0|1|2
+		attributes = ["Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1"]
+
+		#Survival mod compatibility (Cold Sweat / Simple Difficulty)
+		[items.faelis_claw.survival]
+			#Immune to overheating (Cold Sweat)
+			immuneToHeat = false
+			#Immune to freezing (Cold Sweat)
+			immuneToCold = false
+			#Immune to the Thirsty effect from dirty water (Simple Difficulty)
+			immuneToThirst = false
+			#Immune to the Parasites effect from dirty water (Simple Difficulty)
+			immuneToParasites = false
+
+		[items.faelis_claw.vicious_strike]
+			#Enable this ability
+			enabled = true
+			#1 in N chance to cause bleeding; 0 always bleeds
+			#Range: 0 ~ 10000
+			chance = 4
+			#Bleed duration in ticks (a third of this for non-Faelis)
+			#Range: 1 ~ 72000
+			duration = 300
+			#With Defiled Lands installed, apply its Bleeding effect instead
+			defiledLandsBleed = true
+
+#Block settings
+[blocks]
+
+	[blocks.moon_rose]
+		#How much magical essence a Moon Rose has
+		#Range: 0 ~ 10000
+		essence = 10
+		#Ticks spent sneaking near a Moon Rose to absorb one essence
+		#Range: 1 ~ 72000
+		essenceCooldown = 300
+
+#Mod compatibility toggles; each only applies when that mod is installed
+[compat]
+	#First Aid: head-shot protection and per-part Blessing of Life
+	firstAid = true
+	#Elenai Dodge 2: its dodges trigger the Arcing Orb dodge effects instead of the double-tap dodge
+	elenaiDodge = false
+	#Talents: the Sidestep skill triggers the Arcing Orb dodge effects instead of the double-tap dodge
+	talents = false
+	#Cold Sweat: heat and cold immunities
+	coldSweat = false
+	#Simple Difficulty: thirst and parasite immunities; its Flight effect takes over creative flight
+	simpleDifficulty = false
+	#Thirst Was Taken: Water Absorption
+	thirstWasTaken = false
+	#Enhanced Visuals: clear vision abilities
+	enhancedVisuals = true
+	#Lycanites Mobs: Weightless blocks the Weight effect
+	lycanitesMobs = false
+	#Defiled Lands: Vicious Strike can use its Bleeding effect
+	defiledLands = false
+

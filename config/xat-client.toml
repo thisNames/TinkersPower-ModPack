@@ -30,7 +30,7 @@
 	showText = true
 	#Horizontal position as a fraction of the screen width
 	#Range: 0.0 ~ 1.0
-	translatedX = 0.19
+	translatedX = 0.01
 	#Vertical position as a fraction of the screen height
 	#Range: 0.0 ~ 1.0
 	translatedY = 0.94
