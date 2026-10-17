@@ -1,0 +1,78 @@
+
+#Rendering settings
+[rendering]
+	#Render this mod's race models and trinket layers
+	rendering = true
+	#Adjust camera height to match the transformed race's size
+	cameraHeight = true
+	#Render element indicators on items
+	renderElements = true
+	#Render the Shield of Honor on the wearer
+	damageShield = true
+	#Render the Ender Queen's Crown on the wearer
+	enderCrown = true
+	#Use the 3D crown model when the crown is worn in the helmet slot
+	enderCrownHelmet = true
+	#Render the Stone of the Sea on the wearer
+	seaStone = true
+	#Render Faelis Claws on the wearer
+	faelisClaw = true
+
+#Mana bar HUD
+[manaHud]
+	#Show the mana bar
+	shown = true
+	#Keep the mana bar visible even when mana is full
+	alwaysShown = false
+	#Draw the bar horizontally; false draws it vertically
+	horizontal = true
+	#Show current/maximum mana on the bar
+	showText = true
+	#Horizontal position as a fraction of the screen width
+	#Range: 0.0 ~ 1.0
+	translatedX = 0.19
+	#Vertical position as a fraction of the screen height
+	#Range: 0.0 ~ 1.0
+	translatedY = 0.94
+	#Position the bar with pixel coordinates instead of screen fractions
+	usePixelPosition = false
+	#Horizontal position in pixels
+	#Range: 0 ~ 10000
+	xPixels = 0
+	#Vertical position in pixels
+	#Range: 0 ~ 10000
+	yPixels = 0
+	#Bar width in pixels
+	#Range: 1 ~ 106
+	width = 106
+	#Bar height in pixels
+	#Range: 1 ~ 16
+	height = 16
+	#Bar fill style (row in the mana bar texture)
+	#Range: 0 ~ 6
+	texture = 0
+
+#Configuration for the race customization and information GUI
+[raceGui]
+	#Show the button that opens the race customization GUI in the inventory
+	enabled = true
+	#Button X position relative to the inventory
+	#Range: -1000 ~ 1000
+	x = 28
+	#Button Y position relative to the inventory
+	#Range: -1000 ~ 1000
+	y = 66
+	#Button width
+	#Range: 1 ~ 64
+	width = 10
+	#Button height
+	#Range: 1 ~ 64
+	height = 10
+
+#Item tooltip display
+[tooltip]
+	#Only list ability names by default; hold Shift for full details
+	collapsed = true
+	#Show live status (toggles, counters, current target) of abilities you are using
+	showStatus = true
+

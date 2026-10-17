@@ -3,7 +3,7 @@ ServerEvents.recipes(event =>
     const _this = id => "tp_accessories:" + id;
     const _mc = id => "minecraft:" + id;
     const _tc = id => "tconstruct:" + id;
-    const _tinket = id => "trinketsandbaubles:" + id;
+    const _tinket = id => "xat:" + id;
     const _pring = id => "potionrings2:" + id;
 
     event.shaped(_this("magic_ring"), [

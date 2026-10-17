@@ -1,7 +1,7 @@
 StartupEvents.registry("item", event =>
 {
     const _this = id => "tp_dragon_heart:" + id;
-    const _tinket = id => "trinketsandbaubles:" + id;
+    const _tinket = id => "xat:" + id;
     const _ice = id => "iceandfire:" + id;
     const _dret = id => "dreadsteel:" + id;
     const _idb = id => "if_dragon_blessings:" + id;
@@ -22,9 +22,9 @@ StartupEvents.registry("item", event =>
     const lightningEffect = _idb("lightning_attack");
 
     // 联动饰品
-    const fireEye = _tinket("dragons_eye_fire");
-    const iceEye = _tinket("dragons_eye_ice");
-    const lightningEye = _tinket("dragons_eye_lightning");
+    // const fireEye = _tinket("dragons_eye_fire");
+    // const iceEye = _tinket("dragons_eye_ice");
+    // const lightningEye = _tinket("dragons_eye_lightning");
 
     // 单独联动盔甲
     const fireArmors = [
@@ -92,7 +92,7 @@ StartupEvents.registry("item", event =>
             const player = slotContext.entity();
             let level = 0;
 
-            if (player.isCuriosEquipped(fireEye)) level++;
+            // if (player.isCuriosEquipped(fireEye)) level++;
             if (wearsArmor(player, fireArmors) || wearsArmor(player, dreadsteelArmors)) level++;
 
             applyEffectLevel(player, fireEffect, level, 200);
@@ -108,7 +108,7 @@ StartupEvents.registry("item", event =>
             const player = slotContext.entity();
             let level = 0;
 
-            if (player.isCuriosEquipped(iceEye)) level++;
+            // if (player.isCuriosEquipped(iceEye)) level++;
             if (wearsArmor(player, iceArmors) || wearsArmor(player, dreadsteelArmors)) level++;
 
             applyEffectLevel(player, iceEffect, level, 200);
@@ -124,7 +124,7 @@ StartupEvents.registry("item", event =>
             const player = slotContext.entity();
             let level = 0;
 
-            if (player.isCuriosEquipped(lightningEye)) level++;
+            // if (player.isCuriosEquipped(lightningEye)) level++;
             if (wearsArmor(player, lightningArmors) || wearsArmor(player, dreadsteelArmors)) level++;
 
             applyEffectLevel(player, lightningEffect, level, 200);

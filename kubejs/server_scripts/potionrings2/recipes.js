@@ -5,7 +5,7 @@ ServerEvents.recipes(event =>
     const _ice = id => "iceandfire:" + id;
     const _bount = id => "bountifulbaubles:" + id;
     const _twi = id => "twilightforest:" + id;
-    const _trinke = id => "trinketsandbaubles:" + id;
+    const _trinke = id => "xat:" + id;
     const _minecraft = id => "minecraft:" + id;
 
     event.remove({

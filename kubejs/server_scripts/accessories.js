@@ -37,7 +37,7 @@ const CURIOS_OPTIONS = [
         ]
     },
     {
-        namespace: "trinketsandbaubles",
+        namespace: "xat",
         curios: [
             {
                 id: "weightless_stone",
@@ -90,17 +90,7 @@ const CURIOS_OPTIONS = [
                 dis: false
             },
             {
-                id: "dragons_eye_fire",
-                level: 1,
-                dis: false
-            },
-            {
-                id: "dragons_eye_ice",
-                level: 1,
-                dis: false
-            },
-            {
-                id: "dragons_eye_lightning",
+                id: "dragons_eye",
                 level: 1,
                 dis: false
             },
@@ -120,17 +110,7 @@ const CURIOS_OPTIONS = [
                 dis: false
             },
             {
-                id: "dragons_ring",
-                level: 1,
-                dis: false
-            },
-            {
-                id: "dwarves_ring",
-                level: 1,
-                dis: false
-            },
-            {
-                id: "elves_ring",
+                id: "dragon_ring",
                 level: 1,
                 dis: false
             },
@@ -140,20 +120,40 @@ const CURIOS_OPTIONS = [
                 dis: false
             },
             {
-                id: "fairies_ring",
-                level: 1,
-                dis: false
-            },
-            {
-                id: "goblins_ring",
-                level: 1,
-                dis: false
-            },
-            {
                 id: "titan_ring",
                 level: 1,
                 dis: false
-            }
+            },
+            {
+                id: "cosmetic",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "taurus_ring",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "fairy_ring",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "dwarf_ring",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "goblin_ring",
+                level: 1,
+                dis: false
+            },
+            {
+                id: "elf_ring",
+                level: 1,
+                dis: false
+            },
         ]
     },
     {

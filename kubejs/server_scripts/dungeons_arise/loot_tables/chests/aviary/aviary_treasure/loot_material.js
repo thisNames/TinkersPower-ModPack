@@ -19,11 +19,11 @@ ServerEvents.chestLootTables(event =>
 
         loot.addPool(pool =>
         {
-            pool.addItem("trinketsandbaubles:moon_rose")
+            pool.addItem("xat:moon_rose")
                 .weight(25)
                 .count(1)
                 .enchantRandomly("minecraft:fire_aspect")
-                .name(Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.moon_rose_frie"));
+                .name(Text.translatable("loot.kubejs.tooltip.xat.moon_rose_frie"));
 
             pool.addEmpty(75);
         });

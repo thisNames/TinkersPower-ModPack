@@ -68,11 +68,11 @@
     "loot.kubejs.tooltip.minecraft.heart_of_the_sea_vow": "沉眠于深海……却始终为海洋而跳动",
     "loot.kubejs.tooltip.bountifulbaubles.bezoar": "牛黄",
     "loot.kubejs.tooltip.bountifulbaubles.bezoar_vow": "此乃上等药材",
-    "loot.kubejs.tooltip.trinketsandbaubles.wither_ring": "枯萎的婚戒",
-    "loot.kubejs.tooltip.trinketsandbaubles.wither_ring_vow": "曾经散发着耀眼的光芒，如今变的枯萎凋零……",
-    "loot.kubejs.tooltip.trinketsandbaubles.teddy_bear": "雪怪的泰迪（尚有余温）",
-    "loot.kubejs.tooltip.trinketsandbaubles.teddy_bear_vow": "晚安……玛卡巴卡",
+    "loot.kubejs.tooltip.xat.wither_ring": "枯萎的婚戒",
+    "loot.kubejs.tooltip.xat.wither_ring_vow": "曾经散发着耀眼的光芒，如今变的枯萎凋零……",
+    "loot.kubejs.tooltip.xat.teddy_bear": "雪怪的泰迪（尚有余温）",
+    "loot.kubejs.tooltip.xat.teddy_bear_vow": "晚安……玛卡巴卡",
     
-    "loot.kubejs.tooltip.trinketsandbaubles.moon_rose": "带刺玫瑰",
-    "loot.kubejs.tooltip.trinketsandbaubles.moon_rose_frie": "火玫瑰"
+    "loot.kubejs.tooltip.xat.moon_rose": "带刺玫瑰",
+    "loot.kubejs.tooltip.xat.moon_rose_frie": "火玫瑰"
 }

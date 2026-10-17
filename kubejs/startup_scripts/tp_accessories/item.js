@@ -2,6 +2,7 @@ StartupEvents.registry("item", event =>
 {
     const _this = id => "tp_accessories:" + id;
     const _pcore = id => "potioncore:" + id;
+    const _xat = id => "xat:" + id;
 
     // 魔力戒指
     const magicRing = event.create(_this("magic_ring"), "basic");
@@ -20,12 +21,16 @@ StartupEvents.registry("item", event =>
         "minecraft:golden_boots"
     ];
 
+    // 单独联动饰品
+    const arcingOrb = _xat("arcing_orb");
+
     // 基本参数设置
     magicRing
         .maxStackSize(1)
         .rarity("epic")
         .tooltip(Text.translatable("item.tp_accessories.magic_ring_text1"))
         .tooltip(Text.translatable("item.tp_accessories.magic_ring_text2").gold())
+        .tooltip(Text.translatable("item.tp_accessories.magic_ring_text3").gold())
         .tag("curios:ring");
 
     // 设置能力
@@ -53,6 +58,7 @@ StartupEvents.registry("item", event =>
             let level = 0;
 
             if (wearsArmor(player, goldenArmors)) level++;
+            if (player.isCuriosEquipped(arcingOrb)) level++;
             if (rings.size() > 1) level++;
 
             // 给予效果

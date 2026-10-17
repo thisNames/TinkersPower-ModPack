@@ -10,7 +10,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.wither_ring_vow").getString()
+                                text: Text.translatable("loot.kubejs.tooltip.xat.wither_ring_vow").getString()
                             })
                         ]
                     }
@@ -20,10 +20,10 @@ ServerEvents.entityLootTables(event =>
             pool.killedByPlayer();
 
             pool.addEmpty(96)
-            pool.addItem("trinketsandbaubles:wither_ring")
+            pool.addItem("xat:wither_ring")
                 .weight(4)
                 .count(1)
-                .name(Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.wither_ring"));
+                .name(Text.translatable("loot.kubejs.tooltip.xat.wither_ring"));
         });
     });
 });

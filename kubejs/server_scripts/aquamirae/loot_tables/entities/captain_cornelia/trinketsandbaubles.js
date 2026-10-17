@@ -4,11 +4,11 @@ ServerEvents.entityLootTables(event =>
     {
         loot.addPool(pool =>
         {
-            pool.addItem("trinketsandbaubles:moon_rose")
+            pool.addItem("xat:moon_rose")
                 .weight(1)
                 .count(1)
                 .enchantRandomly("minecraft:thorns")
-                .name(Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.moon_rose"));
+                .name(Text.translatable("loot.kubejs.tooltip.xat.moon_rose"));
         });
     });
 });

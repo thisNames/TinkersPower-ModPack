@@ -7,7 +7,7 @@ ServerEvents.entityLootTables(event =>
             pool.killedByPlayer();
 
             pool.addEmpty(96)
-            pool.addItem("trinketsandbaubles:ender_tiara")
+            pool.addItem("xat:ender_tiara")
                 .weight(4)
                 .count(1);
         });

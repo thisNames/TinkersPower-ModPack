@@ -15,17 +15,17 @@ ServerEvents.chestLootTables(event =>
         loot.addPool(pool =>
         {
             pool.addItem("quark:diamond_heart").weight(25).count(1);
-            pool.addItem("trinketsandbaubles:weightless_stone").weight(25).count(1);
+            pool.addItem("xat:weightless_stone").weight(25).count(1);
             pool.addEmpty(50);
         });
 
         loot.addPool(pool =>
         {
-            pool.addItem("trinketsandbaubles:moon_rose")
+            pool.addItem("xat:moon_rose")
                 .weight(25)
                 .count(1)
                 .enchantRandomly("minecraft:fire_aspect")
-                .name(Text.translatable("loot.kubejs.tooltip.trinketsandbaubles.moon_rose_frie"));
+                .name(Text.translatable("loot.kubejs.tooltip.xat.moon_rose_frie"));
 
             pool.addEmpty(75);
         });

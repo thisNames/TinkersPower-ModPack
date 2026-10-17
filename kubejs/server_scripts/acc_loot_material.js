@@ -72,7 +72,7 @@ const MATERIAL_OPTIONS = [
         ]
     },
     {
-        namespace: "trinketsandbaubles",
+        namespace: "xat",
         material: [
             {
                 id: "glowing_powder",
@@ -92,6 +92,18 @@ const MATERIAL_OPTIONS = [
             },
             {
                 id: "mana_crystal",
+                level: 1
+            },
+            {
+                id: "spark_powder",
+                level: 1
+            },
+            {
+                id: "mana_reagent",
+                level: 1
+            },
+            {
+                id: "restoration_serum",
                 level: 1
             },
         ]

@@ -1,7 +1,7 @@
 ServerEvents.recipes(event =>
 {
     const _this = id => "tp_dragon_heart:" + id;
-    const _tinket = id => "trinketsandbaubles:" + id;
+    const _tinket = id => "xat:" + id;
     const _ice = id => "iceandfire:" + id;
 
     // 火龙之心

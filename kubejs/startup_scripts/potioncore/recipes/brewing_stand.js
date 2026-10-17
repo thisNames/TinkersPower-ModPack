@@ -33,7 +33,7 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("minecraft:arrow", "minecraft:thick", "potioncore:klutz");
 
     // 魔力聚焦
-    event.addPotionBrewing("trinketsandbaubles:mana_crystal", "potioncore:magic_inhibition", "potioncore:magic_focus");
+    event.addPotionBrewing("xat:mana_crystal", "potioncore:magic_inhibition", "potioncore:magic_focus");
     event.addPotionBrewing("tide:shooting_starfish", "minecraft:awkward", "potioncore:magic_focus");
 
     // 魔力压制
@@ -108,7 +108,7 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("cataclysm:sticky_gloves", "minecraft:thick", "potioncore:climb");
 
     // 魔法护盾
-    event.addPotionBrewing("trinketsandbaubles:mana_candy", "potioncore:broken_magic_shield", "potioncore:magic_shield");
+    event.addPotionBrewing("xat:mana_candy", "potioncore:broken_magic_shield", "potioncore:magic_shield");
 
     // 魔法护盾破损
     event.addPotionBrewing("alexscaves:tesla_bulb", "minecraft:awkward", "potioncore:broken_magic_shield");

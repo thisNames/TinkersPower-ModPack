@@ -1,7 +1,7 @@
 ServerEvents.recipes(event =>
 {
     const _this = id => "waystones:" + id;
-    const _trink = id => "trinketsandbaubles:" + id;
+    const _trink = id => "xat:" + id;
     const _bount = id => "bountifulbaubles:" + id;
     const _mc = id => "minecraft:" + id;
 

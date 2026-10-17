@@ -1,0 +1,18 @@
+
+#Brewing catalysts. Format: item id or #item_tag. Requires a game restart
+[potions]
+	ice_resistance = "minecraft:snow_block"
+	lightning_resistance = "xat:spark_powder"
+	human = "minecraft:apple"
+	dwarf = "minecraft:iron_block"
+	elf = "#minecraft:leaves"
+	fairy = "minecraft:ghast_tear"
+	goblin = "minecraft:leather"
+	titan = "minecraft:golden_apple"
+	faelis = "xat:faelis_claw"
+	dragon = "minecraft:dragon_breath"
+	dragon_fire = "minecraft:magma_block"
+	dragon_ice = "minecraft:packed_ice"
+	dragon_lightning = "xat:spark_powder"
+	taurus = "minecraft:milk_bucket"
+
