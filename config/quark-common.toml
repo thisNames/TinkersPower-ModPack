@@ -523,7 +523,7 @@
 	"Dyeable Item Frames" = true
 	Emotes = false
 	"Enhanced Ladders" = true
-	"Glass Shard" = true
+	"Glass Shard" = false
 	"Gold Tools Have Fortune" = false
 	"Grab Chickens" = true
 	"Hoe Harvesting" = false
@@ -539,12 +539,12 @@
 	"Pat The Dogs" = true
 	"Petals On Water" = true
 	"Pig Litters" = true
-	"Poison Potato Usage" = true
+	"Poison Potato Usage" = false
 	"Reacharound Placing" = true
 	"Renewable Spore Blossoms" = true
-	"Replace Scaffolding" = true
+	"Replace Scaffolding" = false
 	"Safer Creatures" = true
-	"Shulker Packing" = true
+	"Shulker Packing" = false
 	"Simple Harvest" = false
 	"Slabs To Blocks" = true
 	"Slimes To Magma Cubes" = true
