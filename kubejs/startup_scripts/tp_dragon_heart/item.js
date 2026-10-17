@@ -1,7 +1,26 @@
+/**
+ * 是否携带巨龙饰品 
+ * @param {Internal.SlotContext} ctx 饰品上下文
+ * @param {Special.Item} item 物品 ID
+ * @param {"xat:fire" | "xat:ice" | "xat:lightning"} type 巨龙类型
+ * @returns {boolean}
+ */
+function tpDragonHeartHasDragon(ctx, item, type)
+{
+    let player = ctx.entity();
+    let liked = player["findCurios(net.minecraft.world.item.Item)"](item).find(curio =>
+    {
+        // console.log(`findCurios(net.minecraft.world.item.Item <${item}>: ${curio.stack().getNbt().get("Elements")?.primary}`);
+        return curio.stack().hasNBT() && curio.stack().getNbt().get("Elements")?.primary == type;
+    });
+
+    return liked;
+}
+
 StartupEvents.registry("item", event =>
 {
     const _this = id => "tp_dragon_heart:" + id;
-    const _tinket = id => "xat:" + id;
+    const _xat = id => "xat:" + id;
     const _ice = id => "iceandfire:" + id;
     const _dret = id => "dreadsteel:" + id;
     const _idb = id => "if_dragon_blessings:" + id;
@@ -21,10 +40,8 @@ StartupEvents.registry("item", event =>
     const iceEffect = _idb("ice_attack");
     const lightningEffect = _idb("lightning_attack");
 
-    // 联动饰品
-    // const fireEye = _tinket("dragons_eye_fire");
-    // const iceEye = _tinket("dragons_eye_ice");
-    // const lightningEye = _tinket("dragons_eye_lightning");
+    // 联动巨龙饰品
+    const dragons = { eye: _xat("dragons_eye"), ring: _xat("dragon_ring") };
 
     // 单独联动盔甲
     const fireArmors = [
@@ -83,50 +100,62 @@ StartupEvents.registry("item", event =>
         .tag("curios:charm");
 
     // 设置能力
+    // 火龙饰品
     fireCapability
         .canEquip((slotContext, stack) => true)
         .canUnequip((slotContext, stack) => true)
         .canEquipFromUse((slotContext, stack) => false)
         .curioTick((slotContext, stack) =>
         {
-            const player = slotContext.entity();
             let level = 0;
+            let player = slotContext.entity();
 
-            // if (player.isCuriosEquipped(fireEye)) level++;
+            // 巨龙之眼、巨戒指：火属性
+            if (tpDragonHeartHasDragon(slotContext, dragons.eye, "xat:fire") || tpDragonHeartHasDragon(slotContext, dragons.ring, "xat:fire")) level++;
+            // 盔甲
             if (wearsArmor(player, fireArmors) || wearsArmor(player, dreadsteelArmors)) level++;
 
+            // 应用效果
             applyEffectLevel(player, fireEffect, level, 200);
         })
         .onUnequip((slotContext, oldStack, newStack) => slotContext.entity().removeEffect(fireEffect));
 
+    // 冰龙饰品
     iceCapability
         .canEquip((slotContext, stack) => true)
         .canUnequip((slotContext, stack) => true)
         .canEquipFromUse((slotContext, stack) => false)
         .curioTick((slotContext, stack) =>
         {
-            const player = slotContext.entity();
             let level = 0;
+            let player = slotContext.entity();
 
-            // if (player.isCuriosEquipped(iceEye)) level++;
+            // 巨龙之眼、巨戒指：冰属性
+            if (tpDragonHeartHasDragon(slotContext, dragons.eye, "xat:ice") || tpDragonHeartHasDragon(slotContext, dragons.ring, "xat:ice")) level++;
+            // 盔甲
             if (wearsArmor(player, iceArmors) || wearsArmor(player, dreadsteelArmors)) level++;
 
+            // 应用效果
             applyEffectLevel(player, iceEffect, level, 200);
         })
         .onUnequip((slotContext, oldStack, newStack) => slotContext.entity().removeEffect(iceEffect));
 
+    // 电龙饰品
     lightningCapability
         .canEquip((slotContext, stack) => true)
         .canUnequip((slotContext, stack) => true)
         .canEquipFromUse((slotContext, stack) => false)
         .curioTick((slotContext, stack) =>
         {
-            const player = slotContext.entity();
             let level = 0;
+            let player = slotContext.entity();
 
-            // if (player.isCuriosEquipped(lightningEye)) level++;
+            // 巨龙之眼、巨戒指：电属性
+            if (tpDragonHeartHasDragon(slotContext, dragons.eye, "xat:lightning") || tpDragonHeartHasDragon(slotContext, dragons.ring, "xat:lightning")) level++;
+            // 盔甲
             if (wearsArmor(player, lightningArmors) || wearsArmor(player, dreadsteelArmors)) level++;
 
+            // 应用效果
             applyEffectLevel(player, lightningEffect, level, 200);
         })
         .onUnequip((slotContext, oldStack, newStack) => slotContext.entity().removeEffect(lightningEffect));

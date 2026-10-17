@@ -7,19 +7,19 @@
 
     "tooltip.tp_dragon_heart.dragons_heart_fire.text1": "Grants the Fire Dragon Blessing effect (ignites and knocks back targets)",
     "tooltip.tp_dragon_heart.dragons_heart_fire.text2": "Scorching flames burn the target",
-    "tooltip.tp_dragon_heart.dragons_heart_fire.text3": "Grants effect level 2 when also wearing the Fire Dragon's Eye",
-    "tooltip.tp_dragon_heart.dragons_heart_fire.text4": "Grants effect level 3 when also wearing Dragonsteel Fire or Dreadsteel armor",
+    "tooltip.tp_dragon_heart.dragons_heart_fire.text3": "When wearing the 'Fire Dragon Eye' at the same time, it gives an effect of+1 level",
+    "tooltip.tp_dragon_heart.dragons_heart_fire.text4": "When wearing the 'Dragon Fire' or 'Scary Steel Armor' at the same time, grant an effect of+1 level",
 
     "tooltip.tp_dragon_heart.dragons_heart_ice.text1": "Grants the Ice Dragon Blessing effect (slows and freezes targets)",
     "tooltip.tp_dragon_heart.dragons_heart_ice.text2": "Bitter frost slows enemies",
-    "tooltip.tp_dragon_heart.dragons_heart_ice.text3": "Grants effect level 2 when also wearing the Ice Dragon's Eye",
-    "tooltip.tp_dragon_heart.dragons_heart_ice.text4": "Grants effect level 3 when also wearing Dragonsteel Ice or Dreadsteel armor",
+    "tooltip.tp_dragon_heart.dragons_heart_ice.text3": "When wearing the 'Ice Dragon Eye' at the same time, it gives an effect of+1 level",
+    "tooltip.tp_dragon_heart.dragons_heart_ice.text4": "When wearing the 'Dragon Ice' or 'Scary Steel Armor' at the same time, grant an effect of+1 level",
     
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text1": "Grants the Lightning Dragon Protection effect (shocks and paralyzes targets)",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text2": "Powerful currents pierce through groups",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text3": "Attacks all entities except the attacker",
-    "tooltip.tp_dragon_heart.dragons_heart_lightning.text4": "Grants effect level 2 when also wearing the Lightning Dragon's Eye",
-    "tooltip.tp_dragon_heart.dragons_heart_lightning.text5": "Grants effect level 3 when also wearing Dragonsteel Lightning or Dreadsteel armor",
+    "tooltip.tp_dragon_heart.dragons_heart_lightning.text4": "When wearing the 'Lightning Dragon Eye' at the same time, it gives an effect of+1 level",
+    "tooltip.tp_dragon_heart.dragons_heart_lightning.text5": "When wearing the 'Dragon Lightning' or 'Scary Steel Armor' at the same time, grant an effect of+1 level",
 
     "advancements.tp_dragon_heart.dragon_heart_revived.title": "A Heart Rekindled",
     "advancements.tp_dragon_heart.dragon_heart_revived.description": "Obtain any of the three Dragon's Hearts and make it beat again",
