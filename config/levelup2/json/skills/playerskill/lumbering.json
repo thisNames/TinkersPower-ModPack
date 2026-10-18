@@ -1,0 +1,22 @@
+{
+    "name": "levelup:lumbering",
+    "type": "levelup:mining_bonus",
+    "levels": [
+        2,
+        3,
+        5,
+        7,
+        8
+    ],
+    "prerequisites": [
+        "levelup:woodcutting"
+    ],
+    "divisor": 30,
+    "stack": {
+        "item": "minecraft:oak_log"
+    },
+    "column": 2,
+    "row": 1,
+    "enabled": true,
+    "active": true
+}

@@ -1,0 +1,40 @@
+
+[general]
+	#Does the player lose all levels on death?
+	resetClassOnDeath = false
+	#Does the furnace eject doubled items?
+	furnaceEjection = false
+	#The refund value of lowering skill levels.
+	#Range: 0.0 ~ 1.0
+	skillRefund = 0.5
+	#Levels needed to gain a skill point.
+	#Range: 1 ~ 30
+	levelCost = 5
+	#If the player spawns with a skill book.
+	giveSkillBook = true
+	#Always drop ore chunks on ore harvest.
+	alwaysDropChunks = false
+	#Blocks that still drop registered ores.
+	oreBlocks = ["geolosys:ore_vanilla", "geolosys:ore"]
+	#Crops not affected by the farming skill.
+	cropBlacklist = []
+	#Surface ores (oreName,color,xp,smeltResult,chunkName[,placeholder]).
+	surfaceOres = ["oreCoal,0x343434,1,minecraft:coal,Coal", "oreIron,0xBC9980,1,minecraft:iron_ingot,Iron", "oreGold,0xFCEE4B,2,minecraft:gold_ingot,Gold", "oreDiamond,0x5DECF5,4,minecraft:diamond,Diamond", "oreEmerald,0x17DD62,4,minecraft:emerald,Emerald", "oreRedstone,0xFF0000,2,minecraft:redstone,Redstone", "oreLapis,0x193CB4,2,minecraft:lapis_lazuli,Lapis", "oreCopper,0xFF6D11,1,minecraft:copper_ingot,Copper"]
+	#Nether ores.
+	netherOres = ["oreQuartz,0xE5DED5,2,minecraft:quartz,Nether Quartz"]
+	#End ores.
+	endOres = []
+	#Crafting outputs that give no XP (modid:item).
+	craftingBlacklist = []
+
+[digloot]
+	#Rare dig loot weight
+	#Range: 0 ~ 100
+	rareChance = 1
+	#Uncommon dig loot weight
+	#Range: 0 ~ 100
+	uncommonChance = 15
+	#Common dig loot weight
+	#Range: 0 ~ 100
+	commonChance = 85
+
