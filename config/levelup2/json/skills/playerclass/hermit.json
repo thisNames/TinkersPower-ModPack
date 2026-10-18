@@ -1,8 +1,8 @@
 {
     "name": "levelup:hermit",
     "bonus": "levelup:mining_bonus",
-    "localized_name": "Hermit",
-    "description": "Better scavenging",
+    "localized_name": "隐士",
+    "description": "更擅长拾荒",
     "skills": [
         {
             "name": "levelup:furnacebonus",

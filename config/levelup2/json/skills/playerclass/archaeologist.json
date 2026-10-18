@@ -1,8 +1,8 @@
 {
     "name": "levelup:archaeologist",
     "bonus": "levelup:mining_bonus",
-    "localized_name": "Archaeologist",
-    "description": "More easily find treasure while mining",
+    "localized_name": "考古学家",
+    "description": "挖掘时更容易发现宝藏",
     "skills": [
         {
             "name": "levelup:flintloot",

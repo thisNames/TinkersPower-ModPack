@@ -1,8 +1,8 @@
 {
     "name": "levelup:assassin",
     "bonus": "levelup:combat_bonus",
-    "localized_name": "Assassin",
-    "description": "Stealth archer, like Skyrim intended",
+    "localized_name": "刺客",
+    "description": "潜行弓箭手，正如《天际》的设定",
     "skills": [
         {
             "name": "levelup:stealth",

@@ -1,8 +1,8 @@
 {
     "name": "levelup:scout",
     "bonus": "levelup:combat_bonus",
-    "localized_name": "Scout",
-    "description": "Mobility in combat",
+    "localized_name": "侦察兵",
+    "description": "战斗中的机动性",
     "skills": [
         {
             "name": "levelup:bowdraw",

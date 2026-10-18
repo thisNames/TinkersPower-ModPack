@@ -1,8 +1,8 @@
 {
     "name": "levelup:spelunker",
     "bonus": "levelup:mining_bonus",
-    "localized_name": "Spelunker",
-    "description": "Branch mining is for cowards",
+    "localized_name": "洞穴探险家",
+    "description": "出色的洞穴勘探者，挖矿分支",
     "skills": [
         {
             "name": "levelup:furnacebonus",

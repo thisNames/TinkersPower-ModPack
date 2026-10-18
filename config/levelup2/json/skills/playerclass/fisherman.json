@@ -1,8 +1,8 @@
 {
     "name": "levelup:fisherman",
     "bonus": "levelup:craft_bonus",
-    "localized_name": "Fisherman",
-    "description": "Better fishing and cooking",
+    "localized_name": "渔夫",
+    "description": "更出色的钓鱼与烹饪",
     "skills": [
         {
             "name": "levelup:fishbonus",
