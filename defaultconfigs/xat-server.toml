@@ -973,17 +973,17 @@
 		dwarf = true
 		#启用精灵戒指
 		elf = true
-		#启用妖精戒指
+		#启用仙女戒指
 		fairy = true
 		#启用哥布林戒指
 		goblin = true
 		#启用泰坦戒指
 		titan = true
-		#启用猫人戒指
+		#启用猫灵戒指
 		faelis = true
-		#启用龙戒指
+		#启用巨龙戒指
 		dragon = true
-		#启用托罗斯戒指
+		#启用牛头人戒指
 		taurus = true
 
 	[items.dragons_eye]
@@ -996,7 +996,10 @@
 		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
-		damageTypesToIgnore = ["onAttacked:*;isMagic", "onHurt:*;isMagic"]
+		damageTypesToIgnore = [
+			"onAttacked:*;isMagic",
+			"onHurt:*;isMagic"
+		]
 		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = []
 
@@ -1023,7 +1026,18 @@
 			#范围：1 ~ 12000
 			frequency = 79
 			#宝藏列表。格式：方块 ID、实体 ID 或 #方块标签;#RRGGBB
-			targets = ["#forge:ores/coal;#464646", "#forge:ores/iron;#FFCC99", "#forge:ores/gold;#FFD700", "#forge:ores/lapis;#26619C", "#forge:ores/redstone;#B02E26", "#forge:ores/diamond;#00E6FF", "#forge:ores/emerald;#00FF4D", "#forge:ores/quartz;#EBEBEB", "minecraft:chest;#FFD700", "minecraft:chest_minecart;#FFD700"]
+			targets = [
+				"#forge:ores/coal;#464646",
+				"#forge:ores/iron;#FFCC99",
+				"#forge:ores/gold;#FFD700",
+				"#forge:ores/lapis;#26619C",
+				"#forge:ores/redstone;#B02E26",
+				"#forge:ores/diamond;#00E6FF",
+				"#forge:ores/emerald;#00FF4D",
+				"#forge:ores/quartz;#EBEBEB",
+				"minecraft:chest;#FFD700",
+				"minecraft:chest_minecart;#FFD700"
+			]
 			#纵向扫描范围(方块)
 			#范围：0 ~ 32
 			rangeVertical = 6
@@ -1076,7 +1090,7 @@
 			#生存模组兼容性(Cold Sweat / Simple Difficulty)
 			[items.dragons_eye.fire.survival]
 				#免疫过热(Cold Sweat)
-				immuneToHeat = true
+				immuneToHeat = false
 				#免疫冰冻(Cold Sweat)
 				immuneToCold = false
 				#免疫脏水引起的口渴效果(Simple Difficulty)
@@ -1112,7 +1126,7 @@
 				#免疫过热(Cold Sweat)
 				immuneToHeat = false
 				#免疫冰冻(Cold Sweat)
-				immuneToCold = true
+				immuneToCold = false
 				#免疫脏水引起的口渴效果(Simple Difficulty)
 				immuneToThirst = false
 				#免疫脏水引起的寄生虫效果(Simple Difficulty)
@@ -1167,7 +1181,7 @@
 			#免疫过热(Cold Sweat)
 			immuneToHeat = false
 			#免疫冰冻(Cold Sweat)
-			immuneToCold = true
+			immuneToCold = false
 			#免疫脏水引起的口渴效果(Simple Difficulty)
 			immuneToThirst = false
 			#免疫脏水引起的寄生虫效果(Simple Difficulty)
@@ -1179,7 +1193,7 @@
 			#辅助键打开末影箱，消耗全部法力
 			enderChest = true
 			#水会消耗法力，法力耗尽后转为造成伤害
-			waterHurts = false
+			waterHurts = true
 			#有 1/N 的几率忽略来自生物的攻击
 			#范围：0 ~ 10000
 			ignoreChance = 10
@@ -1337,7 +1351,7 @@
 			damageMultiplier = 2.0
 			#命中时有 1/N 的几率施加该效果；0 禁用
 			#范围：0 ~ 10000
-			chance = 5
+			chance = 4
 			#施加效果的持续时间(刻)
 			#范围：1 ~ 72000
 			duration = 40
@@ -1384,7 +1398,7 @@
 			leechAmount = 2.0
 			#命中时有 1/N 的几率施加该效果；0 禁用
 			#范围：0 ~ 10000
-			chance = 5
+			chance = 4
 			#施加效果的持续时间(刻)
 			#范围：1 ~ 72000
 			duration = 40
@@ -1481,7 +1495,7 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:forge:swim_speed, Amount:4, Operation:2"]
+		attributes = ["Name:forge:swim_speed, Amount:2, Operation:2"]
 
 		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.sea_stone.survival]
@@ -1490,9 +1504,9 @@
 			#免疫冰冻(Cold Sweat)
 			immuneToCold = false
 			#免疫脏水引起的口渴效果(Simple Difficulty)
-			immuneToThirst = true
+			immuneToThirst = false
 			#免疫脏水引起的寄生虫效果(Simple Difficulty)
-			immuneToParasites = true
+			immuneToParasites = false
 
 		[items.sea_stone.water_affinity]
 			#启用此能力
@@ -1579,7 +1593,12 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#佩戴时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.knockback_resistance, Amount:0.4, Operation:0", "Name:minecraft:generic.movement_speed, Amount:0.5, Operation:2", "Name:xat:jump, Amount:1, Operation:1", "Name:forge:step_height_addition, Amount:0.6, Operation:0"]
+		attributes = [
+			"Name:minecraft:generic.knockback_resistance, Amount:0.4, Operation:0",
+			"Name:minecraft:generic.movement_speed, Amount:0.4, Operation:2",
+			"Name:xat:jump, Amount:1, Operation:1",
+			"Name:forge:step_height_addition, Amount:0.6, Operation:0"
+		]
 
 		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[items.greater_inertia_stone.survival]
@@ -1661,7 +1680,7 @@
 			enabled = true
 			#每次闪避消耗的法力
 			#范围：0.0 ~ 10000.0
-			cost = 30.0
+			cost = 40.0
 			#闪避时使附近实体瘫痪
 			stuns = true
 			#瘫痪作用半径(水平)
@@ -1669,7 +1688,7 @@
 			stunRadius = 2.0
 			#闪避间隔(刻)
 			#范围：0 ~ 1200
-			cooldown = 20
+			cooldown = 40
 			#通过按住闪避键并按下方向键来闪避，而非双击
 			keybindMovement = false
 
@@ -1678,13 +1697,13 @@
 			enabled = true
 			#满蓄力时的伤害
 			#范围：0.0 ~ 10000.0
-			attackDamage = 40.0
+			attackDamage = 20.0
 			#满蓄力时消耗的法力
 			#范围：0.0 ~ 10000.0
-			attackCost = 300.0
+			attackCost = 200.0
 			#达到满蓄力所需的刻数
 			#范围：1 ~ 1200
-			chargeTime = 120
+			chargeTime = 100
 
 	[items.teddy_bear]
 		#启用此物品。已禁用的物品仍会注册但无任何效果且无法佩戴
@@ -1715,7 +1734,7 @@
 			#启用此能力
 			enabled = true
 			#整夜睡眠后获得的效果。格式：modid:effect:duration:amplifier
-			sleepBonuses = ["minecraft:regeneration:300:0", "minecraft:luck:600:0", "minecraft:health_boost:3600:1"]
+			sleepBonuses = ["minecraft:regeneration:300:1", "minecraft:luck:600:1", "minecraft:health_boost:3600:1"]
 			#从列表中随机选取指定数量而非全部；0 表示全部给予
 			#范围：0 ~ 64
 			randomBonuses = 0
@@ -1761,7 +1780,7 @@
 [blocks]
 
 	[blocks.moon_rose]
-		#月华玫瑰拥有的魔法精华数量
+		#月光玫瑰拥有的魔法精华数量
 		#范围：0 ~ 10000
 		essence = 10
 		#在月华玫瑰附近潜行吸收一份精华所需的刻数
