@@ -12,9 +12,9 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("tconstruct:necrotic_bone", "minecraft:awkward", "potioncore:purity");
 
     // 飞行
-    event.addPotionBrewing("minecraft:elytra", "minecraft:awkward", "potioncore:flight");
-    event.addPotionBrewing("tide:elytrout", "minecraft:awkward", "potioncore:flight");
-    event.addPotionBrewing("iceandfire:pixie_dust", "minecraft:slow_falling", "potioncore:flight");
+    // event.addPotionBrewing("minecraft:elytra", "minecraft:awkward", "potioncore:flight");
+    // event.addPotionBrewing("tide:elytrout", "minecraft:awkward", "potioncore:flight");
+    // event.addPotionBrewing("iceandfire:pixie_dust", "minecraft:slow_falling", "potioncore:flight");
 
     // 混乱
     event.addPotionBrewing("alexscaves:scarlet_neodymium_ingot", "minecraft:mundane", "potioncore:perplexity");

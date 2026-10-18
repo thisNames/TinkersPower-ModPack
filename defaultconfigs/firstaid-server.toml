@@ -1,30 +1,29 @@
-
-#服务器到客户端同步的配置设置
+#服务器到客户端同步的配置设置（6 = 各个部位血量 * 0.3；12 = 0.6）
 ["Damage System"]
 	#头部的最大生命值
 	#范围：2 ~ 12
-	maxHealthHead = 12
+	maxHealthHead = 6
 	#左臂的最大生命值
 	#范围：2 ~ 12
-	maxHealthLeft_Arm = 12
+	maxHealthLeft_Arm = 6
 	#左腿的最大生命值
 	#范围：2 ~ 12
-	maxHealthLeft_Leg = 12
+	maxHealthLeft_Leg = 6
 	#左脚的最大生命值
 	#范围：2 ~ 12
-	maxHealthLeft_Foot = 12
+	maxHealthLeft_Foot = 6
 	#身体的最大生命值
 	#范围：2 ~ 12
-	maxHealthBody = 12
+	maxHealthBody = 6
 	#右臂的最大生命值
 	#范围：2 ~ 12
-	maxHealthRight_Arm = 12
+	maxHealthRight_Arm = 6
 	#右腿的最大生命值
 	#范围：2 ~ 12
-	maxHealthRight_Leg = 12
+	maxHealthRight_Leg = 6
 	#右脚的最大生命值
 	#范围：2 ~ 12
-	maxHealthRight_Foot = 12
+	maxHealthRight_Foot = 6
 	#若头部生命值降至 0 时是否会导致死亡
 	causeDeathHead = true
 	#若身体生命值降至 0 时是否会导致死亡
