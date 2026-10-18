@@ -10,6 +10,7 @@ MoreJSEvents.registerPotionBrewing(event =>
     // 纯洁
     event.addPotionBrewing("minecraft:wither_skeleton_skull", "minecraft:awkward", "potioncore:purity");
     event.addPotionBrewing("tconstruct:necrotic_bone", "minecraft:awkward", "potioncore:purity");
+    event.addPotionBrewing("iceandfire:witherbone", "minecraft:awkward", "potioncore:purity");
 
     // 飞行
     // event.addPotionBrewing("minecraft:elytra", "minecraft:awkward", "potioncore:flight");
@@ -34,7 +35,14 @@ MoreJSEvents.registerPotionBrewing(event =>
 
     // 魔力聚焦
     event.addPotionBrewing("xat:mana_crystal", "potioncore:magic_inhibition", "potioncore:magic_focus");
+    // 魔力聚焦：鱼
     event.addPotionBrewing("tide:shooting_starfish", "minecraft:awkward", "potioncore:magic_focus");
+    event.addPotionBrewing("tide:midas_fish", "minecraft:awkward", "potioncore:magic_focus");
+    event.addPotionBrewing("tide:devils_hole_pupfish", "minecraft:awkward", "potioncore:magic_focus");
+    event.addPotionBrewing("tide:dragon_fish", "minecraft:awkward", "potioncore:magic_focus");
+    event.addPotionBrewing("stardew_fishing:golden_snook", "minecraft:awkward", "potioncore:magic_focus");
+    event.addPotionBrewing("stardew_fishing:storm_tarpon", "minecraft:awkward", "potioncore:magic_focus");
+    event.addPotionBrewing("stardew_fishing:blazing_oarfish", "minecraft:awkward", "potioncore:magic_focus");
 
     // 魔力压制
     event.addPotionBrewing("biomesoplenty:magic_sapling", "minecraft:awkward", "potioncore:magic_inhibition");
@@ -55,6 +63,18 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("iceandfire:ice_dragon_heart", "minecraft:awkward", "potioncore:repair");
     event.addPotionBrewing("iceandfire:lightning_dragon_heart", "minecraft:awkward", "potioncore:repair");
     event.addPotionBrewing("iceandfire:hydra_heart", "minecraft:awkward", "potioncore:repair");
+    // 修复；鱼
+    event.addPotionBrewing("tide:coelacanth", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("tide:alpha_fish", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("tide:voidseeker", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:goliath_grouper", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:vampire_payara", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:sabretoothed_tigerfish", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:chromatic_arapaima", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:cyclops_mahimahi", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:crystalline_snakehead", "minecraft:awkward", "potioncore:repair");
+    event.addPotionBrewing("stardew_fishing:demon_gar", "minecraft:awkward", "potioncore:repair");
+
 
     // 腐蚀
     event.addPotionBrewing("alexscaves:sulfur_dust", "minecraft:thick", "potioncore:rust");

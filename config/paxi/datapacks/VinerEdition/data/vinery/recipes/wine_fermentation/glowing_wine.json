@@ -10,6 +10,9 @@
         },
         {
             "item": "xat:glowing_powder"
+        },
+        {
+            "item": "bountifulbaubles:spectral_silt"
         }
     ],
     "wine_bottle": {

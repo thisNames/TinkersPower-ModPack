@@ -134,15 +134,8 @@ ServerEvents.tags("item", event =>
         event.add(drinks, item);
         event.add(thirst(10), item);
         event.add(hydration(4), item);
-
-        if (item == _this("cherry_wine"))
-        {
-            event.add(cool_food, item);
-        }
-        else
-        {
-            event.add(hot_food, item);
-        }
+        
+        event.add(hot_food, item);
     });
 
     // 16-8

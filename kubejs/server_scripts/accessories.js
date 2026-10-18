@@ -71,7 +71,7 @@ const CURIOS_OPTIONS = [
             },
             {
                 id: "poison_stone",
-                level: 1,
+                level: 2,
                 dis: true
             },
             {

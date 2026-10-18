@@ -911,10 +911,53 @@
 	bonusPerPoint = 10.0
 	#最大加成点数
 	#范围：0 ~ 10000
-	bonusMax = 90
+	bonusMax = 200
 	#食用时恢复法力的物品。格式：item_id;amount 或 #tag;amount
 	#附加 % 以恢复最大法力的百分比而非固定数值
-	recovery = ["xat:dwarf_stout;100%", "xat:elf_sap;100%", "xat:faelis_food;100%", "xat:fairy_dew;100%", "xat:goblin_soup;100%", "xat:titan_spirit;100%", "xat:taurus_tea;100%", "xat:dragon_gem;100%", "xat:mana_crystal;100%", "xat:mana_reagent;100%", "xat:mana_candy;50", "minecraft:golden_apple;20", "minecraft:enchanted_golden_apple;50", "botania:mana_cookie;10%"]
+	recovery = [
+		"xat:dwarf_stout;100%", 
+		"xat:elf_sap;100%", 
+		"xat:faelis_food;100%", 
+		"xat:fairy_dew;100%", 
+		"xat:goblin_soup;100%", 
+		"xat:titan_spirit;100%", 
+		"xat:taurus_tea;100%", 
+		"xat:dragon_gem;100%", 
+		"xat:mana_crystal;100%", 
+		"xat:mana_reagent;100%", 
+		"xat:mana_candy;50", 
+		"minecraft:golden_apple;20", 
+		"minecraft:enchanted_golden_apple;50",
+		"tconstruct:jeweled_apple;10",
+		"create:honeyed_apple;2",
+		"iceandfire:fire_dragon_flesh;10",
+		"iceandfire:ice_dragon_flesh;10",
+		"iceandfire:lightning_dragon_flesh;10",
+		"iceandfire:ambrosia;100",
+		"twilightforest:meef_stroganoff;100",
+		"twilightforest:hydra_chop;150",
+		"twilightforest:experiment_115;20",
+		"alexscaves:seething_stew;10",
+		"alexscaves:caramel_apple;5",
+		"aquamirae:sea_stew;10",
+		"aquamirae:poseidons_breakfast;100",
+		"create_confectionery:gingerbread_man;1",
+		"create_confectionery:honey_candy;2",
+		"alexsmobs:shrimp_fried_rice;10",
+		"quark:ancient_fruit;2",
+		"vinery:glowing_wine;10",
+		"vinery:solaris_wine;20",
+		"vinery:creepers_crush;15",
+		"vinery:aegis_wine;5",
+		"vinery:chorus_wine;5",
+		"vinery:stal_wine;20",
+		"tide:coelacanth;100",
+		"tide:devils_hole_pupfish;150",
+		"tide:midas_fish;150",
+		"tide:alpha_fish;50",
+		"tide:voidseeker;100",
+		"tide:dragon_fish;100%"
+	]
 
 	[magic.items]
 		#在石头上使用法力水晶可能会将其碎裂为法力试剂

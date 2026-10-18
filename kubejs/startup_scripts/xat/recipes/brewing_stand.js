@@ -6,14 +6,17 @@ MoreJSEvents.registerPotionBrewing(event =>
 
     // 抗火（原版）
     event.addPotionBrewing("iceandfire:fire_dragon_blood", "minecraft:awkward", "minecraft:fire_resistance");
+    event.addPotionBrewing("iceandfire:fire_lily", "minecraft:awkward", "minecraft:fire_resistance");
 
     // 抗寒
     event.addPotionBrewing("iceandfire:ice_dragon_blood", "minecraft:awkward", "xat:ice_resistance");
+    event.addPotionBrewing("iceandfire:frost_lily", "minecraft:awkward", "xat:ice_resistance");
     // 抗寒：时长
     event.addPotionBrewing("minecraft:redstone", "xat:ice_resistance", "xat:extended_ice_resistance");
 
     // 抗雷
     event.addPotionBrewing("iceandfire:lightning_dragon_blood", "minecraft:awkward", "xat:lightning_resistance");
+    event.addPotionBrewing("iceandfire:lightning_lily", "minecraft:awkward", "xat:lightning_resistance");
     // 抗雷：时长
     event.addPotionBrewing("minecraft:redstone", "xat:lightning_resistance", "xat:extended_lightning_resistance");
 

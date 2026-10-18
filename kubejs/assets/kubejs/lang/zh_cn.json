@@ -33,6 +33,9 @@
     "loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow": "腾云而起……天域触手可及",
     "loot.kubejs.tooltip.artifacts.flame_pendant": "不灭之焰",
     "loot.kubejs.tooltip.artifacts.flame_pendant_vow": "怒火自地狱燃起……焚尽世间万物",
+    "loot.kubejs.tooltip.artifacts.plastic_drinking_hat": "我是第一名！",
+    "loot.kubejs.tooltip.artifacts.plastic_drinking_hat_vow": "我在用地心引力喝水！",
+    
     "loot.kubejs.tooltip.bountifulbaubles.sunglasses": "监守者的酷墨镜",
     "loot.kubejs.tooltip.bountifulbaubles.sunglasses_vow": "在深邃的黑暗里……永远见不到光明",
     "loot.kubejs.tooltip.bountifulbaubles.apple": "尸壳的小零食",
@@ -59,12 +62,15 @@
     "loot.kubejs.tooltip.bountifulbaubles.obsidian_skull_vow": "肉身虽陨……灵魂却永世徘徊",
     "loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying": "直面死亡",
     "loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying_vow": "与死亡对视……却从未真正倒下",
+
     "loot.kubejs.tooltip.minecraft.nether_star_vow": "虽已机械飞升，却还是逃不掉死亡的宿命……",
     "loot.kubejs.tooltip.minecraft.nether_star": "永恒之心",
     "loot.kubejs.tooltip.minecraft.heart_of_the_sea": "海洋之心",
     "loot.kubejs.tooltip.minecraft.heart_of_the_sea_vow": "沉眠于深海……却始终为海洋而跳动",
+
     "loot.kubejs.tooltip.bountifulbaubles.bezoar": "牛黄",
     "loot.kubejs.tooltip.bountifulbaubles.bezoar_vow": "此乃上等药材",
+
     "loot.kubejs.tooltip.xat.wither_ring": "枯萎的婚戒",
     "loot.kubejs.tooltip.xat.wither_ring_vow": "曾经散发着耀眼的光芒，如今变的枯萎凋零……",
     "loot.kubejs.tooltip.xat.teddy_bear": "雪怪的泰迪（尚有余温）",

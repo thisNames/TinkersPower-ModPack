@@ -156,7 +156,7 @@
 	#List of debuffs that Ankh Charm and Shield protect you from
 	#Ankh Configuration
 	#List of mob effects that are denied by the ankh charm and shield
-	"Ank protection" = ["minecraft:darkness", "minecraft:mining_fatigue", "minecraft:nausea", "minecraft:poison", "minecraft:slowness", "minecraft:weakness", "minecraft:wither", "minecraft:hunger", "minecraft:blindness", "minecraft:levitation", "cataclysm:curse_of_desert", "cataclysm:bone_fracture", "aquamirae:abyss_blindness", "potioncore:spin", "potioncore:perplexity", "potioncore:weight", "if_dragon_blessings:shocked", "if_dragon_blessings:frozen", "if_dragon_blessings:blaze", "potioncore:vulnerable", "potioncore:rust"]
+	"Ank protection" = ["minecraft:darkness", "minecraft:mining_fatigue", "minecraft:nausea", "minecraft:poison", "minecraft:slowness", "minecraft:weakness", "minecraft:wither", "minecraft:hunger", "minecraft:blindness", "minecraft:levitation", "cataclysm:curse_of_desert", "cataclysm:bone_fracture", "aquamirae:abyss_blindness", "potioncore:spin", "potioncore:perplexity", "potioncore:weight", "if_dragon_blessings:shocked", "if_dragon_blessings:frozen", "if_dragon_blessings:blaze", "potioncore:vulnerable", "potioncore:rust", "supplementaries:overencumbered"]
 
 ["Mossy Ring Settings"]
 	#苔藓戒指相关配置
