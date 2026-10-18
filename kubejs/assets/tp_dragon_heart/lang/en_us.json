@@ -20,6 +20,8 @@
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text3": "Attacks all entities except the attacker",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text4": "When wearing the 'Lightning Dragon Eye' at the same time, it gives an effect of+1 level",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text5": "When wearing the 'Dragon Lightning' or 'Scary Steel Armor' at the same time, grant an effect of+1 level",
+    "tooltip.tp_dragon_heart.dragons_heart_lightning.text6": "Basic damage+6 (up to 3 levels as the level increases)",
+    "tooltip.tp_dragon_heart.dragons_heart_lightning.text7": "The type of damage depends on the type of damage inflicted by the attacker",
 
     "advancements.tp_dragon_heart.dragon_heart_revived.title": "A Heart Rekindled",
     "advancements.tp_dragon_heart.dragon_heart_revived.description": "Obtain any of the three Dragon's Hearts and make it beat again",

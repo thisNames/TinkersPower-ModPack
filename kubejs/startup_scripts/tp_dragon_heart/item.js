@@ -97,6 +97,8 @@ StartupEvents.registry("item", event =>
         .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_lightning.text3").red())
         .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_lightning.text4").gold())
         .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_lightning.text5").gold())
+        .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_lightning.text6").blue())
+        .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_lightning.text7").gray())
         .tag("curios:charm");
 
     // 设置能力
