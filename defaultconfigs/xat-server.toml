@@ -70,7 +70,7 @@
 			#免疫脏水引起的寄生虫效果(Simple Difficulty)
 			immuneToParasites = false
 
-	#妖精设置
+	#仙女设置
 	[races.fairy]
 		#该种族能否骑乘实体？
 		canMount = true
@@ -89,10 +89,21 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:-0.6, Operation:2", "Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:2", "Name:minecraft:generic.attack_damage, Amount:-0.75, Operation:2", "Name:minecraft:generic.armor, Amount:-0.5, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2", "Name:generic.reachDistance, Amount:-0.35, Operation:2", "Name:forge:swim_speed, Amount:-0.25, Operation:2", "Name:xat:jump, Amount:-0.25, Operation:2", "Name:forge:step_height_addition, Amount:-0.35, Operation:0", "Name:xat:fly_speed, Amount:-0.4, Operation:2"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:-0.6, Operation:2",
+			"Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:2",
+			"Name:minecraft:generic.attack_damage, Amount:-0.75, Operation:2",
+			"Name:minecraft:generic.armor, Amount:-0.5, Operation:2",
+			"Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2",
+			"Name:generic.reachDistance, Amount:-0.35, Operation:2",
+			"Name:forge:swim_speed, Amount:-0.25, Operation:2",
+			"Name:xat:jump, Amount:-0.25, Operation:2",
+			"Name:forge:step_height_addition, Amount:-0.35, Operation:0",
+			"Name:xat:fly_speed, Amount:0.5, Operation:2"
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
-		magicAffinity = 500
+		magicAffinity = 600
 
 		[races.fairy.size]
 			#高度(占默认玩家身高的百分比)
@@ -145,7 +156,109 @@
 				#true：仅列出的方块可攀爬；false：除列出的方块外所有方块都可攀爬
 				useWhitelist = true
 				#方块 ID、*-通配符或 #标签
-				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
+				blocks = [
+					"minecraft:dirt",
+					"minecraft:grass_block",
+					"minecraft:sand",
+					"minecraft:*cobblestone*",
+					"minecraft:*planks*",
+					"minecraft:*stairs",
+					"minecraft:*slab",
+					"minecraft:stone",
+					"minecraft:gravel",
+					"#minecraft:gold_ores",
+					"#minecraft:iron_ores",
+					"#minecraft:coal_ores",
+					"#minecraft:logs",
+					"minecraft:sponge",
+					"minecraft:glass",
+					"#minecraft:lapis_ores",
+					"minecraft:lapis_block",
+					"minecraft:sandstone",
+					"#minecraft:wool",
+					"minecraft:gold_block",
+					"minecraft:iron_block",
+					"minecraft:bricks",
+					"minecraft:bookshelf",
+					"minecraft:obsidian",
+					"#minecraft:diamond_ores",
+					"minecraft:diamond_block",
+					"#minecraft:redstone_ores",
+					"minecraft:ice",
+					"minecraft:snow_block",
+					"minecraft:clay",
+					"minecraft:pumpkin",
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"minecraft:glowstone",
+					"minecraft:jack_o_lantern",
+					"minecraft:*_stained_glass",
+					"minecraft:*stone_bricks",
+					"minecraft:melon",
+					"minecraft:mycelium",
+					"minecraft:nether_bricks",
+					"minecraft:end_stone",
+					"#minecraft:emerald_ores",
+					"minecraft:emerald_block",
+					"minecraft:nether_quartz_ore",
+					"minecraft:quartz_block",
+					"minecraft:*terracotta",
+					"minecraft:prismarine",
+					"minecraft:sea_lantern",
+					"minecraft:hay_block",
+					"minecraft:coal_block",
+					"minecraft:packed_ice",
+					"minecraft:red_sandstone",
+					"minecraft:purpur_block",
+					"minecraft:purpur_pillar",
+					"minecraft:end_stone_bricks",
+					"minecraft:magma_block",
+					"minecraft:nether_wart_block",
+					"minecraft:red_nether_bricks",
+					"minecraft:bone_block",
+					"minecraft:*_concrete",
+					"minecraft:*_concrete_powder",
+					"#minecraft:leaves",
+					"minecraft:dispenser",
+					"minecraft:note_block",
+					"minecraft:sticky_piston",
+					"minecraft:piston",
+					"minecraft:tnt",
+					"minecraft:chest",
+					"minecraft:crafting_table",
+					"minecraft:furnace",
+					"minecraft:cactus",
+					"minecraft:jukebox",
+					"#minecraft:wooden_trapdoors",
+					"minecraft:iron_bars",
+					"minecraft:glass_pane",
+					"minecraft:enchanting_table",
+					"minecraft:end_portal_frame",
+					"minecraft:redstone_lamp",
+					"minecraft:ender_chest",
+					"minecraft:beacon",
+					"minecraft:anvil",
+					"minecraft:trapped_chest",
+					"minecraft:daylight_detector",
+					"minecraft:redstone_block",
+					"minecraft:hopper",
+					"minecraft:dropper",
+					"minecraft:*_stained_glass_pane",
+					"minecraft:iron_trapdoor",
+					"minecraft:slime_block",
+					"minecraft:end_rod",
+					"minecraft:chorus_plant",
+					"minecraft:chorus_flower",
+					"minecraft:observer",
+					"minecraft:*shulker_box",
+					"#minecraft:signs",
+					"#minecraft:wooden_doors",
+					"minecraft:iron_door",
+					"#minecraft:beds",
+					"minecraft:flower_pot",
+					"minecraft:*_skull",
+					"minecraft:*_head"
+				]
 
 			[races.fairy.abilities.mending_bloom]
 				#启用此能力
@@ -208,7 +321,14 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:-0.3, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:0.2, Operation:1", "Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_speed, Amount:-0.25, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:0.25, Operation:2"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:-0.3, Operation:1",
+			"Name:minecraft:generic.knockback_resistance, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1",
+			"Name:minecraft:generic.attack_speed, Amount:-0.25, Operation:2",
+			"Name:minecraft:generic.armor_toughness, Amount:0.25, Operation:2"
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 100
@@ -246,7 +366,14 @@
 				#使用合适镐子时，挖掘速度随方块硬度提升(上限以保证安全)
 				staticMining = true
 				#受自然时运影响的方块
-				fortuneBlocks = ["#minecraft:coal_ores", "#minecraft:lapis_ores", "#minecraft:diamond_ores", "#minecraft:redstone_ores", "#minecraft:emerald_ores", "minecraft:nether_quartz_ore"]
+				fortuneBlocks = [
+					"#minecraft:coal_ores",
+					"#minecraft:lapis_ores",
+					"#minecraft:diamond_ores",
+					"#minecraft:redstone_ores",
+					"#minecraft:emerald_ores",
+					"minecraft:nether_quartz_ore"
+				]
 
 				[races.dwarf.abilities.skilled_miner.experience]
 					#列出的方块掉落额外经验
@@ -257,7 +384,16 @@
 					#随机额外经验的下限
 					#范围：0 ~ 1000
 					bonusExpMin = 0
-					bonusExpBlocks = ["#minecraft:coal_ores", "#minecraft:iron_ores", "#minecraft:gold_ores", "#minecraft:lapis_ores", "#minecraft:redstone_ores", "#minecraft:diamond_ores", "#minecraft:emerald_ores", "minecraft:nether_quartz_ore"]
+					bonusExpBlocks = [
+						"#minecraft:coal_ores",
+						"#minecraft:iron_ores",
+						"#minecraft:gold_ores",
+						"#minecraft:lapis_ores",
+						"#minecraft:redstone_ores",
+						"#minecraft:diamond_ores",
+						"#minecraft:emerald_ores",
+						"minecraft:nether_quartz_ore"
+					]
 					#列出的方块始终至少掉落 1 点经验
 					minExp = true
 					minExpBlocks = ["minecraft:stone", "minecraft:end_stone"]
@@ -281,7 +417,17 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:2, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:2", "Name:minecraft:generic.attack_speed, Amount:-0.5, Operation:2", "Name:generic.reachDistance, Amount:1, Operation:1", "Name:xat:jump, Amount:0.75, Operation:1", "Name:forge:step_height_addition, Amount:1.4, Operation:0"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:2, Operation:1",
+			"Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0",
+			"Name:minecraft:generic.attack_damage, Amount:1, Operation:2",
+			"Name:minecraft:generic.attack_speed, Amount:-0.75, Operation:2",
+			"Name:generic.reachDistance, Amount:1.4, Operation:1",
+			"Name:xat:jump, Amount:0.75, Operation:1",
+			"Name:forge:step_height_addition, Amount:1.4, Operation:0",
+			"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:2",
+			"Name:forge:swim_speed, Amount:-0.5, Operation:2",
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 50
@@ -341,7 +487,13 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:-0.4, Operation:2", "Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.luck, Amount:1, Operation:0", "Name:forge:swim_speed, Amount:0.1, Operation:1"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:-0.4, Operation:2",
+			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
+			"Name:minecraft:generic.luck, Amount:1, Operation:0",
+			"Name:forge:swim_speed, Amount:0.1, Operation:1"
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 75
@@ -379,7 +531,109 @@
 				#true：仅列出的方块可攀爬；false：除列出的方块外所有方块都可攀爬
 				useWhitelist = true
 				#方块 ID、*-通配符或 #标签
-				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
+				blocks = [
+					"minecraft:dirt",
+					"minecraft:grass_block",
+					"minecraft:sand",
+					"minecraft:*cobblestone*",
+					"minecraft:*planks*",
+					"minecraft:*stairs",
+					"minecraft:*slab",
+					"minecraft:stone",
+					"minecraft:gravel",
+					"#minecraft:gold_ores",
+					"#minecraft:iron_ores",
+					"#minecraft:coal_ores",
+					"#minecraft:logs",
+					"minecraft:sponge",
+					"minecraft:glass",
+					"#minecraft:lapis_ores",
+					"minecraft:lapis_block",
+					"minecraft:sandstone",
+					"#minecraft:wool",
+					"minecraft:gold_block",
+					"minecraft:iron_block",
+					"minecraft:bricks",
+					"minecraft:bookshelf",
+					"minecraft:obsidian",
+					"#minecraft:diamond_ores",
+					"minecraft:diamond_block",
+					"#minecraft:redstone_ores",
+					"minecraft:ice",
+					"minecraft:snow_block",
+					"minecraft:clay",
+					"minecraft:pumpkin",
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"minecraft:glowstone",
+					"minecraft:jack_o_lantern",
+					"minecraft:*_stained_glass",
+					"minecraft:*stone_bricks",
+					"minecraft:melon",
+					"minecraft:mycelium",
+					"minecraft:nether_bricks",
+					"minecraft:end_stone",
+					"#minecraft:emerald_ores",
+					"minecraft:emerald_block",
+					"minecraft:nether_quartz_ore",
+					"minecraft:quartz_block",
+					"minecraft:*terracotta",
+					"minecraft:prismarine",
+					"minecraft:sea_lantern",
+					"minecraft:hay_block",
+					"minecraft:coal_block",
+					"minecraft:packed_ice",
+					"minecraft:red_sandstone",
+					"minecraft:purpur_block",
+					"minecraft:purpur_pillar",
+					"minecraft:end_stone_bricks",
+					"minecraft:magma_block",
+					"minecraft:nether_wart_block",
+					"minecraft:red_nether_bricks",
+					"minecraft:bone_block",
+					"minecraft:*_concrete",
+					"minecraft:*_concrete_powder",
+					"#minecraft:leaves",
+					"minecraft:dispenser",
+					"minecraft:note_block",
+					"minecraft:sticky_piston",
+					"minecraft:piston",
+					"minecraft:tnt",
+					"minecraft:chest",
+					"minecraft:crafting_table",
+					"minecraft:furnace",
+					"minecraft:cactus",
+					"minecraft:jukebox",
+					"#minecraft:wooden_trapdoors",
+					"minecraft:iron_bars",
+					"minecraft:glass_pane",
+					"minecraft:enchanting_table",
+					"minecraft:end_portal_frame",
+					"minecraft:redstone_lamp",
+					"minecraft:ender_chest",
+					"minecraft:beacon",
+					"minecraft:anvil",
+					"minecraft:trapped_chest",
+					"minecraft:daylight_detector",
+					"minecraft:redstone_block",
+					"minecraft:hopper",
+					"minecraft:dropper",
+					"minecraft:*_stained_glass_pane",
+					"minecraft:iron_trapdoor",
+					"minecraft:slime_block",
+					"minecraft:end_rod",
+					"minecraft:chorus_plant",
+					"minecraft:chorus_flower",
+					"minecraft:observer",
+					"minecraft:*shulker_box",
+					"#minecraft:signs",
+					"#minecraft:wooden_doors",
+					"minecraft:iron_door",
+					"#minecraft:beds",
+					"minecraft:flower_pot",
+					"minecraft:*_skull",
+					"minecraft:*_head"
+				]
 
 			[races.goblin.abilities.wolf_rider]
 				#启用此能力
@@ -404,7 +658,14 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.movement_speed, Amount:0.1, Operation:1", "Name:minecraft:generic.attack_speed, Amount:0.3, Operation:1"]
+		attributes = [
+			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1", 
+			"Name:minecraft:generic.attack_speed, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.max_health, Amount:0.2, Operation:2",
+			"Name:minecraft:generic.armor_toughness, Amount:0.2, Operation:2",
+			"Name:forge:swim_speed, Amount:0.1, Operation:2",
+			"Name:xat:jump, Amount:0.2, Operation:2",
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 200
@@ -456,12 +717,18 @@
 				#参考拉重；重于该值的弓造成更高伤害
 				#范围：1.0 ~ 10000.0
 				defaultWeight = 60.0
-				#永不受益的弓(* 通配符)
-				bowBlacklist = ["*:*crossbow*"]
+				#永不受益的弓(* 通配符) ["*:*crossbow*"]
+				bowBlacklist = []
 				#弓的拉重。格式：item;weight(* 通配符)。未列出的弓无加成
-				bows = ["minecraft:bow;40.0", "spartanweaponry:aluminum_longbow;70.0", "spartanweaponry:bronze_longbow;70.0", "spartanweaponry:constantan_longbow;70.0", "spartanweaponry:copper_longbow;70.0", "spartanweaponry:diamond_longbow;70.0", "spartanweaponry:electrum_longbow;70.0", "spartanweaponry:golden_longbow;70.0", "spartanweaponry:invar_longbow;70.0", "spartanweaponry:iron_longbow;70.0", "spartanweaponry:lead_longbow;70.0", "spartanweaponry:leather_longbow;70.0", "spartanweaponry:netherite_longbow;70.0", "spartanweaponry:nickel_longbow;70.0", "spartanweaponry:platinum_longbow;70.0", "spartanweaponry:silver_longbow;70.0", "spartanweaponry:steel_longbow;70.0", "spartanweaponry:tin_longbow;70.0", "spartanweaponry:wooden_longbow;70.0", "spartanfire_rlc:desert_myrmex_chitin_longbow;70.0", "spartanfire_rlc:desert_myrmex_stinger_longbow;70.0", "spartanfire_rlc:dragon_bone_longbow;70.0", "spartanfire_rlc:fire_dragonsteel_longbow;70.0", "spartanfire_rlc:flamed_dragon_bone_longbow;70.0", "spartanfire_rlc:ice_dragonsteel_longbow;70.0", "spartanfire_rlc:iced_dragon_bone_longbow;70.0", "spartanfire_rlc:jungle_myrmex_chitin_longbow;70.0", "spartanfire_rlc:jungle_myrmex_stinger_longbow;70.0", "spartanfire_rlc:lightning_dragon_bone_longbow;70.0", "spartanfire_rlc:lightning_dragonsteel_longbow;70.0"]
+				bows = [
+					"minecraft:bow;40.0",
+					"tinkers_things:shortbow;40",
+					"tconstruct:crossbow;70",
+					"tconstruct:longbow;70",
+					"tinkers_thinking:repeating_crossbow;70"
+				]
 
-	#猫人(Faelis)设置
+	#猫灵设置
 	[races.faelis]
 		#该种族能否骑乘实体？
 		canMount = true
@@ -480,7 +747,18 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:-0.25, Operation:1", "Name:minecraft:generic.movement_speed, Amount:0.15, Operation:1", "Name:minecraft:generic.attack_damage, Amount:-0.25, Operation:1", "Name:minecraft:generic.attack_speed, Amount:0.15, Operation:2", "Name:minecraft:generic.armor_toughness, Amount:-0.15, Operation:2", "Name:minecraft:generic.luck, Amount:1, Operation:0", "Name:generic.reachDistance, Amount:-0.1, Operation:1", "Name:forge:swim_speed, Amount:0.3, Operation:1", "Name:xat:jump, Amount:0.6, Operation:1", "Name:forge:step_height_addition, Amount:0.6, Operation:0"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:-0.25, Operation:1",
+			"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1",
+			"Name:minecraft:generic.attack_speed, Amount:0.25, Operation:2",
+			"Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2",
+			"Name:minecraft:generic.luck, Amount:1, Operation:0",
+			"Name:generic.reachDistance, Amount:-0.1, Operation:1",
+			"Name:forge:swim_speed, Amount:0.3, Operation:1",
+			"Name:xat:jump, Amount:0.6, Operation:1",
+			"Name:forge:step_height_addition, Amount:0.6, Operation:0"
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 125
@@ -509,7 +787,7 @@
 			barehandCombat = true
 			#双手均视为空手时的额外伤害
 			#范围：0.0 ~ 1000.0
-			barehandCombatBonus = 3.25
+			barehandCombatBonus = 3.0
 			#仍视为空手的持有物品，并将其数值作为伤害。格式：item[;hand];value
 			bareHands = []
 			#喝牛奶获得活力状态及牛奶增益
@@ -520,13 +798,44 @@
 			#视为牛奶的物品。格式：item[;level[;duration]]
 			milk = ["minecraft:milk_bucket"]
 			#牛奶提供的额外效果。格式：modid:effect:duration:amplifier
-			milkBuffs = ["minecraft:speed:3600:0", "minecraft:strength:3600:0", "minecraft:jump_boost:3600:0"]
+			milkBuffs = ["minecraft:speed:3600:0", "minecraft:strength:3600:1", "minecraft:jump_boost:3600:0"]
 			#重甲会降低移动速度并减少跳跃高度
 			heavyArmorPenalty = true
 			#活力状态可抵消重甲惩罚
-			milkInvigorated = true
+			milkInvigorated = false
 			#护甲重量。格式：item 或 material[;slot];weight
-			heavyArmor = ["minecraft:chainmail_helmet;0.01", "minecraft:chainmail_chestplate;0.09", "minecraft:chainmail_leggings;0.075", "minecraft:chainmail_boots;0.025", "iron;head;0.025", "iron;chest;0.15", "iron;legs;0.075", "iron;feet;0.05", "minecraft:golden_helmet;0.04", "minecraft:golden_chestplate;0.2", "minecraft:golden_leggings;0.1", "minecraft:golden_boots;0.06", "diamond;0.075"]
+			heavyArmor = [
+				"minecraft:chainmail_helmet;0.01",
+				"minecraft:chainmail_chestplate;0.09", 
+				"minecraft:chainmail_leggings;0.075", 
+				"minecraft:chainmail_boots;0.025", 
+				"iron;head;0.025",
+				"iron;chest;0.15",
+				"iron;legs;0.075",
+				"iron;feet;0.05",
+				"minecraft:golden_helmet;0.04",
+				"minecraft:golden_chestplate;0.2",
+				"minecraft:golden_leggings;0.1",
+				"minecraft:golden_boots;0.06",
+				"diamond;0.075",
+
+				"tconstruct:travelers_helmet;0.08",
+        		"tconstruct:plate_helmet;0.08",
+        		"tconstruct:slime_helmet;0.08",
+        		"tinkers_things:laminar_helmet;0.08",
+				"tconstruct:travelers_chestplate;0.2",
+        		"tconstruct:plate_chestplate;0.2",
+        		"tconstruct:slime_chestplate;0.2",
+        		"tinkers_things:laminar_chestplate;0.2",
+				"tconstruct:travelers_leggings;0.1",
+        		"tconstruct:plate_leggings;0.1",
+        		"tconstruct:slime_leggings;0.1",
+        		"tinkers_things:laminar_leggings;0.1",
+				"tconstruct:travelers_boots;0.06",
+				"tconstruct:plate_boots;0.06",
+				"tconstruct:slime_boots;0.06",
+				"tinkers_things:laminar_boots;0.06",
+			]
 
 			[races.faelis.abilities.climbing]
 				#启用此能力
@@ -534,11 +843,113 @@
 				#true：仅列出的方块可攀爬；false：除列出的方块外所有方块都可攀爬
 				useWhitelist = true
 				#方块 ID、*-通配符或 #标签
-				blocks = ["minecraft:dirt", "minecraft:grass_block", "minecraft:sand", "minecraft:*cobblestone*", "minecraft:*planks*", "minecraft:*stairs", "minecraft:*slab", "minecraft:stone", "minecraft:gravel", "#minecraft:gold_ores", "#minecraft:iron_ores", "#minecraft:coal_ores", "#minecraft:logs", "minecraft:sponge", "minecraft:glass", "#minecraft:lapis_ores", "minecraft:lapis_block", "minecraft:sandstone", "#minecraft:wool", "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:bookshelf", "minecraft:obsidian", "#minecraft:diamond_ores", "minecraft:diamond_block", "#minecraft:redstone_ores", "minecraft:ice", "minecraft:snow_block", "minecraft:clay", "minecraft:pumpkin", "minecraft:netherrack", "minecraft:soul_sand", "minecraft:glowstone", "minecraft:jack_o_lantern", "minecraft:*_stained_glass", "minecraft:*stone_bricks", "minecraft:melon", "minecraft:mycelium", "minecraft:nether_bricks", "minecraft:end_stone", "#minecraft:emerald_ores", "minecraft:emerald_block", "minecraft:nether_quartz_ore", "minecraft:quartz_block", "minecraft:*terracotta", "minecraft:prismarine", "minecraft:sea_lantern", "minecraft:hay_block", "minecraft:coal_block", "minecraft:packed_ice", "minecraft:red_sandstone", "minecraft:purpur_block", "minecraft:purpur_pillar", "minecraft:end_stone_bricks", "minecraft:magma_block", "minecraft:nether_wart_block", "minecraft:red_nether_bricks", "minecraft:bone_block", "minecraft:*_concrete", "minecraft:*_concrete_powder", "#minecraft:leaves", "minecraft:dispenser", "minecraft:note_block", "minecraft:sticky_piston", "minecraft:piston", "minecraft:tnt", "minecraft:chest", "minecraft:crafting_table", "minecraft:furnace", "minecraft:cactus", "minecraft:jukebox", "#minecraft:wooden_trapdoors", "minecraft:iron_bars", "minecraft:glass_pane", "minecraft:enchanting_table", "minecraft:end_portal_frame", "minecraft:redstone_lamp", "minecraft:ender_chest", "minecraft:beacon", "minecraft:anvil", "minecraft:trapped_chest", "minecraft:daylight_detector", "minecraft:redstone_block", "minecraft:hopper", "minecraft:dropper", "minecraft:*_stained_glass_pane", "minecraft:iron_trapdoor", "minecraft:slime_block", "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:observer", "minecraft:*shulker_box", "#minecraft:signs", "#minecraft:wooden_doors", "minecraft:iron_door", "#minecraft:beds", "minecraft:flower_pot", "minecraft:*_skull", "minecraft:*_head"]
+				blocks = [
+					"minecraft:dirt",
+					"minecraft:grass_block",
+					"minecraft:sand",
+					"minecraft:*cobblestone*",
+					"minecraft:*planks*",
+					"minecraft:*stairs",
+					"minecraft:*slab",
+					"minecraft:stone",
+					"minecraft:gravel",
+					"#minecraft:gold_ores",
+					"#minecraft:iron_ores",
+					"#minecraft:coal_ores",
+					"#minecraft:logs",
+					"minecraft:sponge",
+					"minecraft:glass",
+					"#minecraft:lapis_ores",
+					"minecraft:lapis_block",
+					"minecraft:sandstone",
+					"#minecraft:wool",
+					"minecraft:gold_block",
+					"minecraft:iron_block",
+					"minecraft:bricks",
+					"minecraft:bookshelf",
+					"minecraft:obsidian",
+					"#minecraft:diamond_ores",
+					"minecraft:diamond_block",
+					"#minecraft:redstone_ores",
+					"minecraft:ice",
+					"minecraft:snow_block",
+					"minecraft:clay",
+					"minecraft:pumpkin",
+					"minecraft:netherrack",
+					"minecraft:soul_sand",
+					"minecraft:glowstone",
+					"minecraft:jack_o_lantern",
+					"minecraft:*_stained_glass",
+					"minecraft:*stone_bricks",
+					"minecraft:melon",
+					"minecraft:mycelium",
+					"minecraft:nether_bricks",
+					"minecraft:end_stone",
+					"#minecraft:emerald_ores",
+					"minecraft:emerald_block",
+					"minecraft:nether_quartz_ore",
+					"minecraft:quartz_block",
+					"minecraft:*terracotta",
+					"minecraft:prismarine",
+					"minecraft:sea_lantern",
+					"minecraft:hay_block",
+					"minecraft:coal_block",
+					"minecraft:packed_ice",
+					"minecraft:red_sandstone",
+					"minecraft:purpur_block",
+					"minecraft:purpur_pillar",
+					"minecraft:end_stone_bricks",
+					"minecraft:magma_block",
+					"minecraft:nether_wart_block",
+					"minecraft:red_nether_bricks",
+					"minecraft:bone_block",
+					"minecraft:*_concrete",
+					"minecraft:*_concrete_powder",
+					"#minecraft:leaves",
+					"minecraft:dispenser",
+					"minecraft:note_block",
+					"minecraft:sticky_piston",
+					"minecraft:piston",
+					"minecraft:tnt",
+					"minecraft:chest",
+					"minecraft:crafting_table",
+					"minecraft:furnace",
+					"minecraft:cactus",
+					"minecraft:jukebox",
+					"#minecraft:wooden_trapdoors",
+					"minecraft:iron_bars",
+					"minecraft:glass_pane",
+					"minecraft:enchanting_table",
+					"minecraft:end_portal_frame",
+					"minecraft:redstone_lamp",
+					"minecraft:ender_chest",
+					"minecraft:beacon",
+					"minecraft:anvil",
+					"minecraft:trapped_chest",
+					"minecraft:daylight_detector",
+					"minecraft:redstone_block",
+					"minecraft:hopper",
+					"minecraft:dropper",
+					"minecraft:*_stained_glass_pane",
+					"minecraft:iron_trapdoor",
+					"minecraft:slime_block",
+					"minecraft:end_rod",
+					"minecraft:chorus_plant",
+					"minecraft:chorus_flower",
+					"minecraft:observer",
+					"minecraft:*shulker_box",
+					"#minecraft:signs",
+					"#minecraft:wooden_doors",
+					"minecraft:iron_door",
+					"#minecraft:beds",
+					"minecraft:flower_pot",
+					"minecraft:*_skull",
+					"minecraft:*_head"
+				]
 
 			[races.faelis.abilities.night_vision]
 				#启用此能力
-				enabled = false
+				enabled = true
 				#激活时每秒消耗的法力；0 表示免费
 				#范围：0.0 ~ 10000.0
 				cost = 0.0
@@ -562,7 +973,15 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.4, Operation:2"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:0.4, Operation:1",
+			"Name:minecraft:generic.armor, Amount:0.5, Operation:1",
+			"Name:minecraft:generic.armor_toughness, Amount:0.4, Operation:1",
+			"Name:xat:fly_speed, Amount:0.6, Operation:2",
+			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1",
+			"Name:forge:swim_speed, Amount:-0.4, Operation:1"
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 400
@@ -631,7 +1050,18 @@
 				#范围：1 ~ 12000
 				frequency = 79
 				#宝藏列表。格式：方块 ID、实体 ID 或 #方块标签;#RRGGBB
-				targets = ["#forge:ores/coal;#464646", "#forge:ores/iron;#FFCC99", "#forge:ores/gold;#FFD700", "#forge:ores/lapis;#26619C", "#forge:ores/redstone;#B02E26", "#forge:ores/diamond;#00E6FF", "#forge:ores/emerald;#00FF4D", "#forge:ores/quartz;#EBEBEB", "minecraft:chest;#FFD700", "minecraft:chest_minecart;#FFD700"]
+				targets = [
+					"#forge:ores/coal;#464646",
+					"#forge:ores/iron;#FFCC99",
+					"#forge:ores/gold;#FFD700",
+					"#forge:ores/lapis;#26619C",
+					"#forge:ores/redstone;#B02E26",
+					"#forge:ores/diamond;#00E6FF",
+					"#forge:ores/emerald;#00FF4D",
+					"#forge:ores/quartz;#EBEBEB",
+					"minecraft:chest;#FFD700",
+					"minecraft:chest_minecart;#FFD700"
+				]
 				#纵向扫描范围(方块)
 				#范围：0 ~ 32
 				rangeVertical = 6
@@ -662,13 +1092,13 @@
 				terrain = true
 				#每个吐息弹的伤害
 				#范围：0.0 ~ 10000.0
-				damage = 1.0
+				damage = 2.0
 				#每个吐息弹消耗的法力
 				#范围：0.0 ~ 10000.0
 				cost = 10.0
 				#按住按键时吐息弹发射间隔(刻)
 				#范围：0 ~ 200
-				frequency = 3
+				frequency = 10
 				#施加于目标的效果。格式：modid:effect:duration:amplifier
 				effects = []
 
@@ -684,7 +1114,12 @@
 					#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 					damageTypesToIgnore = ["*;isFire"]
 					#该元素形态的属性修正
-					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
+					attributes = [
+						"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
+						"Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1",
+						"Name:xat:fly_speed, Amount:0.6, Operation:2"
+					]
 
 					[races.dragon.abilities.elements.fire.fire_immunity]
 						#启用此能力
@@ -700,13 +1135,13 @@
 						terrain = true
 						#每个吐息弹的伤害
 						#范围：0.0 ~ 10000.0
-						damage = 1.0
+						damage = 2.0
 						#每个吐息弹消耗的法力
 						#范围：0.0 ~ 10000.0
 						cost = 10.0
 						#按住按键时吐息弹发射间隔(刻)
 						#范围：0 ~ 200
-						frequency = 3
+						frequency = 10
 						#施加于目标的效果。格式：modid:effect:duration:amplifier
 						effects = []
 
@@ -731,7 +1166,12 @@
 					#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 					damageTypesToIgnore = ["*;isIce"]
 					#该元素形态的属性修正
-					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
+					attributes = [
+						"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
+						"Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1",
+						"Name:xat:fly_speed, Amount:0.6, Operation:2"
+					]
 
 					[races.dragon.abilities.elements.ice.ice_immunity]
 						#启用此能力
@@ -751,13 +1191,13 @@
 						terrain = true
 						#每个吐息弹的伤害
 						#范围：0.0 ~ 10000.0
-						damage = 1.0
+						damage = 2.0
 						#每个吐息弹消耗的法力
 						#范围：0.0 ~ 10000.0
 						cost = 10.0
 						#按住按键时吐息弹发射间隔(刻)
 						#范围：0 ~ 200
-						frequency = 3
+						frequency = 20
 						#施加于目标的效果。格式：modid:effect:duration:amplifier
 						effects = ["minecraft:slowness:100:2"]
 
@@ -782,7 +1222,12 @@
 					#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 					damageTypesToIgnore = ["*;isLightning"]
 					#该元素形态的属性修正
-					attributes = ["Name:minecraft:generic.max_health, Amount:0.25, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1", "Name:xat:fly_speed, Amount:-0.6, Operation:2"]
+					attributes = [
+						"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
+						"Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1",
+						"Name:xat:fly_speed, Amount:0.6, Operation:2"
+					]
 
 					[races.dragon.abilities.elements.lightning.lightning_immunity]
 						#启用此能力
@@ -796,10 +1241,10 @@
 						enabled = true
 						#满蓄力时的伤害
 						#范围：0.0 ~ 10000.0
-						attackDamage = 40.0
+						attackDamage = 20.0
 						#满蓄力时消耗的法力
 						#范围：0.0 ~ 10000.0
-						attackCost = 200.0
+						attackCost = 100.0
 						#达到满蓄力所需的刻数
 						#范围：1 ~ 1200
 						chargeTime = 20
@@ -811,13 +1256,13 @@
 						terrain = true
 						#每个吐息弹的伤害
 						#范围：0.0 ~ 10000.0
-						damage = 1.0
+						damage = 2.0
 						#每个吐息弹消耗的法力
 						#范围：0.0 ~ 10000.0
 						cost = 10.0
 						#按住按键时吐息弹发射间隔(刻)
 						#范围：0 ~ 200
-						frequency = 3
+						frequency = 10
 						#施加于目标的效果。格式：modid:effect:duration:amplifier
 						effects = ["minecraft:slowness:20:4", "minecraft:weakness:20:1"]
 
@@ -832,7 +1277,7 @@
 						#免疫脏水引起的寄生虫效果(Simple Difficulty)
 						immuneToParasites = false
 
-	#托罗斯(牛头人)设置
+	#牛头人设置
 	[races.taurus]
 		#该种族能否骑乘实体？
 		canMount = true
@@ -851,7 +1296,15 @@
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
-		attributes = ["Name:minecraft:generic.max_health, Amount:0.5, Operation:1", "Name:minecraft:generic.knockback_resistance, Amount:0.5, Operation:0", "Name:minecraft:generic.armor, Amount:0.2, Operation:1", "Name:minecraft:generic.armor_toughness, Amount:0.3, Operation:1", "Name:minecraft:generic.attack_damage, Amount:0.2, Operation:1", "Name:minecraft:generic.movement_speed, Amount:-0.1, Operation:1", "Name:forge:swim_speed, Amount:-0.15, Operation:2"]
+		attributes = [
+			"Name:minecraft:generic.max_health, Amount:0.6, Operation:1",
+			"Name:minecraft:generic.knockback_resistance, Amount:0.5, Operation:0",
+			"Name:minecraft:generic.armor, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.armor_toughness, Amount:0.3, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.movement_speed, Amount:0.1, Operation:1",
+			"Name:forge:swim_speed, Amount:-0.15, Operation:2"
+		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
 		magicAffinity = 100
@@ -859,10 +1312,10 @@
 		[races.taurus.size]
 			#高度(占默认玩家身高的百分比)
 			#范围：1 ~ 1000
-			height = 120
+			height = 140
 			#宽度(占默认玩家宽度的百分比)
 			#范围：1 ~ 1000
-			width = 120
+			width = 140
 
 		#生存模组兼容性(Cold Sweat / Simple Difficulty)
 		[races.taurus.survival]
