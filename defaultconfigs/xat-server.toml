@@ -787,16 +787,22 @@
 			barehandCombat = true
 			#双手均视为空手时的额外伤害
 			#范围：0.0 ~ 1000.0
-			barehandCombatBonus = 3.0
-			#仍视为空手的持有物品，并将其数值作为伤害。格式：item[;hand];value
-			bareHands = []
+			barehandCombatBonus = 2.0
+			#仍视为空手的持有物品，并将其数值作为增加伤害。格式：item[;hand];value
+			bareHands = [
+				"artifacts:digging_claws;1",
+				"artifacts:feral_claws;1",
+				"xat:faelis_claw;2",
+				"iceandfire:hippogryph_talon;2",
+				"cataclysm:tidal_claws;3"
+			]
 			#喝牛奶获得活力状态及牛奶增益
 			milkBonus = true
 			#默认活力状态持续时间(刻)
 			#范围：1 ~ 72000
 			milkBonusDuration = 600
 			#视为牛奶的物品。格式：item[;level[;duration]]
-			milk = ["minecraft:milk_bucket"]
+			milk = ["minecraft:milk_bucket", "tconstruct:cheese_ingot", "tconstruct:cheese_block"]
 			#牛奶提供的额外效果。格式：modid:effect:duration:amplifier
 			milkBuffs = ["minecraft:speed:3600:0", "minecraft:strength:3600:1", "minecraft:jump_boost:3600:0"]
 			#重甲会降低移动速度并减少跳跃高度

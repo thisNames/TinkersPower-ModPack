@@ -25,6 +25,8 @@
     "item.kubejs.tooltip.roughtweaks.text": "治愈%s点生命值",
     "item.kubejs.tooltip.roughtweaks.medkit_enchanted": "附魔医疗包",
 
+    "item.kubejs.tooltip.xat.faelis_ring_taker": "猫灵手持时伤害+%s",
+
     "loot.kubejs.tooltip.artifacts.crystal_heart": "科妮莉亚之心",
     "loot.kubejs.tooltip.artifacts.crystal_heart_vow": "即使冰封许久……这颗心依旧火热",
     "loot.kubejs.tooltip.artifacts.power_glove": "大地之力（+999-1000+5）",
