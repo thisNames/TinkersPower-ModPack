@@ -805,36 +805,381 @@
 			milkInvigorated = false
 			#护甲重量。格式：item 或 material[;slot];weight
 			heavyArmor = [
-				"minecraft:chainmail_helmet;0.01",
-				"minecraft:chainmail_chestplate;0.09", 
-				"minecraft:chainmail_leggings;0.075", 
-				"minecraft:chainmail_boots;0.025", 
-				"iron;head;0.025",
-				"iron;chest;0.15",
-				"iron;legs;0.075",
-				"iron;feet;0.05",
-				"minecraft:golden_helmet;0.04",
-				"minecraft:golden_chestplate;0.2",
-				"minecraft:golden_leggings;0.1",
-				"minecraft:golden_boots;0.06",
-				"diamond;0.075",
-
-				"tconstruct:travelers_helmet;0.08",
-        		"tconstruct:plate_helmet;0.08",
-        		"tconstruct:slime_helmet;0.08",
-        		"tinkers_things:laminar_helmet;0.08",
-				"tconstruct:travelers_chestplate;0.2",
-        		"tconstruct:plate_chestplate;0.2",
-        		"tconstruct:slime_chestplate;0.2",
-        		"tinkers_things:laminar_chestplate;0.2",
-				"tconstruct:travelers_leggings;0.1",
-        		"tconstruct:plate_leggings;0.1",
-        		"tconstruct:slime_leggings;0.1",
-        		"tinkers_things:laminar_leggings;0.1",
-				"tconstruct:travelers_boots;0.06",
+				# ===== Minecraft 原版盔甲重量 =====
+				# 锁链（环状轻金属）
+				"minecraft:chainmail_helmet;0.05",
+				"minecraft:chainmail_chestplate;0.12",
+				"minecraft:chainmail_leggings;0.07",
+				"minecraft:chainmail_boots;0.035",
+				# 铁（铁板，中重）
+				"minecraft:iron_helmet;0.08",
+				"minecraft:iron_chestplate;0.18",
+				"minecraft:iron_leggings;0.1",
+				"minecraft:iron_boots;0.06",
+				# 金（致密软金属，中重）
+				"minecraft:golden_helmet;0.07",
+				"minecraft:golden_chestplate;0.16",
+				"minecraft:golden_leggings;0.09",
+				"minecraft:golden_boots;0.055",
+				# 钻石（宝石，中重偏重）
+				"minecraft:diamond_helmet;0.09",
+				"minecraft:diamond_chestplate;0.19",
+				"minecraft:diamond_leggings;0.11",
+				"minecraft:diamond_boots;0.065",
+				# 下届合金（原版顶级金属，重型）
+				"minecraft:netherite_helmet;0.1",
+				"minecraft:netherite_chestplate;0.2",
+				"minecraft:netherite_leggings;0.13",
+				"minecraft:netherite_boots;0.08",
+				# 海龟帽（龟壳，中等头部单件）
+				"minecraft:turtle_helmet;0.05",
+				
+				# ===== Tinkers' Construct 3 及附属盔甲重量 =====
+				# 史莱姆 slime（凝胶，最轻）
+				"tconstruct:slime_helmet;0.04",
+				"tconstruct:slime_chestplate;0.1",
+				"tconstruct:slime_leggings;0.05",
+				"tconstruct:slime_boots;0.03",
+				# 旅行者 travelers（布/革基底，轻）
+				"tconstruct:travelers_helmet;0.05",
+				"tconstruct:travelers_chestplate;0.12",
+				"tconstruct:travelers_leggings;0.06",
+				"tconstruct:travelers_boots;0.035",
+				# 层板 laminar（层叠金属板，中重；附属模组 tinkers_things）
+				"tinkers_things:laminar_helmet;0.07",
+				"tinkers_things:laminar_chestplate;0.17",
+				"tinkers_things:laminar_leggings;0.09",
+				"tinkers_things:laminar_boots;0.05",
+				# 镶板 plate（实心金属板，最重；胸甲顶格 0.2）
+				"tconstruct:plate_helmet;0.08",
+				"tconstruct:plate_chestplate;0.2",
+				"tconstruct:plate_leggings;0.1",
 				"tconstruct:plate_boots;0.06",
-				"tconstruct:slime_boots;0.06",
-				"tinkers_things:laminar_boots;0.06",
+
+				# ===== Alex's Caves 盔甲重量 =====
+				# 黑暗纺织（魔法布甲，轻）
+				"alexscaves:hood_of_darkness;0.05",
+				"alexscaves:cloak_of_darkness;0.13",
+				# 姜饼（食物/饼干，极轻）
+				"alexscaves:gingerbread_helmet;0.03",
+				"alexscaves:gingerbread_chestplate;0.08",
+				"alexscaves:gingerbread_leggings;0.04",
+				"alexscaves:gingerbread_boots;0.025",
+				# 防化服（橡胶/塑料，中等）
+				"alexscaves:hazmat_mask;0.06",
+				"alexscaves:hazmat_chestplate;0.15",
+				"alexscaves:hazmat_leggings;0.08",
+				"alexscaves:hazmat_boots;0.045",
+				# 潜水铜（铜质，中重）
+				"alexscaves:diving_mask;0.07",
+				"alexscaves:diving_chestplate;0.18",
+				"alexscaves:diving_leggings;0.09",
+				"alexscaves:diving_boots;0.055",
+				# 原始护腿（骨质，中等）
+				"alexscaves:primordial_pants;0.07",
+
+				# ===== Alex's Mobs 盔甲重量 =====
+				# 走鹃羽毛（羽，极轻）
+				"alexsmobs:roadrunner_boots;0.02",
+				# 鳄鱼鳞片（鳞甲，中重）
+				"alexsmobs:crocodile_chestplate;0.16",
+				# 和服（布/丝绸，轻）
+				"alexsmobs:unsettling_kimono;0.1",
+				# 寒霜（羽/绒，轻中）
+				"alexsmobs:froststalker_helmet;0.06",
+				# 岩壳（岩石，重）
+				"alexsmobs:rocky_chestplate;0.2",
+				# 蜈蚣关节（几丁质，中）
+				"alexsmobs:centipede_leggings;0.09",
+
+				# ===== Aquamirae 盔甲重量 =====
+				# 可怖鱼骨（鱼骨，中等）
+				"aquamirae:terrible_helmet;0.07",
+				"aquamirae:terrible_chestplate;0.15",
+				"aquamirae:terrible_leggings;0.09",
+				"aquamirae:terrible_boots;0.05",
+				# 深海重紫水晶（水晶，重）
+				"aquamirae:abyssal_tiara;0.05",
+				"aquamirae:abyssal_helmet;0.1",
+				"aquamirae:abyssal_chestplate;0.2",
+				"aquamirae:abyssal_leggings;0.13",
+				"aquamirae:abyssal_boots;0.08",
+				# 潜水重铜（重铜，重）
+				"aquamirae:three_bolt_helmet;0.09",
+				"aquamirae:three_bolt_chestplate;0.2",
+				"aquamirae:three_bolt_leggings;0.13",
+				"aquamirae:three_bolt_boots;0.08",
+
+				# ===== Block Factory's Bosses 盔甲重量 =====
+				# 骑士铁（铁质，中重）
+				"block_factorys_bosses:knight_helmet;0.08",
+				"block_factorys_bosses:knight_chestplate;0.18",
+				"block_factorys_bosses:knight_leggings;0.1",
+				"block_factorys_bosses:knight_boots;0.06",
+				# 火龙骨（龙骨，重型）
+				"block_factorys_bosses:dragon_bones_chestplate;0.2",
+				"block_factorys_bosses:dragon_bones_leggings;0.13",
+				"block_factorys_bosses:dragon_bones_boots;0.08",
+
+				# ===== Cataclysm 盔甲重量 =====
+				# 腾炎铁（顶级合金，重型）
+				"cataclysm:ignitium_helmet;0.1",
+				"cataclysm:ignitium_chestplate;0.2",
+				"cataclysm:ignitium_elytra_chestplate;0.18",
+				"cataclysm:ignitium_leggings;0.13",
+				"cataclysm:ignitium_boots;0.08",
+				# 花岩（岩石肩甲，中重）
+				"cataclysm:bloom_stone_pauldrons;0.16",
+				# 恶兽钢（钢质，中重）
+				"cataclysm:monstrous_helm;0.09",
+				# 咒魂铁（顶级合金，重型）
+				"cataclysm:cursium_helmet;0.1",
+				"cataclysm:cursium_chestplate;0.2",
+				"cataclysm:cursium_leggings;0.13",
+				"cataclysm:cursium_boots;0.08",
+				# 骸龙骨（龙骨，重型）
+				"cataclysm:bone_reptile_helmet;0.09",
+				"cataclysm:bone_reptile_chestplate;0.2",
+
+				# ===== Dreadsteel 盔甲重量 =====
+				# 惊悚钢（钢质，重型；重量按物理材质计）
+				"dreadsteel:dreadsteel_helmet;0.1",
+				"dreadsteel:dreadsteel_chestplate;0.2",
+				"dreadsteel:dreadsteel_leggings;0.13",
+				"dreadsteel:dreadsteel_boots;0.08",
+
+				# ===== Ice and Fire 盔甲重量 =====
+				# 银（轻金属）
+				"iceandfire:armor_silver_metal_helmet;0.06",
+				"iceandfire:armor_silver_metal_chestplate;0.15",
+				"iceandfire:armor_silver_metal_leggings;0.08",
+				"iceandfire:armor_silver_metal_boots;0.045",
+				# 铜（弱轻金属）
+				"iceandfire:armor_copper_metal_helmet;0.04",
+				"iceandfire:armor_copper_metal_chestplate;0.1",
+				"iceandfire:armor_copper_metal_leggings;0.06",
+				"iceandfire:armor_copper_metal_boots;0.03",
+				# 拟羊毛（布/绒，极轻）
+				"iceandfire:sheep_helmet;0.03",
+				"iceandfire:sheep_chestplate;0.08",
+				"iceandfire:sheep_leggings;0.04",
+				"iceandfire:sheep_boots;0.025",
+				# 虫壳（沙褐/苍白/血红，几丁质中）
+				"iceandfire:deathworm_yellow_helmet;0.06",
+				"iceandfire:deathworm_yellow_chestplate;0.13",
+				"iceandfire:deathworm_yellow_leggings;0.08",
+				"iceandfire:deathworm_yellow_boots;0.045",
+				"iceandfire:deathworm_white_helmet;0.06",
+				"iceandfire:deathworm_white_chestplate;0.13",
+				"iceandfire:deathworm_white_leggings;0.08",
+				"iceandfire:deathworm_white_boots;0.045",
+				"iceandfire:deathworm_red_helmet;0.06",
+				"iceandfire:deathworm_red_chestplate;0.13",
+				"iceandfire:deathworm_red_leggings;0.08",
+				"iceandfire:deathworm_red_boots;0.045",
+				# 蚂甲（沙漠/丛林，强几丁质中）
+				"iceandfire:myrmex_desert_helmet;0.07",
+				"iceandfire:myrmex_desert_chestplate;0.15",
+				"iceandfire:myrmex_desert_leggings;0.09",
+				"iceandfire:myrmex_desert_boots;0.05",
+				"iceandfire:myrmex_jungle_helmet;0.07",
+				"iceandfire:myrmex_jungle_chestplate;0.15",
+				"iceandfire:myrmex_jungle_leggings;0.09",
+				"iceandfire:myrmex_jungle_boots;0.05",
+				# 龙钢（炎/霜/霆，顶级钢重型）
+				"iceandfire:dragonsteel_fire_helmet;0.1",
+				"iceandfire:dragonsteel_fire_chestplate;0.2",
+				"iceandfire:dragonsteel_fire_leggings;0.13",
+				"iceandfire:dragonsteel_fire_boots;0.08",
+				"iceandfire:dragonsteel_ice_helmet;0.1",
+				"iceandfire:dragonsteel_ice_chestplate;0.2",
+				"iceandfire:dragonsteel_ice_leggings;0.13",
+				"iceandfire:dragonsteel_ice_boots;0.08",
+				"iceandfire:dragonsteel_lightning_helmet;0.1",
+				"iceandfire:dragonsteel_lightning_chestplate;0.2",
+				"iceandfire:dragonsteel_lightning_leggings;0.13",
+				"iceandfire:dragonsteel_lightning_boots;0.08",
+				# 龙鳞（12 色，强鳞甲中重）
+				"iceandfire:armor_red_helmet;0.08",
+				"iceandfire:armor_red_chestplate;0.17",
+				"iceandfire:armor_red_leggings;0.1",
+				"iceandfire:armor_red_boots;0.06",
+				"iceandfire:armor_bronze_helmet;0.08",
+				"iceandfire:armor_bronze_chestplate;0.17",
+				"iceandfire:armor_bronze_leggings;0.1",
+				"iceandfire:armor_bronze_boots;0.06",
+				"iceandfire:armor_green_helmet;0.08",
+				"iceandfire:armor_green_chestplate;0.17",
+				"iceandfire:armor_green_leggings;0.1",
+				"iceandfire:armor_green_boots;0.06",
+				"iceandfire:armor_gray_helmet;0.08",
+				"iceandfire:armor_gray_chestplate;0.17",
+				"iceandfire:armor_gray_leggings;0.1",
+				"iceandfire:armor_gray_boots;0.06",
+				"iceandfire:armor_blue_helmet;0.08",
+				"iceandfire:armor_blue_chestplate;0.17",
+				"iceandfire:armor_blue_leggings;0.1",
+				"iceandfire:armor_blue_boots;0.06",
+				"iceandfire:armor_white_helmet;0.08",
+				"iceandfire:armor_white_chestplate;0.17",
+				"iceandfire:armor_white_leggings;0.1",
+				"iceandfire:armor_white_boots;0.06",
+				"iceandfire:armor_sapphire_helmet;0.08",
+				"iceandfire:armor_sapphire_chestplate;0.17",
+				"iceandfire:armor_sapphire_leggings;0.1",
+				"iceandfire:armor_sapphire_boots;0.06",
+				"iceandfire:armor_silver_helmet;0.08",
+				"iceandfire:armor_silver_chestplate;0.17",
+				"iceandfire:armor_silver_leggings;0.1",
+				"iceandfire:armor_silver_boots;0.06",
+				"iceandfire:armor_electric_helmet;0.08",
+				"iceandfire:armor_electric_chestplate;0.17",
+				"iceandfire:armor_electric_leggings;0.1",
+				"iceandfire:armor_electric_boots;0.06",
+				"iceandfire:armor_amythest_helmet;0.08",
+				"iceandfire:armor_amythest_chestplate;0.17",
+				"iceandfire:armor_amythest_leggings;0.1",
+				"iceandfire:armor_amythest_boots;0.06",
+				"iceandfire:armor_copper_helmet;0.08",
+				"iceandfire:armor_copper_chestplate;0.17",
+				"iceandfire:armor_copper_leggings;0.1",
+				"iceandfire:armor_copper_boots;0.06",
+				"iceandfire:armor_black_helmet;0.08",
+				"iceandfire:armor_black_chestplate;0.17",
+				"iceandfire:armor_black_leggings;0.1",
+				"iceandfire:armor_black_boots;0.06",
+				# 海蟒鳞（7 色，鳞甲中重）
+				"iceandfire:tide_purple_helmet;0.07",
+				"iceandfire:tide_purple_chestplate;0.16",
+				"iceandfire:tide_purple_leggings;0.09",
+				"iceandfire:tide_purple_boots;0.055",
+				"iceandfire:tide_red_helmet;0.07",
+				"iceandfire:tide_red_chestplate;0.16",
+				"iceandfire:tide_red_leggings;0.09",
+				"iceandfire:tide_red_boots;0.055",
+				"iceandfire:tide_green_helmet;0.07",
+				"iceandfire:tide_green_chestplate;0.16",
+				"iceandfire:tide_green_leggings;0.09",
+				"iceandfire:tide_green_boots;0.055",
+				"iceandfire:tide_teal_helmet;0.07",
+				"iceandfire:tide_teal_chestplate;0.16",
+				"iceandfire:tide_teal_leggings;0.09",
+				"iceandfire:tide_teal_boots;0.055",
+				"iceandfire:tide_deepblue_helmet;0.07",
+				"iceandfire:tide_deepblue_chestplate;0.16",
+				"iceandfire:tide_deepblue_leggings;0.09",
+				"iceandfire:tide_deepblue_boots;0.055",
+				"iceandfire:tide_bronze_helmet;0.07",
+				"iceandfire:tide_bronze_chestplate;0.16",
+				"iceandfire:tide_bronze_leggings;0.09",
+				"iceandfire:tide_bronze_boots;0.055",
+				"iceandfire:tide_blue_helmet;0.07",
+				"iceandfire:tide_blue_chestplate;0.16",
+				"iceandfire:tide_blue_leggings;0.09",
+				"iceandfire:tide_blue_boots;0.055",
+				# 食人妖皮（森林/雪地/山地，厚皮中）
+				"iceandfire:forest_troll_leather_helmet;0.05",
+				"iceandfire:forest_troll_leather_chestplate;0.12",
+				"iceandfire:forest_troll_leather_leggings;0.07",
+				"iceandfire:forest_troll_leather_boots;0.04",
+				"iceandfire:frost_troll_leather_helmet;0.05",
+				"iceandfire:frost_troll_leather_chestplate;0.12",
+				"iceandfire:frost_troll_leather_leggings;0.07",
+				"iceandfire:frost_troll_leather_boots;0.04",
+				"iceandfire:mountain_troll_leather_helmet;0.05",
+				"iceandfire:mountain_troll_leather_chestplate;0.12",
+				"iceandfire:mountain_troll_leather_leggings;0.07",
+				"iceandfire:mountain_troll_leather_boots;0.04",
+
+				# ===== Protection Pixel 盔甲重量 =====
+				# 机械动力胸甲（机械金属框架，中；统一保护1，权重一致）
+				"protection_pixel:wingsofprism_chestplate;0.14",
+				"protection_pixel:workerhornet_chestplate;0.14",
+				"protection_pixel:magneticstorm_chestplate;0.14",
+				"protection_pixel:pioneer_chestplate;0.14",
+				"protection_pixel:hellsnake_chestplate;0.14",
+				"protection_pixel:typhoon_chestplate;0.14",
+				"protection_pixel:breakeras_chestplate;0.14",
+				"protection_pixel:breaker_chestplate;0.14",
+				"protection_pixel:workerhornetas_chestplate;0.14",
+				"protection_pixel:magneticstormas_chestplate;0.14",
+				"protection_pixel:hellsnakeas_chestplate;0.14",
+				"protection_pixel:typhoonas_chestplate;0.14",
+				"protection_pixel:floatshield_chestplate;0.14",
+				"protection_pixel:tosaki_chestplate;0.14",
+				"protection_pixel:pioneeras_chestplate;0.14",
+				"protection_pixel:wingsofprismas_chestplate;0.14",
+				"protection_pixel:falconnest_chestplate;0.14",
+				"protection_pixel:falconnestas_chestplate;0.14",
+				# 机械动力头（机械金属，中；保护1）
+				"protection_pixel:plague_helmet;0.06",
+				"protection_pixel:lancer_helmet;0.06",
+				"protection_pixel:hammer_helmet;0.06",
+				"protection_pixel:hunter_helmet;0.06",
+				"protection_pixel:closed_helmet;0.06",
+				"protection_pixel:bloodprisoner_helmet;0.06",
+				"protection_pixel:nightdemon_helmet;0.06",
+				"protection_pixel:plagueas_helmet;0.06",
+				"protection_pixel:lanceras_helmet;0.06",
+				"protection_pixel:hammeras_helmet;0.06",
+				"protection_pixel:hunteras_helmet;0.06",
+				"protection_pixel:closedas_helmet;0.06",
+				"protection_pixel:bloodprisoneras_helmet;0.06",
+				"protection_pixel:nightdemonas_helmet;0.06",
+				"protection_pixel:tosaki_helmet;0.07",  # 保护2/韧2
+				# 机械动力护腿（保护1 / as升级保护2 / tosaki保护2韧2）
+				"protection_pixel:slingshot_leggings;0.08",
+				"protection_pixel:anchorpoint_leggings;0.08",
+				"protection_pixel:buoyancy_leggings;0.08",
+				"protection_pixel:slingshotas_leggings;0.085",
+				"protection_pixel:anchorpointas_leggings;0.085",
+				"protection_pixel:buoyancyas_leggings;0.085",
+				"protection_pixel:tosaki_leggings;0.09",
+				# 链板（链甲板，中重；保护6/韧4）
+				"protection_pixel:linkplate_helmet;0.07",
+				"protection_pixel:linkplate_chestplate;0.16",
+				"protection_pixel:linkplate_leggings;0.09",
+				"protection_pixel:linkplate_boots;0.05",
+				# 防护棉靴（棉布，极轻）
+				"protection_pixel:socks_boots;0.03",
+
+				# ===== Twilight Forest 盔甲重量 =====
+				# 铁木（铁渗木，中）
+				"twilightforest:ironwood_helmet;0.06",
+				"twilightforest:ironwood_chestplate;0.14",
+				"twilightforest:ironwood_leggings;0.08",
+				"twilightforest:ironwood_boots;0.045",
+				# 钢叶（轻质钢叶，中轻）
+				"twilightforest:steeleaf_helmet;0.05",
+				"twilightforest:steeleaf_chestplate;0.12",
+				"twilightforest:steeleaf_leggings;0.075",
+				"twilightforest:steeleaf_boots;0.04",
+				# 骑士铁（TF 铁质，中重）
+				"twilightforest:knightmetal_helmet;0.08",
+				"twilightforest:knightmetal_chestplate;0.18",
+				"twilightforest:knightmetal_leggings;0.1",
+				"twilightforest:knightmetal_boots;0.06",
+				# 炽热铁（炽铁韧2，中重偏重）
+				"twilightforest:fiery_helmet;0.09",
+				"twilightforest:fiery_chestplate;0.19",
+				"twilightforest:fiery_leggings;0.11",
+				"twilightforest:fiery_boots;0.065",
+				# 极地皮毛（厚毛皮，中）
+				"twilightforest:arctic_helmet;0.05",
+				"twilightforest:arctic_chestplate;0.12",
+				"twilightforest:arctic_leggings;0.07",
+				"twilightforest:arctic_boots;0.04",
+				# 雪怪皮毛（更厚毛皮韧2，中重）
+				"twilightforest:yeti_helmet;0.07",
+				"twilightforest:yeti_chestplate;0.15",
+				"twilightforest:yeti_leggings;0.09",
+				"twilightforest:yeti_boots;0.05",
+				# 幻影钢（仅头+胸，钢韧3）
+				"twilightforest:phantom_helmet;0.08",
+				"twilightforest:phantom_chestplate;0.18",
+				# 娜迦鳞片（仅胸+腿，鳞甲中重）
+				"twilightforest:naga_chestplate;0.16",
+				"twilightforest:naga_leggings;0.09",
 			]
 
 			[races.faelis.abilities.climbing]
