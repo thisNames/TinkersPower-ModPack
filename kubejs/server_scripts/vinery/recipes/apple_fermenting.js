@@ -1,10 +1,11 @@
 /**
  * 创建一个酿造配方
+ * @param {Internal.RecipesEventJS} event 注册表对象
  * @param {string} input 输入
  * @param {string} output 返回的物品
  * @param {number} count 数量
  */
-function vineryCreateAppleFermenter(input, output, count)
+function vineryCreateAppleFermenter(event ,input, output, count)
 {
     event.custom({
         type: "vinery:apple_fermenting",
@@ -23,7 +24,7 @@ ServerEvents.recipes(event =>
     const _ice = id => "iceandfire:" + id;
 
     // 龙血
-    vineryCreateAppleFermenter(_ice("fire_dragon_heart"), _ice("fire_dragon_blood"), 2);
-    vineryCreateAppleFermenter(_ice("ice_dragon_heart"), _ice("ice_dragon_blood"), 2);
-    vineryCreateAppleFermenter(_ice("lightning_dragon_heart"), _ice("lightning_dragon_blood"), 2);
+    vineryCreateAppleFermenter(event, _ice("fire_dragon_heart"), _ice("fire_dragon_blood"), 2);
+    vineryCreateAppleFermenter(event, _ice("ice_dragon_heart"), _ice("ice_dragon_blood"), 2);
+    vineryCreateAppleFermenter(event, _ice("lightning_dragon_heart"), _ice("lightning_dragon_blood"), 2);
 });

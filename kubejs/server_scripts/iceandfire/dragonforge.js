@@ -3,13 +3,14 @@ const iceandfireDragonForgeTypeDef = "iceandfire:dragonforge";
 
 /**
  * 创建冰火传说龙钢锻炉配方
+ * @param {Internal.RecipesEventJS} event 注册表对象
  * @param {string} dragonFogeType 类型（冰，火，电）
  * @param {number} tick 烹饪时间（20tick为1秒）
  * @param {string} input 输入物品
  * @param {string} blood 血（其实是个物品即可，即第二个物品）
  * @param {string} output 输出物品
  */
-function iceandfireDragonforge(dragonFogeType, tick, input, blood, output)
+function iceandfireDragonforge(event, dragonFogeType, tick, input, blood, output)
 {
     event.custom({
         type: iceandfireDragonForgeTypeDef,
@@ -30,13 +31,14 @@ function iceandfireDragonforge(dragonFogeType, tick, input, blood, output)
 
 /** 
  * 创建冰火传说龙钢锻炉配方（输入物品用tag表示）
+  * @param {Internal.RecipesEventJS} event 注册表对象
  * @param {string} dragonFogeType 类型（冰，火，电）
  * @param {number} tick 烹饪时间（20tick为1秒）
  * @param {string} input 输入物品的tag
  * @param {string} blood 血（其实是个物品即可，即第二个物品）
  * @param {string} output 输出物品
  */
-function iceandfireDragonforgeForTag(dragonFogeType, tick, input, blood, output)
+function iceandfireDragonforgeForTag(event, dragonFogeType, tick, input, blood, output)
 {
     event.custom({
         type: iceandfireDragonForgeTypeDef,
@@ -68,7 +70,7 @@ ServerEvents.recipes(event =>
     event.remove({ type: iceandfireDragonForgeTypeDef });
 
     // 改用下界合金
-    iceandfireDragonforge(fire, 400, _mc("netherite_ingot"), _this("fire_dragon_blood"), _this("dragonsteel_fire_ingot"));
-    iceandfireDragonforge(ice, 400, _mc("netherite_ingot"), _this("ice_dragon_blood"), _this("dragonsteel_ice_ingot"));
-    iceandfireDragonforge(lightning, 400, _mc("netherite_ingot"), _this("lightning_dragon_blood"), _this("dragonsteel_lightning_ingot"));
+    iceandfireDragonforge(event, fire, 400, _mc("netherite_ingot"), _this("fire_dragon_blood"), _this("dragonsteel_fire_ingot"));
+    iceandfireDragonforge(event, ice, 400, _mc("netherite_ingot"), _this("ice_dragon_blood"), _this("dragonsteel_ice_ingot"));
+    iceandfireDragonforge(event, lightning, 400, _mc("netherite_ingot"), _this("lightning_dragon_blood"), _this("dragonsteel_lightning_ingot"));
 });

@@ -2,6 +2,7 @@
 
 /**
   * 创建一个酿造配方
+  * @param {Internal.RecipesEventJS} event 注册表对象
   * @param {String} solt1 第 1 个物品
   * @param {string} solt2 第 2 个物品
   * @param {string} solt3 第 3 个物品
@@ -9,7 +10,7 @@
   * @param {string} output 返回的物品
   * @param {number} count 数量
   */
-function vineryCreateWineFermenter(solt1, solt2, solt3, wine, output, count)
+function vineryCreateWineFermenter(event, solt1, solt2, solt3, wine, output, count)
 {
     event.custom({
         type: "vinery:wine_fermentation",

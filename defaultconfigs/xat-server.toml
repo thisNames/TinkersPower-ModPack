@@ -91,19 +91,19 @@
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = [
 			"Name:minecraft:generic.max_health, Amount:-0.6, Operation:2",
-			"Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:2",
-			"Name:minecraft:generic.attack_damage, Amount:-0.75, Operation:2",
+			"Name:minecraft:generic.movement_speed, Amount:-0.35, Operation:2",
+			"Name:minecraft:generic.attack_damage, Amount:-0.7, Operation:2",
 			"Name:minecraft:generic.armor, Amount:-0.5, Operation:2",
 			"Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2",
 			"Name:forge:swim_speed, Amount:-0.25, Operation:2",
 			"Name:forge:step_height_addition, Amount:-0.35, Operation:0",
 			"Name:xat:jump, Amount:-0.25, Operation:2",
-			"Name:xat:fly_speed, Amount:0.5, Operation:2",
+			"Name:xat:fly_speed, Amount:0.1, Operation:2",
 			"Name:generic.reachDistance, Amount:-0.35, Operation:2"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
-		magicAffinity = 600
+		magicAffinity = 500
 
 		[races.fairy.size]
 			#高度(占默认玩家身高的百分比)
@@ -324,10 +324,11 @@
 		attributes = [
 			"Name:minecraft:generic.max_health, Amount:-0.3, Operation:1",
 			"Name:minecraft:generic.knockback_resistance, Amount:0.2, Operation:1",
-			"Name:minecraft:generic.movement_speed, Amount:-0.25, Operation:1",
-			"Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1",
-			"Name:minecraft:generic.attack_speed, Amount:-0.25, Operation:2",
-			"Name:minecraft:generic.armor_toughness, Amount:0.25, Operation:2"
+			"Name:minecraft:generic.movement_speed, Amount:-0.15, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:0.15, Operation:1",
+			"Name:minecraft:generic.armor_toughness, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.attack_speed, Amount:-0.15, Operation:2",
+			"Name:xat:jump, Amount:-0.4, Operation:0"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -418,15 +419,15 @@
 		damageTypesToIgnore = []
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = [
-			"Name:minecraft:generic.max_health, Amount:2, Operation:1",
-			"Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0",
-			"Name:minecraft:generic.attack_damage, Amount:1, Operation:2",
+			"Name:minecraft:generic.max_health, Amount:1.5, Operation:1",
+			"Name:minecraft:generic.knockback_resistance, Amount:1, Operation:1",
+			"Name:minecraft:generic.attack_damage, Amount:1, Operation:1",
 			"Name:minecraft:generic.attack_speed, Amount:-0.75, Operation:2",
-			"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:2",
+			"Name:minecraft:generic.movement_speed, Amount:0.4, Operation:2",
 			"Name:forge:step_height_addition, Amount:1.4, Operation:0",
-			"Name:forge:swim_speed, Amount:-0.5, Operation:2",
+			"Name:forge:swim_speed, Amount:-0.4, Operation:2",
 			"Name:xat:jump, Amount:0.75, Operation:1",
-			"Name:generic.reachDistance, Amount:1.4, Operation:1"
+			"Name:generic.reachDistance, Amount:0.5, Operation:1"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -491,8 +492,9 @@
 			"Name:minecraft:generic.max_health, Amount:-0.4, Operation:2",
 			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1",
 			"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
-			"Name:minecraft:generic.luck, Amount:1, Operation:0",
-			"Name:forge:swim_speed, Amount:0.1, Operation:1"
+			"Name:minecraft:generic.luck, Amount:2, Operation:0",
+			"Name:forge:swim_speed, Amount:0.15, Operation:1",
+			"Name:xat:jump, Amount:0.25, Operation:0"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -661,14 +663,15 @@
 		attributes = [
 			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1", 
 			"Name:minecraft:generic.attack_speed, Amount:0.2, Operation:1",
-			"Name:minecraft:generic.max_health, Amount:0.2, Operation:2",
-			"Name:minecraft:generic.armor_toughness, Amount:0.2, Operation:2",
-			"Name:forge:swim_speed, Amount:0.1, Operation:2",
-			"Name:xat:jump, Amount:0.2, Operation:2",
+			"Name:minecraft:generic.max_health, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.armor_toughness, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.armor, Amount:0.2, Operation:1",
+			"Name:forge:swim_speed, Amount:0.15, Operation:1",
+			"Name:xat:jump, Amount:0.25, Operation:1"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
-		magicAffinity = 200
+		magicAffinity = 300
 
 		[races.elf.size]
 			#高度(占默认玩家身高的百分比)
@@ -749,19 +752,19 @@
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = [
 			"Name:minecraft:generic.max_health, Amount:-0.25, Operation:1",
-			"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1",
+			"Name:minecraft:generic.movement_speed, Amount:0.4, Operation:1",
 			"Name:minecraft:generic.attack_damage, Amount:0.25, Operation:1",
-			"Name:minecraft:generic.attack_speed, Amount:0.25, Operation:2",
+			"Name:minecraft:generic.attack_speed, Amount:0.4, Operation:2",
 			"Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2",
 			"Name:minecraft:generic.luck, Amount:1, Operation:0",
-			"Name:forge:swim_speed, Amount:0.3, Operation:1",
+			"Name:forge:swim_speed, Amount:0.5, Operation:1",
 			"Name:forge:step_height_addition, Amount:0.6, Operation:0",
-			"Name:xat:jump, Amount:0.6, Operation:1",
-			"Name:generic.reachDistance, Amount:-0.1, Operation:1"
+			"Name:xat:jump, Amount:1, Operation:1",
+			"Name:generic.reachDistance, Amount:-0.15, Operation:1"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
-		magicAffinity = 125
+		magicAffinity = 200
 
 		[races.faelis.size]
 			#高度(占默认玩家身高的百分比)
@@ -1327,11 +1330,12 @@
 		attributes = [
 			"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
 			"Name:minecraft:generic.attack_damage, Amount:0.4, Operation:1",
-			"Name:minecraft:generic.armor, Amount:0.5, Operation:1",
-			"Name:minecraft:generic.armor_toughness, Amount:0.4, Operation:1",
+			"Name:minecraft:generic.armor, Amount:0.4, Operation:1",
+			"Name:minecraft:generic.armor_toughness, Amount:0.35, Operation:1",
 			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1",
 			"Name:forge:swim_speed, Amount:-0.4, Operation:1",
-			"Name:xat:fly_speed, Amount:0.6, Operation:2"
+			"Name:xat:fly_speed, Amount:0.6, Operation:2",
+			"Name:generic.reachDistance, Amount:0.1, Operation:1"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -1466,10 +1470,14 @@
 					damageTypesToIgnore = ["*;isFire"]
 					#该元素形态的属性修正
 					attributes = [
-						"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.max_health, Amount:0.5, Operation:1",
 						"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
-						"Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1",
-						"Name:xat:fly_speed, Amount:0.6, Operation:2"
+						"Name:minecraft:generic.armor, Amount:0.5, Operation:1",
+						"Name:minecraft:generic.armor_toughness, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1",
+						"Name:forge:swim_speed, Amount:-0.4, Operation:1",
+						"Name:xat:fly_speed, Amount:0.6, Operation:2",
+						"Name:generic.reachDistance, Amount:0.1, Operation:1"
 					]
 
 					[races.dragon.abilities.elements.fire.fire_immunity]
@@ -1518,10 +1526,14 @@
 					damageTypesToIgnore = ["*;isIce"]
 					#该元素形态的属性修正
 					attributes = [
-						"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.max_health, Amount:0.5, Operation:1",
 						"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
-						"Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1",
-						"Name:xat:fly_speed, Amount:0.6, Operation:2"
+						"Name:minecraft:generic.armor, Amount:0.5, Operation:1",
+						"Name:minecraft:generic.armor_toughness, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1",
+						"Name:forge:swim_speed, Amount:-0.4, Operation:1",
+						"Name:xat:fly_speed, Amount:0.6, Operation:2",
+						"Name:generic.reachDistance, Amount:0.1, Operation:1"
 					]
 
 					[races.dragon.abilities.elements.ice.ice_immunity]
@@ -1574,10 +1586,14 @@
 					damageTypesToIgnore = ["*;isLightning"]
 					#该元素形态的属性修正
 					attributes = [
-						"Name:minecraft:generic.max_health, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.max_health, Amount:0.5, Operation:1",
 						"Name:minecraft:generic.attack_damage, Amount:0.5, Operation:1",
-						"Name:minecraft:generic.armor_toughness, Amount:0.5, Operation:1",
-						"Name:xat:fly_speed, Amount:0.6, Operation:2"
+						"Name:minecraft:generic.armor, Amount:0.5, Operation:1",
+						"Name:minecraft:generic.armor_toughness, Amount:0.4, Operation:1",
+						"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:1",
+						"Name:forge:swim_speed, Amount:-0.4, Operation:1",
+						"Name:xat:fly_speed, Amount:0.6, Operation:2",
+						"Name:generic.reachDistance, Amount:0.1, Operation:1"
 					]
 
 					[races.dragon.abilities.elements.lightning.lightning_immunity]
@@ -1649,12 +1665,12 @@
 		#变身时应用的属性修正。格式：Name:attribute, Amount:value, Operation:0|1|2
 		attributes = [
 			"Name:minecraft:generic.max_health, Amount:0.6, Operation:1",
-			"Name:minecraft:generic.knockback_resistance, Amount:0.5, Operation:0",
-			"Name:minecraft:generic.armor, Amount:0.2, Operation:1",
+			"Name:minecraft:generic.knockback_resistance, Amount:2, Operation:0",
+			"Name:minecraft:generic.armor, Amount:0.3, Operation:1",
 			"Name:minecraft:generic.armor_toughness, Amount:0.3, Operation:1",
 			"Name:minecraft:generic.attack_damage, Amount:0.2, Operation:1",
-			"Name:minecraft:generic.movement_speed, Amount:0.1, Operation:1",
-			"Name:forge:swim_speed, Amount:-0.15, Operation:2"
+			"Name:minecraft:generic.movement_speed, Amount:0.15, Operation:1",
+			"Name:forge:swim_speed, Amount:-0.25, Operation:2"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000

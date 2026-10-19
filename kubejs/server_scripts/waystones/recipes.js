@@ -38,7 +38,7 @@ ServerEvents.recipes(event =>
     ]);
 
     // 绑定卷轴
-    event.recipes.kubejs.shaped({ item: _this("bound_scroll"), count: 3 }[
+    event.recipes.kubejs.shaped({ item: _this("bound_scroll"), count: 3 }, [
         [_this("warp_dust"), _this("warp_dust"), _this("warp_dust")],
         [_trink("glowing_powder"), _mc("ender_pearl"), _trink("glowing_powder")],
         [_mc("paper"), _mc("paper"), _mc("paper")]
