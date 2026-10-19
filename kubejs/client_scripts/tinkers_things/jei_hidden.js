@@ -12,7 +12,6 @@ ItemEvents.tooltip(event =>
     ], text);
 });
 
-
 // 装备
 ItemEvents.tooltip(event =>
 {

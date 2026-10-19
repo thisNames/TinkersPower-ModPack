@@ -11,6 +11,7 @@ ServerEvents.recipes(event =>
         ]
     });
 
+    // 工匠拆解器
     event.shaped(_this("disassembling_tool"), [
         [_ac("scarlet_neodymium_ingot"), "", _ac("azure_neodymium_ingot")],
         [_ac("scarlet_neodymium_ingot"), _quark("diamond_heart"), _ac("azure_neodymium_ingot")],

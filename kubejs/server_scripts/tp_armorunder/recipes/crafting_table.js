@@ -8,10 +8,12 @@ ServerEvents.recipes(event =>
 
     // 烈焰粉
     event.recipes.kubejs.shapeless(_mc("blaze_powder"), [_ice("fire_lily")]);
+
     // 寒冰粉
     event.recipes.kubejs.shapeless(_this("freeze_powder"), [_ice("frost_lily")]);
     event.recipes.kubejs.shapeless(_this("freeze_powder"), [_mc("blue_ice"), _mc("blaze_powder")]);
     event.recipes.kubejs.shapeless(_this("freeze_powder"), [_mc("packed_ice"), _mc("packed_ice"), _mc("blaze_powder")]);
+    
     event.recipes.kubejs.shaped({ item: _this("freeze_powder"), count: 4 }, [
         [_mc("blaze_powder"), _mc("ice"), _mc("blaze_powder")],
         [_mc("ice"), _mc("blue_ice"), _mc("ice")],

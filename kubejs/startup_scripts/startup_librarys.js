@@ -105,3 +105,28 @@ function applyEffectLevel(entity, effectId, level, duration, refreshBelow)
         entity.potionEffects.add(effectId, duration, level, false, true);
     }
 }
+
+/**
+ * 修改可通过 KJS 修改的盔甲耐久值 
+ * @description 目前不修改：盔甲值、盔甲韧性
+ * @param {Internal.ItemModificationEventJS} event 修改对象
+ * @param {Special.Item} id 物品 ID 字符串
+ * @param {number} damage 耐久
+ * @param {number} protection 盔甲值
+ * @param {number} toughness 盔甲韧性
+ */
+function incArrmor(event, id, damage, protection, toughness)
+{
+    if(!event)
+    {
+        console.error(`incArrmor: ${id}, event param is null.`);
+        return;
+    }
+
+    event.modify(id, c =>
+    {
+        c.maxDamage = damage;
+        // c.armorProtection = protection;
+        // c.armorToughness = toughness;
+    });
+}

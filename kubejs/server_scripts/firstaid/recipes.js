@@ -11,47 +11,27 @@ ServerEvents.recipes(event =>
         ]
     });
 
-    event.recipes.kubejs.shaped(_this("bandage"), [
+    event.recipes.kubejs.shaped({ item: _this("bandage"), count: 2 }, [
         ["", "", ""],
         [_mc("string"), "#minecraft:wool", _mc("string")],
         ["", "", ""]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(2);
+    ]);
 
-        return output;
-    });
-
-    event.recipes.kubejs.shaped(_this("plaster"), [
+    event.recipes.kubejs.shaped({ item: _this("plaster"), count: 4 }, [
         [_mc("string"), "", _mc("string")],
         ["", "#minecraft:wool", ""],
         [_mc("string"), "", _mc("string")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(4);
+    ]);
 
-        return output;
-    });
-
-    event.recipes.kubejs.shaped(_this("morphine"), [
+    event.recipes.kubejs.shaped({ item: _this("morphine"), count: 2 }, [
         [_mc("fermented_spider_eye"), _mc("fermented_spider_eye"), _mc("fermented_spider_eye")],
         [_mc("fermented_spider_eye"), _mc("potion"), _mc("fermented_spider_eye")],
         [_mc("fermented_spider_eye"), _mc("fermented_spider_eye"), _mc("fermented_spider_eye")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(2);
+    ]);
 
-        return output;
-    });
-
-    event.recipes.kubejs.shaped(_this("morphine"), [
+    event.recipes.kubejs.shaped({ item: _this("morphine"), count: 2 }, [
         [_mc("spider_eye"), _mc("spider_eye"), _mc("spider_eye")],
         [_mc("spider_eye"), _mc("potion"), _mc("spider_eye")],
         [_mc("spider_eye"), _mc("spider_eye"), _mc("spider_eye")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(2);
-
-        return output;
-    });
+    ]);
 });

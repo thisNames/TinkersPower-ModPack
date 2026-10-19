@@ -2,6 +2,7 @@ ServerEvents.tags("item", event =>
 {
     const _this = id => "aquamirae:" + id;
 
+    // 内在温度：食物
     const cool_food = "toughasnails:cooling_consumed_items";
     const hot_food = "toughasnails:heating_consumed_items";
 

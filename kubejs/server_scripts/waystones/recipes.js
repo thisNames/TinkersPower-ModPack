@@ -17,16 +17,11 @@ ServerEvents.recipes(event =>
     });
 
     // 传送份
-    event.recipes.kubejs.shaped(_this("warp_dust"), [
+    event.recipes.kubejs.shaped({ item: _this("warp_dust"), count: 4 }, [
         [_mc("ender_pearl"), _mc("amethyst_shard"), _bount("spectral_silt")],
         [_bount("spectral_silt"), _bount("spectral_silt"), _bount("spectral_silt")],
         ["", "", ""]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(4);
-
-        return output;
-    });
+    ]);
 
     // 传送石
     event.shaped(_this("warp_stone"), [
@@ -36,40 +31,25 @@ ServerEvents.recipes(event =>
     ]);
 
     // 传送卷轴
-    event.recipes.kubejs.shaped(_this("warp_scroll"), [
+    event.recipes.kubejs.shaped({ item: _this("warp_scroll"), count: 3 }, [
         [_trink("glowing_powder"), _this("warp_dust"), _trink("glowing_powder")],
         [_trink("glowing_powder"), _mc("ender_pearl"), _trink("glowing_powder")],
         [_mc("paper"), _mc("paper"), _mc("paper")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(3);
-
-        return output;
-    });
+    ]);
 
     // 绑定卷轴
-    event.recipes.kubejs.shaped(_this("bound_scroll"), [
+    event.recipes.kubejs.shaped({ item: _this("bound_scroll"), count: 3 }[
         [_this("warp_dust"), _this("warp_dust"), _this("warp_dust")],
         [_trink("glowing_powder"), _mc("ender_pearl"), _trink("glowing_powder")],
         [_mc("paper"), _mc("paper"), _mc("paper")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(3);
-
-        return output;
-    });
+    ]);
 
     // 回城卷轴
-    event.recipes.kubejs.shaped(_this("return_scroll"), [
+    event.recipes.kubejs.shaped({ item: _this("return_scroll"), count: 3 }, [
         ["", "", ""],
         [_trink("glowing_powder"), _mc("ender_pearl"), _trink("glowing_powder")],
         [_mc("paper"), _mc("paper"), _mc("paper")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(3);
-
-        return output;
-    });
+    ]);
 
     // 传送踏板
     event.shaped(_this("warp_plate"), [

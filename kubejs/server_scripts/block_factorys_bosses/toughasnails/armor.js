@@ -8,7 +8,7 @@ ServerEvents.tags("item", event =>
 
     // 热盔甲
     [
-        // 滕炎
+        // 龙骨
         _this("dragon_bones_chestplate"),
         _this("dragon_bones_leggings"),
         _this("dragon_bones_boots")

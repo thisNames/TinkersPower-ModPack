@@ -2,45 +2,35 @@ ItemEvents.modification(event =>
 {
     const _this = id => "iceandfire:" + id;
 
-    const incArrmor = (id, damage, protection, toughness) =>
-    {
-        event.modify(id, c =>
-        {
-            c.maxDamage = damage;
-            // c.armorProtection = protection;
-            // c.armorToughness = toughness;
-        });
-    };
-
     // 同系列多颜色/多品种、数值相同的批量处理
     const incArmorSet = (prefixes, helmet, chest, legs, boots) =>
     {
         prefixes.forEach(p =>
         {
-            incArrmor(p + "_helmet", helmet[0], helmet[1], helmet[2]);
-            incArrmor(p + "_chestplate", chest[0], chest[1], chest[2]);
-            incArrmor(p + "_leggings", legs[0], legs[1], legs[2]);
-            incArrmor(p + "_boots", boots[0], boots[1], boots[2]);
+            incArrmor(event, p + "_helmet", helmet[0], helmet[1], helmet[2]);
+            incArrmor(event, p + "_chestplate", chest[0], chest[1], chest[2]);
+            incArrmor(event, p + "_leggings", legs[0], legs[1], legs[2]);
+            incArrmor(event, p + "_boots", boots[0], boots[1], boots[2]);
         });
     };
 
     // 银 盔甲
-    incArrmor(_this("armor_silver_metal_helmet"), 64, 4, 1);
-    incArrmor(_this("armor_silver_metal_chestplate"), 64, 5, 1);
-    incArrmor(_this("armor_silver_metal_leggings"), 64, 4, 1);
-    incArrmor(_this("armor_silver_metal_boots"), 64, 3, 1);
+    incArrmor(event, _this("armor_silver_metal_helmet"), 64, 4, 1);
+    incArrmor(event, _this("armor_silver_metal_chestplate"), 64, 5, 1);
+    incArrmor(event, _this("armor_silver_metal_leggings"), 64, 4, 1);
+    incArrmor(event, _this("armor_silver_metal_boots"), 64, 3, 1);
 
     // 铜 盔甲
-    incArrmor(_this("armor_copper_metal_helmet"), 46, 1, 0);
-    incArrmor(_this("armor_copper_metal_chestplate"), 52, 3, 0);
-    incArrmor(_this("armor_copper_metal_leggings"), 45, 2, 0);
-    incArrmor(_this("armor_copper_metal_boots"), 42, 1, 0);
+    incArrmor(event, _this("armor_copper_metal_helmet"), 46, 1, 0);
+    incArrmor(event, _this("armor_copper_metal_chestplate"), 52, 3, 0);
+    incArrmor(event, _this("armor_copper_metal_leggings"), 45, 2, 0);
+    incArrmor(event, _this("armor_copper_metal_boots"), 42, 1, 0);
 
     // 拟羊毛 盔甲
-    incArrmor(_this("sheep_helmet"), 42, 1, 0);
-    incArrmor(_this("sheep_chestplate"), 62, 3, 0);
-    incArrmor(_this("sheep_leggings"), 52, 4, 0);
-    incArrmor(_this("sheep_boots"), 40, 2, 0);
+    incArrmor(event, _this("sheep_helmet"), 42, 1, 0);
+    incArrmor(event, _this("sheep_chestplate"), 62, 3, 0);
+    incArrmor(event, _this("sheep_leggings"), 52, 4, 0);
+    incArrmor(event, _this("sheep_boots"), 40, 2, 0);
 
     // 虫壳 盔甲（沙褐/苍白/血红）
     incArmorSet(

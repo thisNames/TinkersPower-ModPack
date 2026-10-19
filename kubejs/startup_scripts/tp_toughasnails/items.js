@@ -4,8 +4,8 @@ StartupEvents.registry("item", event =>
 
     // 活性炭过滤器
     event.create(_this("charcoal_filter"), "basic")
-    .maxStackSize(64)
-    .rarity("common");
+        .maxStackSize(64)
+        .rarity("common");
 });
 
 StartupEvents.registry("creative_mode_tab", event =>

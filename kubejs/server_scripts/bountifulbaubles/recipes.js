@@ -65,14 +65,10 @@ ServerEvents.recipes(event =>
 
     event.shapeless(_this("spectral_silt"), ["#bountifulbaubles:baubles", _this("disintegration_tablet")]);
 
-    event.recipes.kubejs.shaped(_this("resplendent_token"), [
+    // 闪耀币 
+    event.recipes.kubejs.shaped({ item: _this("resplendent_token"), count: 2 }, [
         [_this("spectral_silt"), _trinke("glowing_powder"), _this("spectral_silt")],
         [_trinke("glowing_powder"), _trinke("glowing_ingot"), _trinke("glowing_powder")],
         [_this("spectral_silt"), _trinke("glowing_powder"), _this("spectral_silt")]
-    ]).modifyResult((inputs, output) =>
-    {
-        output.setCount(2);
-
-        return output;
-    });
+    ]);
 });

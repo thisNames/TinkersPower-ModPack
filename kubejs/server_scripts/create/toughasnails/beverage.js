@@ -1,8 +1,8 @@
 ServerEvents.tags("item", event =>
 {
-    // 自己
     const _this = id => "create:" + id;
 
+    // 内在温度：饮料
     // 喝标签
     const drinks = "toughasnails:drinks";
 

@@ -56,12 +56,15 @@ MoreJSEvents.registerPotionBrewing(event =>
     // 猫灵
     event.addPotionBrewing("xat:faelis_food", "potioncore:magic_focus", "xat:faelis");
     // 猫灵：时长
+    event.addPotionBrewing("xat:faelis_claw", "xat:faelis", "xat:extended_faelis");
+    event.addPotionBrewing("iceandfire:hippogryph_talon", "xat:faelis", "xat:extended_faelis");
     event.addPotionBrewing("xat:glowing_gem", "xat:faelis", "xat:extended_faelis");
 
     // 牛头人
     event.addPotionBrewing("xat:taurus_tea", "potioncore:magic_focus", "xat:taurus");
     // 牛头人：时长
     event.addPotionBrewing("twilightforest:meef_stroganoff", "xat:taurus", "xat:extended_taurus");
+    event.addPotionBrewing("xat:glowing_gem", "xat:taurus", "xat:extended_taurus");
 
     // 巨龙
     event.addCustomBrewing(

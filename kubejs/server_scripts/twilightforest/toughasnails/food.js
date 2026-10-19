@@ -2,6 +2,7 @@ ServerEvents.tags("item", event =>
 {
     const _this = id => "twilightforest:" + id;
 
+    // 内在温度：食物
     const hot_food = "toughasnails:heating_consumed_items";
 
     // 热食

@@ -11,6 +11,7 @@ ServerEvents.recipes(event =>
         ]
     });
 
+    // 米饭
     event.recipes.kubejs.shaped({ item: _this("ice_cream"), count: 2 }, [
         [_create("wheat_flour"), _mc("ice"), _create("wheat_flour")],
         [_mc("ice"), _mc("sugar"), _mc("ice")],

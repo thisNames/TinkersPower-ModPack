@@ -57,9 +57,9 @@ StartupEvents.registry("item", event =>
             // 等级
             let level = 0;
 
-            if (wearsArmor(player, goldenArmors)) level++;
-            if (player.isCuriosEquipped(arcingOrb)) level++;
             if (rings.size() > 1) level++;
+            if (player.isCuriosEquipped(arcingOrb)) level++;
+            if (wearsArmor(player, goldenArmors)) level++;
 
             // 给予效果
             applyEffectLevel(player, magicRingEffect, level, 200);
