@@ -10,12 +10,19 @@ ServerEvents.entityLootTables(event =>
             pool.rolls = 7;
         });
 
-
         loot.addPool(pool =>
         {
             pool.addTag("acs:m1", true);
 
             pool.rolls = 2;
+        });
+
+        loot.addPool(pool =>
+        {
+            pool.addItem("tconstruct:dragon_scale").weight(75).count(1);
+            pool.addEmpty(25);
+
+            pool.rolls = 3;
         });
     });
 });

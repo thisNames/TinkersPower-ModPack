@@ -16,9 +16,9 @@ ServerEvents.entityLootTables(event =>
 
         loot.addPool(pool =>
         {
-            pool.addTag("acs:m3", true).weight(30).count([2, 6]).lootingEnchant(1, 8);
-            pool.addTag("acs:m2", true).weight(20).count([2, 4]).lootingEnchant(1, 8);
             pool.addTag("acs:m1", true).weight(50).count([2, 6]).lootingEnchant(1, 8);
+            pool.addTag("acs:m2", true).weight(20).count([2, 4]).lootingEnchant(1, 8);
+            pool.addTag("acs:m3", true).weight(30).count([2, 6]).lootingEnchant(1, 8);
 
             pool.rolls = 4;
         });

@@ -6,6 +6,15 @@ const MATERIAL_TAG = "acs:m";
  */
 const MATERIAL_OPTIONS = [
     {
+        namespace: "tconstruct",
+        material: [
+            {
+                id: "dragon_scale",
+                level: 1
+            },
+        ]
+    },
+    {
         namespace: "iceandfire",
         material: [
             {
