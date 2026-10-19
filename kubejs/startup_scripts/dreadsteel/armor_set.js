@@ -12,7 +12,7 @@ ItemEvents.modification(event =>
         });
     };
 
-    // 盔甲
+    // 惊悚钢 盔甲
     incArrmor(_this("dreadsteel_helmet"), 688, 0, 0);
     incArrmor(_this("dreadsteel_chestplate"), 888, 0, 0);
     incArrmor(_this("dreadsteel_leggings"), 728, 0, 0);

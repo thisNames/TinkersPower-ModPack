@@ -4,8 +4,8 @@
 	depthStriderStacks = false
 	#不与游泳速度属性叠加的其他游泳速度附魔(附魔 ID)
 	nonStackingSwimEnchantments = []
-	#若启用，玩家在种族转换时将无法移动
-	preventMovementWhileTransforming = false
+	#若启用，玩家在种族变身时将无法移动
+	preventMovementWhileTransforming = true
 	#原版 MC 无法正确处理增加触及距离后的交互，此项可修复该问题
 	reachInteractionFix = true
 	#隐藏功能，向此列表添加任意内容即可禁用它。
@@ -95,11 +95,11 @@
 			"Name:minecraft:generic.attack_damage, Amount:-0.75, Operation:2",
 			"Name:minecraft:generic.armor, Amount:-0.5, Operation:2",
 			"Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2",
-			"Name:generic.reachDistance, Amount:-0.35, Operation:2",
 			"Name:forge:swim_speed, Amount:-0.25, Operation:2",
-			"Name:xat:jump, Amount:-0.25, Operation:2",
 			"Name:forge:step_height_addition, Amount:-0.35, Operation:0",
-			"Name:xat:fly_speed, Amount:0.5, Operation:2"
+			"Name:xat:jump, Amount:-0.25, Operation:2",
+			"Name:xat:fly_speed, Amount:0.5, Operation:2",
+			"Name:generic.reachDistance, Amount:-0.35, Operation:2"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -422,11 +422,11 @@
 			"Name:minecraft:generic.knockback_resistance, Amount:1, Operation:0",
 			"Name:minecraft:generic.attack_damage, Amount:1, Operation:2",
 			"Name:minecraft:generic.attack_speed, Amount:-0.75, Operation:2",
-			"Name:generic.reachDistance, Amount:1.4, Operation:1",
-			"Name:xat:jump, Amount:0.75, Operation:1",
-			"Name:forge:step_height_addition, Amount:1.4, Operation:0",
 			"Name:minecraft:generic.movement_speed, Amount:0.25, Operation:2",
+			"Name:forge:step_height_addition, Amount:1.4, Operation:0",
 			"Name:forge:swim_speed, Amount:-0.5, Operation:2",
+			"Name:xat:jump, Amount:0.75, Operation:1",
+			"Name:generic.reachDistance, Amount:1.4, Operation:1"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -754,10 +754,10 @@
 			"Name:minecraft:generic.attack_speed, Amount:0.25, Operation:2",
 			"Name:minecraft:generic.armor_toughness, Amount:-0.25, Operation:2",
 			"Name:minecraft:generic.luck, Amount:1, Operation:0",
-			"Name:generic.reachDistance, Amount:-0.1, Operation:1",
 			"Name:forge:swim_speed, Amount:0.3, Operation:1",
+			"Name:forge:step_height_addition, Amount:0.6, Operation:0",
 			"Name:xat:jump, Amount:0.6, Operation:1",
-			"Name:forge:step_height_addition, Amount:0.6, Operation:0"
+			"Name:generic.reachDistance, Amount:-0.1, Operation:1"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -978,9 +978,9 @@
 			"Name:minecraft:generic.attack_damage, Amount:0.4, Operation:1",
 			"Name:minecraft:generic.armor, Amount:0.5, Operation:1",
 			"Name:minecraft:generic.armor_toughness, Amount:0.4, Operation:1",
-			"Name:xat:fly_speed, Amount:0.6, Operation:2",
 			"Name:minecraft:generic.movement_speed, Amount:0.2, Operation:1",
-			"Name:forge:swim_speed, Amount:-0.4, Operation:1"
+			"Name:forge:swim_speed, Amount:-0.4, Operation:1",
+			"Name:xat:fly_speed, Amount:0.6, Operation:2"
 		]
 		#魔法亲和度；影响该种族的法力池大小
 		#范围：0 ~ 10000
@@ -1387,9 +1387,9 @@
 		"iceandfire:ice_dragon_flesh;10",
 		"iceandfire:lightning_dragon_flesh;10",
 		"iceandfire:ambrosia;100",
-		"twilightforest:meef_stroganoff;100",
-		"twilightforest:hydra_chop;150",
-		"twilightforest:experiment_115;20",
+		"twilightforest:meef_stroganoff;80",
+		"twilightforest:hydra_chop;100",
+		"twilightforest:experiment_115;10",
 		"alexscaves:seething_stew;10",
 		"alexscaves:caramel_apple;5",
 		"aquamirae:sea_stew;10",
@@ -2049,8 +2049,8 @@
 		attributes = [
 			"Name:minecraft:generic.knockback_resistance, Amount:0.4, Operation:0",
 			"Name:minecraft:generic.movement_speed, Amount:0.4, Operation:2",
-			"Name:xat:jump, Amount:1, Operation:1",
-			"Name:forge:step_height_addition, Amount:0.6, Operation:0"
+			"Name:forge:step_height_addition, Amount:0.6, Operation:0",
+			"Name:xat:jump, Amount:1, Operation:1"
 		]
 
 		#生存模组兼容性(Cold Sweat / Simple Difficulty)

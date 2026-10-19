@@ -12,21 +12,21 @@ ItemEvents.modification(event =>
         });
     };
 
-    // 走鹃
+    // 走鹃羽毛 盔甲
     incArrmor(_this("roadrunner_boots"), 98, 3, 0);
 
-    // 鳄鱼
+    // 鳄鱼鳞片 盔甲
     incArrmor(_this("crocodile_chestplate"), 182, 5, 1);
 
-    // 和服
+    // 和服 盔甲
     incArrmor(_this("unsettling_kimono"), 82, 3, 0);
 
-    // 寒霜
+    // 寒霜 盔甲
     incArrmor(_this("froststalker_helmet"), 77, 3, 0.5);
     
-    // 岩壳
+    // 岩壳 盔甲
     incArrmor(_this("rocky_chestplate"), 112, 5, 0.5);
     
-    // 蜈蚣
+    // 蜈蚣关节 盔甲
     incArrmor(_this("centipede_leggings"), 87, 6, 0.5);
 });

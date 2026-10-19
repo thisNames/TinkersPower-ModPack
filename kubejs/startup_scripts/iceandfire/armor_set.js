@@ -24,25 +24,25 @@ ItemEvents.modification(event =>
         });
     };
 
-    // 银盔甲
+    // 银 盔甲
     incArrmor(_this("armor_silver_metal_helmet"), 64, 4, 1);
     incArrmor(_this("armor_silver_metal_chestplate"), 64, 5, 1);
     incArrmor(_this("armor_silver_metal_leggings"), 64, 4, 1);
     incArrmor(_this("armor_silver_metal_boots"), 64, 3, 1);
 
-    // 铜盔甲
+    // 铜 盔甲
     incArrmor(_this("armor_copper_metal_helmet"), 46, 1, 0);
     incArrmor(_this("armor_copper_metal_chestplate"), 52, 3, 0);
     incArrmor(_this("armor_copper_metal_leggings"), 45, 2, 0);
     incArrmor(_this("armor_copper_metal_boots"), 42, 1, 0);
 
-    // 拟羊盔甲
+    // 拟羊毛 盔甲
     incArrmor(_this("sheep_helmet"), 42, 1, 0);
     incArrmor(_this("sheep_chestplate"), 62, 3, 0);
     incArrmor(_this("sheep_leggings"), 52, 4, 0);
     incArrmor(_this("sheep_boots"), 40, 2, 0);
 
-    // 虫壳盔甲（沙褐/苍白/血红）
+    // 虫壳 盔甲（沙褐/苍白/血红）
     incArmorSet(
         [
             _this("deathworm_yellow"),
@@ -52,7 +52,7 @@ ItemEvents.modification(event =>
         [75, 2, 0], [86, 4, 0], [78, 3, 0], [66, 2, 0]
     );
 
-    // 蚂甲盔甲（沙漠/丛林）
+    // 蚂甲 盔甲（沙漠/丛林）
     incArmorSet(
         [
             _this("myrmex_desert"),
@@ -61,7 +61,7 @@ ItemEvents.modification(event =>
         [102, 3, 0], [125, 5, 0], [115, 4, 0], [110, 2, 0]
     );
 
-    // // 龙钢盔甲（炎/霜/霆）（需要通过配置修改）
+    // 龙钢 盔甲（炎/霜/霆）（需要通过配置修改）
     // incArmorSet(
     //     [
     //         _this("dragonsteel_fire"),
@@ -71,7 +71,7 @@ ItemEvents.modification(event =>
     //     [320, 7, 6], [390, 10, 6], [340, 9, 6], [330, 6, 6]
     // );
 
-    // 龙鳞盔甲（火龙：火红/沉金/翡绿/烬灰；冰龙：冰蓝/淞白/玉靓/黯银；电龙：电青/晶紫/铜赤/夜黑）
+    // 龙鳞 盔甲（火龙：火红/沉金/翡绿/烬灰；冰龙：冰蓝/淞白/玉靓/黯银；电龙：电青/晶紫/铜赤/夜黑）
     incArmorSet(
         [
             _this("armor_red"),
@@ -90,7 +90,7 @@ ItemEvents.modification(event =>
         [220, 5, 3], [250, 7, 3], [240, 8, 3], [230, 5, 3]
     );
 
-    // 潮卫盔甲（沉紫/赤红/海绿/蓝绿/深蓝/铜黄/蔚蓝）
+    // 海蟒鳞 盔甲（沉紫/赤红/海绿/蓝绿/深蓝/铜黄/蔚蓝）
     incArmorSet(
         [
             _this("tide_purple"),
@@ -104,7 +104,7 @@ ItemEvents.modification(event =>
         [125, 4, 2.5], [145, 8, 2.5], [132, 7, 2.5], [129, 4, 2.5]
     );
 
-    // 食人妖皮甲（森林/雪地/山地）
+    // 食人妖皮 盔甲（森林/雪地/山地）
     incArmorSet(
         [
             _this("forest_troll_leather"),

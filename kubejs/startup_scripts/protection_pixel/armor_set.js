@@ -12,7 +12,7 @@ ItemEvents.modification(event =>
         });
     };
 
-    // 胸甲
+    // 机械动力胸甲 盔甲
     incArrmor(_this("wingsofprism_chestplate"), 325, 1, 0);
     incArrmor(_this("workerhornet_chestplate"), 325, 1, 0);
     incArrmor(_this("magneticstorm_chestplate"), 325, 1, 0);
@@ -32,13 +32,7 @@ ItemEvents.modification(event =>
     incArrmor(_this("falconnest_chestplate"), 325, 1, 0);
     incArrmor(_this("falconnestas_chestplate"), 325, 1, 0);
 
-    // 链板
-    incArrmor(_this("linkplate_helmet"), 225, 6, 4);
-    incArrmor(_this("linkplate_chestplate"), 225, 6, 4);
-    incArrmor(_this("linkplate_leggings"), 225, 6, 4);
-    incArrmor(_this("linkplate_boots"), 225, 6, 4);
-
-    // 头盔
+    // 机械动力头 盔甲
     incArrmor(_this("plague_helmet"), 185, 1, 0);
     incArrmor(_this("lancer_helmet"), 185, 1, 0);
     incArrmor(_this("hammer_helmet"), 185, 1, 0);
@@ -55,7 +49,7 @@ ItemEvents.modification(event =>
     incArrmor(_this("nightdemonas_helmet"), 185, 1, 0);
     incArrmor(_this("tosaki_helmet"), 185, 2, 2);
 
-    // 护腿
+    // 机械动力护腿 盔甲
     incArrmor(_this("slingshot_leggings"), 185, 1, 0);
     incArrmor(_this("anchorpoint_leggings"), 215, 1, 0);
     incArrmor(_this("buoyancy_leggings"), 215, 1, 0);
@@ -64,6 +58,12 @@ ItemEvents.modification(event =>
     incArrmor(_this("buoyancyas_leggings"), 215, 2, 0);
     incArrmor(_this("tosaki_leggings"), 215, 2, 2);
 
-    // 防护
+    // 链板 盔甲
+    incArrmor(_this("linkplate_helmet"), 225, 6, 4);
+    incArrmor(_this("linkplate_chestplate"), 225, 6, 4);
+    incArrmor(_this("linkplate_leggings"), 225, 6, 4);
+    incArrmor(_this("linkplate_boots"), 225, 6, 4);
+    
+    // 防护棉靴 盔甲
     incArrmor(_this("socks_boots"), 185, 1, 0);
 });
