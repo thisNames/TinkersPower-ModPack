@@ -1,3 +1,5 @@
+// priority: 3000
+
 const CURIOS_LEVEL_TAG = "acs:l";
 const CURIOS_DIS_TAG = "acs:dis";
 /**

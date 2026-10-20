@@ -1,3 +1,5 @@
+// priority: 3000
+
 const MATERIAL_TAG = "acs:m";
 /**
  * 饰品材料

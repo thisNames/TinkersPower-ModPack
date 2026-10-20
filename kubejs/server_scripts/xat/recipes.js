@@ -48,7 +48,8 @@ ServerEvents.recipes(event =>
             _this("wither_ring"),
             _this("poison_stone"),
             _this("damage_shield"),
-            _this("teddy_bear")
+            _this("teddy_bear"),
+            _this("polarized_stone")
         ]
     });
 
@@ -277,6 +278,12 @@ ServerEvents.recipes(event =>
         [_create("cardboard"), _this("mana_crystal"), _create("cardboard")],
         [_bout("spectral_silt"), _twil("transformation_powder"), _bout("spectral_silt")],
         [_create("cardboard"), _this("mana_crystal"), _create("cardboard")]
+    ]);
+
+    event.shaped(_this("polarized_stone"), [
+        [_alexsc("block_of_scarlet_neodymium"), _this("glowing_ingot"), _alexsc("block_of_azure_neodymium")],
+        [_this("glowing_ingot"), _mc("redstone_block"), _this("glowing_ingot")],
+        [_alexsc("block_of_scarlet_neodymium"), _this("glowing_ingot"), _alexsc("block_of_azure_neodymium")]
     ]);
 
     // 巨龙之眼
