@@ -7,18 +7,18 @@
 
     "tooltip.tp_dragon_heart.dragons_heart_fire.text1": "给予火龙祝福效果（点燃并击退目标）",
     "tooltip.tp_dragon_heart.dragons_heart_fire.text2": "炽热的烈焰焚烧目标",
-    "tooltip.tp_dragon_heart.dragons_heart_fire.text3": "同时佩戴【火龙之眼】时给予效果+1级",
+    "tooltip.tp_dragon_heart.dragons_heart_fire.text3": "同时佩戴【火龙之眼或火龙之戒】时给予效果+1级",
     "tooltip.tp_dragon_heart.dragons_heart_fire.text4": "同时穿戴【龙炎或悚怖钢盔甲】时给予效果+1级",
 
     "tooltip.tp_dragon_heart.dragons_heart_ice.text1": "给予冰龙恩惠效果（减速并冰冻目标）",
     "tooltip.tp_dragon_heart.dragons_heart_ice.text2": "极寒的冰封减速敌人",
-    "tooltip.tp_dragon_heart.dragons_heart_ice.text3": "同时佩戴【冰龙之眼】时给予效果+1级",
+    "tooltip.tp_dragon_heart.dragons_heart_ice.text3": "同时佩戴【冰龙之眼或冰龙之戒】时给予效果+1级",
     "tooltip.tp_dragon_heart.dragons_heart_ice.text4": "同时穿戴【龙霜或悚怖钢盔甲】时给予效果+1级",
     
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text1": "给予电龙庇护效果（电击并麻痹目标）",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text2": "强大的电流贯穿群体",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text3": "会攻击除攻击者以外的所有实体",
-    "tooltip.tp_dragon_heart.dragons_heart_lightning.text4": "同时佩戴【电龙之眼】时给予效果+1级",
+    "tooltip.tp_dragon_heart.dragons_heart_lightning.text4": "同时佩戴【电龙之眼或电龙之戒】时给予效果+1级",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text5": "同时穿戴【龙霆或悚怖钢盔甲】时给予效果+1级",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text6": "基础伤害+6（随等级增加，最高 3 级）",
     "tooltip.tp_dragon_heart.dragons_heart_lightning.text7": "伤害类型取决于攻击者伤害类型",

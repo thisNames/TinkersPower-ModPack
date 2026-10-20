@@ -6,6 +6,16 @@ const xat_curios = {
             id: "cosmetic",
             remove: "charm",
             add: "curio"
+        },
+        {
+            id: "poison_stone",
+            remove: "charm",
+            add: "curio"
+        },
+        {
+            id: "polarized_stone",
+            remove: "charm",
+            add: "belt"
         }
     ]
 };

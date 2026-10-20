@@ -1189,6 +1189,10 @@
 				# 娜迦鳞片（仅胸+腿，鳞甲中重）
 				"twilightforest:naga_chestplate;0.16",
 				"twilightforest:naga_leggings;0.09",
+
+				# ===== Tide 盔甲重量 =====
+				# 龙鳍靴（鱼鳍，较轻）
+				"tide:dragonfin_boots;0.05"
 			]
 
 			[races.faelis.abilities.climbing]
