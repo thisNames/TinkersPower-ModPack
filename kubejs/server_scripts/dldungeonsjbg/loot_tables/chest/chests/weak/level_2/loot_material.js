@@ -6,8 +6,6 @@ ServerEvents.genericLootTables(event =>
         {
             pool.addTag("acs:m3", true).weight(50).count([2, 8]);
             pool.addEmpty(50);
-
-            pool.rolls = 1;
         });
     });
 });

@@ -4,10 +4,9 @@ ServerEvents.genericLootTables(event =>
     {
         loot.addPool(pool =>
         {
-            pool.addTag("acs:m1", true).weight(10).count([1, 2]);
             pool.addTag("acs:m2", true).weight(50).count([2, 6]);
             pool.addTag("acs:m3", true).weight(20).count([2, 8]);
-            pool.addEmpty(20);
+            pool.addEmpty(30);
 
             pool.rolls = 3;
         });

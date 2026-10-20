@@ -8,7 +8,7 @@ ServerEvents.genericLootTables(event =>
             pool.addTag("acs:m2", true).weight(38).count([2, 6]);
             pool.addEmpty(7);
 
-            pool.rolls = 5;
+            pool.rolls = 3;
         });
     });
 });
