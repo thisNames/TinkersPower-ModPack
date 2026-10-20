@@ -10,14 +10,17 @@ ServerEvents.chestLootTables(event =>
             pool.addItem("xat:glowing_powder").weight(20).count([2, 4]);
             pool.addItem("xat:glowing_ingot").weight(25).count([1, 3]);
             pool.addItem("xat:glowing_gem").weight(5).count([1, 2]);
+
+            pool.rolls = 2;
         });
 
         loot.addPool(pool =>
         {
-            pool.addTag("acs:m1", true).weight(15).count([1, 4]);
-            pool.addEmpty(85);
+            pool.addTag("acs:m1", true).weight(7).count([1, 4]);
+            pool.addTag("acs:m2", true).weight(23).count([1, 4]);
+            pool.addEmpty(70);
 
-            pool.rolls = 3;
+            pool.rolls = 2;
         });
     });
 });

@@ -4,6 +4,12 @@ ServerEvents.entityLootTables(event =>
     {
         loot.addPool(pool =>
         {
+            pool.addEmpty(88);
+            pool.addItem("bountifulbaubles:bezoar").weight(12).count(1);
+        });
+
+        loot.addPool(pool =>
+        {
             pool.addFunction({
                 function: "minecraft:set_nbt",
                 tag: JSON.stringify({
@@ -20,9 +26,9 @@ ServerEvents.entityLootTables(event =>
 
             pool.killedByPlayer();
 
-            pool.addEmpty(88);
+            pool.addEmpty(95);
             pool.addItem("bountifulbaubles:bezoar")
-                .weight(12)
+                .weight(5)
                 .count(1)
                 .name(Text.translatable("loot.kubejs.tooltip.bountifulbaubles.bezoar"));
         });

@@ -38,8 +38,7 @@ ServerEvents.entityLootTables(event =>
                                 text: Text.translatable("loot.kubejs.tooltip.minecraft.nether_star_vow").getString()
                             })
                         ]
-                    },
-                    tool_quality: 31
+                    }
                 })
             });
 

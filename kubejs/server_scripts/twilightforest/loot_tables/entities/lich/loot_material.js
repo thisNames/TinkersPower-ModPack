@@ -10,7 +10,7 @@ ServerEvents.entityLootTables(event =>
             pool.addItem("xat:glowing_powder").weight(20).count([2, 8]).lootingEnchant(2, 8);
             pool.addItem("xat:glowing_ingot").weight(5).count([1, 2]).lootingEnchant(2, 8);
 
-            pool.rolls = 2;
+            pool.rolls = 3;
         });
 
         loot.addPool(pool =>

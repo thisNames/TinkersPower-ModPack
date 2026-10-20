@@ -11,7 +11,7 @@ ServerEvents.entityLootTables(event =>
             pool.addItem("xat:glowing_ingot").weight(5).count([1, 3]).lootingEnchant(2, 8);
             pool.addItem("xat:glowing_gem").weight(5).count([1, 2]).lootingEnchant(2, 8);
 
-            pool.rolls = 3;
+            pool.rolls = 7;
         });
 
         loot.addPool(pool =>
@@ -19,7 +19,12 @@ ServerEvents.entityLootTables(event =>
             pool.addTag("acs:m3", true).weight(90).count([2, 6]).lootingEnchant(1, 8);
             pool.addTag("acs:m2", true).weight(10).count([2, 4]).lootingEnchant(1, 8);
 
-            pool.rolls = 3;
+            pool.rolls = 2;
+        });
+
+        loot.addPool(pool =>
+        {
+            pool.addItem("minecraft:diamond").weight(1).count([8, 36]).lootingEnchant(8, 32);
         });
     });
 });

@@ -10,7 +10,7 @@ ServerEvents.chestLootTables(event =>
             pool.addItem("xat:moon_rose").weight(5).count(1);
             pool.addEmpty(20);
 
-            pool.rolls = 2;
+            pool.rolls = 3;
         });
     });
 });

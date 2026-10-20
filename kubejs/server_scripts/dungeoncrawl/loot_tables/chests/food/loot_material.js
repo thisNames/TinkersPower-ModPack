@@ -6,6 +6,8 @@ ServerEvents.chestLootTables(event =>
         {
             pool.addItem("bountifulbaubles:spectral_silt").weight(25).count([1, 3]);
             pool.addEmpty(85);
+
+            pool.rolls = 2;
         });
     });
 });

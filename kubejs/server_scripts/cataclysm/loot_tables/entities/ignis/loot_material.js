@@ -11,7 +11,7 @@ ServerEvents.entityLootTables(event =>
             pool.addItem("xat:glowing_ingot").weight(20).count([1, 6]).lootingEnchant(2, 8);
             pool.addItem("xat:glowing_gem").weight(5).count([1, 4]).lootingEnchant(2, 8);
 
-            pool.rolls = 6;
+            pool.rolls = 5;
         });
 
         loot.addPool(pool =>
