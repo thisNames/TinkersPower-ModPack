@@ -21,13 +21,13 @@
     },
     "homepage": "https://github.com/thisNames/TinkersPower-ModPack#readme",
     "devDependencies": {
-        "@types/node": "^18.19.130"
+        "@types/node": "^18.19.130",
+        "typescript": "^5.9.3"
     },
     "build": {
-        "manifest": "",
-        "modlist": "",
-        "overrides": "overrides",
-        "options": "options.txt",
+        "manifest": ".manifest/manifest.json",
+        "modlist": ".manifest/modlist.html",
+        "optionsTxt": "options.txt",
         "required": [
             ".manifest",
             "config",
@@ -39,93 +39,114 @@
         ],
         "server": {
             ".manifest": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             },
             "config": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             },
             "defaultconfigs": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             },
             "kubejs": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             },
             "mods": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             },
             "resourcepacks": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             },
             "shaderpacks": {
-                "whitelist": true,
-                "list": []
+                "whitelist": false,
+                "list": [],
+                "skip": false
             }
         },
         "client": {
             "online": {
                 ".manifest": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "config": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "defaultconfigs": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "kubejs": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "mods": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "resourcepacks": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "shaderpacks": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 }
             },
             "offline": {
                 ".manifest": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "config": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "defaultconfigs": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "kubejs": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "mods": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "resourcepacks": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 },
                 "shaderpacks": {
-                    "whitelist": true,
-                    "list": []
+                    "whitelist": false,
+                    "list": [],
+                    "skip": false
                 }
             }
         }
