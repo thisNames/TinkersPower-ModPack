@@ -26,7 +26,8 @@
     "build": {
         "manifest": "",
         "modlist": "",
-        "options": "",
+        "overrides": "overrides",
+        "options": "options.txt",
         "required": [
             ".manifest",
             "config",
@@ -35,6 +36,98 @@
             "mods",
             "resourcepacks",
             "shaderpacks"
-        ]
+        ],
+        "server": {
+            ".manifest": {
+                "whitelist": true,
+                "list": []
+            },
+            "config": {
+                "whitelist": true,
+                "list": []
+            },
+            "defaultconfigs": {
+                "whitelist": true,
+                "list": []
+            },
+            "kubejs": {
+                "whitelist": true,
+                "list": []
+            },
+            "mods": {
+                "whitelist": true,
+                "list": []
+            },
+            "resourcepacks": {
+                "whitelist": true,
+                "list": []
+            },
+            "shaderpacks": {
+                "whitelist": true,
+                "list": []
+            }
+        },
+        "client": {
+            "online": {
+                ".manifest": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "config": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "defaultconfigs": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "kubejs": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "mods": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "resourcepacks": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "shaderpacks": {
+                    "whitelist": true,
+                    "list": []
+                }
+            },
+            "offline": {
+                ".manifest": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "config": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "defaultconfigs": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "kubejs": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "mods": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "resourcepacks": {
+                    "whitelist": true,
+                    "list": []
+                },
+                "shaderpacks": {
+                    "whitelist": true,
+                    "list": []
+                }
+            }
+        }
     }
 }
