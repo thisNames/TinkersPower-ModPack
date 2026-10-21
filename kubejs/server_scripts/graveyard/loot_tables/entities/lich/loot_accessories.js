@@ -11,8 +11,8 @@ ServerEvents.entityLootTables(event =>
                 })
             });
 
-            pool.addTag("acs:l2", true).weight(25).count(1);
-            pool.addTag("acs:l3", true).weight(75).count(1);
+            pool.addTag("acs:l2", true).weight(15).count(1);
+            pool.addTag("acs:l3", true).weight(85).count(1);
         });
     });
 });

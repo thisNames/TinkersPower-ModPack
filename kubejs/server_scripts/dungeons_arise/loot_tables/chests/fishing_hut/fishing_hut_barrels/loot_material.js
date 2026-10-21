@@ -9,11 +9,5 @@ ServerEvents.chestLootTables(event =>
 
             pool.rolls = 2;
         });
-
-        loot.addPool(pool =>
-        {
-            pool.addItem("artifacts:anglers_hat").weight(50).count(1);
-            pool.addEmpty(50);
-        });
     });
 });

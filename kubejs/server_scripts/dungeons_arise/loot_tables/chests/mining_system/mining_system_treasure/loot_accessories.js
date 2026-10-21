@@ -4,9 +4,9 @@ ServerEvents.chestLootTables(event =>
     {
         loot.addPool(pool =>
         {
-            pool.addTag("acs:l2", true).weight(9).count(1);
-            pool.addTag("acs:l3", true).weight(12).count(1);
-            pool.addEmpty(79);
+            pool.addTag("acs:l2", true).weight(7).count(1);
+            pool.addTag("acs:l3", true).weight(13).count(1);
+            pool.addEmpty(80);
         });
     });
 });
