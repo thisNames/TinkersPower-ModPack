@@ -22,5 +22,19 @@
     "homepage": "https://github.com/thisNames/TinkersPower-ModPack#readme",
     "devDependencies": {
         "@types/node": "^18.19.130"
+    },
+    "build": {
+        "manifest": "",
+        "modlist": "",
+        "options": "",
+        "required": [
+            ".manifest",
+            "config",
+            "defaultconfigs",
+            "kubejs",
+            "mods",
+            "resourcepacks",
+            "shaderpacks"
+        ]
     }
 }
