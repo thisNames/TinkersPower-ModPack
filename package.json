@@ -41,37 +41,37 @@
         ],
         "server": {
             ".manifest": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             },
             "config": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             },
             "defaultconfigs": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             },
             "kubejs": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             },
             "mods": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             },
             "resourcepacks": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             },
             "shaderpacks": {
-                "whitelist": false,
+                "whitelist": true,
                 "list": [],
                 "skip": false
             }
@@ -79,74 +79,74 @@
         "client": {
             "online": {
                 ".manifest": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "config": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "defaultconfigs": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "kubejs": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "mods": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "resourcepacks": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "shaderpacks": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 }
             },
             "offline": {
                 ".manifest": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "config": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "defaultconfigs": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "kubejs": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "mods": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "resourcepacks": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 },
                 "shaderpacks": {
-                    "whitelist": false,
+                    "whitelist": true,
                     "list": [],
                     "skip": false
                 }

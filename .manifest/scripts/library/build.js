@@ -363,8 +363,6 @@ class BuildBuilder
 
             // 收集文件存表
             fileTables.set(dir, BuildBuilder.collectFiles(dir, project, patterns, ""));
-
-            break;
         }
 
         // 拷贝文件
