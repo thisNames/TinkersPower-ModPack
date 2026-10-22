@@ -1,0 +1,32 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/lang/*.json"
+            ],
+            "url": "./.vscode/probe.lang-schema.json"
+        },
+        {
+            "fileMatch": [
+                "/probe/docs/*.json"
+            ],
+            "url": "./.vscode/probe.doc-schema.json"
+        }
+    ],
+    "js/ts.tsdk.path": "node_modules\\typescript\\lib",
+    "files.watcherExclude": {
+        ".mixin.out/**": true,
+        "build/**": true,
+        "crash-reports/**": true,
+        "CustomSkinLoader/**": true,
+        "local/**": true,
+        "logs/**": true,
+        "modernfix/**": true,
+        "mods/**": true,
+        "PCL/**": true,
+        "saves/**": true,
+        "tconplanner/**": true,
+        "TinkersPower-natives/**": true,
+        "xaero/**": true
+    }
+}

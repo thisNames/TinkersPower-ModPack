@@ -66,6 +66,7 @@ class ManifestOption
      * 加载清单对象
      * @param {string} path manifest.json
      * @returns {Manifest}
+     * @throws manifest.json 路径错误异常
      */
     static load(path)
     {
@@ -234,6 +235,7 @@ class BuildBuilder
      * 生成
      * @param {PlatformType} type 平台类型
      * @returns {Promise<{source: Map<string, PlatformOption>, target: Map<string, PlatformOption>}>}
+     * @throws 平台类型异常
      */
     builder(type)
     {
@@ -248,6 +250,7 @@ class BuildBuilder
      * 创建输出目录结构
      * @param {string} platform 平台分类目录名称
      * @returns {BuildBuilder} this
+     * @throws 存在异常
      */
     createOutput(platform)
     {
@@ -260,8 +263,10 @@ class BuildBuilder
 
         this.output = PT.join(this.option.output, platform, packname);
 
-        // 不存在则创建
-        if (!FS.existsSync(this.output)) FS.mkdirSync(this.output, { recursive: true });
+        if (FS.existsSync(this.output)) throw new Error(`[${this.output}] is exists!`);
+
+        // 创建
+        FS.mkdirSync(this.output, { recursive: true })
 
         return this;
     }
@@ -269,13 +274,16 @@ class BuildBuilder
     /**
      * 创建 overrides 目录结构（仅客户端使用）
      * @returns {BuildBuilder} this
+     * @throws 存在异常
      */
     createOverrides()
     {
         this.overrides = PT.join(this.output, this.Manifest.overrides);
 
         // 不存在则创建
-        if (!FS.existsSync(this.overrides)) FS.mkdirSync(this.overrides, { recursive: true });
+        if (FS.existsSync(this.overrides)) throw new Error(`[${this.overrides}] is exists!`);
+
+        FS.mkdirSync(this.overrides, { recursive: true });
 
         return this;
     }
@@ -359,7 +367,7 @@ class BuildBuilder
             if (!project || project.skip) continue;
 
             // 预编译正则
-            const patterns = project.list.map(op => new RegExp(op));
+            const patterns = project.list.map(op => new RegExp(op, "i"));
 
             // 收集文件存表
             fileTables.set(dir, BuildBuilder.collectFiles(dir, project, patterns, ""));

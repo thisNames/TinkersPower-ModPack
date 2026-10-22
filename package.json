@@ -42,74 +42,124 @@
         "server": {
             ".manifest": {
                 "whitelist": true,
-                "list": [],
+                "list": [
+                    "^js",
+                    "^index.html"
+                ],
                 "skip": false
             },
             "config": {
-                "whitelist": true,
-                "list": [],
+                "whitelist": false,
+                "list": [
+                    "^jei\\\\world",
+                    "^spark"
+                ],
                 "skip": false
             },
             "defaultconfigs": {
-                "whitelist": true,
+                "whitelist": false,
                 "list": [],
                 "skip": false
             },
             "kubejs": {
-                "whitelist": true,
-                "list": [],
+                "whitelist": false,
+                "list": [
+                    "^assets",
+                    "^client_scripts",
+                    "^probe",
+                    "^config\\\\client.properties",
+                    "^config\\\\packicon.png",
+                    "^config\\\\probejs.json",
+                    "^jsconfig.json",
+                    "^README.txt"
+                ],
                 "skip": false
             },
             "mods": {
-                "whitelist": true,
-                "list": [],
+                "whitelist": false,
+                "list": [
+                    "^optimize\\.0Pack2Reload",
+                    "^optimize\\.entityculling",
+                    "^optimize\\.flerovium",
+                    "^optimize\\.CullLessLeaves",
+                    "^optimize\\.createbetterfps",
+                    "^optimize\\.colorwheel",
+                    "^optimize\\.gnetum",
+                    "^custom\\.d_sound_mixins",
+                    "^magic\\.probejs",
+                    "^library\\.embeddium",
+                    "^decoration\\.mobends",
+                    "^decoration\\.JEICopyRecipeJson",
+                    "^decoration\\.configured",
+                    "^decoration\\.MouseTweaks",
+                    "^decoration\\.Controlling",
+                    "^decoration\\.Searchables",
+                    "^decoration\\.oculus",
+                    "^decoration\\.BetterPingDisplay",
+                    "^decoration\\.BetterAdvancements",
+                    "^decoration\\.EnchantmentDescriptions",
+                    "^decoration\\.CustomSkinLoader",
+                    "^decoration\\.lanserverproperties",
+                    "^decoration\\.OverflowingBars",
+                    "^sound\\.AmbientSounds",
+                    "^sound\\.PresenceFootsteps",
+                    "^sound\\.dynamicsurroundings"
+                ],
                 "skip": false
             },
             "resourcepacks": {
                 "whitelist": true,
                 "list": [],
-                "skip": false
+                "skip": true
             },
             "shaderpacks": {
                 "whitelist": true,
                 "list": [],
-                "skip": false
+                "skip": true
             }
         },
         "client": {
             "online": {
                 ".manifest": {
                     "whitelist": true,
-                    "list": [],
+                    "list": [
+                        "^js",
+                        "^index.html"
+                    ],
                     "skip": false
                 },
                 "config": {
-                    "whitelist": true,
-                    "list": [],
+                    "whitelist": false,
+                    "list": [
+                        "^jei\\\\world",
+                        "^spark"
+                    ],
                     "skip": false
                 },
                 "defaultconfigs": {
-                    "whitelist": true,
+                    "whitelist": false,
                     "list": [],
                     "skip": false
                 },
                 "kubejs": {
-                    "whitelist": true,
-                    "list": [],
+                    "whitelist": false,
+                    "list": [
+                        "^probe"
+                    ],
                     "skip": false
                 },
                 "mods": {
                     "whitelist": true,
                     "list": [],
-                    "skip": false
+                    "skip": true
                 },
                 "resourcepacks": {
-                    "whitelist": true,
+                    "whitelist": false,
                     "list": [],
                     "skip": false
                 },
                 "shaderpacks": {
-                    "whitelist": true,
+                    "whitelist": false,
                     "list": [],
                     "skip": false
                 }
@@ -117,36 +167,46 @@
             "offline": {
                 ".manifest": {
                     "whitelist": true,
-                    "list": [],
+                    "list": [
+                        "^js",
+                        "^index.html"
+                    ],
                     "skip": false
                 },
                 "config": {
-                    "whitelist": true,
-                    "list": [],
+                    "whitelist": false,
+                    "list": [
+                        "^jei\\\\world",
+                        "^spark"
+                    ],
                     "skip": false
                 },
                 "defaultconfigs": {
-                    "whitelist": true,
+                    "whitelist": false,
                     "list": [],
                     "skip": false
                 },
                 "kubejs": {
-                    "whitelist": true,
-                    "list": [],
+                    "whitelist": false,
+                    "list": [
+                        "^probe"
+                    ],
                     "skip": false
                 },
                 "mods": {
-                    "whitelist": true,
-                    "list": [],
+                    "whitelist": false,
+                    "list": [
+                        "^magic\\.probejs"
+                    ],
                     "skip": false
                 },
                 "resourcepacks": {
-                    "whitelist": true,
+                    "whitelist": false,
                     "list": [],
                     "skip": false
                 },
                 "shaderpacks": {
-                    "whitelist": true,
+                    "whitelist": false,
                     "list": [],
                     "skip": false
                 }

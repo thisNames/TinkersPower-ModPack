@@ -68,13 +68,15 @@ manifestBtn.addEventListener("click", () =>
     download.click();
 });
 
-// 点击下载 modlist.txt 文件
+// 点击下载 modlist.html 文件
 modlistBtn.addEventListener("click", () =>
 {
     const ul = new Array(["<ul>"]);
 
     fileList.forEach(el =>
     {
+        if (el.classList.contains("disable")) return;
+        
         const mname = el.querySelector(".name").textContent.trim();
         const href = el.querySelector(".cf-link").href;
         const li = `\t<li><a href="${href}">${mname}</a></li>`;
