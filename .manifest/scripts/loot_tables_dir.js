@@ -1,6 +1,11 @@
 const FS = require("node:fs");
 const PT = require("node:path");
 
+const { Logger } = require("./library/logger");
+
+// 日志
+const logger = new Logger("loot_tables_dir", PT.basename(__filename));
+
 // kjs 服务端脚本路径
 const KJS_SER_S = PT.join(process.cwd(), "kubejs/server_scripts");
 // 战利品目录名此
@@ -15,7 +20,8 @@ const DEL_FOR_JSON = true;
  * @param {FS.Dirent} lootDirent 战利品类型
  * @returns {Number} 实际创建了的战利品数量
  */
-function createLootFolders(lootDirent) {
+function createLootFolders(lootDirent)
+{
     // 统计
     let count = 0;
     // 战利品类别目录
@@ -24,18 +30,21 @@ function createLootFolders(lootDirent) {
     const loots = FS.readdirSync(lootDir, { withFileTypes: true, encoding: "utf-8" });
 
     // 遍历所有战利品
-    for (let i = 0; i < loots.length; i++) {
+    for (let i = 0; i < loots.length; i++)
+    {
         // 一个战利品
         const loot = loots[i];
 
         // 如果是目录，递归获取更深层次的战利品分类，例如：chests\aviary\aviary_barrels
-        if (loot.isDirectory()) {
+        if (loot.isDirectory())
+        {
             count += createLootFolders(loot);
             continue;
         }
 
         // 根据战利品 json 文件创建对应的战利品目录
-        if (loot.isFile() && PT.extname(loot.name) == ".json") {
+        if (loot.isFile() && PT.extname(loot.name) == ".json")
+        {
             // 名此
             const filename = PT.basename(loot.name, ".json");
             // 战利品目录路径
@@ -50,7 +59,6 @@ function createLootFolders(lootDirent) {
             // 目录存在跳过
             if (FS.existsSync(newPath) && FS.statSync(newPath).isDirectory()) continue;
 
-            // console.log(loot.parentPath ,filename);
             FS.mkdirSync(newPath);
 
             // .keep 元数据
@@ -63,7 +71,7 @@ function createLootFolders(lootDirent) {
             if (DEL_FOR_JSON && FS.existsSync(jsonPath) && FS.statSync(jsonPath).isFile()) FS.unlinkSync(jsonPath);
 
             // debug
-            console.log(namespace, DEL_FOR_JSON ? loot.name : "");
+            logger.info(namespace, DEL_FOR_JSON ? loot.name : "");
             count++;
         }
     }
@@ -75,7 +83,8 @@ function createLootFolders(lootDirent) {
 /**
  * 主函数
  */
-function main() {
+function main()
+{
     // 统计
     let lootGlobalCount = 0;
     let lootGlobalModCount = 0;
@@ -83,7 +92,8 @@ function main() {
     const listModDirent = FS.readdirSync(KJS_SER_S, { withFileTypes: true, encoding: "utf-8" }).filter(i => i.isDirectory());
 
     // 遍历所有模组目录
-    for (let i = 0; i < listModDirent.length; i++) {
+    for (let i = 0; i < listModDirent.length; i++)
+    {
         // 统计本次战利品数量
         let lootCount = 0;
         // 模组目录
@@ -98,14 +108,15 @@ function main() {
         const listLootDirent = FS.readdirSync(lootDir, { withFileTypes: true, encoding: "utf-8" }).filter(i => i.isDirectory());
 
         // 创建目录
-        listLootDirent.forEach(loot => {
+        listLootDirent.forEach(loot =>
+        {
             lootCount += createLootFolders(loot);
             modCount = 1;
         });
 
         // debug
-        console.log(lootCount);
-        console.log("----------------------------------");
+        logger.info(lootCount);
+        logger.info("----------------------------------");
 
         // 累加
         lootGlobalCount += lootCount;
@@ -113,9 +124,10 @@ function main() {
     }
 
     // debug
-    console.log("===============================");
-    console.log("loot tables has:", lootGlobalModCount);
-    console.log("loot count:", lootGlobalCount);
+    logger.info("===============================");
+    logger.info("loot tables has:", lootGlobalModCount);
+    logger.info("loot count:", lootGlobalCount);
+    logger.close();
 }
 
 // 运行脚本

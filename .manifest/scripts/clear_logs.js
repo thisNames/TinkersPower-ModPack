@@ -1,6 +1,10 @@
 const FS = require("node:fs");
 const PT = require("node:path");
 
+const { Logger } = require("./library/logger");
+
+// 日志
+const logger = new Logger("clear_logs", PT.basename(__filename));
 
 // 之前的清理日志文件 .gz
 const LOG_DIR = PT.join(process.cwd(), "logs");
@@ -12,8 +16,9 @@ for (const file of LOG_FILES)
     if (file.endsWith(".gz"))
     {
         FS.unlinkSync(PT.join(LOG_DIR, file));
-        console.log(`Deleted ${file}`);
+        logger.info(`Deleted ${file}`);
     }
 }
 
-console.log("Done is Total:", LOG_FILES.filter(file => file.endsWith(".gz")).length);
+logger.info(`Done is Total: ${LOG_FILES.filter(file => file.endsWith(".gz")).length}`);
+logger.close();

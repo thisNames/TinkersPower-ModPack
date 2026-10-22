@@ -5,7 +5,7 @@ const PT = require("node:path");
 const { Logger } = require("./library/logger");
 
 // 日志
-const logger = new Logger(PT.basename(__filename).split(".").shift(), PT.basename(__filename));
+const logger = new Logger("ban_generator", PT.basename(__filename));
 
 // 全局配置
 const ROOT_PATH = "config/itemprohibiteditems";
@@ -100,12 +100,12 @@ for (let i = 0; i < listDirent.length; i++)
     wearCount += wearData.length;
 
     // 输出
-    console.log(`mod => ${namespace.name}, items => ${itemData.length}, wears => ${wearData.length}`);
+    logger.info(`mod => ${namespace.name}, items => ${itemData.length}, wears => ${wearData.length}`);
 }
 
 // 耗时
-console.log("time ms:", Date.now() - S_TIME, "ms");
-console.log("item total:", itemCount);
-console.log("wear total:", wearCount);
-console.log("total:", itemCount + wearCount);
-
+logger.info(`time ms: ${Date.now() - S_TIME}ms`);
+logger.info(`item total: ${itemCount}`);
+logger.info(`wear total: ${wearCount}`);
+logger.info(`total: ${itemCount + wearCount}`);
+logger.close();

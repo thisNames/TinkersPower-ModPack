@@ -1,6 +1,11 @@
 const FS = require("node:fs");
 const PT = require("node:path");
 
+const { Logger } = require("./library/logger");
+
+// 日志
+const logger = new Logger("defaultconfigs", PT.basename(__filename));
+
 const DEF_CFG = "defaultconfigs";
 const SAVES = "saves";
 
@@ -26,8 +31,10 @@ for (let i = 0; i < listConfigDirent.length; i++)
 
                 FS.writeFileSync(config, cfgData, "utf-8", { flag: "w" });
 
-                console.log("write config:", config);
+                logger.info(`write config: ${config}`);
             }
         }
     }
 }
+
+logger.close();
