@@ -1,7 +1,8 @@
+// 打包脚本依赖
 const FS = require("node:fs");
 const PT = require("node:path");
+const { pipeline } = require("node:stream/promises");
 
-// 打包脚本依赖
 const { ModLoader, Minecraft, ModFile, Manifest } = require("../../js/manifest");
 
 /**
@@ -68,7 +69,7 @@ class ManifestOption
      */
     static load(path)
     {
-        if (!FS.existsSync(path) || !FS.statSync(path).isFile()) throw new Error("没有找到 manifest.json 文件！");
+        if (!FS.existsSync(path) || !FS.statSync(path).isFile()) throw new Error("No manifestion.json file found!");
 
         const buffer = FS.readFileSync(path, "utf-8");
         const data = JSON.parse(buffer);
@@ -87,6 +88,11 @@ class ManifestOption
  */
 class BuildOption
 {
+    /** @type {string} 输出目录 */
+    static BUILD = "build";
+    /** @type {string} package.json */
+    static PACKAGE_JSON = "package.json";
+
     /**
      * 创建打包配置对象
      * @param {string} pack package.json
@@ -181,8 +187,11 @@ class BuildBuilder
         /** @type {string} 输出路径 */
         this.output = "";
 
-        /** @type {string}  overrides 路径 */
+        /** @type {string} overrides 路径 */
         this.overrides = "";
+
+        /** @type {(source: string, target: string) => void} 拷贝中 */
+        this.copying = null;
     }
 
     /**
@@ -210,16 +219,29 @@ class BuildBuilder
     get ClientOffline() { return this.option.clientOffline };
 
     /**
+     * 拷贝事件  
+     * @param {(source: string, target: string) => void} copying 函数
+     * @returns {BuildBuilder} this
+     */
+    eventCopying(copying)
+    {
+        this.copying = copying;
+
+        return this;
+    }
+
+    /**
      * 生成
      * @param {PlatformType} type 平台类型
+     * @returns {Promise<{source: Map<string, PlatformOption>, target: Map<string, PlatformOption>}>}
      */
     builder(type)
     {
-        if (type == PlatformType.server) return BuildBuilder.generator(this.option, this.option.server);
-        if (type == PlatformType.clientOnline) return BuildBuilder.generator(this.option, this.option.clientOnline);
-        if (type == PlatformType.clientOffline) return BuildBuilder.generator(this.option, this.option.clientOffline);
+        if (type == PlatformType.server) return BuildBuilder.generator(this, this.option.server);
+        if (type == PlatformType.clientOnline) return BuildBuilder.generator(this, this.option.clientOnline);
+        if (type == PlatformType.clientOffline) return BuildBuilder.generator(this, this.option.clientOffline);
 
-        throw new Error("不知道的打包类型！");
+        throw new Error("Unknown packaging type!");
     }
 
     /**
@@ -245,7 +267,7 @@ class BuildBuilder
     }
 
     /**
-     * 创建 overrides 目录结构
+     * 创建 overrides 目录结构（仅客户端使用）
      * @returns {BuildBuilder} this
      */
     createOverrides()
@@ -259,7 +281,7 @@ class BuildBuilder
     }
 
     /**
-     * 拷贝清单文件
+     * 拷贝清单文件（仅客户端使用）
      * @returns {BuildBuilder} this
      */
     copyingManifest()
@@ -277,11 +299,14 @@ class BuildBuilder
         FS.writeFileSync(manifestTo, manifestBuffer, { encoding: "utf-8", flag: "w" });
         FS.writeFileSync(modlistTo, modlistBuffer, { encoding: "utf-8", flag: "w" });
 
+        this.copying && this.copying(this.option.manifest.path, manifestTo);
+        this.copying && this.copying(this.option.modlist, modlistTo);
+
         return this;
     }
 
     /**
-     * 拷贝客户端选项文件
+     * 拷贝客户端选项文件（仅客户端使用）
      * @returns {BuildBuilder} this
      */
     copyingOptionsTxt()
@@ -295,22 +320,144 @@ class BuildBuilder
         // 写入
         FS.writeFileSync(optionsTxtTo, optionsTxtBuffer, { encoding: "utf-8", flag: "w" });
 
+        this.copying && this.copying(this.option.optionsTxt, optionsTxtTo);
+
+        return this;
+    }
+
+    /**
+     * 离线路径将 overrides 直接设置为 output（仅客户端离线、服务端使用）
+     * @returns {BuildBuilder} this
+     */
+    offline()
+    {
+        this.overrides = this.output;
+
         return this;
     }
 
     /**
      * 生成器
-     * @param {BuildOption} option 打包对象
+     * @param {BuildBuilder} builder 打包器
      * @param {Map<string, PlatformOption} platform 平台配置
+     * @returns {Promise<{source: Map<string, PlatformOption>, target: Map<string, PlatformOption>}>}
      */
-    static generator(option, platform)
+    static async generator(builder, platform)
     {
+        // 必须的项目
+        const required = builder.option.required;
+        /** @type {Map<string, Array<string>>} 文件集合表 */
+        const fileTables = new Map();
 
+        // 收集文件
+        for (let i = 0; i < required.length; i++)
+        {
+            const dir = required[i];
+            const project = platform.get(dir);
+
+            // 空值、跳过
+            if (!project || project.skip) continue;
+
+            // 预编译正则
+            const patterns = project.list.map(op => new RegExp(op));
+
+            // 收集文件存表
+            fileTables.set(dir, BuildBuilder.collectFiles(dir, project, patterns, ""));
+
+            break;
+        }
+
+        // 拷贝文件
+        const tagetFileTables = await BuildBuilder.copyingFiles(fileTables, builder);
+
+        // 结束
+        return { source: fileTables, target: tagetFileTables };
+    }
+
+    /**
+     * 拷贝文件（异步执行，不做并发）
+     * @param {Map<string, Array<string>>} fileTables 文件集合表
+     * @param {BuildBuilder} builder 打包器
+     */
+    static async copyingFiles(fileTables, builder)
+    {
+        /** @type {Map<string, Array<string>>} 目标文件集合表 */
+        const tagetFileTables = new Map();
+
+        for (const [parent, childrens] of fileTables)
+        {
+            if (!tagetFileTables.has(parent)) tagetFileTables.set(parent, []);
+
+            for (let i = 0; i < childrens.length; i++)
+            {
+                const children = childrens[i];
+                const source = PT.join(parent, children);
+                const target = PT.join(builder.overrides, parent, children);
+                const dirname = PT.dirname(target);
+
+                // 抄写文件
+                if (!FS.existsSync(source)) continue;
+
+                await FS.promises.mkdir(dirname, { recursive: true });
+                await pipeline(FS.createReadStream(source), FS.createWriteStream(target));
+
+                // 存表
+                tagetFileTables.get(parent).push(target);
+
+                builder.copying && builder.copying(source, target);
+            }
+        }
+
+        return tagetFileTables;
+    }
+
+    /**
+     * 收集文件
+     * @param {string} dir 目录
+     * @param {PlatformOption} option 配置
+     * @param {Array<RegExp>} patterns 正则名单
+     * @param {string} [prefix=""] 前缀
+     * @returns {Array<string>}
+     */
+    static collectFiles(dir, option, patterns, prefix = "")
+    {
+        const listDirent = FS.readdirSync(dir, { encoding: "utf-8", withFileTypes: true });
+        const files = [];
+
+        // 递归读取
+        for (let i = 0; i < listDirent.length; i++)
+        {
+            const dirent = listDirent[i];
+            const pathname = PT.join(dir, dirent.name);
+            const children = PT.join(prefix, dirent.name);
+            const matched = patterns.some(re => re.test(children));
+
+            // 递归子目录（保持原行为：目录始终递归）
+            if (dirent.isDirectory()) files.push(...BuildBuilder.collectFiles(pathname, option, patterns, children));
+
+            // 白名单：仅收匹配项；黑名单：仅收未匹配项
+            if (option.whitelist === matched && dirent.isFile()) files.push(children);
+        }
+
+        return files;
+    }
+
+    /**
+     * 统计文件数量
+     * @param {Map<string, Array<string>} tables 文件集合表
+     */
+    static totalFileTables(tables)
+    {
+        let total = 0;
+
+        for (const [dir, childrens] of tables)
+        {
+            total += childrens.length;
+        }
+
+        return total;
     }
 }
-
-// TODO: testing
-const bbr = new BuildBuilder(new BuildOption("package.json", "build")).createOutput(PlatformType.clientOnline).createOverrides().copyingOptionsTxt();
 
 module.exports = {
     PlatformType,

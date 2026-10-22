@@ -2,6 +2,11 @@
 const FS = require("node:fs");
 const PT = require("node:path");
 
+const { Logger } = require("./library/logger");
+
+// 日志
+const logger = new Logger(PT.basename(__filename).split(".").shift(), PT.basename(__filename));
+
 // 全局配置
 const ROOT_PATH = "config/itemprohibiteditems";
 const KJS_SCRIPT = "ban.js";

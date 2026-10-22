@@ -8,7 +8,10 @@
         "overrides": "node .manifest/scripts/overrides_generator.js",
         "clear_logs": "node .manifest/scripts/clear_logs.js",
         "loot_tables_dir": "node .manifest/scripts/loot_tables_dir.js",
-        "defaultconfigs": "node .manifest/scripts/defaultconfigs"
+        "defaultconfigs": "node .manifest/scripts/defaultconfigs.js",
+        "build_server": "node .manifest/scripts/build_server.js",
+        "build_client": "node .manifest/scripts/build_client",
+        "build_client_offline": "node .manifest/scripts/build_client_offline.js"
     },
     "repository": {
         "type": "git",
