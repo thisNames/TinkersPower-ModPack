@@ -267,7 +267,8 @@ class BuildBuilder
             this.Manifest.name,
             this.Manifest.version,
             this.Manifest.minecraft.version,
-            this.Manifest.minecraft.modLoaders[0].id.split("-").shift()
+            this.Manifest.minecraft.modLoaders[0].id.split("-").shift(),
+            platform
         ].join("-");
 
         this.output = PT.join(this.option.output, platform, packname);
