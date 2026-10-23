@@ -10,7 +10,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow").getString()
+                                translate: "loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow"
                             })
                         ]
                     },

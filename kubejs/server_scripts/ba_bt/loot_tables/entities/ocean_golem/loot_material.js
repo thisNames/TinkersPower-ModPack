@@ -39,7 +39,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.minecraft.heart_of_the_sea_vow").getString()
+                                translate: "loot.kubejs.tooltip.minecraft.heart_of_the_sea_vow"
                             })
                         ]
                     }

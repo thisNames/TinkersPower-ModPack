@@ -10,7 +10,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.artifacts.plastic_drinking_hat_vow").getString()
+                                translate: "loot.kubejs.tooltip.artifacts.plastic_drinking_hat_vow"
                             })
                         ]
                     },

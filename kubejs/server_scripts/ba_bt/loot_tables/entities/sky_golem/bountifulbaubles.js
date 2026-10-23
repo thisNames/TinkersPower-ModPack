@@ -11,7 +11,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow").getString()
+                                translate: "loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow"
                             })
                         ]
                     },

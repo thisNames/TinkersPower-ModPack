@@ -11,7 +11,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.artifacts.flame_pendant_vow").getString()
+                                translate: "loot.kubejs.tooltip.artifacts.flame_pendant_vow"
                             })
                         ]
                     },

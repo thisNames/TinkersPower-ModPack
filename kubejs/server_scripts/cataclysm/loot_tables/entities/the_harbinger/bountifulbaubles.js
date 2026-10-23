@@ -11,7 +11,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying_vow").getString()
+                                translate: "loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying_vow"
                             })
                         ]
                     },

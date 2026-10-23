@@ -129,6 +129,9 @@ class BuildOption
         /** @type {Map<string, PlatformOption>} 客户端端离线打包清单 */
         this.clientOffline = new Map();
 
+        /** @type {boolean} 是否覆盖打包，建议：加减文件时使用不覆盖、只有文件修改时用覆盖（开发环境调试） */
+        this.packcover = false;
+
         // 初始化
         this.init(this.pack);
     }
@@ -153,6 +156,9 @@ class BuildOption
         this.loadPlatform(this.server, build.server);
         this.loadPlatform(this.clientOnline, build.client.online);
         this.loadPlatform(this.clientOffline, build.client.offline);
+
+        // 选项
+        this.packcover = build.packcover;
     }
 
     /**
@@ -266,7 +272,7 @@ class BuildBuilder
 
         this.output = PT.join(this.option.output, platform, packname);
 
-        if (FS.existsSync(this.output)) throw new Error(`[${this.output}] is exists!`);
+        if (!this.option.packcover && FS.existsSync(this.output)) throw new Error(`[${this.output}] is exists!`);
 
         // 创建
         FS.mkdirSync(this.output, { recursive: true })
@@ -284,7 +290,7 @@ class BuildBuilder
         this.overrides = PT.join(this.output, this.Manifest.overrides);
 
         // 不存在则创建
-        if (FS.existsSync(this.overrides)) throw new Error(`[${this.overrides}] is exists!`);
+        if (!this.option.packcover && FS.existsSync(this.overrides)) throw new Error(`[${this.overrides}] is exists!`);
 
         FS.mkdirSync(this.overrides, { recursive: true });
 

@@ -35,7 +35,7 @@ ServerEvents.entityLootTables(event =>
                     display: {
                         Lore: [
                             JSON.stringify({
-                                text: Text.translatable("loot.kubejs.tooltip.minecraft.nether_star_vow").getString()
+                                translate: "loot.kubejs.tooltip.minecraft.nether_star_vow"
                             })
                         ]
                     }
