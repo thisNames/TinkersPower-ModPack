@@ -193,6 +193,9 @@ class BuildBuilder
 
         /** @type {(source: string, target: string) => void} 拷贝中 */
         this.copying = null;
+
+        /** @type {number} 额外的文件 */
+        this.additionalFile = 0;
     }
 
     /**
@@ -305,7 +308,10 @@ class BuildBuilder
 
         // 写入
         FS.writeFileSync(manifestTo, manifestBuffer, { encoding: "utf-8", flag: "w" });
+        this.additionalFile++;
+
         FS.writeFileSync(modlistTo, modlistBuffer, { encoding: "utf-8", flag: "w" });
+        this.additionalFile++;
 
         this.copying && this.copying(this.option.manifest.path, manifestTo);
         this.copying && this.copying(this.option.modlist, modlistTo);
@@ -327,8 +333,37 @@ class BuildBuilder
 
         // 写入
         FS.writeFileSync(optionsTxtTo, optionsTxtBuffer, { encoding: "utf-8", flag: "w" });
+        this.additionalFile++;
 
         this.copying && this.copying(this.option.optionsTxt, optionsTxtTo);
+
+        return this;
+    }
+
+    /**
+     * 拷贝协议以及说明文件
+     * @returns {BuildBuilder} this
+     */
+    copyingExplanation()
+    {
+        // LICENSE
+        // README.md
+        // README.zh_cn.md
+        const files = ["LICENSE", "README.md", "README.zh_cn.md"];
+
+        // 输出
+        for (let i = 0; i < files.length; i++)
+        {
+            const file = files[i];
+            const buffer = FS.readFileSync(file, "utf-8");
+            const fileTo = PT.join(this.overrides, file);
+
+            // 写入
+            FS.writeFileSync(fileTo, buffer, { encoding: "utf-8", flag: "w" });
+            this.additionalFile++;
+
+            this.copying && this.copying(file, fileTo);
+        }
 
         return this;
     }
@@ -371,6 +406,8 @@ class BuildBuilder
 
             // 收集文件存表
             fileTables.set(dir, BuildBuilder.collectFiles(dir, project, patterns, ""));
+
+            break;
         }
 
         // 拷贝文件

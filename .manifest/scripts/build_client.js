@@ -14,7 +14,8 @@ bbrClient
     .createOutput(platform)
     .createOverrides()
     .copyingManifest()
-    .copyingOptionsTxt();
+    .copyingOptionsTxt()
+    .copyingExplanation();
 
 bbrClient
     .builder(platform)
@@ -22,6 +23,7 @@ bbrClient
     {
         logger.info(`source: ${BuildBuilder.totalFileTables(res.source)}`);
         logger.info(`target: ${BuildBuilder.totalFileTables(res.target)}`);
+        logger.info(`additional: ${bbrClient.additionalFile}`);
     })
     .catch(err => logger.error(err.message))
     .finally(() => logger.close());

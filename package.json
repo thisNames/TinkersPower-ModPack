@@ -17,7 +17,8 @@
         "url": "git+https://github.com/thisNames/TinkersPower-ModPack.git"
     },
     "author": "animator70@outlook.com",
-    "license": "MIT",
+    "license": "UNLICENSED",
+    "licenseFile": "LICENSE",
     "bugs": {
         "url": "https://github.com/thisNames/TinkersPower-ModPack/issues"
     },
@@ -64,7 +65,6 @@
             "kubejs": {
                 "whitelist": false,
                 "list": [
-                    "^assets",
                     "^client_scripts",
                     "^probe",
                     "^config\\\\client.properties",

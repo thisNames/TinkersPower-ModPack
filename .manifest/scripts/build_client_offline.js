@@ -13,7 +13,8 @@ bbrClientOffline.eventCopying((source, target) => logger.info(target));
 bbrClientOffline
     .createOutput(platform)
     .offline()
-    .copyingOptionsTxt();
+    .copyingOptionsTxt()
+    .copyingExplanation();
 
 bbrClientOffline
     .builder(platform)
@@ -21,6 +22,7 @@ bbrClientOffline
     {
         logger.info(`source: ${BuildBuilder.totalFileTables(res.source)}`);
         logger.info(`target: ${BuildBuilder.totalFileTables(res.target)}`);
+        logger.info(`additional: ${bbrClientOffline.additionalFile}`);
     })
     .catch(err => logger.error(err.message))
     .finally(() => logger.close());
