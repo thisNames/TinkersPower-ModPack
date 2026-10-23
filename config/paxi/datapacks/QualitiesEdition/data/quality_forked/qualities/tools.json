@@ -1,7 +1,6 @@
 {
     "items": [
         "tcompat:glaive",
-
         "tconstruct:sword",
         "tconstruct:dagger",
         "tconstruct:pickaxe",
@@ -22,21 +21,16 @@
         "tconstruct:swasher",
         "tconstruct:minotaur_axe",
         "tconstruct:flint_and_brick",
-
         "tinkers_battle_spades:battle_spade",
-
         "tinkers_katanas:fuma_shuriken",
         "tinkers_katanas:katana",
-
         "tinkers_things:shovel",
         "tinkers_things:halberd",
         "tinkers_things:blockram",
-
         "tinkers_thinking:paxel",
         "tinkers_thinking:knife",
         "tinkers_thinking:mace",
         "tinkers_thinking:cutlass",
-
         "iceandfire:hippocampus_slapper",
         "iceandfire:hippogryph_sword",
         "iceandfire:stymphalian_bird_dagger",
@@ -50,33 +44,28 @@
         "iceandfire:troll_weapon_trunk",
         "iceandfire:troll_weapon_trunk_frost",
         "iceandfire:troll_weapon_axe",
-
         "twilightforest:mazebreaker_pickaxe",
         "twilightforest:diamond_minotaur_axe",
         "twilightforest:ice_sword",
         "twilightforest:giant_sword",
         "twilightforest:giant_pickaxe",
         "twilightforest:glass_sword",
-
         "cataclysm:coral_spear",
         "cataclysm:coral_bardiche",
         "cataclysm:athame",
         "cataclysm:khopesh",
-
         "aquamirae:dagger_of_greed",
         "aquamirae:coral_lance",
-
         "createdieselgenerators:hammer",
-
         "alexsmobs:ghostly_pickaxe",
         "alexsmobs:skelewag_sword",
         "alexsmobs:tendon_whip"
     ],
-    "item_tags": [
-        "SwordItem", 
+    "item_tags": [],
+    "class": [
+        "SwordItem",
         "DiggerItem"
     ],
-    "class": [],
     "qualities": [
         {
             "name": "quality_equipment.quality.worthless",
