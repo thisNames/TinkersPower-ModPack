@@ -85,6 +85,7 @@
                     "^optimize\\.createbetterfps",
                     "^optimize\\.colorwheel",
                     "^optimize\\.gnetum",
+                    "^fix\\.MyServerIsCompatible",
                     "^custom\\.d_sound_mixins",
                     "^magic\\.probejs",
                     "^library\\.embeddium",
