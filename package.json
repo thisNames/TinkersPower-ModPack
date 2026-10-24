@@ -53,8 +53,16 @@
             "config": {
                 "whitelist": false,
                 "list": [
+                    "^bettercaves",
+                    "^biomesoplenty",
+                    "^biomeswevegone",
                     "^jei\\\\world",
-                    "^spark"
+                    "^spark",
+                    "^attributefix",
+                    "^embeddium",
+                    "^entityculling",
+                    "^gnetum",
+                    "^lsp"
                 ],
                 "skip": false
             },
@@ -73,7 +81,8 @@
                     "^config\\\\packicon.png",
                     "^config\\\\probejs.json",
                     "^jsconfig.json",
-                    "^README.txt"
+                    "^README.txt",
+                    "\\.keep$"
                 ],
                 "skip": false
             },
@@ -92,6 +101,8 @@
                     "^magic\\.probejs",
                     "^library\\.embeddium",
                     "^decoration\\.mobends",
+                    "^decoration\\.JustEnoughResources",
+                    "^decoration\\.jerintegration",
                     "^decoration\\.JEICopyRecipeJson",
                     "^decoration\\.configured",
                     "^decoration\\.MouseTweaks",
@@ -147,7 +158,8 @@
                 "kubejs": {
                     "whitelist": false,
                     "list": [
-                        "^probe"
+                        "^probe",
+                        "\\.keep$"
                     ],
                     "skip": false
                 },
@@ -192,7 +204,8 @@
                 "kubejs": {
                     "whitelist": false,
                     "list": [
-                        "^probe"
+                        "^probe",
+                        "\\.keep$"
                     ],
                     "skip": false
                 },

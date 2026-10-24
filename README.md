@@ -82,12 +82,6 @@ gamemode=survival
 
 # Force default game mode on player join
 force-gamemode=true
-
-# Players are required to have a Mojang signed public key in order to access the server (usually in conjunction with disabling genuine authentication)
-enforce-secure-profile=false
-
-# Do you want to enable online verification
-online-mode=false
 ```
 
 ### Agreement: `eula.txt`

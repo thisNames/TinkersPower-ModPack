@@ -82,12 +82,6 @@ gamemode=survival
 
 # 强制玩家加入时为默认游戏模式
 force-gamemode=true
-
-# 要求玩家必须具有Mojang签名的公钥才能进入服务器（一般配合关闭正版验证）
-enforce-secure-profile=false
-
-# 是否启用在线验证。
-online-mode=false
 ```
 
 ### 协议：eula.txt

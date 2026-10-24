@@ -71,7 +71,7 @@ function createLootFolders(lootDirent)
             if (DEL_FOR_JSON && FS.existsSync(jsonPath) && FS.statSync(jsonPath).isFile()) FS.unlinkSync(jsonPath);
 
             // debug
-            logger.info(namespace, DEL_FOR_JSON ? loot.name : "");
+            logger.info(namespace + " " + (DEL_FOR_JSON ? loot.name : ""));
             count++;
         }
     }
@@ -125,8 +125,8 @@ function main()
 
     // debug
     logger.info("===============================");
-    logger.info("loot tables has:", lootGlobalModCount);
-    logger.info("loot count:", lootGlobalCount);
+    logger.info("loot tables has: " + lootGlobalModCount);
+    logger.info("loot count: " + lootGlobalCount);
     logger.close();
 }
 
