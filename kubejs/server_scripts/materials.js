@@ -1,198 +1,35 @@
-// priority: 3000
+// priority: 2000
 
-const MATERIAL_TAG = "acs:m";
+/**
+ * 材料等级标签
+ * @type {string}
+ */
+const material_level_tag = "acs:m";
+
 /**
  * 饰品材料
-  * 材料无法被效果配置：config/itemphysic.json => undestroyableItems
- * @type {Array<{namespace: string, material: Array<{id: string, level: number}>}>}
+ * 材料无法被效果配置：config/itemphysic.json => undestroyableItems
+ * @type {Array<ServerMaterialType>}
  */
-const MATERIAL_OPTIONS = [
-    {
-        namespace: "tconstruct",
-        material: [
-            {
-                id: "dragon_scale",
-                level: 1
-            },
-        ]
-    },
-    {
-        namespace: "iceandfire",
-        material: [
-            {
-                id: "silver_ingot",
-                level: 2
-            },
-            {
-                id: "sapphire_gem",
-                level: 2
-            },
-        ]
-    },
-    {
-        namespace: "minecraft",
-        material: [
-            {
-                id: "blaze_rod",
-                level: 3
-            },
-            {
-                id: "iron_ingot",
-                level: 3
-            },
-            {
-                id: "copper_ingot",
-                level: 3
-            },
-            {
-                id: "gold_ingot",
-                level: 3
-            },
-            {
-                id: "netherite_scrap",
-                level: 2
-            },
-            {
-                id: "netherite_ingot",
-                level: 1
-            },
-            {
-                id: "emerald",
-                level: 3
-            },
-            {
-                id: "lapis_lazuli",
-                level: 3
-            },
-            {
-                id: "diamond",
-                level: 3
-            },
-            {
-                id: "blaze_powder",
-                level: 3
-            },
-            {
-                id: "nether_star",
-                level: 1
-            },
-            {
-                id: "ender_pearl",
-                level: 3
-            },
-        ]
-    },
-    {
-        namespace: "xat",
-        material: [
-            {
-                id: "glowing_powder",
-                level: 1
-            },
-            {
-                id: "glowing_ingot",
-                level: 1
-            },
-            {
-                id: "glowing_gem",
-                level: 1
-            },
-            {
-                id: "mana_candy",
-                level: 2
-            },
-            {
-                id: "mana_crystal",
-                level: 1
-            },
-            {
-                id: "spark_powder",
-                level: 1
-            },
-            {
-                id: "mana_reagent",
-                level: 1
-            },
-            {
-                id: "restoration_serum",
-                level: 1
-            },
-        ]
-    },
-    {
-        namespace: "bountifulbaubles",
-        material: [
-            {
-                id: "ender_dragon_scale",
-                level: 1
-            },
-            {
-                id: "amulet_sin_empty",
-                level: 1
-            },
-            {
-                id: "spectral_silt",
-                level: 2
-            },
-            {
-                id: "resplendent_token",
-                level: 2
-            },
-            {
-                id: "broken_black_dragon_scale",
-                level: 1
-            },
-            {
-                id: "potion_wormhole",
-                level: 2
-            },
-            {
-                id: "potion_recall",
-                level: 2
-            },
-        ]
-    },
-    {
-        namespace: "roughtweaks",
-        material: [
-            {
-                id: "medkit",
-                level: 2
-            },
-            {
-                id: "medkit_enchanted",
-                level: 2
-            },
-        ]
-    },
-    {
-        namespace: "obscure_api",
-        material: [
-            {
-                id: "vial_of_knowledge",
-                level: 3
-            },
-        ]
-    },
-    {
-        namespace: "tp_armorunder",
-        material: [
-            {
-                id: "freeze_powder",
-                level: 3
-            },
-        ]
-    }
+const material_list = [
+    bountifulbaubles_materials,
+    iceandfire_materials,
+    minecraft_materials,
+    obscure_api_materials,
+    roughtweaks_materials,
+    tconstruct_materials,
+    tp_armorunder_materials,
+    xat_materials
 ];
 
 ServerEvents.tags("item", event =>
 {
-    MATERIAL_OPTIONS.forEach(option =>
+    material_list.forEach(material =>
     {
-        option.material.forEach(mate =>
+        material.material.forEach(mate =>
         {
             const mate_id = option.namespace + ":" + mate.id;
-            const mate_level = MATERIAL_TAG + mate.level;
+            const mate_level = material_level_tag + mate.level;
 
             event.add(mate_level, mate_id);
         });
