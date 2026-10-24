@@ -24,14 +24,14 @@ const material_list = [
 
 ServerEvents.tags("item", event =>
 {
-    material_list.forEach(material =>
+    material_list.forEach(mater =>
     {
-        material.material.forEach(mate =>
+        mater.material.forEach(item =>
         {
-            const mate_id = option.namespace + ":" + mate.id;
-            const mate_level = material_level_tag + mate.level;
+            const item_id = mater.namespace + ":" + item.id;
+            const item_level = material_level_tag + item.level;
 
-            event.add(mate_level, mate_id);
+            event.add(item_level, item_id);
         });
     });
 });

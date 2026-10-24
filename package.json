@@ -53,16 +53,19 @@
             "config": {
                 "whitelist": false,
                 "list": [
+                    "client\\.$",
                     "^bettercaves",
                     "^biomesoplenty",
                     "^biomeswevegone",
                     "^jei\\\\world",
                     "^spark",
                     "^attributefix",
+                    "^cull-less-leaves",
                     "^embeddium",
                     "^entityculling",
                     "^gnetum",
-                    "^lsp"
+                    "^lsp",
+                    "^oculus"
                 ],
                 "skip": false
             },

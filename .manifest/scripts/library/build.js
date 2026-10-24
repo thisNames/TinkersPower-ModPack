@@ -200,8 +200,14 @@ class BuildBuilder
         /** @type {(source: string, target: string) => void} 拷贝中 */
         this.copying = null;
 
+        /** @type {(source: string) => void} 丢弃中 */
+        this.throwing = null;
+
         /** @type {number} 额外的文件 */
         this.additionalFile = 0;
+
+        /** @type {number} 被丢弃的文件 */
+        this.throwingFile = 0;
     }
 
     /**
@@ -236,6 +242,18 @@ class BuildBuilder
     eventCopying(copying)
     {
         this.copying = copying;
+
+        return this;
+    }
+
+    /**
+     * 丢弃事件  
+     * @param {(source: string, target: string) => void} throwing 函数
+     * @returns {BuildBuilder} this
+     */
+    eventThrowing(throwing)
+    {
+        this.throwing = throwing;
 
         return this;
     }
@@ -412,7 +430,7 @@ class BuildBuilder
             const patterns = project.list.map(op => new RegExp(op, "i"));
 
             // 收集文件存表
-            fileTables.set(dir, BuildBuilder.collectFiles(dir, project, patterns, ""));
+            fileTables.set(dir, BuildBuilder.collectFiles(builder, dir, project, patterns, ""));
         }
 
         // 拷贝文件
@@ -461,13 +479,14 @@ class BuildBuilder
 
     /**
      * 收集文件
+     * @param {BuildBuilder} builder 打包器
      * @param {string} dir 目录
      * @param {PlatformOption} option 配置
      * @param {Array<RegExp>} patterns 正则名单
      * @param {string} [prefix=""] 前缀
      * @returns {Array<string>}
      */
-    static collectFiles(dir, option, patterns, prefix = "")
+    static collectFiles(builder, dir, option, patterns, prefix = "")
     {
         const listDirent = FS.readdirSync(dir, { encoding: "utf-8", withFileTypes: true });
         const files = [];
@@ -481,10 +500,21 @@ class BuildBuilder
             const matched = patterns.some(re => re.test(children));
 
             // 递归子目录（保持原行为：目录始终递归）
-            if (dirent.isDirectory()) files.push(...BuildBuilder.collectFiles(pathname, option, patterns, children));
+            if (dirent.isDirectory()) files.push(...BuildBuilder.collectFiles(builder, pathname, option, patterns, children));
 
             // 白名单：仅收匹配项；黑名单：仅收未匹配项
-            if (option.whitelist === matched && dirent.isFile()) files.push(children);
+            if (dirent.isFile()) 
+            {
+                if (option.whitelist === matched)
+                {
+                    files.push(children);
+                }
+                else
+                {
+                    builder.throwing && builder.throwing(children);
+                    builder.throwingFile++;
+                }
+            }
         }
 
         return files;
