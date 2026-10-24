@@ -4,10 +4,12 @@ ServerEvents.chestLootTables(event =>
     {
         loot.addPool(pool =>
         {
-            pool.addTag("acs:m3", true).weight(5).count([1, 6]);
+            pool.randomChance(0.4);
+            pool.addTag("acs:m3", true).weight(5).quality(1).count([1, 6]);
             pool.addEmpty(95);
 
             pool.rolls = 2;
+            pool.bonusRolls = 1;
         });
     });
 });
