@@ -10,10 +10,5 @@ ServerEvents.entityLootTables(event =>
 
             pool.rolls = 2;
         });
-
-        loot.addPool(pool =>
-        {
-            pool.addTag("acs:l3", true).weight(1).count(1);
-        });
     });
 });
