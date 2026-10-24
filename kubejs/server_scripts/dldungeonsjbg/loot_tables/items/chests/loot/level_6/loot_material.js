@@ -4,12 +4,14 @@ ServerEvents.genericLootTables(event =>
     {
         loot.addPool(pool =>
         {
-            pool.addTag("acs:m1", true).weight(9).count([1, 2]);
-            pool.addTag("acs:m2", true).weight(36).count([2, 6]);
-            pool.addTag("acs:m3", true).weight(43).count([2, 8]);
+            pool.randomChance(0.1);
+            pool.addTag("acs:m1", true).weight(9).quality(1).count([1, 2]);
+            pool.addTag("acs:m2", true).weight(36).quality(1).count([2, 6]);
+            pool.addTag("acs:m3", true).weight(43).quality(1).count([2, 8]);
             pool.addEmpty(12);
 
             pool.rolls = 3;
+            pool.bonusRolls = 1;
         });
     });
 });
