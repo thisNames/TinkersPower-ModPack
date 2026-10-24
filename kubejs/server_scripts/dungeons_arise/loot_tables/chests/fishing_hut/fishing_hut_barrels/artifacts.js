@@ -4,7 +4,8 @@ ServerEvents.chestLootTables(event =>
     {
         loot.addPool(pool =>
         {
-            pool.addItem("artifacts:anglers_hat").weight(50).count(1);
+            pool.randomChance(1);
+            pool.addItem("artifacts:anglers_hat").weight(50).quality(1).count(1);
             pool.addEmpty(50);
         });
     });
