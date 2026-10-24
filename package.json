@@ -53,7 +53,7 @@
             "config": {
                 "whitelist": false,
                 "list": [
-                    "client\\.$",
+                    "client\\.",
                     "^bettercaves",
                     "^biomesoplenty",
                     "^biomeswevegone",
