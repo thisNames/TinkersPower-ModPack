@@ -13,16 +13,6 @@ const tide_sinful_foods = {
             amplifier: 4
         },
         {
-            id: "devils_hole_pupfish",
-            second: 10,
-            amplifier: 4
-        },
-        {
-            id: "midas_fish",
-            second: 10,
-            amplifier: 5
-        },
-        {
             id: "alpha_fish",
             second: 10,
             amplifier: 4

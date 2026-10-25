@@ -81,5 +81,6 @@
     "loot.kubejs.tooltip.xat.moon_rose": "带刺玫瑰",
     "loot.kubejs.tooltip.xat.moon_rose_frie": "火玫瑰",
 
-    "food.kubejs.tooltip.sinful_food": "给予更高等级的罪恶效果（来自暴食吊坠）"
+    "food.kubejs.tooltip.sinful_food": "给予更高等级的罪恶效果（来自暴食吊坠）",
+    "food.kubejs.tooltip.luck_food": "给予 10 级幸运效果"
 }
