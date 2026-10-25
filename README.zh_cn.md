@@ -89,6 +89,12 @@ force-gamemode=true
 eula=true
 ```
 
+### 首次进入新存档建议运行命令
+- 创建结构缓存，提升结构的加载速度
+```cmd
+/modernfix upgradeStructures
+```
+
 ---
 
 ## 许可证

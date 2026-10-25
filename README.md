@@ -89,6 +89,12 @@ force-gamemode=true
 eula=true
 ```
 
+### It is recommended to run the command when entering a new archive for the first time
+- Create structure cache to improve the loading speed of structures
+```cmd
+/modernfix upgradeStructures
+```
+
 ---
 
 ## License
