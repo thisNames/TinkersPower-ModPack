@@ -1,0 +1,13 @@
+{
+	"CuriosItem": {
+		"prefix": "mod-sinful-food",
+		"body": [
+			"{",
+			"\tid: $1,",
+			"\tsecond: $2,",
+			"\tamplifier: $3",
+			"},"
+		],
+		"description": "罪恶食物"
+	}
+}
