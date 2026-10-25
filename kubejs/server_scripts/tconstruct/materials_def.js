@@ -10,6 +10,26 @@ const tconstruct_materials = {
         {
             id: "dragon_scale",
             level: 1
+        },
+        {
+            id: "bacon",
+            level: 3
+        },
+        {
+            id: "jeweled_apple",
+            level: 2
+        },
+        {
+            id: "cheese_ingot",
+            level: 3
+        },
+        {
+            id: "venombone",
+            level: 2
+        },
+        {
+            id: "blazing_bone",
+            level: 2
         }
     ]
 };

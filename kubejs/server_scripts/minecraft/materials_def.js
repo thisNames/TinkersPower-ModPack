@@ -54,6 +54,38 @@ const minecraft_materials = {
         {
             id: "ender_pearl",
             level: 3
+        },
+        {
+            id: "gold_block",
+            level: 2
+        },
+        {
+            id: "emerald_block",
+            level: 2
+        },
+        {
+            id: "iron_block",
+            level: 2
+        },
+        {
+            id: "diamond_block",
+            level: 2
+        },
+        {
+            id: "netherite_block",
+            level: 1
+        },
+        {
+            id: "bamboo_raft",
+            level: 3
+        },
+        {
+            id: "golden_apple",
+            level: 2
+        },
+        {
+            id: "enchanted_golden_apple",
+            level: 1
         }
     ]
 };

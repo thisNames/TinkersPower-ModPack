@@ -14,7 +14,6 @@ const accessories_dis_tag = "acs:dis";
 
 /**
  * 饰品配置
- * 饰品无法被效果配置：config/itemphysic.json => undestroyableItems
  * @type {Array<ServerAccessorieType>}
  */
 const accessories_list = [

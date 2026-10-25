@@ -8,7 +8,6 @@ const material_level_tag = "acs:m";
 
 /**
  * 饰品材料
- * 材料无法被效果配置：config/itemphysic.json => undestroyableItems
  * @type {Array<ServerMaterialType>}
  */
 const material_list = [
@@ -19,7 +18,11 @@ const material_list = [
     roughtweaks_materials,
     tconstruct_materials,
     tp_armorunder_materials,
-    xat_materials
+    xat_materials,
+    create_materials,
+    waystones_materials,
+    vinery_materials,
+    tp_toughasnails_materials
 ];
 
 ServerEvents.tags("item", event =>

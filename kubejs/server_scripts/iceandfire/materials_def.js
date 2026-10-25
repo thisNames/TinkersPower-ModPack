@@ -14,6 +14,18 @@ const iceandfire_materials = {
         {
             id: "sapphire_gem",
             level: 2
+        },
+        {
+            id: "silver_block",
+            level: 2
+        },
+        {
+            id: "sapphire_block",
+            level: 2
+        },
+        {
+            id: "pixie_dust",
+            level: 2
         }
     ]
 };
