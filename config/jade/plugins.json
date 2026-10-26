@@ -18,7 +18,7 @@
     "item_frame": true,
     "crop_progress": true,
     "command_block": true,
-    "mob_growth": true,
+    "mob_growth": false,
     "waxed": true,
     "harvest_tool.new_line": false,
     "entity_health.max_for_render": 40,
@@ -32,19 +32,19 @@
     "energy_storage.detailed": false,
     "note_block": true,
     "beehive": true,
-    "item_storage.detailed_amount": 54,
+    "item_storage.detailed_amount": 27,
     "player_head": true,
     "block_states": false,
     "lectern": true,
     "entity_armor": true,
     "harvest_tool.creative": false,
-    "horse_stats": true,
+    "horse_stats": false,
     "item_tooltip": true,
     "entity_health": true,
     "enchantment_power": true,
-    "zombie_villager": true,
-    "villager_profession": true,
-    "mob_breeding": true,
+    "zombie_villager": false,
+    "villager_profession": false,
+    "mob_breeding": false,
     "entity_health.icons_per_line": 10,
     "total_enchantment_power": true,
     "potion_effects": true,
@@ -52,8 +52,8 @@
     "chiseled_bookshelf": true
   },
   "modulargolems": {
-    "maid_model": true,
-    "player_skin": true
+    "maid_model": false,
+    "player_skin": false
   },
   "jadeaddons": {
     "equipment_requirement": ""
@@ -83,7 +83,7 @@
     "mod_name": true
   },
   "waystones": {
-    "waystone": true
+    "waystone": false
   },
   "balm": {
     "jade": true
