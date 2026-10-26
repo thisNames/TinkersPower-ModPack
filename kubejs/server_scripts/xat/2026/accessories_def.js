@@ -64,7 +64,7 @@ const xat_accessories = {
         },
         {
             id: "polarized_stone",
-            level: 3,
+            level: 2,
             dis: false
         },
         {
