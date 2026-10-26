@@ -1,5 +1,5 @@
 // 冰火龙炎锻造炉类型 
-const iceandfireDragonForgeTypeDef = "iceandfire:dragonforge";
+const iceandfire_dragon_forg_typ = "iceandfire:dragonforge";
 
 /**
  * 创建冰火传说龙钢锻炉配方
@@ -13,7 +13,7 @@ const iceandfireDragonForgeTypeDef = "iceandfire:dragonforge";
 function iceandfireDragonforge(event, dragonFogeType, tick, input, blood, output)
 {
     event.custom({
-        type: iceandfireDragonForgeTypeDef,
+        type: iceandfire_dragon_forg_typ,
         dragon_type: dragonFogeType,
         cook_time: tick,
         input: {
@@ -41,7 +41,7 @@ function iceandfireDragonforge(event, dragonFogeType, tick, input, blood, output
 function iceandfireDragonforgeForTag(event, dragonFogeType, tick, input, blood, output)
 {
     event.custom({
-        type: iceandfireDragonForgeTypeDef,
+        type: iceandfire_dragon_forg_typ,
         dragon_type: dragonFogeType,
         cook_time: tick,
         input: {
@@ -67,7 +67,7 @@ ServerEvents.recipes(event =>
     const lightning = "lightning";
 
     // 移除旧的
-    event.remove({ type: iceandfireDragonForgeTypeDef });
+    event.remove({ type: iceandfire_dragon_forg_typ });
 
     // 改用下界合金
     iceandfireDragonforge(event, fire, 400, _mc("netherite_ingot"), _this("fire_dragon_blood"), _this("dragonsteel_fire_ingot"));
