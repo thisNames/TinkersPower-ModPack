@@ -72,7 +72,7 @@
 	#愤怒吊坠的BUFF等级 (默认3)
 	#Wrath Pendant buff level (default 3)
 	#Range: 1 ~ 10
-	wrathPendantBuffLevel = 4
+	wrathPendantBuffLevel = 2
 	#愤怒吊坠的BUFF持续时间 (单位：tick，20tick=1秒，默认100)
 	#Wrath Pendant buff duration (in ticks, 20 ticks = 1 second, default 100)
 	#Range: 20 ~ 1200

@@ -51,13 +51,13 @@ ServerEvents.recipes(event =>
 
     event.shaped(_this("gluttony_pendant"), [
         ["", _art("plastic_drinking_hat"), ""],
-        [_mc("cake"), _this("amulet_sin_empty"), _mc("cake")],
+        [_mc("cake"), _this("wrath_pendant"), _mc("cake")],
         ["", _mc("enchanted_golden_apple"), ""]
     ]);
 
     event.shaped(_this("gluttony_pendant"), [
         ["", _art("novelty_drinking_hat"), ""],
-        [_mc("cake"), _this("amulet_sin_empty"), _mc("cake")],
+        [_mc("cake"), _this("wrath_pendant"), _mc("cake")],
         ["", _mc("enchanted_golden_apple"), ""]
     ]);
 

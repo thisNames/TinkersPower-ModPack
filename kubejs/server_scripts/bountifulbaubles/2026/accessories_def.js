@@ -119,7 +119,7 @@ const bountifulbaubles_accessories = {
         },
         {
             id: "gluttony_pendant",
-            level: 2,
+            level: 1,
             dis: true
         },
         {
