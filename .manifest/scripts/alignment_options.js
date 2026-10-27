@@ -8,7 +8,7 @@ const PT = require("node:path");
 const { Logger } = require("./library/logger");
 
 const OPTIONS_TXT = "options.txt";
-const OPTIONS_TXT_OLD = "options.txt.old";
+// const OPTIONS_TXT_OLD = "options.txt.old";
 
 // 日志
 const logger = new Logger("alignment_options", PT.basename(__filename));
@@ -35,8 +35,8 @@ const keyOptions = [...options.keys()].sort();
 const fileOptions = FS.openSync(OPTIONS_TXT, "w");
 
 // 写入
-FS.writeFileSync(OPTIONS_TXT_OLD, buffer, { encoding: "utf-8", flag: "w" });
-logger.info("copying: " + OPTIONS_TXT_OLD);
+// FS.writeFileSync(OPTIONS_TXT_OLD, buffer, { encoding: "utf-8", flag: "w" });
+// logger.info("copying: " + OPTIONS_TXT_OLD);
 
 for (let i = 0; i < keyOptions.length; i++)
 {

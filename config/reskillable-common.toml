@@ -3,7 +3,7 @@ disableWoolDrops = true
 #Reset all skills to 1 when a player dies.
 deathSkillReset = false
 #Should you gain health on set level ups?
-HealthBonus = true
+HealthBonus = false
 #Toggle the visibility of the tab buttons in the inventory.
 showTabButtons = true
 #Global scaling multiplier for XP costs.
@@ -63,7 +63,7 @@ miningSpeedMultiplier = 0.25
 levelsPerHeart = 10
 #How much health (in half-hearts) is granted per configured levelsPerHeart.
 #Range: 0.5 ~ 20.0
-healthPerHeart = 2.0
+healthPerHeart = 1.0
 #Skill gating rules. TOTAL counts enabled skills only; each enabled skill starts at level 1.
 #Format: SKILL:MIN_CURRENT_LEVEL:REQS
 #Example: ATTACK:10:TOTAL=30,MINING=5,DEFENSE=5
