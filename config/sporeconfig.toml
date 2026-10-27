@@ -116,14 +116,14 @@
 	#Default true
 	"Should we play songs in certain entity encounters?" = true
 	#Default true
-	"Should we play songs in the minecraft world?" = true
+	"Should we play songs in the minecraft world?" = false
 	"Time before ambient songs start playing in minutes" = 7
 	#Default true
-	"Turn off Vanilla music?" = true
+	"Turn off Vanilla music?" = false
 	#Default false
 	"Turn off the system?" = false
 	#Default true
-	"Should we play songs in the minecraft menu?" = true
+	"Should we play songs in the minecraft menu?" = false
 
 ["Mob Roles, decides some of the interactions between the infected mobs"]
 	Disposable = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:slasher", "spore:volatile", "spore:inf_vindicator", "minecraft:creeper"]
