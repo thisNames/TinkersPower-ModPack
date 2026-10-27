@@ -2628,7 +2628,7 @@
 	#Enhanced Visuals：清晰视野能力
 	enhancedVisuals = true
 	#Lycanites Mobs：无重石阻挡重量效果
-	lycanitesMobs = false
+	lycanitesMobs = true
 	#Defiled Lands：凶蛮打击可使用其流血效果
 	defiledLands = false
 

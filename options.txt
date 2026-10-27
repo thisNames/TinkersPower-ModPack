@@ -1,4 +1,4 @@
-advancedItemTooltips:true
+advancedItemTooltips:false
 allowServerListing:true
 ao:true
 attackIndicator:1
@@ -28,7 +28,7 @@ entityDistanceScaling:1.0
 entityShadows:true
 forceUnicodeFont:false
 fov:0.0
-fovEffectScale:1.0
+fovEffectScale:0.255309586391589
 fullscreen:false
 gamma:0.5
 glDebugVerbosity:1
@@ -83,7 +83,7 @@ key_key.cataclysm.helmet_ability:key.keyboard.unknown
 key_key.chat:key.keyboard.t
 key_key.command:key.keyboard.slash
 key_key.configured.open_mod_list:key.keyboard.keypad.9
-key_key.curios.open.desc:key.keyboard.backslash
+key_key.curios.open.desc:key.keyboard.period
 key_key.dragon_change_view:key.keyboard.f7
 key_key.dragon_down:key.keyboard.left.control
 key_key.dragon_fireAttack:key.keyboard.r
@@ -154,12 +154,12 @@ key_key.l2mods.swap:key.keyboard.unknown
 key_key.l2mods.up:key.keyboard.unknown
 key_key.l2mods.wheel:key.keyboard.unknown
 key_key.left:key.keyboard.a
-key_key.levelup2.skills:key.keyboard.period
+key_key.levelup2.skills:key.keyboard.n
 key_key.levelup2.toggle:key.keyboard.comma
 key_key.loadToolbarActivator:key.keyboard.unknown
 key_key.minions:key.keyboard.unknown
 key_key.mobends.menu:key.keyboard.equal
-key_key.modernfix.config:key.keyboard.apostrophe
+key_key.modernfix.config:key.keyboard.keypad.6
 key_key.mount.ability:key.keyboard.g
 key_key.mount.descend:key.keyboard.left.control
 key_key.mount.dismount:key.keyboard.unknown
@@ -174,10 +174,11 @@ key_key.presencefootsteps.settings:key.keyboard.unknown
 key_key.protection_pixel.armortabletrigger:key.keyboard.right.shift
 key_key.protection_pixel.flyfoward:key.keyboard.w
 key_key.protection_pixel.wingfly:key.keyboard.space
+key_key.reskillable.open_skills:key.keyboard.v
 key_key.right:key.keyboard.d
 key_key.saveToolbarActivator:key.keyboard.unknown
 key_key.screenshot:key.keyboard.f2
-key_key.smoothCamera:key.keyboard.unknown
+key_key.smoothCamera:key.keyboard.f9
 key_key.sneak:key.keyboard.left.shift
 key_key.socialInteractions:key.keyboard.unknown
 key_key.special_ability:key.keyboard.unknown
@@ -196,10 +197,10 @@ key_key.toolbelt.slot:key.keyboard.unknown
 key_key.use:key.mouse.right
 key_key.weaponmaster_ydm.opengui:key.keyboard.minus
 key_key.xat.aux_key.desc:key.keyboard.left.control
-key_key.xat.magnet_toggle_effect.desc:key.keyboard.b
+key_key.xat.magnet_toggle_effect.desc:key.keyboard.backslash
 key_key.xat.race_ability.desc:key.keyboard.r
-key_key.xat.trinket_arcing_attack.desc:key.keyboard.v
-key_key.xat.trinket_arcing_dodge.desc:key.keyboard.n
+key_key.xat.trinket_arcing_attack.desc:key.keyboard.r
+key_key.xat.trinket_arcing_dodge.desc:key.keyboard.unknown
 key_key.xat.trinket_ender_crown.desc:key.keyboard.r
 key_key.xat.trinket_target.desc:key.keyboard.p
 key_key.xat.trinket_toggle_effect.desc:key.keyboard.i
@@ -269,8 +270,8 @@ realmsNotifications:true
 reducedDebugInfo:false
 renderClouds:"true"
 renderDistance:12
-resourcePacks:["vanilla","mod_resources","highly_customizable_damage_numbers_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","file/[1.6] Enhanced Boss Bars.zip","file/Modded Omelet [120] [171].zip","vinery:bushy_leaves","file/RoughTweaksRevamped-1.12.2x.zip","file/LevelUP2DarkBack.zip","file/TrinketsandbaublesNew.zip","file/LycanitesRedux-1.16.5-v8.2.1-1.20.1-Edition.zip","file/Stefan\u0027sEnchantedBooks 1.20.2.zip","file/MandalasGUI+Dakmode_1.21.8_v2.5.zip","file/QualityForkedDarkUIReforing.zip"]
-screenEffectScale:1.0
+resourcePacks:["vanilla","mod_resources","highly_customizable_damage_numbers_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","file/[1.6] Enhanced Boss Bars.zip","file/Modded Omelet [120] [171].zip","vinery:bushy_leaves","file/RoughTweaksRevamped-1.12.2x.zip","file/LevelUP2DarkBack.zip","file/TrinketsandbaublesNew.zip","file/LycanitesRedux-1.16.5-v8.2.1-1.20.1-Edition.zip","file/Stefan\u0027sEnchantedBooks 1.20.2.zip","file/QualityForkedDarkUIReforing.zip","file/MandalasGUI+Dakmode_1.21.8_v2.5.zip"]
+screenEffectScale:0.7517605633802817
 showAutosaveIndicator:true
 showSubtitles:false
 simulationDistance:12

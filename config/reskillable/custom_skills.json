@@ -1,0 +1,67 @@
+{
+    "customSkills": [
+        {
+            "id": "swimming",
+            "displayName": "Swimming",
+            "enabled": true,
+            "icon": "reskillable:textures/gui/custom_skills/swimming.png",
+            "perkAttributes": [
+                {
+                    "attribute": "forge:swim_speed",
+                    "operation": "ADDITION",
+                    "amountPerStep": 0.1,
+                    "perkStep": 5
+                }
+            ]
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        },
+        {
+            "id": "",
+            "displayName": "",
+            "enabled": true,
+            "icon": "",
+            "perkAttributes": []
+        }
+    ]
+}

@@ -1,3 +1,7 @@
+/**
+ * 对齐 options.txt（每次 Git Commit 必做）
+ */
+
 const FS = require("node:fs");
 const PT = require("node:path");
 

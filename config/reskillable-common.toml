@@ -1,0 +1,81 @@
+#Disable wool drops to force the player to get shears.
+disableWoolDrops = true
+#Reset all skills to 1 when a player dies.
+deathSkillReset = false
+#Should you gain health on set level ups?
+HealthBonus = true
+#Toggle the visibility of the tab buttons in the inventory.
+showTabButtons = true
+#Global scaling multiplier for XP costs.
+#Range: 0.1 ~ 10.0
+xpScalingMultiplier = 1.0
+#Maximum level each skill can be upgraded to.
+#Range: 2 ~ 100
+maximumLevel = 32
+#List of substitutions to perform in names in skill lock lists.
+#Useful if you're using a resource pack to change the names of skills, this config doesn't affect gameplay, just accepted values in other configs so it's easier to think about
+#Format: key=value
+#Targets may use the IDs from built_in_skills.json or custom_skills.json.
+#Enable or disable skill leveling via GUI or selection. If disabled, skill levels must be granted by commands.
+enableSkillLeveling = true
+#Enable or disable the skill level-up message.
+enableSkillUpMessage = true
+skillAliases = ["defense=defense"]
+#The registry ID of the attribute to use for the Attack skill.
+attackAttribute = "minecraft:generic.attack_damage"
+#Operation for the Attack skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
+attackOperation = "MULTIPLY_TOTAL"
+#Range: 0.0 ~ 10.0
+attackDamageBonus = 0.125
+#The registry ID of the attribute to use for the Defense skill.
+defenseAttribute = "minecraft:generic.armor"
+#Operation for the Defense skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
+defenseOperation = "MULTIPLY_TOTAL"
+#Range: 0.0 ~ 10.0
+DefenseBonus = 0.1
+#The registry ID of the attribute to use for the Agility skill.
+agilityAttribute = "minecraft:generic.movement_speed"
+#Operation for the Agility skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
+agilityOperation = "MULTIPLY_TOTAL"
+#Range: 0.0 ~ 1.0
+"Agility bonus" = 0.05
+#The registry ID of the attribute to use for the Magic skill (e.g. 'modid:spell_power')
+magicAttribute = "minecraft:generic.luck"
+#Operation for the Magic skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
+magicOperation = "MULTIPLY_TOTAL"
+#Range: 0.0 ~ 10.0
+"Magic Bonus" = 0.05
+#The registry ID of the attribute to use for the Building skill.
+buildingAttribute = "forge:block_reach"
+#Operation for the Building skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
+buildingOperation = "ADDITION"
+#Range: 0.0 ~ 5.0
+"Building Bonus" = 0.25
+#Range: 0.0 ~ 5.0
+miningSpeedMultiplier = 0.25
+#Range: 0.0 ~ 1.0
+"Farming Bonus" = 0.25
+#Bonus XP multiplier per 5 levels of Gathering (e.g., 0.05 = +5% XP per step)
+#Range: 0.0 ~ 1.0
+"gathering Bonus" = 0.05
+#How many total skill levels are required for each heart gained.
+#Range: 1 ~ 100
+levelsPerHeart = 10
+#How much health (in half-hearts) is granted per configured levelsPerHeart.
+#Range: 0.5 ~ 20.0
+healthPerHeart = 2.0
+#Skill gating rules. TOTAL counts enabled skills only; each enabled skill starts at level 1.
+#Format: SKILL:MIN_CURRENT_LEVEL:REQS
+#Example: ATTACK:10:TOTAL=30,MINING=5,DEFENSE=5
+#New token: ADV=<namespace:path> (player must have completed the advancement)
+#You can include multiple: ADV=minecraft:story/mine_diamond,ADV=minecraft:nether/root
+#Tokens: TOTAL=<n>, OTHER_SKILL=<n>, ADV=<advancement_id>
+skill_level_gates = []
+#Enable a second skill page for up to 8 additional skills loaded from custom_skills.json.
+enableSecondSkillPage = false
+#Where the built-in/custom page arrows should appear. Valid: TOP, BOTTOM, LEFT, RIGHT.
+subpageNavPosition = "BOTTOM"
+#Maximum total number of skill levels a player can spend across all skills. Set to -1 for unlimited.
+#Range: > -1
+maxTotalSpentLevels = -1
+

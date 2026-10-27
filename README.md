@@ -1,5 +1,8 @@
 # TinkersPower ModPack
 
+## GIT COMMIT
+Attention: Please make sure to execute every code submission **`alignment_options`** NPM [script](.manifest/scripts/alignment_options.js)
+
 ## Overview
 Project: TinkersPower Minecraft Forge 1.20.1 ModPack
 
