@@ -31,7 +31,8 @@ const sinful_foods_list = [
     tconstruct_sinful_foods,
     tide_sinful_foods,
     twilightforest_sinful_foods,
-    xat_sinful_foods
+    xat_sinful_foods,
+    lycanitesmobs_sinful_foods
 ];
 
 // 食物监听

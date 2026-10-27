@@ -14,11 +14,11 @@
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = false
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld"]
+	"Dictates in what biome the infected spawn" = []
 	#Default 40
 	MobCap = 40
 	#Default forge:is_cold,minecraft:deep_dark
-	"Dictates in what biome the infected will NOT spawn" = ["forge:is_cold", "minecraft:deep_dark"]
+	"Dictates in what biome the infected will NOT spawn" = ["minecraft:is_overworld", "minecraft:is_nether", "minecraft:is_end", "twilightforest:in_twilight_forest"]
 
 ["Global Variables"]
 	#Default true

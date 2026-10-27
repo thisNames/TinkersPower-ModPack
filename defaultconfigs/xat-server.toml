@@ -1780,7 +1780,22 @@
 		"tide:midas_fish;150",
 		"tide:alpha_fish;50",
 		"tide:voidseeker;100",
-		"tide:dragon_fish;100%"
+		"tide:dragon_fish;100%",
+		"lycanitesmobs:amber_cake;10",
+		"lycanitesmobs:battle_burrito;50",
+		"lycanitesmobs:blood_chili;10",
+		"lycanitesmobs:bulwark_burger;15",
+		"lycanitesmobs:caecilian_ramen;10",
+		"lycanitesmobs:devil_lasagna;10",
+		"lycanitesmobs:explorers_risotto;20",
+		"lycanitesmobs:lapis_fish_and_chips;10",
+		"lycanitesmobs:moss_pie;10",
+		"lycanitesmobs:pale_soup;10",
+		"lycanitesmobs:paleo_salad;10",
+		"lycanitesmobs:peaks_kebab;10",
+		"lycanitesmobs:searing_taco;10",
+		"lycanitesmobs:seashell_maki;10",
+		"lycanitesmobs:tropical_curry;10"
 	]
 
 	[magic.items]
@@ -1896,7 +1911,7 @@
 			#处于该元素形态时获得的效果
 			effectsToAdd = []
 			#该元素形态免疫的效果
-			effectsToRemove = ["lycanitesmobs:smouldering", "iceandfire:melt"]
+			effectsToRemove = ["lycanitesmobs:smouldering", "iceandfire:melt", "if_dragon_blessings:blaze"]
 			#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 			#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 			#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
@@ -1926,7 +1941,7 @@
 			#处于该元素形态时获得的效果
 			effectsToAdd = []
 			#该元素形态免疫的效果
-			effectsToRemove = ["iceandfire:frostbite", "iceandfire:frostburn"]
+			effectsToRemove = ["iceandfire:frostbite", "iceandfire:frostburn", "if_dragon_blessings:frozen"]
 			#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 			#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 			#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
@@ -1960,7 +1975,7 @@
 			#处于该元素形态时获得的效果
 			effectsToAdd = []
 			#该元素形态免疫的效果
-			effectsToRemove = ["lycanitesmobs:paralysis", "iceandfire:voltage"]
+			effectsToRemove = ["lycanitesmobs:paralysis", "iceandfire:voltage", "if_dragon_blessings:shocked"]
 			#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 			#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 			#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
@@ -2569,7 +2584,7 @@
 		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
 		#佩戴者免疫的效果。格式同 effectsToAdd
-		effectsToRemove = ["xat:bleed"]
+		effectsToRemove = ["xat:bleed", "lycanitesmobs:bleed"]
 		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1

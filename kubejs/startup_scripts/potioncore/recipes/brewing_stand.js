@@ -45,6 +45,7 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("stardew_fishing:blazing_oarfish", "minecraft:awkward", "potioncore:magic_focus");
 
     // 魔力压制
+    event.addPotionBrewing("biomeswevegone:blue_enchanted_sapling", "minecraft:awkward", "potioncore:magic_inhibition");
     event.addPotionBrewing("biomesoplenty:magic_sapling", "minecraft:awkward", "potioncore:magic_inhibition");
     event.addPotionBrewing("twilightforest:rainbow_oak_sapling", "minecraft:awkward", "potioncore:magic_inhibition");
     event.addPotionBrewing("twilightforest:transformation_sapling", "minecraft:awkward", "potioncore:magic_inhibition");
