@@ -294,7 +294,7 @@ class BuildBuilder
         if (!this.option.packcover && FS.existsSync(this.output)) throw new Error(`[${this.output}] is exists!`);
 
         // 创建
-        FS.mkdirSync(this.output, { recursive: true })
+        FS.mkdirSync(this.output, { recursive: true });
 
         return this;
     }
