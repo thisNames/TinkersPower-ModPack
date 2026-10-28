@@ -2,7 +2,7 @@
 
 /**
  * artifacts 饰品分类
- * @type {ServerAccessorieType}
+ * @type {TDServerLootAccessorie}
  */
 const artifacts_accessories = {
     namespace: "artifacts",

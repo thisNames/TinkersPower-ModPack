@@ -2,7 +2,7 @@
 
 /**
  * aquamirae 罪恶食物分类
- * @type {ServerSinfulFoodType}
+ * @type {TDServerSinfulFood}
  */
 const aquamirae_sinful_foods = {
     namespace: "aquamirae",

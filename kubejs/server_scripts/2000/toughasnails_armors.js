@@ -17,7 +17,13 @@ const toughasnails_cool_armor_tag = "toughasnails:cooling_armor";
  * @type {Array<TDServerToughasnailsArmor>}
  */
 const toughasnails_armors_list = [
-
+    alexsmobs_toughasnails_armors,
+    aquamirae_toughasnails_armors,
+    block_factorys_bosses_toughasnails_armors,
+    cataclysm_toughasnails_armors,
+    iceandfire_toughasnails_armors,
+    protection_pixel_toughasnails_armors,
+    twilightforest_toughasnails_armors
 ];
 
 

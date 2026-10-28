@@ -2,7 +2,7 @@
 
 /**
  * roughtweaks 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const roughtweaks_materials = {
     namespace: "roughtweaks",

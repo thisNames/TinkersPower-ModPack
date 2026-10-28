@@ -38,7 +38,10 @@ const toughasnails_poison_chance_tag = p => `toughasnails:poison_chance/${tougha
  * @type {Array<TDServerToughasnailsDrink>}
  */
 const toughasnails_drinks_list = [
-
+    create_toughasnails_drinks,
+    create_confectionery_toughasnails_drinks,
+    railways_toughasnails_drinks,
+    vinery_toughasnails_drinks
 ];
 
 

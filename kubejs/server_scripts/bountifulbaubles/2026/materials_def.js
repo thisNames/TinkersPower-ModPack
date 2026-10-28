@@ -2,7 +2,7 @@
 
 /**
  * bountifulbaubles 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const bountifulbaubles_materials = {
     namespace: "bountifulbaubles",

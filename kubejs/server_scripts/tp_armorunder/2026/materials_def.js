@@ -2,7 +2,7 @@
 
 /**
  * tp_armorunder 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const tp_armorunder_materials = {
     namespace: "tp_armorunder",

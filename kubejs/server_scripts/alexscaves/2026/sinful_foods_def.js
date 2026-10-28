@@ -2,7 +2,7 @@
 
 /**
  * alexscaves 罪恶食物分类
- * @type {ServerSinfulFoodType}
+ * @type {TDServerSinfulFood}
  */
 const alexscaves_sinful_foods = {
     namespace: "alexscaves",

@@ -2,7 +2,7 @@
 
 /**
  * vinery 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const vinery_materials = {
     namespace: "vinery",

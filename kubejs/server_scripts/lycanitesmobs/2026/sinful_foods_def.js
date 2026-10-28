@@ -2,7 +2,7 @@
 
 /**
  * lycanitesmobs 罪恶食物分类
- * @type {ServerSinfulFoodType}
+ * @type {TDServerSinfulFood}
  */
 const lycanitesmobs_sinful_foods = {
     namespace: "lycanitesmobs",

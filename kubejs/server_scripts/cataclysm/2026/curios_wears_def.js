@@ -2,7 +2,7 @@
 
 /**
  * cataclysm 饰品穿戴
- * @type {ServerCuriosWearType}
+ * @type {TDServerCuriosWear}
  */
 const cataclysm_curios_wears = {
     namespace: "cataclysm",

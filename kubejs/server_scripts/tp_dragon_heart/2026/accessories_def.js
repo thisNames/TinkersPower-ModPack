@@ -2,7 +2,7 @@
 
 /**
  * tp_dragon_heart 饰品分类
- * @type {ServerAccessorieType}
+ * @type {TDServerLootAccessorie}
  */
 const tp_dragon_heart_accessories = {
     namespace: "tp_dragon_heart",

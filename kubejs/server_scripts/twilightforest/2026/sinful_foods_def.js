@@ -2,7 +2,7 @@
 
 /**
  * twilightforest 罪恶食物分类
- * @type {ServerSinfulFoodType}
+ * @type {TDServerSinfulFood}
  */
 const twilightforest_sinful_foods = {
     namespace: "twilightforest",

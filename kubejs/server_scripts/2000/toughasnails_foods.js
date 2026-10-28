@@ -17,7 +17,13 @@ const toughasnails_cool_food_tag = "toughasnails:cooling_consumed_items";
  * @type {Array<TDServerToughasnailsFood>}
  */
 const toughasnails_foods_list = [
-
+    alexscaves_toughasnails_foods,
+    aquamirae_toughasnails_foods,
+    iceandfire_toughasnails_foods,
+    lycanitesmobs_toughasnails_foods,
+    tide_toughasnails_foods,
+    twilightforest_toughasnails_foods,
+    vinery_toughasnails_foods
 ];
 
 

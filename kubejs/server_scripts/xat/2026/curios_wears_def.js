@@ -2,7 +2,7 @@
 
 /**
  * xat 饰品穿戴
- * @type {ServerCuriosWearType}
+ * @type {TDServerCuriosWear}
  */
 const xat_curios_wears = {
     namespace: "xat",

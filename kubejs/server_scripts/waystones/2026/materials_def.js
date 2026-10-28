@@ -2,7 +2,7 @@
 
 /**
  * waystones 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const waystones_materials = {
     namespace: "waystones",

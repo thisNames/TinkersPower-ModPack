@@ -2,7 +2,7 @@
 
 /**
  * xat 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const xat_materials = {
     namespace: "xat",

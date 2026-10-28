@@ -2,7 +2,7 @@
 
 /**
  * tinkers_ingenuity 饰品穿戴
- * @type {ServerCuriosWearType}
+ * @type {TDServerCuriosWear}
  */
 const tinkers_ingenuity_curios_wears = {
     namespace: "tinkers_ingenuity",

@@ -2,7 +2,7 @@
 
 /**
  * bountifulbaubles 饰品穿戴
- * @type {ServerCuriosWearType}
+ * @type {TDServerCuriosWear}
  */
 const bountifulbaubles_curios_wears = {
     namespace: "bountifulbaubles",

@@ -2,7 +2,7 @@
 
 /**
  * iceandfire 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const iceandfire_materials = {
     namespace: "iceandfire",

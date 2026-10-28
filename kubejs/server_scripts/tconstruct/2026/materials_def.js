@@ -2,7 +2,7 @@
 
 /**
  * tconstruct 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const tconstruct_materials = {
     namespace: "tconstruct",

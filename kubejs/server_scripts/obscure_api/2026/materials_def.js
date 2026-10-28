@@ -2,7 +2,7 @@
 
 /**
  * obscure_api 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const obscure_api_materials = {
     namespace: "obscure_api",

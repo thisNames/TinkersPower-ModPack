@@ -2,7 +2,7 @@
 
 /**
  * create 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const create_materials = {
     namespace: "create",

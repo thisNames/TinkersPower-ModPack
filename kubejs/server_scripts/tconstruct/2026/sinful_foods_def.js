@@ -2,7 +2,7 @@
 
 /**
  * tconstruct 罪恶食物分类
- * @type {ServerSinfulFoodType}
+ * @type {TDServerSinfulFood}
  */
 const tconstruct_sinful_foods = {
     namespace: "tconstruct",

@@ -2,7 +2,7 @@
 
 /**
  * minecraft 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const minecraft_materials = {
     namespace: "minecraft",

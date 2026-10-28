@@ -2,7 +2,7 @@
 
 /**
  * bountifulbaubles 饰品分类
- * @type {ServerAccessorieType}
+ * @type {TDServerLootAccessorie}
  */
 const bountifulbaubles_accessories = {
     namespace: "bountifulbaubles",

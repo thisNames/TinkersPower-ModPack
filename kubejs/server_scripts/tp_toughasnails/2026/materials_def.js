@@ -2,7 +2,7 @@
 
 /**
  * tp_toughasnails 材料分类
- * @type {ServerMaterialType}
+ * @type {TDServerLootMaterial}
  */
 const tp_toughasnails_materials = {
     namespace: "tp_toughasnails",

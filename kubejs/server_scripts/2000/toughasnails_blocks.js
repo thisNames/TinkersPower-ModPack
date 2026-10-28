@@ -17,7 +17,16 @@ const toughasnails_cool_block_tag = "toughasnails:cooling_blocks";
  * @type {Array<TDServerToughasnailsBlock>}
  */
 const toughasnails_blocks_list = [
-
+    alexscaves_toughasnails_blocks,
+    aquamirae_toughasnails_blocks,
+    cataclysm_toughasnails_blocks,
+    create_toughasnails_blocks,
+    iceandfire_toughasnails_blocks,
+    lycanitesmobs_toughasnails_blocks,
+    minecraft_toughasnails_block,
+    quark_toughasnails_blocks,
+    supplementaries_toughasnails_blocks,
+    twilightforest_toughasnails_blocks
 ];
 
 

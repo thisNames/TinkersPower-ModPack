@@ -2,7 +2,7 @@
 
 /**
  * tp_accessories 饰品分类
- * @type {ServerAccessorieType}
+ * @type {TDServerLootAccessorie}
  */
 const tp_accessories_accessories = {
     namespace: "tp_accessories",

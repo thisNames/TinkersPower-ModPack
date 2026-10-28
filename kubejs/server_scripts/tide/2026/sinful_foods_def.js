@@ -2,7 +2,7 @@
 
 /**
  * tide 罪恶食物分类
- * @type {ServerSinfulFoodType}
+ * @type {TDServerSinfulFood}
  */
 const tide_sinful_foods = {
     namespace: "tide",

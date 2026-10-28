@@ -2,7 +2,7 @@
 
 /**
  * create 饰品分类
- * @type {ServerAccessorieType}
+ * @type {TDServerLootAccessorie}
  */
 const create_accessories = {
     namespace: "create",

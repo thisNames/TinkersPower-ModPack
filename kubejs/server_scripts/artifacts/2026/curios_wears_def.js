@@ -2,7 +2,7 @@
 
 /**
  * artifacts 饰品穿戴
- * @type {ServerCuriosWearType}
+ * @type {TDServerCuriosWear}
  */
 const artifacts_curios_wears = {
     namespace: "artifacts",

@@ -2,7 +2,7 @@
 
 /**
  * xat 饰品分类
- * @type {ServerAccessorieType}
+ * @type {TDServerLootAccessorie}
  */
 const xat_accessories = {
     namespace: "xat",
