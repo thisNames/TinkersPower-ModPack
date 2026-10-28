@@ -23,7 +23,7 @@ const toughasnails_blocks_list = [
     create_toughasnails_blocks,
     iceandfire_toughasnails_blocks,
     lycanitesmobs_toughasnails_blocks,
-    minecraft_toughasnails_block,
+    minecraft_toughasnails_blocks,
     quark_toughasnails_blocks,
     supplementaries_toughasnails_blocks,
     twilightforest_toughasnails_blocks

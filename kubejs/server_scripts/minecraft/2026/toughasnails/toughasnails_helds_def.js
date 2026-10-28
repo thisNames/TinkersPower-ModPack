@@ -4,7 +4,6 @@
  * minecraft 手持温度
  * @type {TDServerToughasnailsHeld}
  */
-
 const minecraft_toughasnails_helds = {
     namespace: "minecraft",
     helds: [

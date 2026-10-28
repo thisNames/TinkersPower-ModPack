@@ -43,5 +43,21 @@
 
     "item.minecraft.lingering_potion.effect.fire_attack": "Lingering Potion of Fire Dragon Blessing",
     "item.minecraft.lingering_potion.effect.ice_attack": "Lingering Potion of Ice Dragon Blessing",
-    "item.minecraft.lingering_potion.effect.lightning_attack": "Lingering Potion of Lightning Dragon Protection"
+    "item.minecraft.lingering_potion.effect.lightning_attack": "Lingering Potion of Lightning Dragon Protection",
+
+    "item.minecraft.potion.effect.blaze": "Potion of Blaze",
+    "item.minecraft.potion.effect.frozen": "Potion of Freezing",
+    "item.minecraft.potion.effect.shocked": "Potion of Shock",
+
+    "item.minecraft.tipped_arrow.effect.blaze": "Arrow of Blaze",
+    "item.minecraft.tipped_arrow.effect.frozen": "Arrow of Freezing",
+    "item.minecraft.tipped_arrow.effect.shocked": "Arrow of Shock",
+
+    "item.minecraft.splash_potion.effect.blaze": "Splash Potion of Blaze",
+    "item.minecraft.splash_potion.effect.frozen": "Splash Potion of Freezing",
+    "item.minecraft.splash_potion.effect.shocked": "Splash Potion of Shock",
+    
+    "item.minecraft.lingering_potion.effect.blaze": "Lingering Potion of Blaze",
+    "item.minecraft.lingering_potion.effect.frozen": "Lingering Potion of Freezing",
+    "item.minecraft.lingering_potion.effect.shocked": "Lingering Potion of Shock"
 }

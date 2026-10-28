@@ -4,7 +4,6 @@
  * vinery 饮品
  * @type {TDServerToughasnailsDrink}
  */
-
 const vinery_toughasnails_drinks = {
     namespace: "vinery",
     drinks: [

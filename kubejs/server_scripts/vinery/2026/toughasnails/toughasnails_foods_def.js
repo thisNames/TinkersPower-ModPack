@@ -4,7 +4,6 @@
  * vinery 食物温度
  * @type {TDServerToughasnailsFood}
  */
-
 const vinery_toughasnails_foods = {
     namespace: "vinery",
     foods: [

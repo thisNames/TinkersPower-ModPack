@@ -4,7 +4,6 @@
  * supplementaries 方块温度
  * @type {TDServerToughasnailsBlock}
  */
-
 const supplementaries_toughasnails_blocks = {
     namespace: "supplementaries",
     blocks: [

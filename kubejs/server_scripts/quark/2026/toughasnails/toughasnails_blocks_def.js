@@ -2,12 +2,11 @@
 
 /**
  * quark 方块温度
- * @type {TDServerToughasnailsHeld}
+ * @type {TDServerToughasnailsBlock}
  */
-
 const quark_toughasnails_blocks = {
     namespace: "quark",
-    helds: [
+    blocks: [
         {
             id: "blaze_lantern",
             isHot: true

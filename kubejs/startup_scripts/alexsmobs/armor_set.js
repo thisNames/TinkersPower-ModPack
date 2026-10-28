@@ -13,10 +13,13 @@ ItemEvents.modification(event =>
 
     // 寒霜 盔甲
     incArrmor(event, _this("froststalker_helmet"), 77, 3, 0.5);
-    
+
     // 岩壳 盔甲
     incArrmor(event, _this("rocky_chestplate"), 112, 5, 0.5);
-    
+
     // 蜈蚣关节 盔甲
     incArrmor(event, _this("centipede_leggings"), 87, 6, 0.5);
+
+    // 鹿角
+    incArrmor(event, _this("moose_headgear"), 88, 3, 0.5);
 });

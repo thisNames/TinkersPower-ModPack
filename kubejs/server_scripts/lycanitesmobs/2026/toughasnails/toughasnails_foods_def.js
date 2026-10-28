@@ -4,7 +4,6 @@
  * lycanitesmobs 食物温度
  * @type {TDServerToughasnailsFood}
  */
-
 const lycanitesmobs_toughasnails_foods = {
     namespace: "lycanitesmobs",
     foods: [

@@ -4,7 +4,6 @@
  * lycanitesmobs 方块温度
  * @type {TDServerToughasnailsBlock}
  */
-
 const lycanitesmobs_toughasnails_blocks = {
     namespace: "lycanitesmobs",
     blocks: [

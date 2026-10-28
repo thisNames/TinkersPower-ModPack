@@ -4,8 +4,7 @@
  * minecraft 方块温度
  * @type {TDServerToughasnailsBlock}
  */
-
-const minecraft_toughasnails_block = {
+const minecraft_toughasnails_blocks = {
     namespace: "minecraft",
     blocks: [
         {

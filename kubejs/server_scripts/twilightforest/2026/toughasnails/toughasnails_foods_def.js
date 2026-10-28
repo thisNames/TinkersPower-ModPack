@@ -4,7 +4,6 @@
  * twilightforest 食物温度
  * @type {TDServerToughasnailsFood}
  */
-
 const twilightforest_toughasnails_foods = {
     namespace: "twilightforest",
     foods: [

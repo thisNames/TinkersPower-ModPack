@@ -4,10 +4,13 @@
  * tide 手持温度
  * @type {TDServerToughasnailsHeld}
  */
-
 const tide_toughasnails_helds = {
     namespace: "tide",
     helds: [
+        {
+            id: "frostbite_flounder_bucket",
+            isHot: false
+        },
         {
             id: "magma_mackerel_bucket",
             isHot: true

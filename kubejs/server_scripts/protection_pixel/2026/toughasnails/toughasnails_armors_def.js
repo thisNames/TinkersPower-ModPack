@@ -4,7 +4,6 @@
  * protection_pixel 盔甲温度
  * @type {TDServerToughasnailsArmor}
  */
-
 const protection_pixel_toughasnails_armors = {
     namespace: "protection_pixel",
     armors: [

@@ -4,7 +4,6 @@
  * tide 食物温度
  * @type {TDServerToughasnailsFood}
  */
-
 const tide_toughasnails_foods = {
     namespace: "tide",
     foods: [

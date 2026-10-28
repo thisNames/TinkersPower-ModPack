@@ -4,7 +4,6 @@
  * lycanitesmobs 手持温度
  * @type {TDServerToughasnailsHeld}
  */
-
 const lycanitesmobs_toughasnails_helds = {
     namespace: "lycanitesmobs",
     helds: [

@@ -4,7 +4,6 @@
  * twilightforest 手持温度
  * @type {TDServerToughasnailsHeld}
  */
-
 const twilightforest_toughasnails_helds = {
     namespace: "twilightforest",
     helds: [

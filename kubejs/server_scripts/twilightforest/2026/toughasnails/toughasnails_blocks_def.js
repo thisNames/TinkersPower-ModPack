@@ -4,7 +4,6 @@
  * twilightforest 方块温度
  * @type {TDServerToughasnailsBlock}
  */
-
 const twilightforest_toughasnails_blocks = {
     namespace: "twilightforest",
     blocks: [

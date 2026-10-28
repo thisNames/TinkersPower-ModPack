@@ -4,7 +4,6 @@
  * tconstruct 手持温度
  * @type {TDServerToughasnailsHeld}
  */
-
 const tconstruct_toughasnails_helds = {
     namespace: "tconstruct",
     helds: [

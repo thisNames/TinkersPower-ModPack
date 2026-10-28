@@ -4,7 +4,6 @@
  * twilightforest 盔甲温度
  * @type {TDServerToughasnailsArmor}
  */
-
 const twilightforest_toughasnails_armors = {
     namespace: "twilightforest",
     armors: [

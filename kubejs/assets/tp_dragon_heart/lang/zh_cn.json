@@ -43,5 +43,21 @@
 
     "item.minecraft.lingering_potion.effect.fire_attack": "滞留型火龙祝福药水",
     "item.minecraft.lingering_potion.effect.ice_attack": "滞留型冰龙恩惠药水",
-    "item.minecraft.lingering_potion.effect.lightning_attack": "滞留型电龙庇护药水"
+    "item.minecraft.lingering_potion.effect.lightning_attack": "滞留型电龙庇护药水",
+
+    "item.minecraft.potion.effect.blaze": "烈焰药水",
+    "item.minecraft.potion.effect.frozen": "冰封药水",
+    "item.minecraft.potion.effect.shocked": "感电药水",
+
+    "item.minecraft.tipped_arrow.effect.blaze": "烈焰之箭",
+    "item.minecraft.tipped_arrow.effect.frozen": "冰封之箭",
+    "item.minecraft.tipped_arrow.effect.shocked": "感电之箭",
+
+    "item.minecraft.splash_potion.effect.blaze": "喷溅型烈焰药水",
+    "item.minecraft.splash_potion.effect.frozen": "喷溅型冰封药水",
+    "item.minecraft.splash_potion.effect.shocked": "喷溅型感电药水",
+    
+    "item.minecraft.lingering_potion.effect.blaze": "滞留型烈焰药水",
+    "item.minecraft.lingering_potion.effect.frozen": "滞留型冰封药水",
+    "item.minecraft.lingering_potion.effect.shocked": "滞留型感电药水"
 }

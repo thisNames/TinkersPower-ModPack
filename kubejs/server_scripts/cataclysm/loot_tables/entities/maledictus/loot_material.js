@@ -4,6 +4,11 @@ ServerEvents.entityLootTables(event =>
     {
         loot.addPool(pool =>
         {
+            pool.addItem("cataclysm:cursium_ingot").weight(1).count([2, 6]).lootingEnchant(2, 16);
+        });
+
+        loot.addPool(pool =>
+        {
             pool.addItem("bountifulbaubles:spectral_silt").weight(20).count([2, 8]).lootingEnchant(2, 8);
             pool.addItem("bountifulbaubles:resplendent_token").weight(40).count([2, 8]).lootingEnchant(2, 8);
 

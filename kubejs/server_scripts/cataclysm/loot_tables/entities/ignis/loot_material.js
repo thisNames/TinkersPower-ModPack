@@ -4,6 +4,13 @@ ServerEvents.entityLootTables(event =>
     {
         loot.addPool(pool =>
         {
+            pool.addItem("cataclysm:ignitium_ingot").weight(1).count([1, 9]).lootingEnchant(2, 32);
+
+            pool.rolls = 2;
+        });
+
+        loot.addPool(pool =>
+        {
             pool.addItem("bountifulbaubles:spectral_silt").weight(20).count([2, 8]).lootingEnchant(2, 8);
             pool.addItem("bountifulbaubles:resplendent_token").weight(40).count([2, 8]).lootingEnchant(2, 8);
 
