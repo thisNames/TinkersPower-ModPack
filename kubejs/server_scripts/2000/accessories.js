@@ -14,7 +14,7 @@ const accessories_dis_tag = "acs:dis";
 
 /**
  * 饰品配置
- * @type {Array<ServerAccessorieType>}
+ * @type {Array<TDServerLootAccessorie>}
  */
 const accessories_list = [
     artifacts_accessories,
@@ -25,29 +25,27 @@ const accessories_list = [
     xat_accessories
 ];
 
+
+// 添加标签
 ServerEvents.tags("item", event =>
 {
     accessories_list.forEach(accessorie =>
     {
         accessorie.curios.forEach(curio =>
         {
-            const curio_id = accessorie.namespace + ":" + curio.id;
+            const curio_id = nToiServer(accessorie.namespace, curio.id);
             const curio_level = accessories_level_tag + curio.level;
 
             event.add(curio_level, curio_id);
 
+            // 幽冥粉
             if (curio.dis) event.add(accessories_dis_tag, curio_id);
         });
     });
 });
 
+// 幽冥粉合成配方
 ServerEvents.recipes(event =>
 {
-    event.remove({
-        output: [
-            "bountifulbaubles:spectral_silt"
-        ]
-    });
-
     event.shapeless("bountifulbaubles:spectral_silt", ["#" + accessories_dis_tag, "bountifulbaubles:disintegration_tablet"]);
 });

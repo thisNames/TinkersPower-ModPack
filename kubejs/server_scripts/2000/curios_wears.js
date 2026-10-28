@@ -8,7 +8,7 @@ const curios_wears_disbale = "acs:curios_wear_dis";
 
 /**
  * 饰品集合
- * @type {Array<ServerCuriosWearType>}
+ * @type {Array<TDServerCuriosWear>}
  */
 const curios_wears_list = [
     artifacts_curios_wears,
@@ -18,6 +18,8 @@ const curios_wears_list = [
     xat_curios_wears
 ];
 
+
+// 添加标签
 ServerEvents.tags("item", event =>
 {
     curios_wears_list.forEach(curios =>
@@ -25,12 +27,12 @@ ServerEvents.tags("item", event =>
         curios.items.forEach(item =>
         {
             // 饰品物品 ID
-            const item_id = curios.namespace + ":" + item.id;
+            const item_id = nToiServer(curios.namespace, item.id);
 
             // 剔除标签
             item.remove.forEach(tag =>
             {
-                const remove_tag = curios.tag + ":" + tag;
+                const remove_tag = nToiServer(curios.tag, tag);
 
                 event.remove(remove_tag, item_id);
             });
@@ -38,7 +40,7 @@ ServerEvents.tags("item", event =>
             // 添加标签
             item.add.forEach(tag =>
             {
-                const add_tag = curios.tag + ":" + tag;
+                const add_tag = nToiServer(curios.tag, tag);
 
                 event.add(add_tag, item_id);
             });

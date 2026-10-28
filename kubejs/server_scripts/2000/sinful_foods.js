@@ -20,7 +20,7 @@ const sinful_curios_effect = "bountifulbaubles:sinful";
 
 /**
  * 罪恶食物集合
- * @type {Array<ServerSinfulFoodType>}
+ * @type {Array<TDServerSinfulFood>}
  */
 const sinful_foods_list = [
     alexscaves_sinful_foods,
@@ -35,17 +35,20 @@ const sinful_foods_list = [
     lycanitesmobs_sinful_foods
 ];
 
-// 食物监听
+
+// 遍历食物
 sinful_foods_list.forEach(sinful =>
 {
     sinful.foods.forEach(food =>
     {
-        const food_id = sinful.namespace + ":" + food.id;
+        const food_id = nToiServer(sinful.namespace, food.id);
 
+        // 食物监听
         ItemEvents.foodEaten(food_id, event =>
         {
             const player = event.getPlayer();
 
+            // 是玩家
             if (player && player.isCuriosEquipped(sinful_curios_id))
             {
                 player.potionEffects.add(sinful_curios_effect, food.second * 20, food.amplifier);
@@ -54,14 +57,15 @@ sinful_foods_list.forEach(sinful =>
     });
 });
 
-// 标签分类
+
+// 添加标签
 ServerEvents.tags("item", event =>
 {
     sinful_foods_list.forEach(sinful =>
     {
         sinful.foods.forEach(food =>
         {
-            const food_id = sinful.namespace + ":" + food.id;
+            const food_id = nToiServer(sinful.namespace, food.id);
 
             event.add(sinful_foods_tag, food_id);
         });

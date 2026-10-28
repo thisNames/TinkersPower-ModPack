@@ -26,12 +26,14 @@ const toughasnails_cool_fuel_tag = "toughasnails:thermoregulator_cooling_fuel";
 
 /**
  * 坚定意志：手持集合
- * @type {Array<ServerToughasnailsHeldType>}
+ * @type {Array<TDServerToughasnailsHeld>}
  */
 const toughasnails_held_list = [
 
 ];
 
+
+// 添加标签
 ServerEvents.tags("item", event =>
 {
     toughasnails_held_list.forEach(mod =>

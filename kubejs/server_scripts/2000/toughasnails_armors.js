@@ -14,19 +14,23 @@ const toughasnails_cool_armor_tag = "toughasnails:cooling_armor";
 
 /**
  * 坚定意志：盔甲集合（外部温度）
- * @type {Array<ServerToughasnailsArmorType>}
+ * @type {Array<TDServerToughasnailsArmor>}
  */
 const toughasnails_armors_list = [
 
 ];
 
+
+// 添加标签
 ServerEvents.tags("item", event =>
 {
     toughasnails_armors_list.forEach(mod =>
     {
         mod.armors.forEach(armor =>
         {
-            event.add(armor.isHot ? toughasnails_hot_armor_tag : toughasnails_cool_armor_tag, nToiServer(mod.namespace, armor.id));
+            const id = nToiServer(mod.namespace, armor.id);
+
+            event.add(armor.isHot ? toughasnails_hot_armor_tag : toughasnails_cool_armor_tag, id);
         });
     });
 });

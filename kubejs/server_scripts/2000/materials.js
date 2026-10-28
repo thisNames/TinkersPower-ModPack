@@ -8,7 +8,7 @@ const material_level_tag = "acs:m";
 
 /**
  * 饰品材料
- * @type {Array<ServerMaterialType>}
+ * @type {Array<TDServerLootMaterial>}
  */
 const material_list = [
     bountifulbaubles_materials,
@@ -25,13 +25,15 @@ const material_list = [
     tp_toughasnails_materials
 ];
 
+
+// 添加标签
 ServerEvents.tags("item", event =>
 {
     material_list.forEach(mater =>
     {
         mater.material.forEach(item =>
         {
-            const item_id = mater.namespace + ":" + item.id;
+            const item_id = nToiServer(mater.namespace, item.id);
             const item_level = material_level_tag + item.level;
 
             event.add(item_level, item_id);
