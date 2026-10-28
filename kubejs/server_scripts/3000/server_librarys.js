@@ -105,3 +105,17 @@ function applyEffectLevelServer(entity, effectId, level, duration, refreshBelow)
         entity.potionEffects.add(effectId, duration, level, false, true);
     }
 }
+
+/**
+ * 拼接物品 ID
+ * @param {string} namespace 命名空间
+ * @param {string} id ID
+ * @param {string} prefix 前缀，可用于返回标签
+ * @returns {string}
+ */
+function nToiServer(namespace, id, prefix = "")
+{
+    const tag = prefix || "";
+    
+    return tag + namespace + ":" + id;
+}
