@@ -219,5 +219,6 @@
   "tooltip.bountifulbaubles.ruby_heart.cooldown": "冷却时间：%s秒",
   "message.bountifulbaubles.ruby_heart.activated": "红宝石之心保护了你免于死亡！",
   "tooltip.bountifulbaubles.rock_candy.speed_boost": "提升%s%%移动速度",
-  "tooltip.bountifulbaubles.rock_candy.damage_warning": "受到的伤害变为%s倍！"
+  "tooltip.bountifulbaubles.rock_candy.damage_warning": "受到的伤害变为%s倍！",
+  "tooltip.bountifulbaubles.rock_candy.no_stack":"甜到起飞？（芜湖）~"
 }

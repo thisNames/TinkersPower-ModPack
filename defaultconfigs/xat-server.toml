@@ -724,11 +724,13 @@
 				bowBlacklist = []
 				#弓的拉重。格式：item;weight(* 通配符)。未列出的弓无加成
 				bows = [
-					"minecraft:bow;40.0",
+					"minecraft:bow;40",
 					"tinkers_things:shortbow;40",
 					"tconstruct:crossbow;70",
 					"tconstruct:longbow;70",
-					"tinkers_thinking:repeating_crossbow;70"
+					"tinkers_thinking:repeating_crossbow;70",
+        			"spore:infected_bow;70",
+					"spore:infected_crossbow;70",
 				]
 
 	#猫灵设置
@@ -1194,7 +1196,30 @@
 
 				# ===== Tide 盔甲重量 =====
 				# 龙鳍靴（鱼鳍，较轻）
-				"tide:dragonfin_boots;0.05"
+				"tide:dragonfin_boots;0.05",
+
+				# ===== Spore 真菌盔甲 ====
+				# 活体
+				"spore:inf_helmet;0.07",
+				"spore:inf_chest;0.12",
+				"spore:inf_pants;0.09",
+				"spore:inf_boots;0.08",
+				# 菌壳
+				"spore:plated_helmet;0.06",
+				"spore:plated_chest;0.1",
+				"spore:plated_pants;0.08",
+				"spore:plated_boots;0.07",
+				# 血肉
+				"spore:living_helmet;0.06",
+				"spore:living_chest;0.1",
+				"spore:living_pants;0.09",
+				"spore:living_boots;0.08",
+				# 活体重构
+				"spore:inf_up_helmet;0.08",
+				"spore:inf_up_chest;0.13",
+				"spore:inf_up_pants;0.09",
+				"spore:inf_up_boots;0.08",
+				"spore:r_elytron;0.06"
 			]
 
 			[races.faelis.abilities.climbing]

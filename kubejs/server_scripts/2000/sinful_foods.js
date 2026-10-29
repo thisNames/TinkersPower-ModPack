@@ -32,7 +32,8 @@ const sinful_foods_list = [
     tide_sinful_foods,
     twilightforest_sinful_foods,
     xat_sinful_foods,
-    lycanitesmobs_sinful_foods
+    lycanitesmobs_sinful_foods,
+    spore_sinful_foods
 ];
 
 

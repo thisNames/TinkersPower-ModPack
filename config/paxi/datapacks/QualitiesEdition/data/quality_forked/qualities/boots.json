@@ -14,7 +14,12 @@
 
         "aquamirae:terrible_boots",
         "aquamirae:abyssal_boots",
-        "aquamirae:three_bolt_boots"
+        "aquamirae:three_bolt_boots",
+
+        "spore:inf_boots",
+        "spore:plated_boots",
+        "spore:living_boots",
+        "spore:inf_up_boots"
     ],
     "item_tags": [],
     "class": [

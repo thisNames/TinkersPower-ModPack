@@ -16,7 +16,13 @@
 
         "aquamirae:terrible_chestplate",
         "aquamirae:abyssal_brigantine",
-        "aquamirae:three_bolt_suit"
+        "aquamirae:three_bolt_suit",
+
+        "spore:inf_chest",
+        "spore:plated_chest",
+        "spore:living_chest",
+        "spore:inf_up_chest",
+        "spore:r_elytron"
     ],
     "item_tags": [],
     "class": [

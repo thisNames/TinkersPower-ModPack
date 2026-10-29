@@ -14,7 +14,12 @@
 
         "aquamirae:terrible_leggings",
         "aquamirae:abyssal_leggings",
-        "aquamirae:three_bolt_leggings"
+        "aquamirae:three_bolt_leggings",
+
+        "spore:inf_pants",
+        "spore:plated_pants",
+        "spore:living_pants",
+        "spore:inf_up_pants"
     ],
     "item_tags": [],
     "class": [

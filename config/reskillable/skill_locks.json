@@ -1,3 +1,895 @@
 {
-    "skillLocks": {}
+    "skillLocks": {
+        "tcompat:glaive": [
+            "attack:12"
+        ],
+        "tconstruct:pickaxe": [
+            "mining:3"
+        ],
+        "tconstruct:hand_axe": [
+            "gathering:3"
+        ],
+        "tconstruct:pickadze": [
+            "gathering:3"
+        ],
+        "tconstruct:mattock": [
+            "gathering:3",
+            "farming:3"
+        ],
+        "tconstruct:cleaver": [
+            "attack:12",
+            "building:12"
+        ],
+        "tconstruct:sledge_hammer": [
+            "attack:8",
+            "mining:8"
+        ],
+        "tconstruct:vein_hammer": [
+            "mining:6"
+        ],
+        "tconstruct:broad_axe": [
+            "attack:8",
+            "gathering:8"
+        ],
+        "tconstruct:excavator": [
+            "gathering:8"
+        ],
+        "tconstruct:scythe": [
+            "farming:8"
+        ],
+        "tconstruct:battlesign": [
+            "attack:8"
+        ],
+        "tconstruct:swasher": [
+            "attack:12",
+            "building:12"
+        ],
+        "tconstruct:minotaur_axe": [
+            "attack:12",
+            "building:12"
+        ],
+        "tinkers_battle_spades:battle_spade": [
+            "attack:8",
+            "gathering:8"
+        ],
+        "tinkers_katanas:katana": [
+            "attack:8",
+            "building:8"
+        ],
+        "tinkers_things:halberd": [
+            "attack:14",
+            "gathering:12"
+        ],
+        "tinkers_thinking:mace": [
+            "attack:16",
+            "agility:16"
+        ],
+        "tinkers_thinking:cutlass": [
+            "attack:8"
+        ],
+        "tconstruct:slime_helmet": [
+            "defense:2",
+            "agility:4"
+        ],
+        "tconstruct:slime_chestplate": [
+            "defense:2",
+            "agility:4"
+        ],
+        "tconstruct:slime_leggings": [
+            "defense:2",
+            "agility:4"
+        ],
+        "tconstruct:slime_boots": [
+            "defense:2",
+            "agility:4"
+        ],
+        "tconstruct:travelers_helmet": [
+            "defense:4"
+        ],
+        "tconstruct:travelers_chestplate": [
+            "defense:4"
+        ],
+        "tconstruct:travelers_leggings": [
+            "defense:4"
+        ],
+        "tconstruct:travelers_boots": [
+            "defense:4"
+        ],
+        "tinkers_things:laminar_helmet": [
+            "defense:12",
+            "building:12"
+        ],
+        "tinkers_things:laminar_chestplate": [
+            "defense:12",
+            "building:12"
+        ],
+        "tinkers_things:laminar_leggings": [
+            "defense:12",
+            "building:12"
+        ],
+        "tinkers_things:laminar_boots": [
+            "defense:12",
+            "building:12"
+        ],
+        "tconstruct:plate_helmet": [
+            "defense:8",
+            "building:8"
+        ],
+        "tconstruct:plate_chestplate": [
+            "defense:8",
+            "building:8"
+        ],
+        "tconstruct:plate_leggings": [
+            "defense:8",
+            "building:8"
+        ],
+        "tconstruct:plate_boots": [
+            "defense:8",
+            "building:8"
+        ],
+        "minecraft:iron_helmet": [
+            "defense:6"
+        ],
+        "minecraft:iron_chestplate": [
+            "defense:6"
+        ],
+        "minecraft:iron_leggings": [
+            "defense:6"
+        ],
+        "minecraft:iron_boots": [
+            "defense:6"
+        ],
+        "minecraft:golden_helmet": [
+            "magic:6",
+            "defense:6"
+        ],
+        "minecraft:golden_chestplate": [
+            "magic:6",
+            "defense:6"
+        ],
+        "minecraft:golden_leggings": [
+            "magic:6",
+            "defense:6"
+        ],
+        "minecraft:golden_boots": [
+            "magic:6",
+            "defense:6"
+        ],
+        "minecraft:diamond_helmet": [
+            "defense:12"
+        ],
+        "minecraft:diamond_chestplate": [
+            "defense:12"
+        ],
+        "minecraft:diamond_leggings": [
+            "defense:12"
+        ],
+        "minecraft:diamond_boots": [
+            "defense:12"
+        ],
+        "minecraft:netherite_helmet": [
+            "defense:16"
+        ],
+        "minecraft:netherite_chestplate": [
+            "defense:16"
+        ],
+        "minecraft:netherite_leggings": [
+            "defense:16"
+        ],
+        "minecraft:netherite_boots": [
+            "defense:16"
+        ],
+        "alexscaves:hood_of_darkness": [
+            "magic:16"
+        ],
+        "alexscaves:cloak_of_darkness": [
+            "magic:16"
+        ],
+        "alexscaves:diving_mask": [
+            "defense:6"
+        ],
+        "alexscaves:diving_chestplate": [
+            "defense:6"
+        ],
+        "alexscaves:diving_leggings": [
+            "defense:6"
+        ],
+        "alexscaves:diving_boots": [
+            "defense:6"
+        ],
+        "aquamirae:abyssal_tiara": [
+            "defense:18"
+        ],
+        "aquamirae:abyssal_helmet": [
+            "defense:18"
+        ],
+        "aquamirae:abyssal_chestplate": [
+            "defense:18"
+        ],
+        "aquamirae:abyssal_leggings": [
+            "defense:18"
+        ],
+        "aquamirae:abyssal_boots": [
+            "defense:18"
+        ],
+        "aquamirae:three_bolt_helmet": [
+            "defense:12"
+        ],
+        "aquamirae:three_bolt_chestplate": [
+            "defense:12"
+        ],
+        "aquamirae:three_bolt_leggings": [
+            "defense:12"
+        ],
+        "aquamirae:three_bolt_boots": [
+            "defense:12"
+        ],
+        "block_factorys_bosses:knight_helmet": [
+            "defense:6"
+        ],
+        "block_factorys_bosses:knight_chestplate": [
+            "defense:6"
+        ],
+        "block_factorys_bosses:knight_leggings": [
+            "defense:6"
+        ],
+        "block_factorys_bosses:knight_boots": [
+            "defense:6"
+        ],
+        "block_factorys_bosses:dragon_bones_chestplate": [
+            "defense:24"
+        ],
+        "block_factorys_bosses:dragon_bones_leggings": [
+            "defense:24"
+        ],
+        "block_factorys_bosses:dragon_bones_boots": [
+            "defense:24"
+        ],
+        "cataclysm:ignitium_helmet": [
+            "defense:24"
+        ],
+        "cataclysm:ignitium_chestplate": [
+            "defense:24"
+        ],
+        "cataclysm:ignitium_elytra_chestplate": [
+            "defense:24",
+            "agility:24"
+        ],
+        "cataclysm:ignitium_leggings": [
+            "defense:24"
+        ],
+        "cataclysm:ignitium_boots": [
+            "defense:24"
+        ],
+        "cataclysm:bloom_stone_pauldrons": [
+            "defense:6"
+        ],
+        "cataclysm:monstrous_helm": [
+            "defense:16"
+        ],
+        "cataclysm:cursium_helmet": [
+            "defense:24"
+        ],
+        "cataclysm:cursium_chestplate": [
+            "defense:24"
+        ],
+        "cataclysm:cursium_leggings": [
+            "defense:24"
+        ],
+        "cataclysm:cursium_boots": [
+            "defense:24"
+        ],
+        "cataclysm:bone_reptile_helmet": [
+            "defense:24"
+        ],
+        "cataclysm:bone_reptile_chestplate": [
+            "defense:24"
+        ],
+        "dreadsteel:dreadsteel_helmet": [
+            "defense:28"
+        ],
+        "dreadsteel:dreadsteel_chestplate": [
+            "defense:28"
+        ],
+        "dreadsteel:dreadsteel_leggings": [
+            "defense:28"
+        ],
+        "dreadsteel:dreadsteel_boots": [
+            "defense:28"
+        ],
+        "iceandfire:dragonsteel_fire_helmet": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_fire_chestplate": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_fire_leggings": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_fire_boots": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_ice_helmet": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_ice_chestplate": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_ice_leggings": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_ice_boots": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_lightning_helmet": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_lightning_chestplate": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_lightning_leggings": [
+            "defense:24"
+        ],
+        "iceandfire:dragonsteel_lightning_boots": [
+            "defense:24"
+        ],
+        "iceandfire:armor_red_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_red_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_red_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_red_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_bronze_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_bronze_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_bronze_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_bronze_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_green_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_green_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_green_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_green_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_gray_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_gray_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_gray_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_gray_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_blue_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_blue_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_blue_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_blue_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_white_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_white_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_white_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_white_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_sapphire_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_sapphire_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_sapphire_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_sapphire_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_silver_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_silver_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_silver_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_silver_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_electric_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_electric_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_electric_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_electric_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_amythest_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_amythest_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_amythest_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_amythest_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_copper_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_copper_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_copper_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_copper_boots": [
+            "defense:20"
+        ],
+        "iceandfire:armor_black_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:armor_black_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:armor_black_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:armor_black_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_purple_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_purple_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_purple_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_purple_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_red_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_red_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_red_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_red_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_green_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_green_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_green_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_green_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_teal_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_teal_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_teal_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_teal_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_deepblue_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_deepblue_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_deepblue_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_deepblue_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_bronze_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_bronze_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_bronze_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_bronze_boots": [
+            "defense:20"
+        ],
+        "iceandfire:tide_blue_helmet": [
+            "defense:20"
+        ],
+        "iceandfire:tide_blue_chestplate": [
+            "defense:20"
+        ],
+        "iceandfire:tide_blue_leggings": [
+            "defense:20"
+        ],
+        "iceandfire:tide_blue_boots": [
+            "defense:20"
+        ],
+        "protection_pixel:wingsofprism_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:workerhornet_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:magneticstorm_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:pioneer_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:hellsnake_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:typhoon_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:breakeras_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:breaker_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:workerhornetas_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:magneticstormas_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:hellsnakeas_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:typhoonas_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:floatshield_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:tosaki_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:pioneeras_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:wingsofprismas_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:falconnest_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:falconnestas_chestplate": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:plague_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:lancer_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:hammer_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:hunter_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:closed_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:bloodprisoner_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:nightdemon_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:plagueas_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:lanceras_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:hammeras_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:hunteras_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:closedas_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:bloodprisoneras_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:nightdemonas_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:tosaki_helmet": [
+            "defense:18",
+            "building:18"
+        ],
+        "protection_pixel:slingshot_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:anchorpoint_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:buoyancy_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:slingshotas_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:anchorpointas_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:buoyancyas_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:tosaki_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:linkplate_helmet": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:linkplate_chestplate": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:linkplate_leggings": [
+            "defense:16",
+            "building:16"
+        ],
+        "protection_pixel:linkplate_boots": [
+            "defense:16",
+            "building:16"
+        ],
+        "twilightforest:ironwood_helmet": [
+            "defense:6"
+        ],
+        "twilightforest:ironwood_chestplate": [
+            "defense:6"
+        ],
+        "twilightforest:ironwood_leggings": [
+            "defense:6"
+        ],
+        "twilightforest:ironwood_boots": [
+            "defense:6"
+        ],
+        "twilightforest:steeleaf_helmet": [
+            "defense:6"
+        ],
+        "twilightforest:steeleaf_chestplate": [
+            "defense:6"
+        ],
+        "twilightforest:steeleaf_leggings": [
+            "defense:6"
+        ],
+        "twilightforest:steeleaf_boots": [
+            "defense:6"
+        ],
+        "twilightforest:knightmetal_helmet": [
+            "defense:6"
+        ],
+        "twilightforest:knightmetal_chestplate": [
+            "defense:6"
+        ],
+        "twilightforest:knightmetal_leggings": [
+            "defense:6"
+        ],
+        "twilightforest:knightmetal_boots": [
+            "defense:6"
+        ],
+        "twilightforest:fiery_helmet": [
+            "defense:6"
+        ],
+        "twilightforest:fiery_chestplate": [
+            "defense:6"
+        ],
+        "twilightforest:fiery_leggings": [
+            "defense:6"
+        ],
+        "twilightforest:fiery_boots": [
+            "defense:6"
+        ],
+        "tide:dragonfin_boots": [
+            "agility:12"
+        ],
+        "spore:saber": [
+            "attack:28"
+        ],
+        "spore:greatsword": [
+            "attack:28"
+        ],
+        "spore:cleaver": [
+            "attack:28"
+        ],
+        "spore:armads": [
+            "attack:28"
+        ],
+        "spore:maul": [
+            "attack:28"
+        ],
+        "spore:combat_pickaxe": [
+            "attack:28"
+        ],
+        "spore:scythe": [
+            "attack:28"
+        ],
+        "spore:combat_shovel": [
+            "attack:28"
+        ],
+        "spore:infected_spear": [
+            "attack:28"
+        ],
+        "spore:mace": [
+            "attack:28"
+        ],
+        "spore:sickle": [
+            "attack:28"
+        ],
+        "spore:halberd": [
+            "attack:28"
+        ],
+        "spore:knife": [
+            "attack:28"
+        ],
+        "spore:rapier": [
+            "attack:28"
+        ],
+        "spore:shield": [
+            "attack:28"
+        ],
+        "spore:infected_crossbow": [
+            "agility:28"
+        ],
+        "spore:infected_bow": [
+            "agility:28"
+        ],
+        "spore:inf_helmet": [
+            "defense:28"
+        ],
+        "spore:plated_helmet": [
+            "defense:28"
+        ],
+        "spore:living_helmet": [
+            "defense:28"
+        ],
+        "spore:inf_up_helmet": [
+            "defense:28"
+        ],
+        "spore:inf_chest": [
+            "defense:28"
+        ],
+        "spore:plated_chest": [
+            "defense:28"
+        ],
+        "spore:living_chest": [
+            "defense:28"
+        ],
+        "spore:inf_up_chest": [
+            "defense:28"
+        ],
+        "spore:r_elytron": [
+            "defense:28",
+            "agility:28"
+        ],
+        "spore:inf_pants": [
+            "defense:28"
+        ],
+        "spore:plated_pants": [
+            "defense:28"
+        ],
+        "spore:living_pants": [
+            "defense:28"
+        ],
+        "spore:inf_up_pants": [
+            "defense:28"
+        ],
+        "spore:inf_boots": [
+            "defense:28"
+        ],
+        "spore:plated_boots": [
+            "defense:28"
+        ],
+        "spore:living_boots": [
+            "defense:28"
+        ],
+        "spore:inf_up_boots": [
+            "defense:28"
+        ]
+    }
 }

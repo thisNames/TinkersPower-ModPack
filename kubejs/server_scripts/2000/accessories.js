@@ -47,7 +47,5 @@ ServerEvents.tags("item", event =>
 // 幽冥粉合成配方
 ServerEvents.recipes(event =>
 {
-    event.remove({ id: "bountifulbaubles:recipes/spectral_silt_from_baubles" });
-    
     event.shapeless("bountifulbaubles:spectral_silt", ["#" + accessories_dis_tag, "bountifulbaubles:disintegration_tablet"]);
 });

@@ -55,7 +55,6 @@
                 "whitelist": false,
                 "list": [
                     "client\\.",
-                    "^bettercaves",
                     "^biomesoplenty",
                     "^biomeswevegone",
                     "^jei\\\\world",
@@ -85,7 +84,7 @@
                     "^config\\\\packicon.png",
                     "^config\\\\probejs.json",
                     "^jsconfig.json",
-                    "^README.txt",
+                    "^README",
                     "\\.keep$"
                 ],
                 "skip": false

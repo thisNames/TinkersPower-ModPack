@@ -16,7 +16,12 @@
         "aquamirae:terrible_helmet",
         "aquamirae:abyssal_heaume",
         "aquamirae:three_bolt_helmet",
-        "aquamirae:abyssal_tiara"
+        "aquamirae:abyssal_tiara",
+
+        "spore:inf_helmet",
+        "spore:plated_helmet",
+        "spore:living_helmet",
+        "spore:inf_up_helmet"
     ],
     "item_tags": [],
     "class": [

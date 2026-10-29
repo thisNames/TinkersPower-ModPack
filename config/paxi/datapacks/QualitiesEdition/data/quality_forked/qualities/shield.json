@@ -3,7 +3,9 @@
         "tconstruct:travelers_shield",
         "tconstruct:plate_shield",
 
-        "tinkers_things:laminar_shield"
+        "tinkers_things:laminar_shield",
+
+        "spore:shield"
     ],
     "item_tags": [],
     "class": [
