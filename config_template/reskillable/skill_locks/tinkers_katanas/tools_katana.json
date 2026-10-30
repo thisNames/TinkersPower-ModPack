@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 8
+        },
+        {
+            "id": "building",
+            "level": 8
+        }
+    ],
+    "items": [
+        "katana__*"
+    ]
+}

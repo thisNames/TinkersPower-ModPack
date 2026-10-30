@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 10
+        }
+    ],
+    "items": [
+        "myrmex_desert_helmet",
+        "myrmex_desert_chestplate",
+        "myrmex_desert_leggings",
+        "myrmex_desert_boots",
+        "myrmex_jungle_helmet",
+        "myrmex_jungle_chestplate",
+        "myrmex_jungle_leggings",
+        "myrmex_jungle_boots"
+    ]
+}

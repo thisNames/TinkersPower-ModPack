@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 8
+        }
+    ],
+    "items": [
+        "travelers_helmet__*",
+        "travelers_chestplate__*",
+        "travelers_leggings__*",
+        "travelers_boots__*"
+    ]
+}

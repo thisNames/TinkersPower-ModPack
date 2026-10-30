@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "gathering",
+            "level": 8
+        }
+    ],
+    "items": [
+        "battle_spade__*"
+    ]
+}

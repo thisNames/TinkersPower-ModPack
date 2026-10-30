@@ -1,0 +1,22 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 28
+        }
+    ],
+    "items": [
+        "dragonsteel_fire_helmet",
+        "dragonsteel_fire_chestplate",
+        "dragonsteel_fire_leggings",
+        "dragonsteel_fire_boots",
+        "dragonsteel_ice_helmet",
+        "dragonsteel_ice_chestplate",
+        "dragonsteel_ice_leggings",
+        "dragonsteel_ice_boots",
+        "dragonsteel_lightning_helmet",
+        "dragonsteel_lightning_chestplate",
+        "dragonsteel_lightning_leggings",
+        "dragonsteel_lightning_boots"
+    ]
+}

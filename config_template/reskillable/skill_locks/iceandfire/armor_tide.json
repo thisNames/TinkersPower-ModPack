@@ -1,0 +1,38 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 20
+        }
+    ],
+    "items": [
+        "tide_purple_helmet",
+        "tide_purple_chestplate",
+        "tide_purple_leggings",
+        "tide_purple_boots",
+        "tide_red_helmet",
+        "tide_red_chestplate",
+        "tide_red_leggings",
+        "tide_red_boots",
+        "tide_green_helmet",
+        "tide_green_chestplate",
+        "tide_green_leggings",
+        "tide_green_boots",
+        "tide_teal_helmet",
+        "tide_teal_chestplate",
+        "tide_teal_leggings",
+        "tide_teal_boots",
+        "tide_deepblue_helmet",
+        "tide_deepblue_chestplate",
+        "tide_deepblue_leggings",
+        "tide_deepblue_boots",
+        "tide_bronze_helmet",
+        "tide_bronze_chestplate",
+        "tide_bronze_leggings",
+        "tide_bronze_boots",
+        "tide_blue_helmet",
+        "tide_blue_chestplate",
+        "tide_blue_leggings",
+        "tide_blue_boots"
+    ]
+}

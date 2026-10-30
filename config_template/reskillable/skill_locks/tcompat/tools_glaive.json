@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 10
+        }
+    ],
+    "items": [
+        "glaive__*"
+    ]
+}

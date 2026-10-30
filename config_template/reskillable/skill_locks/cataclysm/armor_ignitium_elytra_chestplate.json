@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "agility",
+            "level": 28
+        },
+        {
+            "id": "magic",
+            "level": 28
+        }
+    ],
+    "items": [
+        "ignitium_elytra_chestplate"
+    ]
+}

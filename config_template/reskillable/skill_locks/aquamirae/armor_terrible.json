@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 16
+        }
+    ],
+    "items": [
+        "terrible_helmet",
+        "terrible_chestplate",
+        "terrible_leggings",
+        "terrible_boots"
+    ]
+}

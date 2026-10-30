@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 12
+        },
+        {
+            "id": "magic",
+            "level": 8
+        }
+    ],
+    "items": [
+        "tinkers_medal__*"
+    ]
+}

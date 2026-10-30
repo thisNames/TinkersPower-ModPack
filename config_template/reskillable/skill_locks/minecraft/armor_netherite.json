@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 18
+        }
+    ],
+    "items": [
+        "netherite_helmet",
+        "netherite_chestplate",
+        "netherite_leggings",
+        "netherite_boots"
+    ]
+}

@@ -5,13 +5,14 @@
     "main": "index.js",
     "scripts": {
         "alignment_options": "node .manifest/scripts/alignment_options.js",
-        "build_server": "node .manifest/scripts/build_server.js",
-        "build_client": "node .manifest/scripts/build_client",
-        "build_client_offline": "node .manifest/scripts/build_client_offline.js",
+        "reskillable_skill_locks": "node .manifest/scripts/reskillable_skill_locks.js",
         "defaultconfigs": "node .manifest/scripts/defaultconfigs.js",
         "loot_tables_dir": "node .manifest/scripts/loot_tables_dir.js",
         "clear_logs": "node .manifest/scripts/clear_logs.js",
-        "ban": "node .manifest/scripts/ban_generator.js"
+        "ban": "node .manifest/scripts/ban_generator.js",
+        "build_server": "node .manifest/scripts/build_server.js",
+        "build_client": "node .manifest/scripts/build_client",
+        "build_client_offline": "node .manifest/scripts/build_client_offline.js"
     },
     "repository": {
         "type": "git",

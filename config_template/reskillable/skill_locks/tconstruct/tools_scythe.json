@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "gathering",
+            "level": 12
+        },
+        {
+            "id": "farming",
+            "level": 12
+        }
+    ],
+    "items": [
+        "scythe__*"
+    ]
+}

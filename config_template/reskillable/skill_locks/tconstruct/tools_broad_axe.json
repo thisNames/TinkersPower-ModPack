@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "gathering",
+            "level": 12
+        },
+        {
+            "id": "building",
+            "level": 12
+        }
+    ],
+    "items": [
+        "broad_axe__*"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 6
+        },
+        {
+            "id": "magic",
+            "level": 6
+        }
+    ],
+    "items": [
+        "golden_helmet",
+        "golden_chestplate",
+        "golden_leggings",
+        "golden_boots"
+    ]
+}

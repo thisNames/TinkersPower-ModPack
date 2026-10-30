@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 8
+        },
+        {
+            "id": "agility",
+            "level": 8
+        }
+    ],
+    "items": [
+        "crossbow__*"
+    ]
+}

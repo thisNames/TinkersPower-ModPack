@@ -1,0 +1,29 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 18
+        },
+        {
+            "id": "building",
+            "level": 18
+        }
+    ],
+    "items": [
+        "plague_helmet",
+        "lancer_helmet",
+        "hammer_helmet",
+        "hunter_helmet",
+        "closed_helmet",
+        "bloodprisoner_helmet",
+        "nightdemon_helmet",
+        "plagueas_helmet",
+        "lanceras_helmet",
+        "hammeras_helmet",
+        "hunteras_helmet",
+        "closedas_helmet",
+        "bloodprisoneras_helmet",
+        "nightdemonas_helmet",
+        "tosaki_helmet"
+    ]
+}

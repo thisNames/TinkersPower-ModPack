@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 28
+        },
+        {
+            "id": "magic",
+            "level": 28
+        }
+    ],
+    "items": [
+        "ignitium_helmet",
+        "ignitium_chestplate",
+        "ignitium_leggings",
+        "ignitium_boots"
+    ]
+}

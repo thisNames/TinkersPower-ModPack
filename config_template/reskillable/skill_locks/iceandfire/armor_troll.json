@@ -1,0 +1,22 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 12
+        }
+    ],
+    "items": [
+        "forest_troll_leather_helmet",
+        "forest_troll_leather_chestplate",
+        "forest_troll_leather_leggings",
+        "forest_troll_leather_boots",
+        "frost_troll_leather_helmet",
+        "frost_troll_leather_chestplate",
+        "frost_troll_leather_leggings",
+        "frost_troll_leather_boots",
+        "mountain_troll_leather_helmet",
+        "mountain_troll_leather_chestplate",
+        "mountain_troll_leather_leggings",
+        "mountain_troll_leather_boots"
+    ]
+}

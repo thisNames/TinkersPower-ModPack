@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "mining",
+            "level": 8
+        }
+    ],
+    "items": [
+        "war_pick__*"
+    ]
+}

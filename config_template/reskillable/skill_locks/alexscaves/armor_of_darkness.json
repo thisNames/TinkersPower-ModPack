@@ -1,0 +1,16 @@
+{
+    "locks": [
+        {
+            "id": "magic",
+            "level": 24
+        },
+        {
+            "id": "agility",
+            "level": 24
+        }
+    ],
+    "items": [
+        "hood_of_darkness",
+        "cloak_of_darkness"
+    ]
+}

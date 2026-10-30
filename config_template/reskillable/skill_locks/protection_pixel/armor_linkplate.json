@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 15
+        },
+        {
+            "id": "building",
+            "level": 15
+        }
+    ],
+    "items": [
+        "linkplate_helmet",
+        "linkplate_chestplate",
+        "linkplate_leggings",
+        "linkplate_boots"
+    ]
+}

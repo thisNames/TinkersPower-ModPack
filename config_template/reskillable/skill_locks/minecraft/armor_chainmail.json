@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 6
+        }
+    ],
+    "items": [
+        "chainmail_helmet",
+        "chainmail_chestplate",
+        "chainmail_leggings",
+        "chainmail_boots"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "mining",
+            "level": 6
+        },
+        {
+            "id": "gathering",
+            "level": 6
+        }
+    ],
+    "items": [
+        "paxel__*"
+    ]
+}

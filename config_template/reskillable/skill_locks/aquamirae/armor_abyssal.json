@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 24
+        }
+    ],
+    "items": [
+        "abyssal_tiara",
+        "abyssal_helmet",
+        "abyssal_chestplate",
+        "abyssal_leggings",
+        "abyssal_boots"
+    ]
+}

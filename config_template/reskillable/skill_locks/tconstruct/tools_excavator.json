@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "gathering",
+            "level": 12
+        }
+    ],
+    "items": [
+        "excavator__*"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 15
+        },
+        {
+            "id": "building",
+            "level": 15
+        }
+    ],
+    "items": [
+        "slingshot_leggings",
+        "anchorpoint_leggings",
+        "buoyancy_leggings",
+        "slingshotas_leggings",
+        "anchorpointas_leggings",
+        "buoyancyas_leggings",
+        "tosaki_leggings"
+    ]
+}

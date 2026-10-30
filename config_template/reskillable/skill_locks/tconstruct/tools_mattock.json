@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "farming",
+            "level": 5
+        },
+        {
+            "id": "gathering",
+            "level": 5
+        }
+    ],
+    "items": [
+        "mattock__*"
+    ]
+}

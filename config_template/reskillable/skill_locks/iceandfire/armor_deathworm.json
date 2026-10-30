@@ -1,0 +1,22 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 10
+        }
+    ],
+    "items": [
+        "deathworm_yellow_helmet",
+        "deathworm_yellow_chestplate",
+        "deathworm_yellow_leggings",
+        "deathworm_yellow_boots",
+        "deathworm_white_helmet",
+        "deathworm_white_chestplate",
+        "deathworm_white_leggings",
+        "deathworm_white_boots",
+        "deathworm_red_helmet",
+        "deathworm_red_chestplate",
+        "deathworm_red_leggings",
+        "deathworm_red_boots"
+    ]
+}

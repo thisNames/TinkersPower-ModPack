@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 32
+        }
+    ],
+    "items": [
+        "inf_helmet",
+        "inf_chest",
+        "inf_pants",
+        "inf_boots",
+        "inf_up_helmet",
+        "inf_up_chest",
+        "inf_up_pants",
+        "inf_up_boots"
+    ]
+}

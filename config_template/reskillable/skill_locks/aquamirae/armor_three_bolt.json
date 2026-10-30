@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 18
+        }
+    ],
+    "items": [
+        "three_bolt_helmet",
+        "three_bolt_chestplate",
+        "three_bolt_leggings",
+        "three_bolt_boots"
+    ]
+}

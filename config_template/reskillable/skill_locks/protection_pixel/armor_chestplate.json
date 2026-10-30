@@ -1,0 +1,32 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 18
+        },
+        {
+            "id": "building",
+            "level": 18
+        }
+    ],
+    "items": [
+        "wingsofprism_chestplate",
+        "workerhornet_chestplate",
+        "magneticstorm_chestplate",
+        "pioneer_chestplate",
+        "hellsnake_chestplate",
+        "typhoon_chestplate",
+        "breakeras_chestplate",
+        "breaker_chestplate",
+        "workerhornetas_chestplate",
+        "magneticstormas_chestplate",
+        "hellsnakeas_chestplate",
+        "typhoonas_chestplate",
+        "floatshield_chestplate",
+        "tosaki_chestplate",
+        "pioneeras_chestplate",
+        "wingsofprismas_chestplate",
+        "falconnest_chestplate",
+        "falconnestas_chestplate"
+    ]
+}

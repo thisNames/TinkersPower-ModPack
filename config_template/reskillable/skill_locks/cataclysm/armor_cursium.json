@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 28
+        },
+        {
+            "id": "magic",
+            "level": 28
+        }
+    ],
+    "items": [
+        "cursium_helmet",
+        "cursium_chestplate",
+        "cursium_leggings",
+        "cursium_boots"
+    ]
+}

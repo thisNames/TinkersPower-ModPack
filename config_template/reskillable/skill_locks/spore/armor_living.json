@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 32
+        }
+    ],
+    "items": [
+        "living_helmet",
+        "living_chest",
+        "living_pants",
+        "living_boots"
+    ]
+}

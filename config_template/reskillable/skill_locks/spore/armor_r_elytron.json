@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 32
+        },
+        {
+            "id": "agility",
+            "level": 32
+        }
+    ],
+    "items": [
+        "r_elytron"
+    ]
+}

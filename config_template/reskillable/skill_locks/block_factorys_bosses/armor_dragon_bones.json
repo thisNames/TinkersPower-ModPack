@@ -1,0 +1,17 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 20
+        },
+        {
+            "id": "attack",
+            "level": 16
+        }
+    ],
+    "items": [
+        "dragon_bones_chestplate",
+        "dragon_bones_leggings",
+        "dragon_bones_boots"
+    ]
+}
