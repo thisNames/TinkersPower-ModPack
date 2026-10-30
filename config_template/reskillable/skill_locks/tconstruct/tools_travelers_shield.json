@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 6
+        },
+        {
+            "id": "building",
+            "level": 6
+        }
+    ],
+    "items": [
+        "travelers_shield__*"
+    ]
+}

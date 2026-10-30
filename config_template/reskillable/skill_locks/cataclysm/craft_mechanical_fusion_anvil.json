@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 24
+        }
+    ],
+    "items": [
+        "mechanical_fusion_anvil"
+    ]
+}

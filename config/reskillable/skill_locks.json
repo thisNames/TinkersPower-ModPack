@@ -149,6 +149,9 @@
         "cataclysm:monstrous_helm": [
             "defense:18"
         ],
+        "cataclysm:mechanical_fusion_anvil": [
+            "building:24"
+        ],
         "dreadsteel:dreadsteel_helmet": [
             "defense:30"
         ],
@@ -159,6 +162,9 @@
             "defense:30"
         ],
         "dreadsteel:dreadsteel_boots": [
+            "defense:30"
+        ],
+        "dreadsteel:dreadsteel_shield": [
             "defense:30"
         ],
         "iceandfire:armor_red_helmet": [
@@ -601,6 +607,22 @@
         "minecraft:netherite_boots": [
             "defense:18"
         ],
+        "minecraft:anvil": [
+            "building:12"
+        ],
+        "minecraft:chipped_anvil": [
+            "building:12"
+        ],
+        "minecraft:damaged_anvil": [
+            "building:12"
+        ],
+        "minecraft:brewing_stand": [
+            "building:12",
+            "magic:12"
+        ],
+        "minecraft:enchanting_table": [
+            "magic:12"
+        ],
         "protection_pixel:wingsofprism_chestplate": [
             "defense:18",
             "building:18"
@@ -829,6 +851,59 @@
             "defense:32",
             "agility:32"
         ],
+        "spore:infected_crossbow": [
+            "attack:32",
+            "agility:32"
+        ],
+        "spore:infected_bow": [
+            "attack:32",
+            "agility:32"
+        ],
+        "spore:shield": [
+            "defense:32"
+        ],
+        "spore:saber": [
+            "attack:32"
+        ],
+        "spore:greatsword": [
+            "attack:32"
+        ],
+        "spore:cleaver": [
+            "attack:32"
+        ],
+        "spore:armads": [
+            "attack:32"
+        ],
+        "spore:maul": [
+            "attack:32"
+        ],
+        "spore:combat_pickaxe": [
+            "attack:32"
+        ],
+        "spore:scythe": [
+            "attack:32"
+        ],
+        "spore:combat_shovel": [
+            "attack:32"
+        ],
+        "spore:infected_spear": [
+            "attack:32"
+        ],
+        "spore:mace": [
+            "attack:32"
+        ],
+        "spore:sickle": [
+            "attack:32"
+        ],
+        "spore:halberd": [
+            "attack:32"
+        ],
+        "spore:knife": [
+            "attack:32"
+        ],
+        "spore:rapier": [
+            "attack:32"
+        ],
         "tcompat:glaive__*": [
             "attack:10"
         ],
@@ -876,6 +951,15 @@
         "tconstruct:travelers_boots__*": [
             "defense:8"
         ],
+        "tconstruct:modifier_worktable": [
+            "magic:12"
+        ],
+        "tconstruct:tinkers_anvil": [
+            "building:12"
+        ],
+        "tconstruct:scorched_anvil": [
+            "building:12"
+        ],
         "tconstruct:crossbow__*": [
             "building:8",
             "agility:8"
@@ -906,6 +990,10 @@
             "mining:3",
             "building:3"
         ],
+        "tconstruct:plate_shield__*": [
+            "defense:8",
+            "building:8"
+        ],
         "tconstruct:scythe__*": [
             "gathering:12",
             "farming:12"
@@ -913,6 +1001,10 @@
         "tconstruct:sledge_hammer__*": [
             "mining:12",
             "building:12"
+        ],
+        "tconstruct:travelers_shield__*": [
+            "defense:6",
+            "building:6"
         ],
         "tconstruct:vein_hammer__*": [
             "mining:12",
@@ -959,6 +1051,10 @@
         "tinkers_things:halberd__*": [
             "attack:10"
         ],
+        "tinkers_things:laminar_shield__*": [
+            "defense:12",
+            "building:12"
+        ],
         "tinkers_thinking:arrow_thrower__*": [
             "agility:6",
             "building:6"
@@ -966,6 +1062,14 @@
         "tinkers_thinking:paxel__*": [
             "mining:6",
             "gathering:6"
+        ],
+        "vinery:fermentation_barrel": [
+            "building:18",
+            "farming:18"
+        ],
+        "vinery:apple_press": [
+            "building:18",
+            "farming:18"
         ],
         "xat:arcing_orb": [
             "magic:24"

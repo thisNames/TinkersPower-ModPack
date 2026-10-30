@@ -1,0 +1,13 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 12
+        }
+    ],
+    "items": [
+        "anvil",
+        "chipped_anvil",
+        "damaged_anvil"
+    ]
+}

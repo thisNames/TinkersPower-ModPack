@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 32
+        }
+    ],
+    "items": [
+        "shield"
+    ]
+}

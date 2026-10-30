@@ -1,0 +1,16 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 32
+        },
+        {
+            "id": "agility",
+            "level": 32
+        }
+    ],
+    "items": [
+        "infected_crossbow",
+        "infected_bow"
+    ]
+}

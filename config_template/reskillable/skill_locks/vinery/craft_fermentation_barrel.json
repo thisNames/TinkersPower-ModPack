@@ -1,0 +1,16 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 18
+        },
+        {
+            "id": "farming",
+            "level": 18
+        }
+    ],
+    "items": [
+        "fermentation_barrel",
+        "apple_press"
+    ]
+}

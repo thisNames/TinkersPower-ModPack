@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 8
+        },
+        {
+            "id": "building",
+            "level": 8
+        }
+    ],
+    "items": [
+        "plate_shield__*"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 32
+        }
+    ],
+    "items": [
+        "saber",
+        "greatsword",
+        "cleaver",
+        "armads",
+        "maul",
+        "combat_pickaxe",
+        "scythe",
+        "combat_shovel",
+        "infected_spear",
+        "mace",
+        "sickle",
+        "halberd",
+        "knife",
+        "rapier"
+    ]
+}
