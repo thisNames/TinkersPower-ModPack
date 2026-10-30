@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "attakc",
+            "level": 24
+        },
+        {
+            "id": "magic",
+            "level": 24
+        }
+    ],
+    "items": [
+        "dragons_eye"
+    ]
+}

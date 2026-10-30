@@ -1,0 +1,19 @@
+{
+    "locks": [
+        {
+            "id": "agility",
+            "level": 26
+        },
+        {
+            "id": "defense",
+            "level": 26
+        },
+        {
+            "id": "magic",
+            "level": 26
+        }
+    ],
+    "items": [
+        "ankh_shield"
+    ]
+}

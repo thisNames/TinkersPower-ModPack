@@ -1,0 +1,23 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 32
+        },
+        {
+            "id": "agility",
+            "level": 32
+        },
+        {
+            "id": "defense",
+            "level": 32
+        },
+        {
+            "id": "magic",
+            "level": 32
+        }
+    ],
+    "items": [
+        "dragon_ring"
+    ]
+}

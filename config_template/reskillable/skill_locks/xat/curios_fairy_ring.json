@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "agility",
+            "level": 32
+        },
+        {
+            "id": "magic",
+            "level": 32
+        }
+    ],
+    "items": [
+        "fairy_ring"
+    ]
+}

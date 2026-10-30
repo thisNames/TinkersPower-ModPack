@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "gathering",
+            "level": 32
+        },
+        {
+            "id": "magic",
+            "level": 32
+        }
+    ],
+    "items": [
+        "elf_ring"
+    ]
+}

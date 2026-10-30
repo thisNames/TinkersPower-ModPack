@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 32
+        },
+        {
+            "id": "magic",
+            "level": 32
+        }
+    ],
+    "items": [
+        "taurus_ring"
+    ]
+}

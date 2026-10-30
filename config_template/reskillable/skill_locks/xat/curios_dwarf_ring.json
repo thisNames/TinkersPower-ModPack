@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "mining",
+            "level": 32
+        },
+        {
+            "id": "magic",
+            "level": 32
+        }
+    ],
+    "items": [
+        "dwarf_ring"
+    ]
+}

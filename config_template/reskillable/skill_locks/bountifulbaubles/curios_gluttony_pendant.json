@@ -1,0 +1,19 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 24
+        },
+        {
+            "id": "farming",
+            "level": 24
+        },
+        {
+            "id": "magic",
+            "level": 24
+        }
+    ],
+    "items": [
+        "gluttony_pendant"
+    ]
+}

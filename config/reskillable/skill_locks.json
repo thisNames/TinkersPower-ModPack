@@ -47,6 +47,9 @@
         "aquamirae:three_bolt_boots": [
             "defense:18"
         ],
+        "artifacts:crystal_heart": [
+            "magic:12"
+        ],
         "block_factorys_bosses:dragon_bones_chestplate": [
             "defense:20",
             "attack:16"
@@ -58,6 +61,43 @@
         "block_factorys_bosses:dragon_bones_boots": [
             "defense:20",
             "attack:16"
+        ],
+        "bountifulbaubles:ankh_charm": [
+            "agility:24",
+            "defense:24",
+            "magic:24"
+        ],
+        "bountifulbaubles:ankh_shield": [
+            "agility:26",
+            "defense:26",
+            "magic:26"
+        ],
+        "bountifulbaubles:gluttony_pendant": [
+            "attack:24",
+            "farming:24",
+            "magic:24"
+        ],
+        "bountifulbaubles:horseshoe_balloon": [
+            "defense:32",
+            "magic:32"
+        ],
+        "bountifulbaubles:lucky_horseshoe": [
+            "defense:28"
+        ],
+        "bountifulbaubles:magic_mirror": [
+            "magic:32"
+        ],
+        "bountifulbaubles:phylactery_charm": [
+            "agility:32",
+            "magic:32"
+        ],
+        "bountifulbaubles:wormhole_mirror": [
+            "agility:32",
+            "magic:32"
+        ],
+        "bountifulbaubles:wrath_pendant": [
+            "attack:16",
+            "magic:16"
         ],
         "cataclysm:bloom_stone_pauldrons": [
             "attack:15"
@@ -926,6 +966,57 @@
         "tinkers_thinking:paxel__*": [
             "mining:6",
             "gathering:6"
+        ],
+        "xat:arcing_orb": [
+            "magic:24"
+        ],
+        "xat:cosmetic": [
+            "magic:18"
+        ],
+        "xat:damage_shield": [
+            "defense:24",
+            "magic:24"
+        ],
+        "xat:dragons_eye": [
+            "attakc:24",
+            "magic:24"
+        ],
+        "xat:dragon_ring": [
+            "attack:32",
+            "agility:32",
+            "defense:32",
+            "magic:32"
+        ],
+        "xat:dwarf_ring": [
+            "mining:32",
+            "magic:32"
+        ],
+        "xat:elf_ring": [
+            "gathering:32",
+            "magic:32"
+        ],
+        "xat:faelis_claw": [
+            "attack:16",
+            "magic:16"
+        ],
+        "xat:faelis_ring": [
+            "attack:32",
+            "magic:32"
+        ],
+        "xat:fairy_ring": [
+            "agility:32",
+            "magic:32"
+        ],
+        "xat:goblin_ring": [
+            "magic:32"
+        ],
+        "xat:taurus_ring": [
+            "building:32",
+            "magic:32"
+        ],
+        "xat:titan_ring": [
+            "defense:32",
+            "magic:32"
         ]
     }
 }

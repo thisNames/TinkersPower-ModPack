@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 32
+        },
+        {
+            "id": "magic",
+            "level": 32
+        }
+    ],
+    "items": [
+        "faelis_ring"
+    ]
+}
