@@ -94,7 +94,7 @@ function applyEffectLevel(entity, effectId, level, duration, refreshBelow)
         entity.potionEffects.add(effectId, duration, level, false, true);
     }
     // 2. 等级不一致 → 先移除旧效果，再按新等级添加（原版 addEffect 只升不降，必须 remove 才能降级）
-    else if (level != effect.getAmplifier())
+    else if (level > effect.getAmplifier())
     {
         entity.removeEffect(effectId);
         entity.potionEffects.add(effectId, duration, level, false, true);

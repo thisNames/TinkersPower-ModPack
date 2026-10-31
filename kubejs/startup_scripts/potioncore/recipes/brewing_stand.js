@@ -158,7 +158,7 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("minecraft:lava_bucket", "minecraft:thick", "potioncore:fire");
 
     // 延长
-    event.addPotionBrewing("vinery:red_wine", "minecraft:healing", "potioncore:extend");
+    // event.addPotionBrewing("vinery:red_wine", "minecraft:healing", "potioncore:extend");
 
     // 起跳
     event.addPotionBrewing("minecraft:dispenser", "minecraft:awkward", "potioncore:launch");
