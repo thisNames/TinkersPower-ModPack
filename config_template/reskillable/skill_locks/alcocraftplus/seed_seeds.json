@@ -1,0 +1,11 @@
+{
+    "locks": [
+        {
+            "id": "farming",
+            "level": 12
+        }
+    ],
+    "items": [
+        "hop_seeds"
+    ]
+}

@@ -4,6 +4,9 @@
             "building:20",
             "farming:20"
         ],
+        "alcocraftplus:hop_seeds": [
+            "farming:12"
+        ],
         "alexscaves:hood_of_darkness": [
             "magic:24",
             "agility:24"
@@ -662,6 +665,27 @@
         "minecraft:enchanting_table": [
             "magic:12"
         ],
+        "minecraft:wheat_seeds": [
+            "farming:5"
+        ],
+        "minecraft:pumpkin_seeds": [
+            "farming:5"
+        ],
+        "minecraft:melon_seeds": [
+            "farming:5"
+        ],
+        "minecraft:beetroot_seeds": [
+            "farming:5"
+        ],
+        "minecraft:torchflower_seeds": [
+            "farming:5"
+        ],
+        "minecraft:carrot": [
+            "farming:5"
+        ],
+        "minecraft:potato": [
+            "farming:5"
+        ],
         "protection_pixel:wingsofprism_chestplate": [
             "defense:18",
             "building:18"
@@ -943,6 +967,9 @@
         "spore:rapier": [
             "attack:32"
         ],
+        "supplementaries:flax_seeds": [
+            "farming:6"
+        ],
         "tcompat:glaive__*": [
             "attack:10"
         ],
@@ -1109,6 +1136,38 @@
         "vinery:apple_press": [
             "building:18",
             "farming:18"
+        ],
+        "vinery:red_grape_seeds": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:white_grape_seeds": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:savanna_grape_seeds_red": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:savanna_grape_seeds_white": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:taiga_grape_seeds_red": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:taiga_grape_seeds_white": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:jungle_grape_seeds_red": [
+            "farming:8",
+            "gathering:8"
+        ],
+        "vinery:jungle_grape_seeds_white": [
+            "farming:8",
+            "gathering:8"
         ],
         "xat:arcing_orb": [
             "magic:24"

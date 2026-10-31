@@ -1,0 +1,22 @@
+{
+    "locks": [
+        {
+            "id": "farming",
+            "level": 8
+        },
+        {
+            "id": "gathering",
+            "level": 8
+        }
+    ],
+    "items": [
+        "red_grape_seeds",
+        "white_grape_seeds",
+        "savanna_grape_seeds_red",
+        "savanna_grape_seeds_white",
+        "taiga_grape_seeds_red",
+        "taiga_grape_seeds_white",
+        "jungle_grape_seeds_red",
+        "jungle_grape_seeds_white"
+    ]
+}

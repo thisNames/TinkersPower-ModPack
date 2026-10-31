@@ -1,0 +1,17 @@
+{
+    "locks": [
+        {
+            "id": "farming",
+            "level": 5
+        }
+    ],
+    "items": [
+        "wheat_seeds",
+        "pumpkin_seeds",
+        "melon_seeds",
+        "beetroot_seeds",
+        "torchflower_seeds",
+        "carrot",
+        "potato"
+    ]
+}
