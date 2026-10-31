@@ -39,7 +39,8 @@ const toughasnails_held_list = [
     tconstruct_toughasnails_helds,
     tide_toughasnails_helds,
     tp_armorunder_toughasnails_helds,
-    twilightforest_toughasnails_helds
+    twilightforest_toughasnails_helds,
+    deeperdarker_toughasnails_helds
 ];
 
 

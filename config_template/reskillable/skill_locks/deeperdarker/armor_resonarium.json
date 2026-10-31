@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 8
+        }
+    ],
+    "items": [
+        "resonarium_helmet",
+        "resonarium_chestplate",
+        "resonarium_leggings",
+        "resonarium_boots"
+    ]
+}

@@ -22,7 +22,9 @@
         "spore:plated_chest",
         "spore:living_chest",
         "spore:inf_up_chest",
-        "spore:r_elytron"
+        "spore:r_elytron",
+
+        "deeperdarker:soul_elytra"
     ],
     "item_tags": [],
     "class": [

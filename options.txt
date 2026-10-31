@@ -84,6 +84,8 @@ key_key.chat:key.keyboard.t
 key_key.command:key.keyboard.slash
 key_key.configured.open_mod_list:key.keyboard.keypad.9
 key_key.curios.open.desc:key.keyboard.period
+key_key.deeperdarker.boost:key.keyboard.left.control
+key_key.deeperdarker.transmit:key.mouse.right
 key_key.dragon_change_view:key.keyboard.f7
 key_key.dragon_down:key.keyboard.left.control
 key_key.dragon_fireAttack:key.keyboard.r

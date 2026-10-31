@@ -152,6 +152,38 @@
         "cataclysm:mechanical_fusion_anvil": [
             "building:24"
         ],
+        "deeperdarker:resonarium_helmet": [
+            "defense:8"
+        ],
+        "deeperdarker:resonarium_chestplate": [
+            "defense:8"
+        ],
+        "deeperdarker:resonarium_leggings": [
+            "defense:8"
+        ],
+        "deeperdarker:resonarium_boots": [
+            "defense:8"
+        ],
+        "deeperdarker:soul_elytra": [
+            "defense:12",
+            "agility:24"
+        ],
+        "deeperdarker:warden_helmet": [
+            "defense:24",
+            "agility:12"
+        ],
+        "deeperdarker:warden_chestplate": [
+            "defense:24",
+            "agility:12"
+        ],
+        "deeperdarker:warden_leggings": [
+            "defense:24",
+            "agility:12"
+        ],
+        "deeperdarker:warden_boots": [
+            "defense:24",
+            "agility:12"
+        ],
         "dreadsteel:dreadsteel_helmet": [
             "defense:30"
         ],
@@ -566,6 +598,9 @@
         ],
         "minecraft:diamond_boots": [
             "defense:12"
+        ],
+        "minecraft:soul_elytra": [
+            "agility:24"
         ],
         "minecraft:golden_helmet": [
             "defense:6",

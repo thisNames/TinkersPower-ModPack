@@ -1,0 +1,18 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 24
+        },
+        {
+            "id": "agility",
+            "level": 12
+        }
+    ],
+    "items": [
+        "warden_helmet",
+        "warden_chestplate",
+        "warden_leggings",
+        "warden_boots"
+    ]
+}
