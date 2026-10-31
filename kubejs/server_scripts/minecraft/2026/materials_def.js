@@ -8,6 +8,10 @@ const minecraft_materials = {
     namespace: "minecraft",
     material: [
         {
+            id: "experience_bottle",
+            level: 3
+        },
+        {
             id: "blaze_rod",
             level: 3
         },

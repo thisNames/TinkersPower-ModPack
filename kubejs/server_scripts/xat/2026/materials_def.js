@@ -9,11 +9,11 @@ const xat_materials = {
     material: [
         {
             id: "glowing_powder",
-            level: 1
+            level: 2
         },
         {
             id: "glowing_ingot",
-            level: 1
+            level: 2
         },
         {
             id: "glowing_gem",
