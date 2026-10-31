@@ -1,0 +1,20 @@
+{
+    "type": "alcocraftplus:beer_brewing",
+    "ingredients": [
+        {
+            "item": "alcocraftplus:hop"
+        },
+        {
+            "item": "alcocraftplus:dry_seeds"
+        },
+        {
+            "item": "alexscaves:azure_neodymium_ingot"
+        },
+        {
+            "item": "alexscaves:scarlet_neodymium_ingot"
+        }
+    ],
+    "output": {
+        "item": "alcocraftplus:magnet_pilsner"
+    }
+}

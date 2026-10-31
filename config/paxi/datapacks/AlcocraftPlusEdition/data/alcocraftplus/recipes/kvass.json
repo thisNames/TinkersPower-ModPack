@@ -1,0 +1,20 @@
+{
+    "type": "alcocraftplus:beer_brewing",
+    "ingredients": [
+        {
+            "item": "create_confectionery:gingerdough"
+        },
+        {
+            "item": "minecraft:golden_apple"
+        },
+        {
+            "item": "minecraft:honeycomb"
+        },
+        {
+            "item": "minecraft:bread"
+        }
+    ],
+    "output": {
+        "item": "alcocraftplus:kvass"
+    }
+}
