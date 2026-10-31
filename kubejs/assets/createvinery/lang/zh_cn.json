@@ -1,0 +1,21 @@
+{
+  "item.createvinery.red_grape_juice_bucket": "红葡萄汁桶",
+  "item.createvinery.taiga_red_grape_juice_bucket": "针叶林红葡萄汁桶",
+  "item.createvinery.jungle_red_grape_juice_bucket": "丛林红葡萄汁桶",
+  "item.createvinery.savanna_red_grape_juice_bucket": "热带草原红葡萄汁桶",
+  "item.createvinery.white_grape_juice_bucket": "白葡萄汁桶",
+  "item.createvinery.taiga_white_grape_juice_bucket": "针叶林白葡萄汁桶",
+  "item.createvinery.jungle_white_grape_juice_bucket": "丛林白葡萄汁桶",
+  "item.createvinery.savanna_white_grape_juice_bucket": "热带草原白葡萄汁桶",
+  "item.createvinery.apple_juice_bucket": "苹果汁桶",
+  "creativetab.cv_items": "机械动力：葡园酒香",
+  "fluid_type.createvinery.red_grape_juice": "红葡萄汁",
+  "fluid_type.createvinery.taiga_red_grape_juice": "针叶林红葡萄汁",
+  "fluid_type.createvinery.jungle_red_grape_juice": "丛林红葡萄汁",
+  "fluid_type.createvinery.savanna_red_grape_juice": "热带草原红葡萄汁",
+  "fluid_type.createvinery.white_grape_juice": "白葡萄汁",
+  "fluid_type.createvinery.taiga_white_grape_juice": "针叶林白葡萄汁",
+  "fluid_type.createvinery.jungle_white_grape_juice": "丛林白葡萄汁",
+  "fluid_type.createvinery.savanna_white_grape_juice": "热带草原白葡萄汁",
+  "fluid_type.createvinery.apple_juice": "苹果汁"
+}

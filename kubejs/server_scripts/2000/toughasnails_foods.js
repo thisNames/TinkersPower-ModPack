@@ -23,7 +23,8 @@ const toughasnails_foods_list = [
     lycanitesmobs_toughasnails_foods,
     tide_toughasnails_foods,
     twilightforest_toughasnails_foods,
-    vinery_toughasnails_foods
+    vinery_toughasnails_foods,
+    alcocraftplus_toughasnails_foods
 ];
 
 

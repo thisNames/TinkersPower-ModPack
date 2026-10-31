@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 20
+        },
+        {
+            "id": "farming",
+            "level": 20
+        }
+    ],
+    "items": [
+       "keg"
+    ]
+}

@@ -1,5 +1,9 @@
 {
     "skillLocks": {
+        "alcocraftplus:keg": [
+            "building:20",
+            "farming:20"
+        ],
         "alexscaves:hood_of_darkness": [
             "magic:24",
             "agility:24"
