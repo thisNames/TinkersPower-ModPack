@@ -116,6 +116,23 @@ function applyEffectLevelServer(entity, effectId, level, duration, refreshBelow)
 function nToiServer(namespace, id, prefix)
 {
     const tag = prefix ?? "";
-    
+
     return tag + namespace + ":" + id;
+}
+
+/**
+ * 将 modid:xxx 转换为 <prefix>.modid.xxx
+ * @param {Array<Special.MobEffect>} effects 效果 ID 集合
+ * @param {string} prefix 前缀，可用于指定其他类目
+ * @returns {Set<string>}
+ */
+function niTokeysServer(effects, prefix)
+{
+    const tag = prefix ?? "effect";
+    const set = new Set();
+
+    // 转换
+    effects.forEach(effect => set.add(tag.concat(".", effect.split(":").join("."))));
+
+    return set;
 }
