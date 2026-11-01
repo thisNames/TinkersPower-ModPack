@@ -1822,7 +1822,9 @@
 		"lycanitesmobs:peaks_kebab;10",
 		"lycanitesmobs:searing_taco;10",
 		"lycanitesmobs:seashell_maki;10",
-		"lycanitesmobs:tropical_curry;10"
+		"lycanitesmobs:tropical_curry;10",
+		"alcocraftplus:kvass;60",
+		"alcocraftplus:nether_star_lager;120"
 	]
 
 	[magic.items]

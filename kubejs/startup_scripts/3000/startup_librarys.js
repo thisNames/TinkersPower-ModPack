@@ -130,3 +130,35 @@ function incArrmor(event, id, damage, protection, toughness)
         // c.armorToughness = toughness;
     });
 }
+
+
+/**
+ * 拼接物品 ID
+ * @param {string} namespace 命名空间
+ * @param {string} id ID
+ * @param {string} [prefix=""] 前缀，可用于返回标签
+ * @returns {string}
+ */
+function nToiStartup(namespace, id, prefix)
+{
+    const tag = prefix ?? "";
+
+    return tag + namespace + ":" + id;
+}
+
+/**
+ * 将 modid:xxx 转换为 <prefix>.modid.xxx
+ * @param {Array<Special.MobEffect>} effects 效果 ID 集合
+ * @param {string} prefix 前缀，可用于指定其他类目
+ * @returns {Set<string>}
+ */
+function niTokeysStartup(effects, prefix)
+{
+    const tag = prefix ?? "effect";
+    const set = new Set();
+
+    // 转换
+    effects.forEach(effect => set.add(tag.concat(".", effect.split(":").join("."))));
+
+    return set;
+}

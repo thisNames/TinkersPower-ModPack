@@ -39,7 +39,7 @@
 		durationPerYear = 200
 		#Days per year
 		#Range: 1 ~ 100
-		daysPerYear = 24
+		daysPerYear = 16
 		#Years per effect level
 		#Range: 1 ~ 100
 		yearsPerEffectLevel = 6

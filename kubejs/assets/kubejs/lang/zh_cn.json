@@ -26,6 +26,11 @@
     "item.kubejs.tooltip.roughtweaks.medkit_enchanted": "附魔医疗包",
 
     "item.kubejs.tooltip.alcocraftplus.hop_seeds": "种植在方块底部",
+    "item.kubejs.tooltip.alcocraftplus.beer_text1": "增加增益效果等级，最大 3 级",
+    "item.kubejs.tooltip.alcocraftplus.beer_text2": "忽略啤酒给予的效果以及相似效果和温度效果",
+
+    "item.kubejs.tooltip.vinery.wine_text1": "增加增益效果时长，最大 6 分钟",
+    "item.kubejs.tooltip.vinery.wine_text2": "忽略葡萄酒给予的效果以及相似效果和温度效果",
 
     "item.kubejs.tooltip.xat.faelis_ring_taker": "猫灵手持时伤害+%s",
 
