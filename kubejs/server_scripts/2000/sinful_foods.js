@@ -19,6 +19,12 @@ const sinful_curios_id = "bountifulbaubles:gluttony_pendant";
 const sinful_curios_effect = "bountifulbaubles:sinful";
 
 /**
+ * 罪恶食物表
+ * @type {Map<string, TServerSinfulFood>}
+ */
+const sinful_foods_tables = new Map();
+
+/**
  * 罪恶食物集合
  * @type {Array<TDServerSinfulFood>}
  */
@@ -37,27 +43,38 @@ const sinful_foods_list = [
 ];
 
 
-// 遍历食物
-sinful_foods_list.forEach(sinful =>
+// 转为 map
+sinful_foods_list.forEach(m => m.foods.forEach(f => sinful_foods_tables.set(nToiServer(m.namespace, f.id), f)));
+
+// 吃监听
+ItemEvents.foodEaten(event =>
 {
-    sinful.foods.forEach(food =>
+    // 物品
+    const item = event.getItem();
+
+    // 空
+    if (item.isEmpty()) return;
+
+    // 资源
+    const itemLocation = item.getIdLocation();
+    const id = nToiServer(itemLocation.getNamespace(), itemLocation.getPath());
+    const player = event.getPlayer();
+
+    // 是否是表中物品
+    if (!sinful_foods_tables.has(id)) return;
+    // 只对玩家生效
+    if (!player || !player.isLiving()) return;
+
+    // 携带暴食吊坠
+    if (player.isCuriosEquipped(sinful_curios_id))
     {
-        const food_id = nToiServer(sinful.namespace, food.id);
+        // 获取食物
+        const food = sinful_foods_tables.get(id);
 
-        // 食物监听
-        ItemEvents.foodEaten(food_id, event =>
-        {
-            const player = event.getPlayer();
-
-            // 是玩家
-            if (player && player.isCuriosEquipped(sinful_curios_id))
-            {
-                player.potionEffects.add(sinful_curios_effect, food.second * 20, food.amplifier);
-            }
-        });
-    });
+        // 给予罪恶效果
+        player.potionEffects.add(sinful_curios_effect, food.second * 20, food.amplifier);
+    }
 });
-
 
 // 添加标签
 ServerEvents.tags("item", event =>

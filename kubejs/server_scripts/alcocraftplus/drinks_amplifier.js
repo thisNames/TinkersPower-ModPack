@@ -52,7 +52,7 @@ ItemEvents.foodEaten(event =>
     // 资源
     const itemLocation = item.getIdLocation();
     const id = nToiServer(itemLocation.getNamespace(), itemLocation.getPath());
-    const player = event.getPlayer();    
+    const player = event.getPlayer();
 
     // 是否是表中物品
     if (!alcocraftplus_drinks_amplifier_tables.has(id)) return;
