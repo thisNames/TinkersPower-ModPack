@@ -665,6 +665,9 @@
         "minecraft:enchanting_table": [
             "magic:12"
         ],
+        "minecraft:bone_meal": [
+            "farming:12"
+        ],
         "minecraft:wheat_seeds": [
             "farming:5"
         ],
@@ -861,6 +864,13 @@
         "protection_pixel:linkplate_boots": [
             "defense:15",
             "building:15"
+        ],
+        "roughtweaks:medkit": [
+            "magic:12"
+        ],
+        "roughtweaks:medkit_enchanted": [
+            "defense:24",
+            "magic:16"
         ],
         "spore:inf_helmet": [
             "defense:32"
@@ -1128,6 +1138,18 @@
         "tinkers_thinking:paxel__*": [
             "mining:6",
             "gathering:6"
+        ],
+        "vinery:straw_hat": [
+            "farming:20"
+        ],
+        "vinery:winemaker_apron": [
+            "farming:20"
+        ],
+        "vinery:winemaker_leggings": [
+            "farming:20"
+        ],
+        "vinery:winemaker_boots": [
+            "farming:20"
         ],
         "vinery:fermentation_barrel": [
             "building:18",

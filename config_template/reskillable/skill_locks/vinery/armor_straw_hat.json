@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "farming",
+            "level": 20
+        }
+    ],
+    "items": [
+        "straw_hat",
+        "winemaker_apron",
+        "winemaker_leggings",
+        "winemaker_boots"
+    ]
+}

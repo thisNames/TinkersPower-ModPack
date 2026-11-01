@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 24
+        },
+        {
+            "id": "magic",
+            "level": 16
+        }
+    ],
+    "items": [
+        "medkit_enchanted"
+    ]
+}
