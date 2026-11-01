@@ -58,6 +58,7 @@
                     "client\\.",
                     "^biomesoplenty",
                     "^biomeswevegone",
+                    "^highly",
                     "^jei\\\\world",
                     "^spark",
                     "^attributefix",
@@ -84,8 +85,6 @@
                     "^config\\\\client.properties",
                     "^config\\\\packicon.png",
                     "^config\\\\probejs.json",
-                    "^jsconfig.json",
-                    "^README",
                     "\\.keep$"
                 ],
                 "skip": false
@@ -150,6 +149,8 @@
                 "config": {
                     "whitelist": false,
                     "list": [
+                        "^biomesoplenty",
+                        "^biomeswevegone",
                         "^jei\\\\world",
                         "^spark"
                     ],
@@ -196,6 +197,8 @@
                 "config": {
                     "whitelist": false,
                     "list": [
+                        "^biomesoplenty",
+                        "^biomeswevegone",
                         "^jei\\\\world",
                         "^spark"
                     ],
