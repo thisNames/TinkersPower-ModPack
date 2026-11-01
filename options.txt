@@ -83,7 +83,7 @@ key_key.cataclysm.helmet_ability:key.keyboard.unknown
 key_key.chat:key.keyboard.t
 key_key.command:key.keyboard.slash
 key_key.configured.open_mod_list:key.keyboard.keypad.9
-key_key.curios.open.desc:key.keyboard.period
+key_key.curios.open.desc:key.keyboard.comma
 key_key.deeperdarker.boost:key.keyboard.left.control
 key_key.deeperdarker.transmit:key.mouse.right
 key_key.dragon_change_view:key.keyboard.f7
@@ -157,7 +157,7 @@ key_key.l2mods.up:key.keyboard.unknown
 key_key.l2mods.wheel:key.keyboard.unknown
 key_key.left:key.keyboard.a
 key_key.levelup2.skills:key.keyboard.n
-key_key.levelup2.toggle:key.keyboard.comma
+key_key.levelup2.toggle:key.keyboard.period
 key_key.loadToolbarActivator:key.keyboard.unknown
 key_key.minions:key.keyboard.unknown
 key_key.mobends.menu:key.keyboard.equal

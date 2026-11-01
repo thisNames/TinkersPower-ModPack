@@ -1823,8 +1823,8 @@
 		"lycanitesmobs:searing_taco;10",
 		"lycanitesmobs:seashell_maki;10",
 		"lycanitesmobs:tropical_curry;10",
-		"alcocraftplus:kvass;60",
-		"alcocraftplus:nether_star_lager;120"
+		"alcocraftplus:kvass;20",
+		"alcocraftplus:nether_star_lager;100"
 	]
 
 	[magic.items]
