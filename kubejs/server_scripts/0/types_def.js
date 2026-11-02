@@ -115,10 +115,10 @@
 
 /**
  * @description 葡萄酒香：葡萄汁类型
- * @typedef {"red" | "white" | "red_taiga" | "white_taiga" | "red_jungle" | "white_jungle" | "red_savanna" | "white_savanna"} TEVineryWine
+ * @typedef {"red" | "white" | "red_taiga" | "white_taiga" | "red_jungle" | "white_jungle" | "red_savanna" | "white_savanna"} TEServerVineryWine
  */
 
 /**
  * @description 冰火传说：龙类型
- * @typedef {"fire" | "ice" | "lightning"} TEIceAndFireDragon
+ * @typedef {"fire" | "ice" | "lightning"} TEServerIceAndFireDragon
  */
