@@ -1,5 +1,7 @@
 // priority: 0
 
+// ========================= file child def ==============================
+
 /**
  * @typedef TServerLootAccessorie 一个饰品类型（战利品）
  * @property {string} id 饰品 ID
@@ -107,4 +109,16 @@
  * @typedef TDServerToughasnailsDrink 坚定意志：饮品
  * @property {string} namespace 模组名命空间
  * @property {Array<TServerToughasnailsDrink>} drinks 饮品集合
+ */
+
+// ========================= enum def ==============================
+
+/**
+ * @description 葡萄酒香：葡萄汁类型
+ * @typedef {"red" | "white" | "red_taiga" | "white_taiga" | "red_jungle" | "white_jungle" | "red_savanna" | "white_savanna"} TEVineryWine
+ */
+
+/**
+ * @description 冰火传说：龙类型
+ * @typedef {"fire" | "ice" | "lightning"} TEIceAndFireDragon
  */
