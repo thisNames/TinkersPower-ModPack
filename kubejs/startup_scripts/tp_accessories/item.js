@@ -6,9 +6,15 @@ StartupEvents.registry("item", event =>
 
     // 魔力戒指
     const magicRing = event.create(_this("magic_ring"), "basic");
+    // 绿宝石指环
+    const emeraldRing = event.create(_this("emerald_ring"));
+    // 绿宝石护符
+    const emeralAmulet = event.create(_this("emerald_amulet"));
 
     // 能力
     const magicRingCapability = CuriosJSCapabilityBuilder.create();
+    const emeraldRingCapability = CuriosJSCapabilityBuilder.create();
+    const emeralAmuletCapability = CuriosJSCapabilityBuilder.create();
 
     // 饰品能力效果
     const magicRingEffect = _pcore("magic_focus");
@@ -33,6 +39,9 @@ StartupEvents.registry("item", event =>
         .tooltip(Text.translatable("item.tp_accessories.magic_ring_text3").gold())
         .tag("curios:ring");
 
+    emeraldRing.maxStackSize(1).rarity("common").tag("curios:ring");
+    emeralAmulet.maxStackSize(1).rarity("common").tag("curios:charm");
+
     // 设置能力
     magicRingCapability
         .canEquip((slotContext, stack) => true)
@@ -53,7 +62,7 @@ StartupEvents.registry("item", event =>
             // 这个饰品栏位类型的 size 索引，ring 的 size = 2，也就是说最多装 2 个，那么所以索引只有 0 1
             // 然后取最小索引饰品执行即可：如果 0 带了执行 0，1 带了 执行 1，都带了执行 0
             if (minIndex != currentIndex) return;
-            
+
             // 等级
             let level = 0;
 
@@ -66,8 +75,20 @@ StartupEvents.registry("item", event =>
         })
         .onUnequip((slotContext, oldStack, newStack) => slotContext.entity().removeEffect(magicRingEffect));
 
+    emeraldRingCapability
+        .canEquip((slotContext, stack) => true)
+        .canUnequip((slotContext, stack) => true)
+        .canEquipFromUse((slotContext, stack) => false);
+
+    emeralAmuletCapability
+        .canEquip((slotContext, stack) => true)
+        .canUnequip((slotContext, stack) => true)
+        .canEquipFromUse((slotContext, stack) => false);
+
     // 应用能力
     magicRing.attachCuriosCapability(magicRingCapability);
+    emeraldRing.attachCuriosCapability(emeraldRingCapability);
+    emeralAmulet.attachCuriosCapability(emeralAmuletCapability);
 });
 
 StartupEvents.registry("creative_mode_tab", event =>
@@ -83,6 +104,11 @@ StartupEvents.registry("creative_mode_tab", event =>
     tab.displayName = Text.translatable("item_group.tp_accessories.items");
     //往物品栏里添加物品
     tab.content(() => [
-        _this("magic_ring")
+        // 魔力戒指
+        _this("magic_ring"),
+        // 绿宝石指环
+        _this("emerald_ring"),
+        // 绿宝石护符
+        _this("emerald_amulet")
     ]);
 });

@@ -12,4 +12,18 @@ ServerEvents.recipes(event =>
         [_mc("netherite_ingot"), Item.of(_pring("potion_ring"), "{Effect:\"minecraft:strength\"}").weakNBT(), _tc("amethyst_bronze_ingot")],
         [_tc("amethyst_bronze_ingot"), _tc("amethyst_bronze_ingot"), _tinket("mana_crystal")]
     ]);
+
+    // 绿宝石指环
+    event.shaped(_this("emerald_ring"), [
+        ["", _mc("emerald"), ""],
+        [_mc("gold_nugget"), "", _mc("gold_nugget")],
+        ["", _mc("gold_nugget", "")]
+    ]);
+
+    // 绿宝石护符
+    event.shaped(_this("emerald_amulet"), [
+        [_mc("gold_nugget"), _mc("gold_nugget"), _mc("gold_nugget")],
+        [_mc("gold_nugget"), "", _mc("gold_nugget")],
+        ["", _mc("emerald"), ""]
+    ]);
 });
