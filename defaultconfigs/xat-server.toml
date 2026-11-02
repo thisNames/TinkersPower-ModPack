@@ -1219,7 +1219,18 @@
 				"spore:inf_up_chest;0.13",
 				"spore:inf_up_pants;0.09",
 				"spore:inf_up_boots;0.08",
-				"spore:r_elytron;0.06"
+				"spore:r_elytron;0.06",
+				# ===== Deeper And Darke 盔甲 ====
+				# 共鸣刚
+				"deeperdarker:resonarium_helmet;0.07",
+				"deeperdarker:resonarium_chestplate;0.09",
+				"deeperdarker:resonarium_leggings;0.08",
+				"deeperdarker:resonarium_boots;0.06",
+				# 监守者
+				"deeperdarker:warden_helmet;0.08",
+				"deeperdarker:warden_chestplate;0.12",
+				"deeperdarker:warden_leggings;0.09",
+				"deeperdarker:warden_boots;0.07"
 			]
 
 			[races.faelis.abilities.climbing]
