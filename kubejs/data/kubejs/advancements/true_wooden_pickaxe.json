@@ -1,4 +1,5 @@
 {
+    "parent": "minecraft:adventure/root",
     "display": {
         "icon": {
             "item": "minecraft:wooden_pickaxe"
@@ -12,8 +13,7 @@
         "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false,
-        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+        "hidden": false
     },
     "criteria": {
         "has_wooden_pickaxe": {

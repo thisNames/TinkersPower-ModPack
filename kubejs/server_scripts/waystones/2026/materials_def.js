@@ -20,10 +20,6 @@ const waystones_materials = {
             level: 2
         },
         {
-            id: "warp_stone",
-            level: 2
-        },
-        {
             id: "warp_dust",
             level: 2
         }

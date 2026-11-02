@@ -22,7 +22,8 @@ const material_list = [
     create_materials,
     waystones_materials,
     vinery_materials,
-    tp_toughasnails_materials
+    tp_toughasnails_materials,
+    chimes_materials
 ];
 
 

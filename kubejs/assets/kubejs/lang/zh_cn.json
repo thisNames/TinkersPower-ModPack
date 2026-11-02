@@ -1,6 +1,8 @@
 {
     "advancements.kubejs.true_wooden_pickaxe.title": "一把真正的木镐！",
     "advancements.kubejs.true_wooden_pickaxe.description": "只有 3 点耐久的木镐",
+    "advancements.kubejs.new_world_roll.title": "新世界，翻滚吧！",
+    "advancements.kubejs.new_world_roll.description": "按 [alt] 键进行翻滚",
 
     "item.kubejs.tooltip.itemprohibiteditems.items": "此物品无法使用！",
     "item.kubejs.tooltip.itemprohibiteditems.wearables": "此装备无法穿戴！",
@@ -33,6 +35,17 @@
     "item.kubejs.tooltip.vinery.wine_text2": "忽略葡萄酒给予的效果以及相似效果和温度效果",
 
     "item.kubejs.tooltip.xat.faelis_ring_taker": "猫灵手持时伤害+%s",
+
+    "item.kubejs.tooltip.chimes_right_bind": "潜行+右击可将其捆起来",
+    "item.kubejs.tooltip.chimes_not_right_bind": "无法捆绑",
+    "item.kubejs.tooltip.chimes.bamboo_chimes": "产生竹子落叶",
+    "item.kubejs.tooltip.chimes.iron_chimes": "清脆的金属铃声",
+    "item.kubejs.tooltip.chimes.copper_chimes": "比铁风铃更为低沉的金属铃声",
+    "item.kubejs.tooltip.chimes.carved_bamboo_chimes": "与竹制风铃相比，更加低沉且不产生竹子落叶",
+    "item.kubejs.tooltip.chimes.carved_bamboo_chimes.1": "用【钻石米诺陶战斧】右键【竹风铃】（似乎找不到更好的斧子了……）",
+    "item.kubejs.tooltip.chimes.amethyst_chimes": "紫水晶声音的小风铃",
+    "item.kubejs.tooltip.chimes.amethyst_chimes.1": "紫水晶十分脆弱，不能系在支撑物上面",
+    "item.kubejs.tooltip.chimes.glass_bells": "通过合成自定义颜色，风铃下方会悬挂短册",
 
     "loot.kubejs.tooltip.artifacts.crystal_heart": "科妮莉亚之心",
     "loot.kubejs.tooltip.artifacts.crystal_heart_vow": "即使冰封许久……这颗心依旧火热",

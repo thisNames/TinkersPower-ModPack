@@ -21,7 +21,7 @@ const create_materials = {
         },
         {
             id: "brass_ingot",
-            level: 2
+            level: 3
         },
         {
             id: "experience_nugget",

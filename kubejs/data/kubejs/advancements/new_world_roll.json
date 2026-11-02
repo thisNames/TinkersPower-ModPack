@@ -1,0 +1,28 @@
+{
+    "parent": "minecraft:adventure/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_boots"
+        },
+        "title": {
+            "translate": "advancements.kubejs.new_world_roll.title"
+        },
+        "description": {
+            "translate": "advancements.kubejs.new_world_roll.description"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "join_world": {
+            "trigger": "minecraft:location"
+        }
+    },
+    "requirements": [
+        [
+            "join_world"
+        ]
+    ]
+}

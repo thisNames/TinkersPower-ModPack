@@ -16,6 +16,13 @@ Path: [.manifest/index.html](.manifest/index.html)
 Project address: [Github](https://github.com/thisNames/TinkersPower-ModPack)
 
 ## Building
+### Version number adjustment [A.B.C](.manifest/index.html)
+- A: Basically not moving, unless major changes are made (only set to 1 in the first packaging)
+
+- B: Change in module quantity => adjustment
+
+- C: Non module changes such as patches, fixes, configurations, and script changes => adjustments
+
 ### Server
 - Builds a server package. For server setup, see [Server Installation Guide](#server-installation-guide).
 

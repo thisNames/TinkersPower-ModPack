@@ -16,6 +16,13 @@ Java：**17**
 项目地址：[Github](https://github.com/thisNames/TinkersPower-ModPack)
 
 ## 打包
+### 版本号调整 [A.B.C](.manifest/index.html)
+- A：基本不动，除非大改（只在首次打包设置为 1）
+
+- B：模组数量变动 => 调整
+
+- C：补丁、修复、配置、脚本变动等非模组变动 => 调整
+
 ### 服务端
 - 打包为服务端包，服务器安装见 [服务端安装指南](#服务端安装指南)
 
