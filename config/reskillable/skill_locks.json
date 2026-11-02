@@ -15,6 +15,10 @@
             "magic:24",
             "agility:24"
         ],
+        "alexsmobs:tarantula_hawk_elytra": [
+            "defense:12",
+            "agility:24"
+        ],
         "aquamirae:abyssal_tiara": [
             "defense:24"
         ],
@@ -172,8 +176,8 @@
             "defense:8"
         ],
         "deeperdarker:soul_elytra": [
-            "defense:12",
-            "agility:24"
+            "defense:16",
+            "agility:26"
         ],
         "deeperdarker:warden_helmet": [
             "defense:24",
@@ -606,7 +610,7 @@
         "minecraft:diamond_boots": [
             "defense:12"
         ],
-        "minecraft:soul_elytra": [
+        "minecraft:elytra": [
             "agility:24"
         ],
         "minecraft:golden_helmet": [
