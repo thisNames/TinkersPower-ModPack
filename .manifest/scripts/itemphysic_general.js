@@ -22,7 +22,6 @@ const BURNING_ITEMS = "burning_items.json";
 // 不毁的文件名称
 const UNDESTORYABLE_ITEM = "undestroyable_items.json";
 
-
 // 创建配置对象
 const config = new ItemPhysicConfig(JSON.parse(FS.readFileSync(ITEM_PHYISC_CONFIG, { encoding: "utf-8" })));
 
@@ -48,9 +47,9 @@ for (let i = 0; i < listDirent.length; i++)
     const undestroyableItems = JSON.parse(FS.readFileSync(undestroyableItemFile, { encoding: "utf-8" }));
 
     // 保存
-    burningItems.forEach(e => config.putBurningItem(new ItemPhysicEntrie("item", e).get()));
-    swimmingItems.forEach(e => config.putSwimmingItem(new ItemPhysicEntrie("item", e).get()));
-    undestroyableItems.forEach(e => config.putUndestroyableItem(new ItemPhysicEntrie("item", e).get()));
+    burningItems.forEach(e => config.putBurningItem(new ItemPhysicEntrie("item", namespace.name + ":" + e).get()));
+    swimmingItems.forEach(e => config.putSwimmingItem(new ItemPhysicEntrie("item", namespace.name + ":" + e).get()));
+    undestroyableItems.forEach(e => config.putUndestroyableItem(new ItemPhysicEntrie("item", namespace.name + ":" + e).get()));
 
     // 显示
     logger.info(namespace.name + " => " + burningItemFile);

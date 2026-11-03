@@ -77,3 +77,6 @@ TinkersPower.jar
 
 # xlsx 
 ~$todos.xlsx
+
+# backups
+/backups
