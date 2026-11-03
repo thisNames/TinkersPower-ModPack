@@ -1,5 +1,5 @@
 /**
- * 对齐 options.txt（每次 Git Commit 必做）
+ * 对齐 options.txt
  */
 
 const FS = require("node:fs");

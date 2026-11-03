@@ -63,15 +63,15 @@
             "magic:12"
         ],
         "block_factorys_bosses:dragon_bones_chestplate": [
-            "defense:20",
+            "defense:24",
             "attack:16"
         ],
         "block_factorys_bosses:dragon_bones_leggings": [
-            "defense:20",
+            "defense:24",
             "attack:16"
         ],
         "block_factorys_bosses:dragon_bones_boots": [
-            "defense:20",
+            "defense:24",
             "attack:16"
         ],
         "bountifulbaubles:ankh_charm": [
@@ -115,12 +115,12 @@
             "attack:15"
         ],
         "cataclysm:bone_reptile_helmet": [
-            "defense:24",
-            "magic:24"
+            "defense:26",
+            "magic:26"
         ],
         "cataclysm:bone_reptile_chestplate": [
-            "defense:24",
-            "magic:24"
+            "defense:26",
+            "magic:26"
         ],
         "cataclysm:cursium_helmet": [
             "defense:28",
@@ -1033,13 +1033,13 @@
             "defense:8"
         ],
         "tconstruct:modifier_worktable": [
-            "magic:12"
+            "magic:13"
         ],
         "tconstruct:tinkers_anvil": [
-            "building:12"
+            "building:13"
         ],
         "tconstruct:scorched_anvil": [
-            "building:12"
+            "building:13"
         ],
         "tconstruct:crossbow__*": [
             "building:8",

@@ -10,8 +10,8 @@
         "itemphysic_general": "node .manifest/scripts/itemphysic_general.js",
         "defaultconfigs": "node .manifest/scripts/defaultconfigs.js",
         "loot_tables_dir": "node .manifest/scripts/loot_tables_dir.js",
+        "ban_generator": "node .manifest/scripts/ban_generator.js",
         "clear_logs": "node .manifest/scripts/clear_logs.js",
-        "ban": "node .manifest/scripts/ban_generator.js",
         "build_server": "node .manifest/scripts/build_server.js",
         "build_client": "node .manifest/scripts/build_client",
         "build_client_offline": "node .manifest/scripts/build_client_offline.js"

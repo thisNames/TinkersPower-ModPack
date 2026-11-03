@@ -2,6 +2,7 @@ let artifacts_ban_items_server = [
 	"artifacts:onion_ring",
 	"artifacts:eternal_steak",
 	"artifacts:everlasting_beef",
+	"artifacts:umbrella",
 ];
 let artifacts_ban_wearables_server = [
 ];

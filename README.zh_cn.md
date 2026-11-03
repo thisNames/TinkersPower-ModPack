@@ -1,7 +1,7 @@
 # TinkersPower ModPack
 
 ## GIT COMMIT
-注意：每次提交代码，请务必执行 **`alignment_options`** NPM [脚本](.manifest/scripts/alignment_options.js)
+注意：每次提交代码，请务必执行 **`compiled`** NPM [脚本](.manifest/scripts/compiled.js)
 
 ## 简述
 项目：TinkersPower Minecraft Forge 1.20.1 整合包
