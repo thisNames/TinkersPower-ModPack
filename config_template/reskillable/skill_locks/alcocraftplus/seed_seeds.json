@@ -3,6 +3,10 @@
         {
             "id": "farming",
             "level": 12
+        },
+        {
+            "id": "gathering",
+            "level": 12
         }
     ],
     "items": [

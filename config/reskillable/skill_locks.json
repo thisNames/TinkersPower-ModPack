@@ -5,7 +5,8 @@
             "farming:20"
         ],
         "alcocraftplus:hop_seeds": [
-            "farming:12"
+            "farming:12",
+            "gathering:12"
         ],
         "alexscaves:hood_of_darkness": [
             "magic:24",
@@ -164,36 +165,36 @@
             "building:24"
         ],
         "deeperdarker:resonarium_helmet": [
-            "defense:8"
+            "defense:12"
         ],
         "deeperdarker:resonarium_chestplate": [
-            "defense:8"
+            "defense:12"
         ],
         "deeperdarker:resonarium_leggings": [
-            "defense:8"
+            "defense:12"
         ],
         "deeperdarker:resonarium_boots": [
-            "defense:8"
+            "defense:12"
         ],
         "deeperdarker:soul_elytra": [
-            "defense:16",
-            "agility:26"
+            "defense:15",
+            "agility:25"
         ],
         "deeperdarker:warden_helmet": [
-            "defense:24",
-            "agility:12"
+            "defense:25",
+            "agility:15"
         ],
         "deeperdarker:warden_chestplate": [
-            "defense:24",
-            "agility:12"
+            "defense:25",
+            "agility:15"
         ],
         "deeperdarker:warden_leggings": [
-            "defense:24",
-            "agility:12"
+            "defense:25",
+            "agility:15"
         ],
         "deeperdarker:warden_boots": [
-            "defense:24",
-            "agility:12"
+            "defense:25",
+            "agility:15"
         ],
         "dreadsteel:dreadsteel_helmet": [
             "defense:30"
