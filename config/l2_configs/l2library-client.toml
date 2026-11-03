@@ -6,11 +6,11 @@ infoAlpha = 0.5
 infoAnchor = 1
 #Info max width. 0.5 means half screen. default: 0.3
 #Range: 0.0 ~ 0.5
-infoMaxWidth = 0.3
+infoMaxWidth = 0.25
 #Render Selection only when pressing shift
-selectionDisplayRequireShift = false
+selectionDisplayRequireShift = true
 #Scroll for selection only when pressing shift
 selectionScrollRequireShift = true
 #Render overlay icons on entities
-renderOverlayIcons = true
+renderOverlayIcons = false
 

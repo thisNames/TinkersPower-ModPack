@@ -50,22 +50,22 @@ bossBreakShield = true
 slicingDropUpgradeChance = 0.5
 #Damage of Beacon Cannon as percentage of golem melee damage
 #Range: 0.0 ~ 1.0
-beaconCannonDamageFactor = 0.5
+beaconCannonDamageFactor = 0.3
 #Damage of Sonic Cannon as percentage of golem melee damage
 #Range: 0.0 ~ 1.0
-sonicCannonDamageFactor = 0.25
+sonicCannonDamageFactor = 0.15
 #Bonus damage of Sonic Cannon per sculk part, as percentage of golem melee damage
 #Range: 0.0 ~ 1.0
 sonicCannonResonanceBonus = 0.1
 #Default slots for large golem
 #Range: 0 ~ 100
-largeGolemSlot = 4
+largeGolemSlot = 3
 #Default slots for humanoid golem
 #Range: 0 ~ 100
-humanoidGolemSlot = 3
+humanoidGolemSlot = 2
 #Default slots for dog golem
 #Range: 0 ~ 100
-dogGolemSlot = 2
+dogGolemSlot = 1
 #Player golem sound factor
 #Range: 0.0 ~ 2.0
 golemSoundVolumeFactor = 1.0
@@ -76,22 +76,22 @@ hostileGolemSoundVolumeFactor = 1.0
 [modifiers]
 	#Percentage damage reflection per level of thorn
 	#Range: 0.0 ~ 100.0
-	thorn = 0.2
+	thorn = 0.14
 	#Percentage damage reduction per level of magic resistance
 	#Range: 0.0 ~ 1.0
-	magicResistance = 0.2
+	magicResistance = 0.14
 	#Percentage damage reduction per level of explosion resistance
 	#Range: 0.0 ~ 1.0
-	explosionResistance = 0.2
+	explosionResistance = 0.14
 	#Damage Cap at max level
 	#Range: 0.0 ~ 1.0
-	damageCap = 0.1
+	damageCap = 0.07
 	#Healing when thunder immune golems are striked
 	#Range: 1 ~ 10000
 	thunderHeal = 10
 	#Armor Penetration modifier: chance for damage to bypass armor per level
 	#Range: 0.0 ~ 1.0
-	armorBypassChance = 0.2
+	armorBypassChance = 0.13
 
 ["twilight forest compat"]
 	#Percentage damage addition per level of fiery
@@ -261,7 +261,7 @@ hostileGolemSoundVolumeFactor = 1.0
 ["cataclysm compat"]
 	#Heal rate as percentage of damage dealt per level of blazing brand
 	#Range: 0.0 ~ 10.0
-	ignitiumHealRate = 0.1
+	ignitiumHealRate = 0.06
 	#Ignitium golem skill damage factor
 	#Range: 0.0 ~ 1.0
 	ignisSkillDamageFactor = 0.5
@@ -299,10 +299,10 @@ hostileGolemSoundVolumeFactor = 1.0
 ["composite material compat"]
 	#Dungeon Absorption: lifesteal ratio for melee damage.
 	#Range: 0.0 ~ 2.0
-	dungeonMeleeHealFactor = 0.25
+	dungeonMeleeHealFactor = 0.15
 	#Dungeon Link: lifesteal ratio for melee damage.
 	#Range: 0.0 ~ 1.0
-	dungeonLinkHealFactor = 0.2
+	dungeonLinkHealFactor = 0.12
 	#Obsidian: damage reduced.
 	#Range: 0 ~ 100
 	obsidianDamageReduction = 1
@@ -323,7 +323,7 @@ hostileGolemSoundVolumeFactor = 1.0
 	resonanceAttackRange = 8
 	#Resonant Heal: healing ratio
 	#Range: 0.0 ~ 5.0
-	resonanceHealFactor = 0.25
+	resonanceHealFactor = 0.15
 	#Resonant Heal: chain range
 	#Range: 0 ~ 64
 	resonanceHealRange = 32
