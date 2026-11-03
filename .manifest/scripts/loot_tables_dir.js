@@ -131,4 +131,4 @@ function main()
 }
 
 // 运行脚本
-main(false);
+main();

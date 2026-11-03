@@ -2,7 +2,7 @@
     "locks": [
         {
             "id": "defense",
-            "level": 20
+            "level": 24
         },
         {
             "id": "attack",

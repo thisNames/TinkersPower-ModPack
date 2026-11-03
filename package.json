@@ -4,8 +4,10 @@
     "description": "TinkersPower Minecraft ModPack Project.",
     "main": "index.js",
     "scripts": {
+        "compiled": "node .manifest/scripts/compiled.js",
         "alignment_options": "node .manifest/scripts/alignment_options.js",
         "reskillable_skill_locks": "node .manifest/scripts/reskillable_skill_locks.js",
+        "itemphysic_general": "node .manifest/scripts/itemphysic_general.js",
         "defaultconfigs": "node .manifest/scripts/defaultconfigs.js",
         "loot_tables_dir": "node .manifest/scripts/loot_tables_dir.js",
         "clear_logs": "node .manifest/scripts/clear_logs.js",
