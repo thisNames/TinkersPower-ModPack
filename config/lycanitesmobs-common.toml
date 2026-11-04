@@ -267,7 +267,7 @@
 ["Global Spawning"]
 	#These settings are used by everything. It is recommended to leave them as they are however low end machines might benefit from a few tweaks here
 	#The limit of how many mobs of the same type (peaceful or not peaceful) can spawn within the limit search range. For individual creature species limits, see the creature json configs.
-	typeSpawnLimit = 32
+	typeSpawnLimit = 36
 	#When spawned from a vanilla spawner, this is how far a mob should search from in blocks when checking how many of its kind have already spawned. Custom Spawners have it defined in their json file instead.
 	spawnLimitRange = 32.0
 	#If true, all mobs from this mod will not spawn at all.
