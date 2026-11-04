@@ -14,9 +14,9 @@
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = []
+	"Dictates in what biome the infected spawn" = ["macabre:cracked_cliffs", "macabre:crawling_field", "macabre:deathless_valley", "macabre:decaying_meadow", "macabre:gloom_forest", "macabre:lifeless_pits", "macabre:mortem_marsh", "macabre:mortem_swamp", "macabre:mountain_maw", "macabre:rotting_field", "macabre:teething_forest", "macabre:tumor_peaks", "macabre:valley_of_eyes"]
 	#Default 40
-	MobCap = 40
+	MobCap = 50
 	#Default forge:is_cold,minecraft:deep_dark
 	"Dictates in what biome the infected will NOT spawn" = []
 

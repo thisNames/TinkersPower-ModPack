@@ -2590,7 +2590,7 @@
 		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
 		#佩戴者免疫的效果。格式同 effectsToAdd
-		effectsToRemove = ["lycanitesmobs:fear", "lycanitesmobs:insomnia"]
+		effectsToRemove = ["lycanitesmobs:fear", "lycanitesmobs:insomnia", "macabre:dread"]
 		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1
