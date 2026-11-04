@@ -14,7 +14,8 @@ bbrServer.eventThrowing(source => logger.info("throwing: " + source));
 bbrServer
     .createOutput(platform)
     .offline()
-    .copyingExplanation();
+    .copyingExplanation()
+    .buildVersion();
 
 bbrServer
     .builder(platform)

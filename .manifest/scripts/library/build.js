@@ -394,6 +394,23 @@ class BuildBuilder
     }
 
     /**
+     * 生成版本文件
+     * @returns {BuildBuilder} this
+     */
+    buildVersion()
+    {
+        const version = PT.join(this.overrides, "VERSION.txt");
+        const buffer = "v" + this.Manifest.version;
+
+        FS.writeFileSync(version, buffer, { encoding: "utf-8", flag: "w" });
+        this.additionalFile++;
+
+        this.copying && this.copying(buffer, version);
+
+        return this;
+    }
+
+    /**
      * 离线路径将 overrides 直接设置为 output（仅客户端离线、服务端使用）
      * @returns {BuildBuilder} this
      */

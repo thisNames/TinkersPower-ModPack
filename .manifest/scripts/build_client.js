@@ -16,7 +16,8 @@ bbrClient
     .createOverrides()
     .copyingManifest()
     .copyingOptionsTxt()
-    .copyingExplanation();
+    .copyingExplanation()
+    .buildVersion();
 
 bbrClient
     .builder(platform)

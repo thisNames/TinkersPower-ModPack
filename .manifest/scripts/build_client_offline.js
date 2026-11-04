@@ -15,7 +15,8 @@ bbrClientOffline
     .createOutput(platform)
     .offline()
     .copyingOptionsTxt()
-    .copyingExplanation();
+    .copyingExplanation()
+    .buildVersion();
 
 bbrClientOffline
     .builder(platform)
