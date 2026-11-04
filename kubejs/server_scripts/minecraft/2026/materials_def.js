@@ -90,6 +90,18 @@ const minecraft_materials = {
         {
             id: "enchanted_golden_apple",
             level: 1
+        },
+        {
+            id: "raw_iron",
+            level: 3
+        },
+        {
+            id: "raw_copper",
+            level: 3
+        },
+        {
+            id: "raw_gold",
+            level: 3
         }
     ]
 };

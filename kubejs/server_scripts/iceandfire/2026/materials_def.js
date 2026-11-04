@@ -26,6 +26,10 @@ const iceandfire_materials = {
         {
             id: "pixie_dust",
             level: 2
+        },
+        {
+            id: "raw_silver",
+            level: 2
         }
     ]
 };

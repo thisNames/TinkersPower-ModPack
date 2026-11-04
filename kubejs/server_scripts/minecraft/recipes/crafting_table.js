@@ -12,4 +12,11 @@ ServerEvents.recipes(event =>
 
     // 附魔瓶
     event.shapeless(_this("experience_bottle"), [_this("glass_bottle"), _create("experience_nugget")]);
+
+    // 鞍
+    event.shaped(_this("saddle"), [
+        [_this("string"), _this("iron_ingot"), _this("string")],
+        [_this("leather"), _this("leather"), _this("leather")],
+        [_this("string"), _this("iron_ingot"), _this("string")]
+    ]);
 });
