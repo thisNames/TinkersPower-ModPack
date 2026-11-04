@@ -48,22 +48,22 @@
 	depthDropperAffectsMobs = false
 	#The total health of the Land Golem, divide by two per heart. I.E a value of 300 is 150 hearts
 	#Range: 200.0 ~ 100000.0
-	landGolemHealth = 250.0
+	landGolemHealth = 320.0
 	#The total health of the Ocean Golem, divide by two per heart. I.E a value of 300 is 150 hearts
 	#Range: 250.0 ~ 100000.0
-	oceanGolemHealth = 300.0
+	oceanGolemHealth = 370.0
 	#The total health of the Core Golem, divide by two per heart. I.E a value of 300 is 150 hearts
 	#Range: 300.0 ~ 100000.0
-	coreGolemHealth = 350.0
+	coreGolemHealth = 390.0
 	#The total health of the Nether Golem, divide by two per heart. I.E a value of 300 is 150 hearts
 	#Range: 350.0 ~ 100000.0
-	netherGolemHealth = 400.0
+	netherGolemHealth = 440.0
 	#The total health of the End Golem, divide by two per heart. I.E a value of 300 is 150 hearts
 	#Range: 400.0 ~ 100000.0
-	endGolemHealth = 450.0
+	endGolemHealth = 460.0
 	#The total health of the Sky Golem, divide by two per heart. I.E a value of 300 is 150 hearts
 	#Range: 450.0 ~ 100000.0
-	skyGolemHealth = 500.0
+	skyGolemHealth = 520.0
 
 #Crashable settings -- If you edit these, and the game crashes, its on you
 [crashable]
