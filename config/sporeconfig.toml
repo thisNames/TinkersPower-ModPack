@@ -1,28 +1,28 @@
 
 ["Despawning system"]
-	"Maximum number of hyper infected" = 20
-	"Maximum number of organoids" = 40
-	"Maximum number of scents" = 30
-	"Maximum number of regular infected" = 60
-	"Maximum number of evolved infected" = 35
+	"Maximum number of hyper infected" = 10
+	"Maximum number of organoids" = 15
+	"Maximum number of scents" = 15
+	"Maximum number of regular infected" = 24
+	"Maximum number of evolved infected" = 12
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:vanguard", "spore:reaper", "spore:specter", "spore:inf_construct", "spore:scamper"]
 	"Dissable despawn system?" = false
 
 [Spawns]
-	"mob|weight|minimum|maximum" = ["spore:inf_human|80|2|5", "spore:inf_drowned|10|1|2", "spore:inf_pillager|40|1|3", "spore:inf_villager|70|1|3", "spore:inf_player|20|1|2", "spore:inf_wanderer|25|1|2", "spore:inf_witch|25|1|2", "spore:inf_diseased_villager|10|1|2"]
+	"mob|weight|minimum|maximum" = ["spore:inf_human|100|1|2", "spore:inf_drowned|13|1|1", "spore:inf_pillager|50|1|2", "spore:inf_villager|88|1|2", "spore:inf_player|25|1|1", "spore:inf_wanderer|31|1|1", "spore:inf_witch|31|1|1", "spore:inf_diseased_villager|13|1|1"]
 	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:saugling|15|1|2", "spore:inebriater|30|2|3", "spore:chemist|30|2|3", "spore:conductor|30|2|3", "spore:inf_player|20|1|2", "spore:plagued|15|1|2", "spore:lacerator|20|1|3", "spore:biobloob|10|1|2"]
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
 	"Dictates in what biome the infected spawn" = ["macabre:cracked_cliffs", "macabre:crawling_field", "macabre:deathless_valley", "macabre:decaying_meadow", "macabre:gloom_forest", "macabre:lifeless_pits", "macabre:mortem_marsh", "macabre:mortem_swamp", "macabre:mountain_maw", "macabre:rotting_field", "macabre:teething_forest", "macabre:tumor_peaks", "macabre:valley_of_eyes"]
 	#Default 40
-	MobCap = 50
+	MobCap = 40
 	#Default forge:is_cold,minecraft:deep_dark
 	"Dictates in what biome the infected will NOT spawn" = []
 
 ["Global Variables"]
 	#Default true
-	"Should a calamity load chunks?" = true
+	"Should a calamity load chunks?" = false
 	#Default true
 	"Should evolved and hyper have a damage cap on hard mode?" = true
 	"Hunger in seconds" = 300
@@ -30,7 +30,7 @@
 	"Should the infected starve overtime?" = true
 	"The amount of needed Proto Hiveminds for the world to change (Proto World Modifier)" = 3
 	#Default true
-	"Should certain mobs wear costumes on occasions?" = true
+	"Should certain mobs wear costumes on occasions?" = false
 	#Default false
 	"Move the hivemind to the surface once it forms?" = false
 	"Global Health Modifier" = 1.0
@@ -99,7 +99,7 @@
 ["Targeting Tasks"]
 	#Default false
 	"Should attack Animals?" = false
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "macabre:", "lycanitesmobs:"]
 	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true
@@ -108,9 +108,9 @@
 
 [Compatibilities]
 	#Default true
-	"Should there be a compatibility with FAW?" = true
+	"Should there be a compatibility with FAW?" = false
 	#Default true
-	"Should there be a compatibility with Sculk Infection?" = true
+	"Should there be a compatibility with Sculk Infection?" = false
 
 ["Music System"]
 	#Default true
@@ -196,7 +196,7 @@
 	"Acidic Assassin Durability" = 300
 
 [Effects]
-	"Should the effect overlays be active ?" = true
+	"Should the effect overlays be active ?" = false
 	"Mobs that are immune to the mycelium infection" = ["minecraft:ghast", "minecraft:iron_golem", "minecraft:magma_cube", "minecraft:mooshroom", "minecraft:phantom", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:wither", "minecraft:skeleton"]
 	"Mobs that are damaged by corrosion" = ["minecraft:iron_golem"]
 
@@ -213,12 +213,12 @@
 		"Minimum amount of kills to start the evolution" = 1
 		"Infected Villager Evolutions" = ["spore:slasher", "spore:leaper", "spore:spitter"]
 		#Default 600
-		"Evolution Timer in seconds for hyper" = 600
+		"Evolution Timer in seconds for hyper" = 300
 		"Infected Pillager Evolutions" = ["spore:howler", "spore:stalker", "spore:brute"]
 		#Default 300
-		"Evolution Timer in seconds" = 300
+		"Evolution Timer in seconds" = 150
 		#Default 7
-		"Minimum amount of kills to start the hyper evolution" = 7
+		"Minimum amount of kills to start the hyper evolution" = 3
 		"Infected Witch Evolutions" = ["spore:volatile", "spore:mephitic", "spore:gorgon"]
 		"Infected Husk Evolutions" = ["spore:thorn", "spore:jagd", "spore:scavenger"]
 		"Infected Drowned Evolutions" = ["spore:bloater", "spore:naiad"]
@@ -522,11 +522,11 @@
 		"Sets the base health of the Womb" = 30.0
 		#Default 100
 		#Range: > 1
-		"Sets the required biomass before it summons a calamity" = 100
+		"Sets the required biomass before it summons a calamity" = 50
 		"Mobs that are summoned for underground support" = ["spore:hohlfresser"]
 		#Default 30
 		#Range: > 1
-		"Sets the time before the Womb gains one biomass" = 30
+		"Sets the time before the Womb gains one biomass" = 15
 		#Default 5
 		#Range: > 1
 		"How much biomass does it get from consuming infected" = 5
@@ -584,11 +584,11 @@
 		"Sets Proto Melee damage" = 10.0
 		#Default 3.0
 		#Range: 0.1 ~ 1.7976931348623157E308
-		"Sets The chance for a raid to start" = 3.0
+		"Sets The chance for a raid to start" = 0.1
 		"Sentient Mobs targeted by the hivemind" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
 		#Default 15
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Chance for the death of a linked evolved infected to trigger the hivemind" = 15.0
+		"Chance for the death of a linked evolved infected to trigger the hivemind" = 40.0
 		"Mobs that the proto can summon to defend itself" = ["spore:mound", "spore:vigil", "spore:umarmed", "spore:usurper", "spore:braurei", "spore:verva", "spore:delusioner"]
 		#Default 300
 		#Range: > 1
@@ -597,14 +597,14 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Proto Max health" = 100.0
 		#Default true
-		"Should the hivemind send Vigils to raid?" = true
+		"Should the hivemind send Vigils to raid?" = false
 		#Default true
 		"Should the hivemind build a wall of flesh around itself?" = true
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Proto Armor" = 10.0
 		#Default true
-		"Should the hivemind generate a chunkloader at its location?" = true
+		"Should the hivemind generate a chunkloader at its location?" = false
 
 	[Mobs.Mephetic]
 		#Default 6
@@ -1288,7 +1288,7 @@
 		"Sets Vanguard Damage" = 12.0
 		#Default 8
 		#Range: > 2
-		"Sets The size of the Vanguard raid" = 8
+		"Sets The size of the Vanguard raid" = 3
 		#Default 8
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Vanguard Armor" = 8.0
@@ -1297,7 +1297,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Vanguard Max health" = 110.0
 		#Should a Vanguard load chunks on its way towards a village ?
-		"Default true" = true
+		"Default true" = false
 
 	[Mobs.Spitter]
 		#Default 6

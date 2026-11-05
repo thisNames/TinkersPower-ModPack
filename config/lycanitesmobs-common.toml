@@ -283,7 +283,7 @@
 	#If true, some vanilla spawns in various biomes will be removed, note that vanilla mobs should still be easy to find, only they will be more biome specific.
 	controlVanillaSpawns = false
 	#A global comma separated list of dimension ids that overrides every other spawn setting in both the configs and json spawners. Use this to quickly stop all mobs from spawning in certain dimensions, etc.
-	globalDimensionList = ""
+	globalDimensionList = "macabre:the_pit"
 	#If set to true the global dimension list acts as a whitelist, otherwise it is a blacklist.
 	globalDimensionWhitelist = false
 	#If true, newly generated dungeons wont create spawners with mobs from this mod.
