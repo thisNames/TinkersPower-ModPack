@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 24
+        }
+    ],
+    "items": [
+        "blood_clot_armor_helmet",
+        "blood_clot_armor_chestplate",
+        "blood_clot_armor_leggings",
+        "blood_clot_armor_boots"
+    ]
+}

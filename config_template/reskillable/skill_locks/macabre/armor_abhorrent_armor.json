@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 26
+        }
+    ],
+    "items": [
+        "abhorrent_armor_helmet",
+        "abhorrent_armor_chestplate",
+        "abhorrent_armor_leggings",
+        "abhorrent_armor_boots"
+    ]
+}

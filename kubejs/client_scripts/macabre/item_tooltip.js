@@ -22,12 +22,12 @@ ItemEvents.tooltip(event =>
     event.add("macabre:blood_bottle_item", Text.translatable("tooltip.macabre.blood_bottle_item").red());
 
     // 饮湿者
-    event.add("macabre:moistdrinker", Text.translatable("tooltip.macabre.moistdrinker").red());
+    event.add("macabre:moistdrinker", Text.translatable("tooltip.macabre.moistdrinker"));
 
     // 侧眼
-    event.add("macabre:sideye", Text.translatable("tooltip.macabre.sideye").red());
+    event.add("macabre:sideye", Text.translatable("tooltip.macabre.sideye").gold());
 
-    // 出血双刃
+    // 浸血巨刃
     event.addAdvanced("macabre:hemorrhage_sword", (item, advanced, text) =>
     {
         text.set(1, Text.translatable("tooltip.macabre.hemorrhage_sword").red());
@@ -35,7 +35,7 @@ ItemEvents.tooltip(event =>
         text.set(3, Text.translatable("tooltip.macabre.hemorrhage_sword.2").lightPurple());
     });
 
-    // 浸血血镰
+    // 浸血巨镰
     event.addAdvanced("macabre:true_gorescythe", (item, advanced, text) =>
     {
         text.set(1, Text.translatable("tooltip.macabre.true_gorescythe").red());

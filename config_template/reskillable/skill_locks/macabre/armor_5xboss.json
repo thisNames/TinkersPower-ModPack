@@ -1,0 +1,34 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 32
+        },
+        {
+            "id": "agility",
+            "level": 32
+        }
+    ],
+    "items": [
+        "baal_armor_helmet",
+        "baal_armor_chestplate",
+        "baal_armor_leggings",
+        "baal_armor_boots",
+        "gomoria_armor_helmet",
+        "gomoria_armor_chestplate",
+        "gomoria_armor_leggings",
+        "gomoria_armor_boots",
+        "valamon_armor_helmet",
+        "valamon_armor_chestplate",
+        "valamon_armor_leggings",
+        "valamon_armor_boots",
+        "gargamaw_armor_helmet",
+        "gargamaw_armor_chestplate",
+        "gargamaw_armor_leggings",
+        "gargamaw_armor_boots",
+        "morphegor_armor_helmet",
+        "morphegor_armor_chestplate",
+        "morphegor_armor_leggings",
+        "morphegor_armor_boots"
+    ]
+}

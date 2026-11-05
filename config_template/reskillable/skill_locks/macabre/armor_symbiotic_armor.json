@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 16
+        }
+    ],
+    "items": [
+        "symbiotic_armor_helmet",
+        "symbiotic_armor_chestplate",
+        "symbiotic_armor_leggings",
+        "symbiotic_armor_boots"
+    ]
+}

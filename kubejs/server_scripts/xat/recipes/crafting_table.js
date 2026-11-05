@@ -10,11 +10,12 @@ ServerEvents.recipes(event =>
     const _alexsc = id => "alexscaves:" + id;
     const _fboss = id => "block_factorys_bosses:" + id;
     const _tingenuity = id => "tinkers_ingenuity:" + id;
-    const _biom = id => "biomeswevegone:" + id;
     const _tp_acc = id => "tp_accessories:" + id;
     const _create = id => "create:" + id;
     const _gra = id => "graveyard:" + id;
     const _alc = id => "alcocraftplus:" + id;
+    const _deeper = id => "deeperdarker:" + id;
+    const _vinery = id => "vinery:" + id;
 
     // 旧的
     event.remove({
@@ -100,15 +101,15 @@ ServerEvents.recipes(event =>
     ]);
 
     event.shaped(_this("faelis_food"), [
-        [_this("mana_candy"), _this("faelis_claw"), _this("mana_candy")],
-        [_mc("dragon_breath"), _this("mana_crystal"), _mc("dragon_breath")],
-        [_this("mana_candy"), _mc("blue_orchid"), _this("mana_candy")]
+        [_this("mana_crystal"), _vinery("jellie_wine"), _this("mana_crystal")],
+        [_mc("dragon_breath"), _this("faelis_claw"), _mc("dragon_breath")],
+        [_deeper("bloom_berries"), _mc("blue_orchid"), _deeper("bloom_berries")]
     ]);
 
     event.shaped(_this("fairy_dew"), [
         [_this("glowing_powder"), _cata("lacrima"), _this("glowing_powder")],
         [_mc("dragon_breath"), _this("mana_crystal"), _mc("dragon_breath")],
-        [_this("glowing_powder"), _biom("blue_enchanted_sapling"), _this("glowing_powder")]
+        [_this("glowing_powder"), _deeper("ice_lily"), _this("glowing_powder")]
     ]);
 
     event.shaped(_this("goblin_soup"), [

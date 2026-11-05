@@ -1,0 +1,14 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 24
+        }
+    ],
+    "items": [
+        "plasma_armor_helmet",
+        "plasma_armor_chestplate",
+        "plasma_armor_leggings",
+        "plasma_armor_boots"
+    ]
+}
