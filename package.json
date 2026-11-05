@@ -95,6 +95,7 @@
                 "whitelist": false,
                 "list": [
                     "^optimize\\.0Pack2Reload",
+                    "^optimize\\.sodiumextras",
                     "^optimize\\.entityculling",
                     "^optimize\\.flerovium",
                     "^optimize\\.CullLessLeaves",
