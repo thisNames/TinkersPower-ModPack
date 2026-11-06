@@ -1,4 +1,16 @@
 {
     "replace": false,
-    "values": ["spore:inquisitor", "spore:brot", "spore:hevoker", "spore:wendigo", "spore:ogre", "spore:hvindicator", "spore:grober", "spore:vanguard", "spore:reaper", "spore:hollen", "spore:specter"]
+    "values": [
+        "spore:inquisitor",
+        "spore:brot",
+        "spore:hevoker",
+        "spore:wendigo",
+        "spore:ogre",
+        "spore:hvindicator",
+        "spore:grober",
+        "spore:vanguard",
+        "spore:reaper",
+        "spore:hollen",
+        "spore:specter"
+    ]
 }

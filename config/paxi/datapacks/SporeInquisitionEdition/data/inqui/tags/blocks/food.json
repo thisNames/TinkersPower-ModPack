@@ -1,23 +1,23 @@
 {
-  "values": [
-    "minecraft:sculk",
-    "minecraft:sculk_sensor",
-    "minecraft:sculk_catalyst",
-    "minecraft:sculk_shrieker",
-    "minecraft:sculk_vein",
-    "minecraft:nether_wart",
-    "minecraft:cocoa",
-    "minecraft:sweet_berry_bush",
-    "minecraft:sweet_berry_bush",
-    "minecraft:sponge",
-    "minecraft:wet_sponge",
-    "minecraft:pumpkin",
-    "minecraft:carved_pumpkin",
-    "minecraft:jack_o_lantern",
-    "minecraft:hay_block",
-    "minecraft:slime_block",
-    "minecraft:bee_nest",
-    "minecraft:honey_block",
-    "minecraft:melon"
-  ]
+    "values": [
+        "minecraft:sculk",
+        "minecraft:sculk_sensor",
+        "minecraft:sculk_catalyst",
+        "minecraft:sculk_shrieker",
+        "minecraft:sculk_vein",
+        "minecraft:nether_wart",
+        "minecraft:cocoa",
+        "minecraft:sweet_berry_bush",
+        "minecraft:sweet_berry_bush",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+        "minecraft:pumpkin",
+        "minecraft:carved_pumpkin",
+        "minecraft:jack_o_lantern",
+        "minecraft:hay_block",
+        "minecraft:slime_block",
+        "minecraft:bee_nest",
+        "minecraft:honey_block",
+        "minecraft:melon"
+    ]
 }

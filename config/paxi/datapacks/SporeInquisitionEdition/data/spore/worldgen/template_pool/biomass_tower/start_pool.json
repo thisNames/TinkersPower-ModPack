@@ -1,60 +1,42 @@
 {
-  "name": "spore:biomass_tower/start_pool",
-
-  "fallback": "minecraft:empty",
-
-  "elements": [
-    {
-      "weight": 50,
-      "element": {
-
-        "location": "spore:biomass_tower2",
-
-        "processors": "minecraft:empty",
-
-        "projection": "rigid",
-
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 25,
-      "element": {
-
-        "location": "spore:biomass_tower_tall2",
-
-        "processors": "minecraft:empty",
-
-        "projection": "rigid",
-
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 75,
-      "element": {
-
-        "location": "spore:biomass_tower_small",
-
-        "processors": "minecraft:empty",
-
-        "projection": "rigid",
-
-        "element_type": "minecraft:single_pool_element"
-      }
-    },
-    {
-      "weight": 2.5,
-      "element": {
-
-        "location": "spore:mega_biomass_towe2",
-
-        "processors": "minecraft:empty",
-
-        "projection": "rigid",
-
-        "element_type": "minecraft:single_pool_element"
-      }
-    }
-  ]
+    "name": "spore:biomass_tower/start_pool",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 50,
+            "element": {
+                "location": "spore:biomass_tower2",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        },
+        {
+            "weight": 25,
+            "element": {
+                "location": "spore:biomass_tower_tall2",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        },
+        {
+            "weight": 75,
+            "element": {
+                "location": "spore:biomass_tower_small",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        },
+        {
+            "weight": 2.5,
+            "element": {
+                "location": "spore:mega_biomass_towe2",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:single_pool_element"
+            }
+        }
+    ]
 }

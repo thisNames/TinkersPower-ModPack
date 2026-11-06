@@ -1,4 +1,30 @@
 {
-  "replace": false,
-  "values": ["spore:braiomil", "spore:knight", "spore:griefer", "spore:busser", "spore:scavenger", "spore:bloater", "spore:jagd", "spore:thorn", "spore:volatile", "spore:leaper", "spore:slasher", "spore:spitter", "spore:howler", "spore:stalker", "spore:brute", "spore:nuclea", "spore:inf_vindicator", "spore:inf_evoker", "spore:protector", "spore:inebriater", "spore:mephitic", "spore:naiad",  "spore:conductor", "spore:gargoyle", "spore:gorgon"]
+    "replace": false,
+    "values": [
+        "spore:braiomil",
+        "spore:knight",
+        "spore:griefer",
+        "spore:busser",
+        "spore:scavenger",
+        "spore:bloater",
+        "spore:jagd",
+        "spore:thorn",
+        "spore:volatile",
+        "spore:leaper",
+        "spore:slasher",
+        "spore:spitter",
+        "spore:howler",
+        "spore:stalker",
+        "spore:brute",
+        "spore:nuclea",
+        "spore:inf_vindicator",
+        "spore:inf_evoker",
+        "spore:protector",
+        "spore:inebriater",
+        "spore:mephitic",
+        "spore:naiad",
+        "spore:conductor",
+        "spore:gargoyle",
+        "spore:gorgon"
+    ]
 }

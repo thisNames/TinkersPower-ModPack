@@ -1,8 +1,8 @@
 {
-  "replace": false,
-  "values": [
-    "minecraft:string",
-    "spore:tendons",
-    "spore:nerves"
-  ]
+    "replace": false,
+    "values": [
+        "minecraft:string",
+        "spore:tendons",
+        "spore:nerves"
+    ]
 }

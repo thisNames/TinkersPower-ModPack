@@ -1,4 +1,6 @@
 {
-  "parent": "bettercombat:dagger",
-  "attributes": {"attack_range": 4}
+    "parent": "bettercombat:dagger",
+    "attributes": {
+        "attack_range": 4
+    }
 }

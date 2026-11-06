@@ -1,15 +1,14 @@
-
 {
-  "placement": {
-    "type": "minecraft:random_spread",
-    "salt": 91234567,
-    "separation": 12,
-    "spacing": 18
-  },
-  "structures": [
-    {
-      "structure": "inqui:tower",
-      "weight": 1
-    }
-  ]
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 91234567,
+        "separation": 12,
+        "spacing": 18
+    },
+    "structures": [
+        {
+            "structure": "inqui:tower",
+            "weight": 1
+        }
+    ]
 }

@@ -1,9 +1,10 @@
-  {
-  "replace": true,
-  "values": [
-    "spore:inf_drowned",
-    "spore:naiad",
-    "spore:bloater",
-    "spore:mound",
-    "spore:inf_human"
-  ]}
+{
+    "replace": true,
+    "values": [
+        "spore:inf_drowned",
+        "spore:naiad",
+        "spore:bloater",
+        "spore:mound",
+        "spore:inf_human"
+    ]
+}
