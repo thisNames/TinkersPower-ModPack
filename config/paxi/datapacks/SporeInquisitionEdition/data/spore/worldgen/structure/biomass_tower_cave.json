@@ -3,7 +3,10 @@
     "start_pool": "spore:biomass_tower/start_pool",
     "size": 2,
     "max_distance_from_center": 1,
-    "biomes": "inqui:wastes",
+    "biomes": [
+        "inqui:wastes",
+        "inqui:blighted_seas"
+    ],
     "step": "underground_structures",
     "start_height": {
         "type": "minecraft:uniform",

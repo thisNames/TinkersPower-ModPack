@@ -3,7 +3,7 @@
     "generator": {
         "biome_source": {
             "type": "minecraft:fixed",
-            "biome": "inqui:wastes"
+            "biome": "inqui:blighted_seas"
         },
         "settings": "inqui:finalitas",
         "type": "minecraft:noise"

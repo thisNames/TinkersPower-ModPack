@@ -14,7 +14,7 @@
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = []
+	"Dictates in what biome the infected spawn" = ["inqui:wastes"]
 	#Default 40
 	MobCap = 40
 	#Default forge:is_cold,minecraft:deep_dark

@@ -161,7 +161,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "inqui:wastes"
+                        "inqui:blighted_seas"
                     ]
                 },
                 "then_run": {

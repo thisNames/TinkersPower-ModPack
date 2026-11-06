@@ -12,9 +12,7 @@
         "foliage_color": 9043968
     },
     "spawners": {
-        "monster": [
-            {}
-        ]
+        "monster": []
     },
     "spawn_costs": {},
     "carvers": {

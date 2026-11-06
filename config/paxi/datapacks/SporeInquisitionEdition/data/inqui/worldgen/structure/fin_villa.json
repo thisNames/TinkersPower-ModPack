@@ -1,6 +1,9 @@
 {
     "type": "minecraft:jigsaw",
-    "biomes": "inqui:wastes",
+    "biomes": [
+        "inqui:wastes",
+        "inqui:blighted_seas"
+    ],
     "step": "underground_structures",
     "spawn_overrides": {},
     "start_height": {
