@@ -1,0 +1,22 @@
+{
+  "feature": "inqui:ground_fungal_foliage_undertale",
+  "place_on": [
+      "spore:rooted_mycelium",
+      "spore:biomass_block",
+      "spore:rooted_biomass"
+    ],
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 140
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": { "absolute": -45 },
+        "max_inclusive": { "absolute": 70 }
+      }
+    }
+  ]
+}

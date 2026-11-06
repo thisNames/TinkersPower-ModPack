@@ -1,0 +1,32 @@
+{
+  "name": "inqui:lab1/start_pool",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+
+        "location": "inqui:lab1",
+
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                }
+              ]
+            }
+          ]
+        },
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

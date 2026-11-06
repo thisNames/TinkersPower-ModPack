@@ -1,0 +1,4 @@
+{
+  "parent": "bettercombat:claw",
+  "attributes": {"attack_range": 5}
+}

@@ -1,0 +1,4 @@
+{
+  "parent": "bettercombat:hammer",
+  "attributes": {"attack_range": 7.25}
+}

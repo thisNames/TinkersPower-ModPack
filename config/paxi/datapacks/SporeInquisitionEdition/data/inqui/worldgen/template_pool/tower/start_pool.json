@@ -1,0 +1,47 @@
+{
+  "name": "inqui:tower/start_pool",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 6,
+      "element": {
+
+        "location": "inqui:tower1",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+
+        "location": "inqui:tower2",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+
+        "location": "inqui:tower3",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

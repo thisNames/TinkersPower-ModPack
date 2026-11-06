@@ -1,0 +1,4 @@
+{
+  "parent": "bettercombat:mace",
+  "attributes": {"attack_range": 6.75}
+}

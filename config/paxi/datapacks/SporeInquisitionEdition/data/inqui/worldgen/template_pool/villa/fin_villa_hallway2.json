@@ -1,0 +1,32 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 80,
+      "element": {
+        "location": "inqui:villa/fin_villa_hallway1",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "inqui:villa/fin_villa_hallway3",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "inqui:villa/fin_villa_hallway4",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

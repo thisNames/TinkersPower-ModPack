@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#spore:enchantable_armor_items",
+    "#spore:enchantable_weapon_items"
+  ]
+}

@@ -1,0 +1,15 @@
+
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 5355624,
+    "separation": 16,
+    "spacing": 48
+  },
+  "structures": [
+    {
+      "structure": "inqui:lab1",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:archaeology",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_candle",
+            "weight":10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_nugget",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone_torch",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:black_candle",
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bone",
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "weight": 10
+          }
+
+
+
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

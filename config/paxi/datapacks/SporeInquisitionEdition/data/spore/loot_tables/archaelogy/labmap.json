@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:archaeology",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:map",
+              "functions": [
+                {
+                  "function": "minecraft:exploration_map",
+                  "destination": "spore:laboratories",
+                  "decoration": "red_x",
+                  "zoom": 3,
+                  "skip_existing_chunks": false
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "name": {
+                    "translate": "stellarity.explorer_map.end_village",
+                    "fallback": "Unknown map",
+                    "color": "#ff0000",
+                    "italic": false
+                  }
+                }
+              ]
+            }
+        ],
+        "rolls": 1.0
+      }
+    ]
+  }

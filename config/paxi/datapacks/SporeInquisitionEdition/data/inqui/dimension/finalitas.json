@@ -1,0 +1,11 @@
+{
+  "type": "inqui:finalitas",
+  "generator": {
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "inqui:wastes"
+    },
+    "settings": "inqui:finalitas",
+    "type": "minecraft:noise"
+  }
+}

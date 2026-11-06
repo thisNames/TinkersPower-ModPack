@@ -1,0 +1,60 @@
+{
+  "name": "inqui:underground/start_pool",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 6,
+      "element": {
+
+        "location": "inqui:underground1",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+
+        "location": "inqui:underground2",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+
+        "location": "inqui:underground3",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+
+        "location": "inqui:underground4",
+
+        "processors": "minecraft:empty",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

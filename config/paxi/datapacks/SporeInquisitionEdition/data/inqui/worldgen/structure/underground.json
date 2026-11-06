@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:jigsaw",
+
+  "start_pool": "inqui:underground/start_pool",
+
+  "size": 2,
+
+  "max_distance_from_center": 1,
+
+  "biomes": "inqui:wastes",
+
+  "step": "underground_structures", 
+
+  "start_height":{"absolute": 0},
+
+  "use_expansion_hack": false,
+
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "spore:verva",
+          "weight": 100,
+          "minCount": 3,
+          "maxCount": 4
+        }
+      ]
+    }
+  }
+}

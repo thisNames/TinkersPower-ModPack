@@ -1,0 +1,15 @@
+
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 67219844,
+    "separation": 20,
+    "spacing": 40
+  },
+  "structures": [
+    {
+      "structure": "inqui:arena",
+      "weight": 1
+    }
+  ]
+}

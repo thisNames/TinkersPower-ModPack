@@ -1,0 +1,77 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "inqui:villa/fin_villa_animal",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "inqui:villa/fin_villa_arrow",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "location": "inqui:villa/fin_villa_carto",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "inqui:villa/fin_villa_farm",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "location": "inqui:villa/fin_villa_forge",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "inqui:villa/fin_villa_ice",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "inqui:villa/fin_villa_library",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "inqui:villa/fin_villa_lab",
+        "processors": "minecraft:empty",
+	    	"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

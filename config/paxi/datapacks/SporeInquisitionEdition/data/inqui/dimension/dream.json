@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "inqui:wastes",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 0,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 1,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 2,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 3,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 4,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 5,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 6,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 7,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 8,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 9,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 10,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 11,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 12,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 13,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 14,
+          "block": "spore:biomass_block"
+        },
+        {
+          "height": 15,
+          "block": "spore:biomass_block"
+        }
+      ]
+    }
+  }
+}

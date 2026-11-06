@@ -1,0 +1,42 @@
+{
+  "temperature": 2.0,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 7405568,
+    "fog_color": 5439488,
+    "water_color": 5701632,
+    "water_fog_color": 3014656,
+    "grass_color": 11337728,
+    "foliage_color": 9043968
+  },
+  "spawners": {
+    "monster": [
+      {}
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    "inqui:ground_fungal_foliage",
+    "inqui:ground_fungal_foliage_undertale",
+    "inqui:ground_fungal_foliage_undertale2"
+  ]
+  ]
+}

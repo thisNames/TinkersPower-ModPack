@@ -1,0 +1,104 @@
+{
+  "name": "inqui:arena/start_pool",
+
+  "fallback": "minecraft:empty",
+
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+
+        "location": "inqui:gazen",
+
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                }
+              ]
+            }
+          ]
+        },
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+
+        "location": "inqui:gazen2",
+
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                }
+              ]
+            }
+          ]
+        },
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+
+        "location": "inqui:gazen3",
+
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                }
+              ]
+            }
+          ]
+        },
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+
+        "location": "inqui:gazen4",
+
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                }
+              ]
+            }
+          ]
+        },
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

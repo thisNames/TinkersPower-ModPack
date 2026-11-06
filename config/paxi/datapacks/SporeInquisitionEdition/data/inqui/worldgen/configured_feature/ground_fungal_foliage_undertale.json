@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 30,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              { "data": { "Name": "spore:biomass_lump" }, "weight": 25 },
+              { "data": { "Name": "spore:growth_mycelium" }, "weight": 200 },
+              { "data": { "Name": "spore:biomass_bulb" }, "weight": 100 },
+              { "data": { "Name": "spore:bile_lump" }, "weight": 100 },
+              { "data": { "Name": "spore:fang_lump" }, "weight": 100 }
+            ]
+          }
+        }
+      },
+      "surface": "floor",
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:solid",
+                "offset": [0, -1, 0]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": ["minecraft:air"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

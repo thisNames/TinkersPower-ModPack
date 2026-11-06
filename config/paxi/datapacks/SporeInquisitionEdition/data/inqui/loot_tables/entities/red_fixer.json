@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spore:reforged_biomass_t",
+          "functions": [
+            {"function": "set_count", "count": 4}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spore:reforged_biomass_w",
+          "functions": [
+            {"function": "set_count", "count": 4}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spore:reforged_biomass_a",
+          "functions": [
+            {"function": "set_count", "count": 4}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spore:outpost_watcher",
+          "functions": [
+            {"function": "set_count", "count": 1}
+          ]
+        }
+      ]
+    }
+  ]
+}
