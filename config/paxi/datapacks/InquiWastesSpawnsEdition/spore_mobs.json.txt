@@ -1,0 +1,111 @@
+[
+    {
+        "name": "菌染体",
+        "desc": "普通凡感染者",
+        "level": 0,
+        "mobs": [
+            { "id": "spore:inf_human", "zh": "菌染人类", "en": "Infected Human" },
+            { "id": "spore:inf_player", "zh": "菌染冒险家", "en": "Infected Adventurer" },
+            { "id": "spore:inf_villager", "zh": "菌染村民", "en": "Infected Villager" },
+            { "id": "spore:inf_wanderer", "zh": "菌染流浪商人", "en": "Infected Wandering Trader" },
+            { "id": "spore:inf_witch", "zh": "菌染女巫", "en": "Infected Witch" },
+            { "id": "spore:inf_pillager", "zh": "菌染掠夺者", "en": "Infected Pillager" },
+            { "id": "spore:inf_drowned", "zh": "菌染溺尸", "en": "Infected Drowned" },
+            { "id": "spore:inf_husk", "zh": "菌染尸壳", "en": "Infected Husk" },
+            { "id": "spore:inf_hazmat", "zh": "菌染研究员", "en": "Infected Scientist" },
+            { "id": "spore:inf_diseased_villager", "zh": "菌染僵尸村民", "en": "Infected Diseased Villager" }
+        ]
+    },
+    {
+        "name": "实验体",
+        "desc": "一阶种",
+        "level": 1,
+        "mobs": [
+            { "id": "spore:plagued", "zh": "疫病者", "en": "Plagued" },
+            { "id": "spore:saugling", "zh": "畸尾婴", "en": "Saugling" },
+            { "id": "spore:lacerator", "zh": "撕裂者", "en": "Lacerator" },
+            { "id": "spore:biobloob", "zh": "菌染憎恶", "en": "Biobloob" }
+        ]
+    },
+    {
+        "name": "类器官生物",
+        "desc": "二阶种",
+        "level": 2,
+        "mobs": [
+            { "id": "spore:mound", "zh": "菌囊", "en": "Mound" },
+            { "id": "spore:reconstructor", "zh": "灾厄重建体", "en": "Womb" },
+            { "id": "spore:proto", "zh": "雏型蜂巢思维", "en": "Proto Hivemind" },
+            { "id": "spore:vigil", "zh": "哨戒者", "en": "Vigil" },
+            { "id": "spore:umarmed", "zh": "拥孢体", "en": "Umarmer" },
+            { "id": "spore:usurper", "zh": "僭主体", "en": "Usurper" },
+            { "id": "spore:braurei", "zh": "酿毒体", "en": "Braurei" },
+            { "id": "spore:delusioner", "zh": "妄念体", "en": "Delusioner" },
+            { "id": "spore:verva", "zh": "保育体", "en": "Verwahrung" },
+            { "id": "spore:hivetumor", "zh": "蜂脑肿瘤", "en": "Hivetumor" }
+        ]
+    },
+    {
+        "name": "感染进化体",
+        "desc": "进化种",
+        "level": 3,
+        "mobs": [
+            { "id": "spore:knight", "zh": "菌骑士", "en": "Knight" },
+            { "id": "spore:griefer", "zh": "侵袭者", "en": "Griefer" },
+            { "id": "spore:braiomil", "zh": "舔舐者", "en": "Braiomil" },
+            { "id": "spore:leaper", "zh": "激跃者", "en": "Leaper" },
+            { "id": "spore:slasher", "zh": "杀戮者", "en": "Slasher" },
+            { "id": "spore:spitter", "zh": "喷吐者", "en": "Spitter" },
+            { "id": "spore:inf_vindicator", "zh": "菌染卫道士", "en": "Infected Vindicator" },
+            { "id": "spore:inf_evoker", "zh": "菌染唤魔者", "en": "Infected Evoker" },
+            { "id": "spore:howler", "zh": "咆哮者", "en": "Howler" },
+            { "id": "spore:stalker", "zh": "追迹者", "en": "Stalker" },
+            { "id": "spore:brute", "zh": "蛮兽", "en": "Brute" },
+            { "id": "spore:busser", "zh": "邪灵", "en": "Phayres" },
+            { "id": "spore:thorn", "zh": "棘刺者", "en": "Verdathorn" },
+            { "id": "spore:volatile", "zh": "巫猎饕", "en": "Volatile" },
+            { "id": "spore:nuclea", "zh": "纳克拉维", "en": "Nuckelavee" },
+            { "id": "spore:bloater", "zh": "深潜者", "en": "Bloater" },
+            { "id": "spore:scavenger", "zh": "食腐鹫", "en": "Scavenger" },
+            { "id": "spore:jagd", "zh": "潜猎兽", "en": "Jagdhund" },
+            { "id": "spore:protector", "zh": "守护者", "en": "Protector" },
+            { "id": "spore:inebriater", "zh": "酗酒者", "en": "Inebriater" },
+            { "id": "spore:mephitic", "zh": "恶涎者", "en": "Mephitic" },
+            { "id": "spore:chemist", "zh": "药剂师", "en": "Chemist" },
+            { "id": "spore:naiad", "zh": "塞壬", "en": "Naiad" },
+            { "id": "spore:conductor", "zh": "导电者", "en": "Conductor" },
+            { "id": "spore:gargoyle", "zh": "石像鬼", "en": "Gargoyle" },
+            { "id": "spore:gorgon", "zh": "戈尔工", "en": "Gorgon" }
+        ]
+    },
+    {
+        "name": "超进化",
+        "desc": "高阶种",
+        "level": 4,
+        "mobs": [
+            { "id": "spore:wendigo", "zh": "林中鹿菌", "en": "Wendigo" },
+            { "id": "spore:inquisitor", "zh": "审判者", "en": "Inquisitor" },
+            { "id": "spore:brot", "zh": "长舌魔", "en": "Brotkatze" },
+            { "id": "spore:ogre", "zh": "食人魔", "en": "Ogre" },
+            { "id": "spore:hevoker", "zh": "邪菌术士", "en": "Hexenmeister" },
+            { "id": "spore:hvindicator", "zh": "铁斧投手", "en": "Axtwerfer" },
+            { "id": "spore:grober", "zh": "金刚兽", "en": "Groberfub" },
+            { "id": "spore:hollen", "zh": "坠狱兽", "en": "Hollenhund" }
+        ]
+    },
+    {
+        "name": "灾难生物",
+        "desc": "原始种",
+        "level": 5,
+        "mobs": [
+            { "id": "spore:sieger", "zh": "强袭魔", "en": "Sieger" },
+            { "id": "spore:gazenbreacher", "zh": "凝袭魔", "en": "GazenBreacher" },
+            { "id": "spore:hindenburg", "zh": "菌械空堡", "en": "Hindenburg" },
+            { "id": "spore:howitzer", "zh": "菌械重炮", "en": "Howitzer" },
+            { "id": "spore:hohlfresser", "zh": "噬袭魔", "en": "Hohlfresser" },
+            { "id": "spore:kraken", "zh": "沉渊魔", "en": "Grakensenker" },
+            { "id": "spore:stahl", "zh": "蚀刃魔", "en": "Stahlmorder" },
+            { "id": "spore:leviathan", "zh": "破舰魔", "en": "Leviathan" },
+            { "id": "spore:verfall", "zh": "朽翼魔", "en": "Verfalldrache" }
+        ]
+    }
+]
