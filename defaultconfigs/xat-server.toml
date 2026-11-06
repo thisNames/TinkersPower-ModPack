@@ -1230,65 +1230,7 @@
 				"deeperdarker:warden_helmet;0.08",
 				"deeperdarker:warden_chestplate;0.12",
 				"deeperdarker:warden_leggings;0.09",
-				"deeperdarker:warden_boots;0.07",
-				
-				# ===== Macabre 血肉维度 盔甲重量 =====
-				# 共生（活体血肉）
-				"macabre:symbiotic_armor_helmet;0.07",
-				"macabre:symbiotic_armor_chestplate;0.15",
-				"macabre:symbiotic_armor_leggings;0.09",
-				"macabre:symbiotic_armor_boots;0.05",
-				# 血凝（凝血硬块，中）
-				"macabre:blood_clot_armor_helmet;0.075",
-				"macabre:blood_clot_armor_chestplate;0.16",
-				"macabre:blood_clot_armor_leggings;0.095",
-				"macabre:blood_clot_armor_boots;0.055",
-				# 血浆（致密血质，中重）
-				"macabre:plasma_armor_helmet;0.08",
-				"macabre:plasma_armor_chestplate;0.17",
-				"macabre:plasma_armor_leggings;0.1",
-				"macabre:plasma_armor_boots;0.06",
-				# 灰铁（铁质，中轻）
-				"macabre:ferrum_armor_helmet;0.06",
-				"macabre:ferrum_armor_chestplate;0.14",
-				"macabre:ferrum_armor_leggings;0.08",
-				"macabre:ferrum_armor_boots;0.045",
-				# 憎恨（硬质骨血，中重）
-				"macabre:abhorrent_armor_helmet;0.08",
-				"macabre:abhorrent_armor_chestplate;0.17",
-				"macabre:abhorrent_armor_leggings;0.1",
-				"macabre:abhorrent_armor_boots;0.06",
-				# 皮囊（薄皮肉膜，最轻）
-				"macabre:skinsuit_helmet;0.03",
-				"macabre:skinsuit_chestplate;0.08",
-				"macabre:skinsuit_leggings;0.04",
-				"macabre:skinsuit_boots;0.025",
-				# Boss 五件套（顶级重型）
-				# 巴尔
-				"macabre:baal_armor_helmet;0.1",
-				"macabre:baal_armor_chestplate;0.2",
-				"macabre:baal_armor_leggings;0.13",
-				"macabre:baal_armor_boots;0.08",
-				# 戈莫瑞亚
-				"macabre:gomoria_armor_helmet;0.1",
-				"macabre:gomoria_armor_chestplate;0.2",
-				"macabre:gomoria_armor_leggings;0.13",
-				"macabre:gomoria_armor_boots;0.08",
-				# 瓦拉蒙
-				"macabre:valamon_armor_helmet;0.1",
-				"macabre:valamon_armor_chestplate;0.2",
-				"macabre:valamon_armor_leggings;0.13",
-				"macabre:valamon_armor_boots;0.08",
-				# 加加莫
-				"macabre:gargamaw_armor_helmet;0.1",
-				"macabre:gargamaw_armor_chestplate;0.2",
-				"macabre:gargamaw_armor_leggings;0.13",
-				"macabre:gargamaw_armor_boots;0.08",
-				# 莫非格
-				"macabre:morphegor_armor_helmet;0.1",
-				"macabre:morphegor_armor_chestplate;0.2",
-				"macabre:morphegor_armor_leggings;0.13",
-				"macabre:morphegor_armor_boots;0.08"
+				"deeperdarker:warden_boots;0.07"
 			]
 
 			[races.faelis.abilities.climbing]
@@ -2648,7 +2590,7 @@
 		#佩戴时获得的效果。格式：[modid:]effect[:duration[:amplifier]]
 		effectsToAdd = []
 		#佩戴者免疫的效果。格式同 effectsToAdd
-		effectsToRemove = ["lycanitesmobs:fear", "lycanitesmobs:insomnia", "macabre:dread"]
+		effectsToRemove = ["lycanitesmobs:fear", "lycanitesmobs:insomnia"]
 		#伤害规则。格式：[onAttacked:|onHurt:|onDamaged:][eleFire:]type[;category][;[isTrue:]entity][;maxDamage[;multiplier]]
 		#类型：* / 旧版 ID(inFire, mob) / 注册表 ID / #标签；类别：isFire, isMagic, isIce, isPoison……；倍率默认为 0(免疫)
 		#示例：onHurt:*;isFire;isTrue:minecraft:blaze;5.0;0.1

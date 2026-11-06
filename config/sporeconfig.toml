@@ -14,7 +14,7 @@
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = ["macabre:cracked_cliffs", "macabre:crawling_field", "macabre:deathless_valley", "macabre:decaying_meadow", "macabre:gloom_forest", "macabre:lifeless_pits", "macabre:mortem_marsh", "macabre:mortem_swamp", "macabre:mountain_maw", "macabre:rotting_field", "macabre:teething_forest", "macabre:tumor_peaks", "macabre:valley_of_eyes"]
+	"Dictates in what biome the infected spawn" = []
 	#Default 40
 	MobCap = 40
 	#Default forge:is_cold,minecraft:deep_dark
@@ -99,7 +99,7 @@
 ["Targeting Tasks"]
 	#Default false
 	"Should attack Animals?" = false
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "macabre:", "lycanitesmobs:"]
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "lycanitesmobs:"]
 	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true

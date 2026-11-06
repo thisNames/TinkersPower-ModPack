@@ -119,7 +119,7 @@
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:bat" - Ignores bats only
 				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
-				whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*", "twilightforest:*", "cataclysm:*", "block_factorys_bosses:*", "aquamirae:captain_cornelia", "lycanitesmobs:rahovart", "lycanitesmobs:amalgalich", "lycanitesmobs:asmodeus", "tide:*", "lycanitesmobs:nymph", "deeperdarker:stalker", "macabre:baal", "macabre:gomoria", "macabre:valamon", "macabre:gargamaw", "macabre:morphegor"]
+				whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*", "twilightforest:*", "cataclysm:*", "block_factorys_bosses:*", "aquamirae:captain_cornelia", "lycanitesmobs:rahovart", "lycanitesmobs:amalgalich", "lycanitesmobs:asmodeus", "tide:*", "lycanitesmobs:nymph", "deeperdarker:stalker"]
 
 	[embeddiumextras.others]
 		#Configure if borderless fullscreen option should be attached to F11 or replace vanilla fullscreen

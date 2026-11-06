@@ -85,12 +85,7 @@
         "spore:sickle",
         "spore:halberd",
         "spore:knife",
-        "spore:rapier",
-
-        "macabre:hemorrhage_sword",
-        "macabre:moistdrinker",
-        "macabre:sideye",
-        "macabre:true_gorescythe"
+        "spore:rapier"
     ],
     "item_tags": [],
     "class": [

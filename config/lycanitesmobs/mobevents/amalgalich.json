@@ -9,7 +9,7 @@
         {
             "type": "world",
             "dimensionIds": [
-                "macabre:the_pit"
+                "minecraft:the_nether"
             ],
             "dimensionListType": "whitelist"
         },
