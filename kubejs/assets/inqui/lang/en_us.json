@@ -1,6 +1,31 @@
 {
+    "advancements.inqui.has_dream_clock.title": "Fungal Taint",
+    "advancements.inqui.has_dream_clock.description": "Connected to another world...",
+    "advancements.inqui.enter_dream.title": "Rotten Dream",
+    "advancements.inqui.enter_dream.description": "Arrive at: Rotting Dreamplain",
+    "advancements.inqui.has_finalitas_clock.title": "Dusk",
+    "advancements.inqui.has_finalitas_clock.description": "We need to go deeper...",
+    "advancements.inqui.enter_finalitas.title": "Fungal Dominion",
+    "advancements.inqui.enter_finalitas.description": "Arrive at: Terminal Fungal Court",
+
     "biome.inqui.wastes": "Sea of dreams",
     "biome.inqui.blighted_seas": "Blighted Abyss",
+
     "dimension.inqui.finalitas": "Terminal Fungal Court",
-    "dimension.inqui.dream": "Rotting Dreamplain"
+    "dimension.inqui.dream": "Rotting Dreamplain",
+
+    "item_group.inqui.items": "Terminal Fungal Court: Items",
+    
+    "item.inqui.bacterium_clock_dream": "Rotten Dream Clock",
+    "item.inqui.bacterium_clock_finalitas": "Fungal Court Dusk",
+
+    "tooltip.inqui.bacterium_clock_dream": "Overworld: Use on a red bed",
+    "tooltip.inqui.bacterium_clock_dream.1": "To: Rotting Dreamplain - Sea of dreams",
+    "tooltip.inqui.bacterium_clock_dream.2": "You will wake at x0 y200 z0",
+    "tooltip.inqui.bacterium_clock_dream.3": "You are fully prepared. There is no coming back...",
+
+    "tooltip.inqui.bacterium_clock_finalitas": "Rotting Dreamplain: Use on a purple bed",
+    "tooltip.inqui.bacterium_clock_finalitas.1": "To: Terminal Fungal Court - Blighted Abyss",
+    "tooltip.inqui.bacterium_clock_finalitas.2": "You will wake at x0 y300 z0",
+    "tooltip.inqui.bacterium_clock_finalitas.3": "A deeper dream..."
 }

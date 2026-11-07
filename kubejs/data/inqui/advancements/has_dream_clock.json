@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "inqui:bacterium_clock_dream"
+        },
+        "title": {
+            "translate": "advancements.inqui.has_dream_clock.title"
+        },
+        "description": {
+            "translate": "advancements.inqui.has_dream_clock.description"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "biomesoplenty:textures/block/flesh.png"
+    },
+    "criteria": {
+        "has_dream_clock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "inqui:bacterium_clock_dream"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_dream_clock"
+        ]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "parent": "inqui:has_dream_clock",
+    "display": {
+        "icon": {
+            "item": "spore:mutated_heart"
+        },
+        "title": {
+            "translate": "advancements.inqui.enter_dream.title"
+        },
+        "description": {
+            "translate": "advancements.inqui.enter_dream.description"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "enter_dream": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "inqui:dream"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "enter_dream"
+        ]
+    ]
+}

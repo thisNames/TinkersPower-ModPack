@@ -1,0 +1,31 @@
+{
+    "parent": "inqui:has_finalitas_clock",
+    "display": {
+        "icon": {
+            "item": "spore:living_core"
+        },
+        "title": {
+            "translate": "advancements.inqui.enter_finalitas.title"
+        },
+        "description": {
+            "translate": "advancements.inqui.enter_finalitas.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "enter_finalitas": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "inqui:finalitas"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "enter_finalitas"
+        ]
+    ]
+}

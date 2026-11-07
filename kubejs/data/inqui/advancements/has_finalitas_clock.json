@@ -1,0 +1,37 @@
+{
+    "parent": "inqui:enter_dream",
+    "display": {
+        "icon": {
+            "item": "inqui:bacterium_clock_finalitas"
+        },
+        "title": {
+            "translate": "advancements.inqui.has_finalitas_clock.title"
+        },
+        "description": {
+            "translate": "advancements.inqui.has_finalitas_clock.description"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "has_finalitas_clock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "inqui:bacterium_clock_finalitas"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_finalitas_clock"
+        ]
+    ]
+}

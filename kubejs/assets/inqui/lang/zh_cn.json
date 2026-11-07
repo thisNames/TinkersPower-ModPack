@@ -1,6 +1,31 @@
 {
+    "advancements.inqui.has_dream_clock.title": "菌染",
+    "advancements.inqui.has_dream_clock.description": "连接着另一个世界……",
+    "advancements.inqui.enter_dream.title": "腐梦",
+    "advancements.inqui.enter_dream.description": "到达：腐梦浮原",
+    "advancements.inqui.has_finalitas_clock.title": "暮时",
+    "advancements.inqui.has_finalitas_clock.description": "我们需要更深入些……",
+    "advancements.inqui.enter_finalitas.title": "菌临天下",
+    "advancements.inqui.enter_finalitas.description": "到达：终焉菌庭",
+
     "biome.inqui.wastes": "至梦之海",
     "biome.inqui.blighted_seas": "菌殁之渊",
+
     "dimension.inqui.finalitas": "终焉菌庭",
-    "dimension.inqui.dream": "腐梦浮原"
+    "dimension.inqui.dream": "腐梦浮原",
+
+    "item_group.inqui.items": "终焉菌庭：物品",
+
+    "item.inqui.bacterium_clock_dream": "腐梦时钟",
+    "item.inqui.bacterium_clock_finalitas": "菌庭暮时",
+    
+    "tooltip.inqui.bacterium_clock_dream": "主世界维度：对红色床使用",
+    "tooltip.inqui.bacterium_clock_dream.1": "前往：腐梦浮原-至梦之海",
+    "tooltip.inqui.bacterium_clock_dream.2": "会在 x0 y200 z0 处醒来",
+    "tooltip.inqui.bacterium_clock_dream.3": "你已经做好完全准备，这一去将不复返……",
+    
+    "tooltip.inqui.bacterium_clock_finalitas": "腐梦浮原维度：对紫色床使用",
+    "tooltip.inqui.bacterium_clock_finalitas.1": "前往：终焉菌庭-菌殁之渊",
+    "tooltip.inqui.bacterium_clock_finalitas.2": "会在 x0 y300 z0 处醒来",
+    "tooltip.inqui.bacterium_clock_finalitas.3": "更深的梦……"
 }
