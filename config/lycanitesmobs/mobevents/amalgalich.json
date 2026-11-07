@@ -12,10 +12,6 @@
                 "inqui:finalitas"
             ],
             "dimensionListType": "whitelist"
-        },
-        {
-            "type": "player",
-            "spawnDistanceMin": 500
         }
     ],
     "levelBoostMax": 0,
