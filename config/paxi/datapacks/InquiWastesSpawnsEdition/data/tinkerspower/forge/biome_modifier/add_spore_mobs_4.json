@@ -9,25 +9,25 @@
             "type": "spore:wendigo",
             "weight": 3,
             "minCount": 1,
-            "maxCount": 2
+            "maxCount": 1
         },
         {
             "type": "spore:inquisitor",
             "weight": 3,
             "minCount": 1,
-            "maxCount": 2
+            "maxCount": 1
         },
         {
             "type": "spore:brot",
             "weight": 3,
             "minCount": 1,
-            "maxCount": 2
+            "maxCount": 1
         },
         {
             "type": "spore:ogre",
             "weight": 3,
             "minCount": 1,
-            "maxCount": 2
+            "maxCount": 1
         },
         {
             "type": "spore:hevoker",
@@ -45,7 +45,7 @@
             "type": "spore:grober",
             "weight": 3,
             "minCount": 1,
-            "maxCount": 2
+            "maxCount": 1
         },
         {
             "type": "spore:hollen",

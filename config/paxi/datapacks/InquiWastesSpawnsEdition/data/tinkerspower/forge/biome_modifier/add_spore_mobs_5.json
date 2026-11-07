@@ -6,19 +6,19 @@
     "spawners": [
         {
             "type": "spore:sieger",
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1
         },
         {
             "type": "spore:gazenbreacher",
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1
         },
         {
             "type": "spore:hindenburg",
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1
         },

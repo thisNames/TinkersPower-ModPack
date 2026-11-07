@@ -1,10 +1,10 @@
 
 ["Despawning system"]
-	"Maximum number of hyper infected" = 10
-	"Maximum number of organoids" = 15
-	"Maximum number of scents" = 15
-	"Maximum number of regular infected" = 24
-	"Maximum number of evolved infected" = 12
+	"Maximum number of hyper infected" = 5
+	"Maximum number of organoids" = 5
+	"Maximum number of scents" = 8
+	"Maximum number of regular infected" = 12
+	"Maximum number of evolved infected" = 6
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:vanguard", "spore:reaper", "spore:specter", "spore:inf_construct", "spore:scamper"]
 	"Dissable despawn system?" = false
 
@@ -14,9 +14,9 @@
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = ["inqui:wastes"]
+	"Dictates in what biome the infected spawn" = ["inqui:wastes", "inqui:blighted_seas"]
 	#Default 40
-	MobCap = 40
+	MobCap = 25
 	#Default forge:is_cold,minecraft:deep_dark
 	"Dictates in what biome the infected will NOT spawn" = []
 
@@ -99,7 +99,7 @@
 ["Targeting Tasks"]
 	#Default false
 	"Should attack Animals?" = false
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "lycanitesmobs:", "alexscaves:", "aquamirae:", "block_factorys_bosses:", "cataclysm:", "iceandfire:", "twilightforest:"]
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "lycanitesmobs:", "alexscaves:", "aquamirae:", "block_factorys_bosses:", "cataclysm:", "iceandfire:", "twilightforest:", "spore:"]
 	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true
@@ -218,7 +218,7 @@
 		#Default 300
 		"Evolution Timer in seconds" = 250
 		#Default 7
-		"Minimum amount of kills to start the hyper evolution" = 4
+		"Minimum amount of kills to start the hyper evolution" = 3
 		"Infected Witch Evolutions" = ["spore:volatile", "spore:mephitic", "spore:gorgon"]
 		"Infected Husk Evolutions" = ["spore:thorn", "spore:jagd", "spore:scavenger"]
 		"Infected Drowned Evolutions" = ["spore:bloater", "spore:naiad"]
