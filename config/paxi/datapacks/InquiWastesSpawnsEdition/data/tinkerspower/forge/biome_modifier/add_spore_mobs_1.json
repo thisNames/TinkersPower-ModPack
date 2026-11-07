@@ -1,0 +1,32 @@
+{
+    "type": "forge:add_spawns",
+    "biomes": [
+        "inqui:wastes"
+    ],
+    "spawners": [
+        {
+            "type": "spore:lacerator",
+            "weight": 10,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:plagued",
+            "weight": 8,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:saugling",
+            "weight": 8,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:biobloob",
+            "weight": 5,
+            "minCount": 1,
+            "maxCount": 1
+        }
+    ]
+}

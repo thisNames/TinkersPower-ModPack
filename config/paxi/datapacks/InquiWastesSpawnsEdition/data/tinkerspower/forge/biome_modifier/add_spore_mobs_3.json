@@ -1,0 +1,164 @@
+{
+    "type": "forge:add_spawns",
+    "biomes": [
+        "inqui:wastes"
+    ],
+    "spawners": [
+        {
+            "type": "spore:knight",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:griefer",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:braiomil",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:leaper",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:slasher",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:spitter",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:inf_vindicator",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:inf_evoker",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:howler",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:stalker",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:brute",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:busser",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:thorn",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:volatile",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:nuclea",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:bloater",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:scavenger",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:jagd",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:protector",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:inebriater",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:mephitic",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:chemist",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:naiad",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:conductor",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:gargoyle",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:gorgon",
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 1
+        }
+    ]
+}

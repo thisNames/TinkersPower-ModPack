@@ -1,0 +1,57 @@
+{
+    "type": "forge:add_spawns",
+    "biomes": [
+        "inqui:wastes",
+        "inqui:blighted_seas"
+    ],
+    "spawners": [
+        {
+            "type": "spore:wendigo",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:inquisitor",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:brot",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:ogre",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:hevoker",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:hvindicator",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:grober",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        },
+        {
+            "type": "spore:hollen",
+            "weight": 3,
+            "minCount": 1,
+            "maxCount": 2
+        }
+    ]
+}

@@ -99,7 +99,7 @@
 ["Targeting Tasks"]
 	#Default false
 	"Should attack Animals?" = false
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "lycanitesmobs:"]
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:", "lycanitesmobs:", "alexscaves:", "aquamirae:", "block_factorys_bosses:", "cataclysm:", "iceandfire:", "twilightforest:"]
 	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit"]
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true
@@ -213,12 +213,12 @@
 		"Minimum amount of kills to start the evolution" = 1
 		"Infected Villager Evolutions" = ["spore:slasher", "spore:leaper", "spore:spitter"]
 		#Default 600
-		"Evolution Timer in seconds for hyper" = 300
+		"Evolution Timer in seconds for hyper" = 400
 		"Infected Pillager Evolutions" = ["spore:howler", "spore:stalker", "spore:brute"]
 		#Default 300
-		"Evolution Timer in seconds" = 150
+		"Evolution Timer in seconds" = 250
 		#Default 7
-		"Minimum amount of kills to start the hyper evolution" = 3
+		"Minimum amount of kills to start the hyper evolution" = 4
 		"Infected Witch Evolutions" = ["spore:volatile", "spore:mephitic", "spore:gorgon"]
 		"Infected Husk Evolutions" = ["spore:thorn", "spore:jagd", "spore:scavenger"]
 		"Infected Drowned Evolutions" = ["spore:bloater", "spore:naiad"]

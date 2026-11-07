@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:overworld",
+    "type": "inqui:dream",
     "generator": {
         "type": "minecraft:flat",
         "settings": {

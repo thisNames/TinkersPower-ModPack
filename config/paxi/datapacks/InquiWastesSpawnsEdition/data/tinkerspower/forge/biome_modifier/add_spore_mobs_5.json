@@ -1,0 +1,62 @@
+{
+    "type": "forge:add_spawns",
+    "biomes": [
+        "inqui:blighted_seas"
+    ],
+    "spawners": [
+        {
+            "type": "spore:sieger",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:gazenbreacher",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:hindenburg",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:howitzer",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:hohlfresser",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:kraken",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:stahl",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:leviathan",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        },
+        {
+            "type": "spore:verfall",
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1
+        }
+    ]
+}
