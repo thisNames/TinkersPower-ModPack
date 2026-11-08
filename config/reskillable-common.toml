@@ -26,13 +26,13 @@ attackAttribute = "minecraft:generic.attack_damage"
 #Operation for the Attack skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
 attackOperation = "MULTIPLY_TOTAL"
 #Range: 0.0 ~ 10.0
-attackDamageBonus = 0.125
+attackDamageBonus = 0.05
 #The registry ID of the attribute to use for the Defense skill.
 defenseAttribute = "minecraft:generic.armor"
 #Operation for the Defense skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
 defenseOperation = "MULTIPLY_TOTAL"
 #Range: 0.0 ~ 10.0
-DefenseBonus = 0.1
+DefenseBonus = 0.05
 #The registry ID of the attribute to use for the Agility skill.
 agilityAttribute = "minecraft:generic.movement_speed"
 #Operation for the Agility skill perk. Valid: ADDITION, MULTIPLY_BASE, MULTIPLY_TOTAL
@@ -52,9 +52,9 @@ buildingOperation = "ADDITION"
 #Range: 0.0 ~ 5.0
 "Building Bonus" = 0.25
 #Range: 0.0 ~ 5.0
-miningSpeedMultiplier = 0.25
+miningSpeedMultiplier = 0.2
 #Range: 0.0 ~ 1.0
-"Farming Bonus" = 0.25
+"Farming Bonus" = 0.2
 #Bonus XP multiplier per 5 levels of Gathering (e.g., 0.05 = +5% XP per step)
 #Range: 0.0 ~ 1.0
 "gathering Bonus" = 0.05
