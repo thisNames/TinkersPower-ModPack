@@ -359,10 +359,10 @@
 	"Dragonsteel Sword Base Attack Strength" = 25.0
 	#Default armor value of dragonsteel chestplate.
 	#Range: > 7
-	"Dragonsteel Base Armor" = 14
+	"Dragonsteel Base Armor" = 12
 	#Default armor toughness value of dragonsteel.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	"Dragonsteel Base Armor Toughness" = 7.0
+	"Dragonsteel Base Armor Toughness" = 3.0
 	#Default durability value of dragonsteel tools.
 	#Range: > 1
 	"Dragonsteel Base Durability" = 1600

@@ -44,9 +44,9 @@ highContrast:false
 incompatibleResourcePacks:[]
 invertYMouse:false
 joinedFirstServer:true
-key_artifacts.key.helium_flamingo.activate:key.keyboard.i
-key_artifacts.key.night_vision_goggles.toggle:key.keyboard.i
-key_artifacts.key.universal_attractor.toggle:key.keyboard.i
+key_artifacts.key.helium_flamingo.activate:key.keyboard.unknown
+key_artifacts.key.night_vision_goggles.toggle:key.keyboard.unknown
+key_artifacts.key.universal_attractor.toggle:key.keyboard.unknown
 key_create.keyinfo.rotate_menu:key.keyboard.unknown
 key_create.keyinfo.toolbelt:key.keyboard.unknown
 key_create.keyinfo.toolmenu:key.keyboard.left.control

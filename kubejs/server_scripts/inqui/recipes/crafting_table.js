@@ -10,7 +10,7 @@ ServerEvents.recipes(event =>
 
     // 腐梦时钟
     event.shaped(_this("bacterium_clock_dream"), [
-        [_biom("porous_flesh"),_chimes("copper_chimes"), _biom("porous_flesh")],
+        [_biom("porous_flesh"),_chimes("carved_bamboo_chimes"), _biom("porous_flesh")],
         [_biom("eyebulb"), _mc("clock"), _biom("eyebulb")],
         [_biom("porous_flesh"), _gra("corruption"), _biom("porous_flesh")]
     ]);

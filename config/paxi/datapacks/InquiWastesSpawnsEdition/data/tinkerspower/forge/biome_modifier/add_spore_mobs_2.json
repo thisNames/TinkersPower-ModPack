@@ -1,21 +1,10 @@
 {
     "type": "forge:add_spawns",
     "biomes": [
-        "inqui:wastes"
+        "inqui:wastes",
+        "inqui:blighted_seas"
     ],
     "spawners": [
-        {
-            "type": "spore:mound",
-            "weight": 3,
-            "minCount": 1,
-            "maxCount": 1
-        },
-        {
-            "type": "spore:vigil",
-            "weight": 3,
-            "minCount": 1,
-            "maxCount": 1
-        },
         {
             "type": "spore:delusioner",
             "weight": 3,
@@ -25,12 +14,6 @@
         {
             "type": "spore:umarmed",
             "weight": 3,
-            "minCount": 1,
-            "maxCount": 1
-        },
-        {
-            "type": "spore:verva",
-            "weight": 2,
             "minCount": 1,
             "maxCount": 1
         },
@@ -48,19 +31,7 @@
         },
         {
             "type": "spore:proto",
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1
-        },
-        {
-            "type": "spore:hivetumor",
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1
-        },
-        {
-            "type": "spore:reconstructor",
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1
         }

@@ -389,21 +389,21 @@
 
 		[Items.item.equipment]
 			#A list of ids for items that grant a low amount of Equipment Sharpness.
-			lowEquipmentSharpnessItems = ["minecraft:flint", "minecraft:bone"]
+			lowEquipmentSharpnessItems = []
 			#A list of ids for items that grant a medium amount of Equipment Sharpness.
-			mediumEquipmentSharpnessItems = ["minecraft:iron_ingot", "minecraft:quartz"]
+			mediumEquipmentSharpnessItems = []
 			#A list of ids for items that grant a high amount of Equipment Sharpness.
-			highEquipmentSharpnessItems = ["minecraft:diamond", "minecraft:emerald", "minecraft:prismarine_shard"]
+			highEquipmentSharpnessItems = []
 			#A list of ids for items that grant a maximum amount of Equipment Sharpness.
-			maxEquipmentSharpnessItems = ["minecraft:netherite_ingot", "minecraft:prismarine_crystal"]
+			maxEquipmentSharpnessItems = []
 			#A list of ids for items that grant a low amount of Equipment Mana.
-			lowEquipmentManaItems = ["minecraft:redstone", "minecraft:glowstone_dust", "minecraft:slime_ball"]
+			lowEquipmentManaItems = []
 			#A list of ids for items that grant a medium amount of Equipment Mana.
-			mediumEquipmentManaItems = ["minecraft:lapis_lazuli", "minecraft:blaze_powder", "minecraft:gunpowder", "minecraft:phantom_membrane", "lycanitesmobs:frostyfur", "lycanitesmobs:poisongland", "lycanitesmobs:geistliver"]
+			mediumEquipmentManaItems = []
 			#A list of ids for items that grant a high amount of Equipment Mana.
-			highEquipmentManaItems = ["minecraft:experience_bottle", "minecraft:magma_cream"]
+			highEquipmentManaItems = []
 			#A list of ids for items that grant a maximum amount of Equipment Mana.
-			maxEquipmentManaItems = ["minecraft:nether_star"]
+			maxEquipmentManaItems = []
 
 ["Mob Events"]
 	#These are various settings that apply to all mob events.

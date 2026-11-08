@@ -47,6 +47,10 @@
     "item.kubejs.tooltip.chimes.amethyst_chimes.1": "紫水晶十分脆弱，不能系在支撑物上面",
     "item.kubejs.tooltip.chimes.glass_bells": "通过合成自定义颜色，风铃下方会悬挂短册",
 
+    "item.kubejs.tooltip.bountifulbaubles.recall": "只能在主世界使用",
+    "item.kubejs.tooltip.bountifulbaubles.wormhole": "出发点必须在主世界",
+    "item.kubejs.tooltip.bountifulbaubles.phylactery_charm": "但是可以通过死亡的方式跨越维度（被动技能）",
+
     "loot.kubejs.tooltip.artifacts.crystal_heart": "科妮莉亚之心",
     "loot.kubejs.tooltip.artifacts.crystal_heart_vow": "即使冰封许久……这颗心依旧火热",
     "loot.kubejs.tooltip.artifacts.power_glove": "大地之力（+999-1000+5）",
@@ -101,5 +105,7 @@
     "loot.kubejs.tooltip.xat.moon_rose_frie": "火玫瑰",
 
     "food.kubejs.tooltip.sinful_food": "给予更高等级的罪恶效果（来自暴食吊坠）",
-    "food.kubejs.tooltip.luck_food": "给予 10 级幸运效果"
+    "food.kubejs.tooltip.luck_food": "给予 10 级幸运效果",
+
+    "tell.kubejs.tooltip.bountifulbaubles_teleport": "%s 你的目标太过遥远！"
 }

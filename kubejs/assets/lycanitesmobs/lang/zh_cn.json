@@ -261,7 +261,7 @@
   "equipment.level": "等级：",
   "equipment.sharpness": "锋利度",
   "equipment.mana": "魔力",
-  "equipment.item.repair": "该物品可用于修复手工制作的装备。",
+  "equipment.item.repair": "该物品可用于修复手工制作的装备（恐怖生物武器已被禁用）",
   "equipment.feature.slot": "增加格子：",
   "equipment.feature.damage": "伤害：",
   "equipment.feature.damage.cooldown": "冷却时间：",

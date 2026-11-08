@@ -6,6 +6,7 @@ let alexscaves_ban_items_server = [
 	"alexscaves:tremorzilla_egg",
 	"alexscaves:sugar_staff",
 	"alexscaves:biome_treat",
+	"alexscaves:galena_gauntlet",
 ];
 let alexscaves_ban_wearables_server = [
 ];

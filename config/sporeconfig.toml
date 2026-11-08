@@ -1,9 +1,9 @@
 
 ["Despawning system"]
-	"Maximum number of hyper infected" = 5
-	"Maximum number of organoids" = 5
-	"Maximum number of scents" = 8
-	"Maximum number of regular infected" = 12
+	"Maximum number of hyper infected" = 3
+	"Maximum number of organoids" = 3
+	"Maximum number of scents" = 6
+	"Maximum number of regular infected" = 8
 	"Maximum number of evolved infected" = 6
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:vanguard", "spore:reaper", "spore:specter", "spore:inf_construct", "spore:scamper"]
 	"Dissable despawn system?" = false
@@ -229,95 +229,95 @@
 	[Mobs.Braurei]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Braurei Armor" = 6.0
+		"Sets Braurei Armor" = 10.2
 		"Braurei buffs" = ["minecraft:speed", "minecraft:strength", "minecraft:resistance", "minecraft:fire_resistance", "minecraft:regeneration", "minecraft:absorption"]
 		"Hazard Braurei debuffs" = ["minecraft:slowness", "minecraft:weakness", "minecraft:wither", "minecraft:poison", "spore:mycelium_ef", "spore:marker"]
 		#Default 80
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Braurei Max health" = 80.0
+		"Sets Braurei Max health" = 176.0
 
 	[Mobs."Infected Human"]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Human Max health" = 15.0
+		"Sets Infected Human Max health" = 22.5
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Human Damage" = 6.0
+		"Sets Infected Human Damage" = 7.8
 		#Default 1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Human Armor" = 1.0
+		"Sets Infected Human Armor" = 1.2
 
 	[Mobs.Hexenmeister]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Infected Hexenmeister Armor" = 10.0
+		"Infected Hexenmeister Armor" = 23.0
 		#Default 80
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Infected Hexenmeister Max health" = 80.0
+		"Infected Hexenmeister Max health" = 240.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Infected Hexenmeister Damage" = 15.0
+		"Infected Hexenmeister Damage" = 37.5
 
 	[Mobs.Chemist]
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Chemist Damage" = 7.0
+		"Sets Chemist Damage" = 15.4
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Chemist Armor" = 3.0
+		"Sets Chemist Armor" = 6.0
 		#Default 2.5
 		"Explosion Radius" = 2.5
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Chemist Max health" = 30.0
+		"Sets Chemist Max health" = 78.0
 		#Default true
 		"Should explosion break blocks ?" = true
 
 	[Mobs.Lacerator]
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Lacerator Max health" = 30.0
+		"Sets Lacerator Max health" = 54.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Lacerator Damage" = 6.0
+		"Sets Lacerator Damage" = 9.6
 		#Default 8
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Lacerator Armor" = 8.0
+		"Sets Lacerator Armor" = 11.2
 
 	[Mobs."Infected Drowned"]
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Drowned Damage" = 5.0
+		"Sets Infected Drowned Damage" = 6.5
 		#Default 16
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Drowned Max health" = 16.0
+		"Sets Infected Drowned Max health" = 24.0
 		#Default 1
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Drowned Armor" = 1.0
+		"Sets Infected Drowned Armor" = 1.2
 
 	[Mobs.Gargoyle]
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gargoyle Damage" = 8.0
+		"Sets Gargoyle Damage" = 17.6
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gargoyle Max health" = 35.0
+		"Sets Gargoyle Max health" = 91.0
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gargoyle Armor" = 6.0
+		"Sets Gargoyle Armor" = 12.0
 
 	[Mobs.Braiomil]
 		#Default values: minecraft:poison|120|0 ,spore:mycelium|600|0 ,spore:marker|2400|1
 		"Braiomil Effects" = ["minecraft:poison|120|0", "spore:mycelium_ef|600|1", "spore:marker|2400|1"]
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Braiomil Melee Damage" = 8.0
+		"Sets Braiomil Melee Damage" = 17.6
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Braiomil Max health" = 25.0
+		"Sets Braiomil Max health" = 65.0
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Braiomil Armor" = 4.0
+		"Sets Braiomil Armor" = 8.0
 
 	[Mobs.Tendril]
 		#Default true
@@ -330,55 +330,55 @@
 	[Mobs.Ogre]
 		#Default 12
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Ogre Armor" = 12.0
+		"Sets Ogre Armor" = 27.6
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Ogre Damage" = 20.0
+		"Sets Ogre Damage" = 50.0
 		#Default 100
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Ogre Max health" = 100.0
+		"Sets Ogre Max health" = 300.0
 
 	[Mobs.Grakensenker]
 		#Default values: minecraft:darkness|600|0, spore:mycelium|600|1, minecraft:mining_fatigue|600|0
 		"Grakensenker debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:mining_fatigue|600|0"]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Armor" = 15.0
+		"Sets Grakensenker Armor" = 39.0
 		#Default 100
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Grakensenker Damage Cap , set to 0 to disable" = 100.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Damage" = 15.0
+		"Sets Grakensenker Damage" = 42.0
 		#Default 400
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Max health" = 400.0
+		"Sets Grakensenker Max health" = 920.0
 		#Default values: minecraft:strength|600|0, minecraft:conduit_power|600|0, minecraft:resistance|600|1
 		"Grakensenker buffs" = ["minecraft:strength|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|1"]
 
 	[Mobs.Bloater]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bloater Damage" = 6.0
+		"Sets Bloater Damage" = 13.2
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bloater Armor" = 6.0
+		"Sets Bloater Armor" = 12.0
 		#Default 40
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bloater Max health" = 40.0
+		"Sets Bloater Max health" = 104.0
 
 	[Mobs.Griefer]
 		#Default 2
 		"Explosion Radius" = 2
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Griefer Damage" = 5.0
+		"Sets Griefer Damage" = 11.0
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Griefer Armor" = 3.0
+		"Sets Griefer Armor" = 6.0
 		#Default 45
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Griefer Max health" = 45.0
+		"Sets Griefer Max health" = 117.0
 		#Default true
 		"Should explosion break blocks ?" = true
 
@@ -387,40 +387,40 @@
 		"Braiomil Effects" = ["minecraft:wither|200|0", "minecraft:weakness|300|1", "spore:mycelium_ef|600|1", "spore:marker|2400|1"]
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Brotkatze Armor" = 5.0
+		"Sets Brotkatze Armor" = 11.5
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Brotkatze Max health" = 70.0
+		"Sets Brotkatze Max health" = 210.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Brotkatze Damage" = 15.0
+		"Sets Brotkatze Damage" = 37.5
 
 	[Mobs.Plagued]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Plagued Max health" = 15.0
+		"Sets Plagued Max health" = 27.0
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Plagued Damage" = 5.0
+		"Sets Plagued Damage" = 8.0
 		#Default 5
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Plagued Armor" = 5.0
+		"Sets Plagued Armor" = 7.0
 
 	[Mobs.Knight]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Knight Max health" = 25.0
+		"Sets Knight Max health" = 65.0
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Knight Damage" = 7.0
+		"Sets Knight Damage" = 15.4
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Knight Armor" = 7.0
+		"Sets Knight Armor" = 14.0
 
 	[Mobs.Mound]
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Mound Armor" = 2.0
+		"Sets Mound Armor" = 3.4
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Mound range at the age of 4" = 20.0
@@ -448,7 +448,7 @@
 		"Sets Mound Infection Cooldown" = 30
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Mound Max health" = 20.0
+		"Sets Mound Max health" = 44.0
 		#Default 2
 		#Range: > 1
 		"Sets the amount of biomass a mound can feed a structure block at once" = 2
@@ -456,34 +456,34 @@
 	[Mobs.Scavenger]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scavenger Max health" = 25.0
+		"Sets Scavenger Max health" = 65.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scavenger Damage" = 7.0
+		"Sets Scavenger Damage" = 15.4
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scavenger Armor" = 4.0
+		"Sets Scavenger Armor" = 8.0
 
 	[Mobs.Scamper]
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scamper Armor" = 3.0
+		"Sets Scamper Armor" = 3.6
 		#Default 600
 		#Range: > 1
 		"Sets Scamper Age" = 600
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scamper Damage" = 6.0
+		"Sets Scamper Damage" = 7.8
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Scamper Max health" = 25.0
+		"Sets Scamper Max health" = 37.5
 		#Default true
 		"Should Scampers summon Mounds on death?" = true
 
 	[Mobs.Nuke]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"The Damage of the Nuke" = 10.0
+		"The Damage of the Nuke" = 13.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"The Damage range of the Nuke at max" = 6.0
@@ -494,19 +494,19 @@
 	[Mobs.Hohlfresser]
 		#Default 1
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hohlfresser Ramged Damage" = 1.0
+		"Sets Hohlfresser Ramged Damage" = 2.8
 		#Default 70
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Hohlfresser Damage Cap , set to 0 to disable" = 50.0
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hohlfresser Damage" = 20.0
+		"Sets Hohlfresser Damage" = 56.0
 		#Default 250
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hohlfresser Max health" = 250.0
+		"Sets Hohlfresser Max health" = 680.0
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hohlfresser Armor" = 25.0
+		"Sets Hohlfresser Armor" = 65.0
 		#Default values: minecraft:weakness|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
 		"Hohlfresser debuffs" = ["minecraft:weakness|600|0", "minecraft:mining_fatigue|600|0", "spore:mycelium_ef|600|1"]
 		#Default values: minecraft:speed|600|0 ,minecraft:strength|600|0 ,minecraft:resistance|600|1
@@ -515,11 +515,11 @@
 	[Mobs.Womb]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets the base armor of the Womb" = 6.0
+		"Sets the base armor of the Womb" = 10.2
 		"Mobs that are summoned for air support" = ["spore:hindenburg", "spore:verfall"]
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets the base health of the Womb" = 30.0
+		"Sets the base health of the Womb" = 66.0
 		#Default 100
 		#Range: > 1
 		"Sets the required biomass before it summons a calamity" = 50
@@ -536,42 +536,42 @@
 	[Mobs.Gorgon]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gorgon Armor" = 10.0
+		"Sets Gorgon Armor" = 20.0
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gorgon Damage" = 8.0
+		"Sets Gorgon Damage" = 17.6
 		#Default 50 
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gorgon Max health" = 50.0
+		"Sets Gorgon Max health" = 130.0
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gorgon Ranged Damage" = 2.0
+		"Sets Gorgon Ranged Damage" = 4.4
 
 	[Mobs.Inebrieter]
 		"Buffs the Inebrieter might give to its patient" = ["minecraft:regeneration|300|1", "minecraft:resistance|400|0", "minecraft:speed|200|1"]
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inebrieter Damage" = 7.0
+		"Sets Inebrieter Damage" = 15.4
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inebrieter Max health" = 30.0
+		"Sets Inebrieter Max health" = 78.0
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inebrieter Armor" = 3.0
+		"Sets Inebrieter Armor" = 6.0
 
 	[Mobs.Phayres]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Phayres Armor" = 10.0
+		"Sets Phayres Armor" = 20.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Phayres ranged Damage" = 6.0
+		"Sets Phayres ranged Damage" = 13.2
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Phayres Max health" = 35.0
+		"Sets Phayres Max health" = 91.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Phayres Damage" = 6.0
+		"Sets Phayres Damage" = 13.2
 
 	[Mobs."Proto Hivemind"]
 		#Default 20
@@ -581,7 +581,7 @@
 		"Should the hivemind spread madness?" = true
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Proto Melee damage" = 10.0
+		"Sets Proto Melee damage" = 19.0
 		#Default 3.0
 		#Range: 0.1 ~ 1.7976931348623157E308
 		"Sets The chance for a raid to start" = 0.1
@@ -595,101 +595,101 @@
 		"Sets the linking range" = 300
 		#Default 100
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Proto Max health" = 100.0
+		"Sets Proto Max health" = 220.0
 		#Default true
 		"Should the hivemind send Vigils to raid?" = false
 		#Default true
 		"Should the hivemind build a wall of flesh around itself?" = true
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Proto Armor" = 10.0
+		"Sets Proto Armor" = 17.0
 		#Default true
 		"Should the hivemind generate a chunkloader at its location?" = false
 
 	[Mobs.Mephetic]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Mephetic Damage" = 6.0
+		"Sets Mephetic Damage" = 13.2
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Mephetic Armor" = 4.0
+		"Sets Mephetic Armor" = 8.0
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Mephetic Max health" = 25.0
+		"Sets Mephetic Max health" = 65.0
 		"Potions that are used to attack others , NOT effects" = ["minecraft:harming", "minecraft:weakness", "minecraft:poison", "spore:mycelium_potion", "spore:marker_potion"]
 
 	[Mobs.Umarmer]
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Umarmer Max health" = 70.0
+		"Sets Umarmer Max health" = 154.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Umarmer Armor" = 6.0
+		"Sets Umarmer Armor" = 10.2
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Umarmer Damage" = 8.0
+		"Sets Umarmer Damage" = 15.2
 
 	[Mobs."Infested Construct"]
 		#Default 50
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infested Construct Golem Max health" = 50.0
+		"Sets Infested Construct Golem Max health" = 75.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infested Construct Armor" = 10.0
+		"Sets Infested Construct Armor" = 12.0
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"The chance for an iron golem to be corrupted" = 70.0
 		"Infested Construct Metal values" = ["minecraft:iron_block|27", "minecraft:anvil|93", "minecraft:dispenser|4", "minecraft:dropper|3", "minecraft:hopper|15", "minecraft:repeater|6", "minecraft:comparator|3", "minecraft:iron_ore|16", "minecraft:deepslate_iron_ore|16", "minecraft:blast_furnace|27", "minecraft:iron_door|12", "minecraft:piston|8"]
 		#Default 60
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infested Construct Max health" = 60.0
+		"Sets Infested Construct Max health" = 90.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infested Construct Damage" = 15.0
+		"Sets Infested Construct Damage" = 19.5
 
 	[Mobs.Hollenhound]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hollenhound Damage" = 10.0
+		"Sets Hollenhound Damage" = 13.0
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hollenhound Ranged Damage" = 5.0
+		"Sets Hollenhound Ranged Damage" = 6.5
 		#Default 65
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hollenhound Max health" = 65.0
+		"Sets Hollenhound Max health" = 97.5
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hollenhound Armor" = 7.0
+		"Sets Hollenhound Armor" = 8.4
 
 	[Mobs.Saugling]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Saugling Max health" = 25.0
+		"Sets Saugling Max health" = 45.0
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Saugling Armor" = 5.0
+		"Sets Saugling Armor" = 7.0
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Saugling Damage" = 7.0
+		"Sets Saugling Damage" = 11.2
 
 	[Mobs.Usurper]
 		#Default 60
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Usurper Max health" = 60.0
+		"Sets Usurper Max health" = 132.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Usurper Armor" = 6.0
+		"Sets Usurper Armor" = 10.2
 
 	[Mobs.Hindenburg]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hindenburg Danage" = 15.0
+		"Sets Hindenburg Danage" = 42.0
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hindenburg Armor" = 5.0
+		"Sets Hindenburg Armor" = 13.0
 		#Default 400
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hindenburg Max health" = 400.0
+		"Sets Hindenburg Max health" = 880.0
 		#Default values: minecraft:jump_boost|600|0, minecraft:slow_falling|600|0, minecraft:resistance|600|1
 		"Hindenburg buffs" = ["minecraft:jump_boost|600|0", "minecraft:slow_falling|600|0", "minecraft:resistance|600|1"]
 		#Default 40
@@ -703,33 +703,33 @@
 	[Mobs.Slasher]
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Slasher Max health" = 35.0
+		"Sets Slasher Max health" = 91.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Slasher Damage" = 10.0
+		"Sets Slasher Damage" = 22.0
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Slasher Armor" = 2.0
+		"Sets Slasher Armor" = 4.0
 
 	[Mobs.Wendigo]
 		#Default true
 		"Should the wendigo take off ur armor?" = true
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Wendigo Armor" = 8.0
+		"Sets Wendigo Armor" = 18.4
 		#Default 75
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Wendigo Max health" = 75.0
+		"Sets Wendigo Max health" = 225.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Wendigo Damage" = 15.0
+		"Sets Wendigo Damage" = 37.5
 
 	[Mobs.Gazenbreacher]
 		#Default values: minecraft:darkness|600|0, spore:mycelium|600|1, minecraft:hunger|600|1
 		"Gazenbreacher debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:hunger|600|1"]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gazenbreacher Damage" = 25.0
+		"Sets Gazenbreacher Damage" = 70.0
 		#Default 100
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Gazenbreacher Damage Cap , set to 0 to disable" = 100.0
@@ -737,30 +737,30 @@
 		"Gazenbreacher buffs" = ["minecraft:speed|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|1"]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gazenbreacher Armor" = 15.0
+		"Sets Gazenbreacher Armor" = 39.0
 		#Default 350
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gazenbreacher Max health" = 350.0
+		"Sets Gazenbreacher Max health" = 860.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gazenbreacher bile damage" = 10.0
+		"Sets Gazenbreacher bile damage" = 28.0
 
 	[Mobs.Conductor]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Conductor Max health" = 25.0
+		"Sets Conductor Max health" = 65.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Conductor Damage" = 6.0
+		"Sets Conductor Damage" = 13.2
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Conductor Armor" = 3.0
+		"Sets Conductor Armor" = 6.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Conductor Discharge Damage" = 10.0
+		"Sets Conductor Discharge Damage" = 22.0
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Conductor Arc Damage" = 2.0
+		"Sets Conductor Arc Damage" = 4.4
 
 	[Mobs.Scent]
 		#Default 4000
@@ -785,46 +785,46 @@
 	[Mobs.Nuckelave]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Nuckelave Armor" = 6.0
+		"Sets Nuckelave Armor" = 12.0
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Nuckelave Damage" = 8.0
+		"Sets Nuckelave Damage" = 17.6
 		#Default 45
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Nuckelave Max health" = 45.0
+		"Sets Nuckelave Max health" = 117.0
 
 	[Mobs.Jagdhund]
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Jagdhund Damage" = 7.0
+		"Sets Jagdhund Damage" = 15.4
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Jagdhund Max health" = 35.0
+		"Sets Jagdhund Max health" = 91.0
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Jagdhund Armor" = 4.0
+		"Sets Jagdhund Armor" = 8.0
 
 	[Mobs."Infected Hazmat"]
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Hazmat Max health" = 20.0
+		"Sets Infected Hazmat Max health" = 30.0
 		#Default 1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Hazmat Armor" = 6.0
+		"Sets Infected Hazmat Armor" = 7.2
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Hazmat Damage" = 6.0
+		"Sets Infected Hazmat Damage" = 7.8
 
 	[Mobs."Infected Vindicator"]
 		#Default 28
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Vindicator Max health" = 28.0
+		"Sets Infected Vindicator Max health" = 72.8
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Vindicator Armor" = 4.0
+		"Sets Infected Vindicator Armor" = 8.0
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Vindicator Damage" = 7.0
+		"Sets Infected Vindicator Damage" = 15.4
 
 	[Mobs.Hallucination]
 		#Default 10%
@@ -832,40 +832,40 @@
 		"chance for a hallucination to spawn when the victim is mad" = 10.0
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"The mental damage dealt by hallucinations" = 4.0
+		"The mental damage dealt by hallucinations" = 5.2
 
 	[Mobs.Reaper]
 		#Default 5
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Spit Damage Armor" = 5.0
+		"Sets Spit Damage Armor" = 6.0
 		#Default 80
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Reaper Max health" = 80.0
+		"Sets Reaper Max health" = 120.0
 		#Default 8
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Reaper Armor" = 8.0
+		"Sets Reaper Armor" = 9.6
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Reaper Damage" = 10.0
+		"Sets Reaper Damage" = 13.0
 
 	[Mobs.Inquisitor]
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inquisitor Armor" = 7.0
+		"Sets Inquisitor Armor" = 16.1
 		#Default 60
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inquisitor Max health" = 60.0
+		"Sets Inquisitor Max health" = 180.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inquisitor Damage" = 15.0
+		"Sets Inquisitor Damage" = 37.5
 
 	[Mobs."Infected Witch"]
 		#Default 4
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Witch Melee Damage" = 4.0
+		"Sets Infected Witch Melee Damage" = 5.2
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Witch Max health" = 25.0
+		"Sets Infected Witch Max health" = 37.5
 		"Potions that are used to attack others , NOT effects" = ["minecraft:weakness", "minecraft:poison", "spore:mycelium_potion", "spore:marker_potion"]
 		#Default 60
 		#Range: > 1
@@ -878,29 +878,29 @@
 		"Sets the time before throwing a potion when buffing" = 40
 		#Default 1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Witch Armor" = 1.0
+		"Sets Infected Witch Armor" = 1.2
 
 	[Mobs.Stalker]
 		#Default 3
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Stalker Armor" = 3.0
+		"Sets Stalker Armor" = 6.0
 		#Default 55
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stalker Max health" = 55.0
+		"Sets Stalker Max health" = 143.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stalker Damage" = 10.0
+		"Sets Stalker Damage" = 22.0
 
 	[Mobs."Infected Player"]
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Infected Player Damage" = 4.0
+		"Infected Player Damage" = 5.2
 		#Default 21
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Infected Player Max health" = 21.0
+		"Infected Player Max health" = 31.5
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Infected Player Armor" = 2.0
+		"Infected Player Armor" = 2.4
 
 	[Mobs.Stahlmorder]
 		#Default 50
@@ -908,80 +908,80 @@
 		"Sets Stahlmorder Damage Cap , set to 0 to disable" = 50.0
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stahlmorder Slap Damage" = 20.0
+		"Sets Stahlmorder Slap Damage" = 56.0
 		#Default values: minecraft:weakness|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
 		"Stahlmorder debuffs" = ["minecraft:weakness|600|1", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stahlmorder Kick Damage" = 10.0
+		"Sets Stahlmorder Kick Damage" = 28.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stahlmorder Armor" = 10.0
+		"Sets Stahlmorder Armor" = 26.0
 		#Default values: minecraft:speed|600|0 ,minecraft:strength|600|0 ,minecraft:jump_boost|600|1
 		"Stahlmorder buffs" = ["minecraft:speed|600|0", "minecraft:strength|600|0", "minecraft:jump_boost|600|1"]
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stahlmorder Sword Damage" = 35.0
+		"Sets Stahlmorder Sword Damage" = 98.0
 		#Default 200
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Stahlmorder Max health" = 200.0
+		"Sets Stahlmorder Max health" = 580.0
 
 	[Mobs.Bioblob]
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bioblob Max health" = 50.0
+		"Sets Bioblob Max health" = 90.0
 		#Default 8
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Bioblob Armor" = 8.0
+		"Sets Bioblob Armor" = 11.2
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bioblob Damage" = 10.0
+		"Sets Bioblob Damage" = 16.0
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bioblob Ranged Damage" = 6.0
+		"Sets Bioblob Ranged Damage" = 9.6
 
 	[Mobs.Leaper]
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leaper Damage" = 8.0
+		"Sets Leaper Damage" = 17.6
 		#Default 40
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leaper Max health" = 40.0
+		"Sets Leaper Max health" = 104.0
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leaper Armor" = 3.0
+		"Sets Leaper Armor" = 6.0
 
 	[Mobs.Howler]
 		"Mobs that can be summoned by the Howler" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager", "spore:knight"]
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howler Armor" = 4.0
+		"Sets Howler Armor" = 8.0
 		#Default 32
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howler Max health" = 32.0
+		"Sets Howler Max health" = 83.2
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howler Damage" = 5.0
+		"Sets Howler Damage" = 11.0
 		"Howler buff effect list" = ["minecraft:regeneration", "minecraft:speed", "minecraft:health_boost", "minecraft:strength", "minecraft:resistance"]
 
 	[Mobs."Infected Villager"]
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Villager Max health" = 20.0
+		"Sets Infected Villager Max health" = 30.0
 		#Default 1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Villager Armor" = 1.0
+		"Sets Infected Villager Armor" = 1.2
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Villager Damage" = 6.0
+		"Sets Infected Villager Damage" = 7.8
 
 	[Mobs.Verwahrung]
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verwahrung Max health" = 20.0
+		"Sets Verwahrung Max health" = 44.0
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verwahrung Armor" = 2.0
+		"Sets Verwahrung Armor" = 3.4
 		"Verwahrung summons" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:leaper", "spore:slasher", "spore:scavenger", "spore:bloater", "spore:inf_evoker", "spore:busser", "spore:volatile", "spore:mephitic"]
 		"Verwahrung buffs" = ["minecraft:speed", "minecraft:strength", "minecraft:resistance", "minecraft:regeneration"]
 
@@ -993,38 +993,38 @@
 		"Howitzer debuffs" = ["minecraft:blindness|600|0", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howitzer Armor" = 10.0
+		"Sets Howitzer Armor" = 26.0
 		#Default values: minecraft:speed|600|0, minecraft:strength|600|0, minecraft:resistance|600|1
 		"Howitzer buffs" = ["minecraft:speed|600|0", "minecraft:strength|600|0", "minecraft:resistance|600|1"]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howitzer Damage" = 15.0
+		"Sets Howitzer Damage" = 42.0
 		"Mobs that may spawn out of its dropped bombs" = ["spore:inf_vindicator", "spore:busser", "spore:brute", "spore:knight", "spore:griefer", "spore:leaper", "spore:naiad", "spore:inf_evoker", "spore:mephitic", "spore:spitter", "spore:stalker", "spore:scavenger", "spore:bloater", "spore:braiomil"]
 		#Default 500
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howitzer Max health" = 500.0
+		"Sets Howitzer Max health" = 1100.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Howitzer Ranged Damage" = 10.0
+		"Sets Howitzer Ranged Damage" = 28.0
 
 	[Mobs.Groberfub]
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Groberfub Armor" = 8.0
+		"Sets Groberfub Armor" = 18.4
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Groberfub Damage" = 15.0
+		"Sets Groberfub Damage" = 37.5
 		#Default 75
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Groberfub Max health" = 75.0
+		"Sets Groberfub Max health" = 225.0
 
 	[Mobs.Sieger]
 		#Default 300
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Sieger Max health" = 300.0
+		"Sets Sieger Max health" = 820.0
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Sieger Armor" = 25.0
+		"Sets Sieger Armor" = 65.0
 		#Default 70
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Sieger Damage Cap , set to 0 to disable" = 70.0
@@ -1032,7 +1032,7 @@
 		"Sieger explosion ranged effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness"]
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Sieger Damage" = 30.0
+		"Sets Sieger Damage" = 84.0
 		#Default values: minecraft:speed|600|0 ,minecraft:strength|600|0 ,minecraft:resistance|600|1
 		"Sieger buffs" = ["minecraft:speed|600|0", "minecraft:strength|600|0", "minecraft:resistance|600|1"]
 		#Default values: minecraft:weakness|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
@@ -1041,122 +1041,122 @@
 	[Mobs."Infected Pillager"]
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Pillager Armor" = 2.0
+		"Sets Infected Pillager Armor" = 2.4
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Pillager Damage" = 6.0
+		"Sets Infected Pillager Damage" = 7.8
 		#Default 1.6f
-		"Sets Infected Pillager Range Damage" = 1.6
+		"Sets Infected Pillager Range Damage" = 2.1
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Pillager Max health" = 20.0
+		"Sets Infected Pillager Max health" = 30.0
 
 	[Mobs.Brute]
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Brute Max health" = 70.0
+		"Sets Brute Max health" = 182.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Brute Armor" = 15.0
+		"Sets Brute Armor" = 30.0
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Brute Damage" = 7.0
+		"Sets Brute Damage" = 15.4
 
 	[Mobs.Naiad]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Naiad Damage" = 6.0
+		"Sets Naiad Damage" = 13.2
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Naiad Max health" = 35.0
+		"Sets Naiad Max health" = 91.0
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Naiad Armor" = 3.0
+		"Sets Naiad Armor" = 6.0
 
 	[Mobs.Vervathorn]
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vervathorn Damage" = 7.0
+		"Sets Vervathorn Damage" = 15.4
 		#Default 40
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vervathorn Max health" = 40.0
+		"Sets Vervathorn Max health" = 104.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vervathorn Armor" = 10.0
+		"Sets Vervathorn Armor" = 20.0
 
 	[Mobs.Specter]
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Specter Max health" = 70.0
+		"Sets Specter Max health" = 105.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Specter Damage" = 10.0
+		"Sets Specter Damage" = 13.0
 		#Default 8
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Specter Armor" = 8.0
+		"Sets Specter Armor" = 9.6
 
 	[Mobs."Infected Evoker"]
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Evoker Damage" = 7.0
+		"Sets Infected Evoker Damage" = 15.4
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Claw Damage" = 7.0
+		"Sets Infected Claw Damage" = 15.4
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Evoker Max health" = 35.0
+		"Sets Infected Evoker Max health" = 91.0
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Evoker Armor" = 4.0
+		"Sets Infected Evoker Armor" = 8.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Claw Max health" = 15.0
+		"Sets Infected Claw Max health" = 39.0
 		#Default 3
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Claw Armor" = 3.0
+		"Sets Infected Claw Armor" = 6.0
 
 	[Mobs.Bairn]
 		#Default 12
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bairn Max health" = 12.0
+		"Sets Bairn Max health" = 18.0
 		#Default 1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Bairn Armor" = 1.0
+		"Sets Bairn Armor" = 1.2
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Bairn Damage" = 4.0
+		"Sets Bairn Damage" = 5.2
 
 	[Mobs.Volatile]
 		"Buffs the Volatile might give to its target" = ["minecraft:poison", "minecraft:weakness", "minecraft:hunger", "spore:marker"]
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Volatile Max health" = 35.0
+		"Sets Volatile Max health" = 91.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Volatile Damage" = 10.0
+		"Sets Volatile Damage" = 22.0
 		"Buffs the Volatile might get when hurt" = ["minecraft:regeneration", "minecraft:speed", "minecraft:resistance", "minecraft:fire_resistance"]
 		#Default 4
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Volatile Armor" = 4.0
+		"Sets Volatile Armor" = 8.0
 
 	[Mobs.Verfalldrache]
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verfalldrache Sonic Damage" = 5.0
+		"Sets Verfalldrache Sonic Damage" = 14.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verfalldrache Electrical Damage" = 15.0
+		"Sets Verfalldrache Electrical Damage" = 42.0
 		#Default values: minecraft:weakness|600|1 ,spore:mycelium|600|1 ,minecraft:slowness|600|1
 		"Verfalldrache debuffs" = ["minecraft:weakness|600|1", "spore:mycelium_ef|600|1", "minecraft:slowness|600|1"]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verfalldrache Damage" = 10.0
+		"Sets Verfalldrache Damage" = 28.0
 		#Default 300
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verfalldrache Max health" = 300.0
+		"Sets Verfalldrache Max health" = 720.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verfalldrache Armor" = 15.0
+		"Sets Verfalldrache Armor" = 39.0
 		#Default 50
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Verfalldrache Damage Cap , set to 0 to disable" = 50.0
@@ -1164,37 +1164,37 @@
 		"Verfalldrache buffs" = ["minecraft:speed|600|0", "minecraft:strength|600|0", "minecraft:resistance|600|1"]
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Verfalldrache Tar Damage" = 5.0
+		"Sets Verfalldrache Tar Damage" = 14.0
 
 	[Mobs."Infected Wandering Trader"]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Wandering Trader Damage" = 6.0
+		"Sets Infected Wandering Trader Damage" = 7.8
 		#Default 1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Wandering Trader Armor" = 1.0
+		"Sets Infected Wandering Trader Armor" = 1.2
 		#Default true
 		"Can the Infected Wandering Trader use Potions" = true
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Wandering Trader Max health" = 20.0
+		"Sets Infected Wandering Trader Max health" = 30.0
 
 	[Mobs.Gastgeber]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gastgeber Armor" = 6.0
+		"Sets Gastgeber Armor" = 7.2
 		#Default 600
 		#Range: > 1
 		"Seconds before Gastgeber moves from the area" = 600
 		#Default 7
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gastgeber Damage" = 7.0
+		"Sets Gastgeber Damage" = 9.1
 		#Default 25
 		#Range: > 1
 		"Infection Range" = 25
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gastgeber Max health" = 70.0
+		"Sets Gastgeber Max health" = 105.0
 		#Default 30
 		#Range: > 1
 		"Seconds before Gastgeber spreads foliage" = 30
@@ -1202,12 +1202,12 @@
 	[Mobs.Hivetumor]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hivetumor Melee damage" = 10.0
+		"Sets Hivetumor Melee damage" = 19.0
 		#Default true
 		"Should the Hivetumor spread madness?" = true
 		#Hivetumor 50
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hivetumor Max health" = 50.0
+		"Sets Hivetumor Max health" = 110.0
 		"Sentient Mobs targeted by the Hivetumor" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
 		#Default 128
 		#Range: > 1
@@ -1218,22 +1218,22 @@
 		"Mobs that the Hivetumor can summon to defend itself" = ["spore:mound", "spore:umarmed", "spore:usurper", "spore:braurei"]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Hivetumor Armor" = 10.0
+		"Sets Hivetumor Armor" = 17.0
 
 	[Mobs.Leviathan]
 		#Default values: minecraft:mining_fatigue|600|0, spore:mycelium|600|1, minecraft:hunger|600|1
 		"Leviathan debuffs" = ["minecraft:mining_fatigue|600|0", "spore:mycelium_ef|600|1", "minecraft:hunger|600|1"]
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leviathan Damage" = 30.0
+		"Sets Leviathan Damage" = 84.0
 		#Default 450
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leviathan Max health" = 450.0
+		"Sets Leviathan Max health" = 1120.0
 		#Default values: minecraft:wither ,spore:mycelium ,minecraft:weakness
 		"Leviathan explosion effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness"]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Leviathan Armor" = 25.0
+		"Sets Leviathan Armor" = 65.0
 		#Default 100
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Leviathan Damage Cap , set to 0 to disable" = 100.0
@@ -1243,27 +1243,27 @@
 	[Mobs."Infected Husk"]
 		#Default 3
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Husk Armor" = 3.0
+		"Sets Infected Husk Armor" = 3.6
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Husk Damage" = 6.0
+		"Sets Infected Husk Damage" = 7.8
 		#Default 21
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Husk Max health" = 21.0
+		"Sets Infected Husk Max health" = 31.5
 
 	[Mobs.Axtwerfer]
 		#Default 80
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Axtwerfer Max health" = 80.0
+		"Sets Axtwerfer Max health" = 240.0
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Axtwerfer Armor" = 7.0
+		"Sets Axtwerfer Armor" = 16.1
 		#Default 18
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Axtwerfer Damage" = 18.0
+		"Sets Axtwerfer Damage" = 45.0
 		#Default 9
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Axtwerfer Ranged Damage" = 9.0
+		"Sets Axtwerfer Ranged Damage" = 22.5
 
 	[Mobs.Vigil]
 		#The max wave of infected a vigil can summon
@@ -1272,7 +1272,7 @@
 		"Vigil mix wave" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:gorgon", "spore:gargoyle", "spore:mephitic", "spore:thorn", "spore:nuclea", "spore:jagd", "spore:scavenger", "spore:bloater", "spore:slasher", "spore:leaper", "spore:inf_evoker", "spore:spitter"]
 		#Default 60
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vigil Max health" = 60.0
+		"Sets Vigil Max health" = 132.0
 		#The base wave of infected a vigil can summon
 		"Vigil min wave" = ["spore:inf_human", "spore:inf_husk", "spore:inf_drowned", "spore:inf_villager", "spore:inf_pillager", "spore:inf_drowned"]
 		#Default 15
@@ -1280,57 +1280,57 @@
 		"Sets the maximum size of the wave" = 15
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vigil Armor" = 5.0
+		"Sets Vigil Armor" = 8.5
 
 	[Mobs.Vanguard]
 		#Default 12
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vanguard Damage" = 12.0
+		"Sets Vanguard Damage" = 15.6
 		#Default 8
 		#Range: > 2
 		"Sets The size of the Vanguard raid" = 3
 		#Default 8
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Vanguard Armor" = 8.0
+		"Sets Vanguard Armor" = 9.6
 		"Raid Mobs , mob_id|value" = ["spore:inf_pillager|60", "spore:inf_witch|30", "spore:inf_vindicator|40", "spore:inf_evoker|50", "spore:stalker|20", "spore:brute|20", "spore:volatile|20", "spore:mephitic|20"]
 		#Default 110
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Vanguard Max health" = 110.0
+		"Sets Vanguard Max health" = 165.0
 		#Should a Vanguard load chunks on its way towards a village ?
 		"Default true" = false
 
 	[Mobs.Spitter]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Spitter Damage at long range" = 6.0
+		"Sets Spitter Damage at long range" = 13.2
 		#Default 1
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Spitter Armor" = 1.0
+		"Sets Spitter Armor" = 2.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Spiter Max health" = 15.0
+		"Sets Spiter Max health" = 39.0
 		#Default 1
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Spitter Damage at close range" = 1.0
+		"Sets Spitter Damage at close range" = 2.2
 
 	[Mobs.Delusioner]
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Delusioner Armor" = 2.0
+		"Sets Delusioner Armor" = 3.4
 		#Default 35
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Delusioner Max health" = 35.0
+		"Sets Delusioner Max health" = 77.0
 
 	[Mobs.Protector]
 		#Default 8
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Protector Damage" = 8.0
+		"Sets Protector Damage" = 17.6
 		#Default 50
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Protector Max health" = 50.0
+		"Sets Protector Max health" = 130.0
 		#Default 12
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Protector Armor" = 12.0
+		"Sets Protector Armor" = 24.0
 
 [Elytron]
 	#Default 0

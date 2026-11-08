@@ -174,7 +174,7 @@ const bountifulbaubles_accessories = {
         },
         {
             id: "tha_wizard",
-            level: 3,
+            level: 2,
             dis: true
         },
         {
