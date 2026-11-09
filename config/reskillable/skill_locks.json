@@ -1068,8 +1068,7 @@
             "gathering:5"
         ],
         "tconstruct:pickaxe__*": [
-            "mining:3",
-            "building:3"
+            "mining:3"
         ],
         "tconstruct:plate_shield__*": [
             "defense:8",

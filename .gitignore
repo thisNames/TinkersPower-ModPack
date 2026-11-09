@@ -23,11 +23,11 @@
 /.mixin.out
 /modernfix
 /tconplanner
+/observable_profiles
 
 # mod config
 /config/jei/world
 /config/spark
-/observable_profiles
 
 # minecraft folders
 /backups

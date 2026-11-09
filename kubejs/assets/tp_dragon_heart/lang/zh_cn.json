@@ -59,5 +59,15 @@
     
     "item.minecraft.lingering_potion.effect.blaze": "滞留型烈焰药水",
     "item.minecraft.lingering_potion.effect.frozen": "滞留型冰封药水",
-    "item.minecraft.lingering_potion.effect.shocked": "滞留型感电药水"
+    "item.minecraft.lingering_potion.effect.shocked": "滞留型感电药水",
+
+    "effect.if_dragon_blessings.fire_attack.description": "点燃并击退目标，给予烈焰标记，可配合冰、电打出元素伤害",
+    "effect.if_dragon_blessings.ice_attack.description": "减速并冰冻目标，给予冰封标记，可配合火、电打出元素伤害",
+    "effect.if_dragon_blessings.lightning_attack.description": "电击并麻痹（不是恐怖生物的麻痹）目标，给予感电标记，可配合冰、火打出元素伤害",
+    "effect.if_dragon_blessings.blaze.description": "给予烈焰标记",
+    "effect.if_dragon_blessings.frozen.description": "给予冰封标记",
+    "effect.if_dragon_blessings.shocked.description": "给予感电标记",
+    "effect.if_dragon_blessings.overload.description": "触发超载后，目标身上将有此效果，拥有此效果时无法再次触发本次元素伤害",
+    "effect.if_dragon_blessings.melt.description": "触发融化后，目标身上将有此效果，拥有此效果时无法再次触发本次元素伤害",
+    "effect.if_dragon_blessings.superconduct.description": "触发超导后，目标身上将有此效果，拥有此效果时无法再次触发本次元素伤害"
 }

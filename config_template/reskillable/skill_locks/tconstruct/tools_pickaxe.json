@@ -3,10 +3,6 @@
         {
             "id": "mining",
             "level": 3
-        },
-        {
-            "id": "building",
-            "level": 3
         }
     ],
     "items": [

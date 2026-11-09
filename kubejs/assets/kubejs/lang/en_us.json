@@ -1,0 +1,111 @@
+{
+    "advancements.kubejs.true_wooden_pickaxe.title": "A Real Wooden Pickaxe!",
+    "advancements.kubejs.true_wooden_pickaxe.description": "A wooden pickaxe with 3 durability",
+    "advancements.kubejs.new_world_roll.title": "New World, Roll!",
+    "advancements.kubejs.new_world_roll.description": "Press [alt] to roll",
+
+    "item.kubejs.tooltip.itemprohibiteditems.items": "This item is disabled!",
+    "item.kubejs.tooltip.itemprohibiteditems.wearables": "This gear cannot be worn!",
+    "item.kubejs.tooltip.curios.accessories": "This accessory is disabled!",
+    "item.kubejs.tooltip.tconstruct.jei_hiddens": "Tinkers' Craft",
+
+    "item.kubejs.tooltip.minecraft.wooden_pickaxe": "Yes, really. 3 durability!",
+    
+    "item.kubejs.tooltip.material.rating1": "Tier 1 Crafting Material",
+
+    "item.kubejs.tooltip.alexscaves.green_soylent": "Radiation counts as heat?",
+
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool": "Hold the Disassembling Tool in your main hand",
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool.1": "Put the tool to break down in any hotbar slot (leftmost first)",
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool.2": "Right-click a Scarlet or Azure Neodymium Block",
+    "item.kubejs.tooltip.tooldisassemble.disassembling_tool.3": "The first breakable tool in your hotbar is disassembled",
+    
+    "item.kubejs.tooltip.tp_armorunder.auto": "Auto climate control! (Disabled)",
+    "item.kubejs.tooltip.tp_armorunder.beekeeper": "Toasty to wear! (Disabled)",
+    "item.kubejs.tooltip.tp_armorunder.cool": "Nice and cool! (Disabled)",
+
+    "item.kubejs.tooltip.roughtweaks.text": "Heals %s HP",
+    "item.kubejs.tooltip.roughtweaks.medkit_enchanted": "Enchanted Medkit",
+
+    "item.kubejs.tooltip.alcocraftplus.hop_seeds": "Plant on the underside of a block",
+    "item.kubejs.tooltip.alcocraftplus.beer_text1": "Raises buff level, max 3",
+    "item.kubejs.tooltip.alcocraftplus.beer_text2": "Ignores beer, similar, and temperature effects",
+
+    "item.kubejs.tooltip.vinery.wine_text1": "Extends buff duration, max 6 min",
+    "item.kubejs.tooltip.vinery.wine_text2": "Ignores wine, similar, and temperature effects",
+
+    "item.kubejs.tooltip.xat.faelis_ring_taker": "+%s damage when held by a Faelis",
+
+    "item.kubejs.tooltip.chimes_right_bind": "Sneak + Right-click to bind it",
+    "item.kubejs.tooltip.chimes_not_right_bind": "Cannot be bound",
+    "item.kubejs.tooltip.chimes.bamboo_chimes": "Sheds bamboo leaves",
+    "item.kubejs.tooltip.chimes.iron_chimes": "Crisp metallic chime",
+    "item.kubejs.tooltip.chimes.copper_chimes": "A deeper metallic chime than iron",
+    "item.kubejs.tooltip.chimes.carved_bamboo_chimes": "Deeper than bamboo chimes; no falling leaves",
+    "item.kubejs.tooltip.chimes.carved_bamboo_chimes.1": "Right-click Bamboo Chimes with a Diamond Minotaur Axe (best axe I could find...)",
+    "item.kubejs.tooltip.chimes.amethyst_chimes": "A small chime with an amethyst ring",
+    "item.kubejs.tooltip.chimes.amethyst_chimes.1": "Amethyst is too fragile to hang from a support",
+    "item.kubejs.tooltip.chimes.glass_bells": "Craft to pick a color; a paper strip hangs below",
+
+    "item.kubejs.tooltip.bountifulbaubles.recall": "Overworld only",
+    "item.kubejs.tooltip.bountifulbaubles.wormhole": "Start point must be in the Overworld",
+    "item.kubejs.tooltip.bountifulbaubles.phylactery_charm": "But dying can still cross dimensions (passive)",
+
+    "loot.kubejs.tooltip.artifacts.crystal_heart": "Cornelia's Heart",
+    "loot.kubejs.tooltip.artifacts.crystal_heart_vow": "Frozen for ages... this heart still burns",
+    "loot.kubejs.tooltip.artifacts.power_glove": "Power of the Earth (+999-1000+5)",
+    "loot.kubejs.tooltip.artifacts.power_glove_vow": "The moment I clenched my fist... the earth trembled",
+    "loot.kubejs.tooltip.artifacts.cloud_in_a_bottle": "Path to the Heavens",
+    "loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow": "Rising on clouds... the sky is within reach",
+    "loot.kubejs.tooltip.artifacts.flame_pendant": "Undying Flame",
+    "loot.kubejs.tooltip.artifacts.flame_pendant_vow": "Rage rose from Hell... and burned the world",
+    "loot.kubejs.tooltip.artifacts.plastic_drinking_hat": "I'm #1!",
+    "loot.kubejs.tooltip.artifacts.plastic_drinking_hat_vow": "I'm drinking with gravity!",
+    
+    "loot.kubejs.tooltip.bountifulbaubles.sunglasses": "Warden's Cool Shades",
+    "loot.kubejs.tooltip.bountifulbaubles.sunglasses_vow": "In the deepest dark... light is never seen",
+    "loot.kubejs.tooltip.bountifulbaubles.apple": "A Husk's Snack",
+    "loot.kubejs.tooltip.bountifulbaubles.apple_vow": "Hungry?",
+    "loot.kubejs.tooltip.bountifulbaubles.vampiric_glove": "Ancient Will",
+    "loot.kubejs.tooltip.bountifulbaubles.vampiric_glove_vow": "The ancestors' will never fades!",
+    "loot.kubejs.tooltip.bountifulbaubles.endless_pearl": "Eye of Eternity",
+    "loot.kubejs.tooltip.bountifulbaubles.endless_pearl_vow": "This moment... is eternity...",
+    "loot.kubejs.tooltip.bountifulbaubles.endless_pearl2": "\"Ender Pearl 2\"",
+    "loot.kubejs.tooltip.bountifulbaubles.endless_pearl2_vow": "The sequel to a tale never seen...",
+    "loot.kubejs.tooltip.bountifulbaubles.wrath_pendant": "Pyre's Wrath",
+    "loot.kubejs.tooltip.bountifulbaubles.wrath_pendant_vow": "Blinded... by rage",
+    "loot.kubejs.tooltip.bountifulbaubles.gauntlets_dexterity": "Held Back",
+    "loot.kubejs.tooltip.bountifulbaubles.gauntlets_dexterity_vow": "Next time... no mercy",
+    "loot.kubejs.tooltip.bountifulbaubles.broken_heart": "Offer Your Heart",
+    "loot.kubejs.tooltip.bountifulbaubles.broken_heart_vow": "When the storm clears... I'll ride the waves home",
+    "loot.kubejs.tooltip.bountifulbaubles.wormhole_mirror": "Gaze Into the Abyss",
+    "loot.kubejs.tooltip.bountifulbaubles.wormhole_mirror_vow": "I'll be waiting... in the abyss",
+    "loot.kubejs.tooltip.bountifulbaubles.ring_overclocking": "Wandering Ring (Pristine)",
+    "loot.kubejs.tooltip.bountifulbaubles.ring_overclocking_vow": "Years wore on... still shines like new",
+    "loot.kubejs.tooltip.bountifulbaubles.ember": "Furnace Heart (Hot enough to ignite foes)",
+    "loot.kubejs.tooltip.bountifulbaubles.ember_vow": "The undying stone beneath the hearth... fell to earth",
+    "loot.kubejs.tooltip.bountifulbaubles.obsidian_skull": "Undying Wraith",
+    "loot.kubejs.tooltip.bountifulbaubles.obsidian_skull_vow": "The body fell... the soul still wanders",
+    "loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying": "Face Death",
+    "loot.kubejs.tooltip.bountifulbaubles.infinite_totem_of_undying_vow": "Stared death down... never fell",
+    "loot.kubejs.tooltip.bountifulbaubles.bezoar": "Bezoar",
+    "loot.kubejs.tooltip.bountifulbaubles.bezoar_vow": "Finest medicine.",
+
+    "loot.kubejs.tooltip.minecraft.nether_star_vow": "Ascended to steel... yet death still came",
+    "loot.kubejs.tooltip.minecraft.nether_star": "Eternal Heart",
+    "loot.kubejs.tooltip.minecraft.heart_of_the_sea": "Heart of the Sea",
+    "loot.kubejs.tooltip.minecraft.heart_of_the_sea_vow": "Asleep in the deep... still beating for the sea",
+
+    "loot.kubejs.tooltip.xat.wither_ring": "Withered Wedding Ring",
+    "loot.kubejs.tooltip.xat.wither_ring_vow": "Once it shone so bright... now withered away",
+    "loot.kubejs.tooltip.xat.teddy_bear": "Yeti's Teddy (Still Warm)",
+    "loot.kubejs.tooltip.xat.teddy_bear_vow": "Good night... Makka Pakka",
+    
+    "loot.kubejs.tooltip.xat.moon_rose": "Thorned Rose",
+    "loot.kubejs.tooltip.xat.moon_rose_frie": "Fire Rose",
+
+    "food.kubejs.tooltip.sinful_food": "Grants a stronger Sinful effect (Gluttony Pendant)",
+    "food.kubejs.tooltip.luck_food": "Grants Luck X",
+
+    "tell.kubejs.tooltip.bountifulbaubles_teleport": "%s, your target is too far!"
+}
