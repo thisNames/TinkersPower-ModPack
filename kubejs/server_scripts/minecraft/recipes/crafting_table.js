@@ -8,10 +8,18 @@ ServerEvents.recipes(event =>
     event.recipes.kubejs.shapeless({ item: _this("string"), count: 4 }, ["#minecraft:wool"]);
 
     // 附魔瓶
-    event.recipes.kubejs.shapeless({ item: _this("experience_bottle"), count: 2 }, [_this("experience_bottle"), _obs("vial_of_knowledge")]);
+    event.recipes.kubejs.shapeless({ item: _this("experience_bottle"), count: 2 }, [
+        _this("gold_nugget"),
+        _obs("vial_of_knowledge"),
+        _this("experience_bottle")
+    ]);
 
     // 附魔瓶
-    event.shapeless(_this("experience_bottle"), [_this("glass_bottle"), _create("experience_nugget")]);
+    event.shapeless(_this("experience_bottle"), [
+        _this("gold_nugget"),
+        _create("experience_nugget"),
+        _this("glass_bottle")
+    ]);
 
     // 鞍
     event.shaped(_this("saddle"), [
