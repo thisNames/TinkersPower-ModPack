@@ -350,10 +350,10 @@
 		[mobs.ender_guardian.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.2
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.2
 
 		[mobs.ender_guardian.cap_config]
 			#Damage Cap
@@ -390,10 +390,10 @@
 		[mobs.ender_golem.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.2
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.2
 
 		[mobs.ender_golem.cap_config]
 			#Damage Cap
@@ -446,10 +446,10 @@
 		[mobs.netherite_monstrosity.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.2
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.2
 
 		[mobs.netherite_monstrosity.cap_config]
 			#Damage Cap
@@ -498,10 +498,10 @@
 		[mobs.ignis.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.25
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.25
 
 		[mobs.ignis.cap_config]
 			#Damage Cap
@@ -537,10 +537,10 @@
 		[mobs.ignited_revenant.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.2
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.2
 
 	[mobs.harbinger]
 		#Harbinger Auto Heal
@@ -568,10 +568,10 @@
 		[mobs.harbinger.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.2
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.2
 
 		[mobs.harbinger.cap_config]
 			#Damage Cap
@@ -909,10 +909,10 @@
 		[mobs.scylla.combat_config]
 			#Scale mob health by this value
 			#Range: 0.1 ~ 1000000.0
-			health_multiplier = 1.0
+			health_multiplier = 1.4
 			#Scale mob attack damage by this value
 			#Range: 0.1 ~ 1000000.0
-			attack_multiplier = 1.0
+			attack_multiplier = 1.25
 
 		[mobs.scylla.cap_config]
 			#Damage Cap

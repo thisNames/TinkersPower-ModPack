@@ -1,27 +1,27 @@
 
 ["Boss Health"]
 	#最大生命值：1024
-	"Sandworm Health" = 320.0
-	"Yeti Health" = 360.0
-	"Dragon Health" = 500.0
-	"Knight Health" = 400.0
-	"Kraken Health" = 620.0
+	"Sandworm Health" = 640.0
+	"Yeti Health" = 620.0
+	"Dragon Health" = 800.0
+	"Knight Health" = 900.0
+	"Kraken Health" = 1000.0
 
 ["Boss Armor"]
 	#最大护甲：30
-	"Sandworm Armor" = 24.0
-	"Yeti Armor" = 8.0
-	"Dragon Armor" = 22.0
-	"Knight Armor" = 10.0
-	"Kraken Armor" = 20.0
+	"Sandworm Armor" = 20.0
+	"Yeti Armor" = 10.0
+	"Dragon Armor" = 18.0
+	"Knight Armor" = 20.0
+	"Kraken Armor" = 12.0
 
 ["Base Boss Damages"]
 	#并非所有伤害来源都取决于此变量！
-	"Sandworm Damage" = 12.0
-	"Yeti Damage" = 18.0
-	"Dragon Damage" = 15.0
-	"Knight Damage" = 14.0
-	"Kraken Damage" = 10.0
+	"Sandworm Damage" = 16.0
+	"Yeti Damage" = 20.0
+	"Dragon Damage" = 20.0
+	"Knight Damage" = 25.0
+	"Kraken Damage" = 12.0
 
 ["Gameplay Changes"]
 	"Can players use the Roll ability" = true

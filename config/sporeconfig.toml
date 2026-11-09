@@ -140,12 +140,12 @@
 		"Boots Durability" = 400
 		#Default 5
 		#Range: > 1
-		"Boots Protection" = 5
+		"Boots Protection" = 9
 
 	["Living Upgraded Chestplate"."Leggings Upgraded"]
 		#Default 10
 		#Range: > 1
-		"Leggings Protection" = 10
+		"Leggings Protection" = 12
 		#Default 650
 		#Range: > 1
 		"Leggings Durability" = 650
@@ -153,7 +153,7 @@
 	["Living Upgraded Chestplate"."Chestplate Upgraded"]
 		#Default 13
 		#Range: > 1
-		"Chestplate Protection" = 13
+		"Chestplate Protection" = 14
 		#Default 700
 		#Range: > 1
 		"Chestplate Durability" = 700
@@ -161,7 +161,7 @@
 	["Living Upgraded Chestplate"."Helmet Upgraded"]
 		#Default 6
 		#Range: > 1
-		"Helmet Protection" = 6
+		"Helmet Protection" = 10
 		#Default 600
 		#Range: > 1
 		"Helmet Durability" = 600
@@ -1338,13 +1338,13 @@
 	"Knockback Resistance" = 0
 	#Default 1
 	#Range: > 0
-	Toughness = 1
+	Toughness = 4
 	#Default 500
 	#Range: > 1
 	Durability = 500
 	#Default 5
 	#Range: > 1
-	Protection = 5
+	Protection = 9
 
 ["Plated Exoskeleton"]
 	#Default 1
@@ -1357,34 +1357,34 @@
 	["Plated Exoskeleton".Helmet]
 		#Default 4
 		#Range: > 1
-		"Helmet Protection" = 4
+		"Helmet Protection" = 5
 		#Default 350
 		#Range: > 1
-		"Helmet Durability" = 450
+		"Helmet Durability" = 420
 
 	["Plated Exoskeleton".Leggings]
 		#Default 6
 		#Range: > 1
-		"Leggings Protection" = 6
+		"Leggings Protection" = 7
 		#Default 400
 		#Range: > 1
-		"Leggings Durability" = 500
+		"Leggings Durability" = 460
 
 	["Plated Exoskeleton".Boots]
 		#Default 350
 		#Range: > 1
-		"Boots Durability" = 450
+		"Boots Durability" = 400
 		#Default 3
 		#Range: > 1
-		"Boots Protection" = 3
+		"Boots Protection" = 4
 
 	["Plated Exoskeleton".Chestplate]
 		#Default 8
 		#Range: > 1
-		"Chestplate Protection" = 8
+		"Chestplate Protection" = 9
 		#Default 500
 		#Range: > 1
-		"Chestplate Durability" = 600
+		"Chestplate Durability" = 500
 
 ["Horse Armor"]
 	#Default 8
@@ -1400,7 +1400,7 @@
 ["Living Exoskeleton"]
 	#Default 1
 	#Range: > 0
-	"Armor Toughness" = 1
+	"Armor Toughness" = 2
 	#Default 1
 	#Range: > 0
 	"Armor Knockback Resistance" = 1
@@ -1408,10 +1408,10 @@
 	["Living Exoskeleton".Helmet]
 		#Default 4
 		#Range: > 1
-		"Helmet Protection" = 4
+		"Helmet Protection" = 7
 		#Default 350
 		#Range: > 1
-		"Helmet Durability" = 350
+		"Helmet Durability" = 450
 
 	["Living Exoskeleton".Leggings]
 		#Default 9
@@ -1419,15 +1419,15 @@
 		"Leggings Protection" = 9
 		#Default 400
 		#Range: > 1
-		"Leggings Durability" = 400
+		"Leggings Durability" = 500
 
 	["Living Exoskeleton".Boots]
 		#Default 350
 		#Range: > 1
-		"Boots Durability" = 350
+		"Boots Durability" = 550
 		#Default 4
 		#Range: > 1
-		"Boots Protection" = 4
+		"Boots Protection" = 6
 
 	["Living Exoskeleton".Chestplate]
 		#Default 10
@@ -1435,7 +1435,7 @@
 		"Chestplate Protection" = 10
 		#Default 500
 		#Range: > 1
-		"Chestplate Durability" = 500
+		"Chestplate Durability" = 580
 
 ["Griefing Parameters"]
 	"The block breaking hardness of calamities" = 5
@@ -1446,9 +1446,9 @@
 
 	["Weapons and Tools OwO".Crossbow]
 		#Default 350
-		"Crossbow Durability" = 350
+		"Crossbow Durability" = 650
 		#Default 1.0
-		"Crossbow Range Damage Modifier" = 1.0
+		"Crossbow Range Damage Modifier" = 1.5
 
 	["Weapons and Tools OwO".Shield]
 		#Default 1000
@@ -1462,7 +1462,7 @@
 		Durability = 750
 		#Default 10
 		#Range: > 1
-		Damage = 10
+		Damage = 25
 
 	["Weapons and Tools OwO".PSI]
 		#Default 25
@@ -1492,12 +1492,12 @@
 
 	["Weapons and Tools OwO".Bow]
 		#Default 350
-		"Bow Durability" = 350
+		"Bow Durability" = 450
 		#Default 5
 		#Range: > 1
-		Damage = 5
+		Damage = 6
 		#Default 1.0
-		"Bow Range Damage Modifier" = 1.0
+		"Bow Range Damage Modifier" = 1.5
 
 	["Weapons and Tools OwO".Chakram]
 		#Default 600
@@ -1508,10 +1508,10 @@
 
 	["Weapons and Tools OwO".Rapier]
 		#Default 750
-		Durability = 750
+		Durability = 500
 		#Default 9
 		#Range: > 1
-		Damage = 9
+		Damage = 15
 
 	["Weapons and Tools OwO".Halberd]
 		#Default 750
@@ -1593,12 +1593,12 @@
 		Toughness = 2
 		#Default 8
 		#Range: > 1
-		Armor = 8
+		Armor = 5
 		#Default 750
 		Durability = 750
 		#Default 12
 		#Range: > 1
-		Damage = 12
+		Damage = 20
 
 	["Weapons and Tools OwO".Saber]
 		#Default 750
