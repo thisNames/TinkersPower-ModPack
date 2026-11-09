@@ -272,7 +272,7 @@ realmsNotifications:true
 reducedDebugInfo:false
 renderClouds:"true"
 renderDistance:12
-resourcePacks:["vanilla","mod_resources","highly_customizable_damage_numbers_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","file/[1.6] Enhanced Boss Bars.zip","file/Modded Omelet [120] [171].zip","vinery:bushy_leaves","file/RoughTweaksRevamped-1.12.2x.zip","file/LevelUP2DarkBack.zip","file/TrinketsandbaublesNew.zip","file/LycanitesRedux-1.16.5-v8.2.1-1.20.1-Edition.zip","file/Stefan\u0027sEnchantedBooks 1.20.2.zip","file/QualityForkedDarkUIReforing.zip","file/MandalasGUI+Dakmode_1.21.8_v2.5.zip","file/TinkersPowerTitleN3.zip"]
+resourcePacks:["vanilla","mod_resources","highly_customizable_damage_numbers_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","file/[1.6] Enhanced Boss Bars.zip","file/Modded Omelet [120] [171].zip","vinery:bushy_leaves","file/RoughTweaksRevamped-1.12.2x.zip","file/LevelUP2DarkBack.zip","file/TrinketsandbaublesNew.zip","file/LycanitesRedux-1.16.5-v8.2.1-1.20.1-Edition.zip","file/Stefan\u0027sEnchantedBooks 1.20.2.zip","file/QualityForkedDarkUIReforing.zip","file/MandalasGUI+Dakmode_1.21.8_v2.5.zip","file/TinkersPowerTitleN1.zip"]
 screenEffectScale:0.7517605633802817
 showAutosaveIndicator:true
 showSubtitles:false

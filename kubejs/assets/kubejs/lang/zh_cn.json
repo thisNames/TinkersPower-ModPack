@@ -10,8 +10,6 @@
     "item.kubejs.tooltip.tconstruct.jei_hiddens": "匠魂制造",
 
     "item.kubejs.tooltip.minecraft.wooden_pickaxe": "你没看错，这把木镐只有 3 点耐久！",
-    
-    "item.kubejs.tooltip.material.rating1": "一级合成材料",
 
     "item.kubejs.tooltip.alexscaves.green_soylent": "辐射热也算？",
 
@@ -35,6 +33,8 @@
     "item.kubejs.tooltip.vinery.wine_text2": "忽略葡萄酒给予的效果以及相似效果和温度效果",
 
     "item.kubejs.tooltip.xat.faelis_ring_taker": "猫灵手持时伤害+%s",
+
+    "item.kubejs.tooltip.ba_bt.key": "副手不要有物品，可能会把 BOSS 石碑砍掉",
 
     "item.kubejs.tooltip.chimes_right_bind": "潜行+右击可将其捆起来",
     "item.kubejs.tooltip.chimes_not_right_bind": "无法捆绑",

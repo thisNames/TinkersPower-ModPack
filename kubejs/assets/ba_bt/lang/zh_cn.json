@@ -211,5 +211,15 @@
 	"advancements.ba_bt.find_ocean_key.title": "他们究竟在隐藏着些什么…",
 	"advancements.ba_bt.find_ocean_key.description": "—找到一把海洋石碑之键",
 	"advancements.ba_bt.kill_ocean_golem.title": "核心开始躁动…",
-	"advancements.ba_bt.kill_ocean_golem.description": "—摧毁默莱森，来自深渊的虚空狂兽"
+	"advancements.ba_bt.kill_ocean_golem.description": "—摧毁默莱森，来自深渊的虚空狂兽",
+	
+	"block.ba_bt.land_spawner": "大地高塔刷怪笼",
+	"block.ba_bt.ocean_spawner": "海洋高塔刷怪笼",
+	"block.ba_bt.core_spawner": "炉心高塔刷怪笼",
+	"block.ba_bt.nether_spawner": "下界高塔刷怪笼",
+	"block.ba_bt.end_spawner": "末影高塔刷怪笼",
+	"block.ba_bt.sky_spawner": "天域高塔刷怪笼",
+
+	"enchantment.ba_bt.depth_dropper.desc": "未知",
+	"enchantment.ba_bt.core_temperature.desc": "持续受到灼烧伤害"
 }

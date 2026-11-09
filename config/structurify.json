@@ -1,8 +1,14 @@
 {
   "config_version": "2.0.41",
-  "config_datetime": "2026-09-28_03-20-37",
+  "config_datetime": "2026-11-09_21-15-58",
   "general": {},
-  "structure_namespaces": [],
+  "structure_namespaces": [
+    {
+      "name": "fbt",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 500
+    }
+  ],
   "structures": [],
   "structure_sets": [],
   "structure_template_pools": []

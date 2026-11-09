@@ -25,6 +25,7 @@
         "mods/**": true,
         "PCL/**": true,
         "saves/**": true,
+        "screenshots/**": true,
         "tconplanner/**": true,
         "TinkersPower-natives/**": true,
         "xaero/**": true
