@@ -122,6 +122,7 @@
                     "^decoration\\.lanserverproperties",
                     "^decoration\\.OverflowingBars",
                     "^decoration\\.highly_customizable_damage_numbers",
+                    "^decoration\\.jecharacters",
                     "^sound\\.AmbientSounds",
                     "^sound\\.PresenceFootsteps",
                     "^sound\\.dynamicsurroundings"
