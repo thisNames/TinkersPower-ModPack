@@ -104,7 +104,7 @@ const bountifulbaubles_accessories = {
         },
         {
             id: "phylactery_charm",
-            level: 2,
+            level: 1,
             dis: false
         },
         {
