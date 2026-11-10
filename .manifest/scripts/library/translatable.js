@@ -1,5 +1,11 @@
 /**
- * 翻译
+ * 翻译键对齐：
+ * 1. 先收集所有 lang 文件作为基准集合（具体配置以：package.json 里的 translatable）
+ * 2. 再用基准合计逐一分发给各个 lang 文件，确保每个类型的 lang 文件的 key 都是相同的
+ * 
+ * 配置：
+ * alignment：对齐那些语言（例如：如果想要所有的 lang 都对齐 zh_cn 的 key，则 alignment = [zh_cn]）注意：alignment 必须是 lang 的子集
+ * lang：支持那些语言
  */
 
 const FS = require("node:fs");
@@ -244,9 +250,6 @@ class TranslatableBuilder
                 {
                     totalKayCount += TranslatableBuilder.translatableGenerator(PT.join(required, namespace.name), this);
                 }
-
-                // TODO: debug
-                break;
             }
         }
 
@@ -265,7 +268,7 @@ class TranslatableBuilder
         const lang = PT.join(namespace, "lang");
 
         // 排除不存在的目录
-        if (!FS.existsSync(lang) || !FS.statSync(lang).isDirectory()) return;
+        if (!FS.existsSync(lang) || !FS.statSync(lang).isDirectory()) return 0;
 
         // 对齐基准集合
         const alignment = TranslatableBuilder.collectLanguageKeys(lang, builder);
@@ -406,14 +409,8 @@ class TranslatableBuilder
     }
 }
 
-// TODO: 测试
-const o = new TranslatableOption("package.json");
-const b = new TranslatableBuilder(o);
-
-b.onCounting((filename, count, diff) =>
-{
-    console.log(filename, count, diff);
-});
-
-console.log(b.builder());
-
+module.exports = {
+    TranslatableSortOption,
+    TranslatableOption,
+    TranslatableBuilder
+};

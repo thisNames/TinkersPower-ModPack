@@ -12,6 +12,7 @@
         "loot_tables_dir": "node .manifest/scripts/loot_tables_dir.js",
         "ban_generator": "node .manifest/scripts/ban_generator.js",
         "clear_logs": "node .manifest/scripts/clear_logs.js",
+        "build_language": "node .manifest/scripts/build_language.js",
         "build_server": "node .manifest/scripts/build_server.js",
         "build_client": "node .manifest/scripts/build_client",
         "build_client_offline": "node .manifest/scripts/build_client_offline.js"
