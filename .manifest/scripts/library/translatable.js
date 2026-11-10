@@ -17,7 +17,7 @@ class TranslatableOption
     constructor(pack)
     {
         /** @type {string} 如果 key 为空则显示此默认值 + key */
-        this.default = "";
+        this.prefix = "";
 
         /** @type {Array<string>} 对其语言集合 */
         this.alignment = [];
@@ -43,7 +43,7 @@ class TranslatableOption
         const translatable = data.translatable;
 
         // 默认值
-        this.default = translatable.default;
+        this.prefix = translatable.prefix;
 
         // 去重
         const lang = new Set(translatable.lang.map(t => t.trim()));
@@ -82,14 +82,14 @@ class TranslatableBuilder
         this.ext = ".json";
 
         /** @type {number} json 对齐空格：2~8 */
-        this.space = 4;
+        this.space = 2;
     }
 
     /**
      * 获取语言集合
      * @returns {Array<string>}
      */
-    get lang()
+    get Lang()
     {
         return this.option.lang;
     }
@@ -98,23 +98,52 @@ class TranslatableBuilder
      * 获取默认值
      * @returns {string}
      */
-    get default()
+    get Prefix()
     {
-        return this.default;
+        return this.option.prefix;
     }
 
     /**
      * 获取名命空间目录集合
      * @returns {Array<string>}
      */
-    get required()
+    get Required()
     {
         return this.option.required;
     }
 
+    /**
+     * 设置空格数量
+     * @param {number} value 空格数量：2~8
+     * @returns {TranslatableBuilder} this
+     */
     setSpace(value)
     {
-        this.space = Math.min(2, Math.max(value, 8));
+        this.space = Math.max(2, Math.min(value, 8));
+
+        return this;
+    }
+
+    /**
+     * 设置拓展名
+     * @param {string} value 拓展名：.json
+     * @returns {TranslatableBuilder} this
+     */
+    setExt(value)
+    {
+        this.ext = value;
+
+        return this;
+    }
+
+    /**
+     * 获取空 key 值
+     * @param {string} key key
+     * @returns {string}
+     */
+    getPrefixKey(key)
+    {
+        return this.Prefix ? this.Prefix.concat(".", key) : key;
     }
 
     /**
@@ -124,25 +153,26 @@ class TranslatableBuilder
     builder()
     {
         // 至少包含一个语言文件
-        if (this.lang.length < 1) throw new Error("lang is empty");
+        if (this.Lang.length < 1) throw new Error("lang is empty");
 
         // 遍历所有目录
-        for (let i = 0; i < this.required.length; i++)
+        for (let i = 0; i < this.Required.length; i++)
         {
             // 一个 required 目录
-            const required = this.required[i];
+            const required = this.Required[i];
             // 名命空间集合
             const listDirent = FS.readdirSync(required, { encoding: "utf-8", withFileTypes: true });
 
             // 分发处理单个名命空间
             for (let i = 0; i < listDirent.length; i++)
             {
+                // 名命空间
                 const namespace = listDirent[i];
 
                 // 是一个目录
                 if (namespace.isDirectory())
                 {
-                    this.generator(PT.join(required, namespace.name));
+                    TranslatableBuilder.translatableGenerator(PT.join(required, namespace.name), this);
                 }
 
                 // TODO: debug
@@ -152,28 +182,31 @@ class TranslatableBuilder
     }
 
     /**
-     * 创建
+     * 语言文件生成
      * @param {string} namespace 名命空间路径
+     * @param {TranslatableBuilder} builder 语言翻译生成器对象
      */
-    generator(namespace)
+    static translatableGenerator(namespace, builder)
     {
         // 语言目录路径
         const lang = PT.join(namespace, "lang");
 
-        // 排除
+        // 排除不存在的目录
         if (!FS.existsSync(lang) || !FS.statSync(lang).isDirectory()) return;
 
-        // 统集合
-        const alignment = this.collection(lang);
+        // 对齐基准集合
+        const alignment = TranslatableBuilder.collectLanguageKeys(lang, builder);
 
-        // 对齐
-        for (let i = 0; i < this.lang.length; i++)
+        // 对齐 key
+        for (let i = 0; i < builder.Lang.length; i++)
         {
-            const ln = this.lang[i];
-            const filename = PT.join(lang, ln + this.ext);
+            const ln = builder.Lang[i];
+            const filename = PT.join(lang, ln + builder.ext);
             const map = new Map();
+            // 统计变量；0 = 没变、-1 减少 1 个 key、1 加一个 key
+            let count = 0;
 
-            // 校验、对齐
+            // 校验、对齐（存在）
             if (FS.existsSync(filename) && FS.statSync(filename).isFile())
             {
                 const data = JSON.parse(FS.readFileSync(filename, { encoding: "utf-8" }));
@@ -182,50 +215,49 @@ class TranslatableBuilder
                 for (let j = 0; j < keys.length; j++)
                 {
                     const key = keys[j];
+                    const value = alignment.has(key) ? data[key] : builder.getPrefixKey(key);
 
-                    // 包含
-                    if (alignment.has(key))
-                    {
-                        map.set(key, data[key]);
-                    }
+                    // 保存
+                    map.set(key, value);
                 }
             }
             else
             {
-                // 生成
-                alignment.forEach(key => map.set(key, ""));
+                // 生成（不存在）
+                alignment.forEach(key => map.set(key, builder.getPrefixKey(key)));
             }
 
             // 保存
-            this.saver(filename, map);
+            TranslatableBuilder.mapSaveToJsonStringify(filename, map, builder.space);
         }
     }
 
     /**
-     * 收集 key
+     * 收集语言文件 key
      * @param {string} lang 语言文件目录
+     * @param {TranslatableBuilder} builder 语言翻译生成器对象
      * @returns {Set<string>}
      */
-    collection(lang)
+    static collectLanguageKeys(lang, builder)
     {
-        /** @type {Set<string>} 统集合 */
+        /** @type {Set<string>} 对齐基准集合 */
         const alignment = new Set();
-        // 文件集合
+        // 语言文件集合
         const listDirent = FS.readdirSync(lang, { encoding: "utf-8", withFileTypes: true });
 
-        // 获取所有的 json 文件
+        // 遍历所有的 json 文件
         for (let i = 0; i < listDirent.length; i++)
         {
             // 语言文件
-            const dirent = listDirent[i];
+            const language = listDirent[i];
 
             // 跳过非 json 文件
-            if (!dirent.isFile() || PT.extname(dirent.name) != this.ext) continue;
+            if (!language.isFile() || PT.extname(language.name) != builder.ext) continue;
             // 不在收集列表中
-            if (!this.alignment.has(dirent.name.split(".").shift())) continue;
+            if (!builder.alignment.has(language.name.split(".").shift())) continue;
 
-            // 名称
-            const filename = PT.join(lang, dirent.name);
+            // 文件
+            const filename = PT.join(lang, language.name);
             // 读取
             const buffer = FS.readFileSync(filename, { encoding: "utf-8" });
             // 解析
@@ -240,22 +272,23 @@ class TranslatableBuilder
 
     /**
      * 保存
-     * @param {string} lang 语言文件路径
+     * @param {string} filename 语言文件路径
      * @param {Map<string, string>} map 语言表
+     * @param {number} space 空格
      */
-    saver(lang, map)
+    static mapSaveToJsonStringify(filename, map, space)
     {
-        const data = {};
+        // 转为对象
+        const data = Object.fromEntries(map.entries());
 
-        for (const [key, value] of map.entries())
-        {
-            data[key] = value;
-        }
-
-        FS.writeFileSync(lang, JSON.stringify(data, null, 4), { encoding: "utf-8", flag: "w" });
+        // 写如
+        FS.writeFileSync(filename, JSON.stringify(data, null, space), { encoding: "utf-8", flag: "w" });
     }
 }
 
+// TODO: 测试
 const o = new TranslatableOption("package.json");
-new TranslatableBuilder(o).builder();
+const b = new TranslatableBuilder(o);
 // console.log(o);
+// console.log(b);
+b.builder();

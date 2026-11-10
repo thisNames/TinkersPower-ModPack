@@ -242,7 +242,7 @@
         }
     },
     "translatable": {
-        "default": "null",
+        "prefix": "null",
         "alignment": [],
         "lang": [
             "zh_cn",
