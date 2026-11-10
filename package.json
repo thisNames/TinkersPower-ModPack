@@ -240,5 +240,16 @@
                 }
             }
         }
+    },
+    "translatable": {
+        "default": "null",
+        "alignment": [],
+        "lang": [
+            "zh_cn",
+            "en_us"
+        ],
+        "required": [
+            "kubejs/assets"
+        ]
     }
 }
