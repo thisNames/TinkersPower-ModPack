@@ -248,7 +248,10 @@
             "collation": "a-z"
         },
         "prefix": "null",
-        "alignment": [],
+        "alignment": [
+            "zh_cn",
+            "en_us"
+        ],
         "lang": [
             "zh_cn",
             "en_us"

@@ -13,7 +13,10 @@ const logger = new Logger("build_language", PT.basename(__filename));
 // 生成器
 const builder = new TranslatableBuilder(new TranslatableOption(BuildOption.PACKAGE_JSON));
 
-builder.onCounting((target, count, diff) => logger.info(`target: ${target}, count: ${count}, diff: ${diff}`));
+builder.onCounting((target, count, diff, alignment) =>
+{
+    logger.info(`target: ${target}, alignment: ${alignment}, count: ${count}, diff: ${diff}`);
+});
 
 // 计数
 const total = builder.builder();

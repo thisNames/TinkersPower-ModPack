@@ -1,0 +1,21 @@
+{
+  "creativetab.cv_items": "Create Vinery",
+  "fluid_type.createvinery.apple_juice": "Apple Juice",
+  "fluid_type.createvinery.jungle_red_grape_juice": "Red Jungle Grape Juice",
+  "fluid_type.createvinery.jungle_white_grape_juice": "White Jungle Grape Juice",
+  "fluid_type.createvinery.red_grape_juice": "Red Grape Juice",
+  "fluid_type.createvinery.savanna_red_grape_juice": "Red Savanna Grape Juice",
+  "fluid_type.createvinery.savanna_white_grape_juice": "White Savanna Grape Juice",
+  "fluid_type.createvinery.taiga_red_grape_juice": "Red Taiga Grape Juice",
+  "fluid_type.createvinery.taiga_white_grape_juice": "White Taiga Grape Juice",
+  "fluid_type.createvinery.white_grape_juice": "White Grape Juice",
+  "item.createvinery.apple_juice_bucket": "Apple Juice Bucket",
+  "item.createvinery.jungle_red_grape_juice_bucket": "Jungle Red Grape Juice Bucket",
+  "item.createvinery.jungle_white_grape_juice_bucket": "Jungle White Grape Juice Bucket",
+  "item.createvinery.red_grape_juice_bucket": "Red Grape Juice Bucket",
+  "item.createvinery.savanna_red_grape_juice_bucket": "Savanna Red Grape Juice Bucket",
+  "item.createvinery.savanna_white_grape_juice_bucket": "Savanna White Grape Juice Bucket",
+  "item.createvinery.taiga_red_grape_juice_bucket": "Taiga Red Grape Juice Bucket",
+  "item.createvinery.taiga_white_grape_juice_bucket": "Taiga White Grape Juice Bucket",
+  "item.createvinery.white_grape_juice_bucket": "White Grape Juice Bucket"
+}

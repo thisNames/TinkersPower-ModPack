@@ -1,5 +1,5 @@
 {
-    "key.pickup.item": "拾取物品",
-    "item.tooltip.pickup.keybind": "按下 '%s' 挑选",
-    "item.throw": "蓄力：%s"
+  "item.throw": "蓄力：%s",
+  "item.tooltip.pickup.keybind": "按下 '%s' 挑选",
+  "key.pickup.item": "拾取物品"
 }

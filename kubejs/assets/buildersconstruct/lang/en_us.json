@@ -1,0 +1,11 @@
+{
+  "modifier.buildersconstruct.angel_builder": "Angel Builder",
+  "modifier.buildersconstruct.angel_builder.description": "Place blocks in mid-air.",
+  "modifier.buildersconstruct.angel_builder.flavor": "Quite useful when flying",
+  "modifier.buildersconstruct.construction": "Construction",
+  "modifier.buildersconstruct.construction.blocks_placed": "%d blocks placed",
+  "modifier.buildersconstruct.construction.description": "You can place multiple blocks with just one interaction.",
+  "modifier.buildersconstruct.construction.flavor": "Builder bigger, build faster",
+  "modifier.buildersconstruct.construction.mode": "Mode: %s",
+  "modifier.buildersconstruct.construction.mode_switch": "Switched mode to: %s"
+}

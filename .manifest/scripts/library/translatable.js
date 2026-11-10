@@ -132,7 +132,7 @@ class TranslatableBuilder
         /** @type {number} json 对齐空格：2~8 */
         this.space = 2;
 
-        /** @type {(filename: string, count: number, diff: number) => void} 计数回调 */
+        /** @type {(filename: string, count: number, diff: number, alignment: number) => void} 计数回调 */
         this.counting = null;
     }
 
@@ -208,7 +208,7 @@ class TranslatableBuilder
 
     /**
      * 计数回调
-     * @param {(filename: string, count: number, diff: number)} func 函数回调
+     * @param {(filename: string, count: number, diff: number, alignment: number)} func 函数回调
      * @returns {TranslatableBuilder} this
      */
     onCounting(func)
@@ -281,7 +281,7 @@ class TranslatableBuilder
             // 语言文件路径
             const filename = PT.join(lang, ln + builder.ext);
             // 语言表
-            const map = new Map();
+            const languageTable = new Map();
 
             // 当前语言键数量
             let count = 0;
@@ -292,40 +292,30 @@ class TranslatableBuilder
             if (FS.existsSync(filename) && FS.statSync(filename).isFile())
             {
                 const data = JSON.parse(FS.readFileSync(filename, { encoding: "utf-8" }));
-                const keys = Object.keys(data);
-
-                // 计数总
-                count = keys.length;
+                const keys = new Map(Object.entries(data));
 
                 // 遍历所有的健
-                for (let j = 0; j < keys.length; j++)
-                {
-                    // 翻译健
-                    const key = keys[j];
+                alignment.forEach(ag => languageTable.set(ag, keys.has(ag) ? keys.get(ag) : builder.getPrefixKey(ag)));
 
-                    // 翻译文本
-                    if (alignment.has(key))
-                    {
-                        map.set(key, data[key]);
-                        diff++;
-                    }
-                    else
-                    {
-                        map.set(key, builder.getPrefixKey(key));
-                    }
-                }
+                // 计数总
+                count = keys.size;
+                diff = alignment.size - count;
             }
             else
             {
                 // 生成（不存在）
-                alignment.forEach(key => map.set(key, builder.getPrefixKey(key)));
+                alignment.forEach(key => languageTable.set(key, builder.getPrefixKey(key)));
+
+                // 计数总
+                count = 0;
+                diff = alignment.size;
             }
 
             // 保存
-            TranslatableBuilder.mapSaveToJsonStringify(filename, map, builder);
+            TranslatableBuilder.mapSaveToJsonStringify(filename, languageTable, builder);
 
             // 回调统计
-            builder.counting && builder.counting(filename, count, alignment.size - diff);
+            builder.counting && builder.counting(filename, count, diff, alignment.size);
         }
 
         // 总的 key 数量：对齐数量 * 语言数量

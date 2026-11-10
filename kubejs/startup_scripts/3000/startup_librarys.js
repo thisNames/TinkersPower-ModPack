@@ -119,7 +119,7 @@ function incArrmor(event, id, damage, protection, toughness)
 {
     if (!event)
     {
-        console.error(`incArrmor: ${id}, event param is null.`);
+        console.error(`incArrmor: ${id}, event param is null`);
         return;
     }
 
@@ -144,7 +144,7 @@ function incArrmorDamage(event, id, damage, protection, toughness)
 {
     if (!event)
     {
-        console.error(`incArrmorDamage: ${id}, event param is null.`);
+        console.error(`incArrmorDamage: ${id}, event param is null`);
         return;
     }
 
