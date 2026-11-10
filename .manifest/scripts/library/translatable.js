@@ -6,6 +6,42 @@ const FS = require("node:fs");
 const PT = require("node:path");
 
 /**
+ * 翻译键排序配置
+ */
+class TranslatableSortOption
+{
+    /** @type {string} 升序 */
+    static collation_a_z = "a-z";
+
+    /** @type {string} 降序 */
+    static collation_z_a = "z-a";
+
+    /**
+     * 创建翻译键排序配置对象
+     * @param {boolean} enable 是否启用排序
+     * @param {string} collation 排序规则
+     */
+    constructor(enable, collation)
+    {
+        /** @type {boolean} enable 是否启用排序 */
+        this.enable = enable;
+
+        /** @type {string} collation 排序规则 */
+        this.collation = "";
+
+        // 排序规则校验
+        const collationInculde = [TranslatableSortOption.collation_a_z, TranslatableSortOption.collation_z_a];
+        const collationLower = collation.toLowerCase();
+
+        // 不存在
+        if (!collationInculde.includes(collationLower)) throw new Error("sort collation error not is: " + collationInculde.join(", "));
+
+        // 赋值
+        this.collation = collationLower;
+    }
+}
+
+/**
  * 语言翻译配置
  */
 class TranslatableOption
@@ -16,6 +52,9 @@ class TranslatableOption
      */
     constructor(pack)
     {
+        /** @type {TranslatableSortOption} 排序规则配置 */
+        this.sort = null;
+
         /** @type {string} 如果 key 为空则显示此默认值 + key */
         this.prefix = "";
 
@@ -57,6 +96,9 @@ class TranslatableOption
         // 对其语言集合（只取 lang 的子集）
         this.alignment = [...alignment].filter(t => lang.has(t));
 
+        // 排序
+        this.sort = new TranslatableSortOption(translatable.sort.enable, translatable.sort.collation);
+
         return this;
     }
 }
@@ -83,6 +125,18 @@ class TranslatableBuilder
 
         /** @type {number} json 对齐空格：2~8 */
         this.space = 2;
+
+        /** @type {(filename: string, count: number, diff: number) => void} 计数回调 */
+        this.counting = null;
+    }
+
+    /**
+     * 获取排序配置
+     * @returns {TranslatableSortOption}
+     */
+    get Sort()
+    {
+        return this.option.sort;
     }
 
     /**
@@ -147,13 +201,29 @@ class TranslatableBuilder
     }
 
     /**
+     * 计数回调
+     * @param {(filename: string, count: number, diff: number)} func 函数回调
+     * @returns {TranslatableBuilder} this
+     */
+    onCounting(func)
+    {
+        this.counting = func;
+
+        return this;
+    }
+
+    /**
      * 生成
      * @throws 空 lang 异常
+     * @returns {number}
      */
     builder()
     {
         // 至少包含一个语言文件
         if (this.Lang.length < 1) throw new Error("lang is empty");
+
+        // 总的翻译键数量（所有语言）
+        let totalKayCount = 0;
 
         // 遍历所有目录
         for (let i = 0; i < this.Required.length; i++)
@@ -172,19 +242,22 @@ class TranslatableBuilder
                 // 是一个目录
                 if (namespace.isDirectory())
                 {
-                    TranslatableBuilder.translatableGenerator(PT.join(required, namespace.name), this);
+                    totalKayCount += TranslatableBuilder.translatableGenerator(PT.join(required, namespace.name), this);
                 }
 
                 // TODO: debug
                 break;
             }
         }
+
+        return totalKayCount;
     }
 
     /**
      * 语言文件生成
      * @param {string} namespace 名命空间路径
      * @param {TranslatableBuilder} builder 语言翻译生成器对象
+     * @returns {number}
      */
     static translatableGenerator(namespace, builder)
     {
@@ -200,11 +273,17 @@ class TranslatableBuilder
         // 对齐 key
         for (let i = 0; i < builder.Lang.length; i++)
         {
+            // 语言项
             const ln = builder.Lang[i];
+            // 语言文件路径
             const filename = PT.join(lang, ln + builder.ext);
+            // 语言表
             const map = new Map();
-            // 统计变量；0 = 没变、-1 减少 1 个 key、1 加一个 key
+
+            // 当前语言键数量
             let count = 0;
+            // 当前语言键调整数量
+            let diff = 0;
 
             // 校验、对齐（存在）
             if (FS.existsSync(filename) && FS.statSync(filename).isFile())
@@ -212,13 +291,25 @@ class TranslatableBuilder
                 const data = JSON.parse(FS.readFileSync(filename, { encoding: "utf-8" }));
                 const keys = Object.keys(data);
 
+                // 计数总
+                count = keys.length;
+
+                // 遍历所有的健
                 for (let j = 0; j < keys.length; j++)
                 {
+                    // 翻译健
                     const key = keys[j];
-                    const value = alignment.has(key) ? data[key] : builder.getPrefixKey(key);
 
-                    // 保存
-                    map.set(key, value);
+                    // 翻译文本
+                    if (alignment.has(key))
+                    {
+                        map.set(key, data[key]);
+                        diff++;
+                    }
+                    else
+                    {
+                        map.set(key, builder.getPrefixKey(key));
+                    }
                 }
             }
             else
@@ -228,8 +319,14 @@ class TranslatableBuilder
             }
 
             // 保存
-            TranslatableBuilder.mapSaveToJsonStringify(filename, map, builder.space);
+            TranslatableBuilder.mapSaveToJsonStringify(filename, map, builder);
+
+            // 回调统计
+            builder.counting && builder.counting(filename, count, alignment.size - diff);
         }
+
+        // 总的 key 数量：对齐数量 * 语言数量
+        return alignment.size * builder.Lang.length;
     }
 
     /**
@@ -274,21 +371,49 @@ class TranslatableBuilder
      * 保存
      * @param {string} filename 语言文件路径
      * @param {Map<string, string>} map 语言表
-     * @param {number} space 空格
+     * @param @param {TranslatableBuilder} builder 语言翻译生成器对象
      */
-    static mapSaveToJsonStringify(filename, map, space)
+    static mapSaveToJsonStringify(filename, map, builder)
     {
         // 转为对象
         const data = Object.fromEntries(map.entries());
+        // 排序对象
+        const dataSort = {};
 
-        // 写如
-        FS.writeFileSync(filename, JSON.stringify(data, null, space), { encoding: "utf-8", flag: "w" });
+        // 排序
+        if (builder.Sort.enable)
+        {
+            // 拿到排序后的 key
+            const keys = Object.keys(data).sort((a, z) =>
+            {
+                return builder.Sort.collation == TranslatableSortOption.collation_a_z ? a.localeCompare(z) : z.localeCompare(a);
+            });
+
+            // 存入新的对象
+            keys.forEach(key =>
+            {
+                dataSort[key] = data[key];
+            });
+
+            // 写入排序
+            FS.writeFileSync(filename, JSON.stringify(dataSort, null, builder.space), { encoding: "utf-8", flag: "w" });
+
+            return;
+        }
+
+        // 写入默认
+        FS.writeFileSync(filename, JSON.stringify(data, null, builder.space), { encoding: "utf-8", flag: "w" });
     }
 }
 
 // TODO: 测试
 const o = new TranslatableOption("package.json");
 const b = new TranslatableBuilder(o);
-// console.log(o);
-// console.log(b);
-b.builder();
+
+b.onCounting((filename, count, diff) =>
+{
+    console.log(filename, count, diff);
+});
+
+console.log(b.builder());
+

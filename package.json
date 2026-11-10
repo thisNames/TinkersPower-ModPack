@@ -242,6 +242,10 @@
         }
     },
     "translatable": {
+        "sort": {
+            "enable": false,
+            "collation": "a-z"
+        },
         "prefix": "null",
         "alignment": [],
         "lang": [
