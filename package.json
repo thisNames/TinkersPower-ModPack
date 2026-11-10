@@ -244,7 +244,7 @@
     },
     "translatable": {
         "sort": {
-            "enable": false,
+            "enable": true,
             "collation": "a-z"
         },
         "prefix": "null",
