@@ -378,16 +378,14 @@ class TranslatableBuilder
      */
     static mapSaveToJsonStringify(filename, map, builder)
     {
-        // 转为对象
-        const data = Object.fromEntries(map.entries());
-        // 排序对象
-        const dataSort = {};
-
         // 排序
         if (builder.Sort.enable)
         {
+            // 排序对象
+            const dataSort = {};
+
             // 拿到排序后的 key
-            const keys = Object.keys(data).sort((a, z) =>
+            const keys = [...map.keys()].sort((a, z) =>
             {
                 return builder.Sort.collation == TranslatableSortOption.collation_a_z ? a.localeCompare(z) : z.localeCompare(a);
             });
@@ -395,7 +393,7 @@ class TranslatableBuilder
             // 存入新的对象
             keys.forEach(key =>
             {
-                dataSort[key] = data[key];
+                dataSort[key] = map.get(key);
             });
 
             // 写入排序
@@ -405,7 +403,7 @@ class TranslatableBuilder
         }
 
         // 写入默认
-        FS.writeFileSync(filename, JSON.stringify(data, null, builder.space), { encoding: "utf-8", flag: "w" });
+        FS.writeFileSync(filename, JSON.stringify(Object.fromEntries(map.entries()), null, builder.space), { encoding: "utf-8", flag: "w" });
     }
 }
 
