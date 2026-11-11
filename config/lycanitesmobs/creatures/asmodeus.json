@@ -7,6 +7,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.aberration.EntityAsmodeus",
   "modelClass": "com.lycanitesmobs.client.model.creature.legacy.ModelAsmodeus",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,
@@ -50,6 +51,7 @@
   "eggBackColor": "#222222",
   "eggForeColor": "#997700",
   "boss": true,
+  "bossBarRange": 120,
   "subspecies": [
     {
       "index": 0,
@@ -158,12 +160,14 @@
     },
     {
       "item": "lycanitesmobs:soulstone_demon",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 3,
       "chance": 1
     },
     {
       "item": "lycanitesmobs:soulstone_aberration",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 3,
       "chance": 1

@@ -8,6 +8,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.aberration.EntityGrigori",
   "modelClass": "com.lycanitesmobs.client.model.creature.biped.ModelGrigori",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,

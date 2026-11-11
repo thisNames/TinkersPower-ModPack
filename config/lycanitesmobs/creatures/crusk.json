@@ -7,6 +7,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.worm.EntityCrusk",
   "modelClass": "com.lycanitesmobs.client.model.creature.legacy.ModelCrusk",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,
@@ -23,7 +24,7 @@
     "biomeTags": [
       "forge:is_sandy",
       "forge:is_wasteland",
-      "minecarft:is_badlands",
+      "minecraft:is_badlands",
       "-forge:is_cold",
       "-forge:is_snowy"
     ],

@@ -1,13 +1,16 @@
 
 [General]
-	#The last version of Lycanites Mobs that this config ran with, if this is behind the Minimum Config Version then all configs (including jsons) will be reset, only manually update this if you have manually adapted your configs to the latest version of Lycanites Mobs.
+	#An informational marker for the Lycanites Mobs version that created this config. It does not delete, reset, or migrate configuration files.
 	version = "2.3.3.4"
 
 [Player]
-	#Player stat and ability settings.
-	#How much summoning focus a player regains per tick. Default is 5, was 1 in earlier RLCraft-style configs.
+	#How much summoning focus a player regains per tick.
 	#Range: > 0
 	"Summoning Focus Recharge" = 5
+	#Player stat and ability settings.
+	#How much spirit a player regains per tick.
+	#Range: > 0
+	"Spirit Recharge" = 10
 
 [Extra]
 	#Other extra config settings, some of the aren't necessarily specific to Lycanites Mobs.
@@ -25,7 +28,7 @@
 		checker = true
 
 	[Extra.familiars]
-		#Donation Familiars help support the development of this mod but can be turned of for individual players be adding their username to this list.
+		#Donation Familiars help support the development of this mod but can be disabled for individual players by adding their username or UUID to this list.
 		blacklist = []
 
 [Debug]
@@ -39,6 +42,9 @@
 	#Special tools for server admins.
 	#Here you can add a list of entity IDs for entity that you want to be forcefully removed.
 	removeEntityIds = []
+	#How many ticks a listed living entity remains before being forcefully removed. Non-living entities are removed immediately.
+	#Range: > 0
+	"Force Remove Entity Ticks" = 40
 
 [Client]
 	#Client side settings, defaults are recommended except for low end systems or for compatibility with mods that alter rendering.
@@ -66,13 +72,15 @@
 
 [Dungeons]
 	#Settings for Dungeon generation.
-	#Set to false to disable all Dungeons.
+	#Set to false to disable all future Dungeon generation.
 	enabled = true
-	#The average distance in chunks that dungeons are spaced apart from each other.
+	#The chunk spacing of the shared Dungeon structure grid. Requires a game/server restart.
+	#Range: 2 ~ 4096
 	distance = 40
 
 	[Dungeons.tower]
 		#The chance of a dungeon generating a tower on top (0.25 by default).
+		#Range: 0.0 ~ 1.0
 		chance = 0.25
 
 [Creatures]
@@ -161,6 +169,10 @@
 	randomSizeMin = 0.85
 	#The maximum size scale mobs can randomly spawn at.
 	randomSizeMax = 1.15
+	#Set to false to prevent Lycanites mobs from intentionally targeting villagers.
+	mobsAttackVillagers = true
+	#Semicolon-separated extra drops added to every Lycanites creature. Entry format: item_id,legacy_metadata_placeholder,min_amount,max_amount,chance. The metadata value is retained only for 1.12 config compatibility and is ignored on 1.20.1.
+	"Global Drops" = ""
 
 	[Creatures.difficulty]
 
@@ -274,13 +286,14 @@
 	disableAllSpawning = false
 	#If true, mobs will double check if their required blocks are nearby, such as Cinders needing so many blocks of fire.
 	enforceBlockCost = true
-	#Scales the spawn weights of all mobs from this mod. For example, you can use this to quickly half the spawn rates of mobs from this mod compared to vanilla/other mod mobs by setting it to 0.5.
+	#Scales the expected group size of routine terrain-based Lycanites JSON spawners. For example, 0.5 halves their long-run spawn output and 2.0 doubles it. Event, block, portal and other special spawners are not affected.
+	#Range: 0.0 ~ 100.0
 	spawnWeightScale = 1.0
 	#If true, when water mobs spawn, instead of checking the light level of the block the mob is spawning at, the light level of the surface (if possible) is checked. This stops mobs like Jengus from spawning at the bottom of deep rivers during the day, set to false for the old way.
 	useSurfaceLightLevel = true
-	#If true, when new world chunks are generated, no mobs from this mod will pre-spawn (mobs will still attempt to spawn randomly afterwards). Set this to true if you are removing mobs from vanilla dimensions as the vanilla WorldGen spawning ignores mob spawn conditions.
+	#If true, newly generated chunks do not activate Lycanites chunk-population spawners. Routine world-tick spawners still run afterwards.
 	ignoreWorldGenSpawning = false
-	#If true, some vanilla spawns in various biomes will be removed, note that vanilla mobs should still be easy to find, only they will be more biome specific.
+	#If true, applies the canonical Lycanites biome-specific vanilla spawn removals and Nether pack-size adjustments through a Forge biome modifier. Requires a server restart after changing.
 	controlVanillaSpawns = false
 	#A global comma separated list of dimension ids that overrides every other spawn setting in both the configs and json spawners. Use this to quickly stop all mobs from spawning in certain dimensions, etc.
 	globalDimensionList = "inqui:finalitas,inqui:dream"
@@ -384,6 +397,8 @@
 	highEquipmentRepairAmount = 500
 	#If true, assembled Equipment pieces will receive dynamic names based on their parts (e.g. 'Venomous Serpixian Hellscythe'). If false, they use the default translation key.
 	equipmentSpecialNames = false
+	#If true, standing in Shadowfire applies Blindness in addition to Decay.
+	shadowfireBlindness = true
 
 	[Items.item]
 

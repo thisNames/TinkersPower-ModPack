@@ -8,6 +8,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.insect.EntityJouste",
   "modelClass": "com.lycanitesmobs.client.model.creature.quadruped.ModelJouste",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,

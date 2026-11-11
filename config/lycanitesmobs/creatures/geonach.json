@@ -122,6 +122,7 @@
     },
     {
       "item": "lycanitesmobs:soulstone_worm",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 1,
       "chance": 1,

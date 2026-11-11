@@ -77,7 +77,7 @@
       "chance": 1
     },
     {
-      "item": "minecraft:firework_charge",
+      "item": "minecraft:firework_star",
       "minAmount": 1,
       "maxAmount": 1,
       "chance": 0.25

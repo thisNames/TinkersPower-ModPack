@@ -4,6 +4,7 @@
   "type": "spawner",
   "enabled": true,
   "loadDefault": true,
+  "globalSpawnWeightScale": true,
   "mobCountMin": 4,
   "ignoreBiomes": false,
   "ignoreLightLevel": true,

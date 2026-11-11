@@ -7,6 +7,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.demon.EntityRahovart",
   "modelClass": "com.lycanitesmobs.client.model.creature.legacy.ModelRahovart",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,
@@ -50,6 +51,7 @@
   "eggBackColor": "#000000",
   "eggForeColor": "#FF0000",
   "boss": true,
+  "bossBarRange": 120,
   "subspecies": [
     {
       "index": 0,
@@ -154,6 +156,7 @@
     },
     {
       "item": "lycanitesmobs:soulstone_demon",
+      "bonusAmount": false,
       "minAmount": 2,
       "maxAmount": 6,
       "chance": 1

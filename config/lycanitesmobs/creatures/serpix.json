@@ -8,6 +8,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.worm.EntitySerpix",
   "modelClass": "com.lycanitesmobs.client.model.creature.legacy.ModelSerpix",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,

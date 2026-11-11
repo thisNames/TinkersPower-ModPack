@@ -7,6 +7,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.undead.EntityReaper",
   "modelClass": "com.lycanitesmobs.client.model.creature.biped.ModelReaper",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,

@@ -109,6 +109,7 @@
     },
     {
       "item": "lycanitesmobs:soulstone_imp",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 1,
       "chance": 1,

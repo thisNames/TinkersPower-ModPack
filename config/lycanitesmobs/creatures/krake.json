@@ -9,6 +9,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.aberration.EntityKrake",
   "modelClass": "com.lycanitesmobs.client.model.creature.biped.ModelKrake",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,

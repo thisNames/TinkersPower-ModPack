@@ -7,6 +7,7 @@
   "entityClass": "com.lycanitesmobs.core.entity.creature.undead.EntityAmalgalich",
   "modelClass": "com.lycanitesmobs.client.model.creature.generic.ModelAmalgalich",
   "loadDefault": true,
+  "trueSight": true,
   "enabled": true,
   "spawning": {
     "enabled": true,
@@ -48,6 +49,7 @@
   "eggBackColor": "#340101",
   "eggForeColor": "#960000",
   "boss": true,
+  "bossBarRange": 120,
   "subspecies": [
     {
       "index": 0,
@@ -158,18 +160,21 @@
     },
     {
       "item": "lycanitesmobs:soulstone_undead",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 3,
       "chance": 1
     },
     {
       "item": "lycanitesmobs:soulstone_aberration",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 3,
       "chance": 1
     },
     {
       "item": "lycanitesmobs:soulstone_beast",
+      "bonusAmount": false,
       "minAmount": 1,
       "maxAmount": 3,
       "chance": 1
