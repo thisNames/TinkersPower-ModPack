@@ -11,6 +11,16 @@ const tp_accessories_accessories = {
             id: "magic_ring",
             level: 2,
             dis: false
+        },
+        {
+            id: "emerald_ring",
+            level: 3,
+            dis: false
+        },
+        {
+            id: "emerald_amulet",
+            level: 3,
+            dis: false
         }
     ]
 };

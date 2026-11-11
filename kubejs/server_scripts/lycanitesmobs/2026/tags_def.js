@@ -70,5 +70,9 @@ ServerEvents.tags("item", event =>
         _this("equipmentpart_wraithskull"),
         _this("equipmentpart_xaphanspine"),
         _this("equipmentpart_zephyrcloud")
-    ].forEach(item => event.add(lycanitesmobs_disintegration_tablet_tag, item));
+    ].forEach(item =>
+    {
+        event.add(lycanitesmobs_disintegration_tablet_tag, item);
+        event.add("c:hidden_from_recipe_viewers", item);
+    });
 });

@@ -84,7 +84,7 @@ StartupEvents.registry("item", event =>
         .maxStackSize(1)
         .rarity("epic")
         .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_ice.text1"))
-        .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_ice.text2").blue())
+        .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_ice.text2").color(Color.CYAN_DYE))
         .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_ice.text3").gold())
         .tooltip(Text.translatable("tooltip.tp_dragon_heart.dragons_heart_ice.text4").gold())
         .tag("curios:charm");
