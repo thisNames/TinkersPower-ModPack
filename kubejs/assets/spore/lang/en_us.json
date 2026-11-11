@@ -459,7 +459,7 @@
   "entity.spore.volatile": "Volatile",
   "entity.spore.wave": "Wave",
   "entity.spore.wendigo": "Wendigo",
-  "fluid_type.spore.bile": "null.fluid_type.spore.bile",
+  "fluid_type.spore.bile": "Bile",
   "hivemind_summon_message": "Endure...",
   "inf_pickaxe_found_ores": "Found traces of ",
   "inf_pickaxe_no_ores": "No ores found",
