@@ -321,11 +321,11 @@
 
 	[Mobs.Tendril]
 		#Default true
-		"Should tendrils go to spawners ?" = true
+		"Should tendrils go to spawners ?" = false
 		#Default true
-		"Should tendrils go to food containers ?" = true
+		"Should tendrils go to food containers ?" = false
 		#Default true
-		"Should tendrils go to human remains ?" = true
+		"Should tendrils go to human remains ?" = false
 
 	[Mobs.Ogre]
 		#Default 12
@@ -434,7 +434,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Mound default range" = 5.0
 		#Default true
-		"Should the mound spread foliage and infect blocks?" = true
+		"Should the mound spread foliage and infect blocks?" = false
 		#Default 900
 		#Range: > 1
 		"Sets Mound Ageing Cooldown" = 900
@@ -1191,7 +1191,7 @@
 		"Sets Gastgeber Damage" = 9.1
 		#Default 25
 		#Range: > 1
-		"Infection Range" = 25
+		"Infection Range" = 0
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Gastgeber Max health" = 105.0
