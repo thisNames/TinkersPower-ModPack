@@ -16,11 +16,11 @@ ServerEvents.recipes(event =>
     const _create = id => "create:" + id;
     const _grave = id => "graveyard:" + id;
 
-    // 崩解牌合成标签
-    const tablet_tag = "#" + lycanitesmobs_disintegration_tablet_tag;
-
     // 幽冥粉
-    event.recipes.kubejs.shapeless({ item: _bount("spectral_silt"), count: 4 }, [tablet_tag, _bount("disintegration_tablet")]);
+    event.shapeless({ item: _bount("spectral_silt"), count: 4 }, [
+        "#lycanitesmobs:disintegration_tablet",
+        _bount("disintegration_tablet")
+    ]);
 
     // 兽鞍
     event.remove({

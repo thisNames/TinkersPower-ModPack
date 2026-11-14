@@ -9,118 +9,47 @@ const xat_accessories = {
     curios: [
         {
             id: "weightless_stone",
-            level: 2,
-            dis: true
+            level: 2
         },
         {
             id: "inertia_null_stone",
-            level: 2,
-            dis: true
+            level: 2
         },
         {
             id: "greater_inertia_stone",
-            level: 2,
-            dis: true
+            level: 2
         },
         {
             id: "faelis_claw",
-            level: 2,
-            dis: false
+            level: 2
         },
         {
             id: "glow_ring",
-            level: 3,
-            dis: false
-        },
-        {
-            id: "sea_stone",
-            level: 1,
-            dis: false
+            level: 3
         },
         {
             id: "poison_stone",
-            level: 2,
-            dis: true
+            level: 2
         },
         {
             id: "wither_ring",
-            level: 2,
-            dis: false
-        },
-        {
-            id: "damage_shield",
-            level: 1,
-            dis: false
+            level: 2
         },
         {
             id: "teddy_bear",
-            level: 3,
-            dis: false
-        },
-        {
-            id: "dragons_eye",
-            level: 1,
-            dis: false
+            level: 3
         },
         {
             id: "polarized_stone",
-            level: 2,
-            dis: false
+            level: 2
         },
         {
             id: "ender_tiara",
-            level: 2,
-            dis: true
+            level: 2
         },
         {
             id: "arcing_orb",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "dragon_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "faelis_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "titan_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "cosmetic",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "taurus_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "fairy_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "dwarf_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "goblin_ring",
-            level: 1,
-            dis: false
-        },
-        {
-            id: "elf_ring",
-            level: 1,
-            dis: false
+            level: 1
         }
     ]
 };

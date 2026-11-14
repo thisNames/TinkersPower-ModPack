@@ -8,19 +8,12 @@ const tp_accessories_accessories = {
     namespace: "tp_accessories",
     curios: [
         {
-            id: "magic_ring",
-            level: 2,
-            dis: false
-        },
-        {
             id: "emerald_ring",
-            level: 3,
-            dis: false
+            level: 3
         },
         {
             id: "emerald_amulet",
-            level: 3,
-            dis: false
+            level: 3
         }
     ]
 };

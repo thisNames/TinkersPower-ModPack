@@ -1,7 +1,7 @@
 // priority: 2000
 
 /**
- * 材料等级标签
+ * 材料（战利品）等级标签
  * @type {string}
  */
 const material_level_tag = "acs:m";

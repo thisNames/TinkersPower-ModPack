@@ -1,16 +1,10 @@
 // priority: 2000
 
 /**
- * 饰品等级标签
+ * 饰品（战利品）等级标签
  * @type {string}
  */
 const accessories_level_tag = "acs:l";
-
-/**
- * 饰品合成粉标签
- * @type {string}
- */
-const accessories_dis_tag = "acs:dis";
 
 /**
  * 饰品配置
@@ -37,15 +31,6 @@ ServerEvents.tags("item", event =>
             const curio_level = accessories_level_tag + curio.level;
 
             event.add(curio_level, curio_id);
-
-            // 幽冥粉
-            if (curio.dis) event.add(accessories_dis_tag, curio_id);
         });
     });
-});
-
-// 幽冥粉合成配方
-ServerEvents.recipes(event =>
-{
-    event.shapeless("bountifulbaubles:spectral_silt", ["#" + accessories_dis_tag, "bountifulbaubles:disintegration_tablet"]);
 });

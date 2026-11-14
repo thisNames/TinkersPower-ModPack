@@ -63,9 +63,6 @@ ServerEvents.recipes(event =>
     // 安卡护符
     event.replaceInput({ output: _this("ankh_charm") }, _mc("gold_block"), _trinke("glowing_ingot"));
 
-    // 幽冥粉
-    event.shapeless(_this("spectral_silt"), ["#bountifulbaubles:baubles", _this("disintegration_tablet")]);
-
     // 闪耀币 
     event.recipes.kubejs.shaped({ item: _this("resplendent_token"), count: 2 }, [
         [_this("spectral_silt"), _trinke("glowing_powder"), _this("spectral_silt")],

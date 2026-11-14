@@ -9,8 +9,7 @@ const create_accessories = {
     curios: [
         {
             id: "goggles",
-            level: 3,
-            dis: false
+            level: 3
         }
     ]
 };

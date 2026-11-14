@@ -8,7 +8,7 @@ const lycanitesmobs_disintegration_tablet_tag = "lycanitesmobs:disintegration_ta
 
 ServerEvents.tags("item", event =>
 {
-    const _this = id => "lycanitesmobs:" + id;    
+    const _this = id => "lycanitesmobs:" + id;
 
     [
         _this("equipmentpart_afritlung"),
