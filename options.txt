@@ -173,9 +173,6 @@ key_key.pickup.item:key.keyboard.unknown
 key_key.playerlist:key.keyboard.tab
 key_key.ponder.ponder:key.keyboard.w
 key_key.presencefootsteps.settings:key.keyboard.unknown
-key_key.protection_pixel.armortabletrigger:key.keyboard.right.shift
-key_key.protection_pixel.flyfoward:key.keyboard.w
-key_key.protection_pixel.wingfly:key.keyboard.space
 key_key.reskillable.open_skills:key.keyboard.v
 key_key.right:key.keyboard.d
 key_key.saveToolbarActivator:key.keyboard.unknown

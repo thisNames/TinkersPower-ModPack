@@ -1104,58 +1104,6 @@
 				"iceandfire:mountain_troll_leather_leggings;0.07",
 				"iceandfire:mountain_troll_leather_boots;0.04",
 
-				# ===== Protection Pixel 盔甲重量 =====
-				# 机械动力胸甲（机械金属框架，中；统一保护1，权重一致）
-				"protection_pixel:wingsofprism_chestplate;0.14",
-				"protection_pixel:workerhornet_chestplate;0.14",
-				"protection_pixel:magneticstorm_chestplate;0.14",
-				"protection_pixel:pioneer_chestplate;0.14",
-				"protection_pixel:hellsnake_chestplate;0.14",
-				"protection_pixel:typhoon_chestplate;0.14",
-				"protection_pixel:breakeras_chestplate;0.14",
-				"protection_pixel:breaker_chestplate;0.14",
-				"protection_pixel:workerhornetas_chestplate;0.14",
-				"protection_pixel:magneticstormas_chestplate;0.14",
-				"protection_pixel:hellsnakeas_chestplate;0.14",
-				"protection_pixel:typhoonas_chestplate;0.14",
-				"protection_pixel:floatshield_chestplate;0.14",
-				"protection_pixel:tosaki_chestplate;0.14",
-				"protection_pixel:pioneeras_chestplate;0.14",
-				"protection_pixel:wingsofprismas_chestplate;0.14",
-				"protection_pixel:falconnest_chestplate;0.14",
-				"protection_pixel:falconnestas_chestplate;0.14",
-				# 机械动力头（机械金属，中；保护1）
-				"protection_pixel:plague_helmet;0.06",
-				"protection_pixel:lancer_helmet;0.06",
-				"protection_pixel:hammer_helmet;0.06",
-				"protection_pixel:hunter_helmet;0.06",
-				"protection_pixel:closed_helmet;0.06",
-				"protection_pixel:bloodprisoner_helmet;0.06",
-				"protection_pixel:nightdemon_helmet;0.06",
-				"protection_pixel:plagueas_helmet;0.06",
-				"protection_pixel:lanceras_helmet;0.06",
-				"protection_pixel:hammeras_helmet;0.06",
-				"protection_pixel:hunteras_helmet;0.06",
-				"protection_pixel:closedas_helmet;0.06",
-				"protection_pixel:bloodprisoneras_helmet;0.06",
-				"protection_pixel:nightdemonas_helmet;0.06",
-				"protection_pixel:tosaki_helmet;0.07",  # 保护2/韧2
-				# 机械动力护腿（保护1 / as升级保护2 / tosaki保护2韧2）
-				"protection_pixel:slingshot_leggings;0.08",
-				"protection_pixel:anchorpoint_leggings;0.08",
-				"protection_pixel:buoyancy_leggings;0.08",
-				"protection_pixel:slingshotas_leggings;0.085",
-				"protection_pixel:anchorpointas_leggings;0.085",
-				"protection_pixel:buoyancyas_leggings;0.085",
-				"protection_pixel:tosaki_leggings;0.09",
-				# 链板（链甲板，中重；保护6/韧4）
-				"protection_pixel:linkplate_helmet;0.07",
-				"protection_pixel:linkplate_chestplate;0.16",
-				"protection_pixel:linkplate_leggings;0.09",
-				"protection_pixel:linkplate_boots;0.05",
-				# 防护棉靴（棉布，极轻）
-				"protection_pixel:socks_boots;0.03",
-
 				# ===== Twilight Forest 盔甲重量 =====
 				# 铁木（铁渗木，中）
 				"twilightforest:ironwood_helmet;0.06",

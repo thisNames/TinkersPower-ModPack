@@ -1191,7 +1191,7 @@
 		"Sets Gastgeber Damage" = 9.1
 		#Default 25
 		#Range: > 1
-		"Infection Range" = 0
+		"Infection Range" = 1
 		#Default 70
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Gastgeber Max health" = 105.0

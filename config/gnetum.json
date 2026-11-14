@@ -308,12 +308,6 @@
       },
       "pass": 1
     },
-    "protection_pixel": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
     "potioncore": {
       "enabled": {
         "value": "AUTO"

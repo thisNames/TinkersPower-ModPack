@@ -22,7 +22,6 @@ const toughasnails_armors_list = [
     block_factorys_bosses_toughasnails_armors,
     cataclysm_toughasnails_armors,
     iceandfire_toughasnails_armors,
-    protection_pixel_toughasnails_armors,
     twilightforest_toughasnails_armors
 ];
 
