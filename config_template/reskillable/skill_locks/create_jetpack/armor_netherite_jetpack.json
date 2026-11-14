@@ -1,0 +1,15 @@
+{
+    "locks": [
+        {
+            "id": "defense",
+            "level": 18
+        },
+        {
+            "id": "agility",
+            "level": 22
+        }
+    ],
+    "items": [
+        "netherite_jetpack"
+    ]
+}

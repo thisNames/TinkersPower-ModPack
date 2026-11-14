@@ -148,6 +148,8 @@ key_key.jei.toggleHideIngredient:key.keyboard.unknown
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.toggleWildcardHideIngredient:key.keyboard.unknown
 key_key.jei.transferRecipeBookmark:key.mouse.left:SHIFT
+key_key.jetpack.toggle_active.description:key.keyboard.g
+key_key.jetpack.toggle_hover.description:key.keyboard.r
 key_key.jump:key.keyboard.space
 key_key.l2mods.down:key.keyboard.unknown
 key_key.l2mods.left:key.keyboard.unknown

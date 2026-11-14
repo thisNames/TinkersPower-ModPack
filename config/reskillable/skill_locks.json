@@ -17,8 +17,7 @@
             "agility:24"
         ],
         "alexsmobs:tarantula_hawk_elytra": [
-            "defense:12",
-            "agility:24"
+            "agility:20"
         ],
         "aquamirae:abyssal_tiara": [
             "defense:24"
@@ -163,6 +162,13 @@
         ],
         "cataclysm:mechanical_fusion_anvil": [
             "building:24"
+        ],
+        "create_jetpack:jetpack": [
+            "agility:22"
+        ],
+        "create_jetpack:netherite_jetpack": [
+            "defense:18",
+            "agility:22"
         ],
         "deeperdarker:resonarium_helmet": [
             "defense:12"
@@ -612,7 +618,7 @@
             "defense:12"
         ],
         "minecraft:elytra": [
-            "agility:24"
+            "agility:20"
         ],
         "minecraft:golden_helmet": [
             "defense:6",
