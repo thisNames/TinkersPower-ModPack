@@ -57,7 +57,7 @@ ItemEvents.foodEaten(event =>
     // 是否是表中物品
     if (!alcocraftplus_drinks_amplifier_tables.has(id)) return;
     // 只对玩家生效
-    if (!player || !player.isLiving()) return;
+    if (!player || !player.isAlive()) return;
 
     // 取出要忽略的效果集合
     const ignore = alcocraftplus_drinks_amplifier_tables.get(id);

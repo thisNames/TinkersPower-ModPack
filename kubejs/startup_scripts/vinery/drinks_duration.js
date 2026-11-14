@@ -89,7 +89,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.living.LivingEntityUseItemE
     // 是否是表中物品
     if (!vinery_drinks_duration_tables.has(id)) return;
     // 只对玩家生效
-    if (!player || !player.isPlayer()) return;
+    if (!player || !player.isPlayer() || !player.isAlive()) return;
 
     // 去重操作
     const uuid = player.uuid + "";
