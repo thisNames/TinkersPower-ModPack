@@ -2,11 +2,7 @@
     "locks": [
         {
             "id": "agility",
-            "level": 6
-        },
-        {
-            "id": "building",
-            "level": 6
+            "level": 8
         }
     ],
     "items": [

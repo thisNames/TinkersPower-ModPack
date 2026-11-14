@@ -3,10 +3,6 @@
         {
             "id": "attack",
             "level": 12
-        },
-        {
-            "id": "building",
-            "level": 12
         }
     ],
     "items": [

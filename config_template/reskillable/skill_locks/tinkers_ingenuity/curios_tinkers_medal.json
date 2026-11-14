@@ -1,12 +1,8 @@
 {
     "locks": [
         {
-            "id": "building",
-            "level": 12
-        },
-        {
             "id": "magic",
-            "level": 8
+            "level": 12
         }
     ],
     "items": [

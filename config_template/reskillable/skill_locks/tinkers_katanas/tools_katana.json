@@ -2,11 +2,7 @@
     "locks": [
         {
             "id": "attack",
-            "level": 8
-        },
-        {
-            "id": "building",
-            "level": 8
+            "level": 10
         }
     ],
     "items": [

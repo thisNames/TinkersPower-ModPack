@@ -663,6 +663,9 @@
         "minecraft:damaged_anvil": [
             "building:12"
         ],
+        "minecraft:smithing_table": [
+            "building:12"
+        ],
         "minecraft:brewing_stand": [
             "building:12",
             "magic:12"
@@ -856,6 +859,12 @@
         "tconstruct:travelers_boots__*": [
             "defense:8"
         ],
+        "tconstruct:foundry_controller": [
+            "building:13"
+        ],
+        "tconstruct:smeltery_controller": [
+            "building:13"
+        ],
         "tconstruct:modifier_worktable": [
             "magic:13"
         ],
@@ -866,30 +875,32 @@
             "building:13"
         ],
         "tconstruct:crossbow__*": [
-            "building:8",
+            "attack:8",
             "agility:8"
         ],
         "tconstruct:longbow__*": [
-            "building:12",
-            "agility:12"
+            "agility:13"
         ],
         "tconstruct:war_pick__*": [
             "mining:8"
         ],
         "tconstruct:broad_axe__*": [
-            "gathering:12",
-            "building:12"
+            "attack:12",
+            "gathering:12"
         ],
         "tconstruct:cleaver__*": [
-            "attack:16",
-            "building:16"
+            "attack:18",
+            "building:18"
         ],
         "tconstruct:excavator__*": [
             "gathering:12"
         ],
         "tconstruct:mattock__*": [
-            "farming:5",
-            "gathering:5"
+            "farming:8",
+            "gathering:8"
+        ],
+        "tconstruct:pickadze__*": [
+            "mining:8"
         ],
         "tconstruct:pickaxe__*": [
             "mining:3"
@@ -903,8 +914,8 @@
             "farming:12"
         ],
         "tconstruct:sledge_hammer__*": [
-            "mining:12",
-            "building:12"
+            "mining:16",
+            "building:16"
         ],
         "tconstruct:travelers_shield__*": [
             "defense:6",
@@ -912,25 +923,23 @@
         ],
         "tconstruct:vein_hammer__*": [
             "mining:12",
-            "building:12"
+            "building:16"
         ],
         "tinkers_battle_spades:battle_spade__*": [
+            "attack:12",
             "gathering:8"
         ],
         "tinkers_ingenuity:tinkers_medal__*": [
-            "building:12",
-            "magic:8"
+            "magic:12"
         ],
         "tinkers_ingenuity:blowpipe__*": [
             "agility:12"
         ],
         "tinkers_ingenuity:meteor_spear__*": [
-            "attack:12",
-            "building:12"
+            "attack:12"
         ],
         "tinkers_katanas:katana__*": [
-            "attack:8",
-            "building:8"
+            "attack:10"
         ],
         "tinkers_things:laminar_helmet__*": [
             "defense:16",
@@ -949,23 +958,21 @@
             "building:16"
         ],
         "tinkers_things:shortbow__*": [
-            "agility:6",
-            "building:6"
+            "agility:8"
         ],
         "tinkers_things:halberd__*": [
-            "attack:10"
+            "attack:12"
         ],
         "tinkers_things:laminar_shield__*": [
             "defense:12",
             "building:12"
         ],
         "tinkers_thinking:arrow_thrower__*": [
-            "agility:6",
-            "building:6"
+            "agility:6"
         ],
         "tinkers_thinking:paxel__*": [
-            "mining:6",
-            "gathering:6"
+            "mining:8",
+            "gathering:8"
         ],
         "vinery:straw_hat": [
             "farming:20"

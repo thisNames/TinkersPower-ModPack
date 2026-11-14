@@ -1,6 +1,10 @@
 {
     "locks": [
         {
+            "id": "attack",
+            "level": 12
+        },
+        {
             "id": "gathering",
             "level": 8
         }

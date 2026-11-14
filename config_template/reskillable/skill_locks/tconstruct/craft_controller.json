@@ -1,0 +1,12 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 13
+        }
+    ],
+    "items": [
+       "foundry_controller",
+       "smeltery_controller"
+    ]
+}

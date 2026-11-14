@@ -2,11 +2,11 @@
     "locks": [
         {
             "id": "mining",
-            "level": 6
+            "level": 8
         },
         {
             "id": "gathering",
-            "level": 6
+            "level": 8
         }
     ],
     "items": [
