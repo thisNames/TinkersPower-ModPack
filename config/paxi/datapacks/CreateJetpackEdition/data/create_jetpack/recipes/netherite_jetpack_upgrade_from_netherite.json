@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": {
+        "item": "create_jetpack:jetpack"
+    },
+    "base": {
+        "item": "minecraft:netherite_chestplate"
+    },
+    "result": {
+        "item": "create_jetpack:netherite_jetpack"
+    },
+    "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+}

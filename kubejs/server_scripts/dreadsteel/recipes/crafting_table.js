@@ -5,16 +5,13 @@ ServerEvents.recipes(event =>
     const _graveyard = id => "graveyard:" + id;
     const _alexscaves = id => "alexscaves:" + id;
 
-
-    event.remove({
-        output: [
-            _this("dreadsteel_helmet"),
-            _this("dreadsteel_chestplate"),
-            _this("dreadsteel_leggings"),
-            _this("dreadsteel_boots"),
-            _this("dreadsteel_shield")
-        ]
-    });
+    [
+        _this("dreadsteel_helmet"),
+        _this("dreadsteel_chestplate"),
+        _this("dreadsteel_leggings"),
+        _this("dreadsteel_boots"),
+        _this("dreadsteel_shield")
+    ].forEach(item => event.remove({ id: item }));
 
     event.shaped(_this("dreadsteel_helmet"), [
         [_this("dreadsteel_ingot"), _cataclysm("monstrous_horn"), _this("dreadsteel_ingot")],
@@ -24,14 +21,14 @@ ServerEvents.recipes(event =>
 
     event.shaped(_this("dreadsteel_chestplate"), [
         [_this("dreadsteel_ingot"), "", _this("dreadsteel_ingot")],
-        [_this("dreadsteel_ingot"), _cataclysm("ignitium_block"), _this("dreadsteel_ingot")],
+        [_this("dreadsteel_ingot"), _cataclysm("ignitium_ingot"), _this("dreadsteel_ingot")],
         [_this("dreadsteel_ingot"), _graveyard("dark_iron_block"), _this("dreadsteel_ingot")]
     ]);
 
     event.shaped(_this("dreadsteel_leggings"), [
         [_this("dreadsteel_ingot"), _cataclysm("essence_of_the_storm"), _this("dreadsteel_ingot")],
         [_graveyard("dark_iron_block"), _this("dreadsteel_ingot"), _graveyard("dark_iron_block")],
-        [_cataclysm("burning_ashes"), "", _cataclysm("burning_ashes")]
+        [_this("dreadsteel_ingot"), "", _this("dreadsteel_ingot")]
     ]);
 
     event.shaped(_this("dreadsteel_boots"), [

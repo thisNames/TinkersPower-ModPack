@@ -63,15 +63,15 @@
         ],
         "block_factorys_bosses:dragon_bones_chestplate": [
             "defense:24",
-            "attack:16"
+            "agility:24"
         ],
         "block_factorys_bosses:dragon_bones_leggings": [
             "defense:24",
-            "attack:16"
+            "agility:24"
         ],
         "block_factorys_bosses:dragon_bones_boots": [
             "defense:24",
-            "attack:16"
+            "agility:24"
         ],
         "bountifulbaubles:ankh_charm": [
             "agility:24",
@@ -164,11 +164,11 @@
             "building:24"
         ],
         "create_jetpack:jetpack": [
-            "agility:22"
+            "agility:18"
         ],
         "create_jetpack:netherite_jetpack": [
             "defense:18",
-            "agility:22"
+            "agility:18"
         ],
         "deeperdarker:resonarium_helmet": [
             "defense:12"

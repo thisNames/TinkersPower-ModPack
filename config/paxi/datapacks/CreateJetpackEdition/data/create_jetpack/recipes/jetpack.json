@@ -1,0 +1,32 @@
+{
+    "type": "create_jetpack:copy_nbt_mechanical_crafting",
+    "pattern": [
+        " PSP ",
+        "PYXYP",
+        "PCECP",
+        " C C "
+    ],
+    "key": {
+        "E": {
+            "item": "iceandfire:armor_copper_metal_chestplate"
+        },
+        "C": {
+            "item": "create:chute"
+        },
+        "X": {
+            "item": "create:copper_backtank"
+        },
+        "S": {
+            "item": "create:shaft"
+        },
+        "Y": {
+            "item": "create:precision_mechanism"
+        },
+        "P": {
+            "tag": "forge:plates/brass"
+        }
+    },
+    "result": {
+        "item": "create_jetpack:jetpack"
+    }
+}

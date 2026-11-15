@@ -1,0 +1,10 @@
+{
+  "entity.minecraft.villager.dynamicvillage.hydraulic_engineer": "液压工程师",
+  "entity.minecraft.villager.dynamicvillage.mechanical_engineer": "机械工程师",
+  "entity.minecraft.villager.dynamicvillage.miner": "矿工",
+  "entity.minecraft.villager.dynamicvillage.train_mechanic": "列车机械师",
+  "entity.minecraft.villager.hydraulic_engineer": "液压工程师",
+  "entity.minecraft.villager.mechanical_engineer": "机械工程师",
+  "entity.minecraft.villager.miner": "矿工",
+  "entity.minecraft.villager.train_mechanic": "列车机械师"
+}
