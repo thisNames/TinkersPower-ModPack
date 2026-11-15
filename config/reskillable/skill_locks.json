@@ -703,6 +703,9 @@
         "minecraft:potato": [
             "farming:5"
         ],
+        "quality_forked:reforging_station": [
+            "building:12"
+        ],
         "roughtweaks:medkit": [
             "magic:12"
         ],

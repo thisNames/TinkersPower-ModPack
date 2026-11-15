@@ -29,6 +29,8 @@
   "item.kubejs.tooltip.minecraft.wooden_pickaxe": "Yes, really. 3 durability!",
   "item.kubejs.tooltip.roughtweaks.medkit_enchanted": "Enchanted Medkit",
   "item.kubejs.tooltip.roughtweaks.text": "Heals %s HP",
+  "item.kubejs.tooltip.spore.surgery_table": "It seems to be used to synthesize some terrifying items!",
+  "item.kubejs.tooltip.spore.surgery_table.1": "Discovery of fungal invasion structure and fungal dimension",
   "item.kubejs.tooltip.tconstruct.jei_hiddens": "Tinkers' Craft",
   "item.kubejs.tooltip.tooldisassemble.disassembling_tool": "Hold the Disassembling Tool in your main hand",
   "item.kubejs.tooltip.tooldisassemble.disassembling_tool.1": "Put the tool to break down in any hotbar slot (leftmost first)",

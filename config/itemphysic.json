@@ -503,7 +503,26 @@
         "{id:\"item\",item:\"tinkers_thinking:mace\"}",
         "{id:\"item\",item:\"tinkers_thinking:cutlass\"}",
         "{id:\"item\",item:\"tinkers_thinking:arrow_thrower\"}",
-        "{id:\"item\",item:\"tinkers_thinking:repeating_crossbow\"}"
+        "{id:\"item\",item:\"tinkers_thinking:repeating_crossbow\"}",
+        "{id:\"item\",item:\"minecraft:shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:white_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:light_gray_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:gray_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:black_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:brown_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:red_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:orange_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:yellow_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:lime_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:green_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:cyan_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:light_blue_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:blue_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:purple_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:magenta_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:pink_shulker_box\"}",
+        "{id:\"item\",item:\"minecraft:shulker_shell\"}",
+        "{id:\"item\",item:\"tinkers_things:sack\"}"
       ],
       "isWhitelist": true
     }
