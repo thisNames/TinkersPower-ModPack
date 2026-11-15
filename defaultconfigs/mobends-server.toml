@@ -1,0 +1,7 @@
+#Whether clients may apply bends packs on this server.
+#Bends packs replace entity animations, so a server can turn them off.
+allowBendspacks = true
+#Clamp how far an animation may displace an entity from its real position.
+#Limits how much a bends pack can misrepresent where a player actually is.
+limitMovement = false
+

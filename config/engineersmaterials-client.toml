@@ -1,0 +1,8 @@
+
+#.
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+	#.
+	#Enable the overlay for the cardboard armor
+	enableCardboardArmorOverlay = true
+

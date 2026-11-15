@@ -52,9 +52,7 @@ MoreJSEvents.registerPotionBrewing(event =>
     event.addPotionBrewing("twilightforest:magic_map_focus", "minecraft:awkward", "potioncore:magic_inhibition");
 
     // 延伸
-    event.addPotionBrewing("create:extendo_grip", "minecraft:thick", "potioncore:reach");
-    event.addPotionBrewing("create:mechanical_arm", "minecraft:thick", "potioncore:reach");
-    event.addPotionBrewing("create:deployer", "minecraft:thick", "potioncore:reach");
+    event.addPotionBrewing("create:brass_hand", "minecraft:thick", "potioncore:reach");
 
     // 荆棘
     event.addPotionBrewing("quark:cactus_block", "minecraft:mundane", "potioncore:recoil");

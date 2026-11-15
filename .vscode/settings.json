@@ -29,5 +29,9 @@
         "tconplanner/**": true,
         "TinkersPower-natives/**": true,
         "xaero/**": true
+    },
+    "files.associations": {
+        "**/config/**/*.json": "jsonc",
+        "**/kubejs/**/*.json": "jsonc"
     }
 }
