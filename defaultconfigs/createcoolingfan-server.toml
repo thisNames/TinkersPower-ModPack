@@ -1,5 +1,6 @@
+# 匠魂、机械动力：冷却鼓风机
 ["Casting Fan Factors"]
-	#Fallback factor for any FanProcessingType not listed in createcoolingfan-factors.json.
-	#Range: -5.0 ~ 5.0
+	#未在 createcoolingfan-factors.json 中列出的任何 FanProcessingType 的回退系数。
+	#范围：-5.0 ~ 5.0
 	defaultFactor = 0.5
 

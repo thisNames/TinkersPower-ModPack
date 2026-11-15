@@ -1,9 +1,10 @@
+# JEI（资源管理器）
 ["cheat mode"]
-	#Enable the cheat mode for players who have an operator status (/op).
-	#Permission providers may override this with the jei.cheat permission.
+	#为拥有管理员权限（/op）的玩家启用作弊模式。
+	#权限提供方可通过 jei.cheat 权限覆盖此项。
 	enableCheatModeForOp = true
-	#Enable the cheat mode for players who are in the creative mode.
+	#为创造模式下的玩家启用作弊模式。
 	enableCheatModeForCreative = true
-	#Enable the cheat mode for players who can use the "/give" command.
+	#为可使用 "/give" 指令的玩家启用作弊模式。
 	enableCheatModeForGive = false
 

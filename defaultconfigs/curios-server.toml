@@ -1,19 +1,20 @@
-#Sets behavior for keeping Curios items on death.
-#ON - Curios items are kept on death
-#DEFAULT - Curios items follow the keepInventory gamerule
-#OFF - Curios items are dropped on death
-#Allowed Values: ON, DEFAULT, OFF
+# 饰品（API）
+#设置死亡时如何保留 Curios 物品。
+#ON - 死亡时保留 Curios 物品
+#DEFAULT - Curios 物品遵循 keepInventory 游戏规则
+#OFF - 死亡时掉落 Curios 物品
+#可选值：ON, DEFAULT, OFF
 keepCurios = "DEFAULT"
 
 [menu]
-	#Enables the old legacy Curios menu for better backwards compatibility.
+	#启用旧的遗留 Curios 菜单以获得更好的向后兼容性。
 	enableLegacyMenu = false
 
 	[menu.experimental]
-		#The minimum number of columns for the Curios menu.
-		#Range: 1 ~ 8
+		#Curios 菜单的最小列数。
+		#范围：1 ~ 8
 		minimumColumns = 1
-		#The maximum number of slots per page of the Curios menu.
-		#Range: 1 ~ 48
+		#Curios 菜单每页的最大槽位数。
+		#范围：1 ~ 48
 		maxSlotsPerPage = 48
 

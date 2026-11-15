@@ -1,15 +1,16 @@
-#The maximum amount of XP points that the XP Tome can hold. The default value (1395) represents having 30 levels.
-#Range: > 1
+# 经验之书
+#XP 之书可容纳的最大 XP 点数。默认值（1395）相当于拥有 30 级。
+#范围：> 1
 max_xp = 1395
-#The percentage of XP that the book will give back, as a sort of cost of using it.
-#Example: If this config value is set to 0.75, and an XP Tome has 100 XP stored, attempting to retrieve these 100 XP will give back 75 XP.
-#Note: This will not be 100% accurate, as Minecraft's XP does not use decimals.
-#Range: 0.0 ~ 1.0
+#书本返还的 XP 百分比，作为使用它的一种代价。
+#示例：若此配置值设为 0.75，而某本 XP 之书储存了 100 XP，尝试取回这 100 XP 时将返还 75 XP。
+#注意：这并非 100% 精确，因为 Minecraft 的 XP 不使用小数。
+#范围：0.0 ~ 1.0
 retrieval_percentage = 1.0
-#Setting this to true will remove only as much XP from the book at a time as is needed for the player to reach their next level.
+#设为 true 时，每次只从书中扣除玩家升到下一级所需的 XP 量。
 retrieve_until_next_level = false
-#Setting this to true will remove XP from the book in XP orb form. This is useful if you want to use XP from the book for tools enchanted with Mending.
+#设为 true 时，将以 XP 球的形式从书中扣除 XP。若你想把书中的 XP 用于具有经验修补附魔的工具，这会很有用。
 retrieve_xp_orbs = false
-#Setting this to true will store only as much XP from the player's XP bar until reaching the previous level, meaning only one level at maximum will be added to the book's storage at a time.
+#设为 true 时，只会从玩家经验条储存 XP 直到回到上一级，即每次最多只向书的储存中添加一级。
 store_until_previous_level = false
 

@@ -1,65 +1,66 @@
-#Miscellaneous settings
+# 机械动力：汽鸣铁道
+#杂项设置
 [misc]
 	#.
-	#Coupler will require points to be on the same or adjacent track edge, this will prevent the coupler from working if there is any form of junction in between the two points.
+	#耦合器将要求两点位于相同或相邻的轨道边缘，若两点之间存在任何形式的道岔，耦合器将无法工作。
 	strictCoupler = false
 	#.
-	#Allow controlling Brass Switches remotely when approaching them on a train
+	#允许在列车上接近黄铜开关时远程控制它们
 	flipDistantSwitches = true
 	#.
-	#Max distance between targeted track and placed switch stand
-	#Range: 16 ~ 128
+	#目标轨道与已放置的开关立杆之间的最大距离
+	#范围：16 ~ 128
 	switchPlacementRange = 64
 	#.
-	#Allow creepers and ghast fireballs to damage tracks
+	#允许苦力怕与恶魂火球破坏轨道
 	creeperTrackDamage = false
 	#.
-	#Multiplier used for calculating exhaustion from speed when a handcar is used.
-	#Range: 0.0 ~ 1.0
+	#使用手摇车时，用于计算速度带来饥饿消耗的倍数。
+	#范围：0.0 ~ 1.0
 	handcarHungerMultiplier = 0.009999999776482582
 	#.
-	#Rollers clear snow-encased tracks when rolling over them.
+	#压路机碾过时会清除被雪包裹的轨道。
 	rollersClearSnow = true
 	#.
-	#Allow creative mode players to relocate trains without distance restrictions.
+	#允许创造模式玩家无距离限制地迁移列车。
 	#[@cui:RequiresRelog]
 	unlimitedCreativeRelocation = false
 
 #.
-#Semaphore settings
+#信号灯设置
 [semaphores]
 	#.
 	#.
-	#Simplified semaphore placement (no upside-down placement)
+	#简化信号灯放置（不可倒置放置）
 	simplifiedPlacement = true
 	#.
-	#Whether semaphore color order is reversed when the semaphores are oriented upside-down
+	#当信号灯倒置时，其颜色顺序是否反转
 	flipYellowOrder = false
 
 #.
-#Conductor settings
+#列车长设置
 [conductors]
 	#.
 	#.
-	#Conductor whistle is limited to the owner of a train
+	#列车长哨声仅限列车所有者使用
 	mustOwnBoundTrain = false
 	#.
-	#Maximum length of conductor vents
-	#Range: > 1
+	#列车长通风管的最大长度
+	#范围：> 1
 	maxConductorVentLength = 64
 	#.
-	#How often a conductor whistle updates the train of the bound conductor
-	#Range: 1 ~ 600
+	#列车长哨声更新所绑定列车的频率
+	#范围：1 ~ 600
 	whistleRebindRate = 10
 
 #.
-#Realism Settings
+#真实感设置
 [realism]
 	#.
 	#.
-	#Make trains require fuel to run (either from fuel tanks or solid fuels in chests/barrels)
+	#使列车需要燃料才能运行（来自燃料罐或箱子/桶中的固体燃料）
 	realisticTrains = false
 	#.
-	#Make fuel tanks only accept proper liquid fuels (so water etc can't go into them)
+	#使燃料罐只接受合适的液体燃料（因此水等无法注入）
 	realisticFuelTanks = true
 

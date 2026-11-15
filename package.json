@@ -76,7 +76,9 @@
             },
             "defaultconfigs": {
                 "whitelist": false,
-                "list": [],
+                "list": [
+                    "^mobends"
+                ],
                 "skip": false
             },
             "kubejs": {

@@ -1,35 +1,36 @@
-#The minimum accuracy that grants an item of quality 1.
-#Range: 0.0 ~ 1.0
+# 星露谷钓鱼
+#获得品质 1 物品所需的最低精度。
+#范围：0.0 ~ 1.0
 quality1Threshold = 0.75
-#The minimum accuracy that grants an item of quality 2.
-#Range: 0.0 ~ 1.0
+#获得品质 2 物品所需的最低精度。
+#范围：0.0 ~ 1.0
 quality2Threshold = 0.9
-#The minimum accuracy that grants an item of quality 3.
-#Range: 0.0 ~ 1.0
+#获得品质 3 物品所需的最低精度。
+#范围：0.0 ~ 1.0
 quality3Threshold = 1.0
-#The multiplier that is applied to experience gained from fishing a quality 1 reward.
-#Range: 1.0 ~ 10.0
+#钓到品质 1 奖励所得经验应用的倍率。
+#范围：1.0 ~ 10.0
 quality1Multiplier = 1.5
-#The multiplier that is applied to experience gained from fishing a quality 2 reward.
-#Range: 1.0 ~ 10.0
+#钓到品质 2 奖励所得经验应用的倍率。
+#范围：1.0 ~ 10.0
 quality2Multiplier = 2.5
-#The multiplier that is applied to experience gained from fishing a quality 3 reward.
-#Range: 1.0 ~ 10.0
+#钓到品质 3 奖励所得经验应用的倍率。
+#范围：1.0 ~ 10.0
 quality3Multiplier = 4.0
-#The multiplier that is applied to the time it takes for a fish to bite after casting your rod.
-#Range: 0.0 ~ 1.0
+#抛竿后鱼咬钩所需时间的倍率。
+#范围：0.0 ~ 1.0
 biteTimeMultiplier = 0.8
-#The chance for finding a treasure chest each time you play the fishing minigame.
-#Range: 0.0 ~ 1.0
+#每次进行钓鱼小游戏时发现宝箱的概率。
+#范围：0.0 ~ 1.0
 treasureChestChance = 0.15
-#The chance that a treasure chest found in the fishing minigame is a golden chest.
-#Range: 0.0 ~ 1.0
+#钓鱼小游戏中发现的宝箱为黄金宝箱的概率。
+#范围：0.0 ~ 1.0
 goldenChestChance = 0.1
-#Whether it be possible to attach bobber items by hovering over a fishing rod in an inventory and right clicking.
+#是否可通过在物品栏中将浮标物品悬停在鱼竿上并右键来装备浮标。
 inventoryBobberEquipping = true
-#Whether legendary fish will have a strobe effect when moving in the minigame.
+#传奇鱼在小游戏中移动时是否会有频闪效果。
 legendaryFishFlashing = true
-#The chance that any fish that bites is a legendary fish.
-#Range: 0.0 ~ 1.0
+#咬钩的鱼为传奇鱼的概率。
+#范围：0.0 ~ 1.0
 legendaryFishChance = 0.01
 

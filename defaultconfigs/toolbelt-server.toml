@@ -1,8 +1,9 @@
+# 工具腰带
 [general]
-	#List of items to force-allow placing in the belt. Takes precedence over blacklist.
+	#强制允许放入腰带中的物品列表。优先级高于黑名单。
 	whitelist = []
-	#List of items to disallow from placing in the belt. (whitelist takes precedence)
+	#禁止放入腰带中的物品列表。（白名单优先级更高）
 	blacklist = []
-	#When set to false, stackable items will no longer be allowed by default.
+	#设为 false 时，默认将不再允许可堆叠物品。
 	allowAllNonStackableItems = true
 

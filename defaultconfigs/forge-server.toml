@@ -1,21 +1,22 @@
-#Server configuration settings
+# Forge（Minecraft）
+#服务器配置设置
 [server]
-	#Set this to true to remove any BlockEntity that throws an error in its update method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+	#设为 true 时，移除任何在 update 方法中抛出错误的方块实体，而不是关闭服务器并报告崩溃日志。警告：这可能会搞乱一切，请谨慎使用，后果自负。
 	removeErroringBlockEntities = false
-	#Set this to true to remove any Entity (Note: Does not include BlockEntities) that throws an error in its tick method instead of closing the server and reporting a crash log. BE WARNED THIS COULD SCREW UP EVERYTHING USE SPARINGLY WE ARE NOT RESPONSIBLE FOR DAMAGES.
+	#设为 true 时，移除任何在 tick 方法中抛出错误的实体（注意：不包括方块实体），而不是关闭服务器并报告崩溃日志。警告：这可能会搞乱一切，请谨慎使用，后果自负。
 	removeErroringEntities = false
-	#Set this to true to check the entire entity's collision bounding box for ladders instead of just the block they are in. Causes noticeable differences in mechanics so default is vanilla behavior. Default: false.
+	#设为 true 时，会检查实体整个碰撞包围盒以判断梯子，而非仅检查其所在方块。这会导致机制上的明显差异，因此默认采用原版行为。默认：false。
 	fullBoundingBoxLadders = false
-	#Base zombie summoning spawn chance. Allows changing the bonus zombie summoning mechanic.
-	#Range: 0.0 ~ 1.0
+	#僵尸召唤的基础生成概率。可调整额外的僵尸召唤机制。
+	#范围：0.0 ~ 1.0
 	zombieBaseSummonChance = 0.1
-	#Chance that a zombie (or subclass) is a baby. Allows changing the zombie spawning mechanic.
-	#Range: 0.0 ~ 1.0
+	#僵尸（或其子类）为幼儿的概率。可调整僵尸生成机制。
+	#范围：0.0 ~ 1.0
 	zombieBabyChance = 0.05
-	#The permission handler used by the server. Defaults to forge:default_handler if no such handler with that name is registered.
+	#服务器使用的权限处理器。若未注册同名处理器，则默认使用 forge:default_handler。
 	permissionHandler = "forge:default_handler"
-	#Set this to true to enable advertising the dedicated server to local LAN clients so that it shows up in the Multiplayer screen automatically.
+	#设为 true 时，向本地局域网客户端广播专用服务器，使其自动出现在多人游戏列表中。
 	advertiseDedicatedServerToLan = true
-	#Set this to true to enable living entities to use items with durations of 0. Fixes being able to use Eyes of Ender repeatedly by holding down the use button. Disabled by default as it could change interactions with items of existing mods.
+	#设为 true 时，允许生物使用持续时间为 0 的物品。修复了按住使用键可重复使用的末影之眼问题。默认关闭，因为这可能改变与现有模组物品的交互。
 	useItemWithDurationZero = false
 

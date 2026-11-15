@@ -1,3 +1,4 @@
-#Preferences for outputs from tags used in automatic compat in recipes
+# 地幔（匠魂前置）
+#配方自动兼容中使用的标签输出优先级偏好
 tagPreferences = ["minecraft", "tconstruct", "tmechworks", "metalborn", "embers", "create", "immersiveengineering", "mekanism", "thermal"]
 

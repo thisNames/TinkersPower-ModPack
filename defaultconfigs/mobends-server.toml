@@ -1,7 +1,8 @@
-#Whether clients may apply bends packs on this server.
-#Bends packs replace entity animations, so a server can turn them off.
+# 更多弯曲
+#客户端是否可在此服务器上应用 bends 动作包。
+#bends 动作包会替换实体动画，因此服务器可以将其关闭。
 allowBendspacks = true
-#Clamp how far an animation may displace an entity from its real position.
-#Limits how much a bends pack can misrepresent where a player actually is.
+#限制动画可将实体从其真实位置偏移的最大距离。
+#限制 bends 动作包对玩家真实位置的误导程度。
 limitMovement = false
 

@@ -1,25 +1,26 @@
+# 机械动力：柴油动力
 ["Server Configs"]
-	#Maximum width of Oil Barrels
+	#油桶的最大宽度
 	"Max Oil Barrel Width" = 3
-	#Canister can be filled by spouts
+	#罐子可由注液器填充
 	"Canister can be filled by spouts" = true
-	#Combustibles do boom boom when on fire
+	#可燃物着火时会爆炸
 	"Combustibles blow up" = true
 
 	["Server Configs"."Diesel Engines"]
-		#Turbocharged Diesel Engine Speed Multiplier
+		#涡轮增压柴油引擎转速倍数
 		"Turbocharged Diesel Engine Speed Multiplier" = 2.0
-		#Turbocharged Diesel Engine Burn Rate Multiplier
+		#涡轮增压柴油引擎燃烧速率倍数
 		"Turbocharged Diesel Engine Burn Rate Multiplier" = 1.0
-		#Whenever Normal Diesel Engines are enabled
+		#是否启用普通柴油引擎
 		"Normal Diesel Engines" = true
-		#Whenever Modular Diesel Engines are enabled
+		#是否启用模块化柴油引擎
 		"Modular Diesel Engines" = true
-		#Whenever Huge Diesel Engines are enabled
+		#是否启用巨型柴油引擎
 		"Huge Diesel Engines" = true
-		#Whenever Diesel Engines can be filled with an Item
+		#柴油引擎是否可用物品填充
 		"Engines filled with a bucket" = false
-		#Whenever Diesel Engines can be disabled with redstone
+		#柴油引擎是否可用红石关闭
 		"Engines disabled with redstone" = true
 
 	["Server Configs"."Oil Config"]
