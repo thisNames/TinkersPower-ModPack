@@ -1,7 +1,7 @@
 
 [inventoryButton]
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
-	inventoryButton = ""
+	inventoryButton = "NONE"
 	#The x position of the warp button in the inventory.
 	warpButtonX = 58
 	#The y position of the warp button in the inventory.
@@ -32,7 +32,7 @@
 	#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
 	frequency = 25
 	#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
-	dimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
+	dimensionAllowList = ["minecraft:overworld", "twilightforest:twilightforest"]
 	#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.
 	dimensionDenyList = []
 	#Set to 'PRESET_FIRST' to first use names from the custom names list. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
@@ -51,11 +51,11 @@
 	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
 	restrictRenameToOwner = false
 	#If enabled, waystones generated in worldgen are unbreakable.
-	generatedWaystonesUnbreakable = false
+	generatedWaystonesUnbreakable = true
 	#If enabled, leashed mobs will be teleported with you
-	transportLeashed = true
+	transportLeashed = false
 	#Whether to take leashed mobs with you when teleporting between dimensions
-	transportLeashedDimensional = true
+	transportLeashedDimensional = false
 	#List of leashed mobs that cannot be taken with you when teleporting
 	leashedDenyList = ["minecraft:wither"]
 	#Set to 'ALLOW' to allow dimensional warp in general. Set to 'GLOBAL_ONLY' to restrict dimensional warp to global waystones. Set to 'DENY' to disallow all dimensional warps.
