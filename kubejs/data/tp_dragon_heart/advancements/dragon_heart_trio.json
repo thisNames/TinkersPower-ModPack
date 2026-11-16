@@ -1,6 +1,6 @@
 {
+    "parent": "tp_dragon_heart:dragon_heart_revived",
     "display": {
-        "parent": "tp_dragon_heart:dragon_heart_revived",
         "icon": {
             "item": "tp_dragon_heart:dragons_heart_lightning"
         },

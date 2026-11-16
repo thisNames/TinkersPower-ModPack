@@ -1,0 +1,17 @@
+{
+    "locks": [
+        {
+            "id": "attack",
+            "level": 19
+        },
+        {
+            "id": "magic",
+            "level": 19
+        }
+    ],
+    "items": [
+        "dragons_heart_fire",
+        "dragons_heart_ice",
+        "dragons_heart_lightning"
+    ]
+}

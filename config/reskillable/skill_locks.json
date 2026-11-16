@@ -953,10 +953,10 @@
             "agility:12"
         ],
         "tinkers_ingenuity:meteor_spear__*": [
-            "attack:12"
+            "attack:16"
         ],
         "tinkers_katanas:katana__*": [
-            "attack:10"
+            "attack:12"
         ],
         "tinkers_things:laminar_helmet__*": [
             "defense:16",
@@ -990,6 +990,21 @@
         "tinkers_thinking:paxel__*": [
             "mining:8",
             "gathering:8"
+        ],
+        "tp_accessories:magic_ring": [
+            "magic:19"
+        ],
+        "tp_dragon_heart:dragons_heart_fire": [
+            "attack:19",
+            "magic:19"
+        ],
+        "tp_dragon_heart:dragons_heart_ice": [
+            "attack:19",
+            "magic:19"
+        ],
+        "tp_dragon_heart:dragons_heart_lightning": [
+            "attack:19",
+            "magic:19"
         ],
         "vinery:straw_hat": [
             "farming:20"

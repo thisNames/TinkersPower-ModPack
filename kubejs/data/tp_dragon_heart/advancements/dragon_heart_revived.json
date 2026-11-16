@@ -13,7 +13,7 @@
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false,
-        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+        "background": "iceandfire:textures/block/silver_block.png"
     },
     "criteria": {
         "has_fire": {
