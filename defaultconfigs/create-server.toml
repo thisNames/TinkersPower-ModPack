@@ -64,7 +64,7 @@
 	#.
 	#机械传送带的方块最大长度。
 	#范围：> 5
-	maxBeltLength = 20
+	maxBeltLength = 16
 	#.
 	#链式传送连接的方块最大长度。
 	#范围：> 5
@@ -93,7 +93,7 @@
 	#.
 	#转动手摇曲柄时，用于计算速度带来饥饿消耗的倍数。
 	#范围：0.0 ~ 1.0
-	crankHungerMultiplier = 0.009999999776482582
+	crankHungerMultiplier = 0.012
 	#.
 	#风车成功组装所需的帆型方块数量。
 	#范围：> 0
@@ -117,11 +117,11 @@
 		#.
 		#风扇可推动实体的方块最大距离。
 		#范围：> 5
-		fanPushDistance = 20
+		fanPushDistance = 16
 		#.
 		#风扇可拉取实体的方块最大距离。
 		#范围：> 5
-		fanPullDistance = 20
+		fanPullDistance = 16
 		#.
 		#风扇检查是否有物体阻挡其气流之间的游戏刻间隔。
 		#范围：> 10
@@ -142,7 +142,7 @@
 		#.
 		#可由活塞、轴承或其他方式移动的结构最大方块数量。
 		#范围：> 1
-		maxBlocksMoved = 2048
+		maxBlocksMoved = 1024
 		#.
 		#底盘附件范围的最大值。
 		#范围：> 1
@@ -154,7 +154,7 @@
 		#.
 		#绳索滑轮可放出的最大绳索长度。
 		#范围：> 1
-		maxRopeLength = 384
+		maxRopeLength = 256
 		#.
 		#两节相连矿车之间允许的最大距离。
 		#范围：> 1
@@ -439,7 +439,7 @@
 		#.
 		#每提供一个火药，蓝图炮可打印的方块数量。
 		#范围：> 1
-		schematicannonShotsPerGunpowder = 400
+		schematicannonShotsPerGunpowder = 10
 
 #.
 #Create 添加的设备与工具

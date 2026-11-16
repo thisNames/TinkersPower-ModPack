@@ -17,7 +17,7 @@
 	#.
 	#使用手摇车时，用于计算速度带来饥饿消耗的倍数。
 	#范围：0.0 ~ 1.0
-	handcarHungerMultiplier = 0.009999999776482582
+	handcarHungerMultiplier = 0.014
 	#.
 	#压路机碾过时会清除被雪包裹的轨道。
 	rollersClearSnow = true

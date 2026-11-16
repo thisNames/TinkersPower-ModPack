@@ -1,0 +1,12 @@
+{
+    "locks": [
+        {
+            "id": "building",
+            "level": 32
+        }
+    ],
+    "items": [
+        "schematic_table",
+        "schematicannon"
+    ]
+}

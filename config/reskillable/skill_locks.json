@@ -59,7 +59,7 @@
             "defense:18"
         ],
         "artifacts:crystal_heart": [
-            "magic:12"
+            "magic:19"
         ],
         "block_factorys_bosses:dragon_bones_chestplate": [
             "defense:24",
@@ -162,6 +162,15 @@
         ],
         "cataclysm:mechanical_fusion_anvil": [
             "building:24"
+        ],
+        "create:schematic_table": [
+            "building:32"
+        ],
+        "create:schematicannon": [
+            "building:32"
+        ],
+        "create:goggles": [
+            "building:8"
         ],
         "create_jetpack:jetpack": [
             "agility:18"
@@ -673,35 +682,34 @@
             "building:12"
         ],
         "minecraft:brewing_stand": [
-            "building:12",
             "magic:12"
         ],
         "minecraft:enchanting_table": [
-            "magic:12"
+            "magic:16"
         ],
         "minecraft:bone_meal": [
             "farming:12"
         ],
         "minecraft:wheat_seeds": [
-            "farming:5"
+            "farming:3"
         ],
         "minecraft:pumpkin_seeds": [
-            "farming:5"
+            "farming:3"
         ],
         "minecraft:melon_seeds": [
-            "farming:5"
+            "farming:3"
         ],
         "minecraft:beetroot_seeds": [
-            "farming:5"
+            "farming:3"
         ],
         "minecraft:torchflower_seeds": [
-            "farming:5"
+            "farming:3"
         ],
         "minecraft:carrot": [
-            "farming:5"
+            "farming:3"
         ],
         "minecraft:potato": [
-            "farming:5"
+            "farming:3"
         ],
         "quality_forked:reforging_station": [
             "building:12"

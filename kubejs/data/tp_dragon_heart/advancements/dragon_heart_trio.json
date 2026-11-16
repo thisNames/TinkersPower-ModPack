@@ -1,5 +1,6 @@
 {
     "display": {
+        "parent": "tp_dragon_heart:dragon_heart_revived",
         "icon": {
             "item": "tp_dragon_heart:dragons_heart_lightning"
         },
@@ -14,7 +15,6 @@
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "tp_dragon_heart:dragon_heart_revived",
     "criteria": {
         "has_fire": {
             "trigger": "minecraft:inventory_changed",
