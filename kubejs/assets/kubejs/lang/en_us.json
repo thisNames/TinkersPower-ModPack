@@ -37,6 +37,7 @@
   "item.kubejs.tooltip.tooldisassemble.disassembling_tool.1": "Put the tool to break down in any hotbar slot (leftmost first)",
   "item.kubejs.tooltip.tooldisassemble.disassembling_tool.2": "Right-click a Scarlet or Azure Neodymium Block",
   "item.kubejs.tooltip.tooldisassemble.disassembling_tool.3": "The first breakable tool in your hotbar is disassembled",
+  "item.kubejs.tooltip.toughasnails.thermoregulator": "Put ice cubes in for cooling, put fuel in for heating",
   "item.kubejs.tooltip.tp_armorunder.auto": "Auto climate control! (Disabled)",
   "item.kubejs.tooltip.tp_armorunder.beekeeper": "Toasty to wear! (Disabled)",
   "item.kubejs.tooltip.tp_armorunder.cool": "Nice and cool! (Disabled)",
