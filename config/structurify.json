@@ -1,15 +1,95 @@
 {
   "config_version": "2.0.41",
-  "config_datetime": "2026-11-09_21-15-58",
+  "config_datetime": "2026-11-17_16-44-53",
   "general": {},
-  "structure_namespaces": [
+  "structure_namespaces": [],
+  "structures": [
     {
-      "name": "fbt",
+      "name": "fbt:deep_battletower",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 500
+      "min_distance_from_world_center": 160
+    },
+    {
+      "name": "fbt:mega_battletower",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 320
+    },
+    {
+      "name": "fbt:tall_battletower",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 192
+    },
+    {
+      "name": "spore:biomass_tower",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 160
+    },
+    {
+      "name": "spore:biomass_tower_cave",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 320
+    },
+    {
+      "name": "spore:cathedral",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 3200
+    },
+    {
+      "name": "spore:cell",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 3200
+    },
+    {
+      "name": "spore:celltower",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 3200
+    },
+    {
+      "name": "spore:church",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 3200
+    },
+    {
+      "name": "spore:hospital",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 4992
+    },
+    {
+      "name": "spore:iceberg_mines",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 4992
+    },
+    {
+      "name": "spore:lab",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 3200
+    },
+    {
+      "name": "spore:lodge",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 4992
+    },
+    {
+      "name": "spore:mass_grave",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 4992
+    },
+    {
+      "name": "spore:military_camp",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 4992
+    },
+    {
+      "name": "spore:mines",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 4992
+    },
+    {
+      "name": "spore:prison",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 3200
     }
   ],
-  "structures": [],
   "structure_sets": [],
   "structure_template_pools": []
 }
