@@ -101,7 +101,7 @@ modlistBtn.addEventListener("click", () =>
 fileList.forEach(el =>
 {
     // 魔改模组，不下载
-    if (el.classList.contains("disable")) return;
+    // if (el.classList.contains("disable")) return;
 
     const projectID = Number.parseInt(el.querySelector(".project-id").textContent.trim());
     const fileID = Number.parseInt(el.querySelector(".file-id").textContent.trim());
@@ -113,6 +113,25 @@ fileList.forEach(el =>
     alink.href = downloadLink;
 
     el.appendChild(alink);
+});
+
+// 创建文件名称项
+fileList.forEach(el =>
+{
+    // 实际的文件名称
+    const filename = el.dataset.fn || "unknow";
+    // 文件名称 dom
+    const span = document.createElement("span");
+    // 放在 cf-link 的后面
+    const cflink = el.querySelector(".cf-link");
+    
+    // 设置属性
+    span.title = "filename";
+    span.textContent = filename;
+    span.classList.add("fn");
+
+    // 追加
+    el.insertBefore(span, cflink);
 });
 
 // 导航栏生成
