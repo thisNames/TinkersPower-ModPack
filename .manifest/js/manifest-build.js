@@ -50,6 +50,7 @@ const manifest = new Manifest(mname, version, author, minecraft, manifestType, N
 // 生成文件
 const manifestBtn = document.querySelector(".manifest-btn");
 const modlistBtn = document.querySelector(".modlist-btn");
+const modsBtn = document.querySelector(".mods-btn");
 const filesCount = document.querySelector(".files");
 
 // 设置文件数量
@@ -76,7 +77,7 @@ modlistBtn.addEventListener("click", () =>
     fileList.forEach(el =>
     {
         if (el.classList.contains("disable")) return;
-        
+
         const mname = el.querySelector(".name").textContent.trim();
         const href = el.querySelector(".cf-link").href;
         const li = `\t<li><a href="${href}">${mname}</a></li>`;
@@ -97,7 +98,38 @@ modlistBtn.addEventListener("click", () =>
     download.click();
 });
 
-// 创建下载链接
+// 点击下载 mods.json 文件
+modsBtn.addEventListener("click", () =>
+{
+    /** @type {{count: number, list: Array<string>}} 模组文件列表 */
+    const mods = { count: 0, list: [] };
+
+    // 一个分类模块
+    navList.forEach(el =>
+    {
+        const id = el.id;
+        const items = el.querySelectorAll(".item");
+
+        // 添加到列表
+        items.forEach(item => mods.list.push(id.concat(".", item.dataset.fn || "unknow")));
+    });
+
+    // 排序
+    mods.list = mods.list.sort((a, b) => a.localeCompare(b));
+    mods.count = mods.list.length;
+
+    // 下载
+    const modsFile = new Blob([JSON.stringify(mods, null, 4)], { type: "application/json" });
+    const modsUrl = URL.createObjectURL(modsFile);
+
+    const download = document.createElement("a");
+    download.href = modsUrl;
+    download.download = "mods.json";
+
+    download.click();
+});
+
+// 创建下载模组链接
 fileList.forEach(el =>
 {
     // 魔改模组，不下载
@@ -124,7 +156,7 @@ fileList.forEach(el =>
     const span = document.createElement("span");
     // 放在 cf-link 的后面
     const cflink = el.querySelector(".cf-link");
-    
+
     // 设置属性
     span.title = "filename";
     span.textContent = filename;
@@ -138,14 +170,17 @@ fileList.forEach(el =>
 navList.forEach(el =>
 {
     const id = el.id;
-    const name = el.querySelector(".title>h2").textContent.trim();
+    const name = el.querySelector(".title>h2");
     const li = document.createElement("li");
     const a = document.createElement("a");
     const span = document.createElement("span");
 
     // 跳转链接
     a.href = `#${id}`;
-    a.textContent = name;
+    a.textContent = name.textContent.trim();
+
+    // 刷新标题
+    name.textContent = name.textContent + "@" + id;
 
     // id
     span.textContent = id;

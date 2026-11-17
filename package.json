@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "compiled": "node .manifest/scripts/compiled.js",
+        "compare_mods": "node .manifest/scripts/compare_mods.js",
         "alignment_options": "node .manifest/scripts/alignment_options.js",
         "reskillable_skill_locks": "node .manifest/scripts/reskillable_skill_locks.js",
         "itemphysic_general": "node .manifest/scripts/itemphysic_general.js",

@@ -64,6 +64,7 @@ TinkersPower.jar
 # manifest
 /.manifest/manifest.json
 /.manifest/modlist.html
+/.manifest/mods.json
 
 # log
 /*.log
