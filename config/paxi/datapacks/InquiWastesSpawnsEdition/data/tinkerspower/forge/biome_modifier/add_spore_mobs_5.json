@@ -6,31 +6,31 @@
     "spawners": [
         {
             "type": "spore:sieger",
-            "weight": 2,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1
         },
         {
             "type": "spore:gazenbreacher",
-            "weight": 2,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1
         },
         {
             "type": "spore:hindenburg",
-            "weight": 2,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1
         },
         {
             "type": "spore:howitzer",
-            "weight": 1,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1
         },
         {
             "type": "spore:hohlfresser",
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1
         },
@@ -42,7 +42,7 @@
         },
         {
             "type": "spore:stahl",
-            "weight": 1,
+            "weight": 5,
             "minCount": 1,
             "maxCount": 1
         },
@@ -54,7 +54,7 @@
         },
         {
             "type": "spore:verfall",
-            "weight": 1,
+            "weight": 5,
             "minCount": 1,
             "maxCount": 1
         }

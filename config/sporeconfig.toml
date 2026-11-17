@@ -28,7 +28,7 @@
 	"Hunger in seconds" = 300
 	#Default true
 	"Should the infected starve overtime?" = true
-	"The amount of needed Proto Hiveminds for the world to change (Proto World Modifier)" = 3
+	"The amount of needed Proto Hiveminds for the world to change (Proto World Modifier)" = 65533
 	#Default true
 	"Should certain mobs wear costumes on occasions?" = false
 	#Default false
@@ -1197,7 +1197,7 @@
 		"Sets Gastgeber Max health" = 105.0
 		#Default 30
 		#Range: > 1
-		"Seconds before Gastgeber spreads foliage" = 30
+		"Seconds before Gastgeber spreads foliage" = 60
 
 	[Mobs.Hivetumor]
 		#Default 10
