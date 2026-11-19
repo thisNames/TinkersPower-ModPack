@@ -197,10 +197,10 @@
 	#Execute threshold (target's remaining health percentage, 0.2 = 20%)
 	#Range: 0.05 ~ 0.5
 	executeThreshold = 0.1
-	#斩杀伤害值
-	#Execute damage amount
-	#Range: 1000.0 ~ 9.99999999E8
-	executeDamage = 1000
+	#斩杀音效音量（0.0 = 静音，1.0 = 原始音量）
+	#Execution sound volume (0.0 = mute, 1.0 = original volume)
+	#Range: 0.0 ~ 1.0
+	executeVolume = 0.6
 
 ["Blaze Heart Settings"]
 	#烈焰之心相关配置
@@ -422,4 +422,22 @@
 	#针叶林村庄房屋
 	#结构ID: minecraft:chests/village/village_taiga_house
 	villageTaigaHouseLoot = ""
+
+["Teleport Settings"]
+	#回城类物品（魔镜 / 虫洞镜 / 回忆药水 / 虫洞药水）与传送到玩家的相关限制
+	#Limits for recall-type items (Magic Mirror / Wormhole Mirror / Recall Potion / Wormhole Potion) and teleport-to-player
+	#最大回城距离（格），按水平距离计算（忽略高度差）。0 = 不限制
+	#Max recall distance in blocks, measured horizontally (height ignored). 0 = unlimited
+	#Range: 0 ~ 30000000
+	recall_max_distance = 0
+	#回城是否允许跨维度。关闭后只能在同一维度内回到重生点
+	#Whether recalling across dimensions is allowed
+	recall_allow_cross_dimension = true
+	#传送到其他玩家的最大距离（格），按水平距离计算。0 = 不限制
+	#Max distance for teleporting to another player, measured horizontally. 0 = unlimited
+	#Range: 0 ~ 30000000
+	player_teleport_max_distance = 0
+	#传送到其他玩家是否允许跨维度
+	#Whether teleporting to another player across dimensions is allowed
+	player_teleport_allow_cross_dimension = true
 
