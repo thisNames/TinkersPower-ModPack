@@ -7,4 +7,7 @@ ItemEvents.tooltip(event =>
     event.add("iceandfire:hippogryph_talon", Text.translatable("item.kubejs.tooltip.xat.faelis_ring_taker", "2").yellow());
 
     event.add("cataclysm:tidal_claws", Text.translatable("item.kubejs.tooltip.xat.faelis_ring_taker", "3").yellow());
+
+    // 装饰护符
+    event.add("xat:cosmetic", Text.translatable("item.kubejs.tooltip.xat.cosmetic").gold());
 });

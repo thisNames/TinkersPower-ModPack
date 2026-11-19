@@ -43,6 +43,7 @@
   "item.kubejs.tooltip.tp_armorunder.cool": "穿起来冰冰凉凉！（无法使用）",
   "item.kubejs.tooltip.vinery.wine_text1": "增加增益效果时长，最大 6 分钟",
   "item.kubejs.tooltip.vinery.wine_text2": "忽略葡萄酒给予的效果以及相似效果和温度效果",
+  "item.kubejs.tooltip.xat.cosmetic": "奢饰品",
   "item.kubejs.tooltip.xat.faelis_ring_taker": "猫灵手持时伤害+%s",
   "loot.kubejs.tooltip.artifacts.cloud_in_a_bottle": "天域之径",
   "loot.kubejs.tooltip.artifacts.cloud_in_a_bottle_vow": "腾云而起……天域触手可及",

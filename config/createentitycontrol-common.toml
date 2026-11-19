@@ -84,7 +84,7 @@
 	#--------------------------------------------------------------------------
 	#A list of blocks can't be crushed by block entities. 
 	#If you squeeze a stone with dirt and stone in this list the dirt will drop while stone leave!
-	blocks_uncrushable = ["minecraft:deepslate", "minecraft:stone", "minecraft:cobblestone", "#forge:stone", "#minecraft:stone", "#forge:ores", "#minecraft:ores", "#forge:dirt", "#minecraft:dirt", "#forge:sand", "#minecraft:sand", "#forge:gravel", "#minecraft:gravel", "#forge:obsidian", "#c:obsidians"]
+	blocks_uncrushable = ["minecraft:deepslate", "minecraft:stone", "minecraft:cobblestone", "#forge:stone", "#minecraft:stone", "#forge:ores", "#minecraft:ores", "#forge:dirt", "#minecraft:dirt", "#forge:sand", "#minecraft:sand", "#forge:gravel", "#minecraft:gravel", "#forge:obsidian", "#c:obsidians", "twilightforest:giant_cobblestone", "twilightforest:giant_log", "twilightforest:giant_leaves", "twilightforest:giant_obsidian"]
 	#--------------------------------------------------------------------------
 	#A list of blocks can be crushed by block entities.
 	#Create's default config.

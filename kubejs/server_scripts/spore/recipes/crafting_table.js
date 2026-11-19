@@ -4,4 +4,7 @@ ServerEvents.recipes(event =>
 
     // 手术台
     event.remove({ output: _this("surgery_table") });
+
+    // CDU
+    event.remove({ output: _this("cdu") });
 });

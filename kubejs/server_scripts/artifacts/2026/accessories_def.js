@@ -93,11 +93,11 @@ const artifacts_accessories = {
         },
         {
             id: "feral_claws",
-            level: 3
+            level: 2
         },
         {
             id: "power_glove",
-            level: 3
+            level: 2
         },
         {
             id: "fire_gauntlet",
@@ -109,7 +109,7 @@ const artifacts_accessories = {
         },
         {
             id: "golden_hook",
-            level: 3
+            level: 2
         },
         {
             id: "aqua_dashers",
@@ -117,7 +117,7 @@ const artifacts_accessories = {
         },
         {
             id: "bunny_hoppers",
-            level: 3
+            level: 2
         },
         {
             id: "kitty_slippers",

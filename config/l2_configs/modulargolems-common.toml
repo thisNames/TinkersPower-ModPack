@@ -59,10 +59,10 @@ sonicCannonDamageFactor = 0.15
 sonicCannonResonanceBonus = 0.1
 #Default slots for large golem
 #Range: 0 ~ 100
-largeGolemSlot = 3
+largeGolemSlot = 2
 #Default slots for humanoid golem
 #Range: 0 ~ 100
-humanoidGolemSlot = 2
+humanoidGolemSlot = 1
 #Default slots for dog golem
 #Range: 0 ~ 100
 dogGolemSlot = 1
