@@ -23,6 +23,8 @@
   "item.kubejs.tooltip.chimes.copper_chimes": "比铁风铃更为低沉的金属铃声",
   "item.kubejs.tooltip.chimes.glass_bells": "通过合成自定义颜色，风铃下方会悬挂短册",
   "item.kubejs.tooltip.chimes.iron_chimes": "清脆的金属铃声",
+  "item.kubejs.tooltip.create.mechanical_bearing": "移动结构被削弱（大部分石质方块无法挖掘）",
+  "item.kubejs.tooltip.create.mechanical_bearing_rotation": "旋转速度上限 %s",
   "item.kubejs.tooltip.curios.accessories": "此饰品已被禁用！",
   "item.kubejs.tooltip.itemprohibiteditems.items": "此物品无法使用！",
   "item.kubejs.tooltip.itemprohibiteditems.wearables": "此装备无法穿戴！",

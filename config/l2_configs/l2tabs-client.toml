@@ -11,5 +11,5 @@ attributeLinePerPage = 15
 #Example: menu.tabs.attribute for attribute tab
 #Example: menu.tabs.curios for curios tab
 #Example: pandora.menu.title for pandora tab
-hiddentTabs = ["menu.tabs.curios", "pandora.menu.title"]
+hiddentTabs = ["menu.tabs.curios", "pandora.menu.title", "modulargolems.tab.tracker_alive"]
 

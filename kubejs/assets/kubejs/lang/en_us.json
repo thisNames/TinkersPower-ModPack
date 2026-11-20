@@ -23,6 +23,8 @@
   "item.kubejs.tooltip.chimes.copper_chimes": "A deeper metallic chime than iron",
   "item.kubejs.tooltip.chimes.glass_bells": "Craft to pick a color; a paper strip hangs below",
   "item.kubejs.tooltip.chimes.iron_chimes": "Crisp metallic chime",
+  "item.kubejs.tooltip.create.mechanical_bearing": "The mobile structure is weakened (most of the stone blocks cannot be excavated)",
+  "item.kubejs.tooltip.create.mechanical_bearing_rotation": "Upper limit of rotation speed %s",
   "item.kubejs.tooltip.curios.accessories": "This accessory is disabled!",
   "item.kubejs.tooltip.itemprohibiteditems.items": "This item is disabled!",
   "item.kubejs.tooltip.itemprohibiteditems.wearables": "This gear cannot be worn!",
