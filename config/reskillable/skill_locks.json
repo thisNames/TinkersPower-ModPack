@@ -192,24 +192,19 @@
             "defense:12"
         ],
         "deeperdarker:soul_elytra": [
-            "defense:15",
-            "agility:25"
+            "agility:26"
         ],
         "deeperdarker:warden_helmet": [
-            "defense:25",
-            "agility:15"
+            "defense:24"
         ],
         "deeperdarker:warden_chestplate": [
-            "defense:25",
-            "agility:15"
+            "defense:24"
         ],
         "deeperdarker:warden_leggings": [
-            "defense:25",
-            "agility:15"
+            "defense:24"
         ],
         "deeperdarker:warden_boots": [
-            "defense:25",
-            "agility:15"
+            "defense:24"
         ],
         "dreadsteel:dreadsteel_helmet": [
             "defense:30"
@@ -713,6 +708,25 @@
         ],
         "quality_forked:reforging_station": [
             "building:12"
+        ],
+        "resonant_synthesis:otherside_helmet": [
+            "defense:26",
+            "agility:20"
+        ],
+        "resonant_synthesis:otherside_chestplate": [
+            "defense:26",
+            "agility:20"
+        ],
+        "resonant_synthesis:otherside_leggings": [
+            "defense:26",
+            "agility:20"
+        ],
+        "resonant_synthesis:otherside_boots": [
+            "defense:26",
+            "agility:20"
+        ],
+        "resonant_synthesis:ring_silence": [
+            "agility:20"
         ],
         "roughtweaks:medkit": [
             "magic:12"

@@ -2,11 +2,7 @@
     "locks": [
         {
             "id": "defense",
-            "level": 25
-        },
-        {
-            "id": "agility",
-            "level": 15
+            "level": 24
         }
     ],
     "items": [

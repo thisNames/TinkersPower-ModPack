@@ -7,7 +7,7 @@
     {
       "name": "fbt:deep_battletower",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 160
+      "min_distance_from_world_center": 320
     },
     {
       "name": "fbt:mega_battletower",
@@ -17,12 +17,12 @@
     {
       "name": "fbt:tall_battletower",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 192
+      "min_distance_from_world_center": 320
     },
     {
       "name": "spore:biomass_tower",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 160
+      "min_distance_from_world_center": 320
     },
     {
       "name": "spore:biomass_tower_cave",
@@ -32,22 +32,22 @@
     {
       "name": "spore:cathedral",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 3200
+      "min_distance_from_world_center": 4992
     },
     {
       "name": "spore:cell",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 3200
+      "min_distance_from_world_center": 4992
     },
     {
       "name": "spore:celltower",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 3200
+      "min_distance_from_world_center": 4992
     },
     {
       "name": "spore:church",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 3200
+      "min_distance_from_world_center": 4992
     },
     {
       "name": "spore:hospital",
@@ -62,7 +62,7 @@
     {
       "name": "spore:lab",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 3200
+      "min_distance_from_world_center": 4992
     },
     {
       "name": "spore:lodge",
@@ -87,7 +87,7 @@
     {
       "name": "spore:prison",
       "enable_min_distance_from_world_center": true,
-      "min_distance_from_world_center": 3200
+      "min_distance_from_world_center": 4992
     }
   ],
   "structure_sets": [],
