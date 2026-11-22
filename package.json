@@ -173,6 +173,7 @@
                     "whitelist": false,
                     "list": [
                         "^probe",
+                        "^config\\\\probejs.json",
                         "\\.keep$"
                     ],
                     "skip": false
@@ -221,6 +222,7 @@
                     "whitelist": false,
                     "list": [
                         "^probe",
+                        "^config\\\\probejs.json",
                         "\\.keep$"
                     ],
                     "skip": false

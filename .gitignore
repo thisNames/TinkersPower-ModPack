@@ -38,6 +38,7 @@
 /TinkersPower-natives
 /crash-reports
 /screenshots
+/natives-windows-x86_64
 
 # node
 /node_modules
@@ -59,15 +60,19 @@
 /usernamecache.json
 
 # jar files
-TinkersPower.jar
+/TinkersPower.jar
 
 # manifest
 /.manifest/manifest.json
 /.manifest/modlist.html
 /.manifest/mods.json
 
+# ------------- root * files ---------------
 # log
 /*.log
+
+# xml
+/*.xml
 
 # dat
 /*.dat
@@ -76,8 +81,6 @@ TinkersPower.jar
 # bak
 *.bak
 
-# codebuddy
-/.codebuddy
-
+# ------------- files ---------------
 # xlsx 
 ~$todos.xlsx
