@@ -20,6 +20,6 @@ ItemEvents.tooltip(event =>
     ].forEach(beer =>
     {
         event.add(beer, Text.translatable("item.kubejs.tooltip.alcocraftplus.beer_text1").gold()); 
-        event.add(beer, Text.translatable("item.kubejs.tooltip.alcocraftplus.beer_text2").gold()); 
+        event.add(beer, Text.translatable("item.kubejs.tooltip.alcocraftplus.beer_text2").gray()); 
     });
 });

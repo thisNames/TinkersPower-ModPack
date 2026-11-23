@@ -30,6 +30,6 @@ ItemEvents.tooltip(event =>
     ].forEach(wine =>
     {
         event.add(wine, Text.translatable("item.kubejs.tooltip.vinery.wine_text1").lightPurple());
-        event.add(wine, Text.translatable("item.kubejs.tooltip.vinery.wine_text2").lightPurple());
+        event.add(wine, Text.translatable("item.kubejs.tooltip.vinery.wine_text2").gray());
     });
 });
