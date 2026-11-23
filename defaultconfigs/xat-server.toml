@@ -1179,7 +1179,13 @@
 				"deeperdarker:warden_helmet;0.08",
 				"deeperdarker:warden_chestplate;0.12",
 				"deeperdarker:warden_leggings;0.09",
-				"deeperdarker:warden_boots;0.07"
+				"deeperdarker:warden_boots;0.07",
+				# ===== Resonant Synthesis 盔甲 ====
+				# 彼岸钢
+				"resonant_synthesis:otherside_helmet;0.07",
+				"resonant_synthesis:otherside_chestplate;0.11",
+				"resonant_synthesis:otherside_leggings;0.08",
+				"resonant_synthesis:otherside_boots;0.06",
 			]
 
 			[races.faelis.abilities.climbing]

@@ -522,7 +522,12 @@
         "{id:\"item\",item:\"minecraft:magenta_shulker_box\"}",
         "{id:\"item\",item:\"minecraft:pink_shulker_box\"}",
         "{id:\"item\",item:\"minecraft:shulker_shell\"}",
-        "{id:\"item\",item:\"tinkers_things:sack\"}"
+        "{id:\"item\",item:\"tinkers_things:sack\"}",
+        "{id:\"item\",item:\"resonant_synthesis:otherside_helmet\"}",
+        "{id:\"item\",item:\"resonant_synthesis:otherside_chestplate\"}",
+        "{id:\"item\",item:\"resonant_synthesis:otherside_leggings\"}",
+        "{id:\"item\",item:\"resonant_synthesis:otherside_boots\"}",
+        "{id:\"item\",item:\"resonant_synthesis:ring_silence\"}"
       ],
       "isWhitelist": true
     }
